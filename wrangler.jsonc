@@ -1,0 +1,8 @@
+// Cloudflare Workers 배포 설정: viewer/build.py 가 만든 viewer/dist 를 정적 사이트로 올린다.
+{
+  "name": "talktalk",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./viewer/dist"
+  }
+}
