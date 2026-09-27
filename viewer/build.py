@@ -1,4 +1,4 @@
-"""notes/설렘모먼트_장/*.md 와 README 로그 표를 읽어 viewer/index.html 을 만든다.
+"""notes/설렘모먼트_장/*.md 와 README 로그 표를 읽어 viewer/dist/index.html 을 만든다.
 
     python3 viewer/build.py            # 브라우저로 바로 여는 완성 문서
     python3 viewer/build.py --fragment # Artifact 게시용 (doctype/head 없이)
@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CH_DIR = ROOT / "notes" / "설렘모먼트_장"
-OUT = Path(__file__).resolve().parent / "index.html"
+OUT = Path(__file__).resolve().parent / "dist" / "index.html"
 
 
 def read_log():
@@ -47,6 +47,7 @@ def main():
         page = ('<!doctype html>\n<html lang="ko">\n<head>\n<meta charset="utf-8">\n'
                 '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
                 '</head>\n<body>\n' + page + '\n</body>\n</html>\n')
+    OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(page, encoding="utf-8")
     print(f"{OUT.relative_to(ROOT)} 생성")
 
