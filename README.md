@@ -69,7 +69,7 @@
 
 `notes/설렘모먼트_장/`에 편을 이어서 쓸 때 지키는 규칙이에요.
 
-> **뷰어**: [viewer/dist/index.html](viewer/dist/index.html)을 브라우저로 열면 각 편을 소설·대본 형식으로 읽고, 새 편의 키워드·인물이 아래 로그와 겹치는지 검사할 수 있어요. 새 편을 쓰고 로그 표를 채운 뒤 `python3 viewer/build.py`를 실행하면 뷰어가 다시 만들어져요.
+> **뷰어**: [viewer/dist/index.html](viewer/dist/index.html)을 브라우저로 열면 각 편을 소설·대본 형식으로 읽고, 새 편의 키워드·인물이 아래 로그와 겹치는지 검사할 수 있어요. 새 편을 쓰고 로그 표를 채운 뒤 `python3 viewer/build.py`를 실행하면 뷰어가 다시 만들어져요. main에 푸시하면 GitHub Actions(`.github/workflows/deploy-viewer.yml`)가 뷰어를 다시 만들어 https://talktalk.hyukgu86.workers.dev/ 에 자동으로 배포해요.
 
 1. 매 편은 짧은 장면이 아니라 최소 한 문단, 한 장(챕터) 분량으로 쓴다.
 2. **제목마다 폴더 하나를 둔다.** 폴더 이름은 `번호_형식_장르_제목`(예: `01_소설_헤테로_우산/`). 그 제목을 이어 쓴 회차는 새 파일을 만들지 않고 같은 폴더 안에 `01.md`, `02.md`… 순서로 쌓는다. 뷰어는 폴더 하나를 작품 한 편으로, 그 안의 파일들을 회차(1화, 2화…)로 묶는다.
