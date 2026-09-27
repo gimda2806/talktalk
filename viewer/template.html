@@ -210,11 +210,12 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
         <li><div>매 편은 짧은 장면이 아니라 최소 한 문단, <b>한 장(챕터) 분량</b>으로 쓴다.</div></li>
         <li><div>새 편마다 트로프/키워드와 등장인물 이름을 <b>로그 표에 함께 기록</b>한다.</div></li>
         <li><div>새 편의 키워드와 등장인물 이름은 최근에 쓴 편과 <b>최대한 겹치지 않게</b> 고른다. 로그 표를 먼저 확인하고 겹치는 항목은 피한다.</div></li>
-        <li><div>기존 편의 설정을 이어 쓰는 것은 허용한다. 이어 쓸 때는 파일명을 그대로 두고 번호만 뒤에 붙인다. 뷰어는 같은 번호의 파일을 한 작품의 회차로 묶는다.<br><code>01_소설_헤테로_우산.md</code> → <code>01_소설_헤테로_우산_2.md</code></div></li>
+        <li><div><b>제목마다 폴더 하나를 둔다.</b> 그 제목을 이어 쓴 회차는 같은 폴더 안에 <code>01.md</code>, <code>02.md</code>… 순서로 쌓는다. 뷰어는 폴더 하나를 작품 한 편으로, 그 안의 파일들을 회차로 묶는다.<br><code>01_소설_헤테로_우산/01.md</code> → (이어 쓰면) <code>01_소설_헤테로_우산/02.md</code></div></li>
+        <li><div>편마다 수위(설렘 / 15세 관람가 등)를 정하고 로그 표에 함께 적는다. 15세 관람가는 포옹·손잡기·키스신까지 허용하되, 성행위를 직접 묘사하지 않는다.</div></li>
       </ol>
       <div class="tbl">
         <table>
-          <thead><tr><th>번호</th><th>작품</th><th>트로프/키워드</th><th>등장인물</th></tr></thead>
+          <thead><tr><th>번호</th><th>작품</th><th>트로프/키워드</th><th>등장인물</th><th>수위</th></tr></thead>
           <tbody id="log"></tbody>
         </table>
       </div>
@@ -316,6 +317,7 @@ function render(){
     <dl class="facts">
       <dt>키워드</dt><dd>${e.keywords.join(" · ")}</dd>
       <dt>인물</dt><dd>${e.cast.join(", ")}</dd>
+      ${e.heat ? `<dt>수위</dt><dd>${esc(e.heat)}</dd>` : ""}
       <dt>파일</dt><dd><code>${esc(e.file)}</code></dd>
     </dl>
     <div class="body ${drama?"drama":"novel"}">${body(s, e)}</div>
@@ -445,7 +447,8 @@ function check(){
   document.getElementById("log").innerHTML = DATA.map(d=>`<tr>
     <td class="n">${d.no}</td><td>${d.format}_${d.genre}_${esc(d.title)}${d.episodes.length>1?` · ${d.episodes.length}화`:""}</td>
     <td>${d.keywords.map(k=>`<span class="kw ${hitsK.has(d.no+k)?"hit":""}">${esc(k)}</span>`).join("")}</td>
-    <td>${d.cast.map(c=>`<span class="kw ${hitsC.has(d.no+c)?"hit":""}">${esc(c)}</span>`).join("")}</td></tr>`).join("");
+    <td>${d.cast.map(c=>`<span class="kw ${hitsC.has(d.no+c)?"hit":""}">${esc(c)}</span>`).join("")}</td>
+    <td>${esc([...new Set(d.episodes.map(e=>e.heat).filter(Boolean))].join(" · "))}</td></tr>`).join("");
   const r = document.getElementById("result");
   const other = cont ? "다른 작품과 " : "";
   if (!kws.length && !cast.length){ r.className=""; r.innerHTML=""; }
@@ -453,11 +456,13 @@ function check(){
   else { r.className="result ok"; r.textContent=`${other}겹치는 키워드와 인물이 없어요. 로그에 그대로 추가해도 돼요.`; }
   let name;
   if (cont){
-    name = cont.episodes[0].file.replace(/\.md$/, `_${Math.max(...cont.episodes.map(e=>e.ep))+1}.md`);
+    const folder = cont.episodes[0].file.split("/")[0];
+    const nextEp = String(Math.max(...cont.episodes.map(e=>e.ep))+1).padStart(2,"0");
+    name = `${folder}/${nextEp}.md`;
   } else {
     const [f="소설",g="헤테로",t="제목"] = split(document.getElementById("in-fmt").value);
     const next = String(Math.max(...DATA.map(d=>+d.no))+1).padStart(2,"0");
-    name = `${next}_${f}_${g}_${t.replace(/\s+/g,"")}.md`;
+    name = `${next}_${f}_${g}_${t.replace(/\s+/g,"")}/01.md`;
   }
   document.getElementById("suggest").innerHTML = `${cont?"이어 쓸":"새"} 파일명 미리보기: <b>${esc(name)}</b>`;
 }
