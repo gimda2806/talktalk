@@ -151,7 +151,8 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
   .item .s{display:none}
 
   .sheet{margin-inline:-16px;border-inline:0;border-radius:0;padding:24px 20px 32px}
-  .sheet h2{font-size:24px}
+  .sheet h2{font-size:22px}
+  .body{line-height:1.85}
   .facts{margin:12px 0 24px;gap:4px 12px}
   .dl{grid-template-columns:1fr;gap:0;margin-bottom:.9em}
   .dl b{padding-top:0;color:var(--teal)}
@@ -334,11 +335,11 @@ function render(){
 }
 
 // 글자 크기
-const SIZES = [15,16,17,18,20];
+const SIZES = [13,14,15,16,17,18,20];
 function setSize(n){
   state.fs = Math.max(0, Math.min(SIZES.length-1, n));
   document.documentElement.style.setProperty("--fs", SIZES[state.fs]+"px");
-  store.set("sm-fs", state.fs);
+  store.set("sm-fs2", state.fs);
   const btns = document.querySelectorAll("[data-fs]");
   if (btns.length){ btns[0].disabled = state.fs<=0; btns[1].disabled = state.fs>=SIZES.length-1; }
   progress();
@@ -356,7 +357,7 @@ function progress(){
 addEventListener("scroll", progress, {passive:true});
 addEventListener("resize", progress);
 
-const state = { format:"전체", genre:"전체", s:FLAT[0].s, e:FLAT[0].e, fs: matchMedia("(max-width:760px)").matches ? 1 : 2 };
+const state = { format:"전체", genre:"전체", s:FLAT[0].s, e:FLAT[0].e, fs: matchMedia("(max-width:760px)").matches ? 2 : 4 };
 
 // 회차 열기: 읽음 표시 → 목록·본문 다시 그리기
 function go(f, jump=true){
@@ -466,7 +467,7 @@ document.getElementById("checker").addEventListener("submit", e=>e.preventDefaul
 
 // 시작
 const saved = FLAT.find(f=>f.e.id===store.get("sm-cur"));
-const fs = store.get("sm-fs"); if (fs!==null && !isNaN(+fs)) state.fs = +fs;
+const fs = store.get("sm-fs2"); if (fs!==null && !isNaN(+fs)) state.fs = +fs;
 if (store.get("sm-tab")==="rules" || location.hash==="#rules") document.getElementById("tab-rules").click();
 setSize(state.fs); drawFilters(); go(saved || FLAT[0], false); check();
 </script>
