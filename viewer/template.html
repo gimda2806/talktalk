@@ -54,6 +54,17 @@ button:focus-visible,input:focus-visible,.item:focus-visible{outline:2px solid v
 .item[aria-current="true"] .no{color:var(--rose)}
 .item .t{font-weight:600}
 .item .s{font-size:12px;color:var(--muted)}
+.badge{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--rose);color:var(--sheet);font-family:var(--sans);font-size:11px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;vertical-align:1px}
+.item .t .badge{margin-left:6px}
+.tabs .badge{margin-left:5px}
+.chip.ghost{border-style:dashed;color:var(--muted)}
+.eps{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 2px}
+.ep{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;font-size:13px;min-height:34px;padding:0 13px;border-radius:999px;cursor:pointer}
+.ep[aria-current="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.ep .dot{width:7px;height:7px;border-radius:50%;background:var(--rose)}
+.sub{font-family:var(--serif);color:var(--muted);font-size:16px;margin:2px 0 8px}
+select{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
+input[type=text]:disabled{opacity:.5}
 .empty{font-size:13px;color:var(--muted);padding:10px 12px}
 
 .sheet{background:var(--sheet);border:1px solid var(--line);border-radius:4px;padding-block:36px 40px;padding-inline:clamp(20px,5vw,56px);min-width:0}
@@ -135,6 +146,8 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
   .item[aria-current="true"]{border-color:var(--rose);background:var(--rose-soft)}
   .item .no{grid-row:auto;font-size:15px}
   .item .t{white-space:nowrap;font-size:14px}
+  .eps{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .ep{flex:0 0 auto}
   .item .s{display:none}
 
   .sheet{margin-inline:-16px;border-inline:0;border-radius:0;padding:24px 20px 32px}
@@ -168,7 +181,7 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
     </div>
     <div class="progress" id="progress"></div>
     <div class="tabs" role="tablist">
-      <button id="tab-read" role="tab" aria-selected="true" data-tab="read">읽기</button>
+      <button id="tab-read" role="tab" aria-selected="true" data-tab="read">읽기<span id="tab-badge"></span></button>
       <button id="tab-rules" role="tab" aria-selected="false" data-tab="rules">연습 규칙</button>
     </div>
   </header>
@@ -182,7 +195,7 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
       <div class="list" id="list"></div>
     </aside>
     <article class="sheet" id="sheet"></article>
-    <nav class="bar" id="bar" aria-label="편 이동">
+    <nav class="bar" id="bar" aria-label="회차 이동">
       <button id="bar-prev">← 이전</button>
       <span id="bar-pos"></span>
       <button id="bar-next">다음 →</button>
@@ -197,11 +210,11 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
         <li><div>매 편은 짧은 장면이 아니라 최소 한 문단, <b>한 장(챕터) 분량</b>으로 쓴다.</div></li>
         <li><div>새 편마다 트로프/키워드와 등장인물 이름을 <b>로그 표에 함께 기록</b>한다.</div></li>
         <li><div>새 편의 키워드와 등장인물 이름은 최근에 쓴 편과 <b>최대한 겹치지 않게</b> 고른다. 로그 표를 먼저 확인하고 겹치는 항목은 피한다.</div></li>
-        <li><div>기존 편의 설정을 이어 쓰는 것은 허용한다. 이어 쓸 때는 파일명을 그대로 두고 번호만 뒤에 붙인다.<br><code>01_소설_헤테로_우산.md</code> → <code>01_소설_헤테로_우산_2.md</code></div></li>
+        <li><div>기존 편의 설정을 이어 쓰는 것은 허용한다. 이어 쓸 때는 파일명을 그대로 두고 번호만 뒤에 붙인다. 뷰어는 같은 번호의 파일을 한 작품의 회차로 묶는다.<br><code>01_소설_헤테로_우산.md</code> → <code>01_소설_헤테로_우산_2.md</code></div></li>
       </ol>
       <div class="tbl">
         <table>
-          <thead><tr><th>번호</th><th>편</th><th>트로프/키워드</th><th>등장인물</th></tr></thead>
+          <thead><tr><th>번호</th><th>작품</th><th>트로프/키워드</th><th>등장인물</th></tr></thead>
           <tbody id="log"></tbody>
         </table>
       </div>
@@ -209,13 +222,15 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
 
     <section class="card">
       <h3>새 편 겹침 검사</h3>
-      <p class="lead">05편을 쓰기 전에 키워드와 이름을 넣어 보세요. 로그와 겹치는 항목을 표에서 노랗게 표시해요.</p>
+      <p class="lead">새 편을 쓰기 전에 키워드와 이름을 넣어 보세요. 로그와 겹치는 항목을 표에서 노랗게 표시해요.</p>
       <form id="checker">
+        <label for="in-mode">무엇을 쓰나요?</label>
+        <select id="in-mode"></select>
         <label for="in-kw">트로프/키워드 <small>쉼표로 구분</small></label>
         <input type="text" id="in-kw" value="첫눈, 소꿉친구, 우산 하나, 고백 연습">
         <label for="in-cast">등장인물 이름 <small>쉼표로 구분</small></label>
         <input type="text" id="in-cast" value="유나, 태민">
-        <label for="in-fmt">형식·장르·제목 <small>파일명 미리보기용</small></label>
+        <label for="in-fmt">형식·장르·제목 <small>새 편 파일명 미리보기용</small></label>
         <input type="text" id="in-fmt" value="소설, 헤테로, 첫눈">
       </form>
       <div id="result"></div>
@@ -232,9 +247,32 @@ const inline = s => esc(s)
   .replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>")
   .replace(/\*(.+?)\*/g,"<em>$1</em>");
 
-function render(ch){
-  const drama = ch.format === "드라마";
-  const blocks = ch.body.split(/\n\s*\n/).map(b=>b.trim()).filter(Boolean);
+// 모든 회차를 한 줄로 펼친 순서 (이전/다음 이동용)
+const FLAT = DATA.flatMap(s=>s.episodes.map(e=>({s, e})));
+const store = {
+  get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
+  set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} },
+};
+
+// 읽음 기록 (이 브라우저에만 저장)
+const READ = new Set(JSON.parse(store.get("sm-read") || "[]"));
+const isRead = e => READ.has(e.id);
+const unread = s => s.episodes.filter(e=>!isRead(e)).length;
+function markRead(e){
+  if (isRead(e)) return;
+  READ.add(e.id); store.set("sm-read", JSON.stringify([...READ]));
+}
+function badge(n, label){ return n ? `<span class="badge" aria-label="${label}">${n>1?n:"N"}</span>` : ""; }
+function drawTabBadge(){
+  const n = FLAT.filter(f=>!isRead(f.e)).length;
+  document.getElementById("tab-badge").innerHTML = badge(n, `안 읽은 회차 ${n}개`);
+}
+
+const epLabel = f => `${f.s.no} ${f.s.title}${f.s.episodes.length>1 ? ` ${f.e.ep}화` : ""}`;
+
+function body(s, e){
+  const drama = s.format === "드라마";
+  const blocks = e.body.split(/\n\s*\n/).map(b=>b.trim()).filter(Boolean);
   let html = "", note = "";
   for (const b of blocks){
     if (b === "　"){ html += '<div class="brk" aria-hidden="true">· · ·</div>'; continue; }
@@ -250,38 +288,49 @@ function render(ch){
     const say = /^["“]/.test(b);
     html += `<p class="${drama ? "act" : say ? "say" : ""}">${inline(b)}</p>`;
   }
+  return html + (note ? `<aside class="note"><strong>설렘 포인트</strong>${inline(note)}</aside>` : "");
+}
+
+function render(){
+  const {s, e} = state;
+  const drama = s.format === "드라마";
+  const multi = s.episodes.length > 1;
+  const i = FLAT.findIndex(f=>f.e===e);
+  const prev = FLAT[i-1], next = FLAT[i+1];
   const sheet = document.getElementById("sheet");
-  const i = DATA.indexOf(ch);
   sheet.innerHTML = `
     <div class="meta">
-      <span class="tag ${drama?"drama":"novel"}">로맨스 ${ch.format}</span>
-      <span class="tag plain">${ch.genre}</span>
+      <span class="tag ${drama?"drama":"novel"}">로맨스 ${s.format}</span>
+      <span class="tag plain">${s.genre}</span>
       ${drama?'<span class="tag plain">대본 형식</span>':""}
+      ${multi?`<span class="tag plain">연재 ${s.episodes.length}화</span>`:""}
       <div class="fsz" role="group" aria-label="글자 크기">
         <button data-fs="-1" aria-label="글자 작게" ${state.fs<=0?"disabled":""}>가-</button>
         <button data-fs="1" aria-label="글자 크게" ${state.fs>=SIZES.length-1?"disabled":""}>가+</button>
       </div>
     </div>
-    <h2>${esc(ch.title)}</h2>
+    <h2>${esc(s.title)}</h2>
+    ${e.title && e.title!==s.title ? `<p class="sub">${e.ep}화 · ${esc(e.title)}</p>` : ""}
+    ${multi ? `<div class="eps" role="group" aria-label="회차">${s.episodes.map(x=>`
+      <button class="ep" data-ep="${x.ep}" aria-current="${x===e}">${x.ep}화${isRead(x)?"":'<span class="dot" aria-label="안 읽음"></span>'}</button>`).join("")}</div>` : ""}
     <dl class="facts">
-      <dt>키워드</dt><dd>${ch.keywords.join(" · ")}</dd>
-      <dt>인물</dt><dd>${ch.cast.join(", ")}</dd>
-      <dt>파일</dt><dd><code>${esc(ch.file)}</code></dd>
+      <dt>키워드</dt><dd>${e.keywords.join(" · ")}</dd>
+      <dt>인물</dt><dd>${e.cast.join(", ")}</dd>
+      <dt>파일</dt><dd><code>${esc(e.file)}</code></dd>
     </dl>
-    <div class="body ${drama?"drama":"novel"}">${html}
-      ${note?`<aside class="note"><strong>설렘 포인트</strong>${inline(note)}</aside>`:""}
-    </div>
+    <div class="body ${drama?"drama":"novel"}">${body(s, e)}</div>
     <nav class="pager">
-      <button data-go="${i-1}" ${i<=0?"disabled":""}>← ${i>0?DATA[i-1].no+" "+esc(DATA[i-1].title):"처음"}</button>
-      <button data-go="${i+1}" ${i>=DATA.length-1?"disabled":""}>${i<DATA.length-1?DATA[i+1].no+" "+esc(DATA[i+1].title):"끝"} →</button>
+      <button data-go="${i-1}" ${prev?"":"disabled"}>← ${prev?esc(epLabel(prev)):"처음"}</button>
+      <button data-go="${i+1}" ${next?"":"disabled"}>${next?esc(epLabel(next)):"끝"} →</button>
     </nav>`;
-  sheet.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>select(DATA[+b.dataset.go], true));
+  sheet.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>go(FLAT[+b.dataset.go]));
+  sheet.querySelectorAll("[data-ep]").forEach(b=>b.onclick=()=>go({s, e:s.episodes.find(x=>x.ep===+b.dataset.ep)}));
   sheet.querySelectorAll("[data-fs]").forEach(b=>b.onclick=()=>setSize(state.fs + +b.dataset.fs));
-  const prev = document.getElementById("bar-prev"), next = document.getElementById("bar-next");
-  prev.disabled = i<=0; next.disabled = i>=DATA.length-1;
-  prev.onclick = ()=>i>0 && select(DATA[i-1], true);
-  next.onclick = ()=>i<DATA.length-1 && select(DATA[i+1], true);
-  document.getElementById("bar-pos").textContent = `${ch.no} / ${DATA[DATA.length-1].no}`;
+  const bp = document.getElementById("bar-prev"), bn = document.getElementById("bar-next");
+  bp.disabled = !prev; bn.disabled = !next;
+  bp.onclick = ()=>prev && go(prev);
+  bn.onclick = ()=>next && go(next);
+  document.getElementById("bar-pos").textContent = multi ? `${s.no} · ${e.ep}/${s.episodes.length}화` : `${s.no} / ${DATA[DATA.length-1].no}`;
 }
 
 // 글자 크기
@@ -289,7 +338,7 @@ const SIZES = [15,16,17,18,20];
 function setSize(n){
   state.fs = Math.max(0, Math.min(SIZES.length-1, n));
   document.documentElement.style.setProperty("--fs", SIZES[state.fs]+"px");
-  try{ localStorage.setItem("sm-fs", state.fs); }catch(e){}
+  store.set("sm-fs", state.fs);
   const btns = document.querySelectorAll("[data-fs]");
   if (btns.length){ btns[0].disabled = state.fs<=0; btns[1].disabled = state.fs>=SIZES.length-1; }
   progress();
@@ -307,10 +356,14 @@ function progress(){
 addEventListener("scroll", progress, {passive:true});
 addEventListener("resize", progress);
 
-const state = { format:"전체", genre:"전체", current:DATA[0], fs: matchMedia("(max-width:760px)").matches ? 1 : 2 };
-function save(){ try{ localStorage.setItem("sm-cur", state.current.no); }catch(e){} }
-function select(ch, jump){
-  state.current = ch; save(); drawList(); render(ch);
+const state = { format:"전체", genre:"전체", s:FLAT[0].s, e:FLAT[0].e, fs: matchMedia("(max-width:760px)").matches ? 1 : 2 };
+
+// 회차 열기: 읽음 표시 → 목록·본문 다시 그리기
+function go(f, jump=true){
+  state.s = f.s; state.e = f.e;
+  store.set("sm-cur", f.e.id);
+  markRead(f.e);
+  drawList(); render(); drawTabBadge();
   if (jump){
     const head = document.querySelector("header.top");
     const y = document.getElementById("sheet").getBoundingClientRect().top + scrollY - (getComputedStyle(head).position==="sticky" ? head.offsetHeight : 0);
@@ -318,6 +371,8 @@ function select(ch, jump){
   }
   progress();
 }
+// 작품을 누르면 안 읽은 첫 회차부터, 다 읽었으면 1화부터
+const firstUnread = s => s.episodes.find(e=>!isRead(e)) || s.episodes[0];
 
 function drawFilters(){
   for (const key of ["format","genre"]){
@@ -331,21 +386,29 @@ function drawFilters(){
       row.appendChild(b);
     }
   }
+  const row = document.querySelector('.frow[data-key="genre"]');
+  const all = document.createElement("button");
+  all.className = "chip ghost"; all.id = "read-all"; all.textContent = "모두 읽음";
+  all.onclick = ()=>{ FLAT.forEach(f=>READ.add(f.e.id)); store.set("sm-read", JSON.stringify([...READ])); drawList(); render(); drawTabBadge(); };
+  row.appendChild(all);
 }
 function drawList(){
   const list = document.getElementById("list");
   const shown = DATA.filter(d=>(state.format==="전체"||d.format===state.format)&&(state.genre==="전체"||d.genre===state.genre));
   list.innerHTML = shown.length ? "" : '<div class="empty">이 조합의 편은 아직 없어요.</div>';
   for (const d of shown){
+    const n = unread(d), eps = d.episodes.length;
     const b = document.createElement("button");
     b.className = "item";
-    b.setAttribute("aria-current", d===state.current);
-    b.innerHTML = `<span class="no">${d.no}</span><span class="t">${esc(d.title)}</span><span class="s">${d.format} × ${d.genre} · ${d.cast.join(", ")}</span>`;
-    b.onclick = ()=>select(d, true);
+    b.setAttribute("aria-current", d===state.s);
+    b.innerHTML = `<span class="no">${d.no}</span><span class="t">${esc(d.title)}${badge(n, `안 읽은 회차 ${n}개`)}</span><span class="s">${d.format} × ${d.genre}${eps>1?` · ${eps}화`:""} · ${d.cast.join(", ")}</span>`;
+    b.onclick = ()=>go({s:d, e: d===state.s ? state.e : firstUnread(d)});
     list.appendChild(b);
   }
   const cur = list.querySelector('[aria-current="true"]');
   if (cur && list.scrollWidth > list.clientWidth) list.scrollLeft = cur.offsetLeft - list.offsetLeft - 16;
+  const all = document.getElementById("read-all");
+  if (all) all.hidden = !FLAT.some(f=>!isRead(f.e));
 }
 
 // 탭
@@ -353,18 +416,23 @@ document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{
   document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected", x===b));
   document.getElementById("view-read").hidden = b.dataset.tab!=="read";
   document.getElementById("view-rules").hidden = b.dataset.tab!=="rules";
-  try{ localStorage.setItem("sm-tab", b.dataset.tab); }catch(e){}
+  store.set("sm-tab", b.dataset.tab);
   progress();
 });
 
 // 겹침 검사
 const split = s => s.split(/[,，、]/).map(x=>x.trim()).filter(Boolean);
 const norm = s => s.replace(/\s+/g,"");
+const mode = document.getElementById("in-mode");
+mode.innerHTML = `<option value="">새 편 쓰기</option>` + DATA.map(d=>`<option value="${d.no}">이어 쓰기 · ${d.no} ${esc(d.title)} (${d.episodes.length+1}화)</option>`).join("");
 function check(){
+  const cont = DATA.find(d=>d.no===mode.value);
+  document.getElementById("in-fmt").disabled = !!cont;
   const kws = split(document.getElementById("in-kw").value);
   const cast = split(document.getElementById("in-cast").value);
   const hitsK = new Set(), hitsC = new Set(), msgs = [];
   for (const d of DATA){
+    if (d===cont) continue; // 이어 쓰는 작품은 같은 인물·설정이 당연하니 검사에서 뺀다
     for (const k of d.keywords){
       for (const q of kws){
         if (norm(k)===norm(q) || (norm(q).length>=2 && (norm(k).includes(norm(q))||norm(q).includes(norm(k))))){
@@ -375,27 +443,30 @@ function check(){
     for (const c of d.cast) if (cast.some(q=>norm(q)===c)){ hitsC.add(d.no+c); msgs.push(`인물 <b>${esc(c)}</b> ↔ ${d.no}편 「${esc(d.title)}」`); }
   }
   document.getElementById("log").innerHTML = DATA.map(d=>`<tr>
-    <td class="n">${d.no}</td><td>${d.format}_${d.genre}_${esc(d.title)}</td>
+    <td class="n">${d.no}</td><td>${d.format}_${d.genre}_${esc(d.title)}${d.episodes.length>1?` · ${d.episodes.length}화`:""}</td>
     <td>${d.keywords.map(k=>`<span class="kw ${hitsK.has(d.no+k)?"hit":""}">${esc(k)}</span>`).join("")}</td>
     <td>${d.cast.map(c=>`<span class="kw ${hitsC.has(d.no+c)?"hit":""}">${esc(c)}</span>`).join("")}</td></tr>`).join("");
   const r = document.getElementById("result");
+  const other = cont ? "다른 작품과 " : "";
   if (!kws.length && !cast.length){ r.className=""; r.innerHTML=""; }
-  else if (msgs.length){ r.className="result warn"; r.innerHTML=`겹치는 항목 ${msgs.length}개 · 규칙 3번에 따라 바꿔 보세요.<ul>${msgs.map(m=>`<li>${m}</li>`).join("")}</ul>`; }
-  else { r.className="result ok"; r.textContent="겹치는 키워드와 인물이 없어요. 로그에 그대로 추가해도 돼요."; }
-  const [f="소설",g="헤테로",t="제목"] = split(document.getElementById("in-fmt").value);
-  const next = String(Math.max(...DATA.map(d=>+d.no))+1).padStart(2,"0");
-  document.getElementById("suggest").innerHTML = `새 파일명 미리보기: <b>${next}_${esc(f)}_${esc(g)}_${esc(t.replace(/\s+/g,""))}.md</b>`;
+  else if (msgs.length){ r.className="result warn"; r.innerHTML=`${other}겹치는 항목 ${msgs.length}개 · 규칙 3번에 따라 바꿔 보세요.<ul>${msgs.map(m=>`<li>${m}</li>`).join("")}</ul>`; }
+  else { r.className="result ok"; r.textContent=`${other}겹치는 키워드와 인물이 없어요. 로그에 그대로 추가해도 돼요.`; }
+  let name;
+  if (cont){
+    name = cont.episodes[0].file.replace(/\.md$/, `_${Math.max(...cont.episodes.map(e=>e.ep))+1}.md`);
+  } else {
+    const [f="소설",g="헤테로",t="제목"] = split(document.getElementById("in-fmt").value);
+    const next = String(Math.max(...DATA.map(d=>+d.no))+1).padStart(2,"0");
+    name = `${next}_${f}_${g}_${t.replace(/\s+/g,"")}.md`;
+  }
+  document.getElementById("suggest").innerHTML = `${cont?"이어 쓸":"새"} 파일명 미리보기: <b>${esc(name)}</b>`;
 }
 document.getElementById("checker").addEventListener("input", check);
 document.getElementById("checker").addEventListener("submit", e=>e.preventDefault());
 
 // 시작
-try{
-  const cur = localStorage.getItem("sm-cur");
-  const found = DATA.find(d=>d.no===cur); if (found) state.current = found;
-  const fs = localStorage.getItem("sm-fs"); if (fs!==null && !isNaN(+fs)) state.fs = +fs;
-  if (localStorage.getItem("sm-tab")==="rules") document.getElementById("tab-rules").click();
-}catch(e){}
-if (location.hash==="#rules") document.getElementById("tab-rules").click();
-setSize(state.fs); drawFilters(); drawList(); render(state.current); check(); progress();
+const saved = FLAT.find(f=>f.e.id===store.get("sm-cur"));
+const fs = store.get("sm-fs"); if (fs!==null && !isNaN(+fs)) state.fs = +fs;
+if (store.get("sm-tab")==="rules" || location.hash==="#rules") document.getElementById("tab-rules").click();
+setSize(state.fs); drawFilters(); go(saved || FLAT[0], false); check();
 </script>
