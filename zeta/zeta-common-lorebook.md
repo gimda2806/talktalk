@@ -56,7 +56,7 @@
 ```
 
 ```text
-{{user}}, {{char}}, system, 호칭, 님
+{{user}}, {{char}}, system, 했다, 말했다
 ```
 
 ```text
