@@ -2,7 +2,7 @@
 
 주인공 프로필 이미지를 만들 때 쓰는 규칙. 특정 인물을 복제하지 않고 "K-드라마 아이돌급 실사 미감"과 "미모 하한선"을 모든 캐릭터에 공통으로 고정하고, 얼굴 구조·머리·체형·의상만 캐릭터마다 바꾼다.
 
-> 한글 설명은 이해를 돕기 위한 것이다. "원문 그대로" 표시가 붙은 영어 블록은 실제 프롬프트에 **영어 원문 그대로** 넣는다. 번역·압축·요약·의역하지 않는다.
+> 영어 블록은 원본 스킬의 원문을 그대로 옮긴 것이다. 한글 설명은 이해를 돕기 위한 것이다. "원문 그대로" 표시가 붙은 영어 블록은 실제 프롬프트에 **영어 원문 그대로** 넣는다. 번역·압축·요약·의역하지 않는다.
 
 ## 0. 제타 작업에서의 적용 범위
 
@@ -86,19 +86,7 @@ GLOBAL IDOL FACIAL BEAUTY FLOOR는 모든 주연이 공유하는 고정 미모 �
 한글 설명: 한국 실사 숏드라마용 세로 캐릭터 시트, 초실사 2K, 일러스트 아님. 아이돌급 입체 골격과 정제된 얼굴 면, 높고 곧은 콧대, 또렷한 쌍꺼풀. 젊고 생기 있는 아이돌 에너지. 하얗고 고른 쿨톤 백자 피부에 가벼운 소프트터치 보정(모공 질감은 유지, 물광·유분·글래스 스킨 없음). 또렷한 K-아이돌 그루밍과 눈 화장. 모든 인물 칸에 시네마틱 소프트 포커스. 저채도, 저~중간 대비, 부드러운 하이라이트, 은은한 필름 그레인.
 
 ```text
-Vertical character design sheet for a Korean live-action short drama, hyper-realistic 2K, not illustration. Premium live-action K-drama character photography with idol-grade visual impact. Highly sculpted three-dimensional bone structure, refined and elegant facial planes, clean and defined jawline, noticeably high and straight nose bridge, deep naturally defined double eyelids, precise and harmonious facial geometry.
-
-Young Korean idol energy: a lively, polished, camera-ready face. Never childish, never ordinary, never a generic passerby.
-
-Skin: extremely fair, bright, luminous and even in tone. Softly glowing cool-toned porcelain skin. Zero dullness, zero yellowing, zero redness. Zero shadow pooling on any part of the face.
-
-Moderate retouching: light skin smoothing with a cinematic glamour soft-touch finish. Visibly smoother than raw skin, while keeping real pore texture, fine skin grain and natural surface detail. Not plastic, not waxy, not erased. The glow comes from even skin-tone brightness and fairness. No oiliness, no dewy wet look, no glass-skin sheen, no concentrated specular highlights.
-
-Makeup: clearly groomed K-idol finish. Cleanly shaped, full, tidy eyebrows. Defined eye makeup with soft eyeliner following the upper lash line and a subtle lower lash line. Enhanced eye contour depth, naturally tidy lashes. A more visible tinted lip color with a clean, non-wet finish. A brightening skin-tint finish. Visibly more refined than minimal natural grooming, but not heavy influencer makeup or stage makeup.
-
-Cinematic soft focus on every portrait panel: soft lens diffusion, film-like bokeh glow on subject edges, gentle halation. Optical glamour softness that protects facial structure, fine skin detail and eye clarity. Not blurry or out of focus, but the controlled soft-focus quality seen in high-end Korean drama cinematography.
-
-Color response: clean Korean drama cinematic texture, low saturation, low-to-medium contrast, luminous skin separation, soft highlight roll-off, soft shadow detail, subtle film grain. No harsh digital sharpening, no cheap short-drama filter.
+Vertical character design sheet for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration. Premium live-action K-drama character photography with idol-grade visual impact. Highly sculpted three-dimensional bone structure, refined elegant facial planes, a clean defined jawline, a prominent high straight nose bridge, deep naturally defined double eyelids, precise and harmonious face geometry. Youthful Korean idol energy — fresh-faced, polished and camera-ready, never juvenile, never ordinary, never a generic passerby. Skin: extremely fair, bright, radiant, and even-toned — luminously cool white porcelain complexion, zero dullness, zero sallowness, zero redness, zero shadow pooling across any facial zone. Moderate retouching: light skin smoothing applied with a cinematic glamour soft-touch finish — visibly smoother than raw skin yet retaining real pore texture, subtle micro-skin grain, and natural skin surface detail; NOT plastic, NOT wax-figure, NOT over-erased. Luminosity comes from even brightness and whiteness of the skin tone. Non-oily, no dewy wet-look sheen, no glass-skin gloss, no concentrated specular highlights. Makeup — defined polished K-idol grooming: fuller precisely groomed brows with a clean controlled shape, defined eye makeup with visible soft eyeliner tracing the upper and subtle lower lash line, enhanced eye contour depth, naturally refined lashes, more visible tinted lip color with a clean finish and no wet gloss, brightening skin-tint finish. Polished and complete K-idol grooming, visibly more refined than minimal natural grooming but NOT heavy influencer or theatrical makeup. Cinematic soft focus applied across all portrait panels: gentle lens diffusion, filmic bokeh glow around subject edges, soft halation, optical glamour softness that preserves facial structure, skin micro-detail and eye sharpness — NOT blurry, NOT out of focus; controlled soft-focus quality as seen in high-end Korean drama cinematography. Color response: clean Korean drama cinematic texture, low saturation, low-to-mid contrast, luminous skin separation, soft highlight roll-off, gentle shadow detail, subtle filmic grain, no harsh digital sharpening and no cheap short-drama filter.
 ```
 
 ### 6-2. GLOBAL IDOL FACIAL BEAUTY FLOOR (모든 캐릭터, 원문 그대로)
@@ -106,9 +94,7 @@ Color response: clean Korean drama cinematic texture, low saturation, low-to-med
 6-1 바로 뒤에 놓는다. 한글 설명: 최상급 한국 아이돌 주연 비주얼. 작은 얼굴, 조화로운 얼굴 3등분, 짧은 인중, 탄탄한 하안부, 좁고 높은 콧대, 선명한 눈꼬리, 다듬어진 입술 윤곽. 이목구비 배치는 정밀하고 균형 잡혔으며 거칠거나 평범하지 않다.
 
 ```text
-Exceptionally refined top-tier Korean idol lead visual. Small face with compact, harmonious facial thirds, restrained near-symmetry, narrow and clean face width, dimensional yet delicate midface structure, short and tidy philtrum, a compact lower face that tapers cleanly, a precise narrow high nose bridge, a refined narrow nasal base with delicate nostrils, long clean eye shapes with defined inner and outer corners, a clean under-eye plane, and a tidy lip contour.
-
-Feature placement is exceptionally precise, balanced and camera-perfect. Every feature stays delicate, sculpted and high-definition. Never coarse, bulky, plain, average-looking or generic.
+Exceptionally refined top-tier Korean idol lead visual, with a small face and compact harmonious facial thirds, controlled near-symmetry, narrow clean facial width, dimensional yet delicate midface structure, a short neat philtrum, a compact tapered lower face, a precise narrow high nose bridge, a refined narrow nose base with delicate nostrils, long clean eye openings with crisp inner and outer eye corners, a clean under-eye plane, and a polished lip contour. Feature placement is exceptionally precise, balanced and camera-perfect. Every facial feature remains delicate, sculpted and high-definition; never coarse, bulky, ordinary, average-looking or generic.
 ```
 
 이 미모 하한선은 정교함과 비율의 품질만 규정한다. 구체적인 얼굴형, 눈 모양, 눈썹 모양, 입술 모양, 성격은 고정하지 않는다. 모든 캐릭터 차별화는 이 범위 안에서 이루어진다.
@@ -122,9 +108,7 @@ Feature placement is exceptionally precise, balanced and camera-perfect. Every f
 한글 설명: 최상급 한국 남성 아이돌 겸 주연 배우급 얼굴 정교함. 어깨 대비 작은 머리, 깔끔한 이마-눈썹 연결, 길고 정밀한 눈선, 좁고 높은 코, 오밀조밀한 입-턱, 교근 볼륨 없이 갸름해지는 남성적 턱. 남성미는 뼈의 긴장감, 시선, 자세, 어깨선에서 나온다.
 
 ```text
-For adult male characters: exceptionally beautiful, top-tier Korean male idol and lead-actor level facial refinement. The freshness of a young adult, a small head in proportion to the shoulders, a clean forehead-to-brow connection, an elegant brow-to-eye relationship, long and precise eye lines, a tall, narrow, refined nose, a compact mouth-and-chin area, and a masculine jaw that tapers cleanly without large masseter volume.
-
-Masculinity comes from bone tension, gaze, posture and shoulder line. It does not come from coarse features, a heavy lower face, or a loss of facial harmony.
+For an adult male character: exceptionally beautiful top-tier Korean male idol and leading-actor facial refinement, youthful adult freshness, a small head-to-shoulder ratio, a clean forehead-to-brow transition, an elegant brow-to-eye relationship, a long precise eye line, a tall narrow refined nose, a compact mouth-to-chin area, and a clean tapered masculine jaw without bulky masseter volume. Masculinity comes from bone tension, gaze, posture and shoulder line — never from coarse features, a heavy lower face or reduced facial harmony.
 ```
 
 **FEMALE K-DRAMA LEAD BEAUTY AMPLIFIER**
@@ -132,9 +116,7 @@ Masculinity comes from bone tension, gaze, posture and shoulder line. It does no
 한글 설명: 최상급 한국 아이돌 여배우 겸 주연급 얼굴 정교함. 작고 우아한 얼굴, 깔끔한 이마-눈썹 연결, 아몬드형·여우형·부드러운 고양이형 눈매, 섬세하고 높고 좁은 코, 오밀조밀한 하안부, 깔끔한 입술 윤곽, 계란형·하트형·부드러운 V라인 턱. 여성미는 정밀한 비율, 절제된 표정, K-드라마 메이크업에서 나온다.
 
 ```text
-For adult female characters: exceptionally beautiful, top-tier Korean idol-actress and female-lead level facial refinement. A small, elegant face, a clean forehead-to-brow connection, long luminous almond, fox or soft cat-shaped eyes with defined outer corners, a delicate, high, narrow nose, a compact refined lower face, a sculpted clean lip contour, and an elegantly tapering oval, heart-shaped or soft V-line jaw.
-
-Femininity comes from precise proportion, restrained expression and polished K-drama makeup. It does not come from influencer-style feature enlargement, an overfilled face, or generic AI-beauty symmetry.
+For an adult female character: exceptionally beautiful top-tier Korean idol-actress and leading-woman facial refinement, a small elegant face, a clean forehead-to-brow transition, long luminous almond, fox or soft cat-eye geometry with crisp corners, a delicate high narrow nose, a compact refined lower face, a sculpted clean lip contour, and an elegant tapered oval, heart-shaped or soft V-line jaw. Femininity comes from precise proportion, controlled expression and polished K-drama makeup — never from influencer-style feature enlargement, an overfilled face or generic AI-beauty symmetry.
 ```
 
 ### 6-4. FACE GEOMETRY BLOCK (캐릭터마다, 독립적이고 긍정형)
@@ -191,7 +173,7 @@ Femininity comes from precise proportion, restrained expression and polished K-d
 의상의 공통 품질 요건 (원문 그대로):
 
 ```text
-Premium contemporary Korean drama costume styling, intentional silhouette, refined fit, believable high-quality fabrics, clean structure, role-appropriate layering and a restrained color palette. The costume must express the character's identity and situation without lowering idol-grade visual polish.
+Premium contemporary Korean drama wardrobe styling, intentional silhouette, refined fit, believable high-quality material, clean construction, role-appropriate layering and restrained color coordination. The wardrobe must express the character's identity and situation without reducing the idol-grade visual finish.
 ```
 
 사용자가 의상을 명시하면 그대로 따르고, 아니면 캐릭터 정체성에 따라 디자인한다. 과거 의상(검은 오버코트, 터틀넥, 크림 니트, 회색 라운지웨어, 흰 수건 등)을 기본값으로 쓰지 않는다.
@@ -201,21 +183,7 @@ Premium contemporary Korean drama costume styling, intentional silhouette, refin
 한글 설명: 3:4 세로 캐릭터 디자인 시트 한 장. 모든 칸은 같은 얼굴·헤어·나이·체격·의상. 큰 대표 인물 사진이 위쪽 절반을 차지한다.
 
 ```text
-Layout: one 3:4 vertical character design sheet, not a 16:9 landscape grid. Every panel shows exactly the same face, hairstyle, adult age, build and the outfit chosen for the current character.
-
-Include:
-1. one large 3/4-angle signature emotional portrait with high detail and cinematic soft-focus bokeh glow
-2. front half-body
-3. 3/4 side half-body
-4. full-body front standing view
-5. left profile
-6. right profile
-7. full-body back view
-8. eye detail close-up
-9. lip detail close-up
-10. three restrained emotion samples
-
-The large signature portrait must occupy the upper half. Keep the full-body and detail panels clean, balanced and easy to read.
+Layout: one 3:4 vertical character design sheet, not a 16:9 widescreen grid. All panels show the exact same face, hairstyle, adult age, physique and the current character's selected outfit. Include: ① one large hero emotion portrait at a three-quarter angle with high detail and cinematic soft-focus bokeh glow; ② front-facing full bust; ③ three-quarter side bust; ④ full-body standing front view; ⑤ left profile; ⑥ right profile; ⑦ full-body back view; ⑧ close-crop eye detail; ⑨ close-crop lip detail; ⑩ three restrained emotion samples. The large hero portrait must dominate the upper half; full-body and detail panels remain clean, balanced and readable.
 ```
 
 사용자가 명시적으로 가로를 요청할 때만 비율을 바꾼다.
@@ -227,19 +195,19 @@ The large signature portrait must occupy the upper half. Keep the full-body and 
 **쿨 뉴트럴 스튜디오 (Cool-neutral studio)**
 
 ```text
-A neutral cool-gray photo studio or a minimal clean interior. Softly diffused frontal key light with gently sculpting side shadows, shallow depth of field, cool-neutral low saturation and low-to-medium contrast. Skin stays a luminous cool white with no dull patches.
+Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches.
 ```
 
 **웜 화이트 아파트 (Warm-white apartment)**
 
 ```text
-A softly blurred minimal interior in warm white and beige. Softly diffused frontal key light, gently sculpted side shadows, shallow depth of field, low saturation and low-to-medium contrast. The environment may be warm beige, but the skin must stay cool porcelain white and never turn warm yellow.
+Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow.
 ```
 
 **균형 잡힌 고급 실내 (Balanced upscale interior)**
 
 ```text
-A premium neutral Korean interior with warm room lighting and controlled cool shadow fill. Soft frontal key, restrained halation, low saturation and low-to-medium contrast. No harsh orange-teal split.
+Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split.
 ```
 
 ### 6-9. GLOBAL NEGATIVE BLOCK (모든 캐릭터, 원문 그대로)
@@ -247,17 +215,7 @@ A premium neutral Korean interior with warm room lighting and controlled cool sh
 특정 의상, 머리색, 체형을 금지하는 블록이 아니다. 같은 시트 안의 변화와, 다른 캐릭터 간 같은 얼굴 재사용만 금지한다.
 
 ```text
-Avoid:
-- On-screen elements: no text, no watermark, no UI overlay.
-- Identity: no different identity per panel, no reuse of the same face across different characters, no merged identities.
-- Skin: no plastic high-gloss skin, no over-smoothed waxy skin, no dewy glass-skin sheen, no oily shine or highlight pooling, no wet-looking skin surface, no dull or yellowish patches anywhere on the face.
-- Casting feel: no generic passerby features, no cheap short-drama casting, no generic actor-casting face, no ordinary advertising-model face.
-- Expression: no exaggerated expressions, no shouting, no wide-open mouth, no tired hollow eyes.
-- Variation within a sheet: no unintended hair color change, no outfit change within the same sheet, no body type change within the same sheet, no age change.
-- Focus: no blurry or unsharp panels outside the intended controlled soft focus, no heavy blur that erases skin texture detail.
-- Makeup: no heavy influencer makeup or stage makeup.
-- Features: no long midface, no long philtrum, no wide nasal base, no bulbous or round nose tip, no wide heavy jaw, no large masseters, no protruding ears, no coarse brow bone, no recessed temple hairline, no coarse or bulky features.
-- Anatomy: no wrong number of limbs.
+Negative constraints: NO text, NO watermark, NO UI overlay, NO different identity across panels, NO same-face reuse across different characters, NO plastic high-gloss skin, NO over-smoothed wax-figure skin, NO generic passerby features, NO cheap short-drama casting, NO exaggerated facial expressions, NO screaming, NO wide-open mouth, NO unintended hair color change, NO costume drift within the same sheet, NO body-type drift within the same sheet, NO age drift, NO blurry or unsharp panels outside the controlled soft-focus intent, NO dewy glass-skin sheen, NO oily shine or highlight pooling, NO wet-look skin surface, NO dull or sallow patches anywhere on the face, NO heavy blur that erases skin texture detail, NO heavy influencer or theatrical makeup, NO long midface, NO long philtrum, NO wide nose base, NO bulbous or rounded nose tip, NO broad heavy jaw, NO bulky masseter, NO protruding ears, NO coarse brow ridge, NO receded temple hairline, NO tired hollow eyes, NO generic actor casting face, NO average commercial-model face, NO coarse or bulky facial feature, NO wrong limb count, NO merged identities.
 ```
 
 ## 7. GLOBAL LITERAL GATE (생성 전 필수 검사)
