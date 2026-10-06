@@ -184,7 +184,7 @@
 Korean webtoon style, semi-realistic manhwa illustration, upper body portrait of a (나이)-year-old Korean (man/woman), (체형), (머리 모양·색), (눈매), (피부), (표정), (옷차림), (소품), plain light gray background, soft lighting, high detail
 ```
 
-장면용은 배경을 `(장소), (시간대·날씨), cinematic soft lighting`으로 바꾼다.
+이미지 프롬프트는 주인공 프로필용과 유저 대화 프로필용 두 개만 쓴다.
 
 각 이미지 프롬프트 바로 아래에 같은 내용을 한글로 풀어 쓴 설명을 한두 문장으로 덧붙인다. (코드블록 밖)
 
