@@ -142,6 +142,13 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
 .copy{border:1px solid var(--line);background:var(--sheet);color:var(--ink);font:inherit;font-size:13px;font-weight:500;min-height:32px;padding:0 13px;border-radius:999px;cursor:pointer;white-space:nowrap;flex-shrink:0}
 .copy[data-done]{border-color:var(--ok);background:var(--ok-soft);color:var(--ok)}
 .field pre{margin:0;padding:12px 14px;font:inherit;font-family:var(--serif);font-size:14.5px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere;max-height:380px;overflow:auto}
+.field.split>.fh{background:var(--sheet)}
+.parts{padding:6px 10px 10px}
+.part{border:1px solid var(--line);border-radius:6px;margin:6px 0;overflow:hidden}
+.part .fh{padding:4px 10px;min-height:0;font-size:12.5px}
+.part .fh b{color:var(--muted);font-weight:500}
+.part .copy{min-height:26px;font-size:12px;padding:0 10px}
+.part pre{padding:8px 12px;max-height:240px}
 .field.latin pre{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;line-height:1.6}
 .zsheet details{margin-top:30px;border-top:1px solid var(--line);padding-top:20px}
 .zsheet summary{font-family:var(--display);font-size:19px;cursor:pointer;list-style:none}
@@ -539,10 +546,15 @@ function zrender(){
   const field = i => {
     const [label, hint] = splitLabel(i.label || "");
     texts.push(i.text);
-    return `<div class="field ${latin(i.text)?"latin":""}">
+    const whole = texts.length-1;
+    const parts = (i.parts||[]).map((p, n) => {
+      texts.push(p.text);
+      return `<div class="part"><div class="fh"><b>${n+1}. ${esc(p.label)}</b><span class="cnt">${p.text.length}자</span><button class="copy" data-c="${texts.length-1}">복사</button></div><pre>${esc(p.text)}</pre></div>`;
+    }).join("");
+    return `<div class="field ${latin(i.text)?"latin":""}${parts?" split":""}">
       <div class="fh"><b>${esc(label)}${i.sub?` › ${esc(i.sub)}`:""}</b>${hint?`<span class="hint">${esc(hint)}</span>`:""}
-        <span class="cnt">${i.text.length}자</span><button class="copy" data-c="${texts.length-1}">복사</button></div>
-      <pre>${esc(i.text)}</pre></div>`;
+        <span class="cnt">${i.text.length}자</span><button class="copy" data-c="${whole}">${parts?"전체 복사":"복사"}</button></div>
+      ${parts ? `<div class="parts">${parts}</div>` : `<pre>${esc(i.text)}</pre>`}</div>`;
   };
   const items = g => g.items.map(i => i.kind==="field" ? field(i) : i.kind==="head" ? `<h4>${esc(i.label)}</h4>` : ztext(i.lines)).join("");
   const grp = g => `<section class="grp"><h3>${esc(g.title)}</h3>${items(g)}</section>`;
