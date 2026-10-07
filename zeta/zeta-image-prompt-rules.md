@@ -2,11 +2,11 @@
 
 주인공 프로필 이미지를 만들 때 쓰는 규칙. 특정 인물을 복제하지 않고 "K-드라마 아이돌급 실사 미감"과 "미모 하한선"을 모든 캐릭터에 공통으로 고정하고, 얼굴 구조·머리·체형·의상만 캐릭터마다 바꾼다.
 
-> 영어 블록은 원본 스킬의 원문을 그대로 옮긴 것이다. 한글 설명은 이해를 돕기 위한 것이다. "원문 그대로" 표시가 붙은 영어 블록은 실제 프롬프트에 **영어 원문 그대로** 넣는다. 번역·압축·요약·의역하지 않는다.
+> 영어 블록은 원본 프롬프트 자료의 원문을 그대로 옮긴 것이다. 한글 설명은 이해를 돕기 위한 것이다. "원문 그대로" 표시가 붙은 영어 블록은 실제 프롬프트에 **영어 원문 그대로** 넣는다. 번역·압축·요약·의역하지 않는다.
 
 ## 0. 제타 작업에서의 적용 범위
 
-- 주인공 프로필용 프롬프트: 아래 2~9번 규칙 전체를 적용한다. 캐릭터 시트가 아니라 프로필 한 장이 필요하면 7번(레이아웃 블록)은 쓰지 않고 `Upper body portrait, three-quarter angle, (표정)` 한 줄로 대신한다. 이때 6-1 블록의 첫 문장 `Vertical character design sheet for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`은 `Upper body portrait for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`으로 바꿔도 된다. 6-1의 나머지 문장은 그대로 둔다. 시트가 필요하면 7번을 쓴다.
+- 주인공 프로필용 프롬프트: 5절 구성 순서의 1~9번 블록 전체를 적용한다. 캐릭터 시트가 아니라 프로필 한 장이 필요하면 7번(레이아웃 블록)은 쓰지 않고 `Upper body portrait, three-quarter angle, (표정)` 한 줄로 대신한다. 이때 6-1 블록의 첫 문장 `Vertical character design sheet for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`은 `Upper body portrait for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`으로 바꿔도 된다. 6-1의 나머지 문장은 그대로 둔다.
 - 유저 대화 프로필용 프롬프트: 남성용과 여성용 두 개를 만든다. 주인공과 같은 블록 구성(6-1, 6-2, 6-3, 얼굴 구조, 의상, 조명, 6-9)을 쓰되 6-3은 각각 MALE/FEMALE을 넣고, 얼굴 구조는 6-10의 유저 공통 얼굴을 쓴다. 얼굴이 보이는 상반신 초상이다. 대화 프로필 설명 칸은 성별 없이 하나만 둔다. (옛 웹툰풍·뒷모습 형식은 더 쓰지 않는다)
 - 각 영문 프롬프트 바로 아래에 한글 설명을 한두 문장으로 덧붙인다. (코드블록 밖)
 - 이전 방식(`Korean webtoon style, semi-realistic manhwa illustration ...`)은 만화풍을 원할 때만 쓴다.
@@ -53,7 +53,7 @@ GLOBAL IDOL FACIAL BEAUTY FLOOR는 모든 주연이 공유하는 고정 미모 �
 
 - 모든 콘텐츠는 고퀄리티 K-드라마 아이돌 제작 기준을 유지한다.
 - 흔한 외모, 저예산 드라마 클리셰, 얼굴 바꿔치기를 피한다.
-- 직업과 설정은 사용자 입력을 따르고, 입력이 너무 모호할 때만 짧은 선택지 3개를 제안한다.
+- 직업과 설정은 플롯의 기획 요약을 따른다.
 - 여러 캐릭터는 최소 두 가지 대비점(지위/권력, 실루엣/체격, 겉 태도와 속마음, 행동 속도, 감정 표현 방식)을 가진다. 차이는 헤어스타일, 옆모습, 키/체격, 옷, 색상 팔레트로 바로 알아볼 수 있어야 한다.
 - 미감을 떨어뜨리거나 메이크업 품질을 낮추거나 "평범한" 엑스트라를 쓰는 방식으로 대비를 만들지 않는다. 같은 기본 얼굴에 머리색이나 옷만 바꾸는 방식도 쓰지 않는다.
 - 남성성(강인함, 위험함, 다정함, 젊음)은 거칠어진 이목구비가 아니라 골격, 시선, 눈썹 표정, 연기에서 나온다. 여성성은 과장된 "인플루언서 스타일" 이목구비가 아니라 비율, 눈 모양, 입술 모양, 메이크업, 얼굴 긴장도에서 나온다.
@@ -70,7 +70,7 @@ GLOBAL IDOL FACIAL BEAUTY FLOOR는 모든 주연이 공유하는 고정 미모 �
 4. 현재 캐릭터의 독립적인 FACE GEOMETRY BLOCK
 5. ARCHETYPE ADAPTER 또는 커스텀 성격 디자인
 6. HAIR / BODY / WARDROBE VARIABLES
-7. GLOBAL CHARACTER SHEET LAYOUT BLOCK (원문 그대로, 시트일 때만)
+7. `Upper body portrait, three-quarter angle, (표정)` 한 줄 (시트 레이아웃 블록은 제타에서 쓰지 않는다)
 8. LIGHTING MODE 하나
 9. GLOBAL NEGATIVE BLOCK (원문 그대로)
 
@@ -80,7 +80,7 @@ GLOBAL IDOL FACIAL BEAUTY FLOOR는 모든 주연이 공유하는 고정 미모 �
 
 ### 6-1. GLOBAL K-DRAMA IDOL LOOK BLOCK (모든 캐릭터, 원문 그대로)
 
-한글 설명: 한국 실사 숏드라마용 세로 캐릭터 시트, 초실사 2K, 일러스트 아님. 아이돌급 입체 골격과 정제된 얼굴 면, 높고 곧은 콧대, 또렷한 쌍꺼풀. 젊고 생기 있는 아이돌 에너지. 하얗고 고른 쿨톤 백자 피부에 가벼운 소프트터치 보정(모공 질감은 유지, 물광·유분·글래스 스킨 없음). 또렷한 K-아이돌 그루밍과 눈 화장. 모든 인물 칸에 시네마틱 소프트 포커스. 저채도, 저~중간 대비, 부드러운 하이라이트, 은은한 필름 그레인.
+한글 설명: (프로필 한 장일 때는 첫 문장을 0절의 예외대로 '상반신 초상'으로 바꾼다) 한국 실사 숏드라마용 세로 캐릭터 시트, 초실사 2K, 일러스트 아님. 아이돌급 입체 골격과 정제된 얼굴 면, 높고 곧은 콧대, 또렷한 쌍꺼풀. 젊고 생기 있는 아이돌 에너지. 하얗고 고른 쿨톤 백자 피부에 가벼운 소프트터치 보정(모공 질감은 유지, 물광·유분·글래스 스킨 없음). 또렷한 K-아이돌 그루밍과 눈 화장. 모든 인물 칸에 시네마틱 소프트 포커스. 저채도, 저~중간 대비, 부드러운 하이라이트, 은은한 필름 그레인.
 
 ```text
 Vertical character design sheet for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration. Premium live-action K-drama character photography with idol-grade visual impact. Highly sculpted three-dimensional bone structure, refined elegant facial planes, a clean defined jawline, a prominent high straight nose bridge, deep naturally defined double eyelids, precise and harmonious face geometry. Youthful Korean idol energy — fresh-faced, polished and camera-ready, never juvenile, never ordinary, never a generic passerby. Skin: extremely fair, bright, radiant, and even-toned — luminously cool white porcelain complexion, zero dullness, zero sallowness, zero redness, zero shadow pooling across any facial zone. Moderate retouching: light skin smoothing applied with a cinematic glamour soft-touch finish — visibly smoother than raw skin yet retaining real pore texture, subtle micro-skin grain, and natural skin surface detail; NOT plastic, NOT wax-figure, NOT over-erased. Luminosity comes from even brightness and whiteness of the skin tone. Non-oily, no dewy wet-look sheen, no glass-skin gloss, no concentrated specular highlights. Makeup — defined polished K-idol grooming: fuller precisely groomed brows with a clean controlled shape, defined eye makeup with visible soft eyeliner tracing the upper and subtle lower lash line, enhanced eye contour depth, naturally refined lashes, more visible tinted lip color with a clean finish and no wet gloss, brightening skin-tint finish. Polished and complete K-idol grooming, visibly more refined than minimal natural grooming but NOT heavy influencer or theatrical makeup. Cinematic soft focus applied across all portrait panels: gentle lens diffusion, filmic bokeh glow around subject edges, soft halation, optical glamour softness that preserves facial structure, skin micro-detail and eye sharpness — NOT blurry, NOT out of focus; controlled soft-focus quality as seen in high-end Korean drama cinematography. Color response: clean Korean drama cinematic texture, low saturation, low-to-mid contrast, luminous skin separation, soft highlight roll-off, gentle shadow detail, subtle filmic grain, no harsh digital sharpening and no cheap short-drama filter.
@@ -173,17 +173,11 @@ For an adult female character: exceptionally beautiful top-tier Korean idol-actr
 Premium contemporary Korean drama wardrobe styling, intentional silhouette, refined fit, believable high-quality material, clean construction, role-appropriate layering and restrained color coordination. The wardrobe must express the character's identity and situation without reducing the idol-grade visual finish.
 ```
 
-사용자가 의상을 명시하면 그대로 따르고, 아니면 캐릭터 정체성에 따라 디자인한다. 과거 의상(검은 오버코트, 터틀넥, 크림 니트, 회색 라운지웨어, 흰 수건 등)을 기본값으로 쓰지 않는다.
+사용자가 의상을 명시하면 그대로 따르고, 아니면 캐릭터 정체성에 따라 디자인한다. 앞 작품의 의상을 그대로 물려주지 않는다.
 
-### 6-7. GLOBAL CHARACTER SHEET LAYOUT BLOCK (시트일 때만, 원문 그대로)
+### 6-7. (삭제) 시트 레이아웃 블록
 
-한글 설명: 3:4 세로 캐릭터 디자인 시트 한 장. 모든 칸은 같은 얼굴·헤어·나이·체격·의상. 큰 대표 인물 사진이 위쪽 절반을 차지한다.
-
-```text
-Layout: one 3:4 vertical character design sheet, not a 16:9 widescreen grid. All panels show the exact same face, hairstyle, adult age, physique and the current character's selected outfit. Include: ① one large hero emotion portrait at a three-quarter angle with high detail and cinematic soft-focus bokeh glow; ② front-facing full bust; ③ three-quarter side bust; ④ full-body standing front view; ⑤ left profile; ⑥ right profile; ⑦ full-body back view; ⑧ close-crop eye detail; ⑨ close-crop lip detail; ⑩ three restrained emotion samples. The large hero portrait must dominate the upper half; full-body and detail panels remain clean, balanced and readable.
-```
-
-사용자가 명시적으로 가로를 요청할 때만 비율을 바꾼다.
+제타에서는 캐릭터 시트를 만들지 않으므로 레이아웃 블록을 쓰지 않는다. 이 자리에는 `Upper body portrait, three-quarter angle, (표정)` 한 줄을 넣는다.
 
 ### 6-8. LIGHTING MODES (하나 선택)
 

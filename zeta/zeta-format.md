@@ -187,7 +187,7 @@
 4. 이 캐릭터의 FACE GEOMETRY BLOCK (6-4) — 작품마다 새로 쓴다
 5. ARCHETYPE ADAPTER 또는 캐릭터 성격 디자인 (6-5) — 직업과 성격이 보이게. 핵심 장치(동물·소품)는 선택 사항이며, 있을 때만 넣는다
 6. HAIR / BODY / WARDROBE (6-6) — 의상 공통 품질 요건은 원문 그대로
-7. 프로필 한 장이면 레이아웃 블록(6-7) 대신 `Upper body portrait, three-quarter angle, (표정)` 한 줄. 시트가 필요할 때만 6-7 원문을 넣는다
+7. `Upper body portrait, three-quarter angle, (표정)` 한 줄 (시트 레이아웃 블록은 쓰지 않는다)
 8. LIGHTING MODE 중 하나 (6-8)
 9. GLOBAL NEGATIVE BLOCK (6-9, 원문 그대로)
 
