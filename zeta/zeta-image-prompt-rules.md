@@ -209,7 +209,7 @@ Premium neutral Korean interior with warm practical lights and controlled cool s
 
 ### 6-9. GLOBAL NEGATIVE BLOCK (모든 캐릭터, 원문 그대로)
 
-특정 의상, 머리색, 체형을 금지하는 블록이 아니다. 같은 시트 안의 변화와, 다른 캐릭터 간 같은 얼굴 재사용만 금지한다.
+특정 의상, 머리색, 체형을 금지하는 블록이 아니다. 다른 캐릭터 간 같은 얼굴 재사용을 금지한다.
 
 ```text
 Negative constraints: NO text, NO watermark, NO UI overlay, NO different identity across panels, NO same-face reuse across different characters, NO plastic high-gloss skin, NO over-smoothed wax-figure skin, NO generic passerby features, NO cheap short-drama casting, NO exaggerated facial expressions, NO screaming, NO wide-open mouth, NO unintended hair color change, NO costume drift within the same sheet, NO body-type drift within the same sheet, NO age drift, NO blurry or unsharp panels outside the controlled soft-focus intent, NO dewy glass-skin sheen, NO oily shine or highlight pooling, NO wet-look skin surface, NO dull or sallow patches anywhere on the face, NO heavy blur that erases skin texture detail, NO heavy influencer or theatrical makeup, NO long midface, NO long philtrum, NO wide nose base, NO bulbous or rounded nose tip, NO broad heavy jaw, NO bulky masseter, NO protruding ears, NO coarse brow ridge, NO receded temple hairline, NO tired hollow eyes, NO generic actor casting face, NO average commercial-model face, NO coarse or bulky facial feature, NO wrong limb count, NO merged identities.
