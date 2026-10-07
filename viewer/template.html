@@ -125,13 +125,40 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
 .suggest{margin-top:16px;font-size:13px;color:var(--muted)}
 .suggest b{color:var(--ink);font-family:ui-monospace,Menlo,monospace;font-weight:500;word-break:break-all}
 
+/* 제타 */
+.zsheet .body{max-width:none;font-family:var(--sans);font-size:14px;line-height:1.75}
+.grp{margin-top:30px;border-top:1px solid var(--line);padding-top:20px}
+.grp:first-child{margin-top:0;border-top:0;padding-top:0}
+.grp h3{font-family:var(--display);font-size:19px;margin:0 0 10px}
+.grp h4{font-family:var(--sans);font-size:13px;font-weight:600;color:var(--teal);margin:18px 0 6px}
+.grp ul{margin:0 0 10px;padding-left:20px}
+.grp ul ul{margin:2px 0 4px}
+.grp p{margin:0 0 .8em}
+.field{border:1px solid var(--line);border-radius:8px;background:var(--paper);margin:10px 0;overflow:hidden}
+.fh{display:flex;align-items:center;gap:8px;padding:8px 10px 8px 12px;border-bottom:1px solid var(--line);font-size:13px;min-width:0}
+.fh b{font-weight:600}
+.fh .hint{color:var(--muted);font-weight:400}
+.fh .cnt{margin-left:auto;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.copy{border:1px solid var(--line);background:var(--sheet);color:var(--ink);font:inherit;font-size:13px;font-weight:500;min-height:32px;padding:0 13px;border-radius:999px;cursor:pointer;white-space:nowrap;flex-shrink:0}
+.copy[data-done]{border-color:var(--ok);background:var(--ok-soft);color:var(--ok)}
+.field pre{margin:0;padding:12px 14px;font:inherit;font-family:var(--serif);font-size:14.5px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere;max-height:380px;overflow:auto}
+.field.latin pre{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;line-height:1.6}
+.zsheet details{margin-top:30px;border-top:1px solid var(--line);padding-top:20px}
+.zsheet summary{font-family:var(--display);font-size:19px;cursor:pointer;list-style:none}
+.zsheet summary::before{content:"▸ ";color:var(--muted)}
+.zsheet details[open] summary::before{content:"▾ "}
+.zsheet summary::-webkit-details-marker{display:none}
+.zsheet details .grp{margin-top:10px;border-top:0;padding-top:0}
+
 @media (max-width:760px){
   .wrap{padding-block:0 calc(88px + env(safe-area-inset-bottom,0px))}
   header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);margin-inline:-16px;padding:10px 16px;flex-wrap:nowrap;align-items:center;gap:12px}
   .eyebrow{display:none}
   h1{font-size:19px;margin:0;white-space:nowrap}
+  header.top>div:first-child{min-width:0;flex:1 1 auto}
+  h1{overflow:hidden;text-overflow:ellipsis}
   .tabs{flex-shrink:0}
-  .tabs button{padding:7px 13px;min-height:36px;font-size:14px}
+  .tabs button{padding:7px 11px;min-height:36px;font-size:14px;white-space:nowrap}
   .reader,.rules{grid-template-columns:1fr;gap:12px;margin-top:14px}
 
   .filters,.list{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;scroll-padding-inline:16px}
@@ -151,6 +178,10 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
   .item .s{display:none}
 
   .sheet{margin-inline:-16px;border-inline:0;border-radius:0;padding:24px 20px 32px}
+  .field pre{max-height:300px;font-size:14px}
+  .fh{flex-wrap:wrap}
+  .fh .cnt{margin-left:0}
+  .fh .copy{margin-left:auto}
   .sheet h2{font-size:22px}
   .body{line-height:1.85}
   .facts{margin:12px 0 24px;gap:4px 12px}
@@ -184,6 +215,7 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
     <div class="tabs" role="tablist">
       <button id="tab-read" role="tab" aria-selected="true" data-tab="read">읽기<span id="tab-badge"></span></button>
       <button id="tab-rules" role="tab" aria-selected="false" data-tab="rules">연습 규칙</button>
+      <button id="tab-zeta" role="tab" aria-selected="false" data-tab="zeta">제타</button>
     </div>
   </header>
 
@@ -239,10 +271,18 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
       <p class="suggest" id="suggest"></p>
     </section>
   </div>
+
+  <div id="view-zeta" class="reader" hidden>
+    <aside>
+      <div class="list" id="zlist"></div>
+    </aside>
+    <article class="sheet zsheet" id="zsheet"></article>
+  </div>
 </div>
 
 <script>
 const DATA = /*DATA*/;
+const ZETA = /*ZETA*/;
 
 const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 const inline = s => esc(s)
@@ -415,10 +455,10 @@ function drawList(){
 }
 
 // 탭
+const VIEWS = {read:"view-read", rules:"view-rules", zeta:"view-zeta"};
 document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{
   document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected", x===b));
-  document.getElementById("view-read").hidden = b.dataset.tab!=="read";
-  document.getElementById("view-rules").hidden = b.dataset.tab!=="rules";
+  for (const [k, id] of Object.entries(VIEWS)) document.getElementById(id).hidden = b.dataset.tab!==k;
   store.set("sm-tab", b.dataset.tab);
   progress();
 });
@@ -470,9 +510,100 @@ function check(){
 document.getElementById("checker").addEventListener("input", check);
 document.getElementById("checker").addEventListener("submit", e=>e.preventDefault());
 
+// 제타: 작품 목록 + 칸마다 복사 버튼
+const zstate = { w: ZETA.find(w=>w.id===store.get("zt-cur")) || ZETA[0] };
+const latin = t => (t.match(/[A-Za-z]/g)||[]).length > t.length/2;
+const splitLabel = l => { const m = l.match(/^(.+?)\s*\((.+)\)\s*$/); return m ? [m[1], m[2]] : [l, ""]; };
+function ztext(lines){
+  // 설명 글: '- ' 목록은 <ul>, 나머지는 문단. 들여쓴 '- '는 안쪽 목록
+  let html = "", depth = 0, para = [];
+  const flush = ()=>{ if (para.length){ html += `<p>${inline(para.join(" "))}</p>`; para = []; } };
+  const close = d => { while (depth > d){ html += "</ul>"; depth--; } };
+  for (const raw of lines){
+    const m = raw.match(/^(\s*)-\s+(.*)$/);
+    if (m){
+      flush();
+      const d = Math.floor(m[1].length/2) + 1;
+      if (d > depth){ while (depth < d){ html += "<ul>"; depth++; } } else close(d);
+      html += `<li>${inline(m[2])}</li>`;
+    } else if (!raw.trim()){ flush(); close(0); }
+    else { close(0); para.push(raw.trim()); }
+  }
+  flush(); close(0);
+  return html;
+}
+function zrender(){
+  const w = zstate.w, sheet = document.getElementById("zsheet");
+  if (!w){ sheet.innerHTML = '<div class="empty">아직 제타 작품 파일이 없어요.</div>'; return; }
+  const texts = [];
+  const field = i => {
+    const [label, hint] = splitLabel(i.label || "");
+    texts.push(i.text);
+    return `<div class="field ${latin(i.text)?"latin":""}">
+      <div class="fh"><b>${esc(label)}${i.sub?` › ${esc(i.sub)}`:""}</b>${hint?`<span class="hint">${esc(hint)}</span>`:""}
+        <span class="cnt">${i.text.length}자</span><button class="copy" data-c="${texts.length-1}">복사</button></div>
+      <pre>${esc(i.text)}</pre></div>`;
+  };
+  const items = g => g.items.map(i => i.kind==="field" ? field(i) : i.kind==="head" ? `<h4>${esc(i.label)}</h4>` : ztext(i.lines)).join("");
+  const grp = g => `<section class="grp"><h3>${esc(g.title)}</h3>${items(g)}</section>`;
+  const main = w.groups.filter(g=>g.items.some(i=>i.kind==="field") || /^[06]\./.test(g.title));
+  const rest = w.groups.filter(g=>!main.includes(g));
+  sheet.innerHTML = `
+    <div class="meta">
+      <span class="tag novel">제타</span>
+      ${w.genre?`<span class="tag plain">${esc(w.genre)}</span>`:""}
+      ${w.date?`<span class="tag plain">${esc(w.date)}</span>`:""}
+    </div>
+    <h2>${esc(w.name)}</h2>
+    ${w.sub?`<p class="sub">${esc(w.sub)}</p>`:""}
+    <dl class="facts">
+      ${w.mood?`<dt>분위기</dt><dd>${esc(w.mood)}</dd>`:""}
+      ${w.job?`<dt>직업·배경</dt><dd>${esc(w.job)}</dd>`:""}
+      ${w.start?`<dt>관계 시작점</dt><dd>${esc(w.start)}</dd>`:""}
+      ${w.device?`<dt>핵심 장치</dt><dd>${esc(w.device)}</dd>`:""}
+      <dt>파일</dt><dd><code>${esc(w.file)}</code></dd>
+    </dl>
+    <div class="body">
+      ${main.map(grp).join("")}
+      ${rest.map(g=>`<details><summary>${esc(g.title)}</summary><section class="grp">${items(g)}</section></details>`).join("")}
+    </div>`;
+  sheet.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>copyText(texts[+b.dataset.c], b));
+}
+async function copyText(t, btn){
+  try { await navigator.clipboard.writeText(t); }
+  catch(e){
+    const ta = document.createElement("textarea");
+    ta.value = t; ta.setAttribute("readonly",""); ta.style.cssText = "position:fixed;opacity:0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); } catch(_){}
+    ta.remove();
+  }
+  btn.dataset.done = "1"; btn.textContent = "복사됨";
+  clearTimeout(btn._t);
+  btn._t = setTimeout(()=>{ delete btn.dataset.done; btn.textContent = "복사"; }, 1500);
+}
+function zlist(){
+  const list = document.getElementById("zlist");
+  list.innerHTML = ZETA.length ? "" : '<div class="empty">아직 제타 작품 파일이 없어요.</div>';
+  for (const w of ZETA){
+    const b = document.createElement("button");
+    b.className = "item";
+    b.setAttribute("aria-current", w===zstate.w);
+    b.innerHTML = `<span class="no">${esc(w.date.slice(5) || "·")}</span><span class="t">${esc(w.name)}</span><span class="s">${esc([w.sub, w.mood.split("(")[0]].filter(Boolean).join(" · "))}</span>`;
+    b.onclick = ()=>{ zstate.w = w; store.set("zt-cur", w.id); zlist(); zrender();
+      const head = document.querySelector("header.top");
+      const y = document.getElementById("zsheet").getBoundingClientRect().top + scrollY - (getComputedStyle(head).position==="sticky" ? head.offsetHeight : 0);
+      if (scrollY > y) scrollTo({top:y, behavior: matchMedia("(prefers-reduced-motion:reduce)").matches ? "auto" : "smooth"}); };
+    list.appendChild(b);
+  }
+  const cur = list.querySelector('[aria-current="true"]');
+  if (cur && list.scrollWidth > list.clientWidth) list.scrollLeft = cur.offsetLeft - list.offsetLeft - 16;
+}
+zlist(); zrender();
+
 // 시작
 const saved = FLAT.find(f=>f.e.id===store.get("sm-cur"));
 const fs = store.get("sm-fs2"); if (fs!==null && !isNaN(+fs)) state.fs = +fs;
-if (store.get("sm-tab")==="rules" || location.hash==="#rules") document.getElementById("tab-rules").click();
+{ const t = location.hash.slice(1) || store.get("sm-tab"); const tb = t && t!=="read" && document.getElementById("tab-"+t); if (tb) tb.click(); }
 setSize(state.fs); drawFilters(); go(saved || FLAT[0], false); check();
 </script>
