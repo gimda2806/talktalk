@@ -169,8 +169,18 @@ def split_intro(text):
         kind = "내레이터" if b.startswith("@:") else "캐릭터"
         if kind == "내레이터":
             b = b[2:].strip()  # 내레이터 말풍선은 종류로 구분되므로 `@:`를 뺀다
-        out.append(dict(kind="field", label=f"{NUM[i] if i < len(NUM) else i + 2} {kind} 말풍선", sub="", text=b))
+        out.append(dict(kind="field", label=f"{NUM[i] if i < len(NUM) else i + 2} {kind} 말풍선", sub="", text=b, parts=split_parts(b)))
     return out
+
+
+def split_parts(text):
+    """말풍선 하나를 지문·대사 문단으로 나눈다. 앞머리의 `{{char}}:`·`{{user}}:`는 뺀다. 문단이 하나뿐이고 뺄 것도 없으면 빈 목록."""
+    body = re.sub(r"^(\{\{char\}\}|\{\{user\}\}|@):\s*", "", text.strip())
+    paras = [p.strip() for p in re.split(r"\n\s*\n", body) if p.strip()]
+    parts = [dict(label="지문" if p.startswith("*") and p.endswith("*") else "대사", text=p) for p in paras]
+    if len(parts) == 1 and parts[0]["text"] == text.strip():
+        return []
+    return parts
 
 
 def split_examples(text):
@@ -186,7 +196,8 @@ def split_examples(text):
     out, n = [], 0
     for kind, ls in units:
         n += kind == "유저"
-        out.append(dict(kind="field", label=f"상황 예시 {n} · {kind}", sub="", text="\n".join(ls).strip()))
+        t = "\n".join(ls).strip()
+        out.append(dict(kind="field", label=f"상황 예시 {n} · {kind}", sub="", text=t, parts=split_parts(t)))
     return out
 
 
