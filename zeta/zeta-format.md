@@ -181,7 +181,7 @@
 
 `zeta-image-prompt-rules.md` 5절의 구성 순서대로 블록을 이어 붙인다. "원문 그대로" 블록은 번역·요약·압축하지 않고 영어 원문을 통째로 넣는다.
 
-1. GLOBAL K-DRAMA IDOL LOOK BLOCK (6-1, 원문 그대로)
+1. GLOBAL K-DRAMA IDOL LOOK BLOCK (6-1, 원문 그대로) — 프로필 한 장이면 첫 문장만 `Upper body portrait for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`으로 바꿀 수 있다
 2. GLOBAL IDOL FACIAL BEAUTY FLOOR (6-2, 원문 그대로)
 3. GENDER BEAUTY AMPLIFIER 중 하나 (6-3, 원문 그대로) — 주인공 성별에 맞춰 MALE 또는 FEMALE 하나만
 4. 이 캐릭터의 FACE GEOMETRY BLOCK (6-4) — 작품마다 새로 쓴다
@@ -199,10 +199,10 @@
 
 ### 5-2. 유저 대화 프로필용 (성별 구분 없음)
 
-`{{user}}`는 성별이 드러나지 않는 뒷모습·옆모습으로만 그리므로 미모·성별 블록은 쓰지 않는다. 아래 형식을 유지한다.
+`{{user}}`는 성별이 드러나지 않는 뒷모습·옆모습으로만 그리므로 미모·성별 블록은 쓰지 않는다. 주인공과 같은 실사풍이 되도록 `zeta-image-prompt-rules.md` 6-10 유저 프로필 블록을 그대로 쓰고 괄호 안만 채운다.
 
 ```text
-Korean webtoon style, semi-realistic manhwa illustration, a young adult seen from behind and slightly from the side, gender-neutral, (작품 배경에 맞는 자세와 장소), (옷차림), face not shown, plain light gray background, soft lighting, high detail
+Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. A young adult seen from behind and slightly from the side, gender-neutral, face not shown, (작품 배경에 맞는 자세와 장소), (옷차림)(, 소품이 있을 때만 소품). Clean Korean drama cinematic texture, low saturation, low-to-mid contrast, soft diffused light, subtle filmic grain, shallow depth of field, neutral minimal background. Negative constraints: NO face, NO text, NO watermark, NO gender cues, NO exaggerated pose, NO illustration or webtoon style.
 ```
 
 ### 5-3. 한글 설명

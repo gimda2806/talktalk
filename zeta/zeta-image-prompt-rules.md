@@ -6,8 +6,8 @@
 
 ## 0. 제타 작업에서의 적용 범위
 
-- 주인공 프로필용 프롬프트: 아래 2~9번 규칙 전체를 적용한다. 캐릭터 시트가 아니라 프로필 한 장이 필요하면 7번(레이아웃 블록)은 쓰지 않고 `upper body portrait` 한 줄로 대신한다. 시트가 필요하면 7번을 쓴다.
-- 유저 대화 프로필용 프롬프트: 성별이 드러나지 않는 뒷모습·옆모습이므로 미모 블록과 성별 블록(2~4번)은 쓰지 않는다. 기존 형식(`gender-neutral`, `face not shown`)을 유지한다.
+- 주인공 프로필용 프롬프트: 아래 2~9번 규칙 전체를 적용한다. 캐릭터 시트가 아니라 프로필 한 장이 필요하면 7번(레이아웃 블록)은 쓰지 않고 `Upper body portrait, three-quarter angle, (표정)` 한 줄로 대신한다. 이때 6-1 블록의 첫 문장 `Vertical character design sheet for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`은 `Upper body portrait for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`으로 바꿔도 된다. 6-1의 나머지 문장은 그대로 둔다. 시트가 필요하면 7번을 쓴다.
+- 유저 대화 프로필용 프롬프트: 성별이 드러나지 않는 뒷모습·옆모습이므로 미모 블록과 성별 블록(2~4번)은 쓰지 않는다. 주인공과 같은 실사풍이 되도록 6-10 유저 프로필 블록을 쓴다. (옛 웹툰풍 `Korean webtoon style …` 형식은 더 쓰지 않는다)
 - 각 영문 프롬프트 바로 아래에 한글 설명을 한두 문장으로 덧붙인다. (코드블록 밖)
 - 이전 방식(`Korean webtoon style, semi-realistic manhwa illustration ...`)은 만화풍을 원할 때만 쓴다.
 
@@ -218,11 +218,19 @@ Premium neutral Korean interior with warm practical lights and controlled cool s
 Negative constraints: NO text, NO watermark, NO UI overlay, NO different identity across panels, NO same-face reuse across different characters, NO plastic high-gloss skin, NO over-smoothed wax-figure skin, NO generic passerby features, NO cheap short-drama casting, NO exaggerated facial expressions, NO screaming, NO wide-open mouth, NO unintended hair color change, NO costume drift within the same sheet, NO body-type drift within the same sheet, NO age drift, NO blurry or unsharp panels outside the controlled soft-focus intent, NO dewy glass-skin sheen, NO oily shine or highlight pooling, NO wet-look skin surface, NO dull or sallow patches anywhere on the face, NO heavy blur that erases skin texture detail, NO heavy influencer or theatrical makeup, NO long midface, NO long philtrum, NO wide nose base, NO bulbous or rounded nose tip, NO broad heavy jaw, NO bulky masseter, NO protruding ears, NO coarse brow ridge, NO receded temple hairline, NO tired hollow eyes, NO generic actor casting face, NO average commercial-model face, NO coarse or bulky facial feature, NO wrong limb count, NO merged identities.
 ```
 
+### 6-10. USER PROFILE BLOCK (유저 대화 프로필용, 성별 구분 없음)
+
+한글 설명: 주인공과 같은 실사 K-드라마 질감으로, 뒤쪽 옆모습의 젊은 성인. 얼굴과 성별이 드러나지 않는다. 괄호 안만 작품에 맞게 채우고 나머지는 그대로 둔다.
+
+```text
+Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. A young adult seen from behind and slightly from the side, gender-neutral, face not shown, (작품 배경에 맞는 자세와 장소), (옷차림)(, 소품이 있을 때만 소품). Clean Korean drama cinematic texture, low saturation, low-to-mid contrast, soft diffused light, subtle filmic grain, shallow depth of field, neutral minimal background. Negative constraints: NO face, NO text, NO watermark, NO gender cues, NO exaggerated pose, NO illustration or webtoon style.
+```
+
 ## 7. GLOBAL LITERAL GATE (생성 전 필수 검사)
 
 이미지 도구를 호출하기 전에 아래를 모두 확인한다. 하나라도 실패하면 프롬프트를 다시 만든다.
 
-- [ ] 6-1 블록이 첫 단어부터 Color response 마지막 문장까지 누락·번역·축약·동의어 없이 연속적이고 완전하다.
+- [ ] 6-1 블록이 첫 단어부터 Color response 마지막 문장까지 누락·번역·축약·동의어 없이 연속적이고 완전하다. (프로필 한 장이면 0절의 예외대로 첫 문장만 `Upper body portrait for …`로 바꿀 수 있다.)
 - [ ] 6-2 블록이 "Exceptionally refined top-tier Korean idol lead visual"부터 "average-looking or generic"까지 연속적이고 완전하다.
 - [ ] 성인 남성은 MALE을, 성인 여성은 FEMALE을 연속적이고 완전하게 포함하며 둘 다 포함하지 않는다.
 - [ ] FACE GEOMETRY가 10가지 항목을 모두 다루고, 모두 현재 캐릭터에 대한 긍정형 독립 묘사다.
@@ -230,6 +238,7 @@ Negative constraints: NO text, NO watermark, NO UI overlay, NO different identit
 - [ ] 머리, 체형, 의상이 과거 프리셋이 아닌 현재 캐릭터에서 나온다.
 - [ ] 여러 캐릭터를 만들었다면 얼굴 다양성 매트릭스가 최소 4개 항목에서 다르다. (매트릭스의 비교 문장은 이미지 프롬프트에 넣지 않는다.)
 - [ ] 시트를 만든다면 6-7 레이아웃 블록과 6-9 네거티브 블록이 완전히 포함되어 있다. (프로필 한 장이라도 6-9는 포함한다.)
+- [ ] 유저 대화 프로필용은 6-10 블록 형식이고 얼굴·성별 단서가 없다.
 - [ ] 영문 프롬프트 바로 아래에 한글 설명이 한두 문장으로 붙어 있다.
 
 ## 8. 막힐 때 점검할 것
