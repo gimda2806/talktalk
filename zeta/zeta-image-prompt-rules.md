@@ -9,7 +9,6 @@
 - 주인공 프로필용 프롬프트: 5절 구성 순서의 1~9번 블록 전체를 적용한다. 캐릭터 시트가 아니라 프로필 한 장이 필요하면 7번(레이아웃 블록)은 쓰지 않고 `Upper body portrait, three-quarter angle, (표정)` 한 줄로 대신한다. 이때 6-1 블록의 첫 문장 `Vertical character design sheet for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`은 `Upper body portrait for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`으로 바꿔도 된다. 6-1의 나머지 문장은 그대로 둔다.
 - 유저 대화 프로필용 프롬프트: 남성용과 여성용 두 개를 만든다. 주인공과 같은 블록 구성(6-1, 6-2, 6-3, 얼굴 구조, 의상, 조명, 6-9)을 쓰되 6-3은 각각 MALE/FEMALE을 넣고, 얼굴 구조는 6-10의 유저 공통 얼굴을 쓴다. 얼굴이 보이는 상반신 초상이다. 대화 프로필 설명 칸은 성별 없이 하나만 둔다. (옛 웹툰풍·뒷모습 형식은 더 쓰지 않는다)
 - 각 영문 프롬프트 바로 아래에 한글 설명을 한두 문장으로 덧붙인다. (코드블록 밖)
-- 이전 방식(`Korean webtoon style, semi-realistic manhwa illustration ...`)은 만화풍을 원할 때만 쓴다.
 
 ## 1. 레퍼런스에서 "전체 미감"만 뽑고 개인은 복제하지 않는다
 
