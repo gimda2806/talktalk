@@ -96,7 +96,7 @@ def parse_blocks(text):
 
     울타리 바로 앞의 짧은 한 줄(설정집의 제목·키워드·내용)은 칸의 부제(sub)가 된다.
     """
-    groups, cur, label, sub, buf, fence = [], None, "", "", [], False
+    groups, cur, label, sub, buf, fence, nth = [], None, "", "", [], False, 0
 
     def group(title=""):
         g = dict(title=title, items=[])
@@ -109,8 +109,12 @@ def parse_blocks(text):
                 fence = False
                 if cur["items"] and cur["items"][-1]["kind"] == "head" and cur["items"][-1]["label"] == label:
                     cur["items"].pop()  # 칸 이름으로 쓰이는 소제목은 따로 보여 주지 않는다
+                if not label:  # 소제목 없이 바로 울타리가 오는 칸(소개, 에필로그)은 묶음 이름을 쓴다
+                    label = re.sub(r"^\d+\.\s*|\s*탭\s*$", "", cur["title"])
+                if not sub and label.startswith("항목") and nth < 3:
+                    sub = ("제목", "키워드", "내용")[nth]  # 설정집 항목은 울타리 셋이 제목·키워드·내용 순서
                 cur["items"].append(dict(kind="field", label=label, sub=sub, text="\n".join(buf).strip()))
-                sub = ""
+                sub, nth = "", nth + 1
             else:
                 buf.append(line)
             continue
@@ -125,7 +129,7 @@ def parse_blocks(text):
         m = re.match(r"###\s+(.+)", line)
         if m:
             cur = cur or group()
-            label, sub = m.group(1).strip(), ""
+            label, sub, nth = m.group(1).strip(), "", 0
             cur["items"].append(dict(kind="head", label=label))
             continue
         if line.startswith("# ") or cur is None:
@@ -141,6 +145,74 @@ def parse_blocks(text):
     for g in groups:
         g["items"] = [i for i in g["items"] if i["kind"] != "text" or any(l.strip() for l in i["lines"])]
     return groups
+
+
+NUM = "②③④⑤⑥⑦⑧⑨⑩"
+
+
+def split_intro(text):
+    """인트로를 말풍선 단위로 나눈다. `@:` 문단은 한 말풍선, `{{char}}:` 문단은 이어지는 대사 문단까지 한 말풍선."""
+    bubbles = []
+    for p in re.split(r"\n\s*\n", text.strip()):
+        if not p.strip():
+            continue
+        if p.startswith(("@:", "{{char}}:")) or not bubbles:
+            bubbles.append(p)
+        else:
+            bubbles[-1] += "\n\n" + p
+    out = []
+    for i, b in enumerate(bubbles):
+        kind = "내레이터" if b.startswith("@:") else "캐릭터"
+        if kind == "내레이터":
+            b = b[2:].strip()  # 내레이터 말풍선은 종류로 구분되므로 `@:`를 뺀다
+        out.append(dict(kind="field", label=f"{NUM[i] if i < len(NUM) else i + 2} {kind} 말풍선", sub="", text=b))
+    return out
+
+
+def split_examples(text):
+    """상황 예시를 `{{user}}:` 줄과 `{{char}}:` 응답 단위로 나눈다."""
+    units = []
+    for l in text.strip().split("\n"):
+        if l.startswith("{{user}}:"):
+            units.append(["유저", [l]])
+        elif l.startswith("{{char}}:"):
+            units.append(["캐릭터", [l]])
+        elif units:
+            units[-1][1].append(l)
+    out, n = [], 0
+    for kind, ls in units:
+        n += kind == "유저"
+        out.append(dict(kind="field", label=f"상황 예시 {n} · {kind}", sub="", text="\n".join(ls).strip()))
+    return out
+
+
+def split_fields(groups):
+    """프롬프트 탭의 상황 예시와 인트로 ②~⑥을 붙여 넣는 단위로 쪼갠다. 원래 덩어리는 두지 않는다."""
+    for g in groups:
+        items = []
+        for i in g["items"]:
+            if i["kind"] == "field" and g["title"].startswith("1.") and i["label"].startswith("상황 예시"):
+                items += split_examples(i["text"]) or [i]
+            elif i["kind"] == "field" and g["title"].startswith("2.") and not i["label"].startswith("①"):
+                items += split_intro(i["text"]) or [i]
+            else:
+                items.append(i)
+        g["items"] = items
+    return groups
+
+
+def load_common():
+    """zeta-common-lorebook.md 를 목록 맨 위의 항목 하나로 만든다. 모든 작품에 연결하는 설정집이다."""
+    f = ZETA_DIR / "zeta-common-lorebook.md"
+    if not f.exists():
+        return []
+    groups = [g for g in parse_blocks(f.read_text(encoding="utf-8")) if not g["title"].startswith("글자 수")]
+    items = [i for g in groups for i in g["items"]]
+    while items and items[0]["kind"] == "text":
+        items.pop(0)
+    items.insert(0, dict(kind="text", lines=["모든 작품(플롯)에 연결해서 쓰는 상시형 규칙 모음. 설정집 탭에 항목별로 붙여 넣는다."]))
+    return [dict(id="common", file=f"zeta/{f.name}", date="", name="공통 설정집", sub="모든 작품에 연결", genre="", mood="",
+                 job="", start="", device="", groups=[dict(title="공통 설정집", items=items)])]
 
 
 def load_zeta():
@@ -162,8 +234,8 @@ def load_zeta():
             for g in groups:
                 if g["title"].startswith("4."):
                     g["items"] = items
-        works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=groups, **info))
-    return sorted(works, key=lambda w: (w["date"], w["name"]), reverse=True)
+        works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), **info))
+    return load_common() + sorted(works, key=lambda w: (w["date"], w["name"]), reverse=True)
 
 
 def main():
