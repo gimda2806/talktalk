@@ -175,13 +175,39 @@
 
 ## 5. 이미지 프롬프트 템플릿
 
+이미지 프롬프트는 주인공 프로필용과 유저 대화 프로필용 두 개만 쓴다. 규칙과 영어 원문 블록은 `zeta-image-prompt-rules.md` 하나에서 관리하며, 이 절은 그 파일을 어떻게 조립하는지만 적는다.
+
+### 5-1. 주인공 프로필용
+
+`zeta-image-prompt-rules.md` 5절의 구성 순서대로 블록을 이어 붙인다. "원문 그대로" 블록은 번역·요약·압축하지 않고 영어 원문을 통째로 넣는다.
+
+1. GLOBAL K-DRAMA IDOL LOOK BLOCK (6-1, 원문 그대로)
+2. GLOBAL IDOL FACIAL BEAUTY FLOOR (6-2, 원문 그대로)
+3. GENDER BEAUTY AMPLIFIER 중 하나 (6-3, 원문 그대로) — 주인공 성별에 맞춰 MALE 또는 FEMALE 하나만
+4. 이 캐릭터의 FACE GEOMETRY BLOCK (6-4) — 작품마다 새로 쓴다
+5. ARCHETYPE ADAPTER 또는 캐릭터 성격·소품 디자인 (6-5) — 작품의 핵심 장치(동물·소품)와 직업이 보이게
+6. HAIR / BODY / WARDROBE (6-6) — 의상 공통 품질 요건은 원문 그대로
+7. 프로필 한 장이면 레이아웃 블록(6-7) 대신 `Upper body portrait, three-quarter angle, (표정)` 한 줄. 시트가 필요할 때만 6-7 원문을 넣는다
+8. LIGHTING MODE 중 하나 (6-8)
+9. GLOBAL NEGATIVE BLOCK (6-9, 원문 그대로)
+
 ```text
-Korean webtoon style, semi-realistic manhwa illustration, upper body portrait of a (나이)-year-old Korean (man/woman), (체형), (머리 모양·색), (눈매), (피부), (표정), (옷차림), (소품), plain light gray background, soft lighting, high detail
+(6-1 원문) (6-2 원문) (6-3 MALE 또는 FEMALE 원문) Face geometry: (이 캐릭터의 얼굴 구조). Character design: (나이대·직업·성격이 드러나는 한 문장, 체형, 머리). Wardrobe: (옷차림). Props: (핵심 장치 소품, 흐릿한 배경). Upper body portrait, three-quarter angle, (표정). (6-6 의상 품질 요건 원문) (6-8 조명 모드 원문) (6-9 원문)
 ```
 
-이미지 프롬프트는 주인공 프로필용과 유저 대화 프로필용 두 개만 쓴다.
+생성 전에 `zeta-image-prompt-rules.md` 7절의 검사표(GLOBAL LITERAL GATE)를 통과해야 한다.
 
-각 이미지 프롬프트 바로 아래에 같은 내용을 한글로 풀어 쓴 설명을 한두 문장으로 덧붙인다. (코드블록 밖)
+### 5-2. 유저 대화 프로필용 (성별 구분 없음)
+
+`{{user}}`는 성별이 드러나지 않는 뒷모습·옆모습으로만 그리므로 미모·성별 블록은 쓰지 않는다. 아래 형식을 유지한다.
+
+```text
+Korean webtoon style, semi-realistic manhwa illustration, a young adult seen from behind and slightly from the side, gender-neutral, (작품 배경에 맞는 자세와 장소), (옷차림), (작품의 핵심 장치가 살짝 보이는 소품), face not shown, plain light gray background, soft lighting, high detail
+```
+
+### 5-3. 한글 설명
+
+각 영문 프롬프트 코드블록 바로 아래에 같은 내용을 한글로 풀어 쓴 설명을 한두 문장으로 덧붙인다. (코드블록 밖)
 
 ---
 
