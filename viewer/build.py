@@ -126,6 +126,10 @@ def parse_blocks(text):
         if m:
             cur, label, sub = group(m.group(1).strip()), "", ""
             continue
+        m = re.match(r"####\s+(.+)", line)
+        if m:  # 넷째 수준 소제목(남성용/여성용)은 칸 부제로
+            sub = m.group(1).strip()
+            continue
         m = re.match(r"###\s+(.+)", line)
         if m:
             cur = cur or group()
