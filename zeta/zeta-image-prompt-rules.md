@@ -7,7 +7,7 @@
 ## 0. 제타 작업에서의 적용 범위
 
 - 주인공 프로필용 프롬프트: 아래 2~9번 규칙 전체를 적용한다. 캐릭터 시트가 아니라 프로필 한 장이 필요하면 7번(레이아웃 블록)은 쓰지 않고 `Upper body portrait, three-quarter angle, (표정)` 한 줄로 대신한다. 이때 6-1 블록의 첫 문장 `Vertical character design sheet for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`은 `Upper body portrait for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`으로 바꿔도 된다. 6-1의 나머지 문장은 그대로 둔다. 시트가 필요하면 7번을 쓴다.
-- 유저 대화 프로필용 프롬프트: 성별이 드러나지 않는 뒷모습·옆모습이므로 미모 블록과 성별 블록(2~4번)은 쓰지 않는다. 주인공과 같은 실사풍이 되도록 6-10 유저 프로필 블록을 쓴다. (옛 웹툰풍 `Korean webtoon style …` 형식은 더 쓰지 않는다)
+- 유저 대화 프로필용 프롬프트: 남성용과 여성용 두 개를 만든다. 주인공과 같은 블록 구성(6-1, 6-2, 6-3, 얼굴 구조, 의상, 조명, 6-9)을 쓰되 6-3은 각각 MALE/FEMALE을 넣고, 얼굴 구조는 6-10의 유저 공통 얼굴을 쓴다. 얼굴이 보이는 상반신 초상이다. 대화 프로필 설명 칸은 성별 없이 하나만 둔다. (옛 웹툰풍·뒷모습 형식은 더 쓰지 않는다)
 - 각 영문 프롬프트 바로 아래에 한글 설명을 한두 문장으로 덧붙인다. (코드블록 밖)
 - 이전 방식(`Korean webtoon style, semi-realistic manhwa illustration ...`)은 만화풍을 원할 때만 쓴다.
 
@@ -218,12 +218,12 @@ Premium neutral Korean interior with warm practical lights and controlled cool s
 Negative constraints: NO text, NO watermark, NO UI overlay, NO different identity across panels, NO same-face reuse across different characters, NO plastic high-gloss skin, NO over-smoothed wax-figure skin, NO generic passerby features, NO cheap short-drama casting, NO exaggerated facial expressions, NO screaming, NO wide-open mouth, NO unintended hair color change, NO costume drift within the same sheet, NO body-type drift within the same sheet, NO age drift, NO blurry or unsharp panels outside the controlled soft-focus intent, NO dewy glass-skin sheen, NO oily shine or highlight pooling, NO wet-look skin surface, NO dull or sallow patches anywhere on the face, NO heavy blur that erases skin texture detail, NO heavy influencer or theatrical makeup, NO long midface, NO long philtrum, NO wide nose base, NO bulbous or rounded nose tip, NO broad heavy jaw, NO bulky masseter, NO protruding ears, NO coarse brow ridge, NO receded temple hairline, NO tired hollow eyes, NO generic actor casting face, NO average commercial-model face, NO coarse or bulky facial feature, NO wrong limb count, NO merged identities.
 ```
 
-### 6-10. USER PROFILE BLOCK (유저 대화 프로필용, 성별 구분 없음)
+### 6-10. USER PROFILE FACE (유저 대화 프로필용 공통 얼굴 구조)
 
-한글 설명: 주인공과 같은 실사 K-드라마 질감으로, 뒤쪽 옆모습의 젊은 성인. 얼굴과 성별이 드러나지 않는다. 괄호 안만 작품에 맞게 채우고 나머지는 그대로 둔다.
+한글 설명: 유저 이미지(남성용·여성용)에 공통으로 쓰는 얼굴 구조. 작고 부드러운 계란형, 긴 아몬드 눈, 좁고 높은 코, 차분하고 밝은 표정. 성별 블록(6-3)과 머리 모양만 남녀를 다르게 하고 이 얼굴 구조는 그대로 쓴다. 작품별로 바뀌는 것은 Character design의 자세·장소·옷차림(·소품)뿐이다.
 
 ```text
-Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. A young adult seen from behind and slightly from the side, gender-neutral, face not shown, (작품 배경에 맞는 자세와 장소), (옷차림)(, 소품이 있을 때만 소품). Clean Korean drama cinematic texture, low saturation, low-to-mid contrast, soft diffused light, subtle filmic grain, shallow depth of field, neutral minimal background. Negative constraints: NO face, NO text, NO watermark, NO gender cues, NO exaggerated pose, NO illustration or webtoon style.
+Face geometry: a small soft oval face with a balanced height-to-width ratio, a gently tapered clean jawline ending in a neat softly defined chin, cheekbones set moderately high with a smooth contour, long clear almond eyes with a level outer corner and crisp inner and outer corners, a soft double eyelid fold, softly straight dark brows with a gentle length, a narrow high straight nose bridge with a delicate tip, softly full lips with a clean contour and a naturally relaxed resting line, a smooth forehead with a neat natural hairline and a light side-swept fringe, and a calm baseline expression with a bright attentive composure.
 ```
 
 ## 7. GLOBAL LITERAL GATE (생성 전 필수 검사)
@@ -238,7 +238,7 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. A youn
 - [ ] 머리, 체형, 의상이 과거 프리셋이 아닌 현재 캐릭터에서 나온다.
 - [ ] 여러 캐릭터를 만들었다면 얼굴 다양성 매트릭스가 최소 4개 항목에서 다르다. (매트릭스의 비교 문장은 이미지 프롬프트에 넣지 않는다.)
 - [ ] 시트를 만든다면 6-7 레이아웃 블록과 6-9 네거티브 블록이 완전히 포함되어 있다. (프로필 한 장이라도 6-9는 포함한다.)
-- [ ] 유저 대화 프로필용은 6-10 블록 형식이고 얼굴·성별 단서가 없다.
+- [ ] 유저 대화 프로필용이 남성용·여성용 두 개이고, 각각 MALE/FEMALE 블록 원문과 6-10 얼굴 구조를 포함한다.
 - [ ] 영문 프롬프트 바로 아래에 한글 설명이 한두 문장으로 붙어 있다.
 
 ## 8. 막힐 때 점검할 것

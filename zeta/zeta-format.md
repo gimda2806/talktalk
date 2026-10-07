@@ -38,7 +38,7 @@
 
 ### 성별 겸용(BL·현대 로맨스) 만들기
 
-- `{{user}}`는 모든 칸(설명, 인트로, 상황 예시, 설정집, 이미지 프롬프트)에서 성별 구분 없이 쓴다. 남성·여성, 그·그녀 같은 표현과 성별 분기를 쓰지 않는다.
+- `{{user}}`는 모든 글 칸(설명, 인트로, 상황 예시, 설정집)에서 성별 구분 없이 쓴다. 유저 이미지만 남성용·여성용 두 장을 두어 플레이어가 고른다. 남성·여성, 그·그녀 같은 표현과 성별 분기를 쓰지 않는다.
 - 호칭은 '보호자님', '작가님'처럼 중립적으로 쓴다.
 - 대화 프로필은 성별 구분 없이 하나만 만든다. 설명에 성별을 쓰지 않는다.
 - 유저 이름은 플레이어가 직접 정한다. 어디에도 이름을 지어 넣지 않고 `{{user}}`로만 쓴다.
@@ -197,12 +197,16 @@
 
 생성 전에 `zeta-image-prompt-rules.md` 7절의 검사표(GLOBAL LITERAL GATE)를 통과해야 한다.
 
-### 5-2. 유저 대화 프로필용 (성별 구분 없음)
+### 5-2. 유저 대화 프로필용 (남성용·여성용 두 개)
 
-`{{user}}`는 성별이 드러나지 않는 뒷모습·옆모습으로만 그리므로 미모·성별 블록은 쓰지 않는다. 주인공과 같은 실사풍이 되도록 `zeta-image-prompt-rules.md` 6-10 유저 프로필 블록을 그대로 쓰고 괄호 안만 채운다.
+유저 이미지는 플레이어가 고르는 자료이므로 **남성용과 여성용 두 개**를 만든다. 대화 프로필 설명 칸은 성별 없이 하나만 둔다. 구성은 5-1과 같고, 성별 블록(6-3)만 각각 MALE/FEMALE을 넣으며 얼굴 구조는 `zeta-image-prompt-rules.md` 6-10의 유저 공통 얼굴을 쓴다. 작품별로 바뀌는 것은 자세·장소·옷차림(·소품)뿐이다.
 
 ```text
-Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. A young adult seen from behind and slightly from the side, gender-neutral, face not shown, (작품 배경에 맞는 자세와 장소), (옷차림)(, 소품이 있을 때만 소품). Clean Korean drama cinematic texture, low saturation, low-to-mid contrast, soft diffused light, subtle filmic grain, shallow depth of field, neutral minimal background. Negative constraints: NO face, NO text, NO watermark, NO gender cues, NO exaggerated pose, NO illustration or webtoon style.
+#### 남성용
+(6-1 원문) (6-2 원문) (6-3 MALE 원문) (6-10 유저 공통 얼굴) Character design: a young adult in their twenties, (작품 배경에 맞는 자세와 장소, 옷차림, 소품이 있으면 소품), short neatly cut dark brown-black hair with a light side-swept fringe. Upper body portrait, three-quarter angle facing the viewer, a calm natural expression with a small soft smile. (6-6 의상 품질 요건 원문) (6-8 조명 모드 원문, 주인공과 같은 것) (6-9 원문)
+
+#### 여성용
+(위와 같되 6-3 FEMALE 원문, 머리는 softly layered dark brown-black hair of shoulder length tucked behind one ear)
 ```
 
 ### 5-3. 한글 설명
