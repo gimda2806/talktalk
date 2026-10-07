@@ -33,6 +33,43 @@ def blocks(text):
 def clean(h):
     return re.sub(r"\s*\(.*?\)", "", h).replace('`', '').strip()
 
+NUM = ['②', '③', '④', '⑤', '⑥', '⑦', '⑧', '⑨', '⑩']
+
+
+def split_intro(text):
+    """인트로를 말풍선 단위로 나눈다. `@:` 문단은 한 말풍선, `{{char}}:` 문단은 이어지는 대사 문단까지 한 말풍선."""
+    paras = [p for p in re.split(r'\n\s*\n', text.strip()) if p.strip()]
+    bubbles = []
+    for p in paras:
+        if p.startswith('@:') or p.startswith('{{char}}:') or not bubbles:
+            bubbles.append(p)
+        else:
+            bubbles[-1] += '\n\n' + p
+    out = []
+    for i, b in enumerate(bubbles):
+        kind = '내레이터' if b.startswith('@:') else '캐릭터'
+        out.append((f"{NUM[i] if i < len(NUM) else i + 2} {kind} 말풍선", b))
+    return out
+
+
+def split_examples(text):
+    """상황 예시를 `{{user}}:` 줄과 `{{char}}:` 응답 단위로 나눈다."""
+    lines = text.strip().split('\n')
+    units, cur = [], None
+    for l in lines:
+        if l.startswith('{{user}}:'):
+            units.append(['유저', [l]]); cur = units[-1]
+        elif l.startswith('{{char}}:'):
+            units.append(['캐릭터', [l]]); cur = units[-1]
+        elif cur is not None:
+            cur[1].append(l)
+    out, n = [], 0
+    for kind, ls in units:
+        if kind == '유저':
+            n += 1
+        out.append((f"상황 예시 {n} · {kind}", '\n'.join(ls).strip()))
+    return out
+
 
 def build(plot_md, lore_md):
     tabs = {'프롬프트': [], '인트로': [], '소개': [], '설정집': [], '이미지': []}
@@ -40,9 +77,15 @@ def build(plot_md, lore_md):
     for sec, head, label, text in blocks(plot_md):
         h = clean(head)
         if sec.startswith('1.'):
-            tabs['프롬프트'].append((h, text))
+            if h.startswith('상황 예시'):
+                tabs['프롬프트'].extend(split_examples(text))
+            else:
+                tabs['프롬프트'].append((h, text))
         elif sec.startswith('2.'):
-            tabs['인트로'].append(('① 대화 프로필 선택 시점' if h.startswith('①') else '②~⑥ 인트로 (한 번에 붙여넣기)', text))
+            if h.startswith('①'):
+                tabs['인트로'].append(('① 대화 프로필 선택 시점', text))
+            else:
+                tabs['인트로'].extend(split_intro(text))
         elif sec.startswith('3.'):
             tabs['소개'].append(('소개글', text))
         elif sec.startswith('5.'):
