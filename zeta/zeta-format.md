@@ -185,14 +185,14 @@
 2. GLOBAL IDOL FACIAL BEAUTY FLOOR (6-2, 원문 그대로)
 3. GENDER BEAUTY AMPLIFIER 중 하나 (6-3, 원문 그대로) — 주인공 성별에 맞춰 MALE 또는 FEMALE 하나만
 4. 이 캐릭터의 FACE GEOMETRY BLOCK (6-4) — 작품마다 새로 쓴다
-5. ARCHETYPE ADAPTER 또는 캐릭터 성격·소품 디자인 (6-5) — 작품의 핵심 장치(동물·소품)와 직업이 보이게
+5. ARCHETYPE ADAPTER 또는 캐릭터 성격 디자인 (6-5) — 직업과 성격이 보이게. 핵심 장치(동물·소품)는 선택 사항이며, 있을 때만 넣는다
 6. HAIR / BODY / WARDROBE (6-6) — 의상 공통 품질 요건은 원문 그대로
 7. 프로필 한 장이면 레이아웃 블록(6-7) 대신 `Upper body portrait, three-quarter angle, (표정)` 한 줄. 시트가 필요할 때만 6-7 원문을 넣는다
 8. LIGHTING MODE 중 하나 (6-8)
 9. GLOBAL NEGATIVE BLOCK (6-9, 원문 그대로)
 
 ```text
-(6-1 원문) (6-2 원문) (6-3 MALE 또는 FEMALE 원문) Face geometry: (이 캐릭터의 얼굴 구조). Character design: (나이대·직업·성격이 드러나는 한 문장, 체형, 머리). Wardrobe: (옷차림). Props: (핵심 장치 소품, 흐릿한 배경). Upper body portrait, three-quarter angle, (표정). (6-6 의상 품질 요건 원문) (6-8 조명 모드 원문) (6-9 원문)
+(6-1 원문) (6-2 원문) (6-3 MALE 또는 FEMALE 원문) Face geometry: (이 캐릭터의 얼굴 구조). Character design: (나이대·직업·성격이 드러나는 한 문장, 체형, 머리). Wardrobe: (옷차림). (소품이 있을 때만) Props: (소품, 흐릿한 배경). Upper body portrait, three-quarter angle, (표정). (6-6 의상 품질 요건 원문) (6-8 조명 모드 원문) (6-9 원문)
 ```
 
 생성 전에 `zeta-image-prompt-rules.md` 7절의 검사표(GLOBAL LITERAL GATE)를 통과해야 한다.
@@ -202,7 +202,7 @@
 `{{user}}`는 성별이 드러나지 않는 뒷모습·옆모습으로만 그리므로 미모·성별 블록은 쓰지 않는다. 아래 형식을 유지한다.
 
 ```text
-Korean webtoon style, semi-realistic manhwa illustration, a young adult seen from behind and slightly from the side, gender-neutral, (작품 배경에 맞는 자세와 장소), (옷차림), (작품의 핵심 장치가 살짝 보이는 소품), face not shown, plain light gray background, soft lighting, high detail
+Korean webtoon style, semi-realistic manhwa illustration, a young adult seen from behind and slightly from the side, gender-neutral, (작품 배경에 맞는 자세와 장소), (옷차림), face not shown, plain light gray background, soft lighting, high detail
 ```
 
 ### 5-3. 한글 설명
