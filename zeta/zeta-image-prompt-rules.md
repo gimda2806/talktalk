@@ -217,7 +217,7 @@ Negative constraints: NO text, NO watermark, NO UI overlay, NO different identit
 
 ### 6-10. USER PROFILE FACE (유저 대화 프로필용 공통 얼굴 구조)
 
-한글 설명: 유저 이미지(남성용·여성용)에 공통으로 쓰는 얼굴 구조. 작고 부드러운 계란형, 긴 아몬드 눈, 좁고 높은 코, 차분하고 밝은 표정. 성별 블록(6-3)과 머리 모양만 남녀를 다르게 하고 이 얼굴 구조는 그대로 쓴다. 작품별로 바뀌는 것은 Character design의 자세·장소·옷차림(·소품)뿐이다.
+한글 설명: 유저 이미지(남성용·여성용)에 공통으로 쓰는 얼굴 구조. 주인공의 얼굴 구조(6-4)는 이 얼굴과 다르게 쓴다(같은 그림체, 다른 얼굴). 작고 부드러운 계란형, 긴 아몬드 눈, 좁고 높은 코, 차분하고 밝은 표정. 성별 블록(6-3)과 머리 모양만 남녀를 다르게 하고 이 얼굴 구조는 그대로 쓴다. 작품별로 바뀌는 것은 Character design의 자세·장소·옷차림(·소품)뿐이다.
 
 ```text
 Face geometry: a small soft oval face with a balanced height-to-width ratio, a gently tapered clean jawline ending in a neat softly defined chin, cheekbones set moderately high with a smooth contour, long clear almond eyes with a level outer corner and crisp inner and outer corners, a soft double eyelid fold, softly straight dark brows with a gentle length, a narrow high straight nose bridge with a delicate tip, softly full lips with a clean contour and a naturally relaxed resting line, a smooth forehead with a neat natural hairline and a light side-swept fringe, and a calm baseline expression with a bright attentive composure.
@@ -233,7 +233,8 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 - [ ] FACE GEOMETRY가 10가지 항목을 모두 다루고, 모두 현재 캐릭터에 대한 긍정형 독립 묘사다.
 - [ ] FACE GEOMETRY에 캐릭터 간 비교어나 미모 하향 금지 표현이 없고, `high nose bridge`, `compact facial thirds`, `delicate sculpted features` 같은 전역 기준점과 충돌하지 않는다.
 - [ ] 머리, 체형, 의상이 과거 프리셋이 아닌 현재 캐릭터에서 나온다.
-- [ ] 여러 캐릭터를 만들었다면 얼굴 다양성 매트릭스가 최소 4개 항목에서 다르다. (매트릭스의 비교 문장은 이미지 프롬프트에 넣지 않는다.)
+- [ ] 주인공의 얼굴 방향(6-4의 5가지)과 얼굴 구조가 직전 5편의 주인공과 겹치지 않는다. (비교 문장은 이미지 프롬프트에 넣지 않는다.)
+- [ ] 주인공의 얼굴 구조가 6-10 유저 공통 얼굴과 다르다. 주인공과 유저는 그림체(6-1·6-2 블록)는 같지만 얼굴은 다른 사람이어야 한다.
 - [ ] 시트를 만든다면 6-7 레이아웃 블록과 6-9 네거티브 블록이 완전히 포함되어 있다. (프로필 한 장이라도 6-9는 포함한다.)
 - [ ] 유저 대화 프로필용이 남성용·여성용 두 개이고, 각각 MALE/FEMALE 블록 원문과 6-10 얼굴 구조를 포함한다.
 - [ ] 영문 프롬프트 바로 아래에 한글 설명이 한두 문장으로 붙어 있다.
