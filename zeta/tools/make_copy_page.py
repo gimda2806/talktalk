@@ -48,6 +48,8 @@ def split_intro(text):
     out = []
     for i, b in enumerate(bubbles):
         kind = '내레이터' if b.startswith('@:') else '캐릭터'
+        if b.startswith('@:'):
+            b = b[2:].strip()  # 내레이터 말풍선은 말풍선 종류로 구분되므로 `@:`를 뺀다
         out.append((f"{NUM[i] if i < len(NUM) else i + 2} {kind} 말풍선", b))
     return out
 
