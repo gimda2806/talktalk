@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """제타 플롯 md 파일을 휴대폰에서 칸별로 복사할 수 있는 HTML 페이지로 바꾼다.
 
-사용법: python3 zeta/tools/make_copy_page.py <플롯.md> <설정집.md> <출력.html> <캐릭터이름>
+사용법: python3 zeta/tools/make_copy_page.py <플롯.md> <설정집.md> <출력.html> <캐릭터이름> [공통설정집.md]
 출력 HTML은 Artifact 도구로 게시한다. (복사 버튼은 클릭 핸들러에서 clipboard.writeText를 호출한다.)
 """
 import re, sys, json
@@ -73,7 +73,19 @@ def split_examples(text):
     return out
 
 
-def build(plot_md, lore_md):
+def lore_items(md):
+    out, count = [], {}
+    for sec, head, label, text in blocks(md):
+        h = head.strip()
+        if h.startswith('항목'):
+            n = count.get(h, 0); count[h] = n + 1
+            out.append((f"{h} · {['제목', '키워드', '내용'][n]}", text))
+        else:
+            out.append((h, text))
+    return out
+
+
+def build(plot_md, lore_md, common_md=None):
     tabs = {'프롬프트': [], '인트로': [], '소개': [], '설정집': [], '이미지': []}
     image_names = {'주인공 프로필용': '주인공 프로필', '남성용': '유저 프로필 · 남성용', '여성용': '유저 프로필 · 여성용', '유저 대화 프로필용': '유저 프로필'}
     for sec, head, label, text in blocks(plot_md):
@@ -92,20 +104,16 @@ def build(plot_md, lore_md):
             tabs['소개'].append(('소개글', text))
         elif sec.startswith('5.'):
             tabs['이미지'].append((image_names.get(h, h), text))
-    count = {}
-    for sec, head, label, text in blocks(lore_md):
-        h = head.strip()
-        if h.startswith('항목'):
-            n = count.get(h, 0); count[h] = n + 1
-            tabs['설정집'].append((f"{h} · {['제목', '키워드', '내용'][n]}", text))
-        else:
-            tabs['설정집'].append((h, text))
+    tabs['설정집'].extend(lore_items(lore_md))
+    if common_md:
+        tabs['공통 설정집'] = lore_items(common_md)
     return [{'tab': k, 'items': [{'label': a, 'text': b, 'n': len(b)} for a, b in v]} for k, v in tabs.items() if v]
 
 
 if __name__ == '__main__':
     plot, lore, out, name = sys.argv[1:5]
-    data = build(open(plot, encoding='utf-8').read(), open(lore, encoding='utf-8').read())
+    common = open(sys.argv[5], encoding='utf-8').read() if len(sys.argv) > 5 else None
+    data = build(open(plot, encoding='utf-8').read(), open(lore, encoding='utf-8').read(), common)
     html = TEMPLATE.replace('__DATA__', json.dumps(data, ensure_ascii=False).replace('</', '<\\/')).replace('__NAME__', name)
     open(out, 'w', encoding='utf-8').write(html)
     print(out, sum(len(d['items']) for d in data), '칸')
