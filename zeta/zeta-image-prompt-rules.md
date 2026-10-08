@@ -6,7 +6,7 @@
 
 ## 0. 제타 작업에서의 적용 범위
 
-- 주인공 프로필용 프롬프트: 5절 구성 순서의 1~9번 블록 전체를 적용한다. 캐릭터 시트가 아니라 프로필 한 장이 필요하면 7번(레이아웃 블록)은 쓰지 않고 `Upper body portrait, three-quarter angle, (표정)` 한 줄로 대신한다. 이때 6-1 블록의 첫 문장 `Vertical character design sheet for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`은 `Upper body portrait for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`으로 바꾼다. 시트 문장을 그대로 두면 여러 칸짜리 그림이 나올 수 있다. 6-1의 나머지 문장은 그대로 둔다.
+- 주인공 프로필용 프롬프트: 5절 구성 순서의 1~9번 블록 전체를 적용한다. 캐릭터 시트가 아니라 프로필 한 장이 필요하면 7번(레이아웃 블록)은 쓰지 않고 6-12의 구도 문장 한 줄로 대신한다. 이때 6-1 블록의 첫 문장 `Vertical character design sheet for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`은 `Upper body portrait for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`으로 바꾼다. 시트 문장을 그대로 두면 여러 칸짜리 그림이 나올 수 있다. 6-1의 나머지 문장은 그대로 둔다.
 - 유저 대화 프로필용 프롬프트: 남성용과 여성용 두 개를 만든다. 주인공과 같은 블록 구성(6-1, 6-2, 6-3, 얼굴 구조, 의상, 조명, 6-9)을 쓰되 6-3은 각각 MALE/FEMALE을 넣고, 얼굴 구조는 6-10의 유저 공통 얼굴을 쓴다. 얼굴이 보이는 상반신 초상이다. 대화 프로필 설명 칸은 성별 없이 하나만 둔다. (옛 웹툰풍·뒷모습 형식은 더 쓰지 않는다)
 - 각 영문 프롬프트 바로 아래에 한글 설명을 한두 문장으로 덧붙인다. (코드블록 밖)
 
@@ -69,7 +69,7 @@ GLOBAL IDOL FACIAL BEAUTY FLOOR는 모든 주연이 공유하는 고정 미모 �
 4. 현재 캐릭터의 독립적인 FACE GEOMETRY BLOCK
 5. ARCHETYPE ADAPTER 또는 커스텀 성격 디자인
 6. HAIR / BODY / WARDROBE VARIABLES
-7. `Upper body portrait, three-quarter angle, (표정)` 한 줄 (시트 레이아웃 블록은 제타에서 쓰지 않는다)
+7. 구도 문장 한 줄 (6-12에서 프레임·앵글·시선·자세를 골라 쓴다. 시트 레이아웃 블록은 제타에서 쓰지 않는다)
 8. LIGHTING MODE 하나
 9. GLOBAL NEGATIVE BLOCK (원문 그대로)
 
@@ -176,7 +176,7 @@ Premium contemporary Korean drama wardrobe styling, intentional silhouette, refi
 
 ### 6-7. (삭제) 시트 레이아웃 블록
 
-제타에서는 캐릭터 시트를 만들지 않으므로 레이아웃 블록을 쓰지 않는다. 이 자리에는 `Upper body portrait, three-quarter angle, (표정)` 한 줄을 넣는다.
+제타에서는 캐릭터 시트를 만들지 않으므로 레이아웃 블록을 쓰지 않는다. 이 자리에는 6-12의 구도 문장 한 줄을 넣는다.
 
 ### 6-8. LIGHTING MODES (하나 선택)
 
@@ -271,6 +271,24 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 3. **몸에 남은 흔적**: 직업이 몸에 남긴 것 하나. 손등의 기름 자국, 굳은살, 분필 가루, 안경 자국, 햇볕에 탄 목, 소매의 밀가루, 귀에 꽂은 연필.
 배경은 그 직업의 일터로 흐릿하게 두되, 세 가지 중 둘 이상이 배경 없이도 읽혀야 한다.
 
+### 6-12. COMPOSITION (구도, 주인공마다 필수)
+
+5절 7번이 `Upper body portrait, three-quarter angle, (표정)` 한 줄로 고정돼 있어 모든 주인공이 같은 프레임, 같은 앵글, 같은 시선으로 나왔다. 7번 자리에는 아래 네 축을 고른 **구도 문장**을 쓴다.
+
+| 축 | 선택지 |
+| --- | --- |
+| 프레임 | 가슴 위(chest-up) / 허리 위(waist-up) / 손과 소품이 보이는 반신(half-body with hands in frame) / 얼굴 클로즈업(tight close-up from the shoulders) |
+| 앵글 | 정면 반측면(three-quarter) / 옆얼굴에서 돌아보는(profile turning toward the camera) / 살짝 위에서 내려다보는(slight high angle) / 살짝 아래에서 올려다보는(slight low angle) / 어깨 너머(over-the-shoulder, 얼굴은 카메라 쪽) |
+| 시선 | 카메라를 봄 / 손에 든 일을 봄 / 화면 밖 옆을 봄 / 아래를 봄 |
+| 자세 | 서 있음 / 앉아 있음 / 무언가에 기대어 있음 / 동작 중(걷다 멈춤, 돌아보는 중, 손을 뻗는 중) |
+
+**규칙**
+1. 직전 5편과 프레임·앵글·시선·자세 중 **2개 이상**을 다르게 고른다.
+2. 프로필 이미지이므로 얼굴은 늘 4분의 3 이상 보여야 한다. 뒷모습, 완전한 옆얼굴, 손이나 소품으로 얼굴을 가리는 구도는 쓰지 않는다.
+3. 구도는 직업 표식(6-11)의 '손이 하는 것'과 이어진다. 손에 든 일을 보는 시선이면 그 일이 프레임 안에 있어야 한다.
+4. 조명 모드(6-8)도 직전 5편과 같은 것만 반복하지 않는다. 창가 측광(window side light), 역광 테두리(soft rim backlight), 무대·부스의 국소광(single practical light)처럼 직업 공간에서 나오는 빛을 고를 수 있다.
+5. 구도 문장 예: `Waist-up portrait seen from a slight high angle, seated at the booth desk and turned toward the camera, eyes lowered to the script in hand, a faint closed-lip smile.` 고른 축을 검수 결과에 "구도: 허리 위/살짝 위에서/손을 봄/앉음" 형식으로 적는다.
+
 ## 7. GLOBAL LITERAL GATE (생성 전 필수 검사)
 
 이미지 도구를 호출하기 전에 아래를 모두 확인한다. 하나라도 실패하면 프롬프트를 다시 만든다.
@@ -284,6 +302,7 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 - [ ] 머리, 체형, 의상이 과거 프리셋이 아닌 현재 캐릭터에서 나온다.
 - [ ] 주인공이 6-11 구분 축에서 직전 5편의 주인공 각각과 최소 2개 축이 다르고, 표식 축이 하나 이상 있으며, 고른 축을 검수 결과에 적었다. (비교 문장은 이미지 프롬프트에 넣지 않는다.)
 - [ ] 직업이 보이게 하는 세 가지(입은 것, 손이 도구를 쓰는 동작, 몸에 남은 흔적)가 프롬프트에 모두 있다.
+- [ ] 구도(6-12)가 직전 5편과 프레임·앵글·시선·자세 중 2개 이상 다르고, 얼굴이 4분의 3 이상 보이며, 고른 축을 검수 결과에 적었다.
 - [ ] 주인공의 얼굴 구조가 6-10 유저 공통 얼굴과 다르다. 주인공과 유저는 그림체(6-1·6-2 블록)는 같지만 얼굴은 다른 사람이어야 한다.
 - [ ] 6-9 네거티브 블록이 원문 그대로 완전히 포함되어 있다.
 - [ ] 유저 대화 프로필용이 남성용·여성용 두 개이고, 각각 MALE/FEMALE 블록 원문과 6-10 얼굴 구조를 포함한다.
