@@ -222,6 +222,8 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 
 직업은 옷과 소품이 아니라 얼굴 나이, 몸, 피부, 표정에 먼저 남는다. 6-1·6-3 블록이 모든 인물을 "젊고 앳된 아이돌"로 밀기 때문에, 그대로 두면 호텔 대표도 원장도 20대 초반 얼굴로 나온다. 주인공마다 아래 여섯 가지를 직업에서 먼저 뽑고, 그 결과로 구분 축의 값을 정한다.
 
+아래 표는 **기본값**이지 의무가 아니다. 일부러 비트는 것은 캐릭터의 매력(겉과 속의 간극)이 된다. 단정한 도예가, 날티 나는데 알고 보니 스타트업 대표, 운동선수 같은 사서처럼 직업과 어긋나는 인상은 환영한다. 다만 **우연이 아니라 결정**이어야 한다. 비틀었으면 검수 결과에 "반전: 손질 흐트러짐(스타트업 대표)"처럼 적고, 그 어긋남이 플롯의 겉과 속 설계와 이어지게 한다. 여섯 가지 중 **나이 인상만은 비틀지 않는다.** 설정 나이가 30대면 얼굴도 30대로 읽혀야 하고, 책임 있는 자리의 인물이 앳되게 나오면 실패다.
+
 | 항목 | 직업에 따라 달라지는 것 | 예 |
 | --- | --- | --- |
 | 나이 인상 | 대표·원장·교수·셰프·팀장처럼 책임이 있는 자리는 성숙한 어른 얼굴, 아르바이트·신인·조수는 앳되게. 설정 나이와 얼굴 나이가 맞아야 한다 | 33세 호텔 대표는 "30대 중반으로 또렷이 읽히는 얼굴", 24세 신인 가수는 "20대 초반" |
@@ -234,7 +236,7 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 - **나이 인상이 성숙 쪽이면 6-1·6-3의 "앳됨" 구절을 바꿔 쓴다.** 6-1의 `Youthful Korean idol energy — fresh-faced, polished and camera-ready, never juvenile, never ordinary, never a generic passerby.` → `Mature Korean idol-actor presence — a settled adult face, polished and camera-ready, never boyish, never juvenile, never ordinary, never a generic passerby.` 6-3 MALE의 `youthful adult freshness` → `settled adult maturity`. Character design 첫 문장에 얼굴 나이를 직접 쓴다. 예: `reads clearly as a man in his mid-thirties with a settled adult face`.
 - 피부·혈색이 야외 쪽이면 6-1의 `luminously cool white porcelain complexion` → `lightly sun-kissed complexion with healthy warmth`로 바꾼다(6-11의 피부 톤 세 번째 선택지).
 - 체격이 몸 쓰는 직업이면 Character design에 `athletic build with solid shoulders and strong forearms`처럼 분명히 쓴다. 6-3의 작은 두상·마른 어깨선 묘사가 이를 덮지 않게 한다.
-- 검수 결과의 이미지 항목에 "직업 인상: 나이/손질/체격/피부/표정/머리" 여섯 칸을 적는다. 같은 직업군끼리도 이 여섯 칸이 겹치지 않게 한다.
+- 검수 결과의 이미지 항목에 "직업 인상: 나이/손질/체격/피부/표정/머리" 여섯 칸을 적고, 기본값과 다르게 비튼 칸은 "(반전)"을 붙인다. 같은 직업군끼리도 이 여섯 칸이 겹치지 않게 한다.
 
 6-4의 얼굴 방향은 형용사 차이라서 이미지 생성기가 거의 구분하지 못한다. 57편을 만들어 보니 모든 주인공이 "검은 머리, 또렷한 쌍꺼풀, 작은 계란형 얼굴, 쿨 포슬린 피부"로 수렴해 같은 얼굴이 나왔다. 그래서 생성기가 실제로 다르게 그리는 **구분 축**을 따로 둔다.
 
@@ -274,7 +276,7 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 이미지 도구를 호출하기 전에 아래를 모두 확인한다. 하나라도 실패하면 프롬프트를 다시 만든다.
 
 - [ ] 6-1 블록이 첫 단어부터 Color response 마지막 문장까지 누락·번역·축약·동의어 없이 연속적이고 완전하다. (예외: 프로필 한 장이면 0절대로 첫 문장만 `Upper body portrait for …`로 바꾼다. 6-11에서 눈꺼풀·피부 톤·나이 인상을 달리 고르면 그 구절만 6-11의 표현으로 바꾼다.)
-- [ ] 직업에서 뽑은 여섯 가지 인상(나이·손질·체격·피부·표정·머리)이 프롬프트에 반영됐고, 특히 책임 있는 자리의 인물이 앳되게 보이지 않도록 얼굴 나이를 Character design에 직접 썼다.
+- [ ] 직업에서 뽑은 여섯 가지 인상(나이·손질·체격·피부·표정·머리)을 정했고(기본값 또는 의도한 반전), 반전은 검수 결과에 표시했으며, 얼굴 나이는 설정 나이에 맞게 Character design에 직접 썼다.
 - [ ] 6-2 블록이 "Exceptionally refined top-tier Korean idol lead visual"부터 "average-looking or generic"까지 연속적이고 완전하다.
 - [ ] 성인 남성은 MALE을, 성인 여성은 FEMALE을 연속적이고 완전하게 포함하며 둘 다 포함하지 않는다.
 - [ ] FACE GEOMETRY가 10가지 항목을 모두 다루고, 모두 현재 캐릭터에 대한 긍정형 독립 묘사다.
