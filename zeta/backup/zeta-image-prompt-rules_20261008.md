@@ -123,7 +123,7 @@ For an adult female character: exceptionally beautiful top-tier Korean idol-actr
 2. 턱 각도
 3. 광대 위치
 4. 눈 길이와 방향
-5. 쌍꺼풀 구조 (6-11의 눈꺼풀 축에서 고른 것과 같아야 한다)
+5. 쌍꺼풀 구조
 6. 눈썹 굵기와 방향
 7. 콧대와 코끝 구조
 8. 입술 모양
@@ -160,11 +160,11 @@ For an adult female character: exceptionally beautiful top-tier Korean idol-actr
 
 현재 캐릭터가 정하며 이전 캐릭터에게서 물려받지 않는다.
 
-- 머리색과 스타일 (6-11의 구분 축에서 고른다)
+- 머리색과 스타일
 - 키, 어깨너비, 근육량, 머리-몸 비율, 자세
 - 직업, 사회적 지위, 생활 방식
 - 의상 스타일, 색, 레이어링, 소재, 신발, 액세서리, 노출 수준
-- 캐릭터 고유 표정과 소품 (6-11의 '직업이 보이게 하는 세 가지'를 포함한다)
+- 캐릭터 고유 표정과 소품
 
 의상의 공통 품질 요건 (원문 그대로):
 
@@ -216,74 +216,17 @@ Negative constraints: NO text, NO watermark, NO UI overlay, NO different identit
 Face geometry: a small soft oval face with a balanced height-to-width ratio, a gently tapered clean jawline ending in a neat softly defined chin, cheekbones set moderately high with a smooth contour, long clear almond eyes with a level outer corner and crisp inner and outer corners, a soft double eyelid fold, softly straight dark brows with a gentle length, a narrow high straight nose bridge with a delicate tip, softly full lips with a clean contour and a naturally relaxed resting line, a smooth forehead with a neat natural hairline and a light side-swept fringe, and a calm baseline expression with a bright attentive composure.
 ```
 
-### 6-11. VISIBLE DIFFERENTIATORS (눈에 보이는 구분 축, 주인공마다 필수)
-
-**직업이 외모와 분위기에 남기는 것 (구분 축을 고르기 전에 먼저 정한다)**
-
-직업은 옷과 소품이 아니라 얼굴 나이, 몸, 피부, 표정에 먼저 남는다. 6-1·6-3 블록이 모든 인물을 "젊고 앳된 아이돌"로 밀기 때문에, 그대로 두면 호텔 대표도 원장도 20대 초반 얼굴로 나온다. 주인공마다 아래 여섯 가지를 직업에서 먼저 뽑고, 그 결과로 구분 축의 값을 정한다.
-
-아래 표는 **기본값**이지 의무가 아니다. 일부러 비트는 것은 캐릭터의 매력(겉과 속의 간극)이 된다. 단정한 도예가, 날티 나는데 알고 보니 스타트업 대표, 운동선수 같은 사서처럼 직업과 어긋나는 인상은 환영한다. 다만 **우연이 아니라 결정**이어야 한다. 비틀었으면 검수 결과에 "반전: 손질 흐트러짐(스타트업 대표)"처럼 적고, 그 어긋남이 플롯의 겉과 속 설계와 이어지게 한다. 여섯 가지 중 **나이 인상만은 비틀지 않는다.** 설정 나이가 30대면 얼굴도 30대로 읽혀야 하고, 책임 있는 자리의 인물이 앳되게 나오면 실패다.
-
-| 항목 | 직업에 따라 달라지는 것 | 예 |
-| --- | --- | --- |
-| 나이 인상 | 대표·원장·교수·셰프·팀장처럼 책임이 있는 자리는 성숙한 어른 얼굴, 아르바이트·신인·조수는 앳되게. 설정 나이와 얼굴 나이가 맞아야 한다 | 33세 호텔 대표는 "30대 중반으로 또렷이 읽히는 얼굴", 24세 신인 가수는 "20대 초반" |
-| 손질 정도 | 규정이 있는 직업은 정갈(올백·매끈한 면도·다림질), 창작·현장 직업은 자연스럽게 흐트러짐 | 은행원·승무원: 정갈 / 보컬 트레이너·도예가: 손으로 쓸어 넘긴 머리 |
-| 체격·자세 | 앉아서 일하면 마르고 곧은 선, 몸 쓰는 직업은 어깨·팔이 탄탄하고 손목이 굵음 | 정비사·택배 기사·구조대원: 탄탄한 어깨 / 사서·편집자: 마르고 긴 선 |
-| 피부·혈색 | 실내 직업은 창백하고 고름, 야외·현장 직업은 밝게 그을리고 혈색이 있음 | 사서·은행원: 쿨 포슬린 / 정비사·수영 강사: 밝게 그을린 톤 |
-| 표정 기본값 | 서비스직은 입꼬리가 올라간 채 멈춤, 전문직은 침착한 무표정, 교사·훈련사는 눈이 먼저 웃음, 대표는 시선이 무거움 | 은행원: 절제된 미소 / 대표: 무게 있는 시선 / 트레이너: 평가하는 눈 |
-| 머리 규정 | 제복·규정 직업은 귀를 드러낸 짧은 머리, 예술·자영업은 길이와 스타일이 자유 | 승무원·은행원: 귀 드러남 / 웹툰 작가·셰프: 묶거나 흐트러짐 |
-
-- **나이 인상이 성숙 쪽이면 6-1·6-3의 "앳됨" 구절을 바꿔 쓴다.** 6-1의 `Youthful Korean idol energy — fresh-faced, polished and camera-ready, never juvenile, never ordinary, never a generic passerby.` → `Mature Korean idol-actor presence — a settled adult face, polished and camera-ready, never boyish, never juvenile, never ordinary, never a generic passerby.` 6-3 MALE의 `youthful adult freshness` → `settled adult maturity`. Character design 첫 문장에 얼굴 나이를 직접 쓴다. 예: `reads clearly as a man in his mid-thirties with a settled adult face`.
-- 피부·혈색이 야외 쪽이면 6-1의 `luminously cool white porcelain complexion` → `lightly sun-kissed complexion with healthy warmth`로 바꾼다(6-11의 피부 톤 세 번째 선택지).
-- 체격이 몸 쓰는 직업이면 Character design에 `athletic build with solid shoulders and strong forearms`처럼 분명히 쓴다. 6-3의 작은 두상·마른 어깨선 묘사가 이를 덮지 않게 한다.
-- 검수 결과의 이미지 항목에 "직업 인상: 나이/손질/체격/피부/표정/머리" 여섯 칸을 적고, 기본값과 다르게 비튼 칸은 "(반전)"을 붙인다. 같은 직업군끼리도 이 여섯 칸이 겹치지 않게 한다.
-
-6-4의 얼굴 방향은 형용사 차이라서 이미지 생성기가 거의 구분하지 못한다. 57편을 만들어 보니 모든 주인공이 "검은 머리, 또렷한 쌍꺼풀, 작은 계란형 얼굴, 쿨 포슬린 피부"로 수렴해 같은 얼굴이 나왔다. 그래서 생성기가 실제로 다르게 그리는 **구분 축**을 따로 둔다.
-
-| 축 | 선택지 |
-| --- | --- |
-| 머리색 | 검정 / 흑갈색 / 짙은 갈색 / 짙은 애쉬 브라운 (밝은 갈색·금발은 쓰지 않는다, 8절) |
-| 머리 길이 | 옆을 짧게 친 투블럭 / 귀를 덮는 중간 길이 / 목에 닿는 장발 |
-| 머리 스타일 | 앞머리를 내림 / 이마를 드러낸 올백·업스타일 / 가르마(2:8, 5:5) / 자연 곱슬·파마 |
-| 눈꺼풀 | 또렷한 쌍꺼풀 / 속쌍꺼풀(hooded inner double eyelid) / 홑꺼풀(long clean monolid eyes) |
-| 눈꼬리 | 올라감 / 수평 / 내려감 |
-| 얼굴형 | 계란형 / 깔끔하게 각진 턱(clean angular jaw) / 긴 얼굴 / 부드럽게 둥근 턱 |
-| 표식 | 안경(테 종류까지) / 눈 밑·입가의 작은 점 / 보조개 / 눈썹 끝의 작은 흉터 / 옅은 주근깨 (수염은 턱수염·콧수염·stubble 모두 쓰지 않는다) |
-| 피부 톤 | 쿨 포슬린(cool white porcelain) / 밝은 웜 아이보리(luminous warm ivory) / 밝게 그을린 톤(lightly sun-kissed with healthy warmth, 야외·현장 직업) |
-| 체격 | 마르고 긴 / 어깨 넓고 탄탄한 / 중간 |
-| 직업 표식 | 아래 "직업이 보이게 하는 세 가지" |
-
-**규칙**
-1. 주인공은 **직전 5편의 주인공 각각과 최소 2개 축**이 다르다. 머리 한 축만 다른 것은 "같은 얼굴에 머리만 바꾼 것"이라 인정하지 않는다(3절).
-2. 표식 축은 작품마다 하나 이상 넣는다. 점·보조개·안경·작은 흉터처럼 작은 표식이 얼굴을 기억하게 만든다. 수염은 어떤 형태로도 쓰지 않는다.
-3. 눈꺼풀·피부 톤·나이 인상을 기본값 외로 고르면 6-1·6-3 블록의 해당 구절만 아래처럼 바꿔 쓴다. 그 밖의 문장은 그대로 둔다.
-   - `deep naturally defined double eyelids` → `clean hooded inner double eyelids` 또는 `long clean monolid eyes with crisp corners`
-   - `luminously cool white porcelain complexion` → `luminously warm ivory complexion` 또는 `lightly sun-kissed complexion with healthy warmth`
-   - `Youthful Korean idol energy — fresh-faced, polished and camera-ready, never juvenile,` → `Mature Korean idol-actor presence — a settled adult face, polished and camera-ready, never boyish, never juvenile,` (6-3 MALE의 `youthful adult freshness` → `settled adult maturity`)
-   - 조명 블록 끝의 `skin must remain cool porcelain-white, never warm yellow`도 피부 톤에 맞게 `skin remains luminous warm ivory, never sallow`로 바꾼다.
-4. 고른 축을 검수 결과의 이미지 항목에 적는다. 예: "직업 인상: 성숙한 30대 중반/자연스러운 손질/마르고 곧음/실내 밝은 톤/평가하는 눈/자유 · 구분 축: 짙은 애쉬 브라운 중간 길이 쓸어 넘김 / 속쌍꺼풀 / 각진 턱 / 눈 밑 점 / 웜 아이보리". 다음 작품은 이 기록과 대조한다.
-
-**직업이 보이게 하는 세 가지 (6-6과 함께, 주인공마다 필수)**
-
-얼굴만 아이돌이고 배경에 소품 하나 놓인 사진은 어느 직업으로도 보인다. 직업은 세 겹으로 넣는다.
-1. **입은 것**: 그 직업만의 복장 한 가지. 명찰·조끼·앞치마·작업복·사원증 끈·가운처럼 입거나 걸친 것.
-2. **손이 하는 것**: 직업 도구를 손에 쥐고 **그 도구를 쓰는 동작** 중에 찍힌 자세. 들고만 있지 않는다. 예: 보컬 트레이너는 한 손을 들어 음을 짚어 주는 동작, 정비사는 장갑을 벗는 중, 사서는 날짜 도장을 면지에 찍는 중, 은행원은 번호표 뒷면에 볼펜을 대는 중.
-3. **몸에 남은 흔적**: 직업이 몸에 남긴 것 하나. 손등의 기름 자국, 굳은살, 분필 가루, 안경 자국, 햇볕에 탄 목, 소매의 밀가루, 귀에 꽂은 연필.
-배경은 그 직업의 일터로 흐릿하게 두되, 세 가지 중 둘 이상이 배경 없이도 읽혀야 한다.
-
 ## 7. GLOBAL LITERAL GATE (생성 전 필수 검사)
 
 이미지 도구를 호출하기 전에 아래를 모두 확인한다. 하나라도 실패하면 프롬프트를 다시 만든다.
 
-- [ ] 6-1 블록이 첫 단어부터 Color response 마지막 문장까지 누락·번역·축약·동의어 없이 연속적이고 완전하다. (예외: 프로필 한 장이면 0절대로 첫 문장만 `Upper body portrait for …`로 바꾼다. 6-11에서 눈꺼풀·피부 톤·나이 인상을 달리 고르면 그 구절만 6-11의 표현으로 바꾼다.)
-- [ ] 직업에서 뽑은 여섯 가지 인상(나이·손질·체격·피부·표정·머리)을 정했고(기본값 또는 의도한 반전), 반전은 검수 결과에 표시했으며, 얼굴 나이는 설정 나이에 맞게 Character design에 직접 썼다.
+- [ ] 6-1 블록이 첫 단어부터 Color response 마지막 문장까지 누락·번역·축약·동의어 없이 연속적이고 완전하다. (프로필 한 장이면 0절의 예외대로 첫 문장만 `Upper body portrait for …`로 바꾼다.)
 - [ ] 6-2 블록이 "Exceptionally refined top-tier Korean idol lead visual"부터 "average-looking or generic"까지 연속적이고 완전하다.
 - [ ] 성인 남성은 MALE을, 성인 여성은 FEMALE을 연속적이고 완전하게 포함하며 둘 다 포함하지 않는다.
 - [ ] FACE GEOMETRY가 10가지 항목을 모두 다루고, 모두 현재 캐릭터에 대한 긍정형 독립 묘사다.
 - [ ] FACE GEOMETRY에 캐릭터 간 비교어나 미모 하향 금지 표현이 없고, `high nose bridge`, `compact facial thirds`, `delicate sculpted features` 같은 전역 기준점과 충돌하지 않는다.
 - [ ] 머리, 체형, 의상이 과거 프리셋이 아닌 현재 캐릭터에서 나온다.
-- [ ] 주인공이 6-11 구분 축에서 직전 5편의 주인공 각각과 최소 2개 축이 다르고, 표식 축이 하나 이상 있으며, 고른 축을 검수 결과에 적었다. (비교 문장은 이미지 프롬프트에 넣지 않는다.)
-- [ ] 직업이 보이게 하는 세 가지(입은 것, 손이 도구를 쓰는 동작, 몸에 남은 흔적)가 프롬프트에 모두 있다.
+- [ ] 주인공의 얼굴 방향(6-4의 5가지)과 얼굴 구조가 직전 5편의 주인공과 겹치지 않는다. (비교 문장은 이미지 프롬프트에 넣지 않는다.)
 - [ ] 주인공의 얼굴 구조가 6-10 유저 공통 얼굴과 다르다. 주인공과 유저는 그림체(6-1·6-2 블록)는 같지만 얼굴은 다른 사람이어야 한다.
 - [ ] 6-9 네거티브 블록이 원문 그대로 완전히 포함되어 있다.
 - [ ] 유저 대화 프로필용이 남성용·여성용 두 개이고, 각각 MALE/FEMALE 블록 원문과 6-10 얼굴 구조를 포함한다.
@@ -292,6 +235,6 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 ## 8. 막힐 때 점검할 것
 
 - 눈동자가 푸른색·청록색으로 나오면 `dark brown eyes`만으로는 부족하다. 눈 모양(쌍꺼풀 구조, 눈매 방향)을 FACE GEOMETRY에서 구체적으로 쓴다.
-- 머리색을 `light brown`으로 쓰면 서구 이미지가 섞이기 쉽다. 검은빛 도는 갈색, 짙은 애쉬 브라운, 검은색 계열로 쓴다.
+- 머리색을 `light brown`으로 쓰면 서구 이미지가 섞이기 쉽다. 검은빛 도는 갈색이나 검은색 계열로 쓴다.
 - `shallow depth of field`, `85mm`, `film-like` 같은 화보 문구만 더하면 보정된 모델 컷이 된다. 소프트 포커스와 색 반응은 6-1 블록으로 통제한다.
 - 번들거림이 남으면 6-1의 피부 단락과 6-9의 Skin 항목이 빠지지 않았는지 확인한다.
