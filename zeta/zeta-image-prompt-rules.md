@@ -228,14 +228,14 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 | 눈꺼풀 | 또렷한 쌍꺼풀 / 속쌍꺼풀(hooded inner double eyelid) / 홑꺼풀(long clean monolid eyes) |
 | 눈꼬리 | 올라감 / 수평 / 내려감 |
 | 얼굴형 | 계란형 / 깔끔하게 각진 턱(clean angular jaw) / 긴 얼굴 / 부드럽게 둥근 턱 |
-| 표식 | 안경(테 종류까지) / 눈 밑·입가의 작은 점 / 보조개 / 옅게 다듬은 턱수염(light trimmed stubble) / 눈썹의 작은 흉터 / 옅은 주근깨 |
+| 표식 | 안경(테 종류까지) / 눈 밑·입가의 작은 점 / 보조개 / 눈썹 끝의 작은 흉터 / 옅은 주근깨 (수염은 턱수염·콧수염·stubble 모두 쓰지 않는다) |
 | 피부 톤 | 쿨 포슬린(cool white porcelain) / 밝은 웜 아이보리(luminous warm ivory) |
 | 체격 | 마르고 긴 / 어깨 넓고 탄탄한 / 중간 |
 | 직업 표식 | 아래 "직업이 보이게 하는 세 가지" |
 
 **규칙**
 1. 주인공은 **직전 5편의 주인공 각각과 최소 2개 축**이 다르다. 머리 한 축만 다른 것은 "같은 얼굴에 머리만 바꾼 것"이라 인정하지 않는다(3절).
-2. 표식 축은 작품마다 하나 이상 넣는다. 점·보조개·안경·수염처럼 작은 표식이 얼굴을 기억하게 만든다.
+2. 표식 축은 작품마다 하나 이상 넣는다. 점·보조개·안경·작은 흉터처럼 작은 표식이 얼굴을 기억하게 만든다. 수염은 어떤 형태로도 쓰지 않는다.
 3. 눈꺼풀과 피부 톤을 쌍꺼풀·쿨 포슬린 외로 고르면 6-1 블록의 해당 구절을 아래처럼 바꿔 쓴다. 그 밖의 6-1 문장은 그대로 둔다.
    - `deep naturally defined double eyelids` → `clean hooded inner double eyelids` 또는 `long clean monolid eyes with crisp corners`
    - `luminously cool white porcelain complexion` → `luminously warm ivory complexion`
