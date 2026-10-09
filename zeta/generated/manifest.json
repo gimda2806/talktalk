@@ -137,6 +137,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "75ff008a22da"
+    },
+    {
+      "file": "baek-seoyul-noh-chanyoung-cameo.png",
+      "label": "카메오 · 〈느린빛 골목 상가 건물〉 · 계단의 거북이",
+      "prompt": "카메오",
+      "prompt_sha": "b3a822430d23",
+      "with": "백서율"
     }
   ],
   "zeta_069_최서완": [
@@ -277,6 +284,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "cf909df522f7"
+    },
+    {
+      "file": "baek-seoyul-noh-chanyoung-cameo.png",
+      "label": "카메오 · 〈느린빛 골목 상가 건물〉 · 계단의 거북이",
+      "prompt": "카메오",
+      "prompt_sha": "b3a822430d23",
+      "with": "노찬영"
     }
   ],
   "zeta_004_석한결": [
