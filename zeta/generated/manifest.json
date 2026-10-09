@@ -125,6 +125,18 @@
       "label": "주인공 노찬영",
       "prompt": "주인공",
       "prompt_sha": "f0a522e3e579"
+    },
+    {
+      "file": "noh-chanyoung-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "8ba4fac1ac5a"
+    },
+    {
+      "file": "noh-chanyoung-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "75ff008a22da"
     }
   ],
   "zeta_20261009_최서완": [
@@ -145,6 +157,146 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "95e6040e4111"
+    }
+  ],
+  "zeta_20261009_목유한": [
+    {
+      "file": "mok-yuhan-main.png",
+      "label": "주인공 목유한",
+      "prompt": "주인공",
+      "prompt_sha": "8709bf8a3150"
+    },
+    {
+      "file": "mok-yuhan-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "4041dd856e98"
+    },
+    {
+      "file": "mok-yuhan-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "de6e11db7798"
+    }
+  ],
+  "zeta_20261006_독고다온": [
+    {
+      "file": "dokgo-daon-main.png",
+      "label": "주인공 독고다온",
+      "prompt": "주인공",
+      "prompt_sha": "e2eed56dd152"
+    },
+    {
+      "file": "dokgo-daon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "31a65b4fe756"
+    },
+    {
+      "file": "dokgo-daon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "2553f28537e0"
+    }
+  ],
+  "zeta_20261006_맹이안": [
+    {
+      "file": "maeng-ian-main.png",
+      "label": "주인공 맹이안",
+      "prompt": "주인공",
+      "prompt_sha": "352c7633643d"
+    },
+    {
+      "file": "maeng-ian-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "dd099eb78ce3"
+    },
+    {
+      "file": "maeng-ian-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "2f9487397f16"
+    }
+  ],
+  "zeta_20261006_문이든": [
+    {
+      "file": "moon-ideun-main.png",
+      "label": "주인공 문이든",
+      "prompt": "주인공",
+      "prompt_sha": "fb908ed8e0b7"
+    },
+    {
+      "file": "moon-ideun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "0c22aaea4113"
+    },
+    {
+      "file": "moon-ideun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "81f6a38234ff"
+    }
+  ],
+  "zeta_20261006_방우진": [
+    {
+      "file": "bang-woojin-main.png",
+      "label": "주인공 방우진",
+      "prompt": "주인공",
+      "prompt_sha": "b1cda7628a78"
+    },
+    {
+      "file": "bang-woojin-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "597b089e7e07"
+    },
+    {
+      "file": "bang-woojin-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "c9df40be09b3"
+    }
+  ],
+  "zeta_20261006_백서율": [
+    {
+      "file": "baek-seoyul-main.png",
+      "label": "주인공 백서율",
+      "prompt": "주인공",
+      "prompt_sha": "cae28c5658ef"
+    },
+    {
+      "file": "baek-seoyul-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "6b22b74b3c35"
+    },
+    {
+      "file": "baek-seoyul-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "cf909df522f7"
+    }
+  ],
+  "zeta_20261006_석한결": [
+    {
+      "file": "seok-hangyeol-main.png",
+      "label": "주인공 석한결",
+      "prompt": "주인공",
+      "prompt_sha": "d92f8a981c2b"
+    },
+    {
+      "file": "seok-hangyeol-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "cf325e111919"
+    },
+    {
+      "file": "seok-hangyeol-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "36fb215391c8"
     }
   ]
 }
