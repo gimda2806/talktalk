@@ -1751,6 +1751,12 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "aba68d02d950"
+    },
+    {
+      "file": "cha-seungmin-supporting-lead.png",
+      "label": "조연 · 차승민 · 서브 남주",
+      "prompt": "조연",
+      "prompt_sha": "b75ed6e52f27"
     }
   ],
   "zeta_088_신솔": [
@@ -1771,6 +1777,46 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "321f11de1405"
+    }
+  ],
+  "zeta_087_진해원": [
+    {
+      "file": "jin-haewon-main.png",
+      "label": "주인공 진해원",
+      "prompt": "주인공",
+      "prompt_sha": "ff5072d0c2f8"
+    },
+    {
+      "file": "jin-haewon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "fbe73c4d2fd8"
+    },
+    {
+      "file": "jin-haewon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "5a21b6529385"
+    }
+  ],
+  "zeta_091_서겨울": [
+    {
+      "file": "seo-gyeoul-main.png",
+      "label": "주인공 서겨울",
+      "prompt": "주인공",
+      "prompt_sha": "1832df2ef363"
+    },
+    {
+      "file": "seo-gyeoul-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "3ef68eda806f"
+    },
+    {
+      "file": "seo-gyeoul-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "f2120146d5ab"
     }
   ]
 }

@@ -135,7 +135,11 @@ def main(argv):
         if not sha:
             print(f"프롬프트 블록을 찾지 못함: zeta/{stem}.md · {kind}")
             return 2
-        label = f"주인공 {name}" if kind == "주인공" else ("유저 프로필 · 남성" if kind == "남성용" else "유저 프로필 · 여성")
+        if kind == "조연":
+            h = re.search(r"^### 조연 프로필용 \(([^)\n]*)\)", (ZETA_DIR / f"{stem}.md").read_text(encoding="utf-8"), re.M)
+            label = f"조연 · {h.group(1).strip()}" if h else "조연"
+        else:
+            label = f"주인공 {name}" if kind == "주인공" else ("유저 프로필 · 남성" if kind == "남성용" else "유저 프로필 · 여성")
         item = dict(file=file, label=label, prompt=kind, prompt_sha=sha)
         items = [i for i in rows.get(stem, []) if guess_kind(i) != kind]
     items.append(item)
