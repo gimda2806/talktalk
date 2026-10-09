@@ -1038,6 +1038,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "5a100f6ea91b"
+    },
+    {
+      "file": "seo-jinho-kim-sandeul-cameo.png",
+      "label": "카메오 · 〈상암 방송가〉 · 구내식당의 아침",
+      "prompt": "카메오",
+      "prompt_sha": "388fba3d5182",
+      "with": "김산들"
     }
   ],
   "zeta_032_한도겸": [
@@ -1298,6 +1305,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "4763495bd0a2"
+    },
+    {
+      "file": "seo-jinho-kim-sandeul-cameo.png",
+      "label": "카메오 · 〈상암 방송가〉 · 구내식당의 아침",
+      "prompt": "카메오",
+      "prompt_sha": "388fba3d5182",
+      "with": "서진호"
     }
   ],
   "zeta_048_변건우": [
