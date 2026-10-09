@@ -217,11 +217,36 @@ Negative constraints: NO text, NO watermark, NO UI overlay, NO different identit
 
 ### 6-10. USER PROFILE FACE (유저 대화 프로필용 공통 얼굴 구조)
 
-한글 설명: 유저 이미지(남성용·여성용)에 공통으로 쓰는 얼굴 구조. 주인공의 얼굴 구조(6-4)는 이 얼굴과 다르게 쓴다(같은 그림체, 다른 얼굴). 작고 부드러운 계란형, 긴 아몬드 눈, 좁고 높은 코, 차분하고 밝은 표정. 성별 블록(6-3)과 머리 모양만 남녀를 다르게 하고 이 얼굴 구조는 그대로 쓴다. 작품별로 바뀌는 것은 Character design의 자세·장소·옷차림(·소품)뿐이다.
+한글 설명: 유저 이미지(남성용·여성용)에 공통으로 쓰는 얼굴 구조. 주인공의 얼굴 구조(6-4)는 이 얼굴과 다르게 쓴다(같은 그림체, 다른 얼굴). 작고 부드러운 계란형, 긴 아몬드 눈, 좁고 높은 코, 차분하고 밝은 표정. 성별 블록(6-3)과 머리 모양만 남녀를 다르게 하고 이 얼굴 구조는 그대로 쓴다. 작품별로 바뀌는 것은 Character design의 자세·장소·옷차림(·소품)과, 여성용은 아래 "헤어스타일 축"의 머리다.
 
 ```text
 Face geometry: a small soft oval face with a balanced height-to-width ratio, a gently tapered clean jawline ending in a neat softly defined chin, cheekbones set moderately high with a smooth contour, long clear almond eyes with a level outer corner and crisp inner and outer corners, a soft double eyelid fold, softly straight dark brows with a gentle length, a narrow high straight nose bridge with a delicate tip, softly full lips with a clean contour and a naturally relaxed resting line, a smooth forehead with a neat natural hairline and a light side-swept fringe, and a calm baseline expression with a bright attentive composure.
 ```
+
+**유저 여성용 헤어스타일 축 (작품마다 다르게)**
+
+유저 얼굴 구조는 공통이지만 머리까지 같으면 모든 작품의 여성 유저가 "어깨 길이 흑갈색 머리" 한 사람으로 보인다(2026-10-09까지 70편이 그랬다). 여성은 머리 손질이 다양하므로 머리를 그 작품 유저의 개성으로 쓴다. 남성용도 같은 뜻으로 길이·가르마·결을 조금씩 바꿀 수 있지만 필수는 아니다.
+
+- Character design의 머리 구절을 아래 표에서 골라 쓰고, **직전 5편의 여성용과 다른 스타일**을 고른다. 색은 8절대로 검정·흑갈색·짙은 갈색·짙은 애쉬 브라운 안에서만.
+- 그 작품에서 유저가 하는 일·장면에 맞춘다. 운동·주방·현장·병원은 묶거나 올린 머리, 사무·카페·도서관·연인은 푼 머리나 반묶음, 학교·학원은 단정한 쪽. 액세서리(집게핀·리본·헤어밴드·머리꽂이)는 하나까지.
+- 얼굴 구조(6-10 Face geometry)는 바꾸지 않는다. 머리만 바꾼다. 짧은 버전과 한글 설명 줄도 같이 고친다.
+
+| 스타일 | 영문 구절 (Character design에 그대로) |
+| --- | --- |
+| 긴 생머리 | long straight black hair falling past the shoulders |
+| 긴 웨이브 | long softly waved dark brown hair parted at the side |
+| 낮은 포니테일 | dark brown-black hair gathered in a low ponytail with a few loose strands at the temples |
+| 높은 포니테일 | black hair pulled into a high sleek ponytail |
+| 집게핀 번 | dark brown hair twisted up into a loose low bun held with a claw clip |
+| 반묶음 | half-up dark brown-black hair with the top section tied back and the rest loose over the shoulders |
+| 단발 보브 | a chin-length black bob with a soft inward curl |
+| 옆 땋기 | a single loose side braid of dark brown hair resting over one shoulder |
+| 앞머리 긴 머리 | long dark brown-black hair with a full straight fringe |
+| 리본 낮은 묶음 | dark ash-brown hair tied low at the nape with a thin ribbon |
+| 헤어밴드 | long straight dark brown hair held back with a slim fabric headband |
+| 숏컷 | a short textured pixie cut of black hair |
+| 웨이브 단발 | a shoulder-grazing dark brown lob with loose waves |
+| 올림머리 | black hair pinned up in a neat twist with a wooden hair stick |
 
 ### 6-11. VISIBLE DIFFERENTIATORS (눈에 보이는 구분 축, 주인공마다 필수)
 
