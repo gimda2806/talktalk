@@ -1278,5 +1278,125 @@
       "prompt": "여성용",
       "prompt_sha": "4763495bd0a2"
     }
+  ],
+  "zeta_048_변건우": [
+    {
+      "file": "byeon-geonu-main.png",
+      "label": "주인공 변건우",
+      "prompt": "주인공",
+      "prompt_sha": "7b159b130a1d"
+    },
+    {
+      "file": "byeon-geonu-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "b611ba1f3623"
+    },
+    {
+      "file": "byeon-geonu-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "22122ebf2166"
+    }
+  ],
+  "zeta_082_곽늘봄": [
+    {
+      "file": "gwak-neulbom-main.png",
+      "label": "주인공 곽늘봄",
+      "prompt": "주인공",
+      "prompt_sha": "1ba31bd734d4"
+    },
+    {
+      "file": "gwak-neulbom-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "a8a558d4b7c5"
+    },
+    {
+      "file": "gwak-neulbom-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "0fa058d20ddb"
+    }
+  ],
+  "zeta_075_임도훈": [
+    {
+      "file": "im-dohun-main.png",
+      "label": "주인공 임도훈",
+      "prompt": "주인공",
+      "prompt_sha": "323305d05014"
+    },
+    {
+      "file": "im-dohun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "a1b1610dacdc"
+    },
+    {
+      "file": "im-dohun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "1f606c45773f"
+    }
+  ],
+  "zeta_047_정온유": [
+    {
+      "file": "jeong-onyu-main.png",
+      "label": "주인공 정온유",
+      "prompt": "주인공",
+      "prompt_sha": "93411580a800"
+    },
+    {
+      "file": "jeong-onyu-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "89fdbb21bd8a"
+    },
+    {
+      "file": "jeong-onyu-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "942700763dda"
+    }
+  ],
+  "zeta_076_주승하": [
+    {
+      "file": "ju-seungha-main.png",
+      "label": "주인공 주승하",
+      "prompt": "주인공",
+      "prompt_sha": "b3b0b3ea9e71"
+    },
+    {
+      "file": "ju-seungha-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "16b230da5645"
+    },
+    {
+      "file": "ju-seungha-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "ca65dac7b86d"
+    }
+  ],
+  "zeta_046_오여름": [
+    {
+      "file": "o-yeoreum-main.png",
+      "label": "주인공 오여름",
+      "prompt": "주인공",
+      "prompt_sha": "68aae9f4e5ac"
+    },
+    {
+      "file": "o-yeoreum-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "d51afeae24a1"
+    },
+    {
+      "file": "o-yeoreum-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "99f0f755f9b6"
+    }
   ]
 }
