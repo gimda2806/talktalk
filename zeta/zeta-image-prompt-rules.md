@@ -363,6 +363,8 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 
 이미지 프롬프트 세 장 중 하나라도 고치면(재설계, 문구 교체, 일괄 치환 모두) `zeta/image-prompt-changelog.md`에 날짜·작품·바뀐 프롬프트·바뀐 내용·이미지 유무·처리를 한 줄 적는다. 이미 만든 이미지는 `zeta/generated/manifest.json`에 등록돼 있고 등록 당시의 프롬프트 지문(`prompt_sha`)을 갖고 있어서, 프롬프트가 바뀌면 `python3 zeta/generated/register.py --check`와 뷰어 갤러리가 "프롬프트 바뀜 · 재생성 확인"이라고 알려 준다. 짧은 버전(6-14)만 새로 만드는 것은 긴 버전이 안 바뀌므로 메모만 남기고 재생성은 필요 없다. 이미지를 다시 만들었으면 `register.py`로 다시 등록해 지문을 갱신한다.
 
+파일 끝 `## 사람이 고친 곳`에 적힌 이미지 프롬프트 칸은 사람이 뷰어에서 직접 고친 것이다. 이 문서의 어떤 규칙보다 우선하므로 재설계·일괄 치환 때 되돌리지 않는다. 바꿔야 한다고 보이면 사용자에게 먼저 묻는다.
+
 ## 7. GLOBAL LITERAL GATE (생성 전 필수 검사)
 
 이미지 도구를 호출하기 전에 아래를 모두 확인한다. 하나라도 실패하면 프롬프트를 다시 만든다.

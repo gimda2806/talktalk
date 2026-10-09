@@ -22,8 +22,9 @@ async function save(req, env) {
   if (!safeEqual(req.headers.get("x-edit-password") || "", env.EDIT_PASSWORD)) return json({ error: "비밀번호가 달라요" }, 401);
   let body;
   try { body = await req.json(); } catch { return json({ error: "요청 본문이 JSON이 아니에요" }, 400); }
-  const { file, bi, old, new: fresh, label } = body || {};
-  if (typeof file !== "string" || !/^zeta\/[^/]+\.md$/.test(file) || !Number.isInteger(bi) || bi < 0 || typeof old !== "string" || typeof fresh !== "string")
+  const { file, bi, old, new: fresh, label, kind } = body || {};
+  const isText = kind === "text";
+  if (typeof file !== "string" || !/^zeta\/[^/]+\.md$/.test(file) || (!isText && (!Number.isInteger(bi) || bi < 0)) || typeof old !== "string" || typeof fresh !== "string")
     return json({ error: "file·bi·old·new가 필요해요 (file은 zeta/ 아래 .md)" }, 400);
   if (fresh.trim() === old.trim()) return json({ ok: true, unchanged: true });
 
@@ -34,8 +35,9 @@ async function save(req, env) {
   const meta = await got.json();
   const text = fromBase64(meta.content);
 
-  const r = replaceBlock(text, bi, old, fresh);
+  const r = isText ? replaceText(text, old, fresh) : replaceBlock(text, bi, old, fresh);
   if (r.error) return json({ error: r.error, conflict: true }, 409);
+  r.text = markHumanEdit(r.text, label || (isText ? "설명 글" : "칸"));
 
   const put = await fetch(api, {
     method: "PUT", headers: { ...headers, "Content-Type": "application/json" },
@@ -61,6 +63,29 @@ export function replaceBlock(text, bi, old, fresh) {
     }
   }
   return { error: "그 칸을 파일에서 찾지 못했어요. 새로고침한 뒤 다시 고쳐 주세요." };
+}
+
+// 울타리 밖 설명 글(기획 요약, 이벤트 같은 것): 파일 안에 그 글이 꼭 한 번 있어야 바꾼다
+export function replaceText(text, old, fresh) {
+  const o = old.replace(/\r\n/g, "\n").replace(/^\n+|\s+$/g, "");
+  if (!o) return { error: "비어 있는 글은 바꿀 수 없어요." };
+  const first = text.indexOf(o);
+  if (first < 0) return { error: "이 글이 그사이 다른 곳에서 바뀌었어요. 새로고침한 뒤 다시 고쳐 주세요." };
+  if (text.indexOf(o, first + 1) >= 0) return { error: "같은 글이 파일에 두 번 있어 어느 쪽인지 알 수 없어요. 조금 더 넓게 잡아 고쳐 주세요." };
+  const n = fresh.replace(/\r\n/g, "\n").replace(/^\n+|\s+$/g, "");
+  return { text: text.slice(0, first) + n + text.slice(first + o.length) };
+}
+
+// 파일 끝의 "## 사람이 고친 곳" 절에 한 줄 남긴다. 루틴·정독은 이 절에 적힌 칸을 규칙보다 위에 둔다.
+export function markHumanEdit(text, label) {
+  const kst = new Date(Date.now() + 9 * 3600 * 1000);
+  const p = n => String(n).padStart(2, "0");
+  const when = `${kst.getUTCFullYear()}-${p(kst.getUTCMonth() + 1)}-${p(kst.getUTCDate())} ${p(kst.getUTCHours())}:${p(kst.getUTCMinutes())}`;
+  const line = `- ${when} · ${label}`;
+  const head = "## 사람이 고친 곳";
+  let t = text.replace(/\s+$/, "");
+  if (t.includes(`\n${head}\n`)) return t + "\n" + line + "\n";
+  return t + `\n\n${head}\n\n뷰어에서 사람이 직접 고친 칸. 여기 적힌 칸은 모든 규칙보다 우선하며, 정독·일괄 치환·재설계 때 되돌리지 않는다.\n\n${line}\n`;
 }
 
 function safeEqual(a, b) {

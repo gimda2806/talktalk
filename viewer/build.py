@@ -151,7 +151,7 @@ def parse_blocks(text, src=""):
         if cur["items"] and cur["items"][-1]["kind"] == "text":
             cur["items"][-1]["lines"].append(line)
         else:
-            cur["items"].append(dict(kind="text", lines=[line]))
+            cur["items"].append(dict(kind="text", lines=[line], src=src))
     for g in groups:
         g["items"] = [i for i in g["items"] if i["kind"] != "text" or any(l.strip() for l in i["lines"])]
     return groups

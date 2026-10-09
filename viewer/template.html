@@ -161,6 +161,10 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
 .field.split>.fh{background:var(--sheet)}
 .copy.edit{display:none}
 body[data-edit="on"] .copy.edit{display:inline-block}
+.tblock{position:relative;padding-right:64px}
+.tblock .tedit{position:absolute;right:0;top:2px;min-height:26px;font-size:12px;padding:0 10px}
+.tblock .editor{margin-top:8px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.tblock .editor textarea{border-top:0;font-family:var(--sans);font-size:14px}
 .editor textarea{display:block;width:100%;box-sizing:border-box;border:0;border-top:1px dashed var(--line);padding:12px 14px;font:inherit;font-family:var(--serif);font-size:14.5px;line-height:1.85;background:var(--sheet);color:var(--ink);resize:vertical;min-height:120px}
 .editor textarea:focus{outline:2px solid var(--rose);outline-offset:-2px}
 .ebar{display:flex;align-items:center;gap:8px;padding:8px 10px;border-top:1px solid var(--line);font-size:13px}
@@ -603,6 +607,7 @@ function ztext(lines){
 }
 function zrender(){
   const w = zstate.w, sheet = document.getElementById("zsheet");
+  TEXTS.length = 0;
   if (!w){ sheet.innerHTML = '<div class="empty">아직 제타 작품 파일이 없어요.</div>'; return; }
   const texts = [];
   const field = i => {
@@ -619,7 +624,12 @@ function zrender(){
         <span class="cnt">${i.text.length}자</span>${i.src?`<button class="copy edit" data-e="${whole}" title="이 칸을 고쳐서 저장소에 바로 저장">수정</button>`:""}<button class="copy" data-c="${whole}">${parts?"전체 복사":"복사"}</button></div>
       ${parts ? `<div class="parts">${parts}</div>` : `<pre>${esc(i.text)}</pre>`}</div>`;
   };
-  const items = g => g.items.map(i => i.kind==="field" ? field(i) : i.kind==="head" ? `<h4>${esc(i.label)}</h4>` : ztext(i.lines)).join("");
+  const tblock = (i, g) => {
+    if (!i.src || !i.lines.some(l => l.trim())) return ztext(i.lines);
+    TEXTS.push(Object.assign(i, { label: g.title.replace(/^\d+\.\s*/, "") }));
+    return `<div class="tblock"><button type="button" class="copy edit tedit" data-t="${TEXTS.length-1}" title="이 글을 고쳐서 저장소에 바로 저장">수정</button>${ztext(i.lines)}</div>`;
+  };
+  const items = g => g.items.map(i => i.kind==="field" ? field(i) : i.kind==="head" ? `<h4>${esc(i.label)}</h4>` : tblock(i, g)).join("");
   const short = t => t.replace(/^\d+\.\s*/, "").replace(/\s*[(（].*$/, "").replace(/\s*탭$/, "");
   w.groups.forEach((g, n) => { g._id = `zg-${n}`; });
   const grp = g => `<section class="grp" id="${g._id}"><h3>${esc(g.title)}</h3>${items(g)}</section>`;
@@ -651,13 +661,37 @@ function zrender(){
   sheet.querySelector(".meta").insertAdjacentHTML("beforeend", zpager("top"));
   sheet.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>copyText(texts[+b.dataset.c], b));
   sheet.querySelectorAll("[data-e]").forEach(b=>b.onclick=()=>openEditor(b.closest(".field"), FIELDS[+b.dataset.e]));
+  sheet.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>openTextEditor(b.closest(".tblock"), TEXTS[+b.dataset.t]));
   sheet.querySelectorAll("[data-j]").forEach(b=>b.onclick=()=>jumpTo(b.dataset.j));
   sheet.querySelectorAll("[data-zp]").forEach(b=>b.onclick=()=>zgo(zneighbors()[b.dataset.zp]));
 }
 // ── 뷰어에서 고쳐 저장 ──────────────────────────────────────────────
 // 칸의 글을 고치면 /api/save 가 GitHub 저장소 파일의 그 울타리만 바꿔 커밋한다(worker/index.js).
 // 커밋되면 배포가 다시 돌아 1~2분 뒤 사이트에 반영된다. 여기서는 화면의 글을 먼저 바꿔 둔다.
-const FIELDS = {};
+const FIELDS = {}, TEXTS = [];
+const joinLines = ls => ls.join("\n").replace(/^\n+|\s+$/g, "");
+// 울타리 밖 설명 글(기획 요약·이벤트 등)을 고친다. 파일 안의 그 글을 통째로 바꿔 보낸다
+function openTextEditor(box, i){
+  if (!box || box.querySelector("textarea")) return;
+  const ed = document.createElement("div"); ed.className = "editor";
+  ed.innerHTML = `<textarea spellcheck="false"></textarea>
+    <div class="ebar"><span class="estat"></span><button type="button" class="copy ecancel">취소</button><button type="button" class="copy esave">저장</button></div>`;
+  const ta = ed.querySelector("textarea"); ta.value = joinLines(i.lines);
+  [...box.children].forEach(c => { if (c !== ed) c.hidden = true; }); box.appendChild(ed);
+  const fit = () => { ta.style.height = "auto"; ta.style.height = Math.min(ta.scrollHeight + 4, innerHeight * 0.7) + "px"; };
+  ta.addEventListener("input", fit); fit(); ta.focus();
+  const close = () => { ed.remove(); [...box.children].forEach(c => c.hidden = false); };
+  ed.querySelector(".ecancel").onclick = close;
+  ed.querySelector(".esave").onclick = async () => {
+    const stat = ed.querySelector(".estat"), btn = ed.querySelector(".esave");
+    const fresh = ta.value.replace(/\s+$/, ""), old = joinLines(i.lines);
+    if (fresh === old){ close(); return; }
+    btn.disabled = true; stat.textContent = "저장하는 중…";
+    const r = await postSave({ file: i.src, kind: "text", old, new: fresh, label: i.label });
+    if (r.ok){ i.lines = fresh.split("\n"); close(); zrender(); toast("저장했어요. 사이트에는 1~2분 뒤 반영돼요."); }
+    else { btn.disabled = false; stat.textContent = r.error || "저장하지 못했어요"; }
+  };
+}
 async function editProbe(){
   try {
     const r = await fetch("/api/ping", { cache: "no-store" }); const j = await r.json();
@@ -703,16 +737,19 @@ function payloadFor(i, fresh){
 async function saveField(i, fresh){
   const p = payloadFor(i, fresh);
   if (!p) return { error: "이 칸의 원문을 덩어리 안에서 찾지 못했어요. 새로고침한 뒤 다시 시도해 주세요." };
+  const j = await postSave({ file: i.src, bi: i.bi, old: p.old, new: p.fresh, label: i.label });
+  if (j.ok) i._fresh = p.fresh;
+  return j;
+}
+async function postSave(payload){
   let pw = store.get("zt-edit-pw") || "";
   if (!pw){ pw = prompt("저장 비밀번호"); if (!pw) return { error: "취소했어요" }; }
   try {
-    const r = await fetch("/api/save", { method: "POST", headers: { "Content-Type": "application/json", "X-Edit-Password": pw },
-      body: JSON.stringify({ file: i.src, bi: i.bi, old: p.old, new: p.fresh, label: i.label }) });
+    const r = await fetch("/api/save", { method: "POST", headers: { "Content-Type": "application/json", "X-Edit-Password": pw }, body: JSON.stringify(payload) });
     const j = await r.json().catch(() => ({}));
     if (r.status === 401){ store.set("zt-edit-pw", ""); return { error: "비밀번호가 달라요. 다시 저장을 누르면 다시 물어봐요." }; }
     if (!r.ok) return { error: j.error || `저장 실패 (${r.status})` };
     store.set("zt-edit-pw", pw);
-    i._fresh = p.fresh;
     return j;
   } catch { return { error: "서버에 닿지 못했어요. 배포된 사이트에서만 저장돼요." }; }
 }
