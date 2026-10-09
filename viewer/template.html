@@ -594,7 +594,13 @@ function zrender(){
   sheet.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>copyText(texts[+b.dataset.c], b));
   sheet.querySelectorAll("[data-j]").forEach(b=>b.onclick=()=>jumpTo(b.dataset.j));
 }
+function nowKST(){
+  const d = new Date(Date.now() + 9*3600*1000);
+  const p = n => String(n).padStart(2,"0");
+  return `${d.getUTCFullYear()}.${p(d.getUTCMonth()+1)}.${p(d.getUTCDate())} ${p(d.getUTCHours())}:${p(d.getUTCMinutes())}`;
+}
 async function copyText(t, btn){
+  t = t.replace(/\{\{생성일시\}\}/g, nowKST());
   try { await navigator.clipboard.writeText(t); }
   catch(e){
     const ta = document.createElement("textarea");
