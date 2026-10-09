@@ -193,7 +193,7 @@ body[data-edit="on"] .copy.edit{display:inline-block}
 .zsheet details[open] summary::before{content:"▾ "}
 .zsheet summary::-webkit-details-marker{display:none}
 .zsheet details .grp{margin-top:10px;border-top:0;padding-top:0}
-.jumpbar{position:sticky;top:calc(var(--headh,56px) + env(safe-area-inset-top,0px));z-index:4;background:var(--paper);display:flex;align-items:center;gap:10px;margin:14px -16px 0;padding:8px 16px;border-bottom:1px solid var(--line)}
+.jumpbar{position:sticky;top:0;z-index:4;background:var(--paper);display:flex;align-items:center;gap:10px;margin:14px -16px 0;padding:8px 16px;border-bottom:1px solid var(--line)}
 .jumpbar .who{flex-shrink:0;font-family:var(--display);font-weight:700;font-size:16px;max-width:38vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .jump{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;min-width:0}
 .jump::-webkit-scrollbar{display:none}
@@ -203,6 +203,7 @@ body[data-edit="on"] .copy.edit{display:inline-block}
 #totop.show{opacity:1;pointer-events:auto}
 
 @media (max-width:760px){
+  .jumpbar{top:calc(var(--headh,56px) + env(safe-area-inset-top,0px))}  /* 모바일은 머리글이 고정이라 그 아래에 */
   .wrap{padding-block:0 calc(88px + env(safe-area-inset-bottom,0px))}
   header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);margin-inline:-16px;padding:10px 16px;flex-wrap:nowrap;align-items:center;gap:12px}
   .eyebrow{display:none}
