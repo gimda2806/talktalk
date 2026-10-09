@@ -273,7 +273,7 @@ def load_zeta():
         for i in image_manifest.get(f.stem, []):
             # 등록 당시의 프롬프트 지문과 지금 지문이 다르면 '프롬프트가 바뀜' 표시 (zeta/generated/register.py 참고)
             kind = register.guess_kind(i)
-            stale = bool(i.get("prompt_sha")) and register.prompt_sha(f.stem, kind) not in (None, i["prompt_sha"])
+            stale = bool(i.get("prompt_sha")) and register.prompt_sha(f.stem, kind, i) not in (None, i["prompt_sha"])
             images.append(dict(label=i["label"], url=f"images/{i['file']}", stale=stale))
         works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
     # 만든 순서(작품 목록 줄 순서)의 역순 = 최신 작품이 위. 목록에 없는 파일은 맨 위에 날짜·이름순으로
