@@ -1930,5 +1930,25 @@
       "prompt": "여성용",
       "prompt_sha": "f2120146d5ab"
     }
+  ],
+  "zeta_085_서준혁": [
+    {
+      "file": "seo-junhyeok-main.png",
+      "label": "주인공 서준혁",
+      "prompt": "주인공",
+      "prompt_sha": "895566232f79"
+    },
+    {
+      "file": "seo-junhyeok-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "da15ed817634"
+    },
+    {
+      "file": "seo-junhyeok-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "c53ffefce97d"
+    }
   ]
 }
