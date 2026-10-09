@@ -196,6 +196,24 @@ body[data-edit="on"] .copy.edit{display:inline-block}
 .jumpbar{position:sticky;top:0;z-index:4;background:var(--paper);display:flex;align-items:center;gap:10px;margin:14px -16px 0;padding:8px 16px;border-bottom:1px solid var(--line)}
 .jumpbar .who{flex-shrink:0;font-family:var(--display);font-weight:700;font-size:16px;max-width:38vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .jump{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;min-width:0}
+.zdock{display:none}  /* PC에서 큰 이미지가 화면 밖으로 나가면 오른쪽에 작게 따라온다(수정할 때 이미지와 맞춰 보기) */
+@media (min-width:761px){
+  .zsheet.away .zdock{display:flex;flex-direction:column;gap:8px;position:fixed;right:12px;top:calc(50% - 10px);transform:translateY(-50%);width:132px;max-height:calc(100vh - 40px);overflow:auto;scrollbar-width:thin;z-index:4;padding:8px;background:var(--sheet);border:1px solid var(--line);border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.10)}
+  .zdock figure{margin:0}
+  .zdock button{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:6px;background:var(--paper);cursor:zoom-in;overflow:hidden}
+  .zdock img{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;object-position:top}
+  .zdock figcaption{margin-top:3px;font-size:11px;color:var(--muted);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .zdock .stale{display:block;color:var(--rose);font-weight:600}
+}
+@media (min-width:761px) and (max-width:1403px){ .zsheet.away{padding-right:150px} }  /* 여백이 모자라면 글을 패널만큼 비켜 준다 */
+.zgallery img{cursor:zoom-in}
+#zlight{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.78);display:none;align-items:center;justify-content:center;flex-direction:column;gap:10px;padding:16px}
+#zlight.show{display:flex}
+#zlight img{max-width:min(92vw,640px);max-height:84vh;border-radius:10px;background:var(--paper);box-shadow:0 10px 40px rgba(0,0,0,.5)}
+#zlight .cap{color:#fff;font-size:13px;opacity:.9}
+#zlight .nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.18);color:#fff;font-size:20px;cursor:pointer}
+#zlight .nav.prev{left:12px} #zlight .nav.next{right:12px}
+#zlight .x{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));right:14px;border:0;background:none;color:#fff;font-size:26px;cursor:pointer}
 .jump::-webkit-scrollbar{display:none}
 .jump button{flex-shrink:0;border:1px solid var(--line);background:var(--sheet);color:var(--muted);font:inherit;font-size:12.5px;font-weight:500;padding:4px 11px;border-radius:999px;cursor:pointer;white-space:nowrap}
 .jump button:hover{color:var(--ink)}
@@ -643,6 +661,7 @@ function zrender(){
   const grp = g => `<section class="grp" id="${g._id}"><h3>${esc(g.title)}</h3>${items(g)}</section>`;
   const main = w.groups.filter(g=>g.items.some(i=>i.kind==="field") || /^[06]\./.test(g.title));
   const rest = w.groups.filter(g=>!main.includes(g));
+  const dock = w.images&&w.images.length ? `<div class="zdock" aria-label="이미지 따라오기">${w.images.map((i,n)=>`<figure><button type="button" data-zl="${n}" title="${esc(i.label)} 크게 보기"><img src="${esc(i.url)}" alt="" loading="lazy"></button><figcaption>${esc(i.label)}${i.stale?`<span class="stale">재생성 확인</span>`:""}</figcaption></figure>`).join("")}</div>` : "";
   const jump = `<div class="jumpbar"><span class="who" title="${esc(w.name)}">${esc(w.name)}</span><nav class="jump" aria-label="섹션 바로 가기">${w.groups.map(g=>`<button type="button" data-j="${g._id}">${esc(short(g.title))}</button>`).join("")}</nav></div>`;
   sheet.innerHTML = `
     <div class="meta">
@@ -652,7 +671,7 @@ function zrender(){
     </div>
     <h2>${esc(w.name)}</h2>
     ${w.sub?`<p class="sub">${esc(w.sub)}</p>`:""}
-    ${w.images&&w.images.length?`<div class="zgallery">${w.images.map(i=>`<figure><img src="${esc(i.url)}" alt="${esc(i.label)}" loading="lazy"><figcaption>${esc(i.label)}${i.stale?`<span class="stale" title="이미지를 만든 뒤 플롯의 이미지 프롬프트가 바뀌었어요. 다시 만들지 확인하세요.">프롬프트 바뀜 · 재생성 확인</span>`:""}</figcaption></figure>`).join("")}</div>`:""}
+    ${w.images&&w.images.length?`<div class="zgallery">${w.images.map(i=>`<figure><img src="${esc(i.url)}" alt="${esc(i.label)}" loading="lazy" data-zl="${w.images.indexOf(i)}"><figcaption>${esc(i.label)}${i.stale?`<span class="stale" title="이미지를 만든 뒤 플롯의 이미지 프롬프트가 바뀌었어요. 다시 만들지 확인하세요.">프롬프트 바뀜 · 재생성 확인</span>`:""}</figcaption></figure>`).join("")}</div>`:""}
     <dl class="facts">
       ${w.mood?`<dt>분위기</dt><dd>${esc(w.mood)}</dd>`:""}
       ${w.job?`<dt>직업·배경</dt><dd>${esc(w.job)}</dd>`:""}
@@ -660,7 +679,7 @@ function zrender(){
       ${w.device?`<dt>핵심 장치</dt><dd>${esc(w.device)}</dd>`:""}
       <dt>파일</dt><dd><code>${esc(w.file)}</code></dd>
     </dl>
-    ${jump}
+    ${jump}${dock}
     <div class="body">
       ${main.map(grp).join("")}
       ${rest.map(g=>`<details id="${g._id}"><summary>${esc(g.title)}</summary><section class="grp">${items(g)}</section></details>`).join("")}
@@ -672,7 +691,40 @@ function zrender(){
   sheet.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>openTextEditor(b.closest(".tblock"), TEXTS[+b.dataset.t]));
   sheet.querySelectorAll("[data-j]").forEach(b=>b.onclick=()=>jumpTo(b.dataset.j));
   sheet.querySelectorAll("[data-zp]").forEach(b=>b.onclick=()=>zgo(zneighbors()[b.dataset.zp]));
+  sheet.querySelectorAll("[data-zl]").forEach(b=>b.onclick=()=>zlight.open(w.images, +b.dataset.zl));
+  const gal = sheet.querySelector(".zgallery"), bar = sheet;
+  if (gal && bar){
+    if (zlight.io) zlight.io.disconnect();
+    if ("IntersectionObserver" in window){
+      zlight.io = new IntersectionObserver(([en]) => bar.classList.toggle("away", !en.isIntersecting && en.boundingClientRect.top < 0));
+      zlight.io.observe(gal);
+    } else bar.classList.add("away");
+  }
 }
+// ── 이미지 크게 보기 ──────────────────────────────────────────────
+const zlight = (() => {
+  const box = document.createElement("div"); box.id = "zlight"; box.setAttribute("role", "dialog"); box.setAttribute("aria-label", "이미지 크게 보기");
+  box.innerHTML = `<button type="button" class="x" aria-label="닫기">×</button><button type="button" class="nav prev" aria-label="이전 이미지">‹</button><img alt=""><div class="cap"></div><button type="button" class="nav next" aria-label="다음 이미지">›</button>`;
+  document.body.appendChild(box);
+  const img = box.querySelector("img"), cap = box.querySelector(".cap");
+  let imgs = [], at = 0;
+  const show = n => { at = (n + imgs.length) % imgs.length; img.src = imgs[at].url; img.alt = imgs[at].label; cap.textContent = `${imgs[at].label} · ${at+1}/${imgs.length}`; box.querySelectorAll(".nav").forEach(b=>b.hidden = imgs.length < 2); };
+  const open = (list, n) => { imgs = list; show(n); box.classList.add("show"); document.body.style.overflow = "hidden"; };
+  const close = () => { box.classList.remove("show"); document.body.style.overflow = ""; };
+  box.querySelector(".x").onclick = close;
+  box.querySelector(".prev").onclick = e => { e.stopPropagation(); show(at-1); };
+  box.querySelector(".next").onclick = e => { e.stopPropagation(); show(at+1); };
+  box.onclick = e => { if (e.target === box) close(); };
+  document.addEventListener("keydown", e => {
+    if (!box.classList.contains("show")) return;
+    if (e.key === "Escape") close();
+    else if (e.key === "ArrowLeft") show(at-1);
+    else if (e.key === "ArrowRight") show(at+1);
+    else return;
+    e.preventDefault(); e.stopImmediatePropagation();
+  }, true);
+  return { open, close, io: null, isOpen: () => box.classList.contains("show") };
+})();
 // ── 뷰어에서 고쳐 저장 ──────────────────────────────────────────────
 // 칸의 글을 고치면 /api/save 가 GitHub 저장소 파일의 그 울타리만 바꿔 커밋한다(worker/index.js).
 // 커밋되면 배포가 다시 돌아 1~2분 뒤 사이트에 반영된다. 여기서는 화면의 글을 먼저 바꿔 둔다.
