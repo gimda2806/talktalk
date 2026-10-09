@@ -12,5 +12,47 @@
       "file": "song-yechan-user-f-20261009-1130.png",
       "label": "유저 프로필 · 여성"
     }
+  ],
+  "zeta_20261009_윤상우": [
+    {
+      "file": "yoon-sangwoo-main.png",
+      "label": "주인공 윤상우"
+    },
+    {
+      "file": "yoon-sangwoo-user-m.png",
+      "label": "유저 프로필 · 남성"
+    },
+    {
+      "file": "yoon-sangwoo-user-f.png",
+      "label": "유저 프로필 · 여성"
+    }
+  ],
+  "zeta_20261009_강루하": [
+    {
+      "file": "kang-ruha-main.png",
+      "label": "주인공 강루하"
+    },
+    {
+      "file": "kang-ruha-user-m.png",
+      "label": "유저 프로필 · 남성"
+    },
+    {
+      "file": "kang-ruha-user-f.png",
+      "label": "유저 프로필 · 여성"
+    }
+  ],
+  "zeta_20261008_황무진": [
+    {
+      "file": "hwang-mujin-main.png",
+      "label": "주인공 황무진"
+    },
+    {
+      "file": "hwang-mujin-user-m.png",
+      "label": "유저 프로필 · 남성"
+    },
+    {
+      "file": "hwang-mujin-user-f.png",
+      "label": "유저 프로필 · 여성"
+    }
   ]
 }
