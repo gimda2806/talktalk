@@ -146,5 +146,25 @@
       "prompt": "여성용",
       "prompt_sha": "95e6040e4111"
     }
+  ],
+  "zeta_20261009_목유한": [
+    {
+      "file": "mok-yuhan-main.png",
+      "label": "주인공 목유한",
+      "prompt": "주인공",
+      "prompt_sha": "8709bf8a3150"
+    },
+    {
+      "file": "mok-yuhan-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "4041dd856e98"
+    },
+    {
+      "file": "mok-yuhan-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "de6e11db7798"
+    }
   ]
 }
