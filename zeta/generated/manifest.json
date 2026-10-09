@@ -1038,5 +1038,65 @@
       "prompt": "여성용",
       "prompt_sha": "b973f7b91285"
     }
+  ],
+  "zeta_078_반석": [
+    {
+      "file": "ban-seok-main.png",
+      "label": "주인공 반석",
+      "prompt": "주인공",
+      "prompt_sha": "4af5c229282b"
+    },
+    {
+      "file": "ban-seok-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "d88dec5914c8"
+    },
+    {
+      "file": "ban-seok-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "61db9caa9f09"
+    }
+  ],
+  "zeta_033_오규빈": [
+    {
+      "file": "o-gyubin-main.png",
+      "label": "주인공 오규빈",
+      "prompt": "주인공",
+      "prompt_sha": "0f6cf1b41dbb"
+    },
+    {
+      "file": "o-gyubin-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "9e0e4018818e"
+    },
+    {
+      "file": "o-gyubin-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "d5ad2e0f9948"
+    }
+  ],
+  "zeta_035_염재하": [
+    {
+      "file": "yeom-jaeha-main.png",
+      "label": "주인공 염재하",
+      "prompt": "주인공",
+      "prompt_sha": "d258a16e7419"
+    },
+    {
+      "file": "yeom-jaeha-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "3d35e47bc5ea"
+    },
+    {
+      "file": "yeom-jaeha-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "21d288c1180a"
+    }
   ]
 }
