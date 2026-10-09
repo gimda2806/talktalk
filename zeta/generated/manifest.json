@@ -1398,5 +1398,45 @@
       "prompt": "여성용",
       "prompt_sha": "99f0f755f9b6"
     }
+  ],
+  "zeta_066_이시우": [
+    {
+      "file": "lee-siwoo-main.png",
+      "label": "주인공 이시우",
+      "prompt": "주인공",
+      "prompt_sha": "813f6831a497"
+    },
+    {
+      "file": "lee-siwoo-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "1ff31e815cfb"
+    },
+    {
+      "file": "lee-siwoo-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "174ba68bbf7f"
+    }
+  ],
+  "zeta_074_원누리": [
+    {
+      "file": "won-nuri-main.png",
+      "label": "주인공 원누리",
+      "prompt": "주인공",
+      "prompt_sha": "5577fc401a30"
+    },
+    {
+      "file": "won-nuri-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "8e0ee5261511"
+    },
+    {
+      "file": "won-nuri-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "6c5c53a00ae0"
+    }
   ]
 }
