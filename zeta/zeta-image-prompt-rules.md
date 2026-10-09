@@ -74,7 +74,7 @@ GLOBAL IDOL FACIAL BEAUTY FLOOR는 모든 주연이 공유하는 고정 미모 �
 9. GLOBAL NEGATIVE BLOCK (원문 그대로)
 10. BOTTOM IDENTIFICATION FOOTER (6-13, 세 장 모두. 배경 위에 이름과 생성일시 글씨만, 띠 없음. 유저용은 이름 뒤에 `(U, M)`/`(U, F)`)
 
-블록을 더 짧은 프롬프트로 요약하지 않는다. GLOBAL LOOK, GLOBAL BEAUTY FLOOR, 선택한 GENDER AMPLIFIER, GLOBAL NEGATIVE는 최종 출력에 끊김 없이 완전한 텍스트로 들어가야 한다. 레퍼런스 이미지는 정체성만 고정하며 전역 스타일 용어를 대체할 수 없다.
+블록을 더 짧은 프롬프트로 요약하지 않는다. GLOBAL LOOK, GLOBAL BEAUTY FLOOR, 선택한 GENDER AMPLIFIER, GLOBAL NEGATIVE는 최종 출력에 끊김 없이 완전한 텍스트로 들어가야 한다. 단 하나의 예외가 6-14의 '짧은 버전'이다. 긴 프롬프트를 받지 못하는 도구를 위해 긴 버전 옆에 따로 두는 칸이며, 긴 버전 자체를 줄이는 것이 아니다. 레퍼런스 이미지는 정체성만 고정하며 전역 스타일 용어를 대체할 수 없다.
 
 ## 6. 블록 원문
 
@@ -302,6 +302,21 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 
 ```text
 BOTTOM IDENTIFICATION FOOTER (this is part of the newly generated image itself, NOT an edit of an existing image; no source image is needed): the very bottom edge of the image carries a clean cinematic character-identification caption. There is NO band, NO box, NO bar and NO solid background behind the text: the scene continues uninterrupted to the bottom edge, and only the typography is placed over it, with at most a very soft, barely visible darkening of the lowest 8–10% of the frame and a faint soft shadow under the letters so they stay legible. It should feel like a premium Korean drama character profile title card, not a UI overlay and not a watermark. The caption shows the following information in one horizontal line: {{이름}} | {{생성일시}} — the character name "{{이름}}" appears larger and more prominent, using elegant refined Korean typography in warm ivory-white; a thin vertical separator line sits between the character name and the date/time; the date and time appear smaller than the character name, using refined serif-style typography in soft ivory-white. Layout reference: the character name is positioned slightly left of center, followed by a thin vertical divider, then the date and time, with the character name approximately 1.5–1.8× larger than the date/time text, generous horizontal spacing and a sophisticated Korean editorial title-card aesthetic similar to a premium K-drama character introduction. Typography must be clean, elegant, cinematic, highly legible, vertically centered within the bottom margin, horizontally balanced and professionally typeset. The caption is visually subtle and premium and does not cover the character's body or face. The caption must be firmly anchored to the very bottom edge of the image. IMPORTANT: The ONLY intentional text in the image is the character identification caption. Do NOT add any other text, letters, captions, logos, signs, labels, watermark, random typography, or illegible text anywhere else in the image.
+```
+
+### 6-14. 짧은 버전 (긴 프롬프트를 못 받는 도구용, 세 장 모두 긴 버전 옆에 따로 둔다)
+
+긴 버전은 영문 8,000~9,000자쯤 된다. 일부 이미지 도구는 이 길이를 받으면 이유를 말하지 않고 결과만 비운다(송예찬으로 확인: 긴 버전은 실패, 약 2,000자 축약판은 성공). 그래서 주인공 프로필과 유저 대화 프로필 세 장 모두 긴 버전 바로 아래에 `· 짧은 버전` 칸을 하나 더 둔다. 짧은 버전은 긴 버전에서 캐릭터 고유 부분만 남긴 것이다.
+
+- 남기는 것: 첫 문장(실사 K-드라마 초상, 어른 얼굴 인상), 피부 톤 한 줄, `Face geometry: … Character design: … Wardrobe: … Props: … 구도 문장`(캐릭터 고유 부분 전부), 조명 문장, 짧은 네거티브 한 줄, 6-13 하단 글씨(짧은 문장형, 이름과 `{{생성일시}}`는 그대로).
+- 빼는 것: 6-1 전역 룩, 6-2 미모 기준선, 6-3 증폭 블록, 6-9 긴 네거티브 원문. 이 네 가지는 긴 버전에만 있다.
+- 길이: 영문 2,000~3,400자. 긴 버전을 고치면 짧은 버전도 같은 캐릭터 고유 부분으로 다시 만든다.
+- 쓰는 순서: 먼저 긴 버전으로 시도하고, 도구가 결과를 비우거나 길이 제한을 말하면 짧은 버전을 쓴다. 짧은 버전은 긴 버전의 대체가 아니라 비상용이다.
+- 만드는 법: 작업 스크립트로 긴 버전에서 위 조각을 잘라 붙인다. 손으로 요약하지 않는다.
+
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. {{어른 얼굴 인상 한 문장}} Skin: {{피부 톤}}. Face geometry: {{긴 버전의 Face geometry … 구도 문장까지 그대로}} Lighting: {{긴 버전의 조명 문장}} Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: {{이름}} | {{생성일시}} — the name "{{이름}}" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
 ```
 
 ## 7. GLOBAL LITERAL GATE (생성 전 필수 검사)
