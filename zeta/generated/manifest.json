@@ -1098,5 +1098,65 @@
       "prompt": "여성용",
       "prompt_sha": "21d288c1180a"
     }
+  ],
+  "zeta_080_강리오": [
+    {
+      "file": "gang-rio-main.png",
+      "label": "주인공 강리오",
+      "prompt": "주인공",
+      "prompt_sha": "f929435d52c7"
+    },
+    {
+      "file": "gang-rio-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "d23abe0ed979"
+    },
+    {
+      "file": "gang-rio-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "0feb61e6b1ac"
+    }
+  ],
+  "zeta_079_남형우": [
+    {
+      "file": "nam-hyeongwoo-main.png",
+      "label": "주인공 남형우",
+      "prompt": "주인공",
+      "prompt_sha": "a410118b512c"
+    },
+    {
+      "file": "nam-hyeongwoo-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "59b329271254"
+    },
+    {
+      "file": "nam-hyeongwoo-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "b91c66490105"
+    }
+  ],
+  "zeta_037_우경태": [
+    {
+      "file": "u-gyeongtae-main.png",
+      "label": "주인공 우경태",
+      "prompt": "주인공",
+      "prompt_sha": "5bc319fa54e0"
+    },
+    {
+      "file": "u-gyeongtae-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "b8303078a989"
+    },
+    {
+      "file": "u-gyeongtae-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "301b110be694"
+    }
   ]
 }
