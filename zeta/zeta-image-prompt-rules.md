@@ -274,7 +274,7 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 
 | 축 | 선택지 |
 | --- | --- |
-| 머리색 | 검정 / 흑갈색 / 짙은 갈색 / 짙은 애쉬 브라운 (밝은 갈색·금발은 쓰지 않는다, 8절) |
+| 머리색 | 검정 / 흑갈색 / 짙은 갈색 / 짙은 애쉬 브라운 (밝은 갈색·금발은 쓰지 않는다, 8절) · 아이돌·예술·스타일 직업군만 아래 "머리색 변주" 표의 염색·탈색 색을 쓸 수 있다 |
 | 머리 길이 | 옆을 짧게 친 투블럭 / 귀를 덮는 중간 길이 / 목에 닿는 장발 |
 | 머리 스타일 | 앞머리를 내림 / 이마를 드러낸 올백·업스타일 / 가르마(2:8, 5:5) / 자연 곱슬·파마 |
 | 눈꺼풀 | 또렷한 쌍꺼풀 / 속쌍꺼풀(hooded inner double eyelid) / 홑꺼풀(long clean monolid eyes) |
@@ -294,6 +294,26 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
    - `Youthful Korean idol energy — fresh-faced, polished and camera-ready, never juvenile,` → `Mature Korean idol-actor presence — a settled adult face, polished and camera-ready, never boyish, never juvenile,` (6-3 MALE의 `youthful adult freshness` → `settled adult maturity`)
    - 조명 블록 끝의 `skin must remain cool porcelain-white, never warm yellow`도 피부 톤에 맞게 `skin remains luminous warm ivory, never sallow`로 바꾼다.
 4. 고른 축을 검수 결과의 이미지 항목에 적는다. 예: "직업 인상: 성숙한 30대 중반/자연스러운 손질/마르고 곧음/실내 밝은 톤/평가하는 눈/자유 · 구분 축: 짙은 애쉬 브라운 중간 길이 쓸어 넘김 / 속쌍꺼풀 / 각진 턱 / 눈 밑 점 / 웜 아이보리". 다음 작품은 이 기록과 대조한다.
+
+**머리색 변주 (아이돌·예술·스타일 직업군 한정)**
+
+회사원·교사·의사처럼 규정이 있는 직업은 8절대로 검정~짙은 애쉬 브라운 안에서만 고른다. 하지만 아이돌·가수·댄서·배우·헤어 디자이너·패션 디자이너·DJ·뮤지컬 배우처럼 **머리 스타일링이 직업의 일부인 캐릭터**는 염색·탈색이 오히려 그 사람답다. 이 직업군에는 아래 표의 색을 쓸 수 있고, 같은 직업군이 여러 편이면 색이 겹치지 않게 돌린다. 조건은 세 가지다.
+
+- 플롯 어딘가(캐릭터 설명의 외모 줄, 인트로, 이벤트 하나)에 그 머리색이 한 번은 보인다. "컴백 무대용으로 탈색했다", "이번 배역 때문에 염색했다"처럼 이유가 한 구절 붙으면 대화 소재도 된다.
+- 밝은 색(밀크 브라운·애쉬 베이지·실버)은 서구 얼굴로 흐르기 쉽다. 6-1·6-3의 Korean idol 구절을 그대로 두고, `bleached … toned for the comeback stage`, `with the dark regrowth just showing at the roots`처럼 **염색한 머리라는 것**이 드러나는 구절을 붙인다. `light brown`이라고만 쓰지 않는다.
+- 이미 이미지를 만든 작품(`zeta/generated/manifest.json`)에 넣으면 6-15 변경 메모와 재생성 확인이 따라온다. 바꿀 가치가 있을 때만 바꾼다.
+
+| 색 | 영문 구절 (Character design의 머리 구절 앞에) | 어울리는 직업 |
+| --- | --- | --- |
+| 라벤더 애쉬 그레이 | bleached lavender-ash gray hair toned for the comeback stage, with the dark regrowth just showing at the roots | 아이돌(컴백 시즌) |
+| 밀크티 애쉬 베이지 | milk-tea light ash-beige brown hair, freshly bleached and toned for the comeback | 신인 아이돌, 댄서 |
+| 플래티넘 실버 | platinum silver-gray bleached hair | 패션·디자이너, 모델 |
+| 블루블랙 | deep blue-black hair with a cool navy sheen, dyed for the current drama role | 배우, 뮤지컬 배우 |
+| 와인 버건디 브라운 | wine-toned dark burgundy brown hair | 싱어송라이터, 밴드 |
+| 애쉬 카키 | matte ash-khaki hair with an olive undertone | 헤어 디자이너(기술 자랑), 아티스트 |
+| 부분 탈색 | black hair with a few bleached ash-gray streaks through the top | 안무가, 댄서, DJ |
+| 핑크 베이지 | soft pink-beige toned hair | 아이돌(여름 컴백), 뷰티 |
+| 애쉬 민트 | ash-mint toned hair, muted and cool | 아이돌(콘셉트 앨범) |
 
 **타투 표식 (선택, 캐릭터에 어울릴 때만)**
 
@@ -388,6 +408,6 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 ## 8. 막힐 때 점검할 것
 
 - 눈동자가 푸른색·청록색으로 나오면 `dark brown eyes`만으로는 부족하다. 눈 모양(쌍꺼풀 구조, 눈매 방향)을 FACE GEOMETRY에서 구체적으로 쓴다.
-- 머리색을 `light brown`으로 쓰면 서구 이미지가 섞이기 쉽다. 검은빛 도는 갈색, 짙은 애쉬 브라운, 검은색 계열로 쓴다.
+- 머리색을 `light brown`으로 쓰면 서구 이미지가 섞이기 쉽다. 검은빛 도는 갈색, 짙은 애쉬 브라운, 검은색 계열로 쓴다. 아이돌·예술 직업군의 염색·탈색은 예외인데, 그때도 6-11 "머리색 변주"대로 염색한 머리라는 구절(탈색·뿌리·컴백용)을 붙여 자연 머리색으로 읽히지 않게 한다.
 - `shallow depth of field`, `85mm`, `film-like` 같은 화보 문구만 더하면 보정된 모델 컷이 된다. 소프트 포커스와 색 반응은 6-1 블록으로 통제한다.
 - 번들거림이 남으면 6-1의 피부 단락과 6-9의 Skin 항목이 빠지지 않았는지 확인한다.
