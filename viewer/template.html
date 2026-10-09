@@ -595,9 +595,10 @@ function zrender(){
   sheet.querySelectorAll("[data-j]").forEach(b=>b.onclick=()=>jumpTo(b.dataset.j));
 }
 function nowKST(){
-  const d = new Date(Date.now() + 9*3600*1000);
+  // 보는 사람의 기기 시계(현지 시각) 기준
+  const d = new Date();
   const p = n => String(n).padStart(2,"0");
-  return `${d.getUTCFullYear()}.${p(d.getUTCMonth()+1)}.${p(d.getUTCDate())} ${p(d.getUTCHours())}:${p(d.getUTCMinutes())}`;
+  return `${d.getFullYear()}.${p(d.getMonth()+1)}.${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
 }
 async function copyText(t, btn){
   t = t.replace(/\{\{생성일시\}\}/g, nowKST());
