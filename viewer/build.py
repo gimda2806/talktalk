@@ -296,9 +296,54 @@ def copy_zeta_images():
             shutil.copy2(source, image_out / source.name)
 
 
+def load_reviews():
+    """zeta/review-*.md 의 지적 항목을 읽는다. '### NNN 이름' 묶음 아래 '- 위치: "대사"' / '- 왜: …' / '- 대안: …' 세 줄이 한 항목."""
+    out = []
+    for path in sorted((ROOT / "zeta").glob("review-*.md")):
+        title = path.stem
+        text = path.read_text(encoding="utf-8")
+        for m in re.finditer(r"^### (\d{3}) (\S+)\n(.*?)(?=^### |^## |\Z)", text, re.M | re.S):
+            num, name, body = m.group(1), m.group(2), m.group(3)
+            cur = None
+            for line in body.splitlines():
+                mm = re.match(r"^- (상황 예시 \d+|인트로|에필로그|소개(?: 탭)?|[^:]{1,20}): (.*)$", line)
+                if mm and mm.group(1) not in ("왜", "대안"):
+                    cur = dict(report=title, num=num, work=name, loc=mm.group(1), line=mm.group(2).strip(), why="", alt="")
+                    out.append(cur)
+                elif cur and line.startswith("- 왜: "):
+                    cur["why"] = line[len("- 왜: "):].strip()
+                elif cur and line.startswith("- 대안: "):
+                    cur["alt"] = line[len("- 대안: "):].strip()
+    for i, r in enumerate(out, 1):
+        r["n"] = i
+    return out
+
+
+def load_repeats():
+    """zeta/review-핵심장치-반복-*.md 의 '## 전체' 표를 읽는다."""
+    out = []
+    for path in sorted((ROOT / "zeta").glob("review-핵심장치-반복-*.md")):
+        text = path.read_text(encoding="utf-8")
+        if "## 전체" not in text:
+            continue
+        for line in text[text.index("## 전체"):].splitlines():
+            m = re.match(r"^\| ([^|]+) \| ([^|]+) \| (\d+) \| ([^|]*) \|$", line)
+            if not m or m.group(1).strip() == "작품":
+                continue
+            secs = []
+            for part in m.group(4).split("·"):
+                mm = re.match(r"\s*(.+?)\s+(\d+)\s*$", part)
+                if mm:
+                    secs.append(dict(sec=mm.group(1), n=int(mm.group(2))))
+            total = int(m.group(3))
+            ex = next((s["n"] for s in secs if s["sec"] == "상황 예시"), 0)
+            out.append(dict(work=m.group(1).strip(), term=m.group(2).strip(), total=total, secs=secs, hot=total >= 12 or ex >= 6))
+    return out
+
+
 def main():
     page = (Path(__file__).resolve().parent / "template.html").read_text(encoding="utf-8")
-    for key, rows in (("DATA", load()), ("ZETA", load_zeta())):
+    for key, rows in (("DATA", load()), ("ZETA", load_zeta()), ("REVIEWS", load_reviews()), ("REPEATS", load_repeats())):
         page = page.replace(f"/*{key}*/", json.dumps(rows, ensure_ascii=False).replace("</", "<\\/"))
     if "--fragment" not in sys.argv:
         page = ('<!doctype html>\n<html lang="ko">\n<head>\n<meta charset="utf-8">\n'
