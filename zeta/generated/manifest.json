@@ -1638,5 +1638,25 @@
       "prompt": "여성용",
       "prompt_sha": "c9295acb2f9e"
     }
+  ],
+  "zeta_086_이한별": [
+    {
+      "file": "lee-hanbyeol-main.png",
+      "label": "주인공 이한별",
+      "prompt": "주인공",
+      "prompt_sha": "206603753dba"
+    },
+    {
+      "file": "lee-hanbyeol-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "89f7dcc7e7a3"
+    },
+    {
+      "file": "lee-hanbyeol-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "bd2217e45f7b"
+    }
   ]
 }
