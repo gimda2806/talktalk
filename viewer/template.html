@@ -70,6 +70,12 @@ input[type=text]:disabled{opacity:.5}
 .zsearch input{flex:1 1 auto;min-width:0;font:inherit;font-size:15px;padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink)}
 .zsearch input::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none}
 .zcount{font-size:12px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.zpager{display:flex;align-items:center;gap:8px;font-size:13px}
+.zpager.top{margin-left:auto}
+.zpager.bottom{justify-content:space-between;margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
+.zpager button{border:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;font-size:13px;min-height:32px;padding:0 12px;border-radius:999px;cursor:pointer;max-width:40vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.zpager button:disabled{opacity:.35;cursor:default}
+.zpager .zpos{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
 
 .sheet{background:var(--sheet);border:1px solid var(--line);border-radius:4px;padding-block:36px 40px;padding-inline:clamp(20px,5vw,56px);min-width:0}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:10px}
@@ -194,6 +200,8 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
   .chip{min-height:34px;padding-inline:13px;white-space:nowrap}
   .list{gap:8px;scroll-snap-type:x proximity;padding-bottom:2px}
   .zsearch{margin-bottom:6px}
+  .zpager.top{width:100%;margin-left:0;justify-content:space-between}
+  .zpager button{min-height:38px;flex:1}
   .item{flex:0 0 auto;grid-template-columns:auto auto;align-items:baseline;gap:6px;padding:8px 15px;border:1px solid var(--line);border-radius:999px;background:var(--sheet);scroll-snap-align:start;min-height:40px}
   .item[aria-current="true"]{border-color:var(--rose);background:var(--rose-soft)}
   .item .no{grid-row:auto;font-size:15px}
@@ -415,6 +423,26 @@ function setSize(n){
   if (btns.length){ btns[0].disabled = state.fs<=0; btns[1].disabled = state.fs>=SIZES.length-1; }
   progress();
 }
+// 작품 바꾸기: 목록·버튼·화살표 키가 모두 이 함수를 쓴다. 순서는 지금 목록(검색으로 거른 결과)을 따른다
+function zgo(w){
+  if (!w) return;
+  zstate.w = w; store.set("zt-cur", w.id); zlist(); zrender();
+  const head = document.querySelector("header.top");
+  const y = document.getElementById("zsheet").getBoundingClientRect().top + scrollY - (getComputedStyle(head).position==="sticky" ? head.offsetHeight : 0);
+  if (scrollY > y) scrollTo({top:y, behavior: matchMedia("(prefers-reduced-motion:reduce)").matches ? "auto" : "smooth"});
+}
+function zneighbors(){
+  const list = (zstate.shown && zstate.shown.length ? zstate.shown : ZETA);
+  const i = list.indexOf(zstate.w);
+  return { prev: i > 0 ? list[i-1] : null, next: i >= 0 && i < list.length-1 ? list[i+1] : null, pos: i+1, total: list.length };
+}
+document.addEventListener("keydown", e => {
+  if (document.getElementById("view-zeta").hidden) return;
+  if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) || e.altKey || e.ctrlKey || e.metaKey) return;
+  const n = zneighbors();
+  if (e.key === "ArrowLeft" && n.prev){ e.preventDefault(); zgo(n.prev); }
+  if (e.key === "ArrowRight" && n.next){ e.preventDefault(); zgo(n.next); }
+});
 
 // 읽은 만큼 차오르는 막대
 function progress(){
@@ -605,9 +633,21 @@ function zrender(){
     <div class="body">
       ${main.map(grp).join("")}
       ${rest.map(g=>`<details id="${g._id}"><summary>${esc(g.title)}</summary><section class="grp">${items(g)}</section></details>`).join("")}
-    </div>`;
+    </div>
+    ${zpager("bottom")}`;
+  sheet.querySelector(".meta").insertAdjacentHTML("beforeend", zpager("top"));
   sheet.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>copyText(texts[+b.dataset.c], b));
   sheet.querySelectorAll("[data-j]").forEach(b=>b.onclick=()=>jumpTo(b.dataset.j));
+  sheet.querySelectorAll("[data-zp]").forEach(b=>b.onclick=()=>zgo(zneighbors()[b.dataset.zp]));
+}
+function zpager(where){
+  const n = zneighbors();
+  const lbl = w => w ? esc(w.name) : "";
+  return `<nav class="zpager ${where}" aria-label="작품 이동">
+    <button type="button" data-zp="prev" ${n.prev?"":"disabled"} title="이전 작품 (←)">← ${n.prev ? lbl(n.prev) : "이전"}</button>
+    <span class="zpos">${n.pos}/${n.total}</span>
+    <button type="button" data-zp="next" ${n.next?"":"disabled"} title="다음 작품 (→)">${n.next ? lbl(n.next) : "다음"} →</button>
+  </nav>`;
 }
 function nowKST(){
   // 보는 사람의 기기 시계(현지 시각) 기준
@@ -650,12 +690,10 @@ function zlist(){
     b.setAttribute("aria-current", w===zstate.w);
     const job = w.jobShort || (w.job || "").split(/[,，]/)[0].trim();
     b.innerHTML = `<span class="t">${esc(w.name)}</span><span class="s">${esc(job || w.sub || "")}</span>`;
-    b.onclick = ()=>{ zstate.w = w; store.set("zt-cur", w.id); zlist(); zrender();
-      const head = document.querySelector("header.top");
-      const y = document.getElementById("zsheet").getBoundingClientRect().top + scrollY - (getComputedStyle(head).position==="sticky" ? head.offsetHeight : 0);
-      if (scrollY > y) scrollTo({top:y, behavior: matchMedia("(prefers-reduced-motion:reduce)").matches ? "auto" : "smooth"}); };
+    b.onclick = ()=>zgo(w);
     list.appendChild(b);
   }
+  zstate.shown = shown;
   const cur = list.querySelector('[aria-current="true"]');
   if (cur && list.scrollWidth > list.clientWidth) list.scrollLeft = cur.offsetLeft - list.offsetLeft - 16;
 }
