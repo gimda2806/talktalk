@@ -778,5 +778,105 @@
       "prompt": "여성용",
       "prompt_sha": "946538ad2d42"
     }
+  ],
+  "zeta_20261007_민수호": [
+    {
+      "file": "min-suho-main.png",
+      "label": "주인공 민수호",
+      "prompt": "주인공",
+      "prompt_sha": "60f6a1e1cc5d"
+    },
+    {
+      "file": "min-suho-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "31b369fbb0c4"
+    },
+    {
+      "file": "min-suho-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "d4f17d565c7f"
+    }
+  ],
+  "zeta_20261008_모두현": [
+    {
+      "file": "mo-duhyeon-main.png",
+      "label": "주인공 모두현",
+      "prompt": "주인공",
+      "prompt_sha": "3a5cca6525d3"
+    },
+    {
+      "file": "mo-duhyeon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "7a085633e821"
+    },
+    {
+      "file": "mo-duhyeon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "1a1690856473"
+    }
+  ],
+  "zeta_20261007_심로운": [
+    {
+      "file": "sim-rowoon-main.png",
+      "label": "주인공 심로운",
+      "prompt": "주인공",
+      "prompt_sha": "5d0e70208554"
+    },
+    {
+      "file": "sim-rowoon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "8456540f7b4a"
+    },
+    {
+      "file": "sim-rowoon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "eb164b4e8da5"
+    }
+  ],
+  "zeta_20261007_신나루": [
+    {
+      "file": "sin-naru-main.png",
+      "label": "주인공 신나루",
+      "prompt": "주인공",
+      "prompt_sha": "caf3712173b8"
+    },
+    {
+      "file": "sin-naru-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "ad2eb6840180"
+    },
+    {
+      "file": "sin-naru-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "28ecef0e797e"
+    }
+  ],
+  "zeta_20261007_여시헌": [
+    {
+      "file": "yeo-siheon-main.png",
+      "label": "주인공 여시헌",
+      "prompt": "주인공",
+      "prompt_sha": "192e435bee86"
+    },
+    {
+      "file": "yeo-siheon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "c963c1377af9"
+    },
+    {
+      "file": "yeo-siheon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "7bbf88af718f"
+    }
   ]
 }
