@@ -658,5 +658,65 @@
       "prompt": "여성용",
       "prompt_sha": "25c287789e52"
     }
+  ],
+  "zeta_20261009_장우빈": [
+    {
+      "file": "jang-woobin-main.png",
+      "label": "주인공 장우빈",
+      "prompt": "주인공",
+      "prompt_sha": "7e66808295ad"
+    },
+    {
+      "file": "jang-woobin-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "8efd2e2ddc49"
+    },
+    {
+      "file": "jang-woobin-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "79af98a59de2"
+    }
+  ],
+  "zeta_20261007_남바다": [
+    {
+      "file": "nam-bada-main.png",
+      "label": "주인공 남바다",
+      "prompt": "주인공",
+      "prompt_sha": "7a36ac225d79"
+    },
+    {
+      "file": "nam-bada-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "d4a673201543"
+    },
+    {
+      "file": "nam-bada-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "d8235cf3067f"
+    }
+  ],
+  "zeta_20261007_류현우": [
+    {
+      "file": "ryu-hyunwoo-main.png",
+      "label": "주인공 류현우",
+      "prompt": "주인공",
+      "prompt_sha": "33cf0c602e32"
+    },
+    {
+      "file": "ryu-hyunwoo-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "2c3ff19c5b04"
+    },
+    {
+      "file": "ryu-hyunwoo-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "87ea407d09e4"
+    }
   ]
 }
