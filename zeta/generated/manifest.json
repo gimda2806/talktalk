@@ -650,13 +650,13 @@
       "file": "na-donghyeon-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "5d81e5d2fcd4"
+      "prompt_sha": "14c2b4793f52"
     },
     {
       "file": "na-donghyeon-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "25c287789e52"
+      "prompt_sha": "0471994889a1"
     }
   ],
   "zeta_073_장우빈": [
@@ -684,7 +684,7 @@
       "file": "nam-bada-main.png",
       "label": "주인공 남바다",
       "prompt": "주인공",
-      "prompt_sha": "b1161801a77d"
+      "prompt_sha": "35750d1ec7a8"
     },
     {
       "file": "nam-bada-user-m.png",
@@ -730,13 +730,13 @@
       "file": "seok-woorim-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "4d5f758ec334"
+      "prompt_sha": "df14412eed70"
     },
     {
       "file": "seok-woorim-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "9a112525d293"
+      "prompt_sha": "cd9ad4b65772"
     }
   ],
   "zeta_017_봉아론": [
@@ -1110,13 +1110,13 @@
       "file": "gang-rio-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "d23abe0ed979"
+      "prompt_sha": "19654d3ce9fb"
     },
     {
       "file": "gang-rio-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "0feb61e6b1ac"
+      "prompt_sha": "ca2db6c9329c"
     }
   ],
   "zeta_079_남형우": [
@@ -1517,6 +1517,126 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "f61dbcfe17ea"
+    }
+  ],
+  "zeta_058_차인성": [
+    {
+      "file": "cha-inseong-main.png",
+      "label": "주인공 차인성",
+      "prompt": "주인공",
+      "prompt_sha": "80b7db8c73e0"
+    },
+    {
+      "file": "cha-inseong-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "a3ea68edf7c6"
+    },
+    {
+      "file": "cha-inseong-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "b6711311d5ac"
+    }
+  ],
+  "zeta_054_길우혁": [
+    {
+      "file": "gil-woohyeok-main.png",
+      "label": "주인공 길우혁",
+      "prompt": "주인공",
+      "prompt_sha": "d5fc54be03c4"
+    },
+    {
+      "file": "gil-woohyeok-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "44f8b7a29df2"
+    },
+    {
+      "file": "gil-woohyeok-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "4fae74671ee0"
+    }
+  ],
+  "zeta_060_허노을": [
+    {
+      "file": "heo-noeul-main.png",
+      "label": "주인공 허노을",
+      "prompt": "주인공",
+      "prompt_sha": "77268998af50"
+    },
+    {
+      "file": "heo-noeul-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "65fbe8a05ae4"
+    },
+    {
+      "file": "heo-noeul-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "94da583641e0"
+    }
+  ],
+  "zeta_055_전효인": [
+    {
+      "file": "jeon-hyoin-main.png",
+      "label": "주인공 전효인",
+      "prompt": "주인공",
+      "prompt_sha": "536052504e8d"
+    },
+    {
+      "file": "jeon-hyoin-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "4849b7042b6f"
+    },
+    {
+      "file": "jeon-hyoin-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "40990f4f7b9d"
+    }
+  ],
+  "zeta_051_조명재": [
+    {
+      "file": "jo-myeongjae-main.png",
+      "label": "주인공 조명재",
+      "prompt": "주인공",
+      "prompt_sha": "53b75969bebe"
+    },
+    {
+      "file": "jo-myeongjae-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "20ccb10ffec2"
+    },
+    {
+      "file": "jo-myeongjae-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "a1d2e1ac2dc7"
+    }
+  ],
+  "zeta_056_소기찬": [
+    {
+      "file": "so-gichan-main.png",
+      "label": "주인공 소기찬",
+      "prompt": "주인공",
+      "prompt_sha": "9b1435aaf773"
+    },
+    {
+      "file": "so-gichan-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "987f13b12952"
+    },
+    {
+      "file": "so-gichan-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "c9295acb2f9e"
     }
   ]
 }
