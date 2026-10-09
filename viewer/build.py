@@ -11,12 +11,14 @@
 """
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CH_DIR = ROOT / "notes" / "설렘모먼트_장"
 ZETA_DIR = ROOT / "zeta"
+ZETA_IMAGE_DIR = ZETA_DIR / "generated"
 OUT = Path(__file__).resolve().parent / "dist" / "index.html"
 
 
@@ -233,6 +235,10 @@ def load_common():
 def load_zeta():
     """zeta/zeta_*.md 하나 = 제타 작품 하나. 설정집 파일이 있으면 '4. 설정집' 묶음에 끼워 넣는다."""
     rows = read_zeta_list()
+    image_manifest = {}
+    manifest = ZETA_IMAGE_DIR / "manifest.json"
+    if manifest.exists():
+        image_manifest = json.loads(manifest.read_text(encoding="utf-8"))
     works = []
     for f in sorted(ZETA_DIR.glob("zeta_*.md")):
         text = f.read_text(encoding="utf-8")
@@ -251,8 +257,25 @@ def load_zeta():
             for g in groups:
                 if g["title"].startswith("4."):
                     g["items"] = items
-        works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), **info))
+        images = [dict(label=i["label"], url=f"images/{i['file']}") for i in image_manifest.get(f.stem, [])]
+        works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
     return load_common() + sorted(works, key=lambda w: (w["date"], w["name"]), reverse=True)
+
+
+def copy_zeta_images():
+    """매니페스트에 등록한 생성 이미지를 정적 배포 폴더로 복사한다."""
+    manifest = ZETA_IMAGE_DIR / "manifest.json"
+    if not manifest.exists():
+        return
+    rows = json.loads(manifest.read_text(encoding="utf-8"))
+    image_out = OUT.parent / "images"
+    image_out.mkdir(parents=True, exist_ok=True)
+    for items in rows.values():
+        for item in items:
+            source = ZETA_IMAGE_DIR / item["file"]
+            if not source.is_file():
+                raise FileNotFoundError(f"이미지 매니페스트 파일이 없음: {source.relative_to(ROOT)}")
+            shutil.copy2(source, image_out / source.name)
 
 
 def main():
@@ -265,6 +288,7 @@ def main():
                 '</head>\n<body>\n' + page + '\n</body>\n</html>\n')
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(page, encoding="utf-8")
+    copy_zeta_images()
     print(f"{OUT.relative_to(ROOT)} 생성")
 
 

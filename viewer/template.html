@@ -131,6 +131,10 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
 
 /* 제타 */
 .zsheet .body{max-width:none;font-family:var(--sans);font-size:14px;line-height:1.75}
+.zgallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0 24px}
+.zgallery figure{margin:0;min-width:0}
+.zgallery img{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
+.zgallery figcaption{margin-top:6px;color:var(--muted);font-size:12px;text-align:center}
 .grp{margin-top:30px;border-top:1px solid var(--line);padding-top:20px}
 .grp:first-child{margin-top:0;border-top:0;padding-top:0}
 .grp h3{font-family:var(--display);font-size:19px;margin:0 0 10px}
@@ -203,6 +207,9 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
   .fh .cnt{margin-left:0}
   .fh .copy{margin-left:auto}
   .sheet h2{font-size:22px}
+  .zgallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:-20px;padding-inline:20px;scrollbar-width:none}
+  .zgallery::-webkit-scrollbar{display:none}
+  .zgallery figure{flex:0 0 72%;scroll-snap-align:center}
   .body{line-height:1.85}
   .facts{margin:12px 0 24px;gap:4px 12px}
   .dl{grid-template-columns:1fr;gap:0;margin-bottom:.9em}
@@ -585,6 +592,7 @@ function zrender(){
     </div>
     <h2>${esc(w.name)}</h2>
     ${w.sub?`<p class="sub">${esc(w.sub)}</p>`:""}
+    ${w.images&&w.images.length?`<div class="zgallery">${w.images.map(i=>`<figure><img src="${esc(i.url)}" alt="${esc(i.label)}" loading="lazy"><figcaption>${esc(i.label)}</figcaption></figure>`).join("")}</div>`:""}
     <dl class="facts">
       ${w.mood?`<dt>분위기</dt><dd>${esc(w.mood)}</dd>`:""}
       ${w.job?`<dt>직업·배경</dt><dd>${esc(w.job)}</dd>`:""}
