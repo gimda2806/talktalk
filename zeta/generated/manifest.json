@@ -1593,6 +1593,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "b6711311d5ac"
+    },
+    {
+      "file": "cha-inseong-so-gichan-cameo.png",
+      "label": "카메오 · 〈한동네 생활권〉 · 첫차 정류장 앞 평상",
+      "prompt": "카메오",
+      "prompt_sha": "579c3231e8f8",
+      "with": "소기찬"
     }
   ],
   "zeta_054_길우혁": [
@@ -1693,6 +1700,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "c9295acb2f9e"
+    },
+    {
+      "file": "cha-inseong-so-gichan-cameo.png",
+      "label": "카메오 · 〈한동네 생활권〉 · 첫차 정류장 앞 평상",
+      "prompt": "카메오",
+      "prompt_sha": "579c3231e8f8",
+      "with": "차인성"
     }
   ],
   "zeta_086_이한별": [
