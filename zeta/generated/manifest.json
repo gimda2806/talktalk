@@ -1026,6 +1026,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "a5210165ddcf"
+    },
+    {
+      "file": "jeong-hoseong-ju-seungha-cameo.png",
+      "label": "카메오 · 〈한빛대학교〉 · 학생식당 창가",
+      "prompt": "카메오",
+      "prompt_sha": "e920f6fd1ba2",
+      "with": "주승하"
     }
   ],
   "zeta_057_유강태": [
@@ -1454,6 +1461,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "ca65dac7b86d"
+    },
+    {
+      "file": "jeong-hoseong-ju-seungha-cameo.png",
+      "label": "카메오 · 〈한빛대학교〉 · 학생식당 창가",
+      "prompt": "카메오",
+      "prompt_sha": "e920f6fd1ba2",
+      "with": "정호성"
     }
   ],
   "zeta_046_오여름": [
