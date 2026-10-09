@@ -851,6 +851,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "eb164b4e8da5"
+    },
+    {
+      "file": "jin-haewon-sim-rowoon-cameo.png",
+      "label": "카메오 · 〈해담그룹〉 · 호텔 로비의 시찰",
+      "prompt": "카메오",
+      "prompt_sha": "fdfdee717586",
+      "with": "진해원"
     }
   ],
   "zeta_021_신나루": [
@@ -1797,6 +1804,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "5a21b6529385"
+    },
+    {
+      "file": "jin-haewon-sim-rowoon-cameo.png",
+      "label": "카메오 · 〈해담그룹〉 · 호텔 로비의 시찰",
+      "prompt": "카메오",
+      "prompt_sha": "fdfdee717586",
+      "with": "심로운"
     }
   ],
   "zeta_091_서겨울": [
