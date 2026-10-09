@@ -443,9 +443,9 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 
 프로필 세 장과 별개로, 이벤트 한 장면이나 연작 카메오 장면을 "드라마 스틸 한 장"으로 뽑을 때 쓰는 틀. 2026-10-07까지 유저 프로필에 쓰던 옛 6-10 스틸 블록(뒤쪽 옆모습, 얼굴 미노출)을 장면용으로 되살린 것이다. 등록(`register.py`)이나 6-15 변경 메모 대상이 아니고, 작품 파일 끝 `## 10. 장면 스틸` 또는 `zeta-series.md`에 둔다.
 
-**구성 순서 (한 프롬프트, 짧은 버전 길이 3,000~4,500자만. 긴 버전은 만들지 않는다 — 얼굴 블록이 둘이면 긴 버전은 도구가 못 받는다)**
+**구성 순서 (긴 버전과 짧은 버전을 프로필처럼 둘 다 둔다. 긴 버전은 1번 헤더 자리에 6-1·6-2·6-3 블록 원문을 그대로 넣고, 짧은 버전은 아래 1번의 한 문장 헤더를 쓴다. 2026-10-09 확인: 사용자의 이미지 도구가 10,000자대 긴 버전도 읽는다)**
 
-1. 스틸 헤더 (원문 그대로): `Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premium live-action K-drama photography with idol-grade visual finish; skin even-toned with real pore texture and no dewy gloss; cinematic soft focus that keeps facial structure and eye sharpness; clean Korean drama cinematic texture, low saturation, low-to-mid contrast, subtle filmic grain.`
+1. 스틸 헤더 — 긴 버전: `Vertical character design sheet…`를 `Ultra-photorealistic 2K live-action Korean drama still, NOT illustration.`로 바꾼 6-1 블록 + 6-2 + 인물 성별에 맞는 6-3(두 사람이 같은 성별이면 한 번만). 짧은 버전 (원문 그대로): `Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premium live-action K-drama photography with idol-grade visual finish; skin even-toned with real pore texture and no dewy gloss; cinematic soft focus that keeps facial structure and eye sharpness; clean Korean drama cinematic texture, low saturation, low-to-mid contrast, subtle filmic grain.`
 2. 장면 한 문장: 장소·시간대·빛·날씨·분위기. 작품의 핵심 장치가 보이면 넣는다(필름 통, 예약표, 보리차 컵).
 3. 등장 인물마다 한 덩어리: `LEFT/RIGHT/CENTER, 이름:` + 그 작품 주인공 프롬프트의 `Face geometry: …`와 `Character design: …`(머리·몸·몸의 흔적)과 `Wardrobe: …`를 **그대로 복사** + 이 장면에서의 자세·동작·시선·표정 한 문장. 두 명 이상이면 맨 앞에 `Two established characters, faces kept distinct.`를 쓰고 좌우를 반드시 지정한다.
 4. 유저가 나오는 장면: 유저 얼굴은 보이지 않게 한다(대화 프로필 얼굴이 남녀 공용이라 장면에서 성별을 고정하면 안 된다). 옛 블록 구절을 그대로 쓴다: `A young adult seen from behind and slightly from the side, gender-neutral, face not shown, (자세와 자리), (옷차림)`.
