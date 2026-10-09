@@ -594,7 +594,14 @@ function zrender(){
   sheet.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>copyText(texts[+b.dataset.c], b));
   sheet.querySelectorAll("[data-j]").forEach(b=>b.onclick=()=>jumpTo(b.dataset.j));
 }
+function nowKST(){
+  // 보는 사람의 기기 시계(현지 시각) 기준
+  const d = new Date();
+  const p = n => String(n).padStart(2,"0");
+  return `${d.getFullYear()}.${p(d.getMonth()+1)}.${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
+}
 async function copyText(t, btn){
+  t = t.replace(/\{\{생성일시\}\}/g, nowKST());
   try { await navigator.clipboard.writeText(t); }
   catch(e){
     const ta = document.createElement("textarea");
