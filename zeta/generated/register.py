@@ -4,6 +4,7 @@
   python3 zeta/generated/register.py zeta_042_송예찬 주인공 song-yechan-main.png
   python3 zeta/generated/register.py zeta_042_송예찬 남성용 song-yechan-user-m.png
   python3 zeta/generated/register.py zeta_042_송예찬 여성용 song-yechan-user-f.png
+  python3 zeta/generated/register.py zeta_084_손태윤 조연 son-taeyun-sub.png   # 서브 남주 등 조연 프로필
   python3 zeta/generated/register.py zeta_001_백서율 카메오 baek-seoyul-noh-chanyoung-cameo.png 노찬영
   python3 zeta/generated/register.py --check   # 프롬프트가 바뀐 이미지가 있는지 확인
 
@@ -29,6 +30,7 @@ KINDS = {
     "주인공": r"^### 주인공 프로필용\n+```text\n(.*?)```",
     "남성용": r"^(?:#### 남성용|### 유저 대화 프로필용 \(남성용\))\n+```text\n(.*?)```",
     "여성용": r"^(?:#### 여성용|### 유저 대화 프로필용 \(여성용\))\n+```text\n(.*?)```",
+    "조연": r"^### 조연 프로필용 \([^)\n]*\)\n+```text\n(.*?)```",
     "카메오": None,  # zeta-series.md 에서 찾는다 (cameo_block 참고)
 }
 CAMEO_HEAD = re.compile(r"^### (.+?) — (.+?) × (.+?)\s*$", re.M)
@@ -80,7 +82,7 @@ def guess_kind(item):
     if item.get("prompt") in KINDS:
         return item["prompt"]
     f = item.get("file", "")
-    return "카메오" if "cameo" in f else "남성용" if "user-m" in f else "여성용" if "user-f" in f else "주인공"
+    return "카메오" if "cameo" in f else "남성용" if "user-m" in f else "여성용" if "user-f" in f else "조연" if "-sub" in f else "주인공"
 
 
 def load():

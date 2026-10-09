@@ -9,6 +9,7 @@
 - 주인공 프로필용 프롬프트: 5절 구성 순서의 1~9번 블록 전체를 적용한다. 캐릭터 시트가 아니라 프로필 한 장이 필요하면 7번(레이아웃 블록)은 쓰지 않고 6-12의 구도 문장 한 줄로 대신한다. 이때 6-1 블록의 첫 문장 `Vertical character design sheet for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`은 `Upper body portrait for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`으로 바꾼다. 시트 문장을 그대로 두면 여러 칸짜리 그림이 나올 수 있다. 6-1의 나머지 문장은 그대로 둔다.
 - 유저 대화 프로필용 프롬프트: 남성용과 여성용 두 개를 만든다. 주인공과 같은 블록 구성(6-1, 6-2, 6-3, 얼굴 구조, 의상, 조명, 6-9)을 쓰되 6-3은 각각 MALE/FEMALE을 넣고, 얼굴 구조는 6-10의 유저 공통 얼굴을 쓴다. 얼굴이 보이는 상반신 초상이다. 대화 프로필 설명 칸은 성별 없이 하나만 둔다. (옛 웹툰풍·뒷모습 형식은 더 쓰지 않는다)
 - 각 영문 프롬프트 바로 아래에 한글 설명을 한두 문장으로 덧붙인다. (코드블록 밖)
+- 조연 프로필용 프롬프트(선택): 서브 남주·라이벌처럼 이벤트와 설정집에 직접 등장하고 대사가 있는 조연에게만 한 장 더 만든다. 제목은 `### 조연 프로필용 (이름 · 역할)`, 주인공과 같은 블록 구성, 푸터 이름은 조연 이름. 6-11 구분 축에서 **주인공과 최소 2개, 되도록 4개 이상** 다르게 하고(같은 화면에 둘이 나올 수 있으니 한눈에 구분돼야 한다), 유저 얼굴(6-10)과도 다르게 한다. 짧은 버전·한글 설명도 같이 둔다. 등록은 `register.py <작품> 조연 <파일>`(파일명 `-sub`). 곽말순·남궁두처럼 한두 줄 스쳐 가는 조연에게는 만들지 않는다.
 
 ## 1. 레퍼런스에서 "전체 미감"만 뽑고 개인은 복제하지 않는다
 
@@ -438,6 +439,26 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 이미지 프롬프트 세 장 중 하나라도 고치면(재설계, 문구 교체, 일괄 치환 모두) `zeta/image-prompt-changelog.md`에 날짜·작품·바뀐 프롬프트·바뀐 내용·이미지 유무·처리를 한 줄 적는다. 이미 만든 이미지는 `zeta/generated/manifest.json`에 등록돼 있고 등록 당시의 프롬프트 지문(`prompt_sha`)을 갖고 있어서, 프롬프트가 바뀌면 `python3 zeta/generated/register.py --check`와 뷰어 갤러리가 "프롬프트 바뀜 · 재생성 확인"이라고 알려 준다. 짧은 버전(6-14)만 새로 만드는 것은 긴 버전이 안 바뀌므로 메모만 남기고 재생성은 필요 없다. 이미지를 다시 만들었으면 `register.py`로 다시 등록해 지문을 갱신한다.
 
 파일 끝 `## 사람이 고친 곳`에 적힌 이미지 프롬프트 칸은 사람이 뷰어에서 직접 고친 것이다. 이 문서의 어떤 규칙보다 우선하므로 재설계·일괄 치환 때 되돌리지 않는다. 바꿔야 한다고 보이면 사용자에게 먼저 묻는다.
+
+### 6-16. 장면 스틸 (드라마 속 한 장면, 선택)
+
+프로필 세 장과 별개로, 이벤트 한 장면이나 연작 카메오 장면을 "드라마 스틸 한 장"으로 뽑을 때 쓰는 틀. 2026-10-07까지 유저 프로필에 쓰던 옛 6-10 스틸 블록(뒤쪽 옆모습, 얼굴 미노출)을 장면용으로 되살린 것이다. 등록(`register.py`)이나 6-15 변경 메모 대상이 아니고, 작품 파일 끝 `## 10. 장면 스틸` 또는 `zeta-series.md`에 둔다.
+
+**구성 순서 (긴 버전과 짧은 버전을 프로필처럼 둘 다 둔다. 긴 버전은 1번 헤더 자리에 6-1·6-2·6-3 블록 원문을 그대로 넣고, 짧은 버전은 아래 1번의 한 문장 헤더를 쓴다. 2026-10-09 확인: 사용자의 이미지 도구가 10,000자대 긴 버전도 읽는다)**
+
+1. 스틸 헤더 — 긴 버전: `Vertical character design sheet…`를 `Ultra-photorealistic 2K live-action Korean drama still, NOT illustration.`로 바꾼 6-1 블록 + 6-2 + 인물 성별에 맞는 6-3(두 사람이 같은 성별이면 한 번만). 짧은 버전 (원문 그대로): `Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premium live-action K-drama photography with idol-grade visual finish; skin even-toned with real pore texture and no dewy gloss; cinematic soft focus that keeps facial structure and eye sharpness; clean Korean drama cinematic texture, low saturation, low-to-mid contrast, subtle filmic grain.`
+2. 장면 한 문장: 장소·시간대·빛·날씨·분위기. 작품의 핵심 장치가 보이면 넣는다(필름 통, 예약표, 보리차 컵).
+3. 등장 인물마다 한 덩어리: `LEFT/RIGHT/CENTER, 이름:` + 그 작품 주인공 프롬프트의 `Face geometry: …`와 `Character design: …`(머리·몸·몸의 흔적)과 `Wardrobe: …`를 **그대로 복사** + 이 장면에서의 자세·동작·시선·표정 한 문장. 두 명 이상이면 맨 앞에 `Two established characters, faces kept distinct.`를 쓰고 좌우를 반드시 지정한다.
+4. 유저가 나오는 장면: 유저 얼굴은 보이지 않게 한다(대화 프로필 얼굴이 남녀 공용이라 장면에서 성별을 고정하면 안 된다). 옛 블록 구절을 그대로 쓴다: `A young adult seen from behind and slightly from the side, gender-neutral, face not shown, (자세와 자리), (옷차림)`.
+5. 구도 한 문장: 6-12의 축(프레임·앵글·시선·자세)에서 고른다. 두 명이면 `two-shot`, 둘 다 얼굴이 선명해야 하면 `both faces sharp`.
+6. 네거티브 (원문 그대로): `Negative: no unintentional text, no watermark, no UI overlay, no merged or swapped faces, no extra person, no plastic or wax-figure skin, no exaggerated expression, no extra limbs, no illustration or webtoon style.`
+7. 푸터: 6-14 짧은 버전의 푸터 문장을 그대로 쓰되 이름 자리에 `이름 · 이름` 또는 `이름 · 장면 제목`을 넣는다. 예: `백서율 · 노찬영 | {{생성일시}}`.
+
+**규칙**
+- 얼굴 블록은 반드시 그 작품의 현재 주인공 프롬프트에서 복사한다(머리색·표식·피어싱이 바뀌면 스틸도 다시 복사). 새로 쓰지 않는다.
+- 장면은 플롯에 있는 장면만 쓴다(이벤트, 상황 예시, 에필로그, 연작 설정집의 카메오 줄). 플롯에 없는 사건을 스틸로 먼저 만들지 않는다.
+- 두 주인공이 한 장에 나오면 얼굴이 섞이기 쉽다. 결과에서 얼굴이 흐트러지면 한 명을 뒷모습·옆모습으로 돌리거나 한 명씩 두 장으로 나눈다.
+- 유저가 나오는 장면 스틸은 공개 칸에 쓰지 않는다(플랫폼 규칙상 유저 이미지는 대화 프로필뿐). 작업용 참고 이미지로만 둔다.
 
 ## 7. GLOBAL LITERAL GATE (생성 전 필수 검사)
 
