@@ -255,7 +255,7 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 | 눈꺼풀 | 또렷한 쌍꺼풀 / 속쌍꺼풀(hooded inner double eyelid) / 홑꺼풀(long clean monolid eyes) |
 | 눈꼬리 | 올라감 / 수평 / 내려감 |
 | 얼굴형 | 계란형 / 깔끔하게 각진 턱(clean angular jaw) / 긴 얼굴 / 부드럽게 둥근 턱 |
-| 표식 | 안경(테 종류까지) / 눈 밑·입가의 작은 점 / 보조개 / 눈썹 끝의 작은 흉터 / 옅은 주근깨 (수염은 턱수염·콧수염·stubble 모두 쓰지 않는다) |
+| 표식 | 안경(테 종류까지) / 눈 밑·입가의 작은 점 / 보조개 / 눈썹 끝의 작은 흉터 / 옅은 주근깨 / 타투(선택, 아래 "타투 표식" 조건대로) (수염은 턱수염·콧수염·stubble 모두 쓰지 않는다) |
 | 피부 톤 | 쿨 포슬린(cool white porcelain) / 밝은 웜 아이보리(luminous warm ivory) / 밝게 그을린 톤(lightly sun-kissed with healthy warmth, 야외·현장 직업) |
 | 체격 | 마르고 긴 / 어깨 넓고 탄탄한 / 중간 |
 | 직업 표식 | 아래 "직업이 보이게 하는 세 가지" |
@@ -269,6 +269,21 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
    - `Youthful Korean idol energy — fresh-faced, polished and camera-ready, never juvenile,` → `Mature Korean idol-actor presence — a settled adult face, polished and camera-ready, never boyish, never juvenile,` (6-3 MALE의 `youthful adult freshness` → `settled adult maturity`)
    - 조명 블록 끝의 `skin must remain cool porcelain-white, never warm yellow`도 피부 톤에 맞게 `skin remains luminous warm ivory, never sallow`로 바꾼다.
 4. 고른 축을 검수 결과의 이미지 항목에 적는다. 예: "직업 인상: 성숙한 30대 중반/자연스러운 손질/마르고 곧음/실내 밝은 톤/평가하는 눈/자유 · 구분 축: 짙은 애쉬 브라운 중간 길이 쓸어 넘김 / 속쌍꺼풀 / 각진 턱 / 눈 밑 점 / 웜 아이보리". 다음 작품은 이 기록과 대조한다.
+
+**타투 표식 (선택, 캐릭터에 어울릴 때만)**
+
+타투는 표식 중 유일하게 "본인이 고른 것"이라 성격까지 말해 주지만, 없어도 된다. 그 캐릭터의 매력 요소(겉과 속의 간극, 버릇, 설렘 스위치)와 이어질 때만 넣고, 구분 축을 채우려고 아무에게나 넣지 않는다. 넣을 때의 조건:
+
+| 항목 | 조건 |
+| --- | --- |
+| 무늬 | 글자 없는 작은 선 그림만. 가는 한 줄 산등성이·파도선·별자리 점선·식물 줄기·조리개 날·음표 같은 것. 글자·숫자·레터링은 쓰지 않는다(6-9의 "의도하지 않은 글자 금지"와 충돌해 도구가 엉뚱한 글자를 만든다) |
+| 자리 | 상반신 초상에 보이는 곳만: 손목 안쪽 / 손가락 옆면 / 팔뚝 안쪽(소매를 걷는 직업) / 목 옆·귀 뒤 / 쇄골. 등·허벅지처럼 안 보이는 자리는 표식이 못 된다 |
+| 크기 | 얼굴 가까이(목·귀 뒤)는 손가락 한 마디, 팔뚝은 손바닥 길이까지. 아이돌급 얼굴 기준선을 가리지 않는다 |
+| 직업 | 제복·규정 직업(역무원·승무원·은행원·교사·의사)은 소매에 가려지는 자리에 아주 작게, 또는 쓰지 않는다. 예술·자영업·운동·현장 직업은 자유 |
+| 사연 | 플롯 어딘가(캐릭터 설명 둘째 줄, 설정집, 이벤트 하나)에 그 타투가 왜 거기 있는지 한 줄은 있어야 한다. 그림에만 있고 글에 없는 타투는 쓰지 않는다 |
+| 기존 작품 | 이미 이미지를 만든 작품(`zeta/generated/manifest.json`)에는 넣지 않는다. 넣으면 6-15 변경 메모와 재생성이 필요하다 |
+
+프롬프트에는 Face geometry나 Character design 안에 `a small single-line ○○ tattoo on the inside of the left forearm (distinguishing mark, no lettering)`처럼 자리·무늬·글자 없음을 한 구절로 쓴다.
 
 **직업이 보이게 하는 세 가지 (6-6과 함께, 주인공마다 필수)**
 
