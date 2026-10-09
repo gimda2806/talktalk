@@ -227,7 +227,7 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 
 유저 얼굴 구조는 공통이지만 머리까지 같으면 모든 작품의 여성 유저가 "어깨 길이 흑갈색 머리" 한 사람으로 보인다(2026-10-09까지 70편이 그랬다). 여성은 머리 손질이 다양하므로 머리를 그 작품 유저의 개성으로 쓴다. 남성용도 같은 뜻으로 길이·가르마·결을 조금씩 바꿀 수 있지만 필수는 아니다.
 
-- Character design의 머리 구절을 아래 표에서 골라 쓰고, **직전 5편의 여성용과 다른 스타일**을 고른다. 색은 8절대로 검정·흑갈색·짙은 갈색·짙은 애쉬 브라운 안에서만.
+- Character design의 머리 구절을 아래 표에서 골라 쓰고, **직전 5편의 여성용과 다른 스타일**을 고른다. 색은 8절대로 검정·흑갈색·짙은 갈색·짙은 애쉬 브라운 안에서만. 단, 유저가 아이돌·연습생·신인 가수·모델·배우·댄서처럼 **스타일링이 직업인 역할**이면 남성용·여성용 모두 6-11 "머리색 변주" 표의 색을 쓸 수 있다. 남녀 같은 색 한 가지로 가볍게(주인공보다 한 단계 얌전한 톤), 주인공과는 다른 색으로, 한글 설명과 짧은 버전에도 반영한다. 회사원·학생·손님 같은 일반 역할은 그대로.
 - 그 작품에서 유저가 하는 일·장면에 맞춘다. 운동·주방·현장·병원은 묶거나 올린 머리, 사무·카페·도서관·연인은 푼 머리나 반묶음, 학교·학원은 단정한 쪽. 액세서리(집게핀·리본·헤어밴드·머리꽂이)는 하나까지.
 - 얼굴 구조(6-10 Face geometry)는 바꾸지 않는다. 머리만 바꾼다. 짧은 버전과 한글 설명 줄도 같이 고친다.
 
@@ -314,6 +314,43 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 | 부분 탈색 | black hair with a few bleached ash-gray streaks through the top | 안무가, 댄서, DJ |
 | 핑크 베이지 | soft pink-beige toned hair | 아이돌(여름 컴백), 뷰티 |
 | 애쉬 민트 | ash-mint toned hair, muted and cool | 아이돌(콘셉트 앨범) |
+| 코랄 오렌지 | bright coral-orange dyed hair, clearly a stage color | 아이돌(컴백 티저), 메인댄서 |
+| 레드 | vivid cherry-red dyed hair for the comeback concept | 아이돌(강한 콘셉트) |
+| 퍼플 | muted grape-purple toned hair | 아이돌(콘셉트 앨범) |
+| 일렉트릭 블루 | electric blue dyed hair with a subtle wolf cut | 아이돌(퍼포먼스 포지션) |
+
+**아이돌 헤어 레퍼런스 (스트레이 키즈·보이넥스트도어 계열)**
+
+아이돌 캐릭터의 머리를 고를 때 두 그룹의 "방향"을 참고한다. 실제 멤버 이름·그룹 이름은 프롬프트에 절대 쓰지 않고(초상권·동일 얼굴 위험), 색·길이·손질 방식만 옮겨 담는다. 아래는 공개된 활동 사진에서 반복되는 경향을 정리한 것이지 특정 시점의 정확한 색이 아니다.
+
+| 계열 | 느낌 | 색 | 길이·손질 | 어울리는 캐릭터 |
+| --- | --- | --- | --- | --- |
+| 스트레이 키즈 계열 | 컴백마다 색이 확 바뀌는 "무대용 머리". 강한 색을 자신 있게 쓴다 | 플래티넘·핑크·코랄 오렌지·레드·퍼플·일렉트릭 블루, 비활동기엔 흑발로 복귀 | 무대는 젤·왁스로 올백, 행사는 가운데 가르마 커튼 앞머리에 부드러운 웨이브. 한쪽을 짧게 친 실험적 컷, 살짝 울프컷 | 메인댄서·센터·퍼포먼스 포지션, 데뷔 몇 년 차의 자신감 있는 주인공 |
+| 보이넥스트도어 계열 | 꾸미지 않은 듯한 "옆집 소년" 머리. 색보다 질감과 흐트러짐으로 개성 | 자연 흑발·자연 갈색·밀크 브라운, 탈색해도 애쉬 베이지 정도의 한 단계 얌전한 톤 | 눈썹을 덮는 흐트러진 앞머리, 자연 곱슬·히피펌, 레이어드 울프컷·짧은 멀렛, 후드티·모자와 어울리는 부스스한 결 | 신인·연습생·연하 아이돌, 유저가 아이돌일 때(6-10의 "한 단계 얌전한 톤") |
+
+머리 모양 구절(Character design의 머리 구절에 색과 함께 쓴다):
+
+| 모양 | 영문 구절 |
+| --- | --- |
+| 커튼 앞머리 웨이브 | center-parted curtain fringe with soft waves, fluffy and camera-ready |
+| 무대용 올백 | hair slicked back from the forehead with gel for the stage, a few strands falling loose |
+| 레이어드 울프컷 | a layered wolf cut, shaggy on top and tapering at the nape |
+| 짧은 멀렛 | a short mullet with the nape left slightly longer |
+| 흐트러진 앞머리 | messy eyebrow-length fringe, brushed down and slightly tousled |
+| 히피펌 | loose hippie-perm curls with a soft natural volume |
+| 한쪽 짧은 실험 컷 | an asymmetric cut with one side cropped shorter |
+| 반묶음 장발 | hair grown past the jaw with the top half tied back |
+| 눈썹 드러낸 쉼표 앞머리 | a comma-shaped fringe parted to one side, brows showing |
+| 투블럭 다운펌 | a neat two-block cut with the top pressed down in a soft down-perm |
+| 부분 탈색 가닥 | with a few bleached strands framing the face |
+| 헤어핀·실핀 | fringe pinned back with two small black bobby pins |
+| 비니·캡 | under a loose black beanie / a black cap worn backwards with the fringe out |
+| 땀에 눌린 연습 머리 | hair slightly damp and pressed flat at the temples from rehearsal |
+| 질감 | fluffy and airy (행사·화보) / matte and textured (무대) / wet-look gelled (강한 콘셉트) |
+
+스타일링까지 캐릭터에 맞춘다. 색 하나만 바꾸는 것은 6-11 3절의 "같은 얼굴에 머리만 바꾼 것"이다. 같은 작품 안에서도 주인공은 무대용(올백·젤·강한 색), 유저는 연습실용(흐트러진 앞머리·땀·비니)처럼 **장면에 맞는 손질**로 나누면 두 사람이 한 그룹의 다른 멤버처럼 읽힌다.
+
+6-11의 "직전 5편과 2축 이상 다름" 규칙은 아이돌 캐릭터에도 그대로 적용된다. 같은 소속사·같은 그룹 설정의 작품(예: 소담 엔터테인먼트 시리즈)은 서로 다른 계열을 쓰면 한 그룹처럼 보여서 좋다.
 
 **타투 표식 (선택, 캐릭터에 어울릴 때만)**
 
