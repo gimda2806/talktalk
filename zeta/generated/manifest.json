@@ -1018,5 +1018,25 @@
       "prompt": "여성용",
       "prompt_sha": "5a100f6ea91b"
     }
+  ],
+  "zeta_032_한도겸": [
+    {
+      "file": "han-dogyeom-main.png",
+      "label": "주인공 한도겸",
+      "prompt": "주인공",
+      "prompt_sha": "57885b7a62fe"
+    },
+    {
+      "file": "han-dogyeom-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "1b3e6cfdfded"
+    },
+    {
+      "file": "han-dogyeom-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "b973f7b91285"
+    }
   ]
 }
