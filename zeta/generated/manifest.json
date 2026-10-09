@@ -1751,6 +1751,12 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "aba68d02d950"
+    },
+    {
+      "file": "cha-seungmin-supporting-lead.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "조연",
+      "prompt_sha": "b75ed6e52f27"
     }
   ],
   "zeta_088_신솔": [
