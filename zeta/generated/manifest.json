@@ -998,5 +998,25 @@
       "prompt": "여성용",
       "prompt_sha": "9e2fa3f7112b"
     }
+  ],
+  "zeta_029_서진호": [
+    {
+      "file": "seo-jinho-main.png",
+      "label": "주인공 서진호",
+      "prompt": "주인공",
+      "prompt_sha": "3e05ac85e86d"
+    },
+    {
+      "file": "seo-jinho-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "493678b5ad97"
+    },
+    {
+      "file": "seo-jinho-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "5a100f6ea91b"
+    }
   ]
 }
