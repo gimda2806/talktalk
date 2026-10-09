@@ -765,6 +765,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "cd9ad4b65772"
+    },
+    {
+      "file": "seok-woorim-gang-rio-cameo.png",
+      "label": "카메오 · 〈소담 엔터테인먼트〉 · 연습실 거울 앞의 카운트",
+      "prompt": "카메오",
+      "prompt_sha": "275b66839f9b",
+      "with": "강리오"
     }
   ],
   "zeta_017_봉아론": [
@@ -1166,6 +1173,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "ca2db6c9329c"
+    },
+    {
+      "file": "seok-woorim-gang-rio-cameo.png",
+      "label": "카메오 · 〈소담 엔터테인먼트〉 · 연습실 거울 앞의 카운트",
+      "prompt": "카메오",
+      "prompt_sha": "275b66839f9b",
+      "with": "석우림"
     }
   ],
   "zeta_079_남형우": [
