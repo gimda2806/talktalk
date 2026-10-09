@@ -1712,5 +1712,25 @@
       "prompt": "여성용",
       "prompt_sha": "57063fb7014f"
     }
+  ],
+  "zeta_090_명도하": [
+    {
+      "file": "myeong-doha-main.png",
+      "label": "주인공 명도하",
+      "prompt": "주인공",
+      "prompt_sha": "5d78f13cbfe1"
+    },
+    {
+      "file": "myeong-doha-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "ec86f59f1ccd"
+    },
+    {
+      "file": "myeong-doha-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "b183e3279521"
+    }
   ]
 }
