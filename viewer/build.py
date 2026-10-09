@@ -91,7 +91,8 @@ def read_zeta_list():
             continue
         date, name, sub, genre, mood, job, start, device, file = cells
         if file.endswith(".md"):
-            rows[file] = dict(date=date, name=name, sub=sub, genre=genre, mood=mood, job=job, start=start, device=device)
+            # seq = 작품 목록의 줄 순서(= 만든 순서). 뷰어 정렬은 날짜·이름이 아니라 이 순서를 따라 새 작품이 들어와도 기존 순서가 안 바뀐다
+            rows[file] = dict(date=date, name=name, sub=sub, genre=genre, mood=mood, job=job, start=start, device=device, seq=len(rows) + 1)
     return rows
 
 
@@ -245,7 +246,7 @@ def load_zeta():
     for f in sorted(ZETA_DIR.glob("zeta_*.md")):
         text = f.read_text(encoding="utf-8")
         m = re.search(r"^#\s*〈(.+?)〉", text, re.M)
-        info = rows.get(f.name) or dict(date="", name=m.group(1) if m else f.stem, sub="", genre="", mood="", job="", start="", device="")
+        info = rows.get(f.name) or dict(date="", name=m.group(1) if m else f.stem, sub="", genre="", mood="", job="", start="", device="", seq=0)
         jm = re.search(r"^" + re.escape(info["name"]) + r" \(\d+\)\n([^\n]+)\n", text, re.M)  # 소개 탭의 '이름 (나이)' 다음 줄이 짧은 직업
         info = dict(info, jobShort=jm.group(1).strip() if jm else "")
         groups = parse_blocks(text)
@@ -266,7 +267,8 @@ def load_zeta():
             stale = bool(i.get("prompt_sha")) and register.prompt_sha(f.stem, kind) not in (None, i["prompt_sha"])
             images.append(dict(label=i["label"], url=f"images/{i['file']}", stale=stale))
         works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
-    return load_common() + sorted(works, key=lambda w: (w["date"], w["name"]), reverse=True)
+    # 만든 순서(작품 목록 줄 순서)의 역순 = 최신 작품이 위. 목록에 없는 파일은 맨 위에 날짜·이름순으로
+    return load_common() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
 
 
 def copy_zeta_images():
