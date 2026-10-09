@@ -71,6 +71,9 @@
 
 > **뷰어**: [viewer/dist/index.html](viewer/dist/index.html)을 브라우저로 열면 각 편을 소설·대본 형식으로 읽고, 새 편의 키워드·인물이 아래 로그와 겹치는지 검사할 수 있어요. '제타' 탭에서는 `zeta/` 작품 파일의 프롬프트·인트로·소개·설정집·이미지 프롬프트를 제타 입력칸 단위로 나눠 보여 주고, 칸마다 복사 버튼으로 바로 붙여 넣을 수 있어요. 인트로는 말풍선별로, 상황 예시는 유저 줄과 캐릭터 응답별로 나뉘고, 공통 설정집은 목록 맨 위에 있어요. 새 편을 쓰고 로그 표를 채운 뒤 `python3 viewer/build.py`를 실행하면 뷰어가 다시 만들어져요. main에 푸시하면 GitHub Actions(`.github/workflows/deploy-viewer.yml`)가 뷰어를 다시 만들어 https://talktalk.hyukgu86.workers.dev/ 에 자동으로 배포해요. 만든 프로필 이미지는 `zeta/generated/`에 넣고 `python3 zeta/generated/register.py <작품 파일 이름> <주인공|남성용|여성용> <파일명>`으로 등록하면 갤러리에 보여요. 이미지를 만든 뒤 플롯의 이미지 프롬프트가 바뀌면 갤러리에 "프롬프트 바뀜"이 뜨고, `register.py --check`로도 확인할 수 있어요(변경 내역은 `zeta/image-prompt-changelog.md`).
 
+> **뷰어에서 바로 고치기**: 제타 탭의 칸마다 "수정" 버튼이 있어요(배포된 사이트에서만). 글을 고치고 저장하면 비밀번호를 한 번 묻고, 서버(`worker/index.js`)가 저장소의 그 파일에서 그 칸(```text 울타리)만 바꿔 `main`에 커밋해요. 커밋되면 배포가 다시 돌아 1~2분 뒤 사이트에 반영돼요. 같은 칸을 다른 곳에서 먼저 고쳤으면 저장을 거절하고 새로고침을 안내해요. 글자 수 확인표는 자동으로 갱신되지 않으니 다음 정독 때 맞추면 돼요.
+> 처음 한 번 설정: GitHub에서 이 저장소의 Contents 읽기·쓰기 권한만 있는 fine-grained 토큰을 만들고, Cloudflare → Workers & Pages → talktalk → Settings → Variables and Secrets에 `GITHUB_TOKEN`(그 토큰)과 `EDIT_PASSWORD`(저장할 때 쓸 비밀번호)를 Secret으로 넣어요(또는 `npx wrangler secret put GITHUB_TOKEN` / `npx wrangler secret put EDIT_PASSWORD`). 둘이 없으면 "수정" 버튼이 보이지 않아요.
+
 1. 매 편은 짧은 장면이 아니라 최소 한 문단, 한 장(챕터) 분량으로 쓴다.
 2. **제목마다 폴더 하나를 둔다.** 폴더 이름은 `번호_형식_장르_제목`(예: `01_소설_헤테로_우산/`). 그 제목을 이어 쓴 회차는 새 파일을 만들지 않고 같은 폴더 안에 `01.md`, `02.md`… 순서로 쌓는다. 뷰어는 폴더 하나를 작품 한 편으로, 그 안의 파일들을 회차(1화, 2화…)로 묶는다.
 3. 새 편마다 트로프/키워드, 등장인물 이름, **수위**를 아래 로그 표에 함께 기록한다. 이어 쓴 회차는 로그 표에 `01-2`처럼 번호를 붙여 한 줄 추가하고, 첫 줄 제목(`— ` 뒤)에 그 회차의 부제를 적는다.
