@@ -718,5 +718,65 @@
       "prompt": "여성용",
       "prompt_sha": "87ea407d09e4"
     }
+  ],
+  "zeta_20261008_석우림": [
+    {
+      "file": "seok-woorim-main.png",
+      "label": "주인공 석우림",
+      "prompt": "주인공",
+      "prompt_sha": "a4547ef64af3"
+    },
+    {
+      "file": "seok-woorim-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "4d5f758ec334"
+    },
+    {
+      "file": "seok-woorim-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "9a112525d293"
+    }
+  ],
+  "zeta_20261007_봉아론": [
+    {
+      "file": "bong-aron-main.png",
+      "label": "주인공 봉아론",
+      "prompt": "주인공",
+      "prompt_sha": "37915c441c6b"
+    },
+    {
+      "file": "bong-aron-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "f4c1602f2f45"
+    },
+    {
+      "file": "bong-aron-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "6043cff4d673"
+    }
+  ],
+  "zeta_20261007_마정훈": [
+    {
+      "file": "ma-jeonghun-main.png",
+      "label": "주인공 마정훈",
+      "prompt": "주인공",
+      "prompt_sha": "1bb35eda75d2"
+    },
+    {
+      "file": "ma-jeonghun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "9f3de15d6fde"
+    },
+    {
+      "file": "ma-jeonghun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "946538ad2d42"
+    }
   ]
 }
