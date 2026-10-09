@@ -1265,6 +1265,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "dcec49b1883b"
+    },
+    {
+      "file": "gu-dowon-lee-hanbyeol-cameo.png",
+      "label": "카메오 · 〈성수동 광고가〉 · 콘티 보드 앞의 카피 한 줄",
+      "prompt": "카메오",
+      "prompt_sha": "e15c471e1c30",
+      "with": "이한별"
     }
   ],
   "zeta_045_홍마루": [
@@ -1692,6 +1699,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "bd2217e45f7b"
+    },
+    {
+      "file": "gu-dowon-lee-hanbyeol-cameo.png",
+      "label": "카메오 · 〈성수동 광고가〉 · 콘티 보드 앞의 카피 한 줄",
+      "prompt": "카메오",
+      "prompt_sha": "e15c471e1c30",
+      "with": "구도원"
     }
   ],
   "zeta_083_모하늘": [
