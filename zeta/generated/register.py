@@ -1,9 +1,9 @@
 """생성한 프로필 이미지를 manifest.json에 등록한다 (프롬프트 지문 포함).
 
 사용법 (저장소 루트에서):
-  python3 zeta/generated/register.py zeta_20261008_송예찬 주인공 song-yechan-main.png
-  python3 zeta/generated/register.py zeta_20261008_송예찬 남성용 song-yechan-user-m.png
-  python3 zeta/generated/register.py zeta_20261008_송예찬 여성용 song-yechan-user-f.png
+  python3 zeta/generated/register.py zeta_042_송예찬 주인공 song-yechan-main.png
+  python3 zeta/generated/register.py zeta_042_송예찬 남성용 song-yechan-user-m.png
+  python3 zeta/generated/register.py zeta_042_송예찬 여성용 song-yechan-user-f.png
   python3 zeta/generated/register.py --check   # 프롬프트가 바뀐 이미지가 있는지 확인
 
 등록할 때 그 순간의 프롬프트 지문(prompt_sha)을 함께 적어 둔다. 나중에 플롯의 이미지 프롬프트가 바뀌면
