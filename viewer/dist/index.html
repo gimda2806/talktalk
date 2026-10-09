@@ -73,6 +73,10 @@ button:focus-visible,input:focus-visible,.item:focus-visible{outline:2px solid v
 select{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
 input[type=text]:disabled{opacity:.5}
 .empty{font-size:13px;color:var(--muted);padding:10px 12px}
+.zsearch{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.zsearch input{flex:1 1 auto;min-width:0;font:inherit;font-size:15px;padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink)}
+.zsearch input::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none}
+.zcount{font-size:12px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
 
 .sheet{background:var(--sheet);border:1px solid var(--line);border-radius:4px;padding-block:36px 40px;padding-inline:clamp(20px,5vw,56px);min-width:0}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:10px}
@@ -191,6 +195,7 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
   .frow+.frow{border-left:1px solid var(--line);padding-left:6px}
   .chip{min-height:34px;padding-inline:13px;white-space:nowrap}
   .list{gap:8px;scroll-snap-type:x proximity;padding-bottom:2px}
+  .zsearch{margin-bottom:6px}
   .item{flex:0 0 auto;grid-template-columns:auto auto;align-items:baseline;gap:6px;padding:8px 15px;border:1px solid var(--line);border-radius:999px;background:var(--sheet);scroll-snap-align:start;min-height:40px}
   .item[aria-current="true"]{border-color:var(--rose);background:var(--rose-soft)}
   .item .no{grid-row:auto;font-size:15px}
@@ -296,6 +301,7 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
 
   <div id="view-zeta" class="reader" hidden>
     <aside>
+      <div class="zsearch"><input type="search" id="zq" placeholder="캐릭터 검색 (이름·직업·분위기)" aria-label="캐릭터 검색" autocomplete="off"><span class="zcount" id="zcount"></span></div>
       <div class="list" id="zlist"></div>
     </aside>
     <article class="sheet zsheet" id="zsheet"></article>
@@ -621,10 +627,22 @@ async function copyText(t, btn){
   clearTimeout(btn._t);
   btn._t = setTimeout(()=>{ delete btn.dataset.done; btn.textContent = "복사"; }, 1500);
 }
+const zq = document.getElementById("zq");
+const znorm = s => String(s||"").toLowerCase().replace(/\s+/g,"");
+function zmatch(w, q){
+  if (!q) return true;
+  const hay = znorm([w.name, w.sub, w.jobShort, w.job, w.mood, w.genre, w.start, w.device].join(" "));
+  return q.split(/\s+/).filter(Boolean).every(t => hay.includes(znorm(t)));
+}
 function zlist(){
   const list = document.getElementById("zlist");
+  const q = zq.value.trim();
+  const shown = ZETA.filter(w => zmatch(w, q));
+  if (q) shown.sort((a, b) => (znorm(b.name).includes(znorm(q)) ? 1 : 0) - (znorm(a.name).includes(znorm(q)) ? 1 : 0));  // 이름이 맞는 캐릭터를 앞에
+  document.getElementById("zcount").textContent = q ? `${shown.length}/${ZETA.length}` : `${ZETA.length}`;
   list.innerHTML = ZETA.length ? "" : '<div class="empty">아직 제타 작품 파일이 없어요.</div>';
-  for (const w of ZETA){
+  if (ZETA.length && !shown.length) list.innerHTML = `<div class="empty">"${esc(q)}"에 맞는 캐릭터가 없어요.</div>`;
+  for (const w of shown){
     const b = document.createElement("button");
     b.className = "item";
     b.setAttribute("aria-current", w===zstate.w);
@@ -639,6 +657,8 @@ function zlist(){
   const cur = list.querySelector('[aria-current="true"]');
   if (cur && list.scrollWidth > list.clientWidth) list.scrollLeft = cur.offsetLeft - list.offsetLeft - 16;
 }
+zq.addEventListener("input", zlist);
+zq.addEventListener("keydown", e => { if (e.key === "Escape"){ zq.value = ""; zlist(); } });
 function jumpTo(id){
   const el = document.getElementById(id); if (!el) return;
   if (el.tagName === "DETAILS") el.open = true;
