@@ -238,6 +238,8 @@ def load_zeta():
         text = f.read_text(encoding="utf-8")
         m = re.search(r"^#\s*〈(.+?)〉", text, re.M)
         info = rows.get(f.name) or dict(date="", name=m.group(1) if m else f.stem, sub="", genre="", mood="", job="", start="", device="")
+        jm = re.search(r"^" + re.escape(info["name"]) + r" \(\d+\)\n([^\n]+)\n", text, re.M)  # 소개 탭의 '이름 (나이)' 다음 줄이 짧은 직업
+        info = dict(info, jobShort=jm.group(1).strip() if jm else "")
         groups = parse_blocks(text)
         lore = ZETA_DIR / f"{info['name']}_설정집.md"
         if lore.exists():

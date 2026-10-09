@@ -47,7 +47,7 @@ button:focus-visible,input:focus-visible,.item:focus-visible{outline:2px solid v
 .chip{border:1px solid var(--line);background:var(--sheet);color:var(--ink);font:inherit;font-size:13px;padding:3px 11px;border-radius:999px;cursor:pointer}
 .chip[aria-pressed="true"]{border-color:var(--rose);background:var(--rose-soft);color:var(--rose);font-weight:600}
 .list{display:flex;flex-direction:column;gap:6px}
-.item{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;text-align:left;border:1px solid transparent;background:transparent;color:inherit;font:inherit;padding:10px 12px;border-radius:10px;cursor:pointer}
+.item{display:grid;grid-template-columns:1fr;gap:2px 12px;text-align:left;border:1px solid transparent;background:transparent;color:inherit;font:inherit;padding:10px 12px;border-radius:10px;cursor:pointer}
 .item:hover{background:var(--sheet)}
 .item[aria-current="true"]{background:var(--sheet);border-color:var(--line)}
 .item .no{grid-row:span 2;font-family:var(--display);font-size:20px;color:var(--muted);font-variant-numeric:tabular-nums;line-height:1.3}
@@ -156,7 +156,9 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
 .zsheet details[open] summary::before{content:"▾ "}
 .zsheet summary::-webkit-details-marker{display:none}
 .zsheet details .grp{margin-top:10px;border-top:0;padding-top:0}
-.jump{position:sticky;top:calc(var(--headh,56px) + env(safe-area-inset-top,0px));z-index:4;background:var(--paper);display:flex;gap:6px;overflow-x:auto;margin:14px -16px 0;padding:8px 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch;border-bottom:1px solid var(--line)}
+.jumpbar{position:sticky;top:calc(var(--headh,56px) + env(safe-area-inset-top,0px));z-index:4;background:var(--paper);display:flex;align-items:center;gap:10px;margin:14px -16px 0;padding:8px 16px;border-bottom:1px solid var(--line)}
+.jumpbar .who{flex-shrink:0;font-family:var(--display);font-weight:700;font-size:16px;max-width:38vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.jump{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;min-width:0}
 .jump::-webkit-scrollbar{display:none}
 .jump button{flex-shrink:0;border:1px solid var(--line);background:var(--sheet);color:var(--muted);font:inherit;font-size:12.5px;font-weight:500;padding:4px 11px;border-radius:999px;cursor:pointer;white-space:nowrap}
 .jump button:hover{color:var(--ink)}
@@ -182,13 +184,13 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
   .frow+.frow{border-left:1px solid var(--line);padding-left:6px}
   .chip{min-height:34px;padding-inline:13px;white-space:nowrap}
   .list{gap:8px;scroll-snap-type:x proximity;padding-bottom:2px}
-  .item{flex:0 0 auto;grid-template-columns:auto auto;align-items:baseline;gap:8px;padding:8px 15px;border:1px solid var(--line);border-radius:999px;background:var(--sheet);scroll-snap-align:start;min-height:40px}
+  .item{flex:0 0 auto;grid-template-columns:auto auto;align-items:baseline;gap:6px;padding:8px 15px;border:1px solid var(--line);border-radius:999px;background:var(--sheet);scroll-snap-align:start;min-height:40px}
   .item[aria-current="true"]{border-color:var(--rose);background:var(--rose-soft)}
   .item .no{grid-row:auto;font-size:15px}
   .item .t{white-space:nowrap;font-size:14px}
   .eps{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
   .ep{flex:0 0 auto}
-  .item .s{display:none}
+  .item .s{display:inline;white-space:nowrap;font-size:12px}
 
   .sheet{margin-inline:-16px;border-inline:0;border-radius:0;padding:24px 20px 32px}
   .field pre{max-height:300px;font-size:14px}
@@ -568,7 +570,7 @@ function zrender(){
   const grp = g => `<section class="grp" id="${g._id}"><h3>${esc(g.title)}</h3>${items(g)}</section>`;
   const main = w.groups.filter(g=>g.items.some(i=>i.kind==="field") || /^[06]\./.test(g.title));
   const rest = w.groups.filter(g=>!main.includes(g));
-  const jump = `<nav class="jump" aria-label="섹션 바로 가기">${w.groups.map(g=>`<button type="button" data-j="${g._id}">${esc(short(g.title))}</button>`).join("")}</nav>`;
+  const jump = `<div class="jumpbar"><span class="who" title="${esc(w.name)}">${esc(w.name)}</span><nav class="jump" aria-label="섹션 바로 가기">${w.groups.map(g=>`<button type="button" data-j="${g._id}">${esc(short(g.title))}</button>`).join("")}</nav></div>`;
   sheet.innerHTML = `
     <div class="meta">
       <span class="tag novel">제타</span>
@@ -612,7 +614,8 @@ function zlist(){
     const b = document.createElement("button");
     b.className = "item";
     b.setAttribute("aria-current", w===zstate.w);
-    b.innerHTML = `<span class="no">${esc(w.date.slice(5) || "·")}</span><span class="t">${esc(w.name)}</span><span class="s">${esc([w.sub, w.mood.split("(")[0]].filter(Boolean).join(" · "))}</span>`;
+    const job = w.jobShort || (w.job || "").split(/[,，]/)[0].trim();
+    b.innerHTML = `<span class="t">${esc(w.name)}</span><span class="s">${esc(job || w.sub || "")}</span>`;
     b.onclick = ()=>{ zstate.w = w; store.set("zt-cur", w.id); zlist(); zrender();
       const head = document.querySelector("header.top");
       const y = document.getElementById("zsheet").getBoundingClientRect().top + scrollY - (getComputedStyle(head).position==="sticky" ? head.offsetHeight : 0);
@@ -626,7 +629,7 @@ function jumpTo(id){
   const el = document.getElementById(id); if (!el) return;
   if (el.tagName === "DETAILS") el.open = true;
   const head = document.querySelector("header.top");
-  const jumpH = (document.querySelector(".jump")||{offsetHeight:0}).offsetHeight;
+  const jumpH = (document.querySelector(".jumpbar")||{offsetHeight:0}).offsetHeight;
   const y = el.getBoundingClientRect().top + scrollY - head.offsetHeight - jumpH - 8;
   scrollTo({ top: Math.max(0, y), behavior: "smooth" });
 }
