@@ -96,12 +96,13 @@ def read_zeta_list():
     return rows
 
 
-def parse_blocks(text):
+def parse_blocks(text, src=""):
     """'## 묶음' 아래를 순서대로 읽어 head(### 소제목) / field(```text 블록 = 복사 칸) / text(설명 글)로 나눈다.
 
     울타리 바로 앞의 짧은 한 줄(설정집의 제목·키워드·내용)은 칸의 부제(sub)가 된다.
+    칸마다 src(파일 경로)와 bi(그 파일에서 몇 번째 ```text 울타리인지)를 적어, 뷰어에서 고친 글을 그 자리에만 되쓸 수 있게 한다.
     """
-    groups, cur, label, sub, buf, fence, nth = [], None, "", "", [], False, 0
+    groups, cur, label, sub, buf, fence, nth, bi = [], None, "", "", [], False, 0, 0
 
     def group(title=""):
         g = dict(title=title, items=[])
@@ -118,8 +119,8 @@ def parse_blocks(text):
                     label = re.sub(r"^\d+\.\s*|\s*탭\s*$", "", cur["title"])
                 if not sub and label.startswith("항목") and nth < 3:
                     sub = ("제목", "키워드", "내용")[nth]  # 설정집 항목은 울타리 셋이 제목·키워드·내용 순서
-                cur["items"].append(dict(kind="field", label=label, sub=sub, text="\n".join(buf).strip()))
-                sub, nth = "", nth + 1
+                cur["items"].append(dict(kind="field", label=label, sub=sub, text="\n".join(buf).strip(), src=src, bi=bi))
+                sub, nth, bi = "", nth + 1, bi + 1
             else:
                 buf.append(line)
             continue
@@ -172,9 +173,10 @@ def split_intro(text):
     out = []
     for i, b in enumerate(bubbles):
         kind = "내레이터" if b.startswith("@:") else "캐릭터"
+        orig = b
         if kind == "내레이터":
             b = b[2:].strip()  # 내레이터 말풍선은 종류로 구분되므로 `@:`를 뺀다
-        out.append(dict(kind="field", label=f"{NUM[i] if i < len(NUM) else i + 2} {kind} 말풍선", sub="", text=b, parts=split_parts(b)))
+        out.append(dict(kind="field", label=f"{NUM[i] if i < len(NUM) else i + 2} {kind} 말풍선", sub="", text=b, parts=split_parts(b), orig=orig))
     return out
 
 
@@ -202,19 +204,26 @@ def split_examples(text):
     for kind, ls in units:
         n += kind == "유저"
         t = "\n".join(ls).strip()
-        out.append(dict(kind="field", label=f"상황 예시 {n} · {kind}", sub="", text=t, parts=split_parts(t)))
+        out.append(dict(kind="field", label=f"상황 예시 {n} · {kind}", sub="", text=t, parts=split_parts(t), orig=t))
     return out
 
 
 def split_fields(groups):
-    """프롬프트 탭의 상황 예시와 인트로 ②~⑥을 붙여 넣는 단위로 쪼갠다. 원래 덩어리는 두지 않는다."""
+    """프롬프트 탭의 상황 예시와 인트로 ②~⑥을 붙여 넣는 단위로 쪼갠다. 원래 덩어리는 두지 않는다.
+
+    쪼갠 칸은 원래 덩어리(whole)와 src·bi를 물려받아, 뷰어에서 한 칸을 고치면 덩어리 안의 그 문단만 바꿔 저장할 수 있다.
+    """
+    def inherit(parts, parent):
+        for p in parts:
+            p.update(src=parent.get("src", ""), bi=parent.get("bi", -1), whole=parent["text"])
+        return parts
     for g in groups:
         items = []
         for i in g["items"]:
             if i["kind"] == "field" and g["title"].startswith("1.") and i["label"].startswith("상황 예시"):
-                items += split_examples(i["text"]) or [i]
+                items += inherit(split_examples(i["text"]), i) or [i]
             elif i["kind"] == "field" and g["title"].startswith("2.") and not i["label"].startswith("①"):
-                items += split_intro(i["text"]) or [i]
+                items += inherit(split_intro(i["text"]), i) or [i]
             else:
                 items.append(i)
         g["items"] = items
@@ -226,7 +235,7 @@ def load_common():
     f = ZETA_DIR / "zeta-common-lorebook.md"
     if not f.exists():
         return []
-    groups = [g for g in parse_blocks(f.read_text(encoding="utf-8")) if not g["title"].startswith("글자 수")]
+    groups = [g for g in parse_blocks(f.read_text(encoding="utf-8"), src=f"zeta/{f.name}") if not g["title"].startswith("글자 수")]
     items = [i for g in groups for i in g["items"]]
     while items and items[0]["kind"] == "text":
         items.pop(0)
@@ -249,10 +258,10 @@ def load_zeta():
         info = rows.get(f.name) or dict(date="", name=m.group(1) if m else f.stem, sub="", genre="", mood="", job="", start="", device="", seq=0)
         jm = re.search(r"^" + re.escape(info["name"]) + r" \(\d+\)\n([^\n]+)\n", text, re.M)  # 소개 탭의 '이름 (나이)' 다음 줄이 짧은 직업
         info = dict(info, jobShort=jm.group(1).strip() if jm else "")
-        groups = parse_blocks(text)
+        groups = parse_blocks(text, src=f"zeta/{f.name}")
         lore = ZETA_DIR / f"{info['name']}_설정집.md"
         if lore.exists():
-            lg = parse_blocks(lore.read_text(encoding="utf-8"))
+            lg = parse_blocks(lore.read_text(encoding="utf-8"), src=f"zeta/{lore.name}")
             items = [i for g in lg if not g["title"].startswith("글자 수") for i in g["items"]]
             while items and items[0]["kind"] == "text":
                 items.pop(0)  # 설정집 파일 머리말은 아래 안내문으로 대신한다

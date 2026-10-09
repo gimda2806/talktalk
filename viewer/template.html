@@ -159,6 +159,16 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
 .copy[data-done]{border-color:var(--ok);background:var(--ok-soft);color:var(--ok)}
 .field pre{margin:0;padding:12px 14px;font:inherit;font-family:var(--serif);font-size:14.5px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere;max-height:380px;overflow:auto}
 .field.split>.fh{background:var(--sheet)}
+.copy.edit{display:none}
+body[data-edit="on"] .copy.edit{display:inline-block}
+.editor textarea{display:block;width:100%;box-sizing:border-box;border:0;border-top:1px dashed var(--line);padding:12px 14px;font:inherit;font-family:var(--serif);font-size:14.5px;line-height:1.85;background:var(--sheet);color:var(--ink);resize:vertical;min-height:120px}
+.editor textarea:focus{outline:2px solid var(--rose);outline-offset:-2px}
+.ebar{display:flex;align-items:center;gap:8px;padding:8px 10px;border-top:1px solid var(--line);font-size:13px}
+.ebar .estat{margin-right:auto;color:var(--rose)}
+.ebar .esave{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.ebar .esave:disabled{opacity:.5;cursor:default}
+#toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:9}
+#toast[data-on]{opacity:1;transform:translate(-50%,0)}
 .parts{padding:6px 10px 10px}
 .part{border:1px solid var(--line);border-radius:6px;margin:6px 0;overflow:hidden}
 .part .fh{padding:4px 10px;min-height:0;font-size:12.5px}
@@ -599,13 +609,14 @@ function zrender(){
     const [label, hint] = splitLabel(i.label || "");
     texts.push(i.text);
     const whole = texts.length-1;
+    FIELDS[whole] = i;
     const parts = (i.parts||[]).map((p, n) => {
       texts.push(p.text);
       return `<div class="part"><div class="fh"><b>${n+1}. ${esc(p.label)}</b><span class="cnt">${p.text.length}자</span><button class="copy" data-c="${texts.length-1}">복사</button></div><pre>${esc(p.text)}</pre></div>`;
     }).join("");
     return `<div class="field ${latin(i.text)?"latin":""}${parts?" split":""}">
       <div class="fh"><b>${esc(label)}${i.sub?` › ${esc(i.sub)}`:""}</b>${hint?`<span class="hint">${esc(hint)}</span>`:""}
-        <span class="cnt">${i.text.length}자</span><button class="copy" data-c="${whole}">${parts?"전체 복사":"복사"}</button></div>
+        <span class="cnt">${i.text.length}자</span>${i.src?`<button class="copy edit" data-e="${whole}" title="이 칸을 고쳐서 저장소에 바로 저장">수정</button>`:""}<button class="copy" data-c="${whole}">${parts?"전체 복사":"복사"}</button></div>
       ${parts ? `<div class="parts">${parts}</div>` : `<pre>${esc(i.text)}</pre>`}</div>`;
   };
   const items = g => g.items.map(i => i.kind==="field" ? field(i) : i.kind==="head" ? `<h4>${esc(i.label)}</h4>` : ztext(i.lines)).join("");
@@ -639,9 +650,95 @@ function zrender(){
     ${zpager("bottom")}`;
   sheet.querySelector(".meta").insertAdjacentHTML("beforeend", zpager("top"));
   sheet.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>copyText(texts[+b.dataset.c], b));
+  sheet.querySelectorAll("[data-e]").forEach(b=>b.onclick=()=>openEditor(b.closest(".field"), FIELDS[+b.dataset.e]));
   sheet.querySelectorAll("[data-j]").forEach(b=>b.onclick=()=>jumpTo(b.dataset.j));
   sheet.querySelectorAll("[data-zp]").forEach(b=>b.onclick=()=>zgo(zneighbors()[b.dataset.zp]));
 }
+// ── 뷰어에서 고쳐 저장 ──────────────────────────────────────────────
+// 칸의 글을 고치면 /api/save 가 GitHub 저장소 파일의 그 울타리만 바꿔 커밋한다(worker/index.js).
+// 커밋되면 배포가 다시 돌아 1~2분 뒤 사이트에 반영된다. 여기서는 화면의 글을 먼저 바꿔 둔다.
+const FIELDS = {};
+async function editProbe(){
+  try {
+    const r = await fetch("/api/ping", { cache: "no-store" }); const j = await r.json();
+    document.body.dataset.edit = j.editable ? "on" : "off";
+  } catch { document.body.dataset.edit = "off"; }
+}
+function openEditor(box, i){
+  if (!box || box.querySelector("textarea")) return;
+  const view = box.querySelector(":scope > pre, :scope > .parts");
+  const ed = document.createElement("div"); ed.className = "editor";
+  ed.innerHTML = `<textarea spellcheck="false"></textarea>
+    <div class="ebar"><span class="estat"></span><button type="button" class="copy ecancel">취소</button><button type="button" class="copy esave">저장</button></div>`;
+  const ta = ed.querySelector("textarea"); ta.value = i.text;
+  view.hidden = true; box.appendChild(ed);
+  const fit = () => { ta.style.height = "auto"; ta.style.height = Math.min(ta.scrollHeight + 4, innerHeight * 0.7) + "px"; };
+  ta.addEventListener("input", fit); fit(); ta.focus();
+  const close = () => { ed.remove(); view.hidden = false; };
+  ed.querySelector(".ecancel").onclick = close;
+  ed.querySelector(".esave").onclick = async () => {
+    const stat = ed.querySelector(".estat"), btn = ed.querySelector(".esave");
+    const fresh = ta.value.replace(/\s+$/, "");
+    if (fresh === i.text){ close(); return; }
+    btn.disabled = true; stat.textContent = "저장하는 중…";
+    const r = await saveField(i, fresh);
+    if (r.ok){
+      applyEdit(i, fresh);
+      close(); zrender();
+      toast(r.unchanged ? "바뀐 내용이 없어요" : "저장했어요. 사이트에는 1~2분 뒤 반영돼요.");
+    } else { btn.disabled = false; stat.textContent = r.error || "저장하지 못했어요"; }
+  };
+}
+// 쪼갠 칸(말풍선·상황 예시)은 원래 덩어리(whole) 안의 그 문단만 바꿔서 덩어리째 보낸다
+function payloadFor(i, fresh){
+  if (i.whole !== undefined){
+    const o = i.orig !== undefined ? i.orig : i.text;
+    const n = (i.orig !== undefined && i.orig.startsWith("@:") && !fresh.startsWith("@:")) ? "@: " + fresh : fresh;
+    const at = i.whole.indexOf(o);
+    if (at < 0 || i.whole.indexOf(o, at + 1) >= 0) return null;
+    return { old: i.whole, fresh: i.whole.slice(0, at) + n + i.whole.slice(at + o.length) };
+  }
+  return { old: i.text, fresh };
+}
+async function saveField(i, fresh){
+  const p = payloadFor(i, fresh);
+  if (!p) return { error: "이 칸의 원문을 덩어리 안에서 찾지 못했어요. 새로고침한 뒤 다시 시도해 주세요." };
+  let pw = store.get("zt-edit-pw") || "";
+  if (!pw){ pw = prompt("저장 비밀번호"); if (!pw) return { error: "취소했어요" }; }
+  try {
+    const r = await fetch("/api/save", { method: "POST", headers: { "Content-Type": "application/json", "X-Edit-Password": pw },
+      body: JSON.stringify({ file: i.src, bi: i.bi, old: p.old, new: p.fresh, label: i.label }) });
+    const j = await r.json().catch(() => ({}));
+    if (r.status === 401){ store.set("zt-edit-pw", ""); return { error: "비밀번호가 달라요. 다시 저장을 누르면 다시 물어봐요." }; }
+    if (!r.ok) return { error: j.error || `저장 실패 (${r.status})` };
+    store.set("zt-edit-pw", pw);
+    i._fresh = p.fresh;
+    return j;
+  } catch { return { error: "서버에 닿지 못했어요. 배포된 사이트에서만 저장돼요." }; }
+}
+// 화면 데이터에 반영: 같은 덩어리에서 나온 형제 칸들의 whole도 맞춰 둔다
+function applyEdit(i, fresh){
+  const newWhole = i._fresh; delete i._fresh;
+  if (i.whole !== undefined){
+    const o = i.orig !== undefined ? i.orig : i.text;
+    const n = (i.orig !== undefined && i.orig.startsWith("@:") && !fresh.startsWith("@:")) ? "@: " + fresh : fresh;
+    for (const g of zstate.w.groups) for (const f of g.items) if (f.kind === "field" && f.src === i.src && f.bi === i.bi && f.whole !== undefined) f.whole = newWhole;
+    i.orig = n;
+  }
+  i.text = fresh; i.parts = (i.parts && i.parts.length) ? splitPartsJS(fresh) : i.parts;
+}
+function splitPartsJS(text){
+  const body = text.trim().replace(/^(\{\{char\}\}|\{\{user\}\}|@):\s*/, "");
+  const paras = body.split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
+  const parts = paras.map(p => ({ label: p.startsWith("*") && p.endsWith("*") ? "지문" : "대사", text: p }));
+  return (parts.length === 1 && parts[0].text === text.trim()) ? [] : parts;
+}
+function toast(msg){
+  let t = document.getElementById("toast");
+  if (!t){ t = document.createElement("div"); t.id = "toast"; document.body.appendChild(t); }
+  t.textContent = msg; t.dataset.on = "1"; clearTimeout(t._t); t._t = setTimeout(() => delete t.dataset.on, 3500);
+}
+editProbe();
 function zpager(where){
   const n = zneighbors();
   const tip = (w, k) => w ? `${k} 작품: ${w.name}` : `${k} 작품 없음`;
