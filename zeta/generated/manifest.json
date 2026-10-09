@@ -1438,5 +1438,85 @@
       "prompt": "여성용",
       "prompt_sha": "6c5c53a00ae0"
     }
+  ],
+  "zeta_062_천이수": [
+    {
+      "file": "cheon-yisu-main.png",
+      "label": "주인공 천이수",
+      "prompt": "주인공",
+      "prompt_sha": "cfd2bc9d5074"
+    },
+    {
+      "file": "cheon-yisu-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "2920780e6c41"
+    },
+    {
+      "file": "cheon-yisu-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "f6d9a5755b20"
+    }
+  ],
+  "zeta_061_진바름": [
+    {
+      "file": "jin-bareum-main.png",
+      "label": "주인공 진바름",
+      "prompt": "주인공",
+      "prompt_sha": "a908df69d687"
+    },
+    {
+      "file": "jin-bareum-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "e6106461a7b1"
+    },
+    {
+      "file": "jin-bareum-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "768fcc73ce89"
+    }
+  ],
+  "zeta_063_옥영재": [
+    {
+      "file": "ok-yeongjae-main.png",
+      "label": "주인공 옥영재",
+      "prompt": "주인공",
+      "prompt_sha": "e48ba1d9a0af"
+    },
+    {
+      "file": "ok-yeongjae-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "d037c538e927"
+    },
+    {
+      "file": "ok-yeongjae-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "e2e63ea3fcdd"
+    }
+  ],
+  "zeta_049_육새롬": [
+    {
+      "file": "yuk-saerom-main.png",
+      "label": "주인공 육새롬",
+      "prompt": "주인공",
+      "prompt_sha": "e308390b7d5b"
+    },
+    {
+      "file": "yuk-saerom-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "f986016d1713"
+    },
+    {
+      "file": "yuk-saerom-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "f61dbcfe17ea"
+    }
   ]
 }
