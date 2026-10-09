@@ -358,6 +358,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "9f56ba102f51"
+    },
+    {
+      "file": "an-jiseop-ha-geuru-cameo.png",
+      "label": "카메오 · 〈디지털단지 점심〉 · 배식대 앞 교환권",
+      "prompt": "카메오",
+      "prompt_sha": "970717230524",
+      "with": "안지섭"
     }
   ],
   "zeta_072_박연우": [
@@ -925,6 +932,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "31a07ddb548b"
+    },
+    {
+      "file": "an-jiseop-ha-geuru-cameo.png",
+      "label": "카메오 · 〈디지털단지 점심〉 · 배식대 앞 교환권",
+      "prompt": "카메오",
+      "prompt_sha": "970717230524",
+      "with": "하그루"
     }
   ],
   "zeta_025_빈지온": [
