@@ -37,6 +37,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "24fbcf8469be"
+    },
+    {
+      "file": "yoon-sangwoo-yuk-saerom-cameo.png",
+      "label": "카메오 · 〈외곽 상가 건물〉 · 1층 앞 보리차 두 잔",
+      "prompt": "카메오",
+      "prompt_sha": "cfd8159c47a7",
+      "with": "육새롬"
     }
   ],
   "zeta_067_강루하": [
@@ -1559,6 +1566,13 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "f61dbcfe17ea"
+    },
+    {
+      "file": "yoon-sangwoo-yuk-saerom-cameo.png",
+      "label": "카메오 · 〈외곽 상가 건물〉 · 1층 앞 보리차 두 잔",
+      "prompt": "카메오",
+      "prompt_sha": "cfd8159c47a7",
+      "with": "윤상우"
     }
   ],
   "zeta_058_차인성": [
