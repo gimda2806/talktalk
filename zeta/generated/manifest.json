@@ -68,5 +68,19 @@
       "file": "ye-seungwon-user-f.png",
       "label": "유저 프로필 · 여성"
     }
+  ],
+  "zeta_20261008_라현재": [
+    {
+      "file": "ra-hyunjae-main.png",
+      "label": "주인공 라현재"
+    },
+    {
+      "file": "ra-hyunjae-user-m.png",
+      "label": "유저 프로필 · 남성"
+    },
+    {
+      "file": "ra-hyunjae-user-f.png",
+      "label": "유저 프로필 · 여성"
+    }
   ]
 }
