@@ -109,6 +109,9 @@ input[type=text]:disabled{opacity:.5}
 .pager button{border:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;padding:8px 14px;border-radius:8px;cursor:pointer;max-width:48%}
 .pager button:disabled{opacity:.35;cursor:default}
 .bar{display:none}
+.end{margin:32px auto 0;max-width:34em;padding-top:20px;border-top:1px dashed var(--line);display:flex;flex-direction:column;align-items:flex-start;gap:10px;font-size:14px;color:var(--muted)}
+.end p{margin:0}
+.end .chip{min-height:36px;padding-inline:14px;color:var(--ink)}
 
 /* 규칙 */
 .rules{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:28px;margin-top:24px;align-items:start}
@@ -256,9 +259,9 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
     </aside>
     <article class="sheet" id="sheet"></article>
     <nav class="bar" id="bar" aria-label="회차 이동">
-      <button id="bar-prev">← 이전</button>
+      <button id="bar-prev">← 이전 화</button>
       <span id="bar-pos"></span>
-      <button id="bar-next">다음 →</button>
+      <button id="bar-next">다음 화 →</button>
     </nav>
   </div>
 
@@ -317,7 +320,7 @@ const inline = s => esc(s)
   .replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>")
   .replace(/\*(.+?)\*/g,"<em>$1</em>");
 
-// 모든 회차를 한 줄로 펼친 순서 (이전/다음 이동용)
+// 모든 회차를 한 줄로 펼친 목록 (안 읽음 개수·저장 위치 찾기용)
 const FLAT = DATA.flatMap(s=>s.episodes.map(e=>({s, e})));
 const store = {
   get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
@@ -338,7 +341,7 @@ function drawTabBadge(){
   document.getElementById("tab-badge").innerHTML = badge(n, `안 읽은 회차 ${n}개`);
 }
 
-const epLabel = f => `${f.s.no} ${f.s.title}${f.s.episodes.length>1 ? ` ${f.e.ep}화` : ""}`;
+const epLabel = e => `${e.ep}화${e.title ? ` · ${e.title}` : ""}`;
 
 function body(s, e){
   const drama = s.format === "드라마";
@@ -365,8 +368,11 @@ function render(){
   const {s, e} = state;
   const drama = s.format === "드라마";
   const multi = s.episodes.length > 1;
-  const i = FLAT.findIndex(f=>f.e===e);
-  const prev = FLAT[i-1], next = FLAT[i+1];
+  // 이전/다음은 같은 작품 안의 회차만 오간다
+  const k = s.episodes.indexOf(e);
+  const prev = s.episodes[k-1], next = s.episodes[k+1];
+  const si = DATA.indexOf(s);
+  const other = DATA[(si+1) % DATA.length];
   const sheet = document.getElementById("sheet");
   sheet.innerHTML = `
     <div class="meta">
@@ -390,18 +396,26 @@ function render(){
       <dt>파일</dt><dd><code>${esc(e.file)}</code></dd>
     </dl>
     <div class="body ${drama?"drama":"novel"}">${body(s, e)}</div>
+    ${next ? "" : `<div class="end">
+      <p>${multi ? `${e.ep}화가 마지막 화예요.` : "아직 1화뿐이에요."} 다음 화는 아직 없어요.</p>
+      ${other && other!==s ? `<button class="chip" data-other>다른 작품 · ${other.no} ${esc(other.title)} →</button>` : ""}
+    </div>`}
     <nav class="pager">
-      <button data-go="${i-1}" ${prev?"":"disabled"}>← ${prev?esc(epLabel(prev)):"처음"}</button>
-      <button data-go="${i+1}" ${next?"":"disabled"}>${next?esc(epLabel(next)):"끝"} →</button>
+      <button data-step="-1" ${prev?"":"disabled"}>${prev?`← ${esc(epLabel(prev))}`:"첫 화"}</button>
+      <button data-step="1" ${next?"":"disabled"}>${next?`${esc(epLabel(next))} →`:"마지막 화"}</button>
     </nav>`;
-  sheet.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>go(FLAT[+b.dataset.go]));
+  sheet.querySelectorAll("[data-step]").forEach(b=>b.onclick=()=>{ const x = s.episodes[k + +b.dataset.step]; if (x) go({s, e:x}); });
+  const ob = sheet.querySelector("[data-other]");
+  if (ob) ob.onclick = ()=>go({s:other, e:firstUnread(other)});
   sheet.querySelectorAll("[data-ep]").forEach(b=>b.onclick=()=>go({s, e:s.episodes.find(x=>x.ep===+b.dataset.ep)}));
   sheet.querySelectorAll("[data-fs]").forEach(b=>b.onclick=()=>setSize(state.fs + +b.dataset.fs));
   const bp = document.getElementById("bar-prev"), bn = document.getElementById("bar-next");
   bp.disabled = !prev; bn.disabled = !next;
-  bp.onclick = ()=>prev && go(prev);
-  bn.onclick = ()=>next && go(next);
-  document.getElementById("bar-pos").textContent = multi ? `${s.no} · ${e.ep}/${s.episodes.length}화` : `${s.no} / ${DATA[DATA.length-1].no}`;
+  bp.textContent = prev ? "← 이전 화" : "첫 화";
+  bn.textContent = next ? "다음 화 →" : "마지막 화";
+  bp.onclick = ()=>prev && go({s, e:prev});
+  bn.onclick = ()=>next && go({s, e:next});
+  document.getElementById("bar-pos").textContent = `${s.no} · ${e.ep}/${s.episodes.length}화`;
 }
 
 // 글자 크기
