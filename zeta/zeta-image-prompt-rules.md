@@ -340,6 +340,15 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 | 히피펌 | loose hippie-perm curls with a soft natural volume |
 | 한쪽 짧은 실험 컷 | an asymmetric cut with one side cropped shorter |
 | 반묶음 장발 | hair grown past the jaw with the top half tied back |
+| 눈썹 드러낸 쉼표 앞머리 | a comma-shaped fringe parted to one side, brows showing |
+| 투블럭 다운펌 | a neat two-block cut with the top pressed down in a soft down-perm |
+| 부분 탈색 가닥 | with a few bleached strands framing the face |
+| 헤어핀·실핀 | fringe pinned back with two small black bobby pins |
+| 비니·캡 | under a loose black beanie / a black cap worn backwards with the fringe out |
+| 땀에 눌린 연습 머리 | hair slightly damp and pressed flat at the temples from rehearsal |
+| 질감 | fluffy and airy (행사·화보) / matte and textured (무대) / wet-look gelled (강한 콘셉트) |
+
+스타일링까지 캐릭터에 맞춘다. 색 하나만 바꾸는 것은 6-11 3절의 "같은 얼굴에 머리만 바꾼 것"이다. 같은 작품 안에서도 주인공은 무대용(올백·젤·강한 색), 유저는 연습실용(흐트러진 앞머리·땀·비니)처럼 **장면에 맞는 손질**로 나누면 두 사람이 한 그룹의 다른 멤버처럼 읽힌다.
 
 6-11의 "직전 5편과 2축 이상 다름" 규칙은 아이돌 캐릭터에도 그대로 적용된다. 같은 소속사·같은 그룹 설정의 작품(예: 소담 엔터테인먼트 시리즈)은 서로 다른 계열을 쓰면 한 그룹처럼 보여서 좋다.
 
