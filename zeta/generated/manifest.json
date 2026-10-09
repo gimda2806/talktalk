@@ -1218,5 +1218,65 @@
       "prompt": "여성용",
       "prompt_sha": "81ccf6fc87a3"
     }
+  ],
+  "zeta_044_구도원": [
+    {
+      "file": "gu-dowon-main.png",
+      "label": "주인공 구도원",
+      "prompt": "주인공",
+      "prompt_sha": "40371c246ae2"
+    },
+    {
+      "file": "gu-dowon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "cb4bf2be67a6"
+    },
+    {
+      "file": "gu-dowon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "dcec49b1883b"
+    }
+  ],
+  "zeta_045_홍마루": [
+    {
+      "file": "hong-maru-main.png",
+      "label": "주인공 홍마루",
+      "prompt": "주인공",
+      "prompt_sha": "f07b9695a46b"
+    },
+    {
+      "file": "hong-maru-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "d5fe937f2caf"
+    },
+    {
+      "file": "hong-maru-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "870acb72d6ea"
+    }
+  ],
+  "zeta_077_김산들": [
+    {
+      "file": "kim-sandeul-main.png",
+      "label": "주인공 김산들",
+      "prompt": "주인공",
+      "prompt_sha": "ef80af269823"
+    },
+    {
+      "file": "kim-sandeul-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "4668df67a2a2"
+    },
+    {
+      "file": "kim-sandeul-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "4763495bd0a2"
+    }
   ]
 }
