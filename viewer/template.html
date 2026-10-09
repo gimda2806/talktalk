@@ -186,6 +186,30 @@ body[data-edit="on"] .copy.edit{display:inline-block}
 .zsheet details[open] summary::before{content:"▾ "}
 .zsheet summary::-webkit-details-marker{display:none}
 .zsheet details .grp{margin-top:10px;border-top:0;padding-top:0}
+.rv{max-width:none}
+.rv h2{margin-bottom:6px}
+.rv .lead{color:var(--muted);font-size:14px;line-height:1.7;margin:0 0 18px}
+.rv .work{margin-top:26px;padding-top:14px;border-top:1px solid var(--line)}
+.rv .work h3{font-family:var(--display);font-size:18px;margin:0 0 10px;display:flex;align-items:center;gap:10px}
+.rv .work h3 button,.rv table button{border:1px solid var(--line);background:var(--sheet);color:var(--ink);font:inherit;font-size:12.5px;padding:3px 10px;border-radius:999px;cursor:pointer}
+.rv .item{display:grid;grid-template-columns:34px 1fr;gap:4px 10px;padding:10px 0;border-top:1px dashed var(--line)}
+.rv .item:first-of-type{border-top:0}
+.rv .num{font-family:var(--display);font-weight:700;color:var(--rose)}
+.rv .loc{font-size:12px;color:var(--muted)}
+.rv .q{font-family:var(--serif);font-size:15px;line-height:1.7;margin:2px 0}
+.rv .q.now{color:var(--ink);text-decoration:line-through;text-decoration-color:var(--rose);text-decoration-thickness:1px}
+.rv .q.alt{color:var(--ink)}
+.rv .q.alt::before{content:"→ ";color:var(--rose);font-weight:700}
+.rv .why{font-size:13px;color:var(--muted);line-height:1.6}
+.rv table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+.rv th,.rv td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.rv th{color:var(--muted);font-weight:500;font-size:12px}
+.rv td.hot{color:var(--rose);font-weight:600}
+.rv .bars{font-family:var(--mono,monospace);font-size:12px;color:var(--muted);white-space:nowrap}
+.zsheet .rvbox{margin:0 0 22px;padding:12px 14px;border:1px solid var(--line);border-left:3px solid var(--rose);border-radius:8px;background:var(--sheet)}
+.zsheet .rvbox h4{margin:0 0 8px;font-size:13px;color:var(--rose)}
+.zsheet .rvbox .item{grid-template-columns:28px 1fr;padding:6px 0}
+.zsheet .rvbox .rep{font-size:12.5px;color:var(--muted);margin:6px 0 0}
 .jumpbar{position:sticky;top:0;z-index:4;background:var(--paper);display:flex;align-items:center;gap:10px;margin:14px -16px 0;padding:8px 16px;border-bottom:1px solid var(--line)}
 .jumpbar .who{flex-shrink:0;font-family:var(--display);font-weight:700;font-size:16px;max-width:38vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .jump{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;min-width:0}
@@ -287,6 +311,7 @@ body[data-edit="on"] .copy.edit{display:inline-block}
       <button id="tab-read" role="tab" aria-selected="true" data-tab="read">읽기<span id="tab-badge"></span></button>
       <button id="tab-rules" role="tab" aria-selected="false" data-tab="rules">연습 규칙</button>
       <button id="tab-zeta" role="tab" aria-selected="false" data-tab="zeta">제타</button>
+      <button id="tab-review" role="tab" aria-selected="false" data-tab="review">검토<span id="rv-badge"></span></button>
     </div>
   </header>
 
@@ -350,11 +375,17 @@ body[data-edit="on"] .copy.edit{display:inline-block}
     </aside>
     <article class="sheet zsheet" id="zsheet"></article>
   </div>
+
+  <div id="view-review" class="rules" hidden>
+    <article class="sheet" id="rvsheet"></article>
+  </div>
 </div>
 
 <script>
 const DATA = /*DATA*/;
 const ZETA = /*ZETA*/;
+const REVIEWS = /*REVIEWS*/;
+const REPEATS = /*REPEATS*/;
 
 const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 const inline = s => esc(s)
@@ -547,7 +578,7 @@ function drawList(){
 }
 
 // 탭
-const VIEWS = {read:"view-read", rules:"view-rules", zeta:"view-zeta"};
+const VIEWS = {read:"view-read", rules:"view-rules", zeta:"view-zeta", review:"view-review"};
 document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{
   document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected", x===b));
   for (const [k, id] of Object.entries(VIEWS)) document.getElementById(id).hidden = b.dataset.tab!==k;
@@ -624,6 +655,29 @@ function ztext(lines){
   flush(); close(0);
   return html;
 }
+const rvitem = r => `<div class="item"><div class="num">${r.n}</div><div><div class="loc">${esc(r.loc)}</div><p class="q now">${esc(r.line)}</p><p class="q alt">${esc(r.alt)}</p>${r.why?`<div class="why">${esc(r.why)}</div>`:""}</div></div>`;
+const repline = p => `${esc(p.term)} ${p.total}회 (${p.secs.map(s=>`${s.sec} ${s.n}`).join(" · ")})`;
+function rvbox(w){
+  const rs = REVIEWS.filter(r=>r.work===w.name);
+  const rp = REPEATS.filter(p=>p.work===w.name && p.hot);
+  if (!rs.length && !rp.length) return "";
+  return `<section class="rvbox rv">${rs.length?`<h4>노골적 대사 검토 · ${rs.length}곳 (지금 대사 → 대안)</h4>${rs.map(rvitem).join("")}`:""}${rp.length?`<h4 style="margin-top:${rs.length?10:0}px">핵심 장치 반복 · 많이 나오는 것</h4>${rp.map(p=>`<p class="rep">${repline(p)}</p>`).join("")}`:""}</section>`;
+}
+function rvrender(){
+  const el = document.getElementById("rvsheet");
+  const works = []; for (const r of REVIEWS) if (!works.includes(r.work)) works.push(r.work);
+  const go = name => { const w = ZETA.find(z=>z.name===name); if (!w) return; document.getElementById("tab-zeta").click(); zgo(w); scrollTo({top:0}); };
+  el.className = "sheet rv";
+  const hot = REPEATS.filter(p=>p.hot);
+  el.innerHTML = `<h2>노골적 대사 검토</h2><p class="lead">기획 요약에서 "숨긴다"고 한 마음을 캐릭터가 입으로 설명해 버리는 대사. 검토 ${ZETA.length}편 / 지적 ${works.length}편 ${REVIEWS.length}곳. 줄 그은 것이 지금 대사, 화살표 뒤가 대안. 번호로 골라 말하면 그 줄만 고친다.</p>`
+    + works.map(name => { const rs = REVIEWS.filter(r=>r.work===name); const w = ZETA.find(z=>z.name===name);
+      return `<section class="work"><h3>${esc(rs[0].num)} ${esc(name)} <span class="loc">${rs.length}곳</span>${w?`<button type="button" data-rvgo="${esc(name)}">작품 열기</button>`:""}</h3>${rs.map(rvitem).join("")}</section>`; }).join("")
+    + `<section class="work"><h3>핵심 장치 반복 검사 <span class="loc">공개 칸(설명·캐릭터 설명·상황 예시·인트로·소개·이벤트·에필로그)에서 핵심 장치 낱말이 몇 번 나오는지 센 것. 12회 이상이거나 상황 예시만으로 6회 이상이면 붉게 표시</span></h3>
+      <table><thead><tr><th>작품</th><th>핵심 장치</th><th>전체</th><th>칸별</th><th></th></tr></thead><tbody>${REPEATS.filter(p=>p.hot).map(p=>`<tr><td>${esc(p.work)}</td><td>${esc(p.term)}</td><td class="hot">${p.total}</td><td class="bars">${p.secs.map(s=>`${esc(s.sec)} ${s.n}`).join(" · ")}</td><td><button type="button" data-rvgo="${esc(p.work)}">열기</button></td></tr>`).join("")}</tbody></table>
+      <p class="lead" style="margin-top:10px">붉지 않은 작품은 모두 기준 아래. 전체 표는 \`zeta/review-핵심장치-반복-2026-10-09.md\`.</p></section>`;
+  el.querySelectorAll("[data-rvgo]").forEach(b=>b.onclick=()=>go(b.dataset.rvgo));
+  const badge = document.getElementById("rv-badge"); if (badge && (REVIEWS.length||hot.length)) badge.textContent = ` ${REVIEWS.length + hot.length}`;
+}
 function zrender(){
   const w = zstate.w, sheet = document.getElementById("zsheet");
   TEXTS.length = 0;
@@ -672,6 +726,7 @@ function zrender(){
       ${w.device?`<dt>핵심 장치</dt><dd>${esc(w.device)}</dd>`:""}
       <dt>파일</dt><dd><code>${esc(w.file)}</code></dd>
     </dl>
+    ${rvbox(w)}
     ${jump}${dock}
     <div class="body">
       ${main.map(grp).join("")}
@@ -906,7 +961,7 @@ function jumpTo(id){
   const tick = () => b.classList.toggle("show", scrollY > 400);
   addEventListener("scroll", tick, { passive: true }); tick();
 })();
-zlist(); zrender();
+zlist(); zrender(); rvrender();
 
 // 시작
 const saved = FLAT.find(f=>f.e.id===store.get("sm-cur"));
