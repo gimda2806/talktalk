@@ -2,91 +2,149 @@
   "zeta_20261008_송예찬": [
     {
       "file": "song-yechan-main-20261009-1128.png",
-      "label": "주인공 송예찬"
+      "label": "주인공 송예찬",
+      "prompt": "주인공",
+      "prompt_sha": "853523a62b68"
     },
     {
       "file": "song-yechan-user-m-20261009-1129.png",
-      "label": "유저 프로필 · 남성"
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "ce4f42653820"
     },
     {
       "file": "song-yechan-user-f-20261009-1130.png",
-      "label": "유저 프로필 · 여성"
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "d9366a47407d"
     }
   ],
   "zeta_20261009_윤상우": [
     {
       "file": "yoon-sangwoo-main.png",
-      "label": "주인공 윤상우"
+      "label": "주인공 윤상우",
+      "prompt": "주인공",
+      "prompt_sha": "4568cc542a79"
     },
     {
       "file": "yoon-sangwoo-user-m.png",
-      "label": "유저 프로필 · 남성"
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "b4b0daa4a819"
     },
     {
       "file": "yoon-sangwoo-user-f.png",
-      "label": "유저 프로필 · 여성"
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "24fbcf8469be"
     }
   ],
   "zeta_20261009_강루하": [
     {
       "file": "kang-ruha-main.png",
-      "label": "주인공 강루하"
+      "label": "주인공 강루하",
+      "prompt": "주인공",
+      "prompt_sha": "8d043f2f63c6"
     },
     {
       "file": "kang-ruha-user-m.png",
-      "label": "유저 프로필 · 남성"
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "2e936173f30b"
     },
     {
       "file": "kang-ruha-user-f.png",
-      "label": "유저 프로필 · 여성"
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "f6d977f033f8"
     }
   ],
   "zeta_20261008_황무진": [
     {
       "file": "hwang-mujin-main.png",
-      "label": "주인공 황무진"
+      "label": "주인공 황무진",
+      "prompt": "주인공",
+      "prompt_sha": "7a2b5d5b6820"
     },
     {
       "file": "hwang-mujin-user-m.png",
-      "label": "유저 프로필 · 남성"
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "57e0dc0f212f"
     },
     {
       "file": "hwang-mujin-user-f.png",
-      "label": "유저 프로필 · 여성"
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "d4533fa650b4"
     }
   ],
   "zeta_20261008_예승원": [
     {
       "file": "ye-seungwon-main.png",
-      "label": "주인공 예승원"
+      "label": "주인공 예승원",
+      "prompt": "주인공",
+      "prompt_sha": "a3c72c54e709"
     },
     {
       "file": "ye-seungwon-user-m.png",
-      "label": "유저 프로필 · 남성"
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "e560171c5b4c"
     },
     {
       "file": "ye-seungwon-user-f.png",
-      "label": "유저 프로필 · 여성"
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "20a8ffc0e6ab"
     }
   ],
   "zeta_20261008_라현재": [
     {
       "file": "ra-hyunjae-main.png",
-      "label": "주인공 라현재"
+      "label": "주인공 라현재",
+      "prompt": "주인공",
+      "prompt_sha": "b94e6fbd227a"
     },
     {
       "file": "ra-hyunjae-user-m.png",
-      "label": "유저 프로필 · 남성"
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "8de755df1989"
     },
     {
       "file": "ra-hyunjae-user-f.png",
-      "label": "유저 프로필 · 여성"
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "984fce39c4b1"
     }
   ],
   "zeta_20261006_노찬영": [
     {
       "file": "noh-chanyoung-main.png",
-      "label": "주인공 노찬영"
+      "label": "주인공 노찬영",
+      "prompt": "주인공",
+      "prompt_sha": "f0a522e3e579"
+    }
+  ],
+  "zeta_20261009_최서완": [
+    {
+      "file": "choi-seowan-main.png",
+      "label": "주인공 최서완",
+      "prompt": "주인공",
+      "prompt_sha": "b05f82909c26"
+    },
+    {
+      "file": "choi-seowan-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "de0150adbff5"
+    },
+    {
+      "file": "choi-seowan-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "95e6040e4111"
     }
   ]
 }
