@@ -54,5 +54,19 @@
       "file": "hwang-mujin-user-f.png",
       "label": "유저 프로필 · 여성"
     }
+  ],
+  "zeta_20261008_예승원": [
+    {
+      "file": "ye-seungwon-main.png",
+      "label": "주인공 예승원"
+    },
+    {
+      "file": "ye-seungwon-user-m.png",
+      "label": "유저 프로필 · 남성"
+    },
+    {
+      "file": "ye-seungwon-user-f.png",
+      "label": "유저 프로필 · 여성"
+    }
   ]
 }
