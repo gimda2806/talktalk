@@ -59,7 +59,7 @@ GLOBAL IDOL FACIAL BEAUTY FLOOR는 모든 주연이 공유하는 고정 미모 �
 
 ## 4. 제타에서 만드는 이미지
 
-제타에서는 주인공 프로필 1장과 유저 대화 프로필 2장(남성용·여성용), 모두 상반신 초상 세 장만 만든다. 캐릭터 시트, 스토리보드, 키 프레임, 영상은 만들지 않는다.
+제타에서는 주인공 프로필 1장과 유저 대화 프로필 2장(남성용·여성용), 모두 상반신 초상 세 장만 만든다. 주인공 프로필에는 맨 아래에 배경 위로 `캐릭터 이름 | 생성일시` 글씨(6-13)가 들어간다. 캐릭터 시트, 스토리보드, 키 프레임, 영상은 만들지 않는다.
 
 ## 5. 프롬프트 구성 순서 (엄격히 지킨다)
 
@@ -72,6 +72,7 @@ GLOBAL IDOL FACIAL BEAUTY FLOOR는 모든 주연이 공유하는 고정 미모 �
 7. 구도 문장 한 줄 (6-12에서 프레임·앵글·시선·자세를 골라 쓴다. 시트 레이아웃 블록은 제타에서 쓰지 않는다)
 8. LIGHTING MODE 하나
 9. GLOBAL NEGATIVE BLOCK (원문 그대로)
+10. BOTTOM IDENTIFICATION FOOTER (6-13, 주인공 프로필에만. 배경 위에 이름과 생성일시 글씨만, 띠 없음)
 
 블록을 더 짧은 프롬프트로 요약하지 않는다. GLOBAL LOOK, GLOBAL BEAUTY FLOOR, 선택한 GENDER AMPLIFIER, GLOBAL NEGATIVE는 최종 출력에 끊김 없이 완전한 텍스트로 들어가야 한다. 레퍼런스 이미지는 정체성만 고정하며 전역 스타일 용어를 대체할 수 없다.
 
@@ -204,6 +205,12 @@ Premium neutral Korean interior with warm practical lights and controlled cool s
 
 특정 의상, 머리색, 체형을 금지하는 블록이 아니다. 다른 캐릭터 간 같은 얼굴 재사용을 금지한다.
 
+주인공 프로필에서는 하단 이름·생성일시 글씨(6-13)를 넣으므로 맨 앞의 `NO text, NO watermark, NO UI overlay,`를 아래 문장으로 바꾼다. `NO text`를 그대로 두면 모델이 하단의 이름·날짜까지 지워 버린다. 유저 대화 프로필(정보 바 없음)은 원문 그대로 쓴다.
+
+```text
+NO UNINTENTIONAL TEXT, NO WATERMARK, NO UI OVERLAY. EXCEPTION: The bottom cinematic character-identification footer is intentional and MUST contain the exact specified character name and date/time.
+```
+
 ```text
 Negative constraints: NO text, NO watermark, NO UI overlay, NO different identity across panels, NO same-face reuse across different characters, NO plastic high-gloss skin, NO over-smoothed wax-figure skin, NO generic passerby features, NO cheap short-drama casting, NO exaggerated facial expressions, NO screaming, NO wide-open mouth, NO unintended hair color change, NO costume drift within the same sheet, NO body-type drift within the same sheet, NO age drift, NO blurry or unsharp panels outside the controlled soft-focus intent, NO dewy glass-skin sheen, NO oily shine or highlight pooling, NO wet-look skin surface, NO dull or sallow patches anywhere on the face, NO heavy blur that erases skin texture detail, NO heavy influencer or theatrical makeup, NO long midface, NO long philtrum, NO wide nose base, NO bulbous or rounded nose tip, NO broad heavy jaw, NO bulky masseter, NO protruding ears, NO coarse brow ridge, NO receded temple hairline, NO tired hollow eyes, NO generic actor casting face, NO average commercial-model face, NO coarse or bulky facial feature, NO wrong limb count, NO merged identities.
 ```
@@ -289,6 +296,14 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 4. 조명 모드(6-8)도 직전 5편과 같은 것만 반복하지 않는다. 창가 측광(window side light), 역광 테두리(soft rim backlight), 무대·부스의 국소광(single practical light)처럼 직업 공간에서 나오는 빛을 고를 수 있다.
 5. 구도 문장 예: `Waist-up portrait seen from a slight high angle, seated at the booth desk and turned toward the camera, eyes lowered to the script in hand, a faint closed-lip smile.` 고른 축을 검수 결과에 "구도: 허리 위/살짝 위에서/손을 봄/앉음" 형식으로 적는다.
 
+### 6-13. BOTTOM IDENTIFICATION FOOTER (주인공 프로필만, 이름·생성일시를 채워서 원문 그대로)
+
+주인공 프로필 이미지의 맨 아래에 `캐릭터 이름 | 생성일시` 글씨를 넣는다. 영화 포스터 아래에 제목과 개봉일이 한 줄로 찍히는 것과 같은 방식인데, 띠나 상자를 깔지 않고 배경이 그대로 이어지는 위에 글씨만 올린다. 블록은 프롬프트의 맨 끝(6-9 뒤)에 붙이고, `{{이름}}`과 `{{생성일시}}` 두 자리만 채운다. 생성일시는 `YYYY.MM.DD HH:MM`(24시간, 한국 시간)이며 작품 파일을 처음 만든 시각을 쓴다. `26.10.09`처럼 연도를 줄이지 않는다. 유저 대화 프로필에는 넣지 않는다.
+
+```text
+BOTTOM IDENTIFICATION FOOTER: Add a clean cinematic character-identification caption along the very bottom edge of the image. There is NO band, NO box, NO bar and NO solid background behind the text: the scene continues uninterrupted to the bottom edge, and only the typography is placed over it, with at most a very soft, barely visible darkening of the lowest 8–10% of the frame and a faint soft shadow under the letters so they stay legible. It should feel like a premium Korean drama character profile title card, not a UI overlay and not a watermark. Place the following information in one horizontal line: {{이름}} | {{생성일시}} — the character name "{{이름}}" appears larger and more prominent, using elegant refined Korean typography in warm ivory-white; a thin vertical separator line sits between the character name and the date/time; the date and time appear smaller than the character name, using refined serif-style typography in soft ivory-white. Layout reference: the character name is positioned slightly left of center, followed by a thin vertical divider, then the date and time, with the character name approximately 1.5–1.8× larger than the date/time text, generous horizontal spacing and a sophisticated Korean editorial title-card aesthetic similar to a premium K-drama character introduction. Typography must be clean, elegant, cinematic, highly legible, vertically centered within the bottom margin, horizontally balanced and professionally typeset. Keep the caption visually subtle and premium. Do not cover the character's body or face. The caption must be firmly anchored to the very bottom edge of the image. IMPORTANT: The ONLY intentional text in the image is the character identification caption. Do NOT add any other text, letters, captions, logos, signs, labels, watermark, random typography, or illegible text anywhere else in the image.
+```
+
 ## 7. GLOBAL LITERAL GATE (생성 전 필수 검사)
 
 이미지 도구를 호출하기 전에 아래를 모두 확인한다. 하나라도 실패하면 프롬프트를 다시 만든다.
@@ -304,7 +319,8 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 - [ ] 직업이 보이게 하는 세 가지(입은 것, 손이 도구를 쓰는 동작, 몸에 남은 흔적)가 프롬프트에 모두 있다.
 - [ ] 구도(6-12)가 직전 5편과 프레임·앵글·시선·자세 중 2개 이상 다르고, 얼굴이 4분의 3 이상 보이며, 고른 축을 검수 결과에 적었다.
 - [ ] 주인공의 얼굴 구조가 6-10 유저 공통 얼굴과 다르다. 주인공과 유저는 그림체(6-1·6-2 블록)는 같지만 얼굴은 다른 사람이어야 한다.
-- [ ] 6-9 네거티브 블록이 원문 그대로 완전히 포함되어 있다.
+- [ ] 6-9 네거티브 블록이 완전히 포함되어 있다. 주인공 프로필은 맨 앞 세 항목이 `NO UNINTENTIONAL TEXT … EXCEPTION: …` 문장으로 바뀌어 있고, 유저 프로필은 원문 그대로다.
+- [ ] 주인공 프로필 맨 끝에 6-13 하단 이름·생성일시 블록이 있고, 이름과 생성일시(`YYYY.MM.DD HH:MM`)가 채워져 있다. 유저 프로필에는 없다.
 - [ ] 유저 대화 프로필용이 남성용·여성용 두 개이고, 각각 MALE/FEMALE 블록 원문과 6-10 얼굴 구조를 포함한다.
 - [ ] 영문 프롬프트 바로 아래에 한글 설명이 한두 문장으로 붙어 있다.
 
