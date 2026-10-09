@@ -19,6 +19,8 @@ ROOT = Path(__file__).resolve().parent.parent
 CH_DIR = ROOT / "notes" / "설렘모먼트_장"
 ZETA_DIR = ROOT / "zeta"
 ZETA_IMAGE_DIR = ZETA_DIR / "generated"
+sys.path.insert(0, str(ZETA_IMAGE_DIR))
+import register  # noqa: E402  (zeta/generated/register.py: 이미지 등록·프롬프트 지문)
 OUT = Path(__file__).resolve().parent / "dist" / "index.html"
 
 
@@ -257,7 +259,12 @@ def load_zeta():
             for g in groups:
                 if g["title"].startswith("4."):
                     g["items"] = items
-        images = [dict(label=i["label"], url=f"images/{i['file']}") for i in image_manifest.get(f.stem, [])]
+        images = []
+        for i in image_manifest.get(f.stem, []):
+            # 등록 당시의 프롬프트 지문과 지금 지문이 다르면 '프롬프트가 바뀜' 표시 (zeta/generated/register.py 참고)
+            kind = register.guess_kind(i)
+            stale = bool(i.get("prompt_sha")) and register.prompt_sha(f.stem, kind) not in (None, i["prompt_sha"])
+            images.append(dict(label=i["label"], url=f"images/{i['file']}", stale=stale))
         works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
     return load_common() + sorted(works, key=lambda w: (w["date"], w["name"]), reverse=True)
 

@@ -135,6 +135,7 @@ input[type=text]{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:
 .zgallery figure{margin:0;min-width:0}
 .zgallery img{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
 .zgallery figcaption{margin-top:6px;color:var(--muted);font-size:12px;text-align:center}
+.zgallery .stale{display:block;margin-top:3px;color:var(--rose);font-weight:600}
 .grp{margin-top:30px;border-top:1px solid var(--line);padding-top:20px}
 .grp:first-child{margin-top:0;border-top:0;padding-top:0}
 .grp h3{font-family:var(--display);font-size:19px;margin:0 0 10px}
@@ -592,7 +593,7 @@ function zrender(){
     </div>
     <h2>${esc(w.name)}</h2>
     ${w.sub?`<p class="sub">${esc(w.sub)}</p>`:""}
-    ${w.images&&w.images.length?`<div class="zgallery">${w.images.map(i=>`<figure><img src="${esc(i.url)}" alt="${esc(i.label)}" loading="lazy"><figcaption>${esc(i.label)}</figcaption></figure>`).join("")}</div>`:""}
+    ${w.images&&w.images.length?`<div class="zgallery">${w.images.map(i=>`<figure><img src="${esc(i.url)}" alt="${esc(i.label)}" loading="lazy"><figcaption>${esc(i.label)}${i.stale?`<span class="stale" title="이미지를 만든 뒤 플롯의 이미지 프롬프트가 바뀌었어요. 다시 만들지 확인하세요.">프롬프트 바뀜 · 재생성 확인</span>`:""}</figcaption></figure>`).join("")}</div>`:""}
     <dl class="facts">
       ${w.mood?`<dt>분위기</dt><dd>${esc(w.mood)}</dd>`:""}
       ${w.job?`<dt>직업·배경</dt><dd>${esc(w.job)}</dd>`:""}
