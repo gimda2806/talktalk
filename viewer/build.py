@@ -309,7 +309,8 @@ def load_zeta():
             images.append(dict(label=i["label"], url=f"images/{i['file']}", stale=stale))
         works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
     # 만든 순서(작품 목록 줄 순서)의 역순 = 최신 작품이 위. 목록에 없는 파일은 맨 위에 날짜·이름순으로
-    return load_common() + load_casual() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
+    # 사복 의상(zeta-casual-wardrobe.md)은 캐릭터 도식 시트 전용이라 뷰어 목록에 넣지 않는다
+    return load_common() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
 
 
 def copy_zeta_images():
@@ -334,6 +335,8 @@ def load_reviews():
     for path in sorted((ROOT / "zeta").glob("review-*.md")):
         title = path.stem
         text = path.read_text(encoding="utf-8")
+        if re.search(r"^> 상태: 반영 완료", text[:600], re.M):
+            continue  # 이미 작품에 고친 전후 기록 파일은 검토 탭에 띄우지 않는다
         for m in re.finditer(r"^### (\d{3}) (\S+)\n(.*?)(?=^### |^## |\Z)", text, re.M | re.S):
             num, name, body = m.group(1), m.group(2), m.group(3)
             cur = None
