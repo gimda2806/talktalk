@@ -2150,5 +2150,65 @@
       "prompt": "여성용",
       "prompt_sha": "38379cebf122"
     }
+  ],
+  "zeta_102_도찬희": [
+    {
+      "file": "do-chanhui-main.png",
+      "label": "주인공 도찬희",
+      "prompt": "주인공",
+      "prompt_sha": "f4fe80add866"
+    },
+    {
+      "file": "do-chanhui-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "40f8417e6045"
+    },
+    {
+      "file": "do-chanhui-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "8545f0d106a5"
+    }
+  ],
+  "zeta_112_함기범": [
+    {
+      "file": "ham-gibeom-main.png",
+      "label": "주인공 함기범",
+      "prompt": "주인공",
+      "prompt_sha": "6051e37ce6d9"
+    },
+    {
+      "file": "ham-gibeom-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "a151828a0d35"
+    },
+    {
+      "file": "ham-gibeom-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "a542d764ec70"
+    }
+  ],
+  "zeta_113_전종휘": [
+    {
+      "file": "jeon-jonghwi-main.png",
+      "label": "주인공 전종휘",
+      "prompt": "주인공",
+      "prompt_sha": "c7638ec9c83a"
+    },
+    {
+      "file": "jeon-jonghwi-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "ca8fd4910c5e"
+    },
+    {
+      "file": "jeon-jonghwi-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "90aba7a2d013"
+    }
   ]
 }
