@@ -275,6 +275,14 @@ def load_zeta():
             kind = register.guess_kind(i)
             stale = bool(i.get("prompt_sha")) and register.prompt_sha(f.stem, kind, i) not in (None, i["prompt_sha"])
             images.append(dict(label=i["label"], url=f"images/{i['file']}", stale=stale))
+        for g in groups:
+            for i in g["items"]:
+                gender = re.search(r"남성용|여성용", i.get("label", "") + i.get("sub", "")) if i["kind"] == "field" else None
+                if gender and i["label"].startswith("유저 대화 프로필용"):
+                    # 사복(반팔·긴팔·겨울) 복사 버튼용: 바꿔 끼울 자리 (규칙 문서 6-17, register.casual_split)
+                    cz = register.casual_split(i["text"])
+                    if cz:
+                        i["cz"] = cz + [gender.group(0)]
         works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
     # 만든 순서(작품 목록 줄 순서)의 역순 = 최신 작품이 위. 목록에 없는 파일은 맨 위에 날짜·이름순으로
     return load_common() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
@@ -346,7 +354,7 @@ def load_repeats():
 
 def main():
     page = (Path(__file__).resolve().parent / "template.html").read_text(encoding="utf-8")
-    for key, rows in (("DATA", load()), ("ZETA", load_zeta()), ("REVIEWS", load_reviews()), ("REPEATS", load_repeats())):
+    for key, rows in (("DATA", load()), ("ZETA", load_zeta()), ("REVIEWS", load_reviews()), ("REPEATS", load_repeats()), ("CASUAL", register.casual_table())):
         page = page.replace(f"/*{key}*/", json.dumps(rows, ensure_ascii=False).replace("</", "<\\/"))
     if "--fragment" not in sys.argv:
         page = ('<!doctype html>\n<html lang="ko">\n<head>\n<meta charset="utf-8">\n'

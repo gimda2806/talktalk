@@ -60,7 +60,7 @@ GLOBAL IDOL FACIAL BEAUTY FLOOR는 모든 주연이 공유하는 고정 미모 �
 
 ## 4. 제타에서 만드는 이미지
 
-제타에서는 주인공 프로필 1장과 유저 대화 프로필 2장(남성용·여성용), 모두 상반신 초상 세 장만 만든다. 세 장 모두 맨 아래에 배경 위로 `캐릭터 이름 | 생성일시` 글씨(6-13)가 들어간다(유저용은 `이름(U, M)` / `이름(U, F)`). 캐릭터 시트, 스토리보드, 키 프레임, 영상은 만들지 않는다.
+제타에서는 주인공 프로필 1장과 유저 대화 프로필 2장(남성용·여성용), 모두 상반신 초상 세 장만 만든다. 유저 대화 프로필은 6-17의 사복(반팔·긴팔·겨울)으로 바꿔 뽑을 수도 있다(뷰어 버튼, 작품 파일에는 따로 적지 않음). 세 장 모두 맨 아래에 배경 위로 `캐릭터 이름 | 생성일시` 글씨(6-13)가 들어간다(유저용은 `이름(U, M)` / `이름(U, F)`). 캐릭터 시트, 스토리보드, 키 프레임, 영상은 만들지 않는다.
 
 ## 5. 프롬프트 구성 순서 (엄격히 지킨다)
 
@@ -460,6 +460,35 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 - 장면은 플롯에 있는 장면만 쓴다(이벤트, 상황 예시, 에필로그, 연작 설정집의 카메오 줄). 플롯에 없는 사건을 스틸로 먼저 만들지 않는다.
 - 두 주인공이 한 장에 나오면 얼굴이 섞이기 쉽다. 결과에서 얼굴이 흐트러지면 한 명을 뒷모습·옆모습으로 돌리거나 한 명씩 두 장으로 나눈다.
 - 유저가 나오는 장면 스틸은 공개 칸에 쓰지 않는다(플랫폼 규칙상 유저 이미지는 대화 프로필뿐). 작업용 참고 이미지로만 둔다.
+
+### 6-17. USER CASUAL WARDROBE (유저 사복: 반팔 · 긴팔 · 겨울)
+
+유저 대화 프로필(남성용·여성용)은 작품 속 일터 장면에 맞춰 입혀 두어서 가운·스크럽·앞치마·직원증 끈처럼 거의 유니폼으로 보인다. 그래서 같은 유저를 **일하지 않는 날의 사복**으로도 뽑을 수 있게 반팔·긴팔·겨울옷 세 벌을 공통으로 둔다. 작품 파일에는 따로 적지 않는다. 뷰어의 유저 프롬프트 칸(긴 버전·짧은 버전 모두) 아래 `사복으로 복사 · 반팔 / 긴팔 / 겨울` 버튼이 복사하는 순간 그 칸의 프롬프트를 아래처럼 바꿔 준다.
+
+- `Character design: … .`(옛 형식은 뒤따르는 `Wardrobe: …`·`Props: …`까지) 자리를 `Character design: a young adult in their (그 작품의 나이), (아래 차림·장소 구절), (그 작품의 머리 구절).`로 바꾼다. 나이와 머리는 원래 문장에서 그대로 가져온다(머리는 `hair`·`bob`·`braid`·`ponytail` 같은 말이 처음 나오는 쉼표 조각부터 문장 끝까지).
+- 조명 문장(긴 버전은 `…without reducing the idol-grade visual finish.` 다음, 짧은 버전은 `Lighting:` 다음부터 `Negative` 앞까지)을 아래 계절 조명으로 바꾼다.
+- 6-1·6-2·6-3 블록, 6-10 얼굴 구조, 구도 문장, 네거티브, 하단 이름 글씨(`이름(U, M)`/`이름(U, F)`)는 그대로 둔다. 얼굴과 머리는 같은 사람, 옷과 배경만 바뀐다.
+- 사복 구절을 고치면 아래 표만 고친다(뷰어·`register.py`가 이 표를 읽는다). 표 칸 안에 `|`를 쓰지 않는다. 고친 날은 `image-prompt-changelog.md`에 한 줄 남긴다.
+- 사복 이미지를 등록할 때: `python3 zeta/generated/register.py <작품> 남성용-반팔 <파일>`(`남성용-긴팔`, `남성용-겨울`, `여성용-반팔`, `여성용-긴팔`, `여성용-겨울`). 파일명은 `-user-m-summer`·`-user-m-spring`·`-user-m-winter`, 여성은 `-user-f-…`. 지문은 바꿔 끼운 긴 버전으로 계산한다.
+
+**차림·장소 구절 (Character design에 들어간다)**
+
+| 사복 | 성별 | 차림·장소 |
+| --- | --- | --- |
+| 반팔 | 남성용 | off duty on a quiet tree-lined neighborhood street on a clear early-summer afternoon, wearing plain everyday casual clothes: a relaxed-fit white cotton crew-neck short-sleeve T-shirt with no lettering or logo under an unbuttoned pale sky-blue short-sleeve linen shirt, bare forearms, a thin silver watch on one wrist, no uniform, no apron, no lanyard or ID badge |
+| 반팔 | 여성용 | off duty on a quiet tree-lined neighborhood street on a clear early-summer afternoon, wearing plain everyday casual clothes: a soft butter-yellow short-sleeve cotton blouse with a rounded neckline and small gathered sleeves, bare forearms, tiny pearl stud earrings, the thin strap of a canvas tote over one shoulder, no uniform, no apron, no lanyard or ID badge |
+| 긴팔 | 남성용 | off duty by the window of a softly blurred quiet neighborhood café on a mild spring afternoon, wearing plain everyday casual clothes: a heather-gray crew-neck long-sleeve cotton sweatshirt with no lettering or logo, the white hem of a T-shirt just showing at the neckline, sleeves down to the wrists, no uniform, no apron, no lanyard or ID badge |
+| 긴팔 | 여성용 | off duty by the window of a softly blurred quiet neighborhood café on a mild spring afternoon, wearing plain everyday casual clothes: a soft cream ribbed long-sleeve knit top with a square neckline, sleeves down to the wrists, a delicate thin gold necklace, no uniform, no apron, no lanyard or ID badge |
+| 겨울 | 남성용 | off duty on a softly blurred city street on a cold clear winter evening, wearing plain everyday casual winter clothes: a charcoal wool overcoat over a cream chunky turtleneck knit, a soft gray cashmere scarf loosely wrapped around the neck, no uniform, no lanyard or ID badge |
+| 겨울 | 여성용 | off duty on a softly blurred city street on a cold clear winter evening, wearing plain everyday casual winter clothes: a long camel wool coat over an ivory cable-knit turtleneck, a soft burgundy wool scarf loosely wrapped around the neck, small pearl stud earrings, no uniform, no lanyard or ID badge |
+
+**계절 조명 (조명 문장 자리에 들어간다)**
+
+| 사복 | 조명 |
+| --- | --- |
+| 반팔 | Bright early-summer daylight: soft sunlight filtered through tree leaves with gentle dappled highlights, clean fill from the open sky, a light warm rim along the hair and shoulder, restrained halation, shallow depth of field with a softly blurred green street behind, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. |
+| 긴팔 | Soft café window light: diffuse daylight from a large window on one side, gentle warm interior fill from the other side, a soft bright rim along the shoulder and hair, restrained halation, shallow depth of field with a softly blurred café interior behind, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. |
+| 겨울 | Cool winter evening light: soft blue-hour sky light from the front, faint warm bokeh from shop windows behind, a crisp cool rim along the coat shoulder and hair, a few faint snowflakes in the air, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. |
 
 ## 7. GLOBAL LITERAL GATE (생성 전 필수 검사)
 
