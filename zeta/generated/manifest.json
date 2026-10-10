@@ -2350,5 +2350,25 @@
       "prompt": "여성용",
       "prompt_sha": "8c7146a72ac9"
     }
+  ],
+  "zeta_110_한무영": [
+    {
+      "file": "han-mooyoung-main.png",
+      "label": "주인공 한무영",
+      "prompt": "주인공",
+      "prompt_sha": "6ee9a569c10f"
+    },
+    {
+      "file": "han-mooyoung-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "d11923d92c30"
+    },
+    {
+      "file": "han-mooyoung-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "24eae79da10a"
+    }
   ]
 }
