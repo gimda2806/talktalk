@@ -2070,5 +2070,25 @@
       "prompt": "여성용",
       "prompt_sha": "949146e3c772"
     }
+  ],
+  "zeta_098_고창현": [
+    {
+      "file": "go-changhyeon-main.png",
+      "label": "주인공 고창현",
+      "prompt": "주인공",
+      "prompt_sha": "535fe5b39443"
+    },
+    {
+      "file": "go-changhyeon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "fdb489a58060"
+    },
+    {
+      "file": "go-changhyeon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "e4d5097ba1d1"
+    }
   ]
 }
