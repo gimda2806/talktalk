@@ -2676,3 +2676,49 @@ Off-duty casual wardrobe (winter): a long stone-beige quilted down coat, a charc
 ```
 
 롱 스톤베이지 퀼팅 다운 코트에 차콜 굵은 터틀넥, 검은 울 와이드 바지, 검은 더비 슈즈. 주황빛 탄색 니트 머플러, 검은 가죽 장갑과 가는 가죽 시계.
+
+### 115 하현석
+
+#### 반팔
+```text
+Off-duty casual wardrobe (short-sleeve): a crisp light-gray cotton pique polo shirt with a neat flat collar, slim charcoal cotton chinos, white leather low-top sneakers. Accessories: a slim steel watch on a dark brown leather strap, a small pencil clipped inside a pocket-size spiral notebook carried in one hand. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
+
+연회색 피케 반팔 폴로셔츠에 차콜 슬림 치노, 흰 가죽 스니커즈. 갈색 가죽줄 시계와 연필을 꽂은 작은 스프링 수첩.
+
+#### 긴팔
+```text
+Off-duty casual wardrobe (long-sleeve): a soft oatmeal fine-gauge crew-neck sweater over the collar of a pale blue oxford shirt, sleeves down to the wrists, straight dark-navy wool-blend trousers, brown suede loafers. Accessories: a slim steel watch on a dark brown leather strap, a small pencil clipped inside a pocket-size spiral notebook carried in one hand. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
+
+하늘색 옥스퍼드 셔츠 깃을 낸 오트밀 얇은 라운드 니트, 짙은 남색 일자 바지, 갈색 스웨이드 로퍼. 갈색 가죽줄 시계와 연필 꽂은 수첩.
+
+#### 겨울
+```text
+Off-duty casual wardrobe (winter): a knee-length camel single-breasted wool coat over a charcoal ribbed turtleneck knit, straight gray flannel trousers, dark brown leather derby shoes. Accessories: a navy-and-gray checked wool scarf, a slim steel watch on a dark brown leather strap, a small pencil clipped inside a pocket-size spiral notebook carried in one hand. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
+
+무릎 길이 캐멀 울 코트에 차콜 골지 터틀넥, 회색 플란넬 일자 바지, 짙은 갈색 더비 구두. 남색·회색 체크 목도리, 갈색 가죽줄 시계, 연필 꽂은 수첩.
+
+### 116 노승범
+
+#### 반팔
+```text
+Off-duty casual wardrobe (short-sleeve): a relaxed forest-green heavyweight cotton crew-neck T-shirt, stone-beige straight-leg chino shorts to the knee, gray mesh running sneakers with white soles. Accessories: a black rubber-strap digital sports watch, a small black nylon sling bag across the chest. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
+
+포레스트 그린 두꺼운 면 반팔 티, 무릎 길이 스톤베이지 치노 반바지, 회색 메시 러닝화. 검은 고무줄 디지털 시계와 작은 검정 슬링백.
+
+#### 긴팔
+```text
+Off-duty casual wardrobe (long-sleeve): a charcoal-gray cotton crew-neck sweatshirt over a white T-shirt hem, sleeves down to the wrists, relaxed dark-indigo straight jeans, white canvas high-top sneakers. Accessories: a black rubber-strap digital sports watch, a small black nylon sling bag across the chest. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
+
+흰 티 밑단이 보이는 차콜 맨투맨, 진청 일자 청바지, 흰 캔버스 하이탑. 검은 디지털 시계와 검정 슬링백.
+
+#### 겨울
+```text
+Off-duty casual wardrobe (winter): a hip-length matte black hooded down puffer jacket over a cream waffle-knit henley, loose olive-khaki corduroy trousers, dark brown lace-up leather work boots. Accessories: a mustard-yellow ribbed knit beanie, a black rubber-strap digital sports watch, black knit gloves. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
+
+엉덩이 길이 무광 검정 후드 패딩에 크림색 와플 헨리넥, 올리브 카키 코듀로이 바지, 갈색 워크부츠. 머스터드 비니, 검은 디지털 시계, 검정 니트 장갑.
