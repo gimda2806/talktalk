@@ -262,10 +262,10 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 | 항목 | 직업에 따라 달라지는 것 | 예 |
 | --- | --- | --- |
 | 나이 인상 | 대표·원장·교수·셰프·팀장처럼 책임이 있는 자리는 성숙한 어른 얼굴, 아르바이트·신인·조수는 앳되게. 설정 나이와 얼굴 나이가 맞아야 한다 | 33세 호텔 대표는 "30대 중반으로 또렷이 읽히는 얼굴", 24세 신인 가수는 "20대 초반" |
-| 손질 정도 | 규정이 있는 직업은 정갈(올백·매끈한 면도·다림질), 창작·현장 직업은 자연스럽게 흐트러짐 | 은행원·승무원: 정갈 / 보컬 트레이너·도예가: 손으로 쓸어 넘긴 머리 |
+| 손질 정도 | 규정이 있는 직업은 정갈(올백·매끈한 면도·다림질), 창작·현장 직업은 자연스럽게 흐트러짐. 학생·연습생·20대 초중반 연하는 흐트러짐이 기본(아래 '흐트러짐 축') | 은행원·승무원: 정갈 / 보컬 트레이너·도예가: 손으로 쓸어 넘긴 머리 |
 | 체격·자세 | 앉아서 일하면 마르고 곧은 선, 몸 쓰는 직업은 어깨·팔이 탄탄하고 손목이 굵음 | 정비사·택배 기사·구조대원: 탄탄한 어깨 / 사서·편집자: 마르고 긴 선 |
 | 피부·혈색 | 실내 직업은 창백하고 고름, 야외·현장 직업은 밝게 그을리고 혈색이 있음 | 사서·은행원: 쿨 포슬린 / 정비사·수영 강사: 밝게 그을린 톤 |
-| 표정 기본값 | 서비스직은 입꼬리가 올라간 채 멈춤, 전문직은 침착한 무표정, 교사·훈련사는 눈이 먼저 웃음, 대표는 시선이 무거움 | 은행원: 절제된 미소 / 대표: 무게 있는 시선 / 트레이너: 평가하는 눈 |
+| 표정 기본값 | 캐릭터 타입이 먼저다(루틴 3단계: 능글남·장난남은 한쪽 입꼬리만 올린 웃음 `a lopsided half-smile`, 계략남·유혹남은 다 안다는 듯한 눈웃음 `a knowing smile in the eyes`, 대형견남·헌신남은 활짝 웃음 `a wide open bright grin`, 까칠남·냉정남·철벽남은 무심한 얼굴. BL 공 키워드도 같은 줄의 남주 키워드를 따른다). 타입이 다정남·무심남일 때만 직업 기본값: 서비스직은 입꼬리가 올라간 채 멈춤, 전문직은 침착한 무표정, 교사·훈련사는 눈이 먼저 웃음, 대표는 시선이 무거움 | 은행원: 절제된 미소 / 대표: 무게 있는 시선 / 트레이너: 평가하는 눈 |
 | 머리 규정 | 제복·규정 직업은 귀를 드러낸 짧은 머리, 예술·자영업은 길이와 스타일이 자유 | 승무원·은행원: 귀 드러남 / 웹툰 작가·셰프: 묶거나 흐트러짐 |
 
 - **나이 인상이 성숙 쪽이면 6-1·6-3의 "앳됨" 구절을 바꿔 쓴다.** 6-1의 `Youthful Korean idol energy — fresh-faced, polished and camera-ready, never juvenile, never ordinary, never a generic passerby.` → `Mature Korean idol-actor presence — a settled adult face, polished and camera-ready, never boyish, never juvenile, never ordinary, never a generic passerby.` 6-3 MALE의 `youthful adult freshness` → `settled adult maturity`. Character design 첫 문장에 얼굴 나이를 직접 쓴다. 예: `reads clearly as a man in his mid-thirties with a settled adult face`.
@@ -286,6 +286,7 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 | 표식 | 안경(테 종류까지) / 눈 밑·입가의 작은 점 / 보조개 / 눈썹 끝의 작은 흉터 / 옅은 주근깨 / 타투(선택, 아래 "타투 표식" 조건대로) / 귀 피어싱(선택, 아래 "피어싱 표식" 조건대로) (수염은 턱수염·콧수염·stubble 모두 쓰지 않는다) |
 | 피부 톤 | 쿨 포슬린(cool white porcelain) / 밝은 웜 아이보리(luminous warm ivory) / 밝게 그을린 톤(lightly sun-kissed with healthy warmth, 야외·현장 직업) |
 | 체격 | 마르고 긴 / 어깨 넓고 탄탄한 / 중간 |
+| 흐트러짐 | 단정(정갈한 머리·다린 옷·다문 입) / 자연스러운 흐트러짐(아래 구절 1~2개) / 확실히 흐트러짐(아래 구절 3개 이상) |
 | 직업 표식 | 아래 "직업이 보이게 하는 세 가지" |
 
 **규칙**
@@ -297,6 +298,30 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
    - `Youthful Korean idol energy — fresh-faced, polished and camera-ready, never juvenile,` → `Mature Korean idol-actor presence — a settled adult face, polished and camera-ready, never boyish, never juvenile,` (6-3 MALE의 `youthful adult freshness` → `settled adult maturity`)
    - 조명 블록 끝의 `skin must remain cool porcelain-white, never warm yellow`도 피부 톤에 맞게 `skin remains luminous warm ivory, never sallow`로 바꾼다.
 4. 고른 축을 검수 결과의 이미지 항목에 적는다. 예: "직업 인상: 성숙한 30대 중반/자연스러운 손질/마르고 곧음/실내 밝은 톤/평가하는 눈/자유 · 구분 축: 짙은 애쉬 브라운 중간 길이 쓸어 넘김 / 속쌍꺼풀 / 각진 턱 / 눈 밑 점 / 웜 아이보리". 다음 작품은 이 기록과 대조한다.
+
+**흐트러짐 축 (2026-10-11 사용자 결정: 130편의 주인공이 거의 다 정갈한 머리·다린 옷·다문 입이라 다 단정해 보였다)**
+
+- 직전 5편 중 최소 2편은 '자연스러운 흐트러짐' 이상이어야 하고, '단정'은 3편 연속 쓰지 않는다. 새 작품이 이 규칙을 깨면 흐트러짐 쪽으로 고른다.
+- 학생(고등학생·대학생·대학원생), 연습생, 아르바이트생, 20대 초중반 연하 캐릭터는 기본값이 '자연스러운 흐트러짐' 이상이다. 모범생 단정함은 그 캐릭터의 매력(겉과 속의 간극)일 때만 쓰고 검수에 "(반전) 단정"으로 적는다.
+- 캐릭터 타입(루틴 3단계)과 맞춘다. 능글남·장난남·대형견남·직진남·까칠남·유혹남은 흐트러짐 쪽, 다정남·계략남·철벽남·냉정남은 단정 쪽이 기본이며 일부러 비틀어도 된다.
+- 직업 규정(제복·은행원·의사 등)이 있어도 머리 한 가닥, 걷어 올린 소매, 풀린 넥타이 매듭처럼 근무 중에 생기는 흐트러짐은 쓸 수 있다.
+- 쓰는 구절(Character design·Wardrobe·구도 문장에 1~3개):
+
+| 흐트러짐 | 영문 구절 |
+| --- | --- |
+| 뻗친 머리 | hair a little unruly, a few strands sticking up at the crown / hair pushed back carelessly with fingers |
+| 잔머리 | loose strands falling over the forehead and temples |
+| 대충 걷은 소매 | sleeves shoved carelessly up to the elbows, unevenly |
+| 풀린 단추 | the top two shirt buttons undone, collar slightly askew |
+| 느슨한 넥타이 | tie loosened and pulled a little to one side |
+| 삐져나온 셔츠 | shirt hem half tucked, one side slipping out |
+| 비뚤어진 차림 | hoodie strings uneven, jacket slipping off one shoulder |
+| 씩 웃는 얼굴 | a lopsided half-smile / a crooked grin showing a hint of teeth |
+| 장난스러운 눈 | eyes narrowed with mischief, one brow slightly raised |
+| 편한 자세 | slouching against the wall, weight on one leg / sitting backwards on a chair |
+
+- 아이돌급 얼굴 기준선(6-2)은 그대로다. 흐트러짐은 머리·옷·자세·표정에만 쓰고 얼굴 정교함과 피부는 바꾸지 않는다. 지저분함(얼룩진 옷, 기름진 머리, 수염)은 쓰지 않는다.
+- 이미지가 이미 있는 작품에는 적용하지 않는다. 새 작품부터 쓴다.
 
 **머리색 변주 (아이돌·예술·스타일 직업군 한정)**
 
