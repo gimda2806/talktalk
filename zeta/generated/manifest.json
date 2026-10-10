@@ -2090,5 +2090,25 @@
       "prompt": "여성용",
       "prompt_sha": "e4d5097ba1d1"
     }
+  ],
+  "zeta_099_윤미르": [
+    {
+      "file": "yoon-mireu-main.png",
+      "label": "주인공 윤미르",
+      "prompt": "주인공",
+      "prompt_sha": "9e3073d1dec2"
+    },
+    {
+      "file": "yoon-mireu-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "5d3e83468767"
+    },
+    {
+      "file": "yoon-mireu-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "7717711ec106"
+    }
   ]
 }
