@@ -2770,5 +2770,25 @@
       "prompt": "여성용",
       "prompt_sha": "052d0a643f68"
     }
+  ],
+  "zeta_133_옥태범": [
+    {
+      "file": "ok-taebeom-main.png",
+      "label": "주인공 옥태범",
+      "prompt": "주인공",
+      "prompt_sha": "cf005fcb973b"
+    },
+    {
+      "file": "ok-taebeom-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "120b62b9a6d1"
+    },
+    {
+      "file": "ok-taebeom-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "a166d3555204"
+    }
   ]
 }
