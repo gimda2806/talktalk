@@ -2370,5 +2370,25 @@
       "prompt": "여성용",
       "prompt_sha": "24eae79da10a"
     }
+  ],
+  "zeta_111_양석민": [
+    {
+      "file": "yang-seokmin-main.png",
+      "label": "주인공 양석민",
+      "prompt": "주인공",
+      "prompt_sha": "66fd129b6ae2"
+    },
+    {
+      "file": "yang-seokmin-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "0790dfacfff8"
+    },
+    {
+      "file": "yang-seokmin-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "314aecdcbc9a"
+    }
   ]
 }
