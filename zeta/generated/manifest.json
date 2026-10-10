@@ -2330,5 +2330,25 @@
       "prompt": "여성용",
       "prompt_sha": "b18bcb1b939a"
     }
+  ],
+  "zeta_109_방승광": [
+    {
+      "file": "bang-seunggwang-main.png",
+      "label": "주인공 방승광",
+      "prompt": "주인공",
+      "prompt_sha": "a0b81867a5d6"
+    },
+    {
+      "file": "bang-seunggwang-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "578bdc668152"
+    },
+    {
+      "file": "bang-seunggwang-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "8c7146a72ac9"
+    }
   ]
 }
