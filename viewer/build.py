@@ -309,7 +309,8 @@ def load_zeta():
             images.append(dict(label=i["label"], url=f"images/{i['file']}", stale=stale))
         works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
     # 만든 순서(작품 목록 줄 순서)의 역순 = 최신 작품이 위. 목록에 없는 파일은 맨 위에 날짜·이름순으로
-    return load_common() + load_casual() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
+    # 사복 의상(zeta-casual-wardrobe.md)은 캐릭터 도식 시트 전용이라 뷰어 목록에 넣지 않는다
+    return load_common() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
 
 
 def copy_zeta_images():
