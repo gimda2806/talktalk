@@ -2290,5 +2290,25 @@
       "prompt": "여성용",
       "prompt_sha": "f68428ea6e33"
     }
+  ],
+  "zeta_107_고선담": [
+    {
+      "file": "go-seondam-main.png",
+      "label": "주인공 고선담",
+      "prompt": "주인공",
+      "prompt_sha": "c5149791729b"
+    },
+    {
+      "file": "go-seondam-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "e451b50f57d5"
+    },
+    {
+      "file": "go-seondam-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "d173f9b0d532"
+    }
   ]
 }
