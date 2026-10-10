@@ -2130,5 +2130,25 @@
       "prompt": "여성용",
       "prompt_sha": "a0b9d4f29023"
     }
+  ],
+  "zeta_101_성유석": [
+    {
+      "file": "seong-yuseok-main.png",
+      "label": "주인공 성유석",
+      "prompt": "주인공",
+      "prompt_sha": "13e838322dcb"
+    },
+    {
+      "file": "seong-yuseok-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "47232b14bca4"
+    },
+    {
+      "file": "seong-yuseok-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "38379cebf122"
+    }
   ]
 }
