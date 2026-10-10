@@ -2630,5 +2630,25 @@
       "prompt": "여성용",
       "prompt_sha": "cf1be230c43a"
     }
+  ],
+  "zeta_124_탁무늬": [
+    {
+      "file": "tak-munui-main.png",
+      "label": "주인공 탁무늬",
+      "prompt": "주인공",
+      "prompt_sha": "a1cd7cda344b"
+    },
+    {
+      "file": "tak-munui-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "cb9cce067aa4"
+    },
+    {
+      "file": "tak-munui-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "adafe3251e16"
+    }
   ]
 }
