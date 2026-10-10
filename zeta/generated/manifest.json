@@ -2470,5 +2470,45 @@
       "prompt": "여성용",
       "prompt_sha": "90ae96dcc833"
     }
+  ],
+  "zeta_123_금석주": [
+    {
+      "file": "geum-seokju-main.png",
+      "label": "주인공 금석주",
+      "prompt": "주인공",
+      "prompt_sha": "58a983008de7"
+    },
+    {
+      "file": "geum-seokju-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "5a0f13666e8c"
+    },
+    {
+      "file": "geum-seokju-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "e15642e63087"
+    }
+  ],
+  "zeta_120_허명헌": [
+    {
+      "file": "heo-myeongheon-main.png",
+      "label": "주인공 허명헌",
+      "prompt": "주인공",
+      "prompt_sha": "b0ea1c47784f"
+    },
+    {
+      "file": "heo-myeongheon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "90f997750a28"
+    },
+    {
+      "file": "heo-myeongheon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "8a07cf69ce26"
+    }
   ]
 }
