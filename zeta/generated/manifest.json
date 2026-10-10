@@ -2210,5 +2210,25 @@
       "prompt": "여성용",
       "prompt_sha": "90aba7a2d013"
     }
+  ],
+  "zeta_103_문세형": [
+    {
+      "file": "moon-sehyeong-main.png",
+      "label": "주인공 문세형",
+      "prompt": "주인공",
+      "prompt_sha": "a726361d6a34"
+    },
+    {
+      "file": "moon-sehyeong-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "e62259e513df"
+    },
+    {
+      "file": "moon-sehyeong-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "c30d5254904c"
+    }
   ]
 }
