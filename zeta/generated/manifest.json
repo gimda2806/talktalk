@@ -2430,5 +2430,25 @@
       "prompt": "여성용",
       "prompt_sha": "98c41373aa36"
     }
+  ],
+  "zeta_116_노승범": [
+    {
+      "file": "no-seungbeom-main.png",
+      "label": "주인공 노승범",
+      "prompt": "주인공",
+      "prompt_sha": "7d0c29c15065"
+    },
+    {
+      "file": "no-seungbeom-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "72d55292c868"
+    },
+    {
+      "file": "no-seungbeom-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "c668401297b5"
+    }
   ]
 }
