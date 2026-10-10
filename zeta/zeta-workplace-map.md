@@ -5,13 +5,36 @@
 - Source: [`zeta/zeta-works-list.md`](zeta-works-list.md)의 '직업·배경' 열 (원본 표현을 그대로 보존)
 - Last synced: 2026-10-11 (작품 목록 135줄)
 - Badge rule: 아래 확정 소속자만 제공된 회사 마크를 사원증에 적용합니다. 회사·기관이 아닌 개인 사업장/프리랜서/학생 등은 마크를 적용하지 않습니다.
-- 마크 이미지 파일(`*-mark-v*.png`, `*.svg`)은 용량 때문에 이 저장소에 두지 않고 이미지 제작 폴더에 있습니다.
+- 마크 이미지 파일은 [`zeta/marks/`](marks/)에 있습니다. 컨셉·레퍼런스 보드는 올리지 않았고, 완성 마크만 있습니다.
+
+### 마크 파일 목록 (`zeta/marks/`)
+
+| 파일 | 맵의 매핑 표에서 쓰는가 |
+| --- | --- |
+| `baneum-studio-mark-v1.png` | 아직 매핑 없음 |
+| `broadcast-performance-crew-mark-v1.png` | 아직 매핑 없음 |
+| `broadcast-performance-crew-staff-mark-v2.png` | 아직 매핑 없음 |
+| `broadcast-performance-crew-staff-mark-v3.png` | 예 |
+| `cheongsol-accounting-mark-v1.svg` | 예 |
+| `cheongsol-law-mark-v1.png` | 아직 매핑 없음 |
+| `cheongsol-law-mark-v1.svg` | 예 |
+| `digital-complex-baguni-market-mark-v1.png` | 예 |
+| `digital-complex-dambaek-food-mark-v1.png` | 예 |
+| `digital-complex-darak-studio-mark-v1.png` | 예 |
+| `digital-complex-ongyeol-electronics-mark-v1.png` | 예 |
+| `hani-department-store-mark-v1.png` | 아직 매핑 없음 |
+| `ieot-mart-mark-v1.png` | 아직 매핑 없음 |
+| `pureunsup-life-mark-v1.png` | 아직 매핑 없음 |
+| `sodam-entertainment-mark-v1.png` | 아직 매핑 없음 |
+| `yeobaek-publishing-mark-v1.png` | 아직 매핑 없음 |
+| `yeomim-styling-mark-v1.png` | 아직 매핑 없음 |
 
 ## 갱신 규칙
 
 - 새 플롯을 만들 때마다 아래 '전체 인물 근무처 목록' 표 맨 아래에 한 줄을 추가합니다: `| 인물 | 직업·배경 | `zeta_NNN_이름.md` |`. '직업·배경'은 `zeta-works-list.md`에 적은 문구를 그대로 옮깁니다. 기존 줄은 그 작품의 직업·배경이 바뀐 경우가 아니면 고치지 않습니다.
 - 새 주인공이 위 '확정 매핑'의 회사(담백푸드, 바구니마켓, 온결전자, 다락 스튜디오, 법무법인 청솔, 청솔 회계법인)에 소속이거나, 방송·공연·촬영 현장 스태프이면 '제공 마크와의 확정 매핑' 표에도 한 줄 추가합니다. `{{user}}`의 직무가 그 회사 소속이면 '유저 프로필 소속·사원증 마크' 표에도 추가합니다.
 - 새 회사 마크가 제공되면 이 문서의 매핑 표를 먼저 고치고, 이미 만든 이미지 중 해당 인물은 재생성 대상으로 `zeta/image-prompt-changelog.md`에 적습니다.
+- 새 마크 이미지는 `zeta/marks/`에 넣고 위 '마크 파일 목록' 표에 한 줄 추가합니다.
 
 ## 방송·공연·촬영 현장 스태프 공통 마크
 

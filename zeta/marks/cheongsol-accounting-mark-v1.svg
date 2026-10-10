@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">청솔회계법인 마크 시안</title>
+  <desc id="desc">딥그린 프레임 안에 청록색 소나무 층이 있는 마크</desc>
+  <g fill="none" stroke="#184C3A" stroke-width="20" stroke-linejoin="round">
+    <rect x="28" y="20" width="200" height="216" rx="38"/>
+  </g>
+  <path d="M62 103 128 62l66 41v23l-66-41-66 41z" fill="#184C3A"/>
+  <path d="M62 143 128 102l66 41v23l-66-41-66 41z" fill="#159A83"/>
+  <path d="M116 161h24v55h-24z" fill="#184C3A"/>
+</svg>
