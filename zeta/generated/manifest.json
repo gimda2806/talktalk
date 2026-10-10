@@ -2250,5 +2250,25 @@
       "prompt": "여성용",
       "prompt_sha": "8bb2bbfa8150"
     }
+  ],
+  "zeta_104_노민규": [
+    {
+      "file": "noh-mingyu-main.png",
+      "label": "주인공 노민규",
+      "prompt": "주인공",
+      "prompt_sha": "41ea9484163a"
+    },
+    {
+      "file": "noh-mingyu-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "758dcc578609"
+    },
+    {
+      "file": "noh-mingyu-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "e4204c300b11"
+    }
   ]
 }
