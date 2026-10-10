@@ -307,13 +307,16 @@ def load_reviews():
             cur = None
             for line in body.splitlines():
                 mm = re.match(r"^- (상황 예시 \d+|인트로|에필로그|소개(?: 탭)?|[^:]{1,20}): (.*)$", line)
-                if mm and mm.group(1) not in ("왜", "대안"):
+                if mm and mm.group(1) not in ("왜", "대안", "처리"):
                     cur = dict(report=title, num=num, work=name, loc=mm.group(1), line=mm.group(2).strip(), why="", alt="")
                     out.append(cur)
                 elif cur and line.startswith("- 왜: "):
                     cur["why"] = line[len("- 왜: "):].strip()
                 elif cur and line.startswith("- 대안: "):
                     cur["alt"] = line[len("- 대안: "):].strip()
+                elif cur and line.startswith("- 처리: "):
+                    cur["done"] = line[len("- 처리: "):].strip()
+    out = [r for r in out if not r.get("done")]  # '- 처리:' 줄이 달린 항목은 끝난 것으로 보고 뷰어에서 뺀다
     for i, r in enumerate(out, 1):
         r["n"] = i
     return out
