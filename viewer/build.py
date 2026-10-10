@@ -254,9 +254,31 @@ def load_casual():
                  genre="", mood="", job="", start="", device="", groups=groups)]
 
 
+def read_zeta_series():
+    """zeta-series.md의 '## 〈연작〉' 아래 표에서 작품 이름 → 연작 이름을 읽는다. (한 작품이 두 연작에 걸치면 둘 다)"""
+    out, cur = {}, None
+    f = ZETA_DIR / "zeta-series.md"
+    if not f.exists():
+        return out
+    for line in f.read_text(encoding="utf-8").splitlines():
+        m = re.match(r"^## (〈.+?〉)\s*$", line)
+        if m:
+            cur = m.group(1)
+        elif line.startswith("## "):
+            cur = None
+        elif cur and line.startswith("|"):
+            name = line.strip("|").split("|")[0].strip()
+            if name and name not in ("작품",) and not set(name) <= set("- "):
+                out.setdefault(name, [])
+                if cur not in out[name]:
+                    out[name].append(cur)
+    return out
+
+
 def load_zeta():
     """zeta/zeta_*.md 하나 = 제타 작품 하나. 설정집 파일이 있으면 '4. 설정집' 묶음에 끼워 넣는다."""
     rows = read_zeta_list()
+    series_of = read_zeta_series()
     image_manifest = {}
     manifest = ZETA_IMAGE_DIR / "manifest.json"
     if manifest.exists():
@@ -267,7 +289,7 @@ def load_zeta():
         m = re.search(r"^#\s*〈(.+?)〉", text, re.M)
         info = rows.get(f.name) or dict(date="", name=m.group(1) if m else f.stem, sub="", genre="", mood="", job="", start="", device="", seq=0)
         jm = re.search(r"^" + re.escape(info["name"]) + r" \(\d+\)\n([^\n]+)\n", text, re.M)  # 소개 탭의 '이름 (나이)' 다음 줄이 짧은 직업
-        info = dict(info, jobShort=jm.group(1).strip() if jm else "")
+        info = dict(info, jobShort=jm.group(1).strip() if jm else "", series=" · ".join(series_of.get(info["name"], [])))
         groups = parse_blocks(text, src=f"zeta/{f.name}")
         lore = ZETA_DIR / f"{info['name']}_설정집.md"
         if lore.exists():
