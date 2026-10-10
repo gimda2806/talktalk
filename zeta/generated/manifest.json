@@ -2530,5 +2530,25 @@
       "prompt": "여성용",
       "prompt_sha": "d67362e34465"
     }
+  ],
+  "zeta_119_남제욱": [
+    {
+      "file": "nam-jeuk-main.png",
+      "label": "주인공 남제욱",
+      "prompt": "주인공",
+      "prompt_sha": "6f9870cfc85c"
+    },
+    {
+      "file": "nam-jeuk-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "9a13047f21bc"
+    },
+    {
+      "file": "nam-jeuk-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "2f76223d5d1e"
+    }
   ]
 }
