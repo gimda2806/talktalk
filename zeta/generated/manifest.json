@@ -2310,5 +2310,25 @@
       "prompt": "여성용",
       "prompt_sha": "d173f9b0d532"
     }
+  ],
+  "zeta_108_은지율": [
+    {
+      "file": "eun-jiyul-main.png",
+      "label": "주인공 은지율",
+      "prompt": "주인공",
+      "prompt_sha": "c14f75c7948c"
+    },
+    {
+      "file": "eun-jiyul-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "7ea8ddf08562"
+    },
+    {
+      "file": "eun-jiyul-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "b18bcb1b939a"
+    }
   ]
 }
