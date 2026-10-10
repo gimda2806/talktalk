@@ -2590,5 +2590,45 @@
       "prompt": "여성용",
       "prompt_sha": "b371285795f4"
     }
+  ],
+  "zeta_121_정민준": [
+    {
+      "file": "jeong-minjun-main.png",
+      "label": "주인공 정민준",
+      "prompt": "주인공",
+      "prompt_sha": "e0293be13bfe"
+    },
+    {
+      "file": "jeong-minjun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "aca49b4df67a"
+    },
+    {
+      "file": "jeong-minjun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "ada8afd66182"
+    }
+  ],
+  "zeta_129_위담": [
+    {
+      "file": "wi-dam-main.png",
+      "label": "주인공 위담",
+      "prompt": "주인공",
+      "prompt_sha": "7c1dc683a9b6"
+    },
+    {
+      "file": "wi-dam-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "704c71ca1652"
+    },
+    {
+      "file": "wi-dam-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "cf1be230c43a"
+    }
   ]
 }
