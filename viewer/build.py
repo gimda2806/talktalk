@@ -334,6 +334,8 @@ def load_reviews():
     for path in sorted((ROOT / "zeta").glob("review-*.md")):
         title = path.stem
         text = path.read_text(encoding="utf-8")
+        if re.search(r"^> 상태: 반영 완료", text[:600], re.M):
+            continue  # 이미 작품에 고친 전후 기록 파일은 검토 탭에 띄우지 않는다
         for m in re.finditer(r"^### (\d{3}) (\S+)\n(.*?)(?=^### |^## |\Z)", text, re.M | re.S):
             num, name, body = m.group(1), m.group(2), m.group(3)
             cur = None
