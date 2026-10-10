@@ -64,6 +64,7 @@ button:focus-visible,input:focus-visible,.item:focus-visible{outline:2px solid v
 .ep[aria-current="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .ep .dot{width:7px;height:7px;border-radius:50%;background:var(--rose)}
 .sub{font-family:var(--serif);color:var(--muted);font-size:16px;margin:2px 0 8px}
+.sub .series,.rv h3 .series{color:var(--teal);font-size:14px;font-weight:normal}
 select{width:100%;font:inherit;font-size:16px;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
 input[type=text]:disabled{opacity:.5}
 .empty{font-size:13px;color:var(--muted);padding:10px 12px}
@@ -676,7 +677,7 @@ function rvrender(){
   const hot = REPEATS.filter(p=>p.hot);
   el.innerHTML = `<h2>노골적 대사 검토</h2><p class="lead">기획 요약에서 "숨긴다"고 한 마음을 캐릭터가 입으로 설명해 버리는 대사. 검토 ${ZETA.length}편 / 지적 ${works.length}편 ${REVIEWS.length}곳. 줄 그은 것이 지금 대사, 화살표 뒤가 대안. 번호로 골라 말하면 그 줄만 고친다.</p>`
     + works.map(name => { const rs = REVIEWS.filter(r=>r.work===name); const w = ZETA.find(z=>z.name===name);
-      return `<section class="work"><h3>${esc(rs[0].num)} ${esc(name)} <span class="loc">${rs.length}곳</span>${w?`<button type="button" data-rvgo="${esc(name)}">작품 열기</button>`:""}</h3>${rs.map(rvitem).join("")}</section>`; }).join("")
+      return `<section class="work"><h3>${esc(rs[0].num)} ${esc(name)}${w&&w.series?` <span class="series">${esc(w.series)} 연작</span>`:""} <span class="loc">${rs.length}곳</span>${w?`<button type="button" data-rvgo="${esc(name)}">작품 열기</button>`:""}</h3>${rs.map(rvitem).join("")}</section>`; }).join("")
     + `<section class="work"><h3>핵심 장치 반복 검사 <span class="loc">공개 칸(설명·캐릭터 설명·상황 예시·인트로·소개·이벤트·에필로그)에서 핵심 장치 낱말이 몇 번 나오는지 센 것. 12회 이상이거나 상황 예시만으로 6회 이상이면 붉게 표시</span></h3>
       <table><thead><tr><th>작품</th><th>핵심 장치</th><th>전체</th><th>칸별</th><th></th></tr></thead><tbody>${REPEATS.filter(p=>p.hot).map(p=>`<tr><td>${esc(p.work)}</td><td>${esc(p.term)}</td><td class="hot">${p.total}</td><td class="bars">${p.secs.map(s=>`${esc(s.sec)} ${s.n}`).join(" · ")}</td><td><button type="button" data-rvgo="${esc(p.work)}">열기</button></td></tr>`).join("")}</tbody></table>
       <p class="lead" style="margin-top:10px">붉지 않은 작품은 모두 기준 아래. 전체 표는 \`zeta/review-핵심장치-반복-2026-10-09.md\`.</p></section>`;
@@ -741,7 +742,7 @@ function zrender(){
       ${w.date?`<span class="tag plain">${esc(w.date)}</span>`:""}
     </div>
     <h2>${esc(w.name)}</h2>
-    ${w.sub?`<p class="sub">${esc(w.sub)}</p>`:""}
+    ${w.sub||w.series?`<p class="sub">${esc(w.sub)}${w.series?`<span class="series">${w.sub?" · ":""}${esc(w.series)} 연작</span>`:""}</p>`:""}
     ${w.images&&w.images.length?`<div class="zgallery">${w.images.map(i=>`<figure><img src="${esc(i.url)}" alt="${esc(i.label)}" loading="lazy" data-zl="${w.images.indexOf(i)}"><figcaption>${esc(i.label)}${i.stale?`<span class="stale" title="이미지를 만든 뒤 플롯의 이미지 프롬프트가 바뀌었어요. 다시 만들지 확인하세요.">프롬프트 바뀜 · 재생성 확인</span>`:""}</figcaption></figure>`).join("")}</div>`:""}
     <dl class="facts">
       ${w.mood?`<dt>분위기</dt><dd>${esc(w.mood)}</dd>`:""}
@@ -937,7 +938,7 @@ const zq = document.getElementById("zq");
 const znorm = s => String(s||"").toLowerCase().replace(/\s+/g,"");
 function zmatch(w, q){
   if (!q) return true;
-  const hay = znorm([w.name, w.sub, w.jobShort, w.job, w.mood, w.genre, w.start, w.device].join(" "));
+  const hay = znorm([w.name, w.sub, w.series, w.series ? w.series.replace(/[〈〉]/g,"") + " 연작" : "", w.jobShort, w.job, w.mood, w.genre, w.start, w.device].join(" "));
   return q.split(/\s+/).filter(Boolean).every(t => hay.includes(znorm(t)));
 }
 function zlist(){
