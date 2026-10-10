@@ -2450,5 +2450,25 @@
       "prompt": "여성용",
       "prompt_sha": "c668401297b5"
     }
+  ],
+  "zeta_117_채상진": [
+    {
+      "file": "chae-sangjin-main.png",
+      "label": "주인공 채상진",
+      "prompt": "주인공",
+      "prompt_sha": "964521310fea"
+    },
+    {
+      "file": "chae-sangjin-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "84c85e58e881"
+    },
+    {
+      "file": "chae-sangjin-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "90ae96dcc833"
+    }
   ]
 }
