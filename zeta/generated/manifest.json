@@ -2410,5 +2410,25 @@
       "prompt": "여성용",
       "prompt_sha": "1f4d9e35c886"
     }
+  ],
+  "zeta_115_하현석": [
+    {
+      "file": "ha-hyeonseok-main.png",
+      "label": "주인공 하현석",
+      "prompt": "주인공",
+      "prompt_sha": "e109df6c218f"
+    },
+    {
+      "file": "ha-hyeonseok-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "65a2140537bc"
+    },
+    {
+      "file": "ha-hyeonseok-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "98c41373aa36"
+    }
   ]
 }
