@@ -2830,5 +2830,25 @@
       "prompt": "여성용",
       "prompt_sha": "701d551c2866"
     }
+  ],
+  "zeta_138_은규원": [
+    {
+      "file": "eun-gyuwon-main.png",
+      "label": "주인공 은규원",
+      "prompt": "주인공",
+      "prompt_sha": "3303940e49c6"
+    },
+    {
+      "file": "eun-gyuwon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "708ed56f31d4"
+    },
+    {
+      "file": "eun-gyuwon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "2880dcf22266"
+    }
   ]
 }
