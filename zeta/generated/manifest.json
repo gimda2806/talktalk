@@ -2790,5 +2790,25 @@
       "prompt": "여성용",
       "prompt_sha": "a166d3555204"
     }
+  ],
+  "zeta_134_석윤호": [
+    {
+      "file": "seok-yunho-main.png",
+      "label": "주인공 석윤호",
+      "prompt": "주인공",
+      "prompt_sha": "51d9c49b6cd7"
+    },
+    {
+      "file": "seok-yunho-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "faa39e1263b6"
+    },
+    {
+      "file": "seok-yunho-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "3b1e126b67b6"
+    }
   ]
 }
