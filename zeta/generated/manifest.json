@@ -2670,5 +2670,25 @@
       "prompt": "여성용",
       "prompt_sha": "ab786c0fec0a"
     }
+  ],
+  "zeta_126_연강묵": [
+    {
+      "file": "yeon-gangmuk-main.png",
+      "label": "주인공 연강묵",
+      "prompt": "주인공",
+      "prompt_sha": "d34dca22fb05"
+    },
+    {
+      "file": "yeon-gangmuk-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "59755b880c9a"
+    },
+    {
+      "file": "yeon-gangmuk-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "b1ca7ff8d09a"
+    }
   ]
 }
