@@ -212,6 +212,10 @@ body[data-edit="on"] .copy.edit{display:inline-block}
 .zsheet .rvbox h4{margin:0 0 8px;font-size:13px;color:var(--rose)}
 .zsheet .rvbox .item{grid-template-columns:28px 1fr;padding:6px 0}
 .zsheet .rvbox .rep{font-size:12.5px;color:var(--muted);margin:6px 0 0}
+.zsheet .rvnote{margin:4px 0 12px;padding:4px 10px 6px;border-left:3px solid var(--rose);background:var(--sheet);border-radius:0 6px 6px 0}
+.zsheet .rvnote .item{grid-template-columns:28px 1fr;padding:5px 0}
+.zsheet .rvnote .q{font-size:14px}
+.rv .done{font-size:12px;color:var(--rose);margin-top:2px}
 .jumpbar{position:sticky;top:0;z-index:4;background:var(--paper);display:flex;align-items:center;gap:10px;margin:14px -16px 0;padding:8px 16px;border-bottom:1px solid var(--line)}
 .jumpbar .who{flex-shrink:0;font-family:var(--display);font-weight:700;font-size:16px;max-width:38vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .jump{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;min-width:0}
@@ -657,13 +661,13 @@ function ztext(lines){
   flush(); close(0);
   return html;
 }
-const rvitem = r => `<div class="item"><div class="num">${r.n}</div><div><div class="loc">${esc(r.loc)}</div><p class="q now">${esc(r.line)}</p><p class="q alt">${esc(r.alt)}</p>${r.why?`<div class="why">${esc(r.why)}</div>`:""}</div></div>`;
+const rvitem = r => `<div class="item"><div class="num">${r.n}</div><div><div class="loc">${esc(r.report.replace(/^review-/,"").replace(/-\d{4}-\d{2}-\d{2}$/,""))} · ${esc(r.loc)}</div><p class="q now">${esc(r.line)}</p><p class="q alt">${esc(r.alt)}</p>${r.why?`<div class="why">${esc(r.why)}</div>`:""}${r.done?`<div class="done">처리: ${esc(r.done)}</div>`:""}</div></div>`;
 const repline = p => `${esc(p.term)} ${p.total}회 (${p.secs.map(s=>`${s.sec} ${s.n}`).join(" · ")})`;
-function rvbox(w){
-  const rs = REVIEWS.filter(r=>r.work===w.name);
+function rvbox(w, rs){
+  if (!rs) rs = REVIEWS.filter(r=>r.work===w.name);
   const rp = REPEATS.filter(p=>p.work===w.name && p.hot);
   if (!rs.length && !rp.length) return "";
-  return `<section class="rvbox rv">${rs.length?`<h4>노골적 대사 검토 · ${rs.length}곳 (지금 대사 → 대안)</h4>${rs.map(rvitem).join("")}`:""}${rp.length?`<h4 style="margin-top:${rs.length?10:0}px">핵심 장치 반복 · 많이 나오는 것</h4>${rp.map(p=>`<p class="rep">${repline(p)}</p>`).join("")}`:""}</section>`;
+  return `<section class="rvbox rv">${rs.length?`<h4>검토 · 칸을 못 찾은 ${rs.length}곳 (전 → 후)</h4>${rs.map(rvitem).join("")}`:""}${rp.length?`<h4 style="margin-top:${rs.length?10:0}px">핵심 장치 반복 · 많이 나오는 것</h4>${rp.map(p=>`<p class="rep">${repline(p)}</p>`).join("")}`:""}</section>`;
 }
 function rvrender(){
   const el = document.getElementById("rvsheet");
@@ -685,7 +689,26 @@ function zrender(){
   TEXTS.length = 0;
   if (!w){ sheet.innerHTML = '<div class="empty">아직 제타 작품 파일이 없어요.</div>'; return; }
   const texts = [];
-  const field = i => {
+  const RVW = REVIEWS.filter(r=>r.work===w.name); const rvUsed = new Set();
+  const rvCore = t => (t||"").replace(/^["“]|["”]$/g,"").replace(/\s*[(（].*$/,"").trim();
+  const rvTake = pred => { const out=[]; for (const r of RVW) if (!rvUsed.has(r.n) && pred(r)) { rvUsed.add(r.n); out.push(r); } return out; };
+  const rvnote = rs => rs.length ? `<div class="rvnote rv">${rs.map(rvitem).join("")}</div>` : "";
+  const introLabels = w.groups.flatMap(g=>g.items).filter(i=>i.kind==="field" && /캐릭터 말풍선/.test(i.label||"")).map(i=>i.label);
+  const lastIntro = introLabels[introLabels.length-1];
+  const rvFor = (i, g) => {
+    const lab = i.label || "", gt = g ? g.title : "";
+    let m;
+    if ((m = lab.match(/^상황 예시 (\d+) · 캐릭터/))) return rvTake(r=>r.loc===`상황 예시 ${m[1]}`);
+    if (/캐릭터 말풍선/.test(lab)) { const rs = rvTake(r=>r.loc==="인트로" && rvCore(r.alt) && i.text.includes(rvCore(r.alt))); return lab===lastIntro ? rs.concat(rvTake(r=>r.loc==="인트로")) : rs; }
+    if (/^캐릭터 › 설명/.test(lab)) return rvTake(r=>r.loc==="캐릭터 설명");
+    if (/^3\./.test(gt)) return rvTake(r=>/^소개/.test(r.loc));
+    if (/^7\./.test(gt)) return rvTake(r=>r.loc==="에필로그");
+    if (/^4\./.test(gt) && g.items.find(x=>x.kind==="field")===i) return rvTake(r=>r.loc==="설정집");
+    return [];
+  };
+  const rvHead = lab => { const m = lab.match(/^(?:카메오 )?이벤트 (\d+)/); if (!m) return []; const n = m[1]; return rvTake(r=>{ const k = r.loc.match(/^이벤트 ([\d·]+)/); return k && k[1].split("·")[0]===n; }); };
+  const field = (i, g) => {
+    const notes = rvnote(rvFor(i, g));
     const [label, hint] = splitLabel(i.label || "");
     texts.push(i.text);
     const whole = texts.length-1;
@@ -697,14 +720,14 @@ function zrender(){
     return `<div class="field ${latin(i.text)?"latin":""}${parts?" split":""}">
       <div class="fh"><b>${esc(label)}${i.sub?` › ${esc(i.sub)}`:""}</b>${hint?`<span class="hint">${esc(hint)}</span>`:""}
         <span class="cnt">${i.text.length}자</span>${i.src?`<button class="copy edit" data-e="${whole}" title="이 칸을 고쳐서 저장소에 바로 저장">수정</button>`:""}<button class="copy" data-c="${whole}">${parts?"전체 복사":"복사"}</button></div>
-      ${parts ? `<div class="parts">${parts}</div>` : `<pre>${esc(i.text)}</pre>`}</div>`;
+      ${parts ? `<div class="parts">${parts}</div>` : `<pre>${esc(i.text)}</pre>`}${notes}</div>`;
   };
   const tblock = (i, g) => {
     if (!i.src || !i.lines.some(l => l.trim())) return ztext(i.lines);
     TEXTS.push(Object.assign(i, { label: g.title.replace(/^\d+\.\s*/, "") }));
     return `<div class="tblock"><button type="button" class="copy edit tedit" data-t="${TEXTS.length-1}" title="이 글을 고쳐서 저장소에 바로 저장">수정</button>${ztext(i.lines)}</div>`;
   };
-  const items = g => g.items.map(i => i.kind==="field" ? field(i) : i.kind==="head" ? `<h4>${esc(i.label)}</h4>` : tblock(i, g)).join("");
+  const items = g => g.items.map(i => i.kind==="field" ? field(i, g) : i.kind==="head" ? `<h4>${esc(i.label)}</h4>${rvnote(rvHead(i.label))}` : tblock(i, g)).join("");
   const short = t => t.replace(/^\d+\.\s*/, "").replace(/\s*[(（].*$/, "").replace(/\s*탭$/, "");
   w.groups.forEach((g, n) => { g._id = `zg-${n}`; });
   const grp = g => `<section class="grp" id="${g._id}"><h3>${esc(g.title)}</h3>${items(g)}</section>`;
@@ -728,12 +751,7 @@ function zrender(){
       ${w.device?`<dt>핵심 장치</dt><dd>${esc(w.device)}</dd>`:""}
       <dt>파일</dt><dd><code>${esc(w.file)}</code></dd>
     </dl>
-    ${rvbox(w)}
-    ${jump}${dock}
-    <div class="body">
-      ${main.map(grp).join("")}
-      ${rest.map(g=>`<details id="${g._id}"><summary>${esc(g.title)}</summary><section class="grp">${items(g)}</section></details>`).join("")}
-    </div>
+    ${(()=>{ const body = `<div class="body">${main.map(grp).join("")}${rest.map(g=>`<details id="${g._id}"><summary>${esc(g.title)}</summary><section class="grp">${items(g)}</section></details>`).join("")}</div>`; return rvbox(w, RVW.filter(r=>!rvUsed.has(r.n))) + jump + dock + body; })()}
     ${zpager("bottom")}`;
   sheet.querySelector(".meta").insertAdjacentHTML("beforeend", zpager("top"));
   sheet.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>copyText(texts[+b.dataset.c], b));

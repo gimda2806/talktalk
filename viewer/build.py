@@ -306,9 +306,11 @@ def load_reviews():
             num, name, body = m.group(1), m.group(2), m.group(3)
             cur = None
             for line in body.splitlines():
-                mm = re.match(r"^- (상황 예시 \d+|인트로|에필로그|소개(?: 탭)?|[^:]{1,20}): (.*)$", line)
-                if mm and mm.group(1) not in ("왜", "대안"):
-                    cur = dict(report=title, num=num, work=name, loc=mm.group(1), line=mm.group(2).strip(), why="", alt="")
+                mm = re.match(r"^- (상황 예시 \d+|인트로|에필로그|소개(?: 탭)?|[^:(]{1,20}): (.*)$", line)
+                if cur and line.startswith("- 처리: "):
+                    cur["done"] = line[len("- 처리: "):].strip()
+                elif mm and mm.group(1) not in ("왜", "대안", "처리"):
+                    cur = dict(report=title, num=num, work=name, loc=mm.group(1), line=mm.group(2).strip(), why="", alt="", done="")
                     out.append(cur)
                 elif cur and line.startswith("- 왜: "):
                     cur["why"] = line[len("- 왜: "):].strip()
