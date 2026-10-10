@@ -2690,5 +2690,25 @@
       "prompt": "여성용",
       "prompt_sha": "b1ca7ff8d09a"
     }
+  ],
+  "zeta_127_백규휘": [
+    {
+      "file": "baek-gyuhwi-main.png",
+      "label": "주인공 백규휘",
+      "prompt": "주인공",
+      "prompt_sha": "6b74cfb35a03"
+    },
+    {
+      "file": "baek-gyuhwi-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "829dbd3cfdf2"
+    },
+    {
+      "file": "baek-gyuhwi-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "e03629799fd0"
+    }
   ]
 }
