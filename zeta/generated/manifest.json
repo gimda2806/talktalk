@@ -2510,5 +2510,25 @@
       "prompt": "여성용",
       "prompt_sha": "8a07cf69ce26"
     }
+  ],
+  "zeta_118_기범석": [
+    {
+      "file": "gi-beomseok-main.png",
+      "label": "주인공 기범석",
+      "prompt": "주인공",
+      "prompt_sha": "9d92083e0076"
+    },
+    {
+      "file": "gi-beomseok-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "c8572c33ddc4"
+    },
+    {
+      "file": "gi-beomseok-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "d67362e34465"
+    }
   ]
 }
