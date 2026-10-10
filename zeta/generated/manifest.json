@@ -1970,5 +1970,25 @@
       "prompt": "여성용",
       "prompt_sha": "b48ffea6b0ba"
     }
+  ],
+  "zeta_093_안재언": [
+    {
+      "file": "an-jaeeon-main.png",
+      "label": "주인공 안재언",
+      "prompt": "주인공",
+      "prompt_sha": "a639eba72082"
+    },
+    {
+      "file": "an-jaeeon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "beb9d400f809"
+    },
+    {
+      "file": "an-jaeeon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "82902182a9d7"
+    }
   ]
 }
