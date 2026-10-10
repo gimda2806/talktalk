@@ -2650,5 +2650,25 @@
       "prompt": "여성용",
       "prompt_sha": "adafe3251e16"
     }
+  ],
+  "zeta_125_길해솔": [
+    {
+      "file": "gil-haesol-main.png",
+      "label": "주인공 길해솔",
+      "prompt": "주인공",
+      "prompt_sha": "eadcd79e3ba4"
+    },
+    {
+      "file": "gil-haesol-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "75770d7d429c"
+    },
+    {
+      "file": "gil-haesol-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "ab786c0fec0a"
+    }
   ]
 }
