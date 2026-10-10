@@ -2230,5 +2230,25 @@
       "prompt": "여성용",
       "prompt_sha": "c30d5254904c"
     }
+  ],
+  "zeta_106_정륜": [
+    {
+      "file": "jeong-ryun-main.png",
+      "label": "주인공 정륜",
+      "prompt": "주인공",
+      "prompt_sha": "094a76aeaa08"
+    },
+    {
+      "file": "jeong-ryun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "21fca6352389"
+    },
+    {
+      "file": "jeong-ryun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "8bb2bbfa8150"
+    }
   ]
 }
