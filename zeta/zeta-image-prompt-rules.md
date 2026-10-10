@@ -60,7 +60,7 @@ GLOBAL IDOL FACIAL BEAUTY FLOOR는 모든 주연이 공유하는 고정 미모 �
 
 ## 4. 제타에서 만드는 이미지
 
-제타에서는 주인공 프로필 1장과 유저 대화 프로필 2장(남성용·여성용), 모두 상반신 초상 세 장만 만든다. 유저 대화 프로필은 6-17의 사복(반팔·긴팔·겨울)으로 바꿔 뽑을 수도 있다(뷰어 버튼, 작품 파일에는 따로 적지 않음). 세 장 모두 맨 아래에 배경 위로 `캐릭터 이름 | 생성일시` 글씨(6-13)가 들어간다(유저용은 `이름(U, M)` / `이름(U, F)`). 캐릭터 시트, 스토리보드, 키 프레임, 영상은 만들지 않는다.
+제타에서는 주인공 프로필 1장과 유저 대화 프로필 2장(남성용·여성용), 모두 상반신 초상 세 장만 만든다. 캐릭터 도식에 입힐 사복(반팔·긴팔·겨울) 의상 문장은 6-17에 따로 둔다. 세 장 모두 맨 아래에 배경 위로 `캐릭터 이름 | 생성일시` 글씨(6-13)가 들어간다(유저용은 `이름(U, M)` / `이름(U, F)`). 캐릭터 시트, 스토리보드, 키 프레임, 영상은 만들지 않는다.
 
 ## 5. 프롬프트 구성 순서 (엄격히 지킨다)
 
@@ -461,34 +461,61 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 - 두 주인공이 한 장에 나오면 얼굴이 섞이기 쉽다. 결과에서 얼굴이 흐트러지면 한 명을 뒷모습·옆모습으로 돌리거나 한 명씩 두 장으로 나눈다.
 - 유저가 나오는 장면 스틸은 공개 칸에 쓰지 않는다(플랫폼 규칙상 유저 이미지는 대화 프로필뿐). 작업용 참고 이미지로만 둔다.
 
-### 6-17. USER CASUAL WARDROBE (유저 사복: 반팔 · 긴팔 · 겨울)
+### 6-17. CASUAL WARDROBE (사복 의상: 반팔 · 긴팔 · 겨울, 캐릭터 도식용)
 
-유저 대화 프로필(남성용·여성용)은 작품 속 일터 장면에 맞춰 입혀 두어서 가운·스크럽·앞치마·직원증 끈처럼 거의 유니폼으로 보인다. 그래서 같은 유저를 **일하지 않는 날의 사복**으로도 뽑을 수 있게 반팔·긴팔·겨울옷 세 벌을 공통으로 둔다. 작품 파일에는 따로 적지 않는다. 뷰어의 유저 프롬프트 칸(긴 버전·짧은 버전 모두) 아래 `사복으로 복사 · 반팔 / 긴팔 / 겨울` 버튼이 복사하는 순간 그 칸의 프롬프트를 아래처럼 바꿔 준다.
+프로필 프롬프트의 의상은 작품 속 일터 장면에 맞춰져 있어서 가운·스크럽·앞치마·직원증 끈처럼 거의 유니폼이다. 그래서 캐릭터 도식(정면·옆·뒤 전신과 얼굴 각도를 한 장에 모은 시트)에 **입힐 옷·신발·액세서리만** 따로 적어 둔다. 얼굴·머리·몸·자세·장소·조명 문장은 쓰지 않는다. 도식을 만들 때 그 캐릭터의 기존 프롬프트(얼굴·머리·몸) 뒤에 이 의상 문장을 붙이거나, 이미 만든 도식 이미지에 "옷만 이걸로 바꿔 입혀" 달라고 붙여 쓴다.
 
-- `Character design: … .`(옛 형식은 뒤따르는 `Wardrobe: …`·`Props: …`까지) 자리를 `Character design: a young adult in their (그 작품의 나이), (아래 차림·장소 구절), (그 작품의 머리 구절).`로 바꾼다. 나이와 머리는 원래 문장에서 그대로 가져온다(머리는 `hair`·`bob`·`braid`·`ponytail` 같은 말이 처음 나오는 쉼표 조각부터 문장 끝까지).
-- 조명 문장(긴 버전은 `…without reducing the idol-grade visual finish.` 다음, 짧은 버전은 `Lighting:` 다음부터 `Negative` 앞까지)을 아래 계절 조명으로 바꾼다.
-- 6-1·6-2·6-3 블록, 6-10 얼굴 구조, 구도 문장, 네거티브, 하단 이름 글씨(`이름(U, M)`/`이름(U, F)`)는 그대로 둔다. 얼굴과 머리는 같은 사람, 옷과 배경만 바뀐다.
-- 사복 구절을 고치면 아래 표만 고친다(뷰어·`register.py`가 이 표를 읽는다). 표 칸 안에 `|`를 쓰지 않는다. 고친 날은 `image-prompt-changelog.md`에 한 줄 남긴다.
-- 사복 이미지를 등록할 때: `python3 zeta/generated/register.py <작품> 남성용-반팔 <파일>`(`남성용-긴팔`, `남성용-겨울`, `여성용-반팔`, `여성용-긴팔`, `여성용-겨울`). 파일명은 `-user-m-summer`·`-user-m-spring`·`-user-m-winter`, 여성은 `-user-f-…`. 지문은 바꿔 끼운 긴 버전으로 계산한다.
+- **주인공**: 작품 파일 `## 5. 이미지 프롬프트` 안, 유저 대화 프로필용 앞에 `### 주인공 사복 (캐릭터 도식용 의상·액세서리)` 아래 `#### 반팔` / `#### 긴팔` / `#### 겨울` 세 칸을 둔다. 캐릭터의 나이·성격·취향에 맞추고, 업무 차림과 확실히 다르게 한다.
+- **유저**: 얼굴(6-10)이 공통이라 사복도 아래 공통 세 벌(남성용·여성용)을 쓴다. 뷰어 '제타' 목록 맨 위 "유저 공통 사복"에서 복사한다.
+- 문장 모양 (원문 그대로 지킨다): `Off-duty casual wardrobe (short-sleeve | long-sleeve | winter): 상의, 하의, 신발. Accessories: 2~4개. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.` 영문 280~480자. 전신 도식이라 상의·하의·신발을 매번 다 쓴다.
+- 반팔은 반소매 여름옷, 긴팔은 소매를 내린 봄·가을옷(걷어 올리지 않는다), 겨울은 겉옷(코트·패딩 등)과 니트·목도리를 겹친다.
+- 기존 프롬프트에 있는 **몸의 일부 같은 표식**(안경테, 피어싱, 귀걸이, 반지, 목걸이, 상징 시계)은 Accessories에 같은 구절로 다시 적어 도식이 한 사람으로 이어지게 한다. 업무 소품(가운, 유니폼, 명찰, 직원증 끈, 청진기, 귀에 꽂은 펜, 공구)은 가져오지 않는다.
+- 영문 칸 바로 아래 한글 설명을 한두 문장 둔다(코드블록 밖).
+- 사복 칸은 프로필 프롬프트가 아니라서 `register.py` 지문이나 6-15 변경 메모 대상이 아니다.
 
-**차림·장소 구절 (Character design에 들어간다)**
+**유저 공통 사복**
 
-| 사복 | 성별 | 차림·장소 |
-| --- | --- | --- |
-| 반팔 | 남성용 | off duty on a quiet tree-lined neighborhood street on a clear early-summer afternoon, wearing plain everyday casual clothes: a relaxed-fit white cotton crew-neck short-sleeve T-shirt with no lettering or logo under an unbuttoned pale sky-blue short-sleeve linen shirt, bare forearms, a thin silver watch on one wrist, no uniform, no apron, no lanyard or ID badge |
-| 반팔 | 여성용 | off duty on a quiet tree-lined neighborhood street on a clear early-summer afternoon, wearing plain everyday casual clothes: a soft butter-yellow short-sleeve cotton blouse with a rounded neckline and small gathered sleeves, bare forearms, tiny pearl stud earrings, the thin strap of a canvas tote over one shoulder, no uniform, no apron, no lanyard or ID badge |
-| 긴팔 | 남성용 | off duty by the window of a softly blurred quiet neighborhood café on a mild spring afternoon, wearing plain everyday casual clothes: a heather-gray crew-neck long-sleeve cotton sweatshirt with no lettering or logo, the white hem of a T-shirt just showing at the neckline, sleeves down to the wrists, no uniform, no apron, no lanyard or ID badge |
-| 긴팔 | 여성용 | off duty by the window of a softly blurred quiet neighborhood café on a mild spring afternoon, wearing plain everyday casual clothes: a soft cream ribbed long-sleeve knit top with a square neckline, sleeves down to the wrists, a delicate thin gold necklace, no uniform, no apron, no lanyard or ID badge |
-| 겨울 | 남성용 | off duty on a softly blurred city street on a cold clear winter evening, wearing plain everyday casual winter clothes: a charcoal wool overcoat over a cream chunky turtleneck knit, a soft gray cashmere scarf loosely wrapped around the neck, no uniform, no lanyard or ID badge |
-| 겨울 | 여성용 | off duty on a softly blurred city street on a cold clear winter evening, wearing plain everyday casual winter clothes: a long camel wool coat over an ivory cable-knit turtleneck, a soft burgundy wool scarf loosely wrapped around the neck, small pearl stud earrings, no uniform, no lanyard or ID badge |
+#### 반팔 · 남성용
+```text
+Off-duty casual wardrobe (short-sleeve): a relaxed-fit white cotton crew-neck T-shirt under an unbuttoned pale sky-blue short-sleeve linen shirt, light-wash straight-leg jeans with a cuffed hem, clean white low-top leather sneakers. Accessories: a thin silver watch on a black leather strap, a small canvas crossbody bag. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
 
-**계절 조명 (조명 문장 자리에 들어간다)**
+흰 크루넥 티 위에 단추를 푼 하늘색 린넨 반팔 셔츠, 밑단을 접은 연청 일자 청바지, 흰 가죽 스니커즈. 은색 시계와 작은 캔버스 크로스백.
 
-| 사복 | 조명 |
-| --- | --- |
-| 반팔 | Bright early-summer daylight: soft sunlight filtered through tree leaves with gentle dappled highlights, clean fill from the open sky, a light warm rim along the hair and shoulder, restrained halation, shallow depth of field with a softly blurred green street behind, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. |
-| 긴팔 | Soft café window light: diffuse daylight from a large window on one side, gentle warm interior fill from the other side, a soft bright rim along the shoulder and hair, restrained halation, shallow depth of field with a softly blurred café interior behind, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. |
-| 겨울 | Cool winter evening light: soft blue-hour sky light from the front, faint warm bokeh from shop windows behind, a crisp cool rim along the coat shoulder and hair, a few faint snowflakes in the air, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. |
+#### 반팔 · 여성용
+```text
+Off-duty casual wardrobe (short-sleeve): a soft butter-yellow short-sleeve cotton blouse with a rounded neckline and small gathered sleeves, a high-waisted ivory midi skirt in light cotton twill, white low-top canvas sneakers. Accessories: tiny pearl stud earrings, a thin gold chain bracelet, a natural canvas tote bag over one shoulder. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
+
+버터옐로 반팔 면 블라우스, 아이보리 미디 스커트, 흰 캔버스 운동화. 작은 진주 귀걸이, 얇은 금 팔찌, 캔버스 토트백.
+
+#### 긴팔 · 남성용
+```text
+Off-duty casual wardrobe (long-sleeve): a heather-gray crew-neck long-sleeve cotton sweatshirt with the white hem of a T-shirt just showing at the neckline and waist, sleeves down to the wrists, relaxed navy chino trousers, gray suede low-top sneakers. Accessories: a thin silver watch on a black leather strap, a small black nylon crossbody bag. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
+
+흰 티 밑단이 살짝 보이는 회색 맨투맨, 네이비 치노 바지, 회색 스웨이드 운동화. 은색 시계와 검은 나일론 크로스백.
+
+#### 긴팔 · 여성용
+```text
+Off-duty casual wardrobe (long-sleeve): a soft cream ribbed long-sleeve knit top with a square neckline, sleeves down to the wrists, high-waisted light-blue straight-leg jeans, tan suede ballet flats. Accessories: a delicate thin gold necklace, small gold hoop earrings, a camel leather shoulder bag. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
+
+스퀘어넥 크림색 골지 긴팔 니트, 연청 하이웨이스트 일자 청바지, 황갈색 스웨이드 플랫슈즈. 얇은 금 목걸이, 작은 금 링 귀걸이, 캐멀 가죽 숄더백.
+
+#### 겨울 · 남성용
+```text
+Off-duty casual wardrobe (winter): a knee-length charcoal wool overcoat over a cream chunky turtleneck knit, straight dark-gray wool trousers, black leather Chelsea boots. Accessories: a soft gray cashmere scarf loosely wrapped around the neck, black leather gloves, a thin silver watch. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
+
+무릎 길이 차콜 울 코트에 크림색 터틀넥 니트, 짙은 회색 울 바지, 검은 첼시 부츠. 회색 캐시미어 목도리, 검은 가죽 장갑, 은색 시계.
+
+#### 겨울 · 여성용
+```text
+Off-duty casual wardrobe (winter): a long camel wool coat over an ivory cable-knit turtleneck, a straight dark-brown wool midi skirt with sheer black tights, dark-brown leather ankle boots. Accessories: a soft burgundy wool scarf loosely wrapped around the neck, small pearl stud earrings, a brown leather shoulder bag. No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.
+```
+
+긴 캐멀 울 코트에 아이보리 꽈배기 터틀넥, 짙은 갈색 울 미디 스커트와 검은 스타킹, 갈색 앵클부츠. 버건디 목도리, 진주 귀걸이, 갈색 숄더백.
 
 ## 7. GLOBAL LITERAL GATE (생성 전 필수 검사)
 

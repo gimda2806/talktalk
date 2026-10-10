@@ -178,8 +178,6 @@ body[data-edit="on"] .copy.edit{display:inline-block}
 .part .fh{padding:4px 10px;min-height:0;font-size:12.5px}
 .part .fh b{color:var(--muted);font-weight:500}
 .part .copy{min-height:26px;font-size:12px;padding:0 10px}
-.cz{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:8px 10px 8px 12px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
-.cz .copy{min-height:26px;font-size:12px;padding:0 10px}
 .part pre{padding:8px 12px;max-height:240px}
 .field.latin pre{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;line-height:1.6}
 .zsheet details{margin-top:30px;border-top:1px solid var(--line);padding-top:20px}
@@ -393,13 +391,6 @@ const DATA = /*DATA*/;
 const ZETA = /*ZETA*/;
 const REVIEWS = /*REVIEWS*/;
 const REPEATS = /*REPEATS*/;
-const CASUAL = /*CASUAL*/;
-// 유저 프롬프트를 사복으로: 옷·장소(Character design)와 조명만 규칙 문서 6-17 구절로 바꾼다 (register.casual_text와 같은 결과)
-function casualText(t, cz, season){
-  const [a, b, c, d, age, hair, gender] = cz, row = CASUAL[season] || {};
-  if (!row[gender] || !row["조명"]) return null;
-  return `${t.slice(0,a)}a young adult in their ${age}, ${row[gender]}, ${hair}${t.slice(b,c)}${row["조명"]}${t.slice(d)}`;
-}
 
 const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 const inline = s => esc(s)
@@ -725,11 +716,10 @@ function zrender(){
       texts.push(p.text);
       return `<div class="part"><div class="fh"><b>${n+1}. ${esc(p.label)}</b><span class="cnt">${p.text.length}자</span><button class="copy" data-c="${texts.length-1}">복사</button></div><pre>${esc(p.text)}</pre></div>`;
     }).join("");
-    const casual = i.cz ? `<div class="cz"><span>사복으로 복사</span>${Object.keys(CASUAL).map(s=>{ const v = casualText(i.text, i.cz, s); if (!v) return ""; texts.push(v); return `<button class="copy" data-c="${texts.length-1}" title="옷·장소·조명만 ${esc(s)} 사복으로 바꿔 복사 (얼굴·머리는 그대로)">${esc(s)}</button>`; }).join("")}</div>` : "";
     return `<div class="field ${latin(i.text)?"latin":""}${parts?" split":""}">
       <div class="fh"><b>${esc(label)}${i.sub?` › ${esc(i.sub)}`:""}</b>${hint?`<span class="hint">${esc(hint)}</span>`:""}
         <span class="cnt">${i.text.length}자</span>${i.src?`<button class="copy edit" data-e="${whole}" title="이 칸을 고쳐서 저장소에 바로 저장">수정</button>`:""}<button class="copy" data-c="${whole}">${parts?"전체 복사":"복사"}</button></div>
-      ${parts ? `<div class="parts">${parts}</div>` : `<pre>${esc(i.text)}</pre>`}${casual}${notes}</div>`;
+      ${parts ? `<div class="parts">${parts}</div>` : `<pre>${esc(i.text)}</pre>`}${notes}</div>`;
   };
   const tblock = (i, g) => {
     if (!i.src || !i.lines.some(l => l.trim())) return ztext(i.lines);

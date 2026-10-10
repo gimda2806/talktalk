@@ -244,6 +244,21 @@ def load_common():
                  job="", start="", device="", groups=[dict(title="공통 설정집", items=items)])]
 
 
+def load_user_casual():
+    """규칙 문서 6-17의 '유저 공통 사복'(반팔·긴팔·겨울 × 남성용·여성용)을 목록 맨 위 항목 하나로 만든다.
+
+    문서 한 조각만 읽으므로 울타리 번호(bi)가 파일 전체와 맞지 않아, 뷰어 '수정'은 끄고(src 없음) 복사만 둔다.
+    """
+    text = (ZETA_DIR / "zeta-image-prompt-rules.md").read_text(encoding="utf-8")
+    m = re.search(r"^\*\*유저 공통 사복\*\*\n(.*?)(?=^### |^## )", text, re.M | re.S)
+    if not m:
+        return []
+    items = [i for g in parse_blocks("### 유저 공통 사복\n" + m.group(1), src="") for i in g["items"]]
+    items.insert(0, dict(kind="text", lines=["캐릭터 도식(정면·옆·뒤 전신)에 입힐 유저 사복 의상·액세서리. 얼굴·머리 문장 뒤에 붙여 쓴다. 원본은 `zeta/zeta-image-prompt-rules.md` 6-17."]))
+    return [dict(id="user-casual", file="zeta/zeta-image-prompt-rules.md", date="", name="유저 공통 사복", sub="반팔 · 긴팔 · 겨울",
+                 genre="", mood="", job="", start="", device="", groups=[dict(title="유저 공통 사복", items=items)])]
+
+
 def load_zeta():
     """zeta/zeta_*.md 하나 = 제타 작품 하나. 설정집 파일이 있으면 '4. 설정집' 묶음에 끼워 넣는다."""
     rows = read_zeta_list()
@@ -275,17 +290,9 @@ def load_zeta():
             kind = register.guess_kind(i)
             stale = bool(i.get("prompt_sha")) and register.prompt_sha(f.stem, kind, i) not in (None, i["prompt_sha"])
             images.append(dict(label=i["label"], url=f"images/{i['file']}", stale=stale))
-        for g in groups:
-            for i in g["items"]:
-                gender = re.search(r"남성용|여성용", i.get("label", "") + i.get("sub", "")) if i["kind"] == "field" else None
-                if gender and i["label"].startswith("유저 대화 프로필용"):
-                    # 사복(반팔·긴팔·겨울) 복사 버튼용: 바꿔 끼울 자리 (규칙 문서 6-17, register.casual_split)
-                    cz = register.casual_split(i["text"])
-                    if cz:
-                        i["cz"] = cz + [gender.group(0)]
         works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
     # 만든 순서(작품 목록 줄 순서)의 역순 = 최신 작품이 위. 목록에 없는 파일은 맨 위에 날짜·이름순으로
-    return load_common() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
+    return load_common() + load_user_casual() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
 
 
 def copy_zeta_images():
@@ -354,7 +361,7 @@ def load_repeats():
 
 def main():
     page = (Path(__file__).resolve().parent / "template.html").read_text(encoding="utf-8")
-    for key, rows in (("DATA", load()), ("ZETA", load_zeta()), ("REVIEWS", load_reviews()), ("REPEATS", load_repeats()), ("CASUAL", register.casual_table())):
+    for key, rows in (("DATA", load()), ("ZETA", load_zeta()), ("REVIEWS", load_reviews()), ("REPEATS", load_repeats())):
         page = page.replace(f"/*{key}*/", json.dumps(rows, ensure_ascii=False).replace("</", "<\\/"))
     if "--fragment" not in sys.argv:
         page = ('<!doctype html>\n<html lang="ko">\n<head>\n<meta charset="utf-8">\n'

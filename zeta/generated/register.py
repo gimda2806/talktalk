@@ -6,15 +6,11 @@
   python3 zeta/generated/register.py zeta_042_송예찬 여성용 song-yechan-user-f.png
   python3 zeta/generated/register.py zeta_084_손태윤 조연 son-taeyun-sub.png   # 서브 남주 등 조연 프로필
   python3 zeta/generated/register.py zeta_001_백서율 카메오 baek-seoyul-noh-chanyoung-cameo.png 노찬영
-  python3 zeta/generated/register.py zeta_042_송예찬 남성용-반팔 song-yechan-user-m-summer.png   # 유저 사복(반팔·긴팔·겨울)
   python3 zeta/generated/register.py --check   # 프롬프트가 바뀐 이미지가 있는지 확인
 
 등록할 때 그 순간의 프롬프트 지문(prompt_sha)을 함께 적어 둔다. 나중에 플롯의 이미지 프롬프트가 바뀌면
 지문이 달라지고, 뷰어 갤러리와 --check 가 '프롬프트가 바뀜'이라고 알려 준다. 이미지를 다시 만들어
 등록하면 지문이 새로 적힌다.
-
-사복: 유저 대화 프로필을 사복(반팔·긴팔·겨울)으로 바꿔 뽑은 이미지. 작품 파일의 남성용/여성용 긴 버전에서
-옷·장소·조명만 zeta/zeta-image-prompt-rules.md 6-17 표의 구절로 바꿔 끼운 프롬프트로 지문을 만든다(뷰어 버튼과 같은 결과).
 
 카메오: 연작의 두 캐릭터가 한 장면에 나오는 이미지. 프롬프트는 작품 파일이 아니라 zeta/zeta-series.md 의
 '### … — 이름 × 이름' 제목 아래 첫 ```text 블록(긴 버전)에서 찾는다. 네 번째 인자로 상대 캐릭터 이름을 주면
@@ -37,13 +33,6 @@ KINDS = {
     "조연": r"^### 조연 프로필용 \([^)\n]*\)\n+```text\n(.*?)```",
     "카메오": None,  # zeta-series.md 에서 찾는다 (cameo_block 참고)
 }
-CASUAL = ("반팔", "긴팔", "겨울")
-for _g in ("남성용", "여성용"):
-    for _s in CASUAL:
-        KINDS[f"{_g}-{_s}"] = KINDS[_g]  # 사복: 같은 블록을 찾아 옷·장소·조명만 바꾼다 (casual_text)
-RULES = ZETA_DIR / "zeta-image-prompt-rules.md"
-HAIR = re.compile(r"\b(?:hair|bob|pixie|lob|braid|ponytail|bun)\b")
-AGE = re.compile(r"in their ((?:early |mid-|late )?(?:twenties|thirties)(?: to (?:early |mid-|late )?(?:twenties|thirties))?)")
 CAMEO_HEAD = re.compile(r"^### (.+?) — (.+?) × (.+?)\s*$", re.M)
 
 
@@ -75,54 +64,6 @@ def cameo_block(name, partner=None):
     return None
 
 
-def casual_table():
-    """규칙 문서 6-17의 두 표를 읽어 {사복: {"남성용": 차림, "여성용": 차림, "조명": 조명}}으로 돌려준다."""
-    text = RULES.read_text(encoding="utf-8")
-    m = re.search(r"^### 6-17\..*?(?=^### |^## )", text, re.M | re.S)
-    out = {s: {} for s in CASUAL}
-    for line in (m.group(0) if m else "").splitlines():
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if cells[0] in CASUAL:
-            out[cells[0]]["조명" if len(cells) == 2 else cells[1]] = cells[-1]
-    return out
-
-
-def casual_split(text):
-    """유저 프롬프트에서 바꿔 끼울 자리를 찾는다: [차림 시작, 차림 끝, 조명 시작, 조명 끝, 나이, 머리]. 못 찾으면 None.
-
-    차림 = 'Character design: ' 다음부터 구도 문장('. Upper body portrait, ') 앞까지(옛 형식의 Wardrobe·Props 포함).
-    조명 = 긴 버전은 의상 스타일 문장 다음, 짧은 버전은 'Lighting: ' 다음부터 ' Negative' 앞까지.
-    """
-    a = text.find("Character design: ")
-    b = text.find(". Upper body portrait, ", a)
-    if a < 0 or b < 0:
-        return None
-    a += len("Character design: ")
-    clauses = text[a:b].split(". ")[0].split(", ")
-    k = next((n for n, c in enumerate(clauses) if HAIR.search(c)), None)
-    if k is None:
-        return None
-    for mark in ("without reducing the idol-grade visual finish. ", "Lighting: "):
-        c = text.find(mark, b)
-        if c >= 0:
-            c += len(mark)
-            break
-    d = text.find(" Negative", c)
-    if c < 0 or d < 0:
-        return None
-    age = AGE.search(", ".join(clauses[:k]))
-    return [a, b, c, d, age.group(1) if age else "twenties", ", ".join(clauses[k:])]
-
-
-def casual_text(text, gender, season, table=None):
-    """유저 프롬프트(gender: 남성용/여성용)를 사복(season: 반팔/긴팔/겨울)으로 바꾼다. 자리를 못 찾으면 None."""
-    cz, row = casual_split(text), (table or casual_table()).get(season, {})
-    if not cz or gender not in row or "조명" not in row:
-        return None
-    a, b, c, d, age, hair = cz
-    return f"{text[:a]}a young adult in their {age}, {row[gender]}, {hair}{text[b:c]}{row['조명']}{text[d:]}"
-
-
 def prompt_sha(stem, kind, item=None):
     """해당 프롬프트 블록(긴 버전)을 찾아 지문을 만든다. 없으면 None. 카메오는 item 의 with(상대 이름)로 장면을 고른다."""
     if kind == "카메오":
@@ -134,9 +75,6 @@ def prompt_sha(stem, kind, item=None):
     m = re.search(KINDS[kind], path.read_text(encoding="utf-8"), re.M | re.S)
     if not m:
         return None
-    if "-" in kind:
-        text = casual_text(m.group(1), *kind.split("-"))
-        return _sha(text) if text else None
     return _sha(m.group(1))
 
 
@@ -202,8 +140,6 @@ def main(argv):
             label = f"조연 · {h.group(1).strip()}" if h else "조연"
         else:
             label = f"주인공 {name}" if kind == "주인공" else ("유저 프로필 · 남성" if kind == "남성용" else "유저 프로필 · 여성")
-            if "-" in kind:
-                label = f"유저 사복 · {'남성' if kind.startswith('남') else '여성'} · {kind.split('-')[1]}"
         item = dict(file=file, label=label, prompt=kind, prompt_sha=sha)
         items = [i for i in rows.get(stem, []) if guess_kind(i) != kind]
     items.append(item)
