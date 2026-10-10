@@ -215,7 +215,6 @@ body[data-edit="on"] .copy.edit{display:inline-block}
 .zsheet .rvnote{margin:4px 0 12px;padding:4px 10px 6px;border-left:3px solid var(--rose);background:var(--sheet);border-radius:0 6px 6px 0}
 .zsheet .rvnote .item{grid-template-columns:28px 1fr;padding:5px 0}
 .zsheet .rvnote .q{font-size:14px}
-.rv .done{font-size:12px;color:var(--rose);margin-top:2px}
 .jumpbar{position:sticky;top:0;z-index:4;background:var(--paper);display:flex;align-items:center;gap:10px;margin:14px -16px 0;padding:8px 16px;border-bottom:1px solid var(--line)}
 .jumpbar .who{flex-shrink:0;font-family:var(--display);font-weight:700;font-size:16px;max-width:38vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .jump{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;min-width:0}
@@ -661,7 +660,7 @@ function ztext(lines){
   flush(); close(0);
   return html;
 }
-const rvitem = r => `<div class="item"><div class="num">${r.n}</div><div><div class="loc">${esc(r.report.replace(/^review-/,"").replace(/-\d{4}-\d{2}-\d{2}$/,""))} · ${esc(r.loc)}</div><p class="q now">${esc(r.line)}</p><p class="q alt">${esc(r.alt)}</p>${r.why?`<div class="why">${esc(r.why)}</div>`:""}${r.done?`<div class="done">처리: ${esc(r.done)}</div>`:""}</div></div>`;
+const rvitem = r => `<div class="item"><div class="num">${r.n}</div><div><div class="loc">${esc(r.report.replace(/^review-/,"").replace(/-\d{4}-\d{2}-\d{2}$/,""))} · ${esc(r.loc)}</div><p class="q now">${esc(r.line)}</p><p class="q alt">${esc(r.alt)}</p>${r.why?`<div class="why">${esc(r.why)}</div>`:""}</div></div>`;
 const repline = p => `${esc(p.term)} ${p.total}회 (${p.secs.map(s=>`${s.sec} ${s.n}`).join(" · ")})`;
 function rvbox(w, rs){
   if (!rs) rs = REVIEWS.filter(r=>r.work===w.name);
