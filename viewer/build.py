@@ -244,19 +244,14 @@ def load_common():
                  job="", start="", device="", groups=[dict(title="공통 설정집", items=items)])]
 
 
-def load_user_casual():
-    """규칙 문서 6-17의 '유저 공통 사복'(반팔·긴팔·겨울 × 남성용·여성용)을 목록 맨 위 항목 하나로 만든다.
-
-    문서 한 조각만 읽으므로 울타리 번호(bi)가 파일 전체와 맞지 않아, 뷰어 '수정'은 끄고(src 없음) 복사만 둔다.
-    """
-    text = (ZETA_DIR / "zeta-image-prompt-rules.md").read_text(encoding="utf-8")
-    m = re.search(r"^\*\*유저 공통 사복\*\*\n(.*?)(?=^### |^## )", text, re.M | re.S)
-    if not m:
+def load_casual():
+    """zeta-casual-wardrobe.md(캐릭터 도식용 사복 의상: 유저 공통 + 주인공별 반팔·긴팔·겨울)를 목록 맨 위 항목 하나로 만든다."""
+    f = ZETA_DIR / "zeta-casual-wardrobe.md"
+    if not f.exists():
         return []
-    items = [i for g in parse_blocks("### 유저 공통 사복\n" + m.group(1), src="") for i in g["items"]]
-    items.insert(0, dict(kind="text", lines=["캐릭터 도식(정면·옆·뒤 전신)에 입힐 유저 사복 의상·액세서리. 얼굴·머리 문장 뒤에 붙여 쓴다. 원본은 `zeta/zeta-image-prompt-rules.md` 6-17."]))
-    return [dict(id="user-casual", file="zeta/zeta-image-prompt-rules.md", date="", name="유저 공통 사복", sub="반팔 · 긴팔 · 겨울",
-                 genre="", mood="", job="", start="", device="", groups=[dict(title="유저 공통 사복", items=items)])]
+    groups = parse_blocks(f.read_text(encoding="utf-8"), src=f"zeta/{f.name}")
+    return [dict(id="casual", file=f"zeta/{f.name}", date="", name="사복 의상", sub="캐릭터 도식용 · 반팔 · 긴팔 · 겨울",
+                 genre="", mood="", job="", start="", device="", groups=groups)]
 
 
 def load_zeta():
@@ -292,7 +287,7 @@ def load_zeta():
             images.append(dict(label=i["label"], url=f"images/{i['file']}", stale=stale))
         works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
     # 만든 순서(작품 목록 줄 순서)의 역순 = 최신 작품이 위. 목록에 없는 파일은 맨 위에 날짜·이름순으로
-    return load_common() + load_user_casual() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
+    return load_common() + load_casual() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
 
 
 def copy_zeta_images():
