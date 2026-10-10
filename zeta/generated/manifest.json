@@ -2550,5 +2550,45 @@
       "prompt": "여성용",
       "prompt_sha": "2f76223d5d1e"
     }
+  ],
+  "zeta_122_오유담": [
+    {
+      "file": "oh-yudam-main.png",
+      "label": "주인공 오유담",
+      "prompt": "주인공",
+      "prompt_sha": "2a72c22ec2c3"
+    },
+    {
+      "file": "oh-yudam-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "611202409355"
+    },
+    {
+      "file": "oh-yudam-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "3499b45f50f0"
+    }
+  ],
+  "zeta_128_표동률": [
+    {
+      "file": "pyo-dongryul-main.png",
+      "label": "주인공 표동률",
+      "prompt": "주인공",
+      "prompt_sha": "350002d6aa9b"
+    },
+    {
+      "file": "pyo-dongryul-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "4c952b18df04"
+    },
+    {
+      "file": "pyo-dongryul-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "b371285795f4"
+    }
   ]
 }
