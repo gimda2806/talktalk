@@ -2010,5 +2010,25 @@
       "prompt": "여성용",
       "prompt_sha": "18b2e344cd14"
     }
+  ],
+  "zeta_095_권이현": [
+    {
+      "file": "kwon-ihyeon-main.png",
+      "label": "주인공 권이현",
+      "prompt": "주인공",
+      "prompt_sha": "ba0cc4cd6602"
+    },
+    {
+      "file": "kwon-ihyeon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "e54cef592119"
+    },
+    {
+      "file": "kwon-ihyeon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "cd846a296e70"
+    }
   ]
 }
