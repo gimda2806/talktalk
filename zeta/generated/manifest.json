@@ -2110,5 +2110,25 @@
       "prompt": "여성용",
       "prompt_sha": "7717711ec106"
     }
+  ],
+  "zeta_100_원태산": [
+    {
+      "file": "won-taesan-main.png",
+      "label": "주인공 원태산",
+      "prompt": "주인공",
+      "prompt_sha": "0f362b98ac3a"
+    },
+    {
+      "file": "won-taesan-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "0208cd66c33d"
+    },
+    {
+      "file": "won-taesan-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "a0b9d4f29023"
+    }
   ]
 }
