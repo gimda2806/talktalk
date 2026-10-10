@@ -2390,5 +2390,25 @@
       "prompt": "여성용",
       "prompt_sha": "314aecdcbc9a"
     }
+  ],
+  "zeta_114_도경민": [
+    {
+      "file": "do-gyeongmin-main.png",
+      "label": "주인공 도경민",
+      "prompt": "주인공",
+      "prompt_sha": "c325a0b4d310"
+    },
+    {
+      "file": "do-gyeongmin-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "c36c6f22f830"
+    },
+    {
+      "file": "do-gyeongmin-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "1f4d9e35c886"
+    }
   ]
 }
