@@ -2810,5 +2810,25 @@
       "prompt": "여성용",
       "prompt_sha": "3b1e126b67b6"
     }
+  ],
+  "zeta_135_도지환": [
+    {
+      "file": "do-jihwan-main.png",
+      "label": "주인공 도지환",
+      "prompt": "주인공",
+      "prompt_sha": "ab960029168d"
+    },
+    {
+      "file": "do-jihwan-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "4751f2aee198"
+    },
+    {
+      "file": "do-jihwan-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "701d551c2866"
+    }
   ]
 }
