@@ -1950,5 +1950,25 @@
       "prompt": "여성용",
       "prompt_sha": "c53ffefce97d"
     }
+  ],
+  "zeta_092_펠릭스": [
+    {
+      "file": "felix-main.png",
+      "label": "주인공 펠릭스",
+      "prompt": "주인공",
+      "prompt_sha": "4266f8f9de0c"
+    },
+    {
+      "file": "felix-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "33a24689ed83"
+    },
+    {
+      "file": "felix-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "b48ffea6b0ba"
+    }
   ]
 }
