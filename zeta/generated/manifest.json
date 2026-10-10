@@ -2270,5 +2270,25 @@
       "prompt": "여성용",
       "prompt_sha": "e4204c300b11"
     }
+  ],
+  "zeta_105_차용준": [
+    {
+      "file": "cha-yongjun-main.png",
+      "label": "주인공 차용준",
+      "prompt": "주인공",
+      "prompt_sha": "b02cee6cc98a"
+    },
+    {
+      "file": "cha-yongjun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "ab0ba807c7b4"
+    },
+    {
+      "file": "cha-yongjun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "f68428ea6e33"
+    }
   ]
 }
