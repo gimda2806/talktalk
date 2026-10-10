@@ -2050,5 +2050,25 @@
       "prompt": "여성용",
       "prompt_sha": "c2d4e52b81eb"
     }
+  ],
+  "zeta_097_마용하": [
+    {
+      "file": "ma-yongha-main.png",
+      "label": "주인공 마용하",
+      "prompt": "주인공",
+      "prompt_sha": "1392e1342c88"
+    },
+    {
+      "file": "ma-yongha-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "eeb5aee8714e"
+    },
+    {
+      "file": "ma-yongha-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "949146e3c772"
+    }
   ]
 }
