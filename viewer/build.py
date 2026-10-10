@@ -244,6 +244,16 @@ def load_common():
                  job="", start="", device="", groups=[dict(title="공통 설정집", items=items)])]
 
 
+def load_casual():
+    """zeta-casual-wardrobe.md(캐릭터 도식용 사복 의상: 유저 공통 + 주인공별 반팔·긴팔·겨울)를 목록 맨 위 항목 하나로 만든다."""
+    f = ZETA_DIR / "zeta-casual-wardrobe.md"
+    if not f.exists():
+        return []
+    groups = parse_blocks(f.read_text(encoding="utf-8"), src=f"zeta/{f.name}")
+    return [dict(id="casual", file=f"zeta/{f.name}", date="", name="사복 의상", sub="캐릭터 도식용 · 반팔 · 긴팔 · 겨울",
+                 genre="", mood="", job="", start="", device="", groups=groups)]
+
+
 def load_zeta():
     """zeta/zeta_*.md 하나 = 제타 작품 하나. 설정집 파일이 있으면 '4. 설정집' 묶음에 끼워 넣는다."""
     rows = read_zeta_list()
@@ -277,7 +287,7 @@ def load_zeta():
             images.append(dict(label=i["label"], url=f"images/{i['file']}", stale=stale))
         works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
     # 만든 순서(작품 목록 줄 순서)의 역순 = 최신 작품이 위. 목록에 없는 파일은 맨 위에 날짜·이름순으로
-    return load_common() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
+    return load_common() + load_casual() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
 
 
 def copy_zeta_images():

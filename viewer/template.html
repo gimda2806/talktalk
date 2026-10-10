@@ -928,9 +928,10 @@ async function copyText(t, btn){
     try { document.execCommand("copy"); } catch(_){}
     ta.remove();
   }
+  if (!btn.dataset.done) btn._label = btn.textContent;
   btn.dataset.done = "1"; btn.textContent = "복사됨";
   clearTimeout(btn._t);
-  btn._t = setTimeout(()=>{ delete btn.dataset.done; btn.textContent = "복사"; }, 1500);
+  btn._t = setTimeout(()=>{ delete btn.dataset.done; btn.textContent = btn._label || "복사"; }, 1500);
 }
 const zq = document.getElementById("zq");
 const znorm = s => String(s||"").toLowerCase().replace(/\s+/g,"");
