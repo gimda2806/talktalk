@@ -2910,5 +2910,25 @@
       "prompt": "여성용",
       "prompt_sha": "f525452c59af"
     }
+  ],
+  "zeta_145_차담호": [
+    {
+      "file": "cha-damho-main.png",
+      "label": "주인공 차담호",
+      "prompt": "주인공",
+      "prompt_sha": "f6f42d03d13b"
+    },
+    {
+      "file": "cha-damho-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "d6ca8e1a99d3"
+    },
+    {
+      "file": "cha-damho-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "8051a2c28376"
+    }
   ]
 }
