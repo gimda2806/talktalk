@@ -3077,6 +3077,38 @@
       "label": "주인공 고하엘",
       "prompt": "주인공",
       "prompt_sha": "eae18e672729"
+    },
+    {
+      "file": "go-hael-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "660d99375cba"
+    },
+    {
+      "file": "go-hael-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "569445506ddc"
+    }
+  ],
+  "zeta_165_나오름": [
+    {
+      "file": "na-oreum-main.png",
+      "label": "주인공 나오름",
+      "prompt": "주인공",
+      "prompt_sha": "843b8cecf1fe"
+    },
+    {
+      "file": "na-oreum-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "d0b2570e3f5b"
+    },
+    {
+      "file": "na-oreum-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "58b33ad9de0f"
     }
   ]
 }
