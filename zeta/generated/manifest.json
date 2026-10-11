@@ -2850,5 +2850,25 @@
       "prompt": "여성용",
       "prompt_sha": "2880dcf22266"
     }
+  ],
+  "zeta_136_곽하일": [
+    {
+      "file": "gwak-hail-main.png",
+      "label": "주인공 곽하일",
+      "prompt": "주인공",
+      "prompt_sha": "e90b7ad7c900"
+    },
+    {
+      "file": "gwak-hail-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "5eaaa4bd1683"
+    },
+    {
+      "file": "gwak-hail-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "71da90321fc9"
+    }
   ]
 }
