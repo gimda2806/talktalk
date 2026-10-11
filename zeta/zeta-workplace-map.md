@@ -28,6 +28,23 @@
 | `sodam-entertainment-mark-v1.png` | 아직 매핑 없음 |
 | `yeobaek-publishing-mark-v1.png` | 아직 매핑 없음 |
 | `yeomim-styling-mark-v1.png` | 아직 매핑 없음 |
+| `baramgil-travel-mark-v1.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `daol-daily-mark-v5-new.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `deulbo-architecture-mark-v2.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `gowndeul-dong-welfare-center-mark-v1.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `haedam-confectionery-mark-v3.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `haedam-group-mark-v1.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `hanbit-university-mark-v1.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `hanul-broadcasting-mark-v1.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `ieumsae-post-mark-v1.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `mulphure-library-mark-v1.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `osol-elementary-school-mark-v2.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `pureunsaem-elementary-school-mark-v1.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `sogeum-ad-mark-v1.jpg` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `solbaram-senior-welfare-center-mark-v1.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+| `solbit-general-hospital-mark-v1.png` | 예 — [`zeta-character-mark-map.md`](zeta-character-mark-map.md) |
+
+> 인물↔마크 매핑(인물별·마크별 표, 최종 시안 기준)은 [`zeta-character-mark-map.md`](zeta-character-mark-map.md)에 있습니다. 아래 '아직 매핑 없음' 표시는 그 문서에서 매핑됐을 수 있으니 그쪽을 먼저 보세요.
 
 ## 갱신 규칙
 
