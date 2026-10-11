@@ -3050,5 +3050,25 @@
       "prompt": "여성용",
       "prompt_sha": "70356018fcea"
     }
+  ],
+  "zeta_157_한온새": [
+    {
+      "file": "han-onsae-main.png",
+      "label": "주인공 한온새",
+      "prompt": "주인공",
+      "prompt_sha": "392bd523e733"
+    },
+    {
+      "file": "han-onsae-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "60c24a039735"
+    },
+    {
+      "file": "han-onsae-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "221ebe2e0684"
+    }
   ]
 }
