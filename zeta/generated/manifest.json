@@ -2990,5 +2990,25 @@
       "prompt": "여성용",
       "prompt_sha": "b6f84dfcf526"
     }
+  ],
+  "zeta_146_민백승": [
+    {
+      "file": "min-baekseung-main.png",
+      "label": "주인공 민백승",
+      "prompt": "주인공",
+      "prompt_sha": "a216b226a4dd"
+    },
+    {
+      "file": "min-baekseung-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "b4392202ccdb"
+    },
+    {
+      "file": "min-baekseung-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "463cd099f441"
+    }
   ]
 }
