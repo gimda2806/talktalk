@@ -469,10 +469,11 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 
 ### 6-16. 장면 스틸 (드라마 속 한 장면, 선택)
 
-프로필 세 장과 별개로(스틸은 하단 글씨 없이 파일명에 이름·생성일시를 적는다, 7번), 이벤트 한 장면이나 연작 카메오 장면을 "드라마 스틸 한 장"으로 뽑을 때 쓰는 틀. 2026-10-07까지 유저 프로필에 쓰던 옛 6-10 스틸 블록(뒤쪽 옆모습, 얼굴 미노출)을 장면용으로 되살린 것이다. 등록(`register.py`)이나 6-15 변경 메모 대상이 아니고, 작품 파일 끝 `## 10. 장면 스틸` 또는 `zeta-series.md`에 둔다.
+프로필 세 장과 별개로(스틸은 세로 9:16 고정(0번), 하단 글씨 없이 파일명에 이름·생성일시를 적는다(7번)), 이벤트 한 장면이나 연작 카메오 장면을 "드라마 스틸 한 장"으로 뽑을 때 쓰는 틀. 2026-10-07까지 유저 프로필에 쓰던 옛 6-10 스틸 블록(뒤쪽 옆모습, 얼굴 미노출)을 장면용으로 되살린 것이다. 등록(`register.py`)이나 6-15 변경 메모 대상이 아니고, 작품 파일 끝 `## 10. 장면 스틸` 또는 `zeta-series.md`에 둔다.
 
 **구성 순서 (긴 버전과 짧은 버전을 프로필처럼 둘 다 둔다. 긴 버전은 1번 헤더 자리에 6-1·6-2·6-3 블록 원문을 그대로 넣고, 짧은 버전은 아래 1번의 한 문장 헤더를 쓴다. 2026-10-09 확인: 사용자의 이미지 도구가 10,000자대 긴 버전도 읽는다)**
 
+0. 화면 비율 (2026-10-11부터, 모든 스틸 고정. 원문 그대로 맨 앞에): `Aspect ratio: vertical portrait 9:16 (for example 1080x1920 or 1152x2048). The whole composition is designed for a tall frame; never landscape, never square.` 두 사람이 나오는 장면도 세로 화면에 맞춰 짠다(투샷은 허리·가슴 높이로 붙여 세우거나 어깨 너머 구도). 영상으로 이어 만들 때도 같은 9:16을 쓴다.
 1. 스틸 헤더 — 긴 버전: `Vertical character design sheet…`를 `Ultra-photorealistic 2K live-action Korean drama still, NOT illustration.`로 바꾼 6-1 블록 + 6-2 + 인물 성별에 맞는 6-3(두 사람이 같은 성별이면 한 번만). 짧은 버전 (원문 그대로): `Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premium live-action K-drama photography with idol-grade visual finish; skin even-toned with real pore texture and no dewy gloss; cinematic soft focus that keeps facial structure and eye sharpness; clean Korean drama cinematic texture, low saturation, low-to-mid contrast, subtle filmic grain.`
 2. 장면 한 문장: 장소·시간대·빛·날씨·분위기. 작품의 핵심 장치가 보이면 넣는다(필름 통, 예약표, 보리차 컵).
 3. 등장 인물마다 한 덩어리: `LEFT/RIGHT/CENTER, 이름:` + 그 작품 주인공 프롬프트의 `Face geometry: …`와 `Character design: …`(머리·몸·몸의 흔적)과 `Wardrobe: …`를 **그대로 복사** + 이 장면에서의 자세·동작·시선·표정 한 문장. 두 명 이상이면 맨 앞에 `Two established characters, faces kept distinct.`를 쓰고 좌우를 반드시 지정한다.
