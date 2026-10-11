@@ -1,19 +1,19 @@
 {
   "zeta_042_송예찬": [
     {
-      "file": "song-yechan-main-20261009-1128.png",
+      "file": "song-yechan-main.png",
       "label": "주인공 송예찬",
       "prompt": "주인공",
       "prompt_sha": "853523a62b68"
     },
     {
-      "file": "song-yechan-user-m-20261009-1129.png",
+      "file": "song-yechan-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
       "prompt_sha": "ce4f42653820"
     },
     {
-      "file": "song-yechan-user-f-20261009-1130.png",
+      "file": "song-yechan-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "d9366a47407d"
@@ -3069,6 +3069,14 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "221ebe2e0684"
+    }
+  ],
+  "zeta_164_고하엘": [
+    {
+      "file": "go-hael-main.png",
+      "label": "주인공 고하엘",
+      "prompt": "주인공",
+      "prompt_sha": "eae18e672729"
     }
   ]
 }
