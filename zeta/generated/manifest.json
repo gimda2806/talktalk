@@ -3010,5 +3010,25 @@
       "prompt": "여성용",
       "prompt_sha": "463cd099f441"
     }
+  ],
+  "zeta_155_공해든": [
+    {
+      "file": "gong-haedeun-main.png",
+      "label": "주인공 공해든",
+      "prompt": "주인공",
+      "prompt_sha": "128840a7d538"
+    },
+    {
+      "file": "gong-haedeun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "c804481eb59a"
+    },
+    {
+      "file": "gong-haedeun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "4419e2b05448"
+    }
   ]
 }
