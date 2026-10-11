@@ -2970,5 +2970,25 @@
       "prompt": "여성용",
       "prompt_sha": "e061ce5152b6"
     }
+  ],
+  "zeta_147_유바우": [
+    {
+      "file": "yu-bau-main.png",
+      "label": "주인공 유바우",
+      "prompt": "주인공",
+      "prompt_sha": "88fb52e768cd"
+    },
+    {
+      "file": "yu-bau-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "498e628f739b"
+    },
+    {
+      "file": "yu-bau-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "b6f84dfcf526"
+    }
   ]
 }
