@@ -2930,5 +2930,25 @@
       "prompt": "여성용",
       "prompt_sha": "8051a2c28376"
     }
+  ],
+  "zeta_152_도에밀": [
+    {
+      "file": "do-emil-main.png",
+      "label": "주인공 도에밀",
+      "prompt": "주인공",
+      "prompt_sha": "e900465d9de9"
+    },
+    {
+      "file": "do-emil-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "60b6377c29a1"
+    },
+    {
+      "file": "do-emil-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "4f7f2fec7484"
+    }
   ]
 }
