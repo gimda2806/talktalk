@@ -2890,5 +2890,25 @@
       "prompt": "여성용",
       "prompt_sha": "e543010c3704"
     }
+  ],
+  "zeta_140_서찬민": [
+    {
+      "file": "seo-chanmin-main.png",
+      "label": "주인공 서찬민",
+      "prompt": "주인공",
+      "prompt_sha": "128640c2745b"
+    },
+    {
+      "file": "seo-chanmin-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "e804f3c567b0"
+    },
+    {
+      "file": "seo-chanmin-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "f525452c59af"
+    }
   ]
 }
