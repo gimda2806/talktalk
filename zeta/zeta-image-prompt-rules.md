@@ -469,7 +469,7 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 
 ### 6-16. 장면 스틸 (드라마 속 한 장면, 선택)
 
-프로필 세 장과 별개로, 이벤트 한 장면이나 연작 카메오 장면을 "드라마 스틸 한 장"으로 뽑을 때 쓰는 틀. 2026-10-07까지 유저 프로필에 쓰던 옛 6-10 스틸 블록(뒤쪽 옆모습, 얼굴 미노출)을 장면용으로 되살린 것이다. 등록(`register.py`)이나 6-15 변경 메모 대상이 아니고, 작품 파일 끝 `## 10. 장면 스틸` 또는 `zeta-series.md`에 둔다.
+프로필 세 장과 별개로(스틸은 하단 글씨 없이 파일명에 이름·생성일시를 적는다, 7번), 이벤트 한 장면이나 연작 카메오 장면을 "드라마 스틸 한 장"으로 뽑을 때 쓰는 틀. 2026-10-07까지 유저 프로필에 쓰던 옛 6-10 스틸 블록(뒤쪽 옆모습, 얼굴 미노출)을 장면용으로 되살린 것이다. 등록(`register.py`)이나 6-15 변경 메모 대상이 아니고, 작품 파일 끝 `## 10. 장면 스틸` 또는 `zeta-series.md`에 둔다.
 
 **구성 순서 (긴 버전과 짧은 버전을 프로필처럼 둘 다 둔다. 긴 버전은 1번 헤더 자리에 6-1·6-2·6-3 블록 원문을 그대로 넣고, 짧은 버전은 아래 1번의 한 문장 헤더를 쓴다. 2026-10-09 확인: 사용자의 이미지 도구가 10,000자대 긴 버전도 읽는다)**
 
@@ -479,7 +479,10 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 4. 유저가 나오는 장면: 유저 얼굴은 보이지 않게 한다(대화 프로필 얼굴이 남녀 공용이라 장면에서 성별을 고정하면 안 된다). 옛 블록 구절을 그대로 쓴다: `A young adult seen from behind and slightly from the side, gender-neutral, face not shown, (자세와 자리), (옷차림)`.
 5. 구도 한 문장: 6-12의 축(프레임·앵글·시선·자세)에서 고른다. 두 명이면 `two-shot`, 둘 다 얼굴이 선명해야 하면 `both faces sharp`.
 6. 네거티브 (원문 그대로): `Negative: no unintentional text, no watermark, no UI overlay, no merged or swapped faces, no extra person, no plastic or wax-figure skin, no exaggerated expression, no extra limbs, no illustration or webtoon style.`
-7. 푸터: 6-14 짧은 버전의 푸터 문장을 그대로 쓰되 이름 자리에 `이름 · 이름` 또는 `이름 · 장면 제목`을 넣는다. 예: `백서율 · 노찬영 | {{생성일시}}`.
+7. 글씨 없음 + 파일명 (2026-10-11부터. 원문 그대로, `파일명`만 채운다): 스틸에는 프로필과 달리 하단 이름·생성일시 글씨(6-13)를 넣지 않고, 그 정보를 결과 파일 이름에 적어 달라고 한다. 파일명은 `이름_장면제목` 또는 `이름_이름`처럼 띄어쓰기 없이 밑줄로 잇는다(예: `표세건_장마끝난아침_키스`, `백서율_노찬영`).
+   `The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.`
+   `Output file name: when you save or deliver this image, name the file "파일명_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "파일명_20261011-1430.png". The name goes only in the file name, never inside the image.`
+   이 날짜 이전에 만든 스틸 프롬프트(작품 파일 `## 10. 장면 스틸`, `zeta-series.md` 카메오)는 하단 글씨 방식 그대로 두었다. 카메오 프롬프트를 고치면 `register.py` 지문이 바뀌어 등록된 카메오 이미지가 "프롬프트 바뀜"으로 뜬다.
 
 **규칙**
 - 얼굴 블록은 반드시 그 작품의 현재 주인공 프롬프트에서 복사한다(머리색·표식·피어싱이 바뀌면 스틸도 다시 복사). 새로 쓰지 않는다.
