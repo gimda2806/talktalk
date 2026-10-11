@@ -3030,5 +3030,25 @@
       "prompt": "여성용",
       "prompt_sha": "4419e2b05448"
     }
+  ],
+  "zeta_156_주세랑": [
+    {
+      "file": "ju-serang-main.png",
+      "label": "주인공 주세랑",
+      "prompt": "주인공",
+      "prompt_sha": "284a4cbb2cf0"
+    },
+    {
+      "file": "ju-serang-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "2ca3a29deadf"
+    },
+    {
+      "file": "ju-serang-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "70356018fcea"
+    }
   ]
 }
