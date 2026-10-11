@@ -785,13 +785,13 @@
       "file": "bong-aron-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "f4c1602f2f45"
+      "prompt_sha": "c0cd800388a1"
     },
     {
       "file": "bong-aron-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "6043cff4d673"
+      "prompt_sha": "90cf7a6078e5"
     }
   ],
   "zeta_028_마정훈": [
@@ -2869,6 +2869,26 @@
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "71da90321fc9"
+    }
+  ],
+  "zeta_137_배세훈": [
+    {
+      "file": "bae-sehun-main.png",
+      "label": "주인공 배세훈",
+      "prompt": "주인공",
+      "prompt_sha": "dc2da9a4e4f0"
+    },
+    {
+      "file": "bae-sehun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "2b210a7b49a4"
+    },
+    {
+      "file": "bae-sehun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "e543010c3704"
     }
   ]
 }
