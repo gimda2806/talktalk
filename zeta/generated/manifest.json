@@ -2950,5 +2950,25 @@
       "prompt": "여성용",
       "prompt_sha": "4f7f2fec7484"
     }
+  ],
+  "zeta_144_류서동": [
+    {
+      "file": "ryu-seodong-main.png",
+      "label": "주인공 류서동",
+      "prompt": "주인공",
+      "prompt_sha": "fad59fa66573"
+    },
+    {
+      "file": "ryu-seodong-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "1bb7d9667e39"
+    },
+    {
+      "file": "ryu-seodong-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "e061ce5152b6"
+    }
   ]
 }
