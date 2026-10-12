@@ -172,6 +172,13 @@ body[data-edit="on"] .copy.edit{display:inline-block}
 .ebar .estat{margin-right:auto;color:var(--rose)}
 .ebar .esave{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .ebar .esave:disabled{opacity:.5;cursor:default}
+/* 설명 글 속 표 (숏드라마 콘티·자막·편집 순서) */
+.ztbl{overflow-x:auto;margin:8px 0 14px}
+table.zt{min-width:0;font-size:13px}
+table.zt thead{display:table-header-group}
+table.zt tbody tr{display:table-row;padding:0;border:0}
+table.zt th,table.zt td{display:table-cell;padding:6px 8px;border-bottom:1px solid var(--line);font-weight:400;font-family:inherit;font-size:13px}
+table.zt th{color:var(--muted);font-size:12px;font-weight:500;white-space:nowrap}
 /* 스틸 보관함 (관리자 전용) */
 .tabs .lock{padding:6px 10px;font-size:13px}
 .stills{margin-top:24px}
@@ -682,7 +689,18 @@ function ztext(lines){
   let html = "", depth = 0, para = [];
   const flush = ()=>{ if (para.length){ html += `<p>${inline(para.join(" "))}</p>`; para = []; } };
   const close = d => { while (depth > d){ html += "</ul>"; depth--; } };
+  let rows = [];
+  const table = ()=>{
+    if (!rows.length) return;
+    const cells = l => l.trim().replace(/^\||\|$/g, "").split("|").map(c => c.trim());
+    const body = rows.filter(l => !/^\s*\|[\s:|-]+\|\s*$/.test(l));
+    const [h, ...rs] = body;
+    html += `<div class="ztbl"><table class="zt"><thead><tr>${cells(h).map(c=>`<th>${inline(c)}</th>`).join("")}</tr></thead><tbody>${rs.map(r=>`<tr>${cells(r).map(c=>`<td>${inline(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    rows = [];
+  };
   for (const raw of lines){
+    if (/^\s*\|/.test(raw)){ flush(); close(0); rows.push(raw); continue; }
+    table();
     const m = raw.match(/^(\s*)-\s+(.*)$/);
     if (m){
       flush();
@@ -692,7 +710,7 @@ function ztext(lines){
     } else if (!raw.trim()){ flush(); close(0); }
     else { close(0); para.push(raw.trim()); }
   }
-  flush(); close(0);
+  table(); flush(); close(0);
   return html;
 }
 const rvitem = r => `<div class="item"><div class="num">${r.n}</div><div><div class="loc">${esc(r.report.replace(/^review-/,"").replace(/-\d{4}-\d{2}-\d{2}$/,""))} · ${esc(r.loc)}</div><p class="q now">${esc(r.line)}</p><p class="q alt">${esc(r.alt)}</p>${r.why?`<div class="why">${esc(r.why)}</div>`:""}</div></div>`;

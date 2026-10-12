@@ -28,8 +28,8 @@ async function save(req, env) {
   try { body = await req.json(); } catch { return json({ error: "요청 본문이 JSON이 아니에요" }, 400); }
   const { file, bi, old, new: fresh, label, kind } = body || {};
   const isText = kind === "text";
-  if (typeof file !== "string" || !/^zeta\/[^/]+\.md$/.test(file) || (!isText && (!Number.isInteger(bi) || bi < 0)) || typeof old !== "string" || typeof fresh !== "string")
-    return json({ error: "file·bi·old·new가 필요해요 (file은 zeta/ 아래 .md)" }, 400);
+  if (typeof file !== "string" || !/^zeta\/(shortdrama\/)?[^/]+\.md$/.test(file) || (!isText && (!Number.isInteger(bi) || bi < 0)) || typeof old !== "string" || typeof fresh !== "string")
+    return json({ error: "file·bi·old·new가 필요해요 (file은 zeta/ 또는 zeta/shortdrama/ 아래 .md)" }, 400);
   if (fresh.trim() === old.trim()) return json({ ok: true, unchanged: true });
 
   const api = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${encodeURI(file)}`;
