@@ -33,6 +33,13 @@
 - 장면 제목은 두세 단어 한국어로 짓는다(예: `장마 끝난 아침`, `진눈깨비 책갈피`). 파일명에는 띄어쓰기를 뺀 형태(`장마끝난아침`)를 쓴다.
 - 플롯의 핵심 장치(소품·동물·장소의 특징)가 장면에 자연스럽게 보이면 한두 개 넣는다. 동물이 주인공 몸에 붙어 있는 설정이면 프로필 사진과 같은 쪽(왼쪽/오른쪽 어깨 등)에 둔다.
 
+## 장면 의도 (모든 작품 공통)
+
+- 두 사람은 **성인인 가상 인물**이다. 실존 인물·연예인을 떠올리게 하는 말을 쓰지 않는다.
+- 장면은 **서로 동의한 짧고 비노골적인 애정 표현**이다. 숨을 멈춘 찰나의 다정함만 그리고, 몸이 드러나거나 암시적인 자세·장소(침대·침실)는 넣지 않는다.
+- 두 사람 모두 **일상복(사복)**을 입는다. 근무복·유니폼·앞치마·명찰·무대 의상은 입히지 않는다.
+- 이 의도는 아래 5번 고정 문장으로 프롬프트에 그대로 들어간다.
+
 ## 유저(남) 이름 정하기 (작품마다)
 
 - `zeta/user-male-names.md` 표에 그 작품(`NNN_이름`) 줄이 있으면 그 이름을 그대로 쓴다.
@@ -55,14 +62,15 @@
 3. **헤더**: 6-1 블록 원문에서 첫 문장 `Vertical character design sheet for a Korean live-action short drama, ultra-photorealistic 2K, NOT illustration.`을 `Ultra-photorealistic 2K live-action Korean drama still, NOT illustration.`로 바꾼 것 + 6-2 원문 + 6-3 MALE 원문(두 사람 모두 남성이라 한 번만).
    - 주인공 Face geometry에 `monolid`(외꺼풀)가 있으면 6-1 블록에서 `, deep naturally defined double eyelids`를 지우고, 네거티브에 `no double eyelids on {주인공 이름}`을 넣는다. 쌍꺼풀 주인공이면 그대로 둔다.
 4. **장면 한 문장**: `Scene: …` 장소·시간대·날씨·빛·핵심 장치. 글씨가 생길 만한 물건에는 `(no legible text)`를 붙인다.
-5. `Two established characters, faces kept distinct: two adult Korean men.`
-6. **주인공 덩어리**: `RIGHT, {영문 이름} (Image 1): ` + 그 작품 `### 주인공 프로필용` 긴 버전의 `Face geometry: …`, `Character design: …`, `Wardrobe: …`를 **그대로 복사**(Props·구도·조명 문장은 가져오지 않는다) + 이 장면의 동작 한 문장.
+5. **등장인물과 장면 의도 (원문 그대로)**: `Two established fictional adult characters, faces kept distinct: two adult Korean men, both clearly in their late twenties or older. Scene intent: a brief, mutual and consensual, non-explicit moment of affection between two adults, tender and restrained, both fully dressed in ordinary everyday casual clothes.`
+6. **주인공 덩어리**: `RIGHT, {영문 이름} (Image 1): ` + 그 작품 `### 주인공 프로필용` 긴 버전의 `Face geometry: …`, `Character design: …`를 **그대로 복사**(Props·구도·조명 문장은 가져오지 않는다) + 일상복 `Wardrobe: …`(아래) + 이 장면의 동작 한 문장.
    - 동작 문장 틀: `Standing {장소의 구체적인 자리} and facing screen-left, he has leaned in close, {성격에 맞는 한 단어: a little clumsily / slowly / hesitantly 등}, their faces only inches apart and foreheads almost touching, caught in the breath-held moment just before their lips would meet, a thin sliver of light still visible between them, eyes half-closed, {손의 위치}, {성격이 드러나는 표정 한 구절}.`
-   - 의상이 장면의 시간·장소와 맞지 않으면(예: 무대 의상인데 집 안) 그 장면에 맞게 바꾸되, 얼굴 구조·머리·몸의 표식·안경·피어싱·액세서리는 그대로 둔다.
-7. **유저 덩어리**: `LEFT, the visitor (Image 2, a young Korean man, the user character): ` + 그 작품 유저 남성용 긴 버전(제목이 `남성용` 또는 `유저 대화 프로필용 (남성용)`인 칸. `###`·`####` 어느 단계든 되고, `· 짧은 버전`이 붙은 칸은 아니다)의 `Face geometry: …`를 그대로 + `Character design: a young man in his {주인공 나이대에 가깝게: late twenties 등}, {남성용 Character design 끝의 머리 구절 그대로}, soft double eyelid folds clearly different from {주인공 이름}'s eyes, no mole.`(주인공이 쌍꺼풀이면 `clearly different from …` 대신 눈매 차이를 한 구절로) + `Wardrobe: {장면에 맞는 사복 한 줄}, no logo, no lettering.` + 동작 한 문장(`facing screen-right`, 눈을 반쯤 감고 고개를 살짝 기울임, 한 손은 주인공 옷자락이나 팔에 가볍게).
+   - **의상은 일상복으로 바꾼다.** 프로필의 `Wardrobe: …` 대신 `zeta/zeta-casual-wardrobe.md` 2절에서 그 작품의 장면 계절에 맞는 칸(반팔·긴팔·겨울)의 영어 문장을 쓴다: `Wardrobe: ` + `Off-duty casual wardrobe (…): ` 뒤의 옷·Accessories 문장 + `No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.` 그 작품 칸이 없으면 같은 형식으로 사복 한 줄을 새로 쓴다.
+   - 얼굴 구조·머리·몸의 표식·안경·피어싱처럼 몸에 붙은 특징은 프로필 그대로 둔다.
+7. **유저 덩어리**: `LEFT, the visitor (Image 2, an adult Korean man, the user character): ` + 그 작품 유저 남성용 긴 버전(제목이 `남성용` 또는 `유저 대화 프로필용 (남성용)`인 칸. `###`·`####` 어느 단계든 되고, `· 짧은 버전`이 붙은 칸은 아니다)의 `Face geometry: …`를 그대로 + `Character design: an adult man in his {주인공 나이대에 가깝게: late twenties 등, 20대 후반보다 어리게 쓰지 않는다}, {남성용 Character design 끝의 머리 구절 그대로}, soft double eyelid folds clearly different from {주인공 이름}'s eyes, no mole.`(주인공이 쌍꺼풀이면 `clearly different from …` 대신 눈매 차이를 한 구절로) + `Wardrobe: {장면 계절에 맞는 일상 사복 한 줄 — zeta/zeta-casual-wardrobe.md 1절 남성 칸 참고}, no uniform, no logo, no lettering.` + 동작 한 문장(`facing screen-right`, 눈을 반쯤 감고 고개를 살짝 기울임, 한 손은 주인공 옷자락이나 팔에 가볍게).
 8. **구도 (원문 그대로)**: `Composition: cinematic vertical side-profile two-shot at chest height, the two heads close together in the upper half of the tall frame with their hands and the nearest prop in the lower half, the two men facing each other in opposite directions, each head turned about 65 to 75 degrees from the camera in a near-profile view so both faces stay clearly readable (nose line, eye, cheekbone and jaw of each visible), not full profile and not frontal, both faces sharp, shallow depth of field with the background softly blurred.`
 9. **조명**: `Lighting: cinematic lighting, …` 그 장면의 시간대에 맞는 깨끗한 측광 한 문장 + `restrained halation, low saturation and low-to-mid contrast; skin must remain cool porcelain-white, never warm yellow.`
-10. **네거티브 (원문 + 필요한 것만 덧붙임)**: `Negative: no unintentional text, no watermark, no UI overlay, no merged or swapped faces, no same-face twins, no extra person, no plastic or wax-figure skin, no exaggerated expression, no extra limbs, no illustration or webtoon style, no lips touching, no open mouths, no faces pressed together or overlapping, no reference-sheet panels or labels, no caption or name text.` (외꺼풀이면 `no double eyelids on …`, 동물이 있으면 `no second {동물}` 추가)
+10. **네거티브 (원문 + 필요한 것만 덧붙임)**: `Negative: no unintentional text, no watermark, no UI overlay, no merged or swapped faces, no same-face twins, no extra person, no plastic or wax-figure skin, no exaggerated expression, no extra limbs, no illustration or webtoon style, no lips touching, no open mouths, no faces pressed together or overlapping, no reference-sheet panels or labels, no caption or name text, no revealing, unbuttoned or partially removed clothing, no bare shoulders or chest, no bed or bedroom setting, no suggestive pose, no uniforms, work aprons or stage costumes.` (외꺼풀이면 `no double eyelids on …`, 동물이 있으면 `no second {동물}` 추가)
 11. **글씨 없음 + 파일명 (6-16 7번, 원문 그대로, 파일명만 채운다)**
     `The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.`
     `Output file name: when you save or deliver this image, name the file "{이름}_{장면제목}_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "{이름}_{장면제목}_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.`
@@ -104,7 +112,9 @@
 
 - [ ] 긴·짧은 버전 모두 1번(9:16) 문장으로 시작하고, 2번 입력 이미지 문장이 그다음 줄에 있다.
 - [ ] `kiss`, `passionate` 같은 단어가 없다(대소문자 무시로 검색해 0건).
-- [ ] 주인공 얼굴·머리·의상 구절이 주인공 프로필용 긴 버전과 글자까지 같다(장면 때문에 바꾼 의상은 예외).
+- [ ] 주인공 얼굴·머리 구절이 주인공 프로필용 긴 버전과 글자까지 같다.
+- [ ] 5번 장면 의도 문장(성인 가상 인물·서로 동의한 짧고 비노골적인 애정 표현·일상복)이 원문 그대로 있다.
+- [ ] 두 사람 의상이 모두 일상복이다(주인공은 사복 파일 문장, 유니폼·앞치마·명찰·무대 의상 없음). `young`으로 나이를 적지 않았다.
 - [ ] 유저 Face geometry가 그 작품 남성용과 같다.
 - [ ] 외꺼풀 주인공이면 6-1의 쌍꺼풀 구절이 지워졌다.
 - [ ] 마지막 두 줄이 글씨 없음 + 파일명 문장이고, 파일명에 띄어쓰기가 없다.
