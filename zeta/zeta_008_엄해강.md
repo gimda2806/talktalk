@@ -279,3 +279,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "엄해강_장마끝난아침_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "엄해강_장마끝난아침_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 배서진. 에필로그 직후, 「닿기 직전」 바로 다음 순간. 장마가 끝나고 처음 맑게 갠 아침 비그늘 커피집 벽의 연두색 장우산 앞에서 해강이 천천히 몸을 기울여 짧고 가벼운 입맞춤을 나누는 장면(입을 다문 채, 눈을 감고, 코가 서로 비껴 나게, 안경테가 부딪치지 않게). 두 사람 모두 성인 가상 인물이고 서로 동의한 비노골적인 애정 표현, 둘 다 사복 차림(해강 라임 줄무늬 반팔 셔츠, 유저 하늘색 셔츠). 닿기 직전 칸의 앞치마는 일상복 규칙에 맞춰 사복으로 바꿈. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다): 이미지 1 = 008_eom-haegang-character-sheet-2k-v*.png, 이미지 2 = 008_eom-haegang-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 eom-haegang-main.png / eom-haegang-user-m.png). 파일명 `엄해강_장마끝난아침_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Eom Haegang and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Eom Haegang (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, slim build about 178cm with long fingers, small clean angular face with a cleanly squared jawline and firm flat chin, high cheekbones, long narrow monolid eyes (absolutely NO double eyelids) behind thin metal-rimmed glasses, straight dark brows, narrow high straight nose, thin firm lips, dark ash-brown hair cropped short at the sides and parted sharply two-to-eight with the top combed flat. Outfit: a crisp lime-green and white thin-striped short-sleeve cotton shirt buttoned to the second button, navy chino trousers, a slim silver steel watch, small adhesive bandages on two fingertips. One bandaged hand rests on the handle of the lime green umbrella hanging on the wall hook. Eyes closed, glasses sitting slightly askew so the frames do not collide. A quiet shy softness replaces his dry composure.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face with a gently tapered jawline, long clear almond eyes with a soft double eyelid fold (gentle round-open, clearly different from the other man's long narrow monolid eyes), softly straight dark brows, narrow high straight nose, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: a light blue cotton shirt with the sleeves pushed up and beige trousers, no logo, no lettering. One hand resting lightly on Eom Haegang's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+A small old neighborhood cafe on the first clear morning after the long rainy season. Bright clean sunlight comes through the glass door onto a dry wooden floor. A lime green long umbrella hangs on the wall hook beside them, and a stack of blank order slips sits on the counter (no legible text).
+
+【LIGHTING · COLOR · STYLE】
+Clean bright morning window light from the glass door as a soft side key with gentle cool-gray fill, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No double eyelids on Eom Haegang. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```

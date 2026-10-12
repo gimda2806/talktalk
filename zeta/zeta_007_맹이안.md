@@ -278,3 +278,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "맹이안_새벽의붉은등_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "맹이안_새벽의붉은등_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 노재이. 에필로그 직후, 「닿기 직전」 바로 다음 순간. 새벽 한 시 방송이 끝난 솔내FM 부스에서 이안이 서툴게 몸을 기울여 짧고 가벼운 입맞춤을 나누는 장면(입을 다문 채, 눈을 감고, 코가 서로 비껴 나게). 두 사람 모두 성인 가상 인물이고 서로 동의한 비노골적인 애정 표현, 둘 다 사복 차림(이안 회색 카디건, 유저 크림색 니트). 고슴도치 호두는 책상 위 상자 가장자리. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다): 이미지 1 = 007_maeng-ian-character-sheet-2k-v*.png, 이미지 2 = 007_maeng-ian-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 maeng-ian-main.png / maeng-ian-user-m.png). 파일명 `맹이안_새벽의붉은등_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Maeng Ian and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Maeng Ian (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, tall slim build about 180cm with narrow shoulders and long fingers, long narrow face with a gently tapered clean jawline and slim chin, long sleepy half-lidded eyes with a gentle downward outer tilt and a hooded inner double eyelid fold, straight dark medium-thick brows, narrow high straight nose, a small dark mole at the left corner of the mouth, black collar-length hair covering the ears with a heavy fringe. Outfit: a loose light gray cardigan over a plain white shirt, worn black headphones resting around his neck. One long-fingered hand rests on the desk beside the cassette tape. Eyes closed. The tips of his ears are flushed.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face with a gently tapered jawline, long clear almond eyes with a soft double eyelid fold (round-open, clearly different from the other man's sleepy hooded eyes), softly straight dark brows, narrow high straight nose, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: a soft cream knit sweater over a plain white tee and dark slacks, no logo, no lettering. One hand resting lightly on Maeng Ian's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A small hedgehog peeks over the edge of a cardboard box on the desk beside them, only one hedgehog in the frame. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+A small regional FM radio booth at one in the morning after the broadcast has ended. Only the dim red on-air light glows behind them, with a small warm desk lamp lighting a cluttered desk. A new cassette tape with a blank label and a desk calendar sit on the desk (no legible text).
+
+【LIGHTING · COLOR · STYLE】
+A dim red on-air glow from behind and a small warm desk lamp as a clean side key on both faces, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No more than one hedgehog. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
