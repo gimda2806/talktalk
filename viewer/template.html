@@ -195,6 +195,14 @@ table.zt th{color:var(--muted);font-size:12px;font-weight:500;white-space:nowrap
 .st-act{display:flex;gap:6px;padding:4px 10px 10px}
 .st-act .copy{min-height:28px;font-size:12px;padding:0 10px;text-decoration:none;display:inline-flex;align-items:center}
 .st-empty{color:var(--muted);font-size:14px;margin-top:18px}
+.st-prompts{margin-top:20px}
+.st-prompts details{border-top:1px solid var(--line);padding-top:14px;margin-top:14px}
+.st-prompts details:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.st-prompts summary{font-family:var(--display);font-size:18px;cursor:pointer;list-style:none}
+.st-prompts summary::before{content:"▸ ";color:var(--muted)}
+.st-prompts details[open] summary::before{content:"▾ "}
+.st-prompts summary::-webkit-details-marker{display:none}
+.st-prompts .grp{margin-top:8px;border-top:0;padding-top:0}
 #toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:9}
 #toast[data-on]{opacity:1;transform:translate(-50%,0)}
 .parts{padding:6px 10px 10px}
@@ -423,6 +431,7 @@ table.zt th{color:var(--muted);font-size:12px;font-weight:500;white-space:nowrap
       <p id="st-stat"></p>
       <div class="st-grid" id="st-grid"></div>
     </section>
+    <section class="card st-prompts" id="st-prompts" hidden></section>
   </div>
 </div>
 
@@ -1053,7 +1062,7 @@ function adminShow(on){
   adminBtn.textContent = on ? "🔓" : "🔒";
   adminBtn.setAttribute("aria-label", on ? "스틸 보관함 열기" : "관리자 잠금 풀기");
   if (!on && stTab.getAttribute("aria-selected") === "true") document.getElementById("tab-read").click();
-  if (!on){ stUrls.forEach(u=>URL.revokeObjectURL(u)); stUrls = []; stGrid.innerHTML = ""; }
+  if (!on){ stUrls.forEach(u=>URL.revokeObjectURL(u)); stUrls = []; stGrid.innerHTML = ""; const b = document.getElementById("st-prompts"); b.hidden = true; b.innerHTML = ""; }
 }
 async function adminCheck(){
   try { const r = await adminFetch("/api/admin", { method: "POST" }); return r.ok; } catch { return false; }
@@ -1068,8 +1077,22 @@ adminBtn.onclick = async () => {
 document.getElementById("st-lock").onclick = () => { store.set("zt-edit-pw", ""); adminShow(false); toast("잠갔어요"); };
 const kst = iso => { const d = new Date(new Date(iso).getTime() + 9*3600e3), p = n => String(n).padStart(2,"0"); return `${d.getUTCFullYear()}-${p(d.getUTCMonth()+1)}-${p(d.getUTCDate())} ${p(d.getUTCHours())}:${p(d.getUTCMinutes())}`; };
 const mb = n => n >= 1048576 ? (n/1048576).toFixed(1) + "MB" : Math.max(1, Math.round(n/1024)) + "KB";
+// 고른 작품의 장면 스틸 프롬프트(작품 파일 '장면 스틸')와 숏드라마 콘티를 복사 칸으로 보여 준다
+function stprompts(){
+  const box = document.getElementById("st-prompts"), w = ZETA.find(z=>z.id===stWork.value);
+  const groups = w ? w.groups.filter(g=>/장면 스틸/.test(g.title)).concat(w.drama||[]) : [];
+  box.hidden = !groups.length;
+  if (!groups.length){ box.innerHTML = ""; return; }
+  const texts = [];
+  const field = i => { texts.push(i.text); return `<div class="field ${latin(i.text)?"latin":""}"><div class="fh"><b>${esc(i.label||"")}${i.sub?` › ${esc(i.sub)}`:""}</b><span class="cnt">${i.text.length}자</span><button type="button" class="copy" data-sc="${texts.length-1}">복사</button></div><pre>${esc(i.text)}</pre></div>`; };
+  const item = i => i.kind==="field" ? field(i) : i.kind==="head" ? `<h4>${esc(i.label)}</h4>` : ztext(i.lines);
+  box.innerHTML = `<h3>${esc(w.name)} · 스틸·영상 프롬프트</h3><p class="lead">칸마다 복사 버튼을 누르면 그 프롬프트 전체가 복사돼요. 고치려면 제타 탭(장면 스틸)이나 파일에서 고쳐요.</p>`
+    + groups.map((g, n)=>`<details ${n===0?"open":""}><summary>${esc(g.title.replace(/^\d+\.\s*/, ""))}</summary><section class="grp">${g.items.map(item).join("")}</section></details>`).join("");
+  box.querySelectorAll("[data-sc]").forEach(b=>b.onclick=()=>copyText(texts[+b.dataset.sc], b));
+}
 async function strender(){
   if (stTab.hidden) return;
+  stprompts();
   stUrls.forEach(u=>URL.revokeObjectURL(u)); stUrls = [];
   stStat.textContent = "불러오는 중…"; stGrid.innerHTML = "";
   let j;
