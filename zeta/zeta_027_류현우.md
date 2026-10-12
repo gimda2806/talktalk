@@ -281,3 +281,27 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 ```
 
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 조은우. 「닿기 직전」 바로 다음 순간. 문을 닫은 뒤 온기 약국 카운터, 보리차 보온병 두 개 곁에서 현우와 손님이 짧고 가벼운 입맞춤을 나눈다. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `류현우_보리차조제실_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Ryu Hyunwoo and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Ryu Hyunwoo (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, slim tall build ~183 cm with a straight shoulder line, long refined face, clean tapered jawline, high cheekbones, long narrow calm eyes with a hooded inner double eyelid fold, straight dark medium-thick brows, narrow high straight nose bridge, slim composed lips, a small dark mole at the left corner of the mouth, black hair cropped short at the sides and parted cleanly two-to-eight. Outfit: light stone cotton mac coat worn open over a slate-blue crewneck sweater, charcoal straight wool trousers, black leather derby shoes, thin steel bracelet watch, no lettering or logos. One hand resting beside the beige thermos on the counter. Eyes closed. A restrained gentleness in his composed face.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, soft oval face, gentle jawline, long clear almond double-lidded eyes with a level eye line (clearly different from Ryu Hyunwoo's long narrow hooded eyes), soft straight brows, high straight nose with delicate tip, naturally full lips, NO mole anywhere, short neat dark brown-black hair with a light side-swept fringe. Outfit: beige trench coat over a knit sweater, dark trousers, no logo, no lettering. One hand resting lightly on Hyunwoo's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. Two thermos flasks, one old silver and one pale beige, stand side by side on the counter beside them. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Small neighborhood pharmacy after closing, standing at the counter. Soft light from the compounding room; a small paper medicine bag lies beside the thermoses (no legible text). The dark glass door and shelves softly blurred behind.
+
+【LIGHTING · COLOR · STYLE】
+Soft neutral light from the compounding room as a clean side key with a cool fill from the pharmacy shelves, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```

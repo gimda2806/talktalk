@@ -274,3 +274,27 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 ```
 
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 황민석. 「닿기 직전」 바로 다음 순간. 문 닫기 십 분 전 텅 빈 헬스장 14번 사물함 앞에서 범진과 회원이 짧고 가벼운 입맞춤을 나눈다. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `추범진_열네번사물함_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Chu Beomjin and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Chu Beomjin (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, tall athletic build ~186 cm with broad shoulders, narrow long-oval face, sharply tapered V-line jaw, high defined cheekbones, long narrow upturned feline eyes with double eyelids, a small hairless nick cutting through the middle of the left eyebrow, straight black medium-thick brows, narrow high straight nose bridge, short cropped black two-block hair. Outfit: deep navy wool-blend shirt jacket worn open over a white crewneck long-sleeve tee, light grey wide trousers, white leather sneakers, matte black analog watch, no lettering or logos. A small new key held loosely in one hand at his side. Eyes closed. A guarded face softening at the eye corners.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, soft oval face, gentle jawline, long clear almond double-lidded eyes with a level eye line (clearly different from Chu Beomjin's narrow upturned feline eyes), soft straight brows, high straight nose with delicate tip, naturally full lips, NO mole anywhere, short neat dark brown-black hair with a light side-swept fringe. Outfit: loose gray hoodie, black training pants, white low-top sneakers, no logo, no lettering. One hand resting lightly on Beomjin's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Empty neighborhood gym ten minutes before closing, standing in front of a row of lockers where one locker door has a small new key in it (no legible text). A mirror wall and dark rubber-matted floor softly blurred behind them.
+
+【LIGHTING · COLOR · STYLE】
+Cool white overhead panel light as a clean side key with a soft reflected fill from the mirror wall, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```

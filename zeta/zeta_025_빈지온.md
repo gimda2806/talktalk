@@ -275,3 +275,27 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 ```
 
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 변성민. 「닿기 직전」 바로 다음 순간. 방과 후 3학년 2반 교실 창가, 강낭콩 화분 옆에서 지온과 보호자가 짧고 가벼운 입맞춤을 나눈다. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `빈지온_방과후강낭콩_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Bin Jion and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Bin Jion (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, tall slim build ~183 cm with relaxed sloping shoulders, compact soft oval face, softly tapered jawline with a neat rounded chin, a small dark mole on the right side of the chin, long warm almond eyes with a softly downward outer line and double eyelids, softly arched medium-thick dark brown brows, narrow high straight nose bridge, soft dark brown hair with a natural light wave swept loosely to the side. Outfit: sage-green cotton crewneck cardigan buttoned over a white tee, cream straight chinos, tan suede loafers, thin tan leather strap watch, no lettering or logos. Faint red stamp ink on the fingertips of one hand resting on the desk edge. Eyes closed. Ears faintly flushed red.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, soft oval face, gentle jawline, long clear almond double-lidded eyes with a level eye line (clearly different from Bin Jion's softly downward-sloping almond eyes), soft straight brows, high straight nose with delicate tip, naturally full lips, NO mole anywhere, short neat dark brown-black hair with a light side-swept fringe. Outfit: light beige jacket over a plain white t-shirt, navy chino pants, white low-top sneakers, no logo, no lettering. One hand resting lightly on Jion's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A potted kidney-bean plant sits on the windowsill beside them. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Empty elementary school classroom after school in late afternoon. Soft sunlight through the window falls across small wooden desks; a red stamp, an ink pad and a closed contact notebook rest on the nearest desk (no legible text). Pale classroom walls and the floor softly blurred.
+
+【LIGHTING · COLOR · STYLE】
+Soft clean late-afternoon window light from screen-left with a gentle bounce from the pale walls, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
