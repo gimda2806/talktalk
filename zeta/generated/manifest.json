@@ -3293,19 +3293,19 @@
   ],
   "zeta_154_오보람": [
     {
-      "file": "154_오보람/oh-boram-main.png",
+      "file": "154_오보람/o-boram-main.png",
       "label": "주인공 오보람",
       "prompt": "주인공",
       "prompt_sha": "77a1ead12091"
     },
     {
-      "file": "154_오보람/oh-boram-user-m.png",
+      "file": "154_오보람/o-boram-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
       "prompt_sha": "c95f7b799900"
     },
     {
-      "file": "154_오보람/oh-boram-user-f.png",
+      "file": "154_오보람/o-boram-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
       "prompt_sha": "fc30c5d33785"
