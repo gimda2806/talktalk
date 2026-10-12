@@ -306,7 +306,7 @@ def load_zeta():
             # 등록 당시의 프롬프트 지문과 지금 지문이 다르면 '프롬프트가 바뀜' 표시 (zeta/generated/register.py 참고)
             kind = register.guess_kind(i)
             stale = bool(i.get("prompt_sha")) and register.prompt_sha(f.stem, kind, i) not in (None, i["prompt_sha"])
-            images.append(dict(label=i["label"], url=f"images/{i['file']}", stale=stale))
+            images.append(dict(label=i["label"], url=f"images/{Path(i['file']).name}", stale=stale))
         works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
     # 만든 순서(작품 목록 줄 순서)의 역순 = 최신 작품이 위. 목록에 없는 파일은 맨 위에 날짜·이름순으로
     # 사복 의상(zeta-casual-wardrobe.md)은 캐릭터 도식 시트 전용이라 뷰어 목록에 넣지 않는다
