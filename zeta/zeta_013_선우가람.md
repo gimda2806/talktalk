@@ -266,3 +266,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "선우가람_막사발앞아침_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "선우가람_막사발앞아침_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 소정우. 「닿기 직전」 바로 다음 순간. 에필로그 장면(막사발 두 개가 놓인 공방 선반, 이른 아침)에서 두 사람이 입을 다문 짧은 입맞춤을 나누는 순간. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `선우가람_막사발앞아침_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Seonwoo Garam and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Seonwoo Garam (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, broad-shouldered long-limbed build ~183 cm, small soft V-shaped oval face, smoothly tapered jawline, softly raised high cheekbones, long calm almond monolid eyes with a slight downward sweep (absolutely NO double eyelids), soft level medium brows, one small dark mole on the right cheekbone, narrow high straight nose, softly full lips, dark brown-black hair center-parted and loosely tied at the nape with a few strands along the cheeks. Outfit: unbuttoned soft charcoal-brown wool-blend collarless jacket over a cream long-sleeve cotton henley, relaxed straight deep indigo denim jeans, dark brown leather work boots, wooden bead bracelet. One hand resting on the plank shelf edge beside the two lopsided bowls. Eyes closed. Tips of his ears faintly flushed.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, soft oval face, gently tapered jawline, long clear almond eyes with a soft double eyelid fold (clearly distinguishable from Garam's monolids — visibly different eye shape), softly straight dark brows, narrow high straight nose with delicate tip, softly full lips, NO mole anywhere, short neat dark brown-black hair with a light side-swept fringe. Outfit: plain off-white cotton long-sleeve shirt with the sleeves rolled, relaxed dark gray trousers, no logo, no lettering. One hand resting lightly on Garam's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A small round glass bowl with one orange goldfish sits on the shelf beside two lopsided rough bowls. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Early autumn morning inside a small wood-fired pottery workshop. Pale daylight from the open shed door falls across a plank shelf holding two lopsided rough bowls side by side. A wall calendar with hand-drawn circles (no legible text) and the cooled kiln are softly blurred behind them.
+
+【LIGHTING · COLOR · STYLE】
+Clean soft morning daylight from the open shed door as a side key with a faint warm glow from the cooled kiln behind, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No double eyelids on Garam. No more than one goldfish. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
