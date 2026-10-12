@@ -271,3 +271,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "노찬영_덮개벗긴밤_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "노찬영_덮개벗긴밤_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 신재원. 「닿기 직전」 바로 다음 순간. 문을 닫은 한뼘 공작소의 밤, 하얀 덮개를 반쯤 들어 올린 작업대 앞에서 두 사람이 입을 다문 짧고 가벼운 입맞춤을 나눈다. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `노찬영_덮개벗긴밤_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Noh Chanyoung and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Noh Chanyoung (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, tall lean build ~181 cm with slightly rounded shoulders, small compact oval face with softly tapered jaw and gently pointed chin, high soft cheekbones, bright long eyes with a slightly upturned outer corner and a hooded inner double eyelid fold, softly arched medium-thick dark brows, narrow high straight nose, a light scatter of faint freckles across the bridge of the nose, dark brown naturally curly medium-length hair with a loose fringe and a small magnifier headband pushed up on the forehead. Outfit: oatmeal knit cardigan over a white tee with the sleeves pushed up, relaxed olive corduroy trousers. One paint-marked fingertip resting on the edge of the half-lifted white cover. Eyes closed. Tips of his ears flushed red.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face, gently tapered clean jaw, long clear almond eyes with soft double eyelid folds (clearly distinguishable from Noh Chanyoung's bright upturned eyes), softly straight dark brows, narrow high straight nose with delicate tip, softly full lips, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: plain oversized zip hoodie, no logo, no lettering. One hand resting lightly on Noh Chanyoung's sleeve. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A small aquarium with one axolotl glows softly in the blurred background. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Late night inside the closed miniature workshop, a single warm desk lamp over the back workbench. The white cover over the box at the far end of the bench is lifted halfway, revealing a palm-sized miniature room with a tiny desk, a tiny phone and a tiny chair (no legible text). Wooden workbench with small tools softly blurred.
+
+【LIGHTING · COLOR · STYLE】
+A single warm desk lamp as soft clean side light from screen-right with cool pale fill and a faint aquarium glow, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No more than one axolotl. No legible text on the tiny phone. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
