@@ -3176,19 +3176,19 @@
       "file": "143_설호기/seol-hogi-main.png",
       "label": "주인공 설호기",
       "prompt": "주인공",
-      "prompt_sha": "20a262940206"
+      "prompt_sha": "b3cdde25b5c4"
     },
     {
       "file": "143_설호기/seol-hogi-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "8d1155e2add1"
+      "prompt_sha": "7b215aa8e490"
     },
     {
       "file": "143_설호기/seol-hogi-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "aa762e0fcde5"
+      "prompt_sha": "c5048672df2f"
     }
   ],
   "zeta_148_조남훈": [
@@ -3196,19 +3196,19 @@
       "file": "148_조남훈/jo-namhun-main.png",
       "label": "주인공 조남훈",
       "prompt": "주인공",
-      "prompt_sha": "b498a84de85b"
+      "prompt_sha": "babe11fce573"
     },
     {
       "file": "148_조남훈/jo-namhun-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "fd05386ced1c"
+      "prompt_sha": "07966393d431"
     },
     {
       "file": "148_조남훈/jo-namhun-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "823a9ba032b4"
+      "prompt_sha": "f6a1557acc7b"
     }
   ],
   "zeta_149_감한서": [
@@ -3216,19 +3216,19 @@
       "file": "149_감한서/gam-hanseo-main.png",
       "label": "주인공 감한서",
       "prompt": "주인공",
-      "prompt_sha": "f7b44896cc3b"
+      "prompt_sha": "11bd2bb3dcb0"
     },
     {
       "file": "149_감한서/gam-hanseo-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "f945395ba89d"
+      "prompt_sha": "8fe9dd458c40"
     },
     {
       "file": "149_감한서/gam-hanseo-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "3f4a8b9e03e2"
+      "prompt_sha": "eb4ab0a3d9c4"
     }
   ],
   "zeta_150_방영훈": [
@@ -3236,19 +3236,19 @@
       "file": "150_방영훈/bang-yeonghun-main.png",
       "label": "주인공 방영훈",
       "prompt": "주인공",
-      "prompt_sha": "f6fa5a44d89f"
+      "prompt_sha": "7929361483d1"
     },
     {
       "file": "150_방영훈/bang-yeonghun-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "81f74735cfad"
+      "prompt_sha": "bdf492dbd99a"
     },
     {
       "file": "150_방영훈/bang-yeonghun-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "4db09570cc67"
+      "prompt_sha": "e7da94410a54"
     }
   ],
   "zeta_151_여로건": [
@@ -3256,19 +3256,19 @@
       "file": "151_여로건/yeo-rogeon-main.png",
       "label": "주인공 여로건",
       "prompt": "주인공",
-      "prompt_sha": "940c45327739"
+      "prompt_sha": "e98e80119794"
     },
     {
       "file": "151_여로건/yeo-rogeon-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "13750215c679"
+      "prompt_sha": "077a90468632"
     },
     {
       "file": "151_여로건/yeo-rogeon-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "38e4547b7421"
+      "prompt_sha": "30cc1310278f"
     }
   ],
   "zeta_153_사공린": [
@@ -3276,19 +3276,19 @@
       "file": "153_사공린/sagong-rin-main.png",
       "label": "주인공 사공린",
       "prompt": "주인공",
-      "prompt_sha": "d2bb53aa7c71"
+      "prompt_sha": "5534b6b40ea7"
     },
     {
       "file": "153_사공린/sagong-rin-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "1d3580c326a5"
+      "prompt_sha": "8b40b3822afe"
     },
     {
       "file": "153_사공린/sagong-rin-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "50f2f9fe2345"
+      "prompt_sha": "4d50cc302b7f"
     }
   ],
   "zeta_154_오보람": [
@@ -3296,19 +3296,19 @@
       "file": "154_오보람/oh-boram-main.png",
       "label": "주인공 오보람",
       "prompt": "주인공",
-      "prompt_sha": "daf44bb1d23c"
+      "prompt_sha": "77a1ead12091"
     },
     {
       "file": "154_오보람/oh-boram-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "fa5fa54dbc3c"
+      "prompt_sha": "c95f7b799900"
     },
     {
       "file": "154_오보람/oh-boram-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "458223a6bd6b"
+      "prompt_sha": "fc30c5d33785"
     }
   ],
   "zeta_158_계태환": [
@@ -3316,19 +3316,19 @@
       "file": "158_계태환/gye-taehwan-main.png",
       "label": "주인공 계태환",
       "prompt": "주인공",
-      "prompt_sha": "12a191fba7d7"
+      "prompt_sha": "be4ca9f963d3"
     },
     {
       "file": "158_계태환/gye-taehwan-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "dfed98af1b36"
+      "prompt_sha": "2a3baaa238fc"
     },
     {
       "file": "158_계태환/gye-taehwan-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "72af9af42425"
+      "prompt_sha": "62c3ab04b9fd"
     }
   ],
   "zeta_159_현동하": [
@@ -3336,19 +3336,19 @@
       "file": "159_현동하/hyeon-dongha-main.png",
       "label": "주인공 현동하",
       "prompt": "주인공",
-      "prompt_sha": "6a377dd5d33c"
+      "prompt_sha": "6168e9b34c90"
     },
     {
       "file": "159_현동하/hyeon-dongha-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "0cfc997de64e"
+      "prompt_sha": "e07bac0c851c"
     },
     {
       "file": "159_현동하/hyeon-dongha-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "6a6dc0d6a206"
+      "prompt_sha": "eff892b61198"
     }
   ],
   "zeta_166_단이서": [
@@ -3356,19 +3356,19 @@
       "file": "166_단이서/dan-iseo-main.png",
       "label": "주인공 단이서",
       "prompt": "주인공",
-      "prompt_sha": "da6b3a90ada7"
+      "prompt_sha": "1150c358f13d"
     },
     {
       "file": "166_단이서/dan-iseo-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "f9fcf35eabae"
+      "prompt_sha": "7908103e3f66"
     },
     {
       "file": "166_단이서/dan-iseo-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "47b2f891e764"
+      "prompt_sha": "c6520d186cd4"
     }
   ],
   "zeta_167_신도담": [
@@ -3376,19 +3376,19 @@
       "file": "167_신도담/shin-dodam-main.png",
       "label": "주인공 신도담",
       "prompt": "주인공",
-      "prompt_sha": "9a02b253f37f"
+      "prompt_sha": "fae867519c89"
     },
     {
       "file": "167_신도담/shin-dodam-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "9ae2e9d3b53c"
+      "prompt_sha": "b30ccbe93b28"
     },
     {
       "file": "167_신도담/shin-dodam-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "b5aa3e917d27"
+      "prompt_sha": "7dfbc7160fd3"
     }
   ],
   "zeta_168_유정빈": [
@@ -3396,19 +3396,19 @@
       "file": "168_유정빈/yoo-jeongbin-main.png",
       "label": "주인공 유정빈",
       "prompt": "주인공",
-      "prompt_sha": "cf6be1fd36e6"
+      "prompt_sha": "b672322f1a89"
     },
     {
       "file": "168_유정빈/yoo-jeongbin-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "8f316fb1aa11"
+      "prompt_sha": "058ce71e4e1f"
     },
     {
       "file": "168_유정빈/yoo-jeongbin-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "4b641d7f7832"
+      "prompt_sha": "f95d5ab73bd8"
     }
   ]
 }
