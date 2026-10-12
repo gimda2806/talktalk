@@ -272,3 +272,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "설하랑_뒷면빈카드_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "설하랑_뒷면빈카드_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 감도건. 「닿기 직전」 바로 다음 순간. 두 가게 사이 화단 난간의 작은 화분 앞에서 두 사람이 입을 다문 짧고 가벼운 입맞춤을 나눈다. 어깨 위 갈색 페럿 모카. 의상은 일상복(사복). 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `설하랑_뒷면빈카드_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Seol Harang and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Seol Harang (RIGHT, based on image_1 <<<image_1>>>)】
+Late-20s Korean male, slim build about 181cm with straight shoulders, small narrow face with a long clean oval outline and sharply tapered lower face, clean angled jawline, high defined cheekbones, long narrow upturned feline eyes with crisp lifted outer corners and clean deep double eyelids, straight slightly arched brows with a confident tilt, a small dark mole just below the lower lip on the right side, narrow high straight nose, glossy dark brown-black hair with soft natural waves falling lightly over the forehead. Outfit: a dusty rose-pink cotton poplin shirt buttoned to the top under an unbuttoned cream cropped cotton jacket, a thin gold chain bracelet and a slim gold signet ring. One hand still pinches a small flower-language card tucked into a potted plant on the railing. Eyes closed. The tips of his ears are red, a proud teasing look softened into shy sincerity.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face, gently tapered clean jawline, moderately high smooth cheekbones, long clear almond eyes with soft double eyelid folds clearly different from Harang's long narrow upturned feline eyes, softly straight dark brows, narrow high straight nose, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: a light gray cardigan over a white tee and relaxed dark jeans. One hand resting lightly on Seol Harang's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A sleek brown ferret rests on Seol Harang's shoulder, calm and still. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Early autumn morning on the small flower-bed railing between two shops in an old alley. A small potted plant sits on the railing with a blank-backed flower-language card tucked in it (no legible text), and a chalkboard sign stands softly blurred behind.
+
+【LIGHTING · COLOR · STYLE】
+Soft clean cool early-morning daylight from the open alley as a gentle side key, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No mole on boyfriend. No more than one ferret. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
