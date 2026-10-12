@@ -328,3 +328,29 @@ Soft natural side-window daylight, gently sculpted shadows, restrained halation.
 【PROHIBITIONS】
 No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No double eyelids on Mo Duhyeon. No mole on boyfriend. No more than one dog. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
 ```
+
+#### 영상 (8초, 생성 완료)
+> 2026-10-12 Higgsfield Kling 3.0 표준(std)·9:16·8초·소리 끔으로 생성 완료(12크레딧). 시작 프레임 = 위 「생성 통과 버전」으로 만든 입맞춤 스틸. 시작 이미지가 이미 입맞춤이라 영상은 입맞춤 유지 → 살짝 떨어져 수줍게 웃음 → 강아지가 건드려 함께 웃음 순서로, 다가가는 움직임 없이 떨어지는 쪽으로만 움직인다. 결과 영상 `hf_20261012_091327_a18699ab-db1c-4b0d-9e8c-de810f4f052f.mp4`, 저장 이름 `모두현_빈훈련장오후_입맞춤_8초.mp4`.
+
+```text
+8-second vertical 9:16 cinematic photorealistic Korean-drama clip continuing from the start image. Keep both faces, hair, outfits, the dog and the training hall exactly as in the start image.
+
+【CHARACTERS】
+RIGHT: Mo Duhyeon, early-30s Korean man, narrow V-jaw face, upturned monolid eyes (no double eyelids), small mole below the left corner of the lower lip, short black hair swept up, khaki anorak, holding a small black clicker.
+LEFT: his boyfriend, late-20s Korean man, soft oval face, double-lidded almond eyes, no mole, short dark hair with a light side-swept fringe, heather-gray sweatshirt.
+Two fictional adult men in a loving relationship; a brief, mutual, non-explicit moment of affection, both fully clothed in everyday casual clothes.
+
+【ACTION · TIMELINE】
+0–2s: the gentle closed-mouth kiss from the start image holds, very still.
+2–5s: they slowly part a few centimeters, foreheads almost touching, eyes opening; Mo Duhyeon looks down shyly, the tips of his ears red, a small reluctant smile.
+5–8s: the cream-colored dog at their feet nudges the boyfriend's leg; both glance down and laugh softly, the boyfriend's hand still resting lightly on Mo Duhyeon's forearm.
+
+【CAMERA】
+Locked-off side-profile two-shot at chest height with a very slow push-in; shallow depth of field.
+
+【LIGHT · STYLE】
+Soft afternoon daylight from tall side windows, low saturation, low-to-mid contrast Korean-drama grade, cool porcelain skin with real texture, subtle film grain.
+
+【PROHIBITIONS】
+No text, captions, watermarks or UI. No face swapping, morphing or merging. No extra people or second dog. No open-mouth kiss, no visible tongue, no longer or more intense kissing. No suggestive pose, no removed or unbuttoned clothing. No sudden cuts. No dialogue.
+```
