@@ -278,6 +278,31 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 ```
 
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 최이솔. 「닿기 직전」 바로 다음 순간. 에필로그 직후, 마지막 영업을 마친 밤 반쯤 불을 끈 주방에서 재하와 {{user}}가 닿기 직전의 찰나를 지나 짧고 가벼운 입맞춤을 나누는 장면. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `염재하_마지막영업밤_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Yeom Jaeha and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Yeom Jaeha (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, tall straight-shouldered build ~181 cm, small compact face with high slightly wide cheekbones tapering to a neat narrow chin, long wide-set almond eyes with a slightly lengthened outer tail and a clear double eyelid, thick softly straight dark brows, one small dark mole on the right cheekbone just below the outer corner of the eye, narrow high straight nose bridge, short dark brown-black hair swept back, a thin pale old burn scar on the back of the left hand. Outfit: cream fisherman crewneck knit sweater, olive straight cotton trousers, brown leather loafers, olive cotton bandana knotted at the neck. One hand holding a kitchen towel folded into a neat square. Eyes closed. A reserved face softened at last.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face, gently tapered jawline, long clear almond eyes with a soft double eyelid (clearly distinguishable from Yeom Jaeha's wide-set eyes), softly straight dark brows, narrow high straight nose, naturally full lips, NO mole anywhere, short neat dark brown-black hair with a light side-swept fringe. Outfit: oatmeal knit cardigan over a plain white tee, plain trousers. One hand resting lightly on Yeom Jaeha's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Small restaurant kitchen late at night after the last service, lights half off. Two plates side by side on the steel counter with a small silver tasting spoon and a single key beside them, a checklist board on the wall (no legible text). A single warm pendant light over the pass.
+
+【LIGHTING · COLOR · STYLE】
+Low warm pendant light from above with a cool pale fill bounced off the steel counter, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
+
 ## 사람이 고친 곳
 
 뷰어에서 사람이 직접 고친 칸. 여기 적힌 칸은 모든 규칙보다 우선하며, 정독·일괄 치환·재설계 때 되돌리지 않는다.
