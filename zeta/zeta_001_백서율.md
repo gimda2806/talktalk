@@ -296,6 +296,31 @@ The image contains no text at all: no caption, no name, no date, no title card, 
 Output file name: when you save or deliver this image, name the file "백서율_붉은등아래보리차_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "백서율_붉은등아래보리차_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
 
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 강지안. 에필로그 직후, 「닿기 직전」 바로 다음 순간. 암실의 붉은 안전등 아래에서 서율이 서툴게 몸을 기울여 짧고 가벼운 입맞춤을 나누는 장면(입을 다문 채, 눈을 감고, 코가 서로 비껴 나게). 두 사람 모두 성인 가상 인물이고 서로 동의한 비노골적인 애정 표현, 둘 다 사복 차림(서율 회색 반팔 캠프칼라 셔츠 — 닿기 직전 칸의 작업 앞치마 대신 사복 파일 문장 사용, 유저 연회색 반팔 니트). 거북이 필름은 발치. 이미지 1 = 001_baek-seoyul-character-sheet-2k-v*.png, 이미지 2 = 001_baek-seoyul-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 baek-seoyul-main.png / baek-seoyul-user-m.png). 도구의 <<<image_1>>>·<<<image_2>>> 자리에 닿기 직전 칸과 같은 시트를 넣는다. 파일명 `백서율_붉은등아래보리차_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Baek Seoyul and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Baek Seoyul (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, tall broad-shouldered build about 184cm, narrow angular face with a sharp tapered jawline and pointed chin with a thin pale old scar along the underside of the chin, high sharp cheekbones, long narrow monolid eyes with an upward outer tilt (absolutely NO double eyelids), straight dark stern brows, narrow high straight nose, slightly messy black hair swept back with a few loose strands at the temple. Outfit: a charcoal-gray cotton camp-collar short-sleeve shirt worn open over a plain off-white crewneck tee, dark olive chino trousers. One big hand with faint brownish developer stains resting on the edge of the worktable beside two cups of barley tea. Eyes closed. The tips of his ears flushed, a rarely softened stern face.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face, gently tapered jaw, long clear almond eyes with a soft double eyelid fold (clearly different from Baek Seoyul's narrow monolid eyes), softly straight dark brows, narrow high straight nose, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: a plain light-gray short-sleeve knit top and dark trousers. One hand resting lightly on Baek Seoyul's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. An old tortoise crawls slowly across the floor near their feet in the lower edge of the frame. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+The small darkroom of the Slow Light photo studio on an early summer evening. A developer tray and a line of drying prints (no legible text) hang softly blurred behind them, and two cups of barley tea sit side by side on the worktable in the foreground.
+
+【LIGHTING · COLOR · STYLE】
+Dim red darkroom safelight from the upper side as a clean low key with a soft neutral fill on both faces, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No double eyelids on Baek Seoyul. No mole on boyfriend. No more than one tortoise. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
+
 ## 사람이 고친 곳
 
 뷰어에서 사람이 직접 고친 칸. 여기 적힌 칸은 모든 규칙보다 우선하며, 정독·일괄 치환·재설계 때 되돌리지 않는다.
