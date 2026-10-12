@@ -278,3 +278,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "경휘담_서랍속시안_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "경휘담_서랍속시안_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 안서온. 「닿기 직전」 바로 다음 순간. 불이 반쯤 꺼진 늦은 밤 사무실에서 서랍 속 시안을 나란히 펼쳐 둔 책상 앞에서 두 사람이 입을 다문 짧고 가벼운 입맞춤을 나눈다. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `경휘담_서랍속시안_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Gyeong Hwidam and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Gyeong Hwidam (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, tall slim build ~183 cm with broad straight shoulders and long fingers, small narrow oval face, sharply tapered jaw with a defined chin, high defined cheekbones, long narrow upward-tilted monolid eyes (absolutely NO double eyelids), straight dark brows with a thin pale scar cutting through the tail of the right eyebrow, narrow high straight nose, dark ash-brown hair in a neat side part with a few loose strands at the brow. Outfit: crisp white shirt with sleeves rolled to the forearms, charcoal knit vest, slim dark tie loosened slightly at the collar. A smear of red ink along the side of the hand resting on the edge of the desk. Eyes closed. Tips of his ears flushed red.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Early-30s Korean male, small soft oval face, gently tapered clean jaw, long clear almond eyes with soft double eyelid folds (clearly distinguishable from Gyeong Hwidam's monolids — visibly different eye shape), softly straight dark brows, narrow high straight nose with delicate tip, softly full lips, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: plain navy blazer, no logo, no lettering. One hand resting lightly on Gyeong Hwidam's rolled sleeve. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Late night in a half-dark advertising agency office, only the lamp over one desk lit. An open desk drawer with a first-week copy proof on top and a new proof laid beside it without a single red line (no legible text on any paper), and a red pen on the desk. Dark office windows softly blurred behind.
+
+【LIGHTING · COLOR · STYLE】
+A single warm desk lamp as soft clean side light from screen-right with cool fill from the dark office windows, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No double eyelids on Gyeong Hwidam. No legible text on the proofs. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
