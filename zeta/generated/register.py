@@ -12,6 +12,10 @@
 지문이 달라지고, 뷰어 갤러리와 --check 가 '프롬프트가 바뀜'이라고 알려 준다. 이미지를 다시 만들어
 등록하면 지문이 새로 적힌다.
 
+이미지는 zeta/generated/번호_이름/ (예: 001_백서율/) 한 곳에만 둔다. 루트(zeta/generated/)에 새로 넣은 파일은 등록하면서
+해당 작품의 번호_이름 폴더로 자동 이동하고, manifest에는 '번호_이름/파일명'으로 적는다. 이미 어떤 번호_이름 폴더에
+있는 파일(예: 다른 쪽 캐릭터 폴더에 둔 카메오)은 옮기지 않고 그 경로로 등록한다. 파일명은 저장소 전체에서 겹치지 않아야 한다.
+
 카메오: 연작의 두 캐릭터가 한 장면에 나오는 이미지. 프롬프트는 작품 파일이 아니라 zeta/zeta-series.md 의
 '### … — 이름 × 이름' 제목 아래 첫 ```text 블록(긴 버전)에서 찾는다. 네 번째 인자로 상대 캐릭터 이름을 주면
 그 짝의 장면을 고른다. 같은 파일을 두 캐릭터 작품에 각각 등록하면 양쪽 갤러리에 모두 뜬다.
@@ -26,6 +30,8 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 ZETA_DIR = ROOT / "zeta"
 SERIES = ZETA_DIR / "zeta-series.md"
 MANIFEST = Path(__file__).resolve().parent / "manifest.json"
+GENERATED_DIR = Path(__file__).resolve().parent
+PLOTS_DIR = GENERATED_DIR  # 번호_이름 폴더가 generated 바로 아래에 있다
 KINDS = {
     "주인공": r"^### 주인공 프로필용\n+```text\n(.*?)```",
     "남성용": r"^(?:#{3,4} 남성용|### 유저 대화 프로필용 \(남성용\))\n+```text\n(.*?)```",
@@ -42,6 +48,36 @@ def _sha(text):
 
 def work_name(stem):
     return re.sub(r"^zeta_\d+_", "", stem)
+
+
+def source_path(file):
+    """generated 폴더 안의 상대 경로만 받는다. 파일명만 주면 루트에서, 없으면 번호_이름 폴더 안에서 (하나뿐일 때) 찾는다."""
+    relative = Path(file)
+    if relative.is_absolute() or ".." in relative.parts:
+        raise ValueError("generated 폴더 안의 상대 경로만 사용할 수 있습니다")
+    path = GENERATED_DIR / relative
+    if not path.is_file() and len(relative.parts) == 1:
+        found = [p for p in GENERATED_DIR.glob(f"*/{relative.name}") if p.parent.name[:3].isdigit()]
+        if len(found) == 1:
+            return found[0]
+    return path
+
+
+def organize_file(stem, file):
+    """등록 이미지를 해당 플롯 폴더로 옮기고 manifest용 상대 경로를 돌려준다."""
+    source = source_path(file)
+    if not source.is_file():
+        raise FileNotFoundError(file)
+    match = re.match(r"^zeta_(\d+)_", stem)
+    if not match:
+        raise ValueError(f"플롯 번호를 찾을 수 없습니다: {stem}")
+    if source.parent != GENERATED_DIR:  # 이미 어떤 번호_이름 폴더에 있으면 그대로 둔다
+        return source.relative_to(GENERATED_DIR).as_posix()
+    destination = PLOTS_DIR / f"{match.group(1)}_{work_name(stem)}" / source.name
+    if source != destination:
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        source.replace(destination)  # 다시 만든 이미지는 같은 이름의 기존 파일을 덮어쓴다
+    return destination.relative_to(GENERATED_DIR).as_posix()
 
 
 def cameo_block(name, partner=None):
@@ -117,7 +153,12 @@ def main(argv):
         return 2
     stem, kind, file = argv[:3]
     partner = argv[3] if len(argv) == 4 else None
-    if not (Path(__file__).resolve().parent / file).is_file():
+    try:
+        exists = source_path(file).is_file()
+    except ValueError as error:
+        print(error)
+        return 2
+    if not exists:
         print(f"파일이 없음: zeta/generated/{file}")
         return 2
     name = work_name(stem)
@@ -129,7 +170,7 @@ def main(argv):
         title, other, prompt = found
         sha = _sha(prompt)
         item = dict(file=file, label=f"카메오 · {title}", prompt=kind, prompt_sha=sha, **{"with": other})
-        items = [i for i in rows.get(stem, []) if i.get("file") != file]  # 같은 파일만 바꾸고 다른 카메오는 둔다
+        items = [i for i in rows.get(stem, []) if Path(i.get("file", "")).name != Path(file).name]  # 같은 파일만 바꾸고 다른 카메오는 둔다
     else:
         sha = prompt_sha(stem, kind)
         if not sha:
@@ -142,6 +183,12 @@ def main(argv):
             label = f"주인공 {name}" if kind == "주인공" else ("유저 프로필 · 남성" if kind == "남성용" else "유저 프로필 · 여성")
         item = dict(file=file, label=label, prompt=kind, prompt_sha=sha)
         items = [i for i in rows.get(stem, []) if guess_kind(i) != kind]
+    try:
+        file = organize_file(stem, file)
+    except (ValueError, FileNotFoundError, FileExistsError) as error:
+        print(f"파일 정리 실패: {error}")
+        return 2
+    item["file"] = file
     items.append(item)
     order = list(KINDS)
     rows[stem] = sorted(items, key=lambda i: order.index(guess_kind(i)))
