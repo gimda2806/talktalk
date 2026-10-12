@@ -262,7 +262,7 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 ## 10. 장면 스틸
 
 ### 닿기 직전 (유저 남성)
-> 에필로그 직후. 새 차 인수를 마친 토요일 오후, 삼거리 카센터 앞에서 날짜를 적지 않은 점검 스티커를 앞유리에 붙인 직후. 여름과 단골 차주가 몸을 기울여 얼굴이 몇 센티미터 거리까지 가까워진 순간. 이미지 1 = 046_oh-yeoreum-character-sheet-2k-v*.png, 이미지 2 = 046_oh-yeoreum-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 oh-yeoreum-main.png / oh-yeoreum-user-m.png). 세로 9:16, 하단 글씨 없이 파일명에 이름·생성일시. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+> 유저(남) 이름: 서도형. 에필로그 직후. 새 차 인수를 마친 토요일 오후, 삼거리 카센터 앞에서 날짜를 적지 않은 점검 스티커를 앞유리에 붙인 직후. 여름과 단골 차주가 몸을 기울여 얼굴이 몇 센티미터 거리까지 가까워진 순간. 이미지 1 = 046_oh-yeoreum-character-sheet-2k-v*.png, 이미지 2 = 046_oh-yeoreum-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 oh-yeoreum-main.png / oh-yeoreum-user-m.png). 세로 9:16, 하단 글씨 없이 파일명에 이름·생성일시. 작업용 참고 이미지(공개 칸에 쓰지 않음).
 
 #### 긴 버전
 ```text
