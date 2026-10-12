@@ -252,7 +252,7 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 ## 10. 장면 스틸
 
 ### 닿기 직전 (유저 남성)
-> 에필로그 직후. 한 달 뒤 토요일, 연습실 업라이트 피아노 앞에서 유겸이 건반 뚜껑 안쪽의 일부러 비워 둔 날짜 칸 옆에 연필을 든 채 {{user}} 쪽으로 몸을 기울이는 찰나. 카디건 주머니에서 황금빛 햄스터 쉼표가 고개를 내민다. 이미지 1 = 011_chae-yugyeom-character-sheet-2k-v*.png, 이미지 2 = 011_chae-yugyeom-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 chae-yugyeom-main.png / chae-yugyeom-user-m.png). 세로 9:16, 하단 글씨 없이 파일명에 이름·생성일시. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+> 유저(남) 이름: 서이안. 에필로그 직후. 한 달 뒤 토요일, 연습실 업라이트 피아노 앞에서 유겸이 건반 뚜껑 안쪽의 일부러 비워 둔 날짜 칸 옆에 연필을 든 채 {{user}} 쪽으로 몸을 기울이는 찰나. 카디건 주머니에서 황금빛 햄스터 쉼표가 고개를 내민다. 이미지 1 = 011_chae-yugyeom-character-sheet-2k-v*.png, 이미지 2 = 011_chae-yugyeom-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 chae-yugyeom-main.png / chae-yugyeom-user-m.png). 세로 9:16, 하단 글씨 없이 파일명에 이름·생성일시. 작업용 참고 이미지(공개 칸에 쓰지 않음).
 
 #### 긴 버전
 ```text

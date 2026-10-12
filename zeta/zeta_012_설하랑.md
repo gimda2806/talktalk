@@ -253,7 +253,7 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 ## 10. 장면 스틸
 
 ### 닿기 직전 (유저 남성)
-> 에필로그 직후. 며칠 뒤 이른 아침, 두 가게 사이 화단 난간의 작은 화분 앞에서 하랑이 뒷면 빈 꽃말 카드를 꽂아 두고 {{user}} 쪽으로 몸을 기울이는 찰나. 어깨 위에 갈색 페럿 모카. 이미지 1 = 012_seol-harang-character-sheet-2k-v*.png, 이미지 2 = 012_seol-harang-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 seol-harang-main.png / seol-harang-user-m.png). 세로 9:16, 하단 글씨 없이 파일명에 이름·생성일시. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+> 유저(남) 이름: 강지호. 에필로그 직후. 며칠 뒤 이른 아침, 두 가게 사이 화단 난간의 작은 화분 앞에서 하랑이 뒷면 빈 꽃말 카드를 꽂아 두고 {{user}} 쪽으로 몸을 기울이는 찰나. 어깨 위에 갈색 페럿 모카. 이미지 1 = 012_seol-harang-character-sheet-2k-v*.png, 이미지 2 = 012_seol-harang-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 seol-harang-main.png / seol-harang-user-m.png). 세로 9:16, 하단 글씨 없이 파일명에 이름·생성일시. 작업용 참고 이미지(공개 칸에 쓰지 않음).
 
 #### 긴 버전
 ```text

@@ -249,7 +249,7 @@ The very bottom edge of the image carries a clean cinematic character-identifica
 ## 10. 장면 스틸
 
 ### 닿기 직전 (유저 남성)
-> 에필로그 직후. 장마가 끝난 아침, 느티세탁소 카운터 앞에서 세건이 '보관 1번' 자리를 비운 새 접수 택을 쥔 채 {{user}} 쪽으로 몸을 기울이는 찰나. 어깨 위에 크림색 문조 두부. 이미지 1 = 010_pyo-segeon-character-sheet-2k-v*.png, 이미지 2 = 010_pyo-segeon-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 pyo-segeon-main.png / pyo-segeon-user-m.png). 세로 9:16, 하단 글씨 없이 파일명에 이름·생성일시. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+> 유저(남) 이름: 한도윤. 에필로그 직후. 장마가 끝난 아침, 느티세탁소 카운터 앞에서 세건이 '보관 1번' 자리를 비운 새 접수 택을 쥔 채 {{user}} 쪽으로 몸을 기울이는 찰나. 어깨 위에 크림색 문조 두부. 이미지 1 = 010_pyo-segeon-character-sheet-2k-v*.png, 이미지 2 = 010_pyo-segeon-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 pyo-segeon-main.png / pyo-segeon-user-m.png). 세로 9:16, 하단 글씨 없이 파일명에 이름·생성일시. 작업용 참고 이미지(공개 칸에 쓰지 않음).
 
 #### 긴 버전
 ```text
