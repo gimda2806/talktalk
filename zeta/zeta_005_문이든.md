@@ -294,3 +294,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "문이든_삼번자리의아침_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "문이든_삼번자리의아침_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 유하람. 「닿기 직전」 바로 다음 순간. 유월 첫 주 일요일 아침 오픈 전 카페 달그락 창가 끝 '삼번 자리', 라떼 두 잔과 접힌 계약서를 두고 이든과 유저가 짧고 가벼운 입맞춤을 나눈다. 닿기 직전 칸과 같은 장소·시간이며, 의상은 일상 사복(zeta-casual-wardrobe 기준)으로 맞췄다. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `문이든_삼번자리의아침_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Moon Ideun and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Moon Ideun (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, tall build about 185cm with wide shoulders, soft V-shaped face with a rounded jawline, rounded droopy puppy eyes with a downward outer tilt behind hooded inner double eyelids, slightly arched dark brows, a short pale scar cutting through the tail of the left eyebrow, narrow high straight nose bridge, tousled light-brown hair that looks slept-on. Outfit: an oversized faded terracotta-brown heavyweight cotton short-sleeve tee, relaxed wide cream cotton trousers, a thin braided brown leather bracelet, no apron, no lettering or logos. One big hand rests on the edge of the table beside two lattes. Eyes closed. His cheeks are faintly flushed, shy and warm.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face with a gently tapered jaw, long almond eyes with a level outer corner and a soft double eyelid fold, clearly different from the other man's droopy puppy eyes, softly straight dark brows, narrow high nose bridge with a delicate tip, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: a plain light-beige cotton jacket over a white t-shirt and dark trousers, no logo, no lettering. One hand resting lightly on Moon Ideun's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Inside a small cafe on the first Sunday morning of June before opening. At the window-end corner table sit two cups of latte side by side and a folded contract sheet (no legible text), with a small table placard (no legible text). A gooseneck kettle stands on the softly blurred counter behind them. Low clean morning sunlight pours through the corner window onto the wooden floor.
+
+【LIGHTING · COLOR · STYLE】
+Cinematic lighting, low clean morning sunlight from the corner window as a key with a soft neutral fill on both faces, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
