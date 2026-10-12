@@ -279,3 +279,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "임하준_베란다선인장_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "임하준_베란다선인장_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 한도윤. 에필로그 직후, 「닿기 직전」 바로 다음 순간. 팔월 일요일 오후 302호 베란다 창가에서 하준이 천천히 몸을 기울여 짧고 가벼운 입맞춤을 나누는 장면(입을 다문 채, 눈을 감고, 코가 서로 비껴 나게). 두 사람 모두 성인 가상 인물이고 서로 동의한 비노골적인 애정 표현, 둘 다 사복 차림(하준 세이지 그린 반팔 니트 폴로 — 닿기 직전 칸의 셔츠·카디건 대신 사복 파일 문장 사용, 유저 오트밀 니트). 선인장 화분은 창가. 이미지 1 = 003_im-hajun-character-sheet-2k-v*.png, 이미지 2 = 003_im-hajun-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 im-hajun-main.png / im-hajun-user-m.png). 도구의 <<<image_1>>>·<<<image_2>>> 자리에 닿기 직전 칸과 같은 시트를 넣는다. 파일명 `임하준_베란다선인장_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Im Hajun and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Im Hajun (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, slim build about 178cm with narrow straight shoulders, small soft face with a gently tapered jaw and softly rounded chin, long clean monolid eyes that curve into crescents (absolutely NO double eyelids), thin silver-rimmed glasses, softly arched dark brows, narrow high straight nose, dark brown medium-length hair parted down the middle and tucked behind the ears. Outfit: a soft sage-green short-sleeve knit polo, light stone-beige cotton trousers. One hand resting on the rim of the cactus pot on the sill, a faint dusting of white powder on his sleeve. Eyes closed. The tips of his ears flushed, a face that smiles first even now.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face, gently tapered jaw, long clear almond eyes with a soft double eyelid fold (clearly different from Im Hajun's crescent monolid eyes behind glasses), no glasses, softly straight dark brows, narrow high straight nose, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: a plain oatmeal short-sleeve knit top and dark trousers. One hand resting lightly on Im Hajun's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A slightly tilted potted cactus freshly set on the sill beside them. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+A Sunday afternoon in August on the veranda of unit 302 of the Owol Villa row house. Long warm sunlight slants in through the window, and a game score notebook (no legible text) lies open on the table behind them, softly blurred.
+
+【LIGHTING · COLOR · STYLE】
+Clean soft afternoon sunlight slanting in through the veranda window, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No double eyelids on Im Hajun. No mole on boyfriend. No more than one cactus. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
