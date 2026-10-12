@@ -271,3 +271,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "독고다온_열세번째조항_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "독고다온_열세번째조항_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 임건호. 에필로그 직후, 「닿기 직전」 바로 다음 순간. 계약 갱신 다음 날 아침 냉장고 협정서 앞에서 다온이 쭈뼛쭈뼛 몸을 기울여 짧고 가벼운 입맞춤을 나누는 장면(입을 다문 채, 눈을 감고, 코가 서로 비껴 나게). 두 사람 모두 성인 가상 인물이고 서로 동의한 비노골적인 애정 표현, 둘 다 사복 차림(다온 카키 코치 재킷, 유저 회색 후드티). 토끼 콩떡은 발치. 닿기 직전 칸의 앞치마는 일상복 규칙에 맞춰 사복으로 바꿈. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다): 이미지 1 = 009_dokgo-daon-character-sheet-2k-v*.png, 이미지 2 = 009_dokgo-daon-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 dokgo-daon-main.png / dokgo-daon-user-m.png). 파일명 `독고다온_열세번째조항_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Dokgo Daon and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Dokgo Daon (RIGHT, based on image_1 <<<image_1>>>)】
+Late-20s Korean male, 183cm lean athletic build with broad relaxed shoulders, settled adult oval face with a rounded chin, wide round eyes with deep naturally defined double eyelids, a light scatter of faint freckles across the nose bridge and upper cheeks, straight medium-thick brows, straight medium nose, full lips with a naturally upturned corner, short soft-wavy hazelnut-brown hair with a few strands falling over the forehead. Outfit: an unzipped olive-khaki nylon coach jacket over a cream heavyweight cotton hoodie, black cargo pants, a matte black digital watch. One hand is half-hidden in his jacket pocket holding a folded sticky note, and a small healed oven burn is visible on the back of his right hand. Eyes closed. His mischievous half-smile softens into shy sincerity.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face with a gently tapered jawline, long clear almond eyes with a soft double eyelid fold (long almond, clearly different from the other man's wide round eyes), softly straight dark brows, narrow high straight nose, NO freckles and NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: a light gray hooded sweatshirt and relaxed dark jeans, no logo, no lettering. One hand resting lightly on Dokgo Daon's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A small white rabbit sits on the floor near their feet. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+A small two-room villa kitchen on the morning after the lease renewal, with soft daylight from the window. The refrigerator door is covered with many layered yellow sticky notes of the refrigerator agreement (no legible text). A golden scored loaf of bread sits on the dining table.
+
+【LIGHTING · COLOR · STYLE】
+Soft clean morning daylight from the kitchen window as a gentle side key, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No freckles or mole on boyfriend. No more than one rabbit. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
