@@ -285,6 +285,31 @@ The image contains no text at all: no caption, no name, no date, no title card, 
 Output file name: when you save or deliver this image, name the file "윤태오_물안경두짝_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "윤태오_물안경두짝_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
 
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 오시후. 에필로그 직후, 「닿기 직전」 바로 다음 순간. 이른 아침 수영장 분실물함 앞에서 태오가 몸을 기울여 짧고 가벼운 입맞춤을 나누는 장면(입을 다문 채, 눈을 감고, 코가 서로 비껴 나게). 두 사람 모두 성인 가상 인물이고 서로 동의한 비노골적인 애정 표현, 둘 다 사복 차림(태오 샌드 베이지 바람막이와 흰 헨리넥 — 닿기 직전 칸의 트랙 재킷·수영복 대신 사복 파일 문장 사용, 유저 흰 긴팔 티에 하늘색 바람막이). 노란 오리 튜브는 배경. 이미지 1 = 002_yoon-taeo-character-sheet-2k-v*.png, 이미지 2 = 002_yoon-taeo-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 yoon-taeo-main.png / yoon-taeo-user-m.png). 도구의 <<<image_1>>>·<<<image_2>>> 자리에 닿기 직전 칸과 같은 시트를 넣는다. 파일명 `윤태오_물안경두짝_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Yoon Taeo and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Yoon Taeo (RIGHT, based on image_1 <<<image_1>>>)】
+Late-20s Korean male, tall athletic build about 186cm with broad shoulders, compact face with a clean athletic jawline and high cheekbones, bright long eyes with a gentle downward outer tilt and deep natural double eyelids, a small dark mole just above the right eyebrow, faint pale goggle marks around the eye sockets, long straight dark brows, narrow high straight nose, tanned skin, short brown hair. Outfit: an unzipped sand-beige nylon windbreaker over a white long-sleeve waffle henley, light-wash blue jeans. One hand holds an old silver whistle lightly at his chest. Eyes closed. The tips of his ears flushed, a bright grin turned shy and tender.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face, gently tapered jaw, level-cornered softly rounded almond eyes with a soft double eyelid fold and calm brows (clearly different from Yoon Taeo's downward-tilted bright eyes), narrow high straight nose, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: a plain white long-sleeve tee under an open light-blue windbreaker, dark trousers. One hand resting lightly on Yoon Taeo's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A yellow rubber duck float drifts in the softly blurred background. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Early morning at the Haeoreum municipal swimming pool, on the dry poolside tiles in front of the lost-and-found shelf. Two blue swim goggles (one old and faded, one brand new) sit side by side on the shelf (no legible text), and the quiet water and lane ropes glow softly behind them.
+
+【LIGHTING · COLOR · STYLE】
+Soft pale morning daylight through tall pool windows as clean even side light, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No mole on boyfriend. No more than one rubber duck float. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
+
 ## 사람이 고친 곳
 
 뷰어에서 사람이 직접 고친 칸. 여기 적힌 칸은 모든 규칙보다 우선하며, 정독·일괄 치환·재설계 때 되돌리지 않는다.
