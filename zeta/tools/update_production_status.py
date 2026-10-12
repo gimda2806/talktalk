@@ -7,7 +7,7 @@
 - 플롯: zeta/zeta_NNN_이름.md
 - 프로필 이미지: zeta/generated/manifest.json + 인물별 폴더(번호_이름/)의 실제 파일
 - 3면도·사복 시트·닿기 직전 스틸 이미지·영상용 스틸컷 이미지: git에 올리지 않는 로컬 폴더
-  (~/Documents/ChatGPT/이미지 프로필 제작/generated/닿기_직전_스틸/번호_이름/)의 파일 이름
+  (~/Documents/ChatGPT/이미지 프로필 제작/generated/번호_이름/)의 파일 이름
 - 닿기 직전 스틸 프롬프트: 플롯 파일의 '### 닿기 직전' 절
 - 영상용 스틸컷 프롬프트: zeta/stillcut/NNN_이름_스틸컷.md
 
@@ -22,7 +22,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
-LOCAL = Path.home() / "Documents/ChatGPT/이미지 프로필 제작/generated/닿기_직전_스틸"
+LOCAL = Path.home() / "Documents/ChatGPT/이미지 프로필 제작/generated"
 OUT = ROOT / "zeta/zeta-production-status.md"
 
 
@@ -113,7 +113,7 @@ def render(rows):
     a("")
     a(f"- 기준 시각: {now} (KST) · 플롯 {total}편 (`zeta/zeta_NNN_이름.md`)")
     a("- 읽는 법: ● 있음 · ○ 없음. 프로필·3면도 칸의 세 글자는 순서대로 **주인공 · 유저 남성 · 유저 여성**.")
-    a("- 근거: 프로필 이미지는 `zeta/generated/manifest.json`(등록분) + 인물별 폴더의 실제 파일. 3면도·사복 시트·스틸 이미지는 git에 올리지 않는 로컬 폴더 `이미지 프로필 제작/generated/닿기_직전_스틸/번호_이름/`의 파일 이름으로 판정했습니다(구글 드라이브 업로드 여부는 반영하지 않음).")
+    a("- 근거: 프로필 이미지는 `zeta/generated/manifest.json`(등록분) + 인물별 폴더의 실제 파일. 3면도·사복 시트·스틸 이미지는 git에 올리지 않는 로컬 폴더 `이미지 프로필 제작/generated/번호_이름/`의 파일 이름으로 판정했습니다(구글 드라이브 업로드 여부는 반영하지 않음).")
     a("- 3면도: `…-character-sheet-2k-vN.png`(v2·variant 포함, `reference-copy` 제외)가 주인공·유저 남·유저 여 각각 있으면 ●. 사복 시트(`casual-봄·여름·가을·겨울`)는 3종×4계절=12장 중 몇 장이 있는지.")
     a("- 닿기 직전 스틸 프롬프트: 플롯 파일에 `### 닿기 직전` 절이 있으면 ●. 스틸 이미지는 `…_닿기직전_….png` 파일 수(다시 만든 v2도 각각 셈).")
     a("- 영상용 스틸컷: `zeta/stillcut/NNN_이름_스틸컷.md`(컷 프롬프트)와 `NNN_C01_….png`(컷 이미지).")
@@ -154,7 +154,7 @@ def render(rows):
     a("")
     a("## 참고")
     a("")
-    a(f"- 인물별 폴더에는 `001_baek-seoyul-main.png`(번호 붙음)와 `baek-seoyul-main.png`(번호 없음)처럼 같은 프로필 이미지가 두 이름으로 함께 있는 경우가 {duplicate_pairs()}쌍 있습니다. 저장소(`zeta/generated/번호_이름/`)에는 번호 없는 원래 이름만 올라가 있습니다.")
+    a("- 로컬 폴더는 `generated/번호_이름/` 하나로 통일했고(드라이브와 같은 구조), 파일 이름 앞에 번호를 붙입니다(`001_baek-seoyul-main.png`). 저장소(`zeta/generated/번호_이름/`)에는 번호 없는 원래 이름(`baek-seoyul-main.png`)만 올라갑니다.")
     a("- 이 표는 파일 이름으로 만든 스냅샷입니다. 상태가 바뀌면 `python3 zeta/tools/update_production_status.py`로 다시 만들어 같은 커밋에 올립니다.")
     return "\n".join(L) + "\n"
 
