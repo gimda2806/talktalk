@@ -284,3 +284,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "석한결_군고구마두개_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "석한결_군고구마두개_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 서이준. 「닿기 직전」 바로 다음 순간. 이듬해 봄 오후 말랭이역 대합실 난로 곁, 군고구마 두 개가 익는 가운데 한결과 유저가 짧고 가벼운 입맞춤을 나눈다. 닿기 직전 칸과 같은 장소·시간이며, 의상은 일상 사복(zeta-casual-wardrobe 기준)으로 맞췄다. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `석한결_군고구마두개_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Seok Hangyeol and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Seok Hangyeol (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, tall slim build about 183cm with an upright posture, refined oval face with a clean tapered jawline and high smooth cheekbones, calm clear eyes behind thin silver-rimmed glasses with deep double eyelids, neat straight level dark brows, narrow high straight nose bridge, a single dimple on the left cheek, neatly combed-back black hair. Outfit: a crisp pale butter-yellow short-sleeve linen shirt with a neat open collar, straight light gray wool trousers, an antique silver pocket watch on a short chain clipped to the belt loop, no uniform, no lettering. His closed pocket watch rests in his left hand at his side. Eyes closed. The tips of his ears are flushed, courteous composure finally loosened.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face with a gently tapered jaw, long almond eyes with a level outer corner and a soft double eyelid fold, softly straight dark brows, narrow high nose bridge with a delicate tip, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe, bare uncovered eyes. Outfit: a loose cream knit sweater and dark trousers, no logo, no lettering. One hand resting lightly on Seok Hangyeol's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. Two roasted sweet potatoes sit side by side on a small iron stove behind them. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Inside the tiny waiting room of a quiet rural train station on a late spring afternoon. A small iron stove with two roasted sweet potatoes, a worn wooden bench and a stamp notebook on the counter (no legible text) in the softly blurred background. Soft clean daylight comes through the window glass.
+
+【LIGHTING · COLOR · STYLE】
+Cinematic lighting, soft pale daylight from the waiting-room window as a clean key with a faint warm glow from the stove as gentle fill on both faces, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No second pair of glasses. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
