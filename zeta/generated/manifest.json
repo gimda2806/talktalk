@@ -3410,5 +3410,125 @@
       "prompt": "여성용",
       "prompt_sha": "f95d5ab73bd8"
     }
+  ],
+  "zeta_160_우지후": [
+    {
+      "file": "160_우지후/woo-jihoo-main.png",
+      "label": "주인공 우지후",
+      "prompt": "주인공",
+      "prompt_sha": "2f4e4f523e78"
+    },
+    {
+      "file": "160_우지후/woo-jihoo-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "c11b3d54b473"
+    },
+    {
+      "file": "160_우지후/woo-jihoo-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "06a26e883276"
+    }
+  ],
+  "zeta_161_옹기준": [
+    {
+      "file": "161_옹기준/ong-gijun-main.png",
+      "label": "주인공 옹기준",
+      "prompt": "주인공",
+      "prompt_sha": "23d400dbc036"
+    },
+    {
+      "file": "161_옹기준/ong-gijun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "f08066a0767e"
+    },
+    {
+      "file": "161_옹기준/ong-gijun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "acda7612fcfa"
+    }
+  ],
+  "zeta_162_소산하": [
+    {
+      "file": "162_소산하/so-sanha-main.png",
+      "label": "주인공 소산하",
+      "prompt": "주인공",
+      "prompt_sha": "5516f1dae382"
+    },
+    {
+      "file": "162_소산하/so-sanha-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "a1cfbb3be9cf"
+    },
+    {
+      "file": "162_소산하/so-sanha-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "9c050103fa57"
+    }
+  ],
+  "zeta_163_갈구름": [
+    {
+      "file": "163_갈구름/gal-gureum-main.png",
+      "label": "주인공 갈구름",
+      "prompt": "주인공",
+      "prompt_sha": "4d3b1f8c4a31"
+    },
+    {
+      "file": "163_갈구름/gal-gureum-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "0c0117af66f6"
+    },
+    {
+      "file": "163_갈구름/gal-gureum-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "21f7e65d092a"
+    }
+  ],
+  "zeta_169_국우찬": [
+    {
+      "file": "169_국우찬/guk-uchan-main.png",
+      "label": "주인공 국우찬",
+      "prompt": "주인공",
+      "prompt_sha": "8d88c0a77de2"
+    },
+    {
+      "file": "169_국우찬/guk-uchan-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "603e35080f53"
+    },
+    {
+      "file": "169_국우찬/guk-uchan-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "1a7802bbb4f6"
+    }
+  ],
+  "zeta_170_어건휘": [
+    {
+      "file": "170_어건휘/eogun-hwi-main.png",
+      "label": "주인공 어건휘",
+      "prompt": "주인공",
+      "prompt_sha": "162946cfa4e7"
+    },
+    {
+      "file": "170_어건휘/eogun-hwi-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "3f595e8c72c6"
+    },
+    {
+      "file": "170_어건휘/eogun-hwi-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "0ac3b14909ed"
+    }
   ]
 }
