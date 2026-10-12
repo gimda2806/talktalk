@@ -8,7 +8,7 @@
 
 ## 참고 파일 (먼저 읽는다)
 
-- `zeta/zeta-image-prompt-rules.md` : 특히 6-1, 6-2, 6-3(MALE), 6-10, 6-16(장면 스틸) 절. 6-16의 0번(세로 9:16)과 7번(글씨 없음 + 파일명)을 반드시 따른다.
+- `zeta/zeta-image-prompt-rules.md` : 특히 6-1, 6-2, 6-3(MALE), 6-10, 6-16(장면 스틸) 절. 6-16의 0번(세로 9:16)과 7번(글씨 없음, 파일명은 설명 줄에만)을 반드시 따른다.
 - 대상 작품 파일 `zeta/zeta_NNN_이름.md` : `## 0. 기획 요약`, `## 5. 이미지 프롬프트`(주인공 프로필용, 유저 대화 프로필용 남성용 — 제목이 `남성용` 또는 `유저 대화 프로필용 (남성용)`, 제목 단계는 작품마다 `###`·`####`로 다를 수 있다), `## 6. 주요 이벤트`, `## 7. 에필로그`, 파일 끝 `## 사람이 고친 곳`.
 - 캐릭터 시트(3면도)는 구글 드라이브 `이미지 프로필 제작` 폴더에 있지만 열지 않는다. 아래 「캐릭터 시트 파일 이름」대로 이름만 적는다.
 
@@ -71,9 +71,8 @@
 8. **구도 (원문 그대로)**: `Composition: cinematic vertical side-profile two-shot at chest height, the two heads close together in the upper half of the tall frame with their hands and the nearest prop in the lower half, the two men facing each other in opposite directions, each head turned about 65 to 75 degrees from the camera in a near-profile view so both faces stay clearly readable (nose line, eye, cheekbone and jaw of each visible), not full profile and not frontal, both faces sharp, shallow depth of field with the background softly blurred.`
 9. **조명**: `Lighting: cinematic lighting, …` 그 장면의 시간대에 맞는 깨끗한 측광 한 문장 + `restrained halation, low saturation and low-to-mid contrast; skin must remain cool porcelain-white, never warm yellow.`
 10. **네거티브 (원문 + 필요한 것만 덧붙임)**: `Negative: no unintentional text, no watermark, no UI overlay, no merged or swapped faces, no same-face twins, no extra person, no plastic or wax-figure skin, no exaggerated expression, no extra limbs, no illustration or webtoon style, no lips touching, no open mouths, no faces pressed together or overlapping, no reference-sheet panels or labels, no caption or name text, no revealing, unbuttoned or partially removed clothing, no bare shoulders or chest, no bed or bedroom setting, no suggestive pose, no uniforms, work aprons or stage costumes.` (외꺼풀이면 `no double eyelids on …`, 동물이 있으면 `no second {동물}` 추가)
-11. **글씨 없음 + 파일명 (6-16 7번, 원문 그대로, 파일명만 채운다)**
+11. **글씨 없음 (6-16 7번, 원문 그대로)** — 이 문장으로 프롬프트가 끝난다. 파일명 문장(`Output file name: …`)은 넣지 않는다(따옴표 속 파일명이 그림 속 글씨로 찍힘). 파일명은 `>` 설명 줄에만 적는다.
     `The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.`
-    `Output file name: when you save or deliver this image, name the file "{이름}_{장면제목}_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "{이름}_{장면제목}_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.`
 
 1, 2, 11은 각각 줄을 바꿔 두고, 3~10은 한 줄로 이어 쓴다.
 
@@ -122,7 +121,7 @@ No text, captions, watermarks, or UI. No face swapping, face merging, or twin/id
 ## 10. 장면 스틸
 
 ### 닿기 직전 (유저 남성)
-> 유저(남) 이름: {유저 이름}. {장면 출처: 에필로그 / 이벤트 N} 직후. {한글 장면 설명 한두 문장}. 이미지 1 = {번호}_{영문 이름}-character-sheet-2k-v*.png, 이미지 2 = {번호}_{영문 이름}-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 {영문 이름}-main.png / {영문 이름}-user-m.png). 세로 9:16, 하단 글씨 없이 파일명에 이름·생성일시. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+> 유저(남) 이름: {유저 이름}. {장면 출처: 에필로그 / 이벤트 N} 직후. {한글 장면 설명 한두 문장}. 이미지 1 = {번호}_{영문 이름}-character-sheet-2k-v*.png, 이미지 2 = {번호}_{영문 이름}-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 {영문 이름}-main.png / {영문 이름}-user-m.png). 세로 9:16, 글씨 없음. 파일명 `{이름}_{장면제목}_닿기직전_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
 
 #### 긴 버전
 ```text
@@ -155,7 +154,7 @@ No text, captions, watermarks, or UI. No face swapping, face merging, or twin/id
 - [ ] 두 사람 의상이 모두 일상복이다(주인공은 사복 파일 문장, 유니폼·앞치마·명찰·무대 의상 없음). `young`으로 나이를 적지 않았다.
 - [ ] 유저 Face geometry가 그 작품 남성용과 같다.
 - [ ] 외꺼풀 주인공이면 6-1의 쌍꺼풀 구절이 지워졌다.
-- [ ] 마지막 두 줄이 글씨 없음 + 파일명 문장이고, 파일명에 띄어쓰기가 없다.
+- [ ] 마지막 줄이 글씨 없음 문장이고, 프롬프트 안에 `Output file name`·파일명·따옴표로 묶인 글자가 없다. 파일명은 `>` 설명 줄에만 있고 띄어쓰기가 없다.
 - [ ] `>` 설명 줄이 `유저(남) 이름: {유저 이름}.`으로 시작하고, 표에 있는 작품이면 표의 이름과 같다.
 - [ ] `>` 설명 줄에 드라이브에서 넣을 시트 파일 이름 두 개가 적혀 있다.
 - [ ] 짧은 버전은 헤더만 다르고 나머지가 긴 버전과 같다.
