@@ -275,3 +275,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "연주원_저녁탕전실_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "연주원_저녁탕전실_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 하은찬. 「닿기 직전」 바로 다음 순간. 에필로그 장면(문 닫은 한의원 탕전실, 김이 가라앉는 저녁)에서 두 사람이 입을 다문 짧은 입맞춤을 나누는 순간. 감초는 주원의 재킷 주머니에서 얼굴만 내민다. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `연주원_저녁탕전실_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Yeon Juwon and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Yeon Juwon (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, tall slender build ~183 cm with slightly forward-leaning posture, small slender oval face, softly tapered jawline, medium-high smooth cheekbones, long calm almond eyes with a softly lowered outer corner and a thin clear double eyelid fold, straight slim dark brows, thin round gold-rimmed glasses, narrow high straight nose, softly defined lips, dark brown-black soft medium-length hair with light see-through bangs tucked behind the ears. Outfit: light ecru cotton shirt under a deep brown cable-knit crewneck sweater and an open soft olive-khaki cotton field jacket, straight dark navy wool trousers, dark brown leather derby shoes, slim brown leather strap watch. One hand resting on the counter beside folded paper herb wraps. Eyes closed behind the glasses. Tips of his ears faintly flushed.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, soft oval face, gently tapered jawline, rounder brighter almond eyes with a soft double eyelid fold (clearly distinguishable from Juwon's long calm eyes), softly straight dark brows, narrow high straight nose with delicate tip, softly full lips, no glasses, NO mole anywhere, short neat dark brown-black hair with a light side-swept fringe. Outfit: light gray knit vest over a plain cream knit sweater, relaxed dark trousers, no logo, no lettering. One hand resting lightly on Juwon's jacket sleeve. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A small squirrel peeks out of Juwon's jacket pocket. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Evening inside a closed neighborhood Korean-medicine clinic, the steam in the decoction room slowly settling. Rows of small herb drawers (no legible text) and a hand-held balance scale stand on the counter with a few folded paper herb wraps. Dusk-blue light comes through a frosted window.
+
+【LIGHTING · COLOR · STYLE】
+Soft dusk-blue window light as a side key with a faint warm lamp glow from the counter, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No more than one squirrel. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```

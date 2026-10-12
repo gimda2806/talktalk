@@ -266,3 +266,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "탁시안_이른아침부엌_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "탁시안_이른아침부엌_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 곽민재. 「닿기 직전」 바로 다음 순간. 에필로그 장면(숟가락 두 벌이 놓인 셰어하우스 부엌 식탁, 이른 아침)에서 두 사람이 입을 다문 짧은 입맞춤을 나누는 순간. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `탁시안_이른아침부엌_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Tak Sian and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Tak Sian (RIGHT, based on image_1 <<<image_1>>>)】
+Late-20s Korean male, athletic broad-shouldered long-limbed build ~181 cm, small face with softly tapered jawline, high clean cheekbones, long open double-lidded eyes with gently upturned outer corners, straight dark medium-bold brows, narrow high straight nose, softly full lips, twin shallow dimples on both cheeks, short dark brown-black hair pushed straight back off the forehead. Outfit: unzipped forest-green cotton zip-up hoodie over a cream long-sleeve tee, relaxed straight medium-wash blue jeans, brown suede low-top sneakers, black digital sport watch. One hand resting on the dining table edge beside two spoons. Eyes closed. Tips of his ears faintly flushed.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, soft oval face, gently tapered jawline, long clear almond eyes with a soft double eyelid fold and a calmer, straighter eye line (clearly distinguishable from Sian's upturned eye corners), softly straight dark brows, narrow high straight nose with delicate tip, softly full lips, NO mole anywhere, short neat dark brown-black hair with a light side-swept fringe. Outfit: soft navy hooded sweatshirt over a plain white tee, relaxed gray trousers, no logo, no lettering. One hand resting lightly on Sian's sleeve. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A large brown bear mascot head rests on a chair beside them. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Early autumn morning in the kitchen of a small converted shared house. Pale blue-white light comes through the window over a wooden dining table set with a plate of rolled omelet and two spoons. The blurred silhouette of a rooster in the yard outside the window (no legible text).
+
+【LIGHTING · COLOR · STYLE】
+Clean pale early-morning window light as a soft side key, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
