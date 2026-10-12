@@ -179,6 +179,22 @@ body[data-edit="on"] .copy.edit{display:inline-block}
 .ebar .estat{margin-right:auto;color:var(--rose)}
 .ebar .esave{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .ebar .esave:disabled{opacity:.5;cursor:default}
+/* 스틸 보관함 (관리자 전용) */
+.tabs .lock{padding:6px 10px;font-size:13px}
+.stills{margin-top:24px}
+.stills h3 .copy{float:right}
+.stools{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end}
+.stools > div{flex:1 1 220px;min-width:0}
+.stools input[type=file]{width:100%;font:inherit;font-size:14px;padding:7px 0;color:var(--ink)}
+#st-stat{font-size:13px;color:var(--muted);min-height:20px;margin:8px 0 0}
+.st-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:18px}
+.st-card{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--paper);display:flex;flex-direction:column}
+.st-card img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:var(--line);cursor:zoom-in}
+.st-meta{padding:8px 10px 4px;font-size:12px;color:var(--muted);line-height:1.45;word-break:break-all}
+.st-meta b{display:block;color:var(--ink);font-weight:600}
+.st-act{display:flex;gap:6px;padding:4px 10px 10px}
+.st-act .copy{min-height:28px;font-size:12px;padding:0 10px;text-decoration:none;display:inline-flex;align-items:center}
+.st-empty{color:var(--muted);font-size:14px;margin-top:18px}
 #toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:9}
 #toast[data-on]{opacity:1;transform:translate(-50%,0)}
 .parts{padding:6px 10px 10px}
@@ -325,6 +341,8 @@ body[data-edit="on"] .copy.edit{display:inline-block}
       <button id="tab-rules" role="tab" aria-selected="false" data-tab="rules">연습 규칙</button>
       <button id="tab-zeta" role="tab" aria-selected="false" data-tab="zeta">제타</button>
       <button id="tab-review" role="tab" aria-selected="false" data-tab="review">검토<span id="rv-badge"></span></button>
+      <button id="tab-stills" role="tab" aria-selected="false" data-tab="stills" hidden>스틸</button>
+      <button id="admin-btn" type="button" class="lock" title="관리자" aria-label="관리자 잠금 풀기">🔒</button>
     </div>
   </header>
 
@@ -391,6 +409,20 @@ body[data-edit="on"] .copy.edit{display:inline-block}
 
   <div id="view-review" class="rules" hidden>
     <article class="sheet" id="rvsheet"></article>
+  </div>
+
+  <div id="view-stills" class="stills" hidden>
+    <section class="card">
+      <h3>스틸컷 보관함 <button type="button" class="copy" id="st-lock">잠그기</button></h3>
+      <p class="lead">관리자만 보이는 탭이에요. 여기 올린 이미지는 공개 저장소(GitHub)가 아니라 서버 보관함에 들어가서, 비밀번호 없이는 볼 수 없어요. PNG·JPG·WEBP·GIF, 한 장에 20MB까지.</p>
+      <div class="stools">
+        <div><label for="st-work">작품</label><select id="st-work"></select></div>
+        <div><label for="st-file">이미지 <small>여러 장 한 번에 가능</small></label><input type="file" id="st-file" accept="image/png,image/jpeg,image/webp,image/gif" multiple></div>
+        <button type="button" class="copy" id="st-up">올리기</button>
+      </div>
+      <p id="st-stat"></p>
+      <div class="st-grid" id="st-grid"></div>
+    </section>
   </div>
 </div>
 
@@ -591,11 +623,13 @@ function drawList(){
 }
 
 // 탭
-const VIEWS = {read:"view-read", rules:"view-rules", zeta:"view-zeta", review:"view-review"};
-document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{
-  document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected", x===b));
+const VIEWS = {read:"view-read", rules:"view-rules", zeta:"view-zeta", review:"view-review", stills:"view-stills"};
+document.querySelectorAll(".tabs button[data-tab]").forEach(b=>b.onclick=()=>{
+  if (b.hidden) return;
+  document.querySelectorAll(".tabs button[data-tab]").forEach(x=>x.setAttribute("aria-selected", x===b));
   for (const [k, id] of Object.entries(VIEWS)) document.getElementById(id).hidden = b.dataset.tab!==k;
   store.set("sm-tab", b.dataset.tab);
+  if (b.dataset.tab === "stills") strender();
   progress();
 });
 
@@ -991,10 +1025,90 @@ function jumpTo(id){
 })();
 zlist(); zrender(); rvrender();
 
+// 스틸 보관함: 관리자 비밀번호(저장 비밀번호와 같음)를 서버가 확인해야 탭이 보인다
+const stTab = document.getElementById("tab-stills"), adminBtn = document.getElementById("admin-btn");
+const stWork = document.getElementById("st-work"), stGrid = document.getElementById("st-grid"), stStat = document.getElementById("st-stat");
+let stUrls = [];
+stWork.innerHTML = `<option value="">전체 작품</option>` + ZETA.map(w=>`<option value="${esc(w.id)}">${esc(w.id.slice(5,8))} ${esc(w.name)}</option>`).join("");
+stWork.value = store.get("st-work") || "";
+async function adminFetch(path, opt = {}){
+  const pw = store.get("zt-edit-pw") || "";
+  const r = await fetch(path, { ...opt, cache: "no-store", headers: { ...(opt.headers||{}), "X-Edit-Password": pw } });
+  if (r.status === 401){ adminShow(false); store.set("zt-edit-pw", ""); }
+  return r;
+}
+function adminShow(on){
+  stTab.hidden = !on;
+  adminBtn.textContent = on ? "🔓" : "🔒";
+  adminBtn.setAttribute("aria-label", on ? "스틸 보관함 열기" : "관리자 잠금 풀기");
+  if (!on && stTab.getAttribute("aria-selected") === "true") document.getElementById("tab-read").click();
+  if (!on){ stUrls.forEach(u=>URL.revokeObjectURL(u)); stUrls = []; stGrid.innerHTML = ""; }
+}
+async function adminCheck(){
+  try { const r = await adminFetch("/api/admin", { method: "POST" }); return r.ok; } catch { return false; }
+}
+adminBtn.onclick = async () => {
+  if (!stTab.hidden){ stTab.click(); return; }
+  const pw = prompt("관리자 비밀번호"); if (!pw) return;
+  store.set("zt-edit-pw", pw);
+  if (await adminCheck()){ adminShow(true); stTab.click(); }
+  else { store.set("zt-edit-pw", ""); toast("비밀번호가 달라요 (배포된 사이트에서만 열려요)"); }
+};
+document.getElementById("st-lock").onclick = () => { store.set("zt-edit-pw", ""); adminShow(false); toast("잠갔어요"); };
+const kst = iso => { const d = new Date(new Date(iso).getTime() + 9*3600e3), p = n => String(n).padStart(2,"0"); return `${d.getUTCFullYear()}-${p(d.getUTCMonth()+1)}-${p(d.getUTCDate())} ${p(d.getUTCHours())}:${p(d.getUTCMinutes())}`; };
+const mb = n => n >= 1048576 ? (n/1048576).toFixed(1) + "MB" : Math.max(1, Math.round(n/1024)) + "KB";
+async function strender(){
+  if (stTab.hidden) return;
+  stUrls.forEach(u=>URL.revokeObjectURL(u)); stUrls = [];
+  stStat.textContent = "불러오는 중…"; stGrid.innerHTML = "";
+  let j;
+  try { const r = await adminFetch("/api/stills?work=" + encodeURIComponent(stWork.value)); j = await r.json(); if (!r.ok) throw new Error(j.error || r.status); }
+  catch (e){ stStat.textContent = "목록을 못 불러왔어요: " + e.message; return; }
+  stStat.textContent = j.items.length ? `${j.items.length}장` : "";
+  if (!j.items.length){ stGrid.innerHTML = `<p class="st-empty">아직 올린 스틸이 없어요.</p>`; return; }
+  const names = Object.fromEntries(ZETA.map(w=>[w.id, w.name]));
+  for (const it of j.items){
+    const c = document.createElement("div"); c.className = "st-card";
+    c.innerHTML = `<img alt="${esc(it.name||"")}"><div class="st-meta"><b>${esc(it.name||"")}</b>${esc(names[it.work]||it.work||"")} · ${it.at?kst(it.at):""} · ${it.size?mb(it.size):""}</div>
+      <div class="st-act"><a class="copy" download="${esc(it.name||"still")}">받기</a><button type="button" class="copy">지우기</button></div>`;
+    stGrid.appendChild(c);
+    const img = c.querySelector("img"), a = c.querySelector("a");
+    adminFetch("/api/still?key=" + encodeURIComponent(it.key)).then(r => r.ok ? r.blob() : null).then(b => {
+      if (!b) return; const u = URL.createObjectURL(b); stUrls.push(u);
+      img.src = u; a.href = u; img.onclick = () => open(u, "_blank");
+    });
+    c.querySelector("button").onclick = async () => {
+      if (!confirm(`'${it.name}'을(를) 지울까요? 되돌릴 수 없어요.`)) return;
+      const r = await adminFetch("/api/still?key=" + encodeURIComponent(it.key), { method: "DELETE" });
+      if (r.ok){ c.remove(); toast("지웠어요"); } else toast("지우지 못했어요");
+    };
+  }
+}
+stWork.onchange = () => { store.set("st-work", stWork.value); strender(); };
+document.getElementById("st-up").onclick = async () => {
+  const files = [...document.getElementById("st-file").files];
+  if (!stWork.value){ toast("올릴 작품을 먼저 골라 주세요"); stWork.focus(); return; }
+  if (!files.length){ toast("이미지를 골라 주세요"); return; }
+  const btn = document.getElementById("st-up"); btn.disabled = true;
+  let ok = 0;
+  for (const [n, f] of files.entries()){
+    stStat.textContent = `올리는 중 ${n+1}/${files.length} · ${f.name}`;
+    try {
+      const r = await adminFetch(`/api/still?work=${encodeURIComponent(stWork.value)}&name=${encodeURIComponent(f.name)}`, { method: "POST", headers: { "Content-Type": f.type || "application/octet-stream" }, body: f });
+      const j = await r.json().catch(()=>({}));
+      if (r.ok) ok++; else toast(`${f.name}: ${j.error || r.status}`);
+    } catch { toast(`${f.name}: 서버에 닿지 못했어요`); }
+  }
+  btn.disabled = false; document.getElementById("st-file").value = "";
+  toast(`${ok}/${files.length}장 올렸어요`);
+  strender();
+};
+if (store.get("zt-edit-pw")) adminCheck().then(on => { adminShow(on); if (on && (location.hash.slice(1) || store.get("sm-tab")) === "stills") stTab.click(); });
+
 // 시작
 const saved = FLAT.find(f=>f.e.id===store.get("sm-cur"));
 const fs = store.get("sm-fs2"); if (fs!==null && !isNaN(+fs)) state.fs = +fs;
-{ const t = location.hash.slice(1) || store.get("sm-tab"); const tb = t && t!=="read" && document.getElementById("tab-"+t); if (tb) tb.click(); }
+{ const t = location.hash.slice(1) || store.get("sm-tab"); const tb = t && t!=="read" && document.getElementById("tab-"+t); if (tb && !tb.hidden) tb.click(); }
 setSize(state.fs); drawFilters(); go(saved || FLAT[0], false); check();
 </script>
 

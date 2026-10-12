@@ -5,7 +5,10 @@
 //
 // 필요한 비밀값 (Cloudflare → Workers → talktalk → Settings → Variables and Secrets):
 //   GITHUB_TOKEN   저장소 contents 읽기·쓰기 권한이 있는 토큰 (fine-grained PAT 권장)
-//   EDIT_PASSWORD  뷰어에서 저장할 때 묻는 비밀번호
+//   EDIT_PASSWORD  뷰어에서 저장할 때 묻는 비밀번호 (스틸 탭을 여는 관리자 비밀번호도 같다)
+//
+// /api/admin·/api/stills·/api/still 은 관리자 전용 스틸컷 보관함이다. 이미지는 공개 저장소가 아니라
+// Workers KV(바인딩 STILLS, wrangler.jsonc)에 넣고, 비밀번호 없이는 목록도 이미지도 내주지 않는다.
 const OWNER = "gimda2806", REPO = "talktalk", BRANCH = "main";
 
 export default {
@@ -13,6 +16,7 @@ export default {
     const url = new URL(req.url);
     if (url.pathname === "/api/ping") return json({ ok: true, editable: !!(env.GITHUB_TOKEN && env.EDIT_PASSWORD) });
     if (url.pathname === "/api/save") return req.method === "POST" ? save(req, env) : json({ error: "POST만 받아요" }, 405);
+    if (url.pathname === "/api/admin" || url.pathname === "/api/stills" || url.pathname === "/api/still") return stills(req, env, url);
     return env.ASSETS.fetch(req);
   },
 };
@@ -46,6 +50,53 @@ async function save(req, env) {
   if (!put.ok) return json({ error: `GitHub에 저장하지 못했어요 (${put.status})` }, 502);
   const done = await put.json();
   return json({ ok: true, commit: done.commit && done.commit.html_url });
+}
+
+const STILL_MAX = 20 * 1024 * 1024; // KV 값 한도(25MiB) 안쪽
+const STILL_TYPES = ["image/png", "image/jpeg", "image/webp", "image/gif"];
+
+async function stills(req, env, url) {
+  if (!env.EDIT_PASSWORD) return json({ error: "서버에 EDIT_PASSWORD가 아직 없어요" }, 503);
+  if (!safeEqual(req.headers.get("x-edit-password") || "", env.EDIT_PASSWORD)) return json({ error: "비밀번호가 달라요" }, 401);
+  if (url.pathname === "/api/admin") return json({ ok: true, stills: !!env.STILLS });
+  if (!env.STILLS) return json({ error: "스틸 보관함(KV 바인딩 STILLS)이 아직 없어요" }, 503);
+
+  if (url.pathname === "/api/stills") {
+    const work = url.searchParams.get("work") || "";
+    if (work && !/^zeta_\d{3}_[^/:]+$/.test(work)) return json({ error: "작품 이름이 이상해요" }, 400);
+    const items = []; let cursor;
+    do {
+      const r = await env.STILLS.list({ prefix: `still:${work}${work ? ":" : ""}`, cursor });
+      for (const k of r.keys) items.push({ key: k.name, ...(k.metadata || {}) });
+      cursor = r.list_complete ? undefined : r.cursor;
+    } while (cursor);
+    items.sort((a, b) => (b.at || "").localeCompare(a.at || ""));
+    return json({ ok: true, items });
+  }
+
+  // /api/still : GET 보기, POST 올리기, DELETE 지우기
+  if (req.method === "POST") {
+    const work = url.searchParams.get("work") || "";
+    const name = (url.searchParams.get("name") || "").replace(/[\\/:*?"<>|\x00-\x1f]/g, "_").slice(0, 120);
+    const type = (req.headers.get("content-type") || "").split(";")[0].trim();
+    if (!/^zeta_\d{3}_[^/:]+$/.test(work) || !name) return json({ error: "작품과 파일 이름이 필요해요" }, 400);
+    if (!STILL_TYPES.includes(type)) return json({ error: "PNG·JPG·WEBP·GIF 이미지만 올릴 수 있어요" }, 415);
+    const buf = await req.arrayBuffer();
+    if (!buf.byteLength) return json({ error: "빈 파일이에요" }, 400);
+    if (buf.byteLength > STILL_MAX) return json({ error: "20MB보다 큰 파일은 올릴 수 없어요" }, 413);
+    const at = new Date().toISOString();
+    const key = `still:${work}:${at.replace(/[-:.TZ]/g, "")}_${name}`;
+    const meta = { work, name, type, size: buf.byteLength, at };
+    await env.STILLS.put(key, buf, { metadata: meta });
+    return json({ ok: true, item: { key, ...meta } });
+  }
+  const key = url.searchParams.get("key") || "";
+  if (!key.startsWith("still:")) return json({ error: "key가 필요해요" }, 400);
+  if (req.method === "DELETE") { await env.STILLS.delete(key); return json({ ok: true }); }
+  if (req.method !== "GET") return json({ error: "GET·POST·DELETE만 받아요" }, 405);
+  const r = await env.STILLS.getWithMetadata(key, { type: "arrayBuffer" });
+  if (!r.value) return json({ error: "그 이미지가 없어요" }, 404);
+  return new Response(r.value, { headers: { "Content-Type": (r.metadata && r.metadata.type) || "application/octet-stream", "Cache-Control": "private, no-store" } });
 }
 
 // 파일 안의 bi번째 ```text 울타리 속 글이 old와 같으면 fresh로 바꾼다. 다르면 누가 먼저 고친 것이므로 거절한다.
