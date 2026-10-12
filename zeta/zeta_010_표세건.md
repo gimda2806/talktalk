@@ -268,3 +268,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "표세건_장마끝난아침_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "표세건_장마끝난아침_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 정우주. 「닿기 직전」 바로 다음 순간. 에필로그 직후 장면 그대로, 장마가 끝난 아침 느티세탁소 카운터 앞에서 두 사람이 입을 다문 짧고 가벼운 입맞춤을 나눈다. 어깨 위 크림색 문조 두부. 의상은 일상복(사복). 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `표세건_장마끝난아침_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Pyo Segeon and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Pyo Segeon (RIGHT, based on image_1 <<<image_1>>>)】
+Late-20s Korean male, slim build about 181cm with straight narrow shoulders and a long neck, small elongated oval face with a smooth tapered jaw and clean slightly angular chin, softly defined high cheekbones, long calm almond monolid eyes (absolutely NO double eyelids), straight slender brows, a small dark mole on the right side of the nose bridge, narrow high straight nose, short black hair with a soft center part and a few strands over the temples. Outfit: a pale mint-green short-sleeve cotton poplin shirt with a sharp collar and straight light gray cotton trousers, a slim black leather strap watch. One hand holds a small blank paper tag against his chest, the other rests lightly on the counter edge. Eyes closed. A faint pink flush on his cheeks and ear tips, a stiff deadpan composure softened into shy sincerity.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face, gently tapered clean jawline, moderately high smooth cheekbones, long clear almond eyes with soft double eyelid folds clearly different from Pyo Segeon's monolid eyes, softly straight dark brows, narrow high straight nose, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: a light gray crewneck knit and relaxed dark trousers. One hand resting lightly on Pyo Segeon's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A small cream-white finch perches on Pyo Segeon's shoulder, calm and still. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+The front counter of a neighborhood laundry shop on the morning the long rainy season has ended. Garment covers hang softly blurred behind, an ironing board stands near the wall, and the top-most hanger on the wall is left empty. A small blank paper tag rests on the counter (no legible text).
+
+【LIGHTING · COLOR · STYLE】
+Soft clean morning daylight from the laundry shop front window as a gentle side key with a faint trace of drifting iron steam, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No double eyelids on Pyo Segeon. No mole on boyfriend. No more than one finch. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```

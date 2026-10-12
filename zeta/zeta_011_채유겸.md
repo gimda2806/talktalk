@@ -271,3 +271,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "채유겸_비워둔날짜_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "채유겸_비워둔날짜_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 윤시현. 「닿기 직전」 바로 다음 순간. 연습실 업라이트 피아노 앞에서 두 사람이 입을 다문 짧고 가벼운 입맞춤을 나눈다. 주머니에서 황금빛 햄스터 쉼표가 고개를 내민다. 의상은 일상복(사복). 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `채유겸_비워둔날짜_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Chae Yugyeom and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Chae Yugyeom (RIGHT, based on image_1 <<<image_1>>>)】
+Late-20s Korean male, slim build about 180cm with straight shoulders, small narrow oval face with a gently tapered lower face and clean angled jawline, high softly defined cheekbones, long calm almond eyes with a gentle downward outer tilt and thin hooded inner double eyelid folds, straight softly lifted brows, a small dark mole just below the outer corner of the left eye, narrow high straight nose, glossy black hair swept to the side with a few soft strands over the forehead. Outfit: a white cotton band-collar shirt under an oatmeal cable-knit V-neck sweater vest and an open soft gray tweed jacket, a thin silver bangle bracelet and a slim brown leather strap watch. One hand holds a pencil lowered beside the piano lid, the other rests on the closed keys. Eyes closed. A gentle, quiet warmth, the tips of his ears faintly red.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face, gently tapered clean jawline, moderately high smooth cheekbones, long clear almond eyes with soft double eyelid folds clearly different from Yugyeom's gently downward-tilted calm eyes, softly straight dark brows, narrow high straight nose, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: a cream knit sweater and relaxed gray trousers. One hand resting lightly on Yugyeom's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A tiny golden hamster peeks out of the tweed jacket pocket, calm and still. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+A small piano academy practice room on a quiet autumn Saturday. An upright piano stands beside them with its lid open, the pencil-marked date line inside the lid deliberately left blank (no legible text). A silver tuning fork rests on the keys, and a wall attendance chart and a single lit lamp are softly blurred far behind.
+
+【LIGHTING · COLOR · STYLE】
+Soft clean Saturday daylight from the practice room window as a gentle side key with a single warm lamp glowing far behind, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No mole on boyfriend. No more than one hamster. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
