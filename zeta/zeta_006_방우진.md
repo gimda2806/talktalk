@@ -273,3 +273,28 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "방우진_서랍속봉투_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "방우진_서랍속봉투_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 입맞춤 (유저 남성)
+> 유저(남) 이름: 지은호. 「닿기 직전」 바로 다음 순간. 제주 천문대 사무실 밤, 서랍 속 봉투를 보여 준 뒤 책상 앞에서 우진과 유저가 짧고 가벼운 입맞춤을 나누고 문틈으로 거위 보름이 고개를 내민다. 닿기 직전 칸과 같은 장소·시간이며, 의상은 일상 사복(zeta-casual-wardrobe 기준)으로 맞췄다. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `방우진_서랍속봉투_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Bang Woojin and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Bang Woojin (RIGHT, based on image_1 <<<image_1>>>)】
+Mid-30s Korean male, tall broad-shouldered athletic build about 181cm with big hands, small face with a clean angular jawline and high weathered cheekbones, wide-open long eyes with a gentle downward outer tilt and deep clean double eyelids, thick straight dark brows, narrow high straight nose bridge, a single deep dimple on the left cheek only, short black naturally curly hair tousled by the wind. Outfit: a rust-orange plaid flannel shirt over a charcoal long-sleeve tee, a black adventure watch with a nylon strap, no lettering or logos. One big hand rests on the edge of the open desk drawer. Eyes closed. Sun-creased softness at the eye corners.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, small soft oval face with a gently tapered jaw, long almond eyes with a level outer corner and a soft double eyelid fold, clearly different from the other man's wide-open downward-tilted eyes, softly straight dark brows, narrow high nose bridge with a delicate tip, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: a dark gray knit sweater under a light travel jacket and dark trousers, no logo, no lettering. One hand resting lightly on Bang Woojin's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A single white goose peeks in through the doorway at the edge of the frame. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Inside the small office of a hilltop observatory on Jeju at night. A warm desk lamp is the only light; the lowest desk drawer is pulled open with a sealed envelope (no legible text) on the desk, and a hand warmer lies on the floor near their feet. Dark window glass shows a faint starry sky.
+
+【LIGHTING · COLOR · STYLE】
+Cinematic lighting, a warm desk lamp from the upper side as a clean key with a faint cool starlight fill from the window on both faces, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No more than one goose. No double dimple. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
