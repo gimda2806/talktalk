@@ -354,3 +354,149 @@ Soft afternoon daylight from tall side windows, low saturation, low-to-mid contr
 【PROHIBITIONS】
 No text, captions, watermarks or UI. No face swapping, morphing or merging. No extra people or second dog. No open-mouth kiss, no visible tongue, no longer or more intense kissing. No suggestive pose, no removed or unbuttoned clothing. No sudden cuts. No dialogue.
 ```
+
+### 숏드라마 「클리커 장난」 (유저 남성)
+> 유저(남) 이름: 강세찬. 세로 9:16, 빠른 템포(컷당 1.5~2초), 약 35초·18컷, 4블록(A 들킴 · B 역클리커 · C 보상 · D 반응). 훈련사 두현이 강아지에게 쓰는 클리커를 남자친구가 두현에게 써먹고, 입맞춤은 "보상". 자막은 한국어만 편집에서 얹음(언제부터 보고 있었어요? / 수업 시작할 때부터. / 앉아. / 잘했으면 보상 줘야죠. / …보상이에요. / 한 번 더.). 블록마다 시작 스틸(Nano Banana Pro, 9:16, 2K) → Kling 3.0 pro 10초 → 편집에서 컷별로 잘라 씀. C 블록의 입맞춤은 위 「영상 (8초)」와 앞에 이어 붙인 10초를 잘라 씀. 참고 이미지: 모두현·유저(남) 3면도, 두 사람 프로필, A 블록 1번 스틸. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+#### A. 들킴 (0~8초) — 시작 스틸 (생성 완료, 1번 채택)
+> 클리커 딸깍 → 인절미가 앉음 → 들킴 → 창턱에서 턱 괴고 보던 남자친구 → 귀 빨개짐. 2026-10-12 생성, 2장 중 1번 채택(2번은 얼굴이 달라 버림). 이때는 입맞춤 스틸을 참고로 넣었고, B~D부터는 이 1번 스틸을 대신 넣는다.
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still of two distinct adult Korean men who are a romantic couple, an everyday off-duty moment.
+
+【REFERENCE IMAGES】
+The references include two character turnaround sheets, two single portraits, and one finished scene still. Mo Duhyeon = the man with short thick black tousled hair swept up, narrow monolid eyes and a small mole near the lower lip (shown in the black vest and gray hoodie sheet). The boyfriend = the man with soft dark brown-black hair, a light fringe and soft double eyelids (shown in the beige windbreaker sheet). Use the finished scene still for outfits, the dog and the training hall. Use the sheets only for faces and hair; do not copy the sheet layout or backgrounds.
+
+【CHARACTER — Mo Duhyeon (RIGHT side of frame, midground)】
+Early-30s Korean male, tall lean build ~183 cm, narrow V-jaw face, upturned monolid eyes (absolutely NO double eyelids), small black mole below the left corner of the lower lip, short thick black hair swept up. Outfit: khaki-beige pullover anorak over a black mock-neck long-sleeve tee, charcoal chinos, black high-top sneakers, black sports watch, black nylon sling bag. Standing in the middle of the training hall looking down at the dog with a small proud smile, a small black training clicker pinched between thumb and finger.
+
+【CHARACTER — Boyfriend (LEFT side of frame, background, by the window)】
+Late-20s Korean male, soft oval face, almond double-lidded eyes, NO mole, short neat dark brown-black hair with a light side-swept fringe. Outfit: heather-gray crewneck sweatshirt with a white tee hem showing, navy chinos, gray suede sneakers. Leaning back against the low window ledge, chin propped on one hand, quietly watching Duhyeon with an amused, fond look.
+
+【SCENE】
+The same empty indoor dog training hall on a Sunday afternoon after class: tall side windows, dark rubber mat floor, low agility hurdles and a blue-and-yellow tunnel softly blurred. The fluffy cream-colored mixed-breed dog sits upright on the mat in front of Duhyeon, looking up at him.
+
+【COMPOSITION】
+Vertical wide two-shot, Duhyeon and the dog sharp in the right-center, the boyfriend smaller and slightly soft-focus by the window on the left, so the viewer notices he is watching. Natural, candid, not posed for camera.
+
+【LIGHTING · COLOR · STYLE】
+Soft afternoon daylight from the tall side windows, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, names, dates, watermarks, or UI. No logos. No reference-sheet panels or white backgrounds. No face swapping or merging, no twin faces. No double eyelids on Mo Duhyeon. No mole on the boyfriend. No training vest, no uniform, no apron. Only one dog. No extra people. No illustration, webtoon, or 3D render style. No landscape or square framing.
+```
+
+#### A. 들킴 — 영상 (10초, 생성 완료)
+> Kling 3.0 pro, 9:16(1080×1920), 10초, 소리 끔, 시작 프레임 = A 1번 스틸.
+
+```text
+10-second vertical 9:16 cinematic photorealistic Korean-drama clip continuing from the start image. Keep both faces, hair, outfits, the dog and the training hall exactly as in the start image.
+
+【CHARACTERS】
+Mo Duhyeon (standing with the dog): early-30s Korean man, upturned monolid eyes (no double eyelids), small mole below the left corner of the lower lip, short black hair swept up, khaki anorak, small black clicker in his fingers.
+His boyfriend (leaning on the window ledge): late-20s Korean man, double-lidded almond eyes, no mole, soft dark hair with a light fringe, heather-gray sweatshirt.
+Two fictional adult men in a loving relationship, everyday casual clothes, light romantic-comedy mood.
+
+【ACTION · TIMELINE】
+0-2s: Duhyeon presses the clicker once; the cream-colored dog snaps into a perfect sit.
+2-4s: Duhyeon smiles proudly down at the dog and gives it a small treat.
+4-6s: he senses he is being watched and slowly lifts his head toward the window.
+6-8s: the boyfriend, chin on his hand, keeps looking at him with a fond, amused smile and does not look away.
+8-10s: Duhyeon freezes, quickly looks away, the tips of his ears turning red, fidgeting with the clicker; the dog looks back and forth between them.
+
+【CAMERA】
+Slow gentle push-in toward Duhyeon, with the boyfriend kept visible in soft focus by the window; shallow depth of field; no cuts.
+
+【LIGHT · STYLE】
+Soft afternoon daylight from tall side windows, low saturation, low-to-mid contrast Korean-drama grade, cool porcelain skin with real texture, subtle film grain.
+
+【PROHIBITIONS】
+No text, captions, watermarks or UI. No face swapping, morphing or merging. No extra people or second dog. No sudden cuts. No dialogue.
+```
+
+#### 생성 후 검수 체크리스트 (스틸마다)
+> 1. 손: 손가락 다섯 개, 마디가 자연스러운지, 손이 얼굴·옷에 녹아들지 않았는지(손이 얼굴을 가리는 포즈는 깨지기 쉬워 피한다). 2. 얼굴: 두현 외꺼풀·입술 아래 점, 남자친구 쌍꺼풀·점 없음, A 1번 스틸과 같은 얼굴인지. 3. 옷: 두현 카키 아노락·검은 슬링백·검은 시계, 남자친구 회색 맨투맨·남색 바지. 4. 로고·글씨: 신발(N 같은 브랜드 마크)·시계·가방에 로고가 없는지. 5. 강아지 한 마리, 같은 모습. 6. 세로 9:16. 하나라도 걸리면 그 컷만 다시 뽑는다.
+
+#### B. 역클리커 (8~17초) — 시작 프레임
+> 클리커를 떨어뜨린 직후. 남자친구가 다가와 주운 클리커를 두현 눈앞에 들어 보이며 장난스럽게 웃고, 두현은 굳어 있다. 인절미는 둘 사이에 앉아 올려다봄.
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still of two distinct adult Korean men who are a romantic couple, a playful romantic-comedy moment.
+
+【REFERENCE IMAGES】
+The references include two character turnaround sheets, two single portraits, and one finished scene still. Mo Duhyeon = the man with short thick black tousled hair swept up, narrow monolid eyes and a small mole near the lower lip (shown in the black vest and gray hoodie sheet). The boyfriend = the man with soft dark brown-black hair, a light fringe and soft double eyelids (shown in the beige windbreaker sheet). Use the finished scene still for faces, outfits, the dog and the training hall. Use the sheets only for faces and hair; do not copy the sheet layout or backgrounds.
+
+【CHARACTER — Mo Duhyeon (RIGHT side of frame)】
+Early-30s Korean male, tall lean build ~183 cm, narrow V-jaw face, upturned monolid eyes (absolutely NO double eyelids), small black mole below the left corner of the lower lip, short thick black hair swept up. Outfit: khaki-beige pullover anorak over a black mock-neck long-sleeve tee, charcoal chinos, black high-top sneakers, black sports watch, black nylon sling bag. Standing stiffly, caught off guard, eyes wide and fixed on the clicker in front of his face, both hands half-raised in surprise, the tips of his ears red.
+
+【CHARACTER — Boyfriend (LEFT side of frame, close in front of him)】
+Late-20s Korean male, soft oval face, almond double-lidded eyes, NO mole, short neat dark brown-black hair with a light side-swept fringe. Outfit: heather-gray crewneck sweatshirt with a white tee hem showing, navy chinos, gray suede sneakers. Having just picked the clicker up off the mat, he holds the small black training clicker up at Duhyeon's eye level between thumb and finger, about to press it, with a mischievous, delighted grin.
+
+【SCENE】
+The same empty indoor dog training hall on a Sunday afternoon after class: tall side windows, dark rubber mat floor, low agility hurdles and a blue-and-yellow tunnel softly blurred. The fluffy cream-colored mixed-breed dog sits upright on the mat between their feet, looking up at the clicker with total attention.
+
+【COMPOSITION】
+Vertical medium two-shot at chest height, the two men facing each other at arm's length in near-profile, the raised clicker sharp in the center between their faces, the dog visible at the bottom of the frame. Candid, not posed for camera.
+
+【LIGHTING · COLOR · STYLE】
+Soft afternoon daylight from the tall side windows, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, names, dates, watermarks, or UI. No logos. No reference-sheet panels or white backgrounds. No face swapping or merging, no twin faces. No double eyelids on Mo Duhyeon. No mole on the boyfriend. No training vest, no uniform, no apron. Only one dog. No extra people. No suggestive pose, no removed or unbuttoned clothing, no bed or bedroom. Anatomically correct hands with five natural fingers each, no fused, extra or twisted fingers, no hands merging into faces or clothing. No brand logos on shoes, watch, bag or clothing. No kiss. No illustration, webtoon, or 3D render style. No landscape or square framing.
+```
+
+#### C. 보상 (17~27초) — 시작 프레임
+> 클리커를 되찾으려던 두현의 손과 남자친구의 손이 클리커 위에서 겹친 채 멈춘 순간. 얼굴이 가까워지고 눈이 마주친 정적. (이어지는 입맞춤은 이미 만든 영상을 씀)
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still of two distinct adult Korean men who are a romantic couple, a quiet, tender moment of sudden closeness.
+
+【REFERENCE IMAGES】
+The references include two character turnaround sheets, two single portraits, and one finished scene still. Mo Duhyeon = the man with short thick black tousled hair swept up, narrow monolid eyes and a small mole near the lower lip (shown in the black vest and gray hoodie sheet). The boyfriend = the man with soft dark brown-black hair, a light fringe and soft double eyelids (shown in the beige windbreaker sheet). Use the finished scene still for faces, outfits, the dog and the training hall. Use the sheets only for faces and hair; do not copy the sheet layout or backgrounds.
+
+【CHARACTER — Mo Duhyeon (RIGHT side of frame)】
+Early-30s Korean male, tall lean build ~183 cm, narrow V-jaw face, upturned monolid eyes (absolutely NO double eyelids), small black mole below the left corner of the lower lip, short thick black hair swept up. Outfit: khaki-beige pullover anorak over a black mock-neck long-sleeve tee, charcoal chinos, black high-top sneakers, black sports watch, black nylon sling bag. Reaching to take the clicker back, his hand has closed over the boyfriend's hand around it; he has stopped mid-motion, looking straight into the boyfriend's eyes, his face serious and a little flustered, ears red.
+
+【CHARACTER — Boyfriend (LEFT side of frame)】
+Late-20s Korean male, soft oval face, almond double-lidded eyes, NO mole, short neat dark brown-black hair with a light side-swept fringe. Outfit: heather-gray crewneck sweatshirt with a white tee hem showing, navy chinos, gray suede sneakers. Holding the clicker with Duhyeon's hand wrapped over his, he looks back at him calmly, the playful grin softening into a small, warm smile.
+
+【SCENE】
+The same empty indoor dog training hall on a Sunday afternoon after class: tall side windows, dark rubber mat floor, low agility hurdles and a blue-and-yellow tunnel softly blurred. The fluffy cream-colored mixed-breed dog sits at their feet, head tilted, watching them.
+
+【COMPOSITION】
+Vertical two-shot at chest height, the two men facing each other in near-profile about a hand's width apart, faces sharp in the upper half of the frame, their overlapping hands on the clicker sharp in the lower half. Both faces clearly readable and distinct.
+
+【LIGHTING · COLOR · STYLE】
+Soft afternoon daylight from the tall side windows, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, names, dates, watermarks, or UI. No logos. No reference-sheet panels or white backgrounds. No face swapping or merging, no twin faces. No double eyelids on Mo Duhyeon. No mole on the boyfriend. No training vest, no uniform, no apron. Only one dog. No extra people. No suggestive pose, no removed or unbuttoned clothing, no bed or bedroom. Anatomically correct hands with five natural fingers each, no fused, extra or twisted fingers, no hands merging into faces or clothing. No brand logos on shoes, watch, bag or clothing. No kiss, lips not touching. No illustration, webtoon, or 3D render style. No landscape or square framing.
+```
+
+#### D. 반응 (27~35초) — 시작 프레임
+> 짧은 입맞춤 직후. 두현은 볼까지 새빨개져 고개를 홱 돌리고, 남자친구는 멍한 얼굴로 서 있다가 웃음이 번지기 직전. 인절미는 둘을 번갈아 봄.
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still of two distinct adult Korean men who are a romantic couple, a light romantic-comedy reaction right after a brief kiss.
+
+【REFERENCE IMAGES】
+The references include two character turnaround sheets, two single portraits, and one finished scene still. Mo Duhyeon = the man with short thick black tousled hair swept up, narrow monolid eyes and a small mole near the lower lip (shown in the black vest and gray hoodie sheet). The boyfriend = the man with soft dark brown-black hair, a light fringe and soft double eyelids (shown in the beige windbreaker sheet). Use the finished scene still for faces, outfits, the dog and the training hall. Use the sheets only for faces and hair; do not copy the sheet layout or backgrounds.
+
+【CHARACTER — Mo Duhyeon (RIGHT side of frame)】
+Early-30s Korean male, tall lean build ~183 cm, narrow V-jaw face, upturned monolid eyes (absolutely NO double eyelids), small black mole below the left corner of the lower lip, short thick black hair swept up. Outfit: khaki-beige pullover anorak over a black mock-neck long-sleeve tee, charcoal chinos, black high-top sneakers, black sports watch, black nylon sling bag. Turned sharply away from the boyfriend toward the camera side, cheeks and ears deeply flushed red, lips pressed together, eyes squeezed half-shut in embarrassment, one hand rubbing the back of his own neck and the other hand pushed into his trouser pocket, both hands kept clear of his face.
+
+【CHARACTER — Boyfriend (LEFT side of frame)】
+Late-20s Korean male, soft oval face, almond double-lidded eyes, NO mole, short neat dark brown-black hair with a light side-swept fringe. Outfit: heather-gray crewneck sweatshirt with a white tee hem showing, navy chinos, gray suede sneakers. Standing still a step away, dazed, eyes wide and lips slightly parted in surprise, the clicker hanging forgotten from his fingers, the corner of his mouth just starting to lift into a grin.
+
+【SCENE】
+The same empty indoor dog training hall on a Sunday afternoon after class: tall side windows, dark rubber mat floor, low agility hurdles and a blue-and-yellow tunnel softly blurred. The fluffy cream-colored mixed-breed dog sits between them, head turned up toward the boyfriend, ears perked.
+
+【COMPOSITION】
+Vertical medium two-shot, Duhyeon's flushed face sharp in the foreground right, the boyfriend slightly behind on the left, the dog at the bottom center. Comedic timing, candid.
+
+【LIGHTING · COLOR · STYLE】
+Soft afternoon daylight from the tall side windows, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, names, dates, watermarks, or UI. No logos. No reference-sheet panels or white backgrounds. No face swapping or merging, no twin faces. No double eyelids on Mo Duhyeon. No mole on the boyfriend. No training vest, no uniform, no apron. Only one dog. No extra people. No suggestive pose, no removed or unbuttoned clothing, no bed or bedroom. Anatomically correct hands with five natural fingers each, no fused, extra or twisted fingers, no hands merging into faces or clothing. No brand logos on shoes, watch, bag or clothing. No kiss in this frame, their faces apart. No illustration, webtoon, or 3D render style. No landscape or square framing.
+```
