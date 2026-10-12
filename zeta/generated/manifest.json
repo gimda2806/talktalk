@@ -3570,5 +3570,205 @@
       "prompt": "여성용",
       "prompt_sha": "640f54443d78"
     }
+  ],
+  "zeta_173_마재우": [
+    {
+      "file": "173_마재우/ma-jaeu-main.png",
+      "label": "주인공 마재우",
+      "prompt": "주인공",
+      "prompt_sha": "2e92a651a49f"
+    },
+    {
+      "file": "173_마재우/ma-jaeu-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "ff331bf4224f"
+    },
+    {
+      "file": "173_마재우/ma-jaeu-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "5e6da20e3cec"
+    }
+  ],
+  "zeta_174_전강율": [
+    {
+      "file": "174_전강율/jeon-gangyul-main.png",
+      "label": "주인공 전강율",
+      "prompt": "주인공",
+      "prompt_sha": "85c578c7b48e"
+    },
+    {
+      "file": "174_전강율/jeon-gangyul-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "28b58407d524"
+    },
+    {
+      "file": "174_전강율/jeon-gangyul-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "b0008072848f"
+    }
+  ],
+  "zeta_175_안여준": [
+    {
+      "file": "175_안여준/an-yeojun-main.png",
+      "label": "주인공 안여준",
+      "prompt": "주인공",
+      "prompt_sha": "fc5e5a9e4788"
+    },
+    {
+      "file": "175_안여준/an-yeojun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "db0ffa064436"
+    },
+    {
+      "file": "175_안여준/an-yeojun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "ec3c26f0cd22"
+    }
+  ],
+  "zeta_176_구해림": [
+    {
+      "file": "176_구해림/gu-haerim-main.png",
+      "label": "주인공 구해림",
+      "prompt": "주인공",
+      "prompt_sha": "c39cb3b39428"
+    },
+    {
+      "file": "176_구해림/gu-haerim-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "4d0a119e0979"
+    },
+    {
+      "file": "176_구해림/gu-haerim-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "0f8aebf33d86"
+    }
+  ],
+  "zeta_177_윤모아": [
+    {
+      "file": "177_윤모아/yoon-moa-main.png",
+      "label": "주인공 윤모아",
+      "prompt": "주인공",
+      "prompt_sha": "ba35880b7ed3"
+    },
+    {
+      "file": "177_윤모아/yoon-moa-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "06332610755e"
+    },
+    {
+      "file": "177_윤모아/yoon-moa-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "d64cbb837a76"
+    }
+  ],
+  "zeta_178_석원제": [
+    {
+      "file": "178_석원제/seok-wonje-main.png",
+      "label": "주인공 석원제",
+      "prompt": "주인공",
+      "prompt_sha": "354af14daf2f"
+    },
+    {
+      "file": "178_석원제/seok-wonje-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "c7403be93d84"
+    },
+    {
+      "file": "178_석원제/seok-wonje-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "e055445b3f73"
+    }
+  ],
+  "zeta_179_연서후": [
+    {
+      "file": "179_연서후/yeon-seohu-main.png",
+      "label": "주인공 연서후",
+      "prompt": "주인공",
+      "prompt_sha": "7dd4179f6a1c"
+    },
+    {
+      "file": "179_연서후/yeon-seohu-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "aa7070781581"
+    },
+    {
+      "file": "179_연서후/yeon-seohu-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "9fe8deb1ae06"
+    }
+  ],
+  "zeta_180_설지노": [
+    {
+      "file": "180_설지노/seol-jino-main.png",
+      "label": "주인공 설지노",
+      "prompt": "주인공",
+      "prompt_sha": "cb85afd6e7f0"
+    },
+    {
+      "file": "180_설지노/seol-jino-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "795cb0e35260"
+    },
+    {
+      "file": "180_설지노/seol-jino-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "de5a1c624fc3"
+    }
+  ],
+  "zeta_181_나승재": [
+    {
+      "file": "181_나승재/na-seungjae-main.png",
+      "label": "주인공 나승재",
+      "prompt": "주인공",
+      "prompt_sha": "dbb39ca0dc6a"
+    },
+    {
+      "file": "181_나승재/na-seungjae-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "0a7069cf326e"
+    },
+    {
+      "file": "181_나승재/na-seungjae-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "f1f3886e879c"
+    }
+  ],
+  "zeta_182_염수온": [
+    {
+      "file": "182_염수온/yeom-suon-main.png",
+      "label": "주인공 염수온",
+      "prompt": "주인공",
+      "prompt_sha": "7a91fe80a9d1"
+    },
+    {
+      "file": "182_염수온/yeom-suon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "a41af2912a32"
+    },
+    {
+      "file": "182_염수온/yeom-suon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "5515c7e5ca3d"
+    }
   ]
 }
