@@ -3110,5 +3110,65 @@
       "prompt": "여성용",
       "prompt_sha": "58b33ad9de0f"
     }
+  ],
+  "zeta_139_마병찬": [
+    {
+      "file": "139_마병찬/ma-byeongchan-main.png",
+      "label": "주인공 마병찬",
+      "prompt": "주인공",
+      "prompt_sha": "ecc9b491e89d"
+    },
+    {
+      "file": "139_마병찬/ma-byeongchan-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "5a461a4d673f"
+    },
+    {
+      "file": "139_마병찬/ma-byeongchan-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "f4baae44057f"
+    }
+  ],
+  "zeta_141_하도운": [
+    {
+      "file": "141_하도운/ha-doun-main.png",
+      "label": "주인공 하도운",
+      "prompt": "주인공",
+      "prompt_sha": "387e71d84256"
+    },
+    {
+      "file": "141_하도운/ha-doun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "2121bca099c6"
+    },
+    {
+      "file": "141_하도운/ha-doun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "5c1758a00c58"
+    }
+  ],
+  "zeta_142_용이룸": [
+    {
+      "file": "142_용이룸/yong-ireum-main.png",
+      "label": "주인공 용이룸",
+      "prompt": "주인공",
+      "prompt_sha": "df80cce1fa9b"
+    },
+    {
+      "file": "142_용이룸/yong-ireum-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "0f265a5f0d20"
+    },
+    {
+      "file": "142_용이룸/yong-ireum-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "1515bd4f1d46"
+    }
   ]
 }
