@@ -38,6 +38,17 @@ def local_files():
     return by
 
 
+def repo_profiles(num):
+    """저장소 zeta/generated/번호_이름/ 에 등록된 프로필 종류 (주인공·유저 남·유저 여)"""
+    have = set()
+    for d in glob.glob(str(ROOT / f"zeta/generated/{num}_*")):
+        for f in os.listdir(d):
+            m = re.search(r"-(main|user-m|user-f)\.png$", f)
+            if m:
+                have.add(kind(f))
+    return have
+
+
 def collect():
     works = {}
     for p in glob.glob(str(ROOT / "zeta/zeta_[0-9][0-9][0-9]_*.md")):
@@ -70,7 +81,7 @@ def collect():
             elif re.search(r"-(main|user-m|user-f)-v\d+\.png$", tl):
                 prv.add(kind(tl))  # 기본 이름 없이 -v2 만 있는 경우
         pr |= prv  # -v2 만 남은 종류도 있는 것으로 센다 (-prev 이전본은 세지 않는다)
-        rows.append(dict(no=no, name=works[no], pr=pr, sh=sh, cas=len(cas), sb=sb, kd=kd, ct=ct, files=len(by.get(no, ()))))
+        rows.append(dict(no=no, name=works[no], pr=pr, sh=sh, cas=len(cas), sb=sb, kd=kd, ct=ct, files=len(by.get(no, ())), repo=repo_profiles(no)))
     return rows
 
 
@@ -101,6 +112,7 @@ def render(rows):
     a(f"| 플롯 | **{tot}편** |")
     a(f"| 이미지 프로필 3종 모두 있음 | {c(lambda r: len(r['pr']) == 3)}편 |")
     a(f"| 이미지 프로필 없음 | {c(lambda r: not r['pr'])}편 |")
+    a(f"| 이미지 프로필이 로컬에는 일부만 있고 저장소에는 3종 모두 있음 | {c(lambda r: 0 < len(r['pr']) < 3 and len(r['repo']) == 3)}편 |")
     a(f"| 3면도 3종 모두 있음 | {c(lambda r: len(r['sh']) == 3)}편 |")
     a(f"| 3면도 일부만 있음 | {c(lambda r: 0 < len(r['sh']) < 3)}편 |")
     a(f"| 3면도 없음 | {c(lambda r: not r['sh'])}편 |")
@@ -118,11 +130,19 @@ def render(rows):
     for r in rows:
         cas = f"{r['cas']}/12" if r["cas"] else "○"
         n = lambda k: (f"{r[k]}장" if r[k] else "○")
-        a(f"| {r['no']} | {r['name']} | {sym(r['pr'], ['main', 'm', 'f'])} | {sym(r['sh'], ['main', 'm', 'f'])} | {cas} | {n('sb')} | {n('kd')} | {n('ct')} |")
+        prc = sym(r["pr"], ["main", "m", "f"])
+        if 0 < len(r["pr"]) < 3 and len(r["repo"]) == 3:
+            prc += " (저장소 ●●●)"
+        a(f"| {r['no']} | {r['name']} | {prc} | {sym(r['sh'], ['main', 'm', 'f'])} | {cas} | {n('sb')} | {n('kd')} | {n('ct')} |")
     a("")
     a("## 비어 있는 것")
     a("")
     a(f"- **이미지 프로필 없음 ({c(lambda r: not r['pr'])}편):** {names(lambda r: not r['pr'])}")
+    only = [r for r in rows if 0 < len(r["pr"]) < 3]
+    if only:
+        a("- **이미지 프로필이 로컬에는 일부만 있는 작품:** " + ", ".join(
+            f"{r['no']} {r['name']}(로컬 {sym(r['pr'], ['main', 'm', 'f'])}, 저장소 {sym(r['repo'], ['main', 'm', 'f'])})" for r in only)
+            + " — 로컬에서 직접 정리한 것은 의도한 상태이고, 저장소 쪽이 기준이다.")
     a(f"- **3면도 없음 ({c(lambda r: not r['sh'])}편):** {names(lambda r: not r['sh'])}")
     a(f"- **3면도 일부만 ({c(lambda r: 0 < len(r['sh']) < 3)}편):** {names(lambda r: 0 < len(r['sh']) < 3)}")
     part = ", ".join(f"{r['no']} {r['name']}({r['cas']}/12)" for r in rows if 0 < r["cas"] < 12) or "없음"
