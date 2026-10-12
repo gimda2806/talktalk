@@ -19,6 +19,7 @@ import glob
 import json
 import os
 import re
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -31,7 +32,7 @@ def folder_files(num):
     for base in (LOCAL, ROOT / "zeta/generated", ROOT / "zeta/generated/닿기_직전_스틸"):
         for d in glob.glob(f"{base}/{num}_*"):
             if os.path.isdir(d):
-                files |= set(os.listdir(d))
+                files |= {unicodedata.normalize("NFC", x) for x in os.listdir(d)}  # macOS 가 분해형(NFD) 이름으로 저장한 파일도 맞춘다
     return files
 
 
