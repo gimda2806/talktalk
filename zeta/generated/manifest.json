@@ -3496,19 +3496,19 @@
       "file": "169_국우찬/guk-uchan-main.png",
       "label": "주인공 국우찬",
       "prompt": "주인공",
-      "prompt_sha": "8d88c0a77de2"
+      "prompt_sha": "2deb19b1c13f"
     },
     {
       "file": "169_국우찬/guk-uchan-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "603e35080f53"
+      "prompt_sha": "9807030eb6b5"
     },
     {
       "file": "169_국우찬/guk-uchan-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "1a7802bbb4f6"
+      "prompt_sha": "b8a703fc8a8e"
     }
   ],
   "zeta_170_어건휘": [
@@ -3516,19 +3516,59 @@
       "file": "170_어건휘/eogun-hwi-main.png",
       "label": "주인공 어건휘",
       "prompt": "주인공",
-      "prompt_sha": "162946cfa4e7"
+      "prompt_sha": "c23e021689e1"
     },
     {
       "file": "170_어건휘/eogun-hwi-user-m.png",
       "label": "유저 프로필 · 남성",
       "prompt": "남성용",
-      "prompt_sha": "3f595e8c72c6"
+      "prompt_sha": "d8edfc945d6d"
     },
     {
       "file": "170_어건휘/eogun-hwi-user-f.png",
       "label": "유저 프로필 · 여성",
       "prompt": "여성용",
-      "prompt_sha": "0ac3b14909ed"
+      "prompt_sha": "0db994476734"
+    }
+  ],
+  "zeta_171_편세온": [
+    {
+      "file": "171_편세온/pyeon-seon-main.png",
+      "label": "주인공 편세온",
+      "prompt": "주인공",
+      "prompt_sha": "04eb54e3df65"
+    },
+    {
+      "file": "171_편세온/pyeon-seon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "a83bbdd576e0"
+    },
+    {
+      "file": "171_편세온/pyeon-seon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "a9d2ec4c088d"
+    }
+  ],
+  "zeta_172_최래원": [
+    {
+      "file": "172_최래원/choi-raewon-main.png",
+      "label": "주인공 최래원",
+      "prompt": "주인공",
+      "prompt_sha": "8e238660c070"
+    },
+    {
+      "file": "172_최래원/choi-raewon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "51d67d1c846c"
+    },
+    {
+      "file": "172_최래원/choi-raewon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "640f54443d78"
     }
   ]
 }
