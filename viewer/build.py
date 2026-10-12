@@ -275,6 +275,32 @@ def read_zeta_series():
     return out
 
 
+def load_shortdrama(stem):
+    """zeta/shortdrama/{번호}_{이름}_숏드라마.md 가 있으면 묶음 두 개(스틸 쪽 · 영상 쪽)로 읽는다. 스틸 탭에서 쓴다.
+
+    파일의 '## 절'은 묶음 안 소제목(h4)으로 접어 넣는다.
+    """
+    num = stem.split("_")[1]
+    files = sorted((ZETA_DIR / "shortdrama").glob(f"{num}_*_숏드라마.md"))
+    if not files:
+        return []
+    f = files[0]
+    text = f.read_text(encoding="utf-8")
+    m = re.search(r"^#\s+.*?(「.+?」)", text, re.M)
+    title = f"숏드라마 {m.group(1) if m else ''}".strip()
+    desc = re.search(r"^>\s*(.+)$", text, re.M)
+    out = [dict(title=f"{title} · 콘티·스틸", items=[]), dict(title=f"{title} · 영상·편집", items=[])]
+    if desc:
+        out[0]["items"].append(dict(kind="text", lines=[desc.group(1).strip(), "", f"파일: `zeta/shortdrama/{f.name}`"]))
+    side = 0
+    for g in parse_blocks(text, src=f"zeta/shortdrama/{f.name}"):
+        if g["title"].startswith("영상"):
+            side = 1
+        out[side]["items"].append(dict(kind="head", label=g["title"]))
+        out[side]["items"] += g["items"]
+    return [g for g in out if len(g["items"]) > 0]
+
+
 def load_zeta():
     """zeta/zeta_*.md 하나 = 제타 작품 하나. 설정집 파일이 있으면 '4. 설정집' 묶음에 끼워 넣는다."""
     rows = read_zeta_list()
@@ -307,7 +333,8 @@ def load_zeta():
             kind = register.guess_kind(i)
             stale = bool(i.get("prompt_sha")) and register.prompt_sha(f.stem, kind, i) not in (None, i["prompt_sha"])
             images.append(dict(label=i["label"], url=f"images/{Path(i['file']).name}", stale=stale))
-        works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), images=images, **info))
+        # 숏드라마 콘티는 제타 탭이 아니라 관리자 전용 스틸 탭에서 보여 준다
+        works.append(dict(id=f.stem, file=f"zeta/{f.name}", groups=split_fields(groups), drama=load_shortdrama(f.stem), images=images, **info))
     # 만든 순서(작품 목록 줄 순서)의 역순 = 최신 작품이 위. 목록에 없는 파일은 맨 위에 날짜·이름순으로
     # 사복 의상(zeta-casual-wardrobe.md)은 캐릭터 도식 시트 전용이라 뷰어 목록에 넣지 않는다
     return load_common() + sorted(works, key=lambda w: (w["seq"] > 0, -w["seq"], w["date"], w["name"]), reverse=False)
