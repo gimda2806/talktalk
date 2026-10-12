@@ -268,3 +268,29 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "봉아론_신호대기새벽_닿기직전_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "봉아론_신호대기새벽_닿기직전_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+### 아이돌 커플 셀카 (유저 남성)
+> 유저(남) 이름: 백지훈. 방송국 대기실, 리허설이 끝난 늦은 오후. 아론이 거울 앞에 앉아 휴대폰으로 얼굴 아래쪽을 가린 채 셀카를 찍고, 매니저 지훈이 뒤에서 아론의 머리 위에 턱을 괴고 두 손을 어깨에 얹은 채 같이 거울을 본다. 이마 위로 밀어 올린 눈 그림 안대가 아론의 표식. 아이돌이 몰래 남긴 사적인 커플 사진 느낌. 이미지 1 = 017_bong-aron-character-sheet-2k-v*.png, 이미지 2 = 017_bong-aron-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 bong-aron-main.png / bong-aron-user-m.png). 세로 9:16, 로고·글씨 없음. 파일명 `봉아론_대기실셀카_커플셀카_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
+
+```text
+Ultra-high-resolution 2K vertical 9:16 photorealistic candid mirror-selfie photo of two distinct adult Korean men who are a romantic couple, off-duty idol style — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Bong Aron and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【POSE】
+FRONT: Bong Aron, seated in front of the mirror, holding a plain silver smartphone with no logo up to the mirror so it covers the lower half of his face, heavy-lidded sleepy eyes looking straight into the mirror, his other hand resting loosely at his collar.
+BEHIND: the boyfriend, sitting close behind him, chin resting lightly on top of Aron's head, both hands resting on Aron's shoulders, a calm direct gaze into the mirror with the faintest smile.
+
+【CHARACTER — Bong Aron (FRONT, based on image_1 <<<image_1>>>)】
+Mid-20s Korean male idol, tall slim build about 184cm, small elongated oval face, clean softly tapered jaw, high defined cheekbones, long narrow heavy-lidded eyes with a thin hooded inner double eyelid fold, a tiny dark mole on the tip of the nose, bleached lavender-ash gray hair tousled to the brow line with dark roots just showing, faint sleepless shadows under the eyes. A cream sleep mask with drawn-on closed eyes pushed up onto his forehead. Outfit: an oversized cropped lavender-gray wool varsity-style cardigan buttoned over a white long-sleeve tee, wide faded black jeans. Accessories: a thin silver chain at the collar, small silver cross drop earrings, a chunky plain silver ring, a slim silver bangle.
+
+【CHARACTER — Boyfriend (BEHIND, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, soft oval face, gently tapered jaw, long clear almond eyes with a soft double eyelid fold (clearly different from Aron's heavy-lidded eyes), soft straight brows, high straight nose with a delicate tip, NO mole anywhere, short neat dark brown-black hair with a light side-swept fringe under a plain black ball cap with no logo. Outfit: an unzipped plain navy windbreaker over a plain black crew-neck tee. Accessories: a small silver hoop earring, a plain silver bangle.
+
+【BACKGROUND】
+A broadcast-station waiting room late in the afternoon: a warm beige wall, the edge of a vanity mirror frame with soft round bulbs, a folded cream blanket on the sofa arm behind them, everything softly out of focus (no legible text anywhere).
+
+【LIGHTING · COLOR · STYLE】
+Warm indoor light from the vanity bulbs and a side window, no camera flash, soft natural shadows, muted warm tones. Cool porcelain skin tone with real pore texture, slight film grain, candid off-duty idol photo feeling rather than a staged photoshoot. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No logos or brand marks anywhere (none on the cap, phone, or clothing). No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No mole on boyfriend. No exaggerated muscles. No bare chest, no unbuttoned, removed, or exposed clothing beyond face, neck, hands, and forearms. No bed or bedroom setting. No suggestive or provocative pose. No stage costume. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No landscape or square framing.
+```

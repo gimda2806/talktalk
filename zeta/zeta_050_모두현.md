@@ -303,3 +303,54 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 Output file name: when you save or deliver this image, name the file "모두현_빈훈련장오후_입맞춤_YYYYMMDD-HHMM.png" with the actual generation date and time (24-hour) in place of YYYYMMDD-HHMM, for example "모두현_빈훈련장오후_입맞춤_20261011-1430.png". The name goes only in the file name, never inside the image.
 ```
+
+#### 생성 통과 버전 (구조형)
+> 2026-10-12 실제 생성에 통과한 프롬프트. 위 긴·짧은 버전은 같은 도구에서 콘텐츠 검토로 차단됐고, 아래처럼 아이돌 미형 헤더를 빼고 인물·장면·금지 사항을 절로 나눠 짧게 쓰자 통과했다(차단 사유는 공개되지 않아 원인은 확정할 수 없음). `<<<image_1>>>`·`<<<image_2>>>`는 그 도구의 참고 이미지 자리표시. 파일명 `모두현_빈훈련장오후_입맞춤_YYYYMMDD-HHMM.png`.
+
+```text
+Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Mo Duhyeon and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
+
+【CHARACTER — Mo Duhyeon (RIGHT, based on image_1 <<<image_1>>>)】
+Early-30s Korean male, tall lean build ~183 cm, narrow V-jaw face, sharp jawline, defined cheekbones, upward-tilted monolid cat-eye gaze (absolutely NO double eyelids), thick straight dark brows, high straight nose bridge, one small black mole below the left corner of the lower lip, short thick black hair swept naturally up off the forehead. Outfit: khaki-beige waterproof pullover anorak over black mock-neck long-sleeve tee, charcoal tapered chinos, black leather high-top sneakers, black rubber-strap sports watch, black nylon sling bag worn across body. One hand holding a small black training clicker loosely at his side. Eyes closed. Ears faintly flushed red.
+
+【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
+Late-20s Korean male, soft oval face, gentle jawline, long almond double-lidded eyes (clearly distinguishable from Mo Duhyeon's monolids — visibly different eye shape), soft straight brows, high straight nose with delicate tip, naturally full lips, NO mole anywhere, short neat dark brown-black hair with a light side-swept fringe. Outfit: heather-gray crewneck long-sleeve sweatshirt with white tee hem peeking out at the bottom, navy chino pants, gray suede low-top sneakers. One hand resting lightly on Mo Duhyeon's forearm. Eyes closed.
+
+【COMPOSITION & ACTION】
+Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. One cream-colored mixed-breed dog sits calmly near their feet, looking up at them. Both faces are individually sharp and fully distinct within the frame.
+
+【BACKGROUND】
+Sunday afternoon interior dog training hall, empty after class. Wide side windows admit soft warm-cool natural afternoon light. Dark rubber mat flooring. Low agility props (partial hurdles, tunnel) softly blurred in the background.
+
+【LIGHTING · COLOR · STYLE】
+Soft natural side-window daylight, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
+
+【PROHIBITIONS】
+No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No double eyelids on Mo Duhyeon. No mole on boyfriend. No more than one dog. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
+```
+
+#### 영상 (8초, 생성 완료)
+> 2026-10-12 Higgsfield Kling 3.0 표준(std)·9:16·8초·소리 끔으로 생성 완료(12크레딧). 시작 프레임 = 위 「생성 통과 버전」으로 만든 입맞춤 스틸. 시작 이미지가 이미 입맞춤이라 영상은 입맞춤 유지 → 살짝 떨어져 수줍게 웃음 → 강아지가 건드려 함께 웃음 순서로, 다가가는 움직임 없이 떨어지는 쪽으로만 움직인다. 결과 영상 `hf_20261012_091327_a18699ab-db1c-4b0d-9e8c-de810f4f052f.mp4`, 저장 이름 `모두현_빈훈련장오후_입맞춤_8초.mp4`.
+
+```text
+8-second vertical 9:16 cinematic photorealistic Korean-drama clip continuing from the start image. Keep both faces, hair, outfits, the dog and the training hall exactly as in the start image.
+
+【CHARACTERS】
+RIGHT: Mo Duhyeon, early-30s Korean man, narrow V-jaw face, upturned monolid eyes (no double eyelids), small mole below the left corner of the lower lip, short black hair swept up, khaki anorak, holding a small black clicker.
+LEFT: his boyfriend, late-20s Korean man, soft oval face, double-lidded almond eyes, no mole, short dark hair with a light side-swept fringe, heather-gray sweatshirt.
+Two fictional adult men in a loving relationship; a brief, mutual, non-explicit moment of affection, both fully clothed in everyday casual clothes.
+
+【ACTION · TIMELINE】
+0–2s: the gentle closed-mouth kiss from the start image holds, very still.
+2–5s: they slowly part a few centimeters, foreheads almost touching, eyes opening; Mo Duhyeon looks down shyly, the tips of his ears red, a small reluctant smile.
+5–8s: the cream-colored dog at their feet nudges the boyfriend's leg; both glance down and laugh softly, the boyfriend's hand still resting lightly on Mo Duhyeon's forearm.
+
+【CAMERA】
+Locked-off side-profile two-shot at chest height with a very slow push-in; shallow depth of field.
+
+【LIGHT · STYLE】
+Soft afternoon daylight from tall side windows, low saturation, low-to-mid contrast Korean-drama grade, cool porcelain skin with real texture, subtle film grain.
+
+【PROHIBITIONS】
+No text, captions, watermarks or UI. No face swapping, morphing or merging. No extra people or second dog. No open-mouth kiss, no visible tongue, no longer or more intense kissing. No suggestive pose, no removed or unbuttoned clothing. No sudden cuts. No dialogue.
+```
