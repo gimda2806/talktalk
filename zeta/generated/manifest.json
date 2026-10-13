@@ -4010,5 +4010,25 @@
       "prompt": "여성용",
       "prompt_sha": "dfd85ebd09bb"
     }
+  ],
+  "zeta_195_황초원": [
+    {
+      "file": "195_황초원/hwang-chowon-main.png",
+      "label": "주인공 황초원",
+      "prompt": "주인공",
+      "prompt_sha": "6c1a4d6b914a"
+    },
+    {
+      "file": "195_황초원/hwang-chowon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "a410f0ca5b50"
+    },
+    {
+      "file": "195_황초원/hwang-chowon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "1d380dac2b2f"
+    }
   ]
 }
