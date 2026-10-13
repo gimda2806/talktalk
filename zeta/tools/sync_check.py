@@ -7,7 +7,7 @@
 - ~/Documents/ChatGPT/이미지 프로필 제작/generated/번호_이름/
 - ~/Library/CloudStorage/GoogleDrive-…/내 드라이브/이미지 프로필 제작/번호_이름/   (구글 드라이브 데스크톱 폴더)
 
-대상 파일: `…-main.png` · `…-user-m.png` · `…-user-f.png` (기본 이름이 없을 때 쓰는 `-v2` 같은 재생성본 포함).
+대상 파일: `…-main.png` · `…-user-m.png` · `…-user-f.png` (`-v2`·`-idol-v2` 같은 재생성본 포함).
 이름 앞의 번호는 있어도 없어도 되고, 한글 이름(`148_조남훈-main.png`)이든 영문 이름이든 상관없다.
 제외: 3면도·사복 시트·스틸·콘티·카메오·`-prev` 이전본.
 
@@ -70,7 +70,7 @@ def main():
                 f = unicodedata.normalize("NFC", f0)
                 if not f.endswith(".png") or SKIP.search(f) or re.match(r"\d{3}_C\d\d", f):
                     continue
-                m = re.search(r"-(main|user-m|user-f)(-v\d+)?\.png$", f)
+                m = re.search(r"-(main|user-m|user-f)(-[a-z]+)?(-v\d+)?\.png$", f)
                 if not m:
                     continue
                 lp = src / d0 / f0
