@@ -3770,5 +3770,65 @@
       "prompt": "여성용",
       "prompt_sha": "5515c7e5ca3d"
     }
+  ],
+  "zeta_183_배원재": [
+    {
+      "file": "183_배원재/bae-wonjae-main.png",
+      "label": "주인공 배원재",
+      "prompt": "주인공",
+      "prompt_sha": "adc960ad89db"
+    },
+    {
+      "file": "183_배원재/bae-wonjae-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "4d3f67f9db28"
+    },
+    {
+      "file": "183_배원재/bae-wonjae-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "5647b1b44282"
+    }
+  ],
+  "zeta_184_채준오": [
+    {
+      "file": "184_채준오/chae-juno-main.png",
+      "label": "주인공 채준오",
+      "prompt": "주인공",
+      "prompt_sha": "bff6c62abe13"
+    },
+    {
+      "file": "184_채준오/chae-juno-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "b67cbf404959"
+    },
+    {
+      "file": "184_채준오/chae-juno-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "eb593fb4596f"
+    }
+  ],
+  "zeta_185_모세윤": [
+    {
+      "file": "185_모세윤/mo-seyun-main.png",
+      "label": "주인공 모세윤",
+      "prompt": "주인공",
+      "prompt_sha": "3ecbf8aab157"
+    },
+    {
+      "file": "185_모세윤/mo-seyun-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "369c9a59b463"
+    },
+    {
+      "file": "185_모세윤/mo-seyun-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "6f5a9ab23138"
+    }
   ]
 }
