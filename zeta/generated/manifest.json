@@ -3930,5 +3930,25 @@
       "prompt": "여성용",
       "prompt_sha": "4f8b953c75ef"
     }
+  ],
+  "zeta_191_장민웅": [
+    {
+      "file": "191_장민웅/jang-minung-main.png",
+      "label": "주인공 장민웅",
+      "prompt": "주인공",
+      "prompt_sha": "69a0a34c23b1"
+    },
+    {
+      "file": "191_장민웅/jang-minung-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "7c76b5ce575f"
+    },
+    {
+      "file": "191_장민웅/jang-minung-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "7dfb86795ab4"
+    }
   ]
 }
