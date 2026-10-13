@@ -267,31 +267,6 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 ```
 
-### 입맞춤 (유저 남성)
-> 유저(남) 이름: 백지훈. 「닿기 직전」 바로 다음 순간. 새벽 네 시 신호 대기 중인 밴 안에서 아론이 앞좌석 쪽으로 몸을 기울여 두 사람이 입을 다문 짧고 가벼운 입맞춤을 나눈다. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `봉아론_신호대기새벽_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
-
-```text
-Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Bong Aron and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
-
-【CHARACTER — Bong Aron (RIGHT, based on image_1 <<<image_1>>>)】
-Mid-20s Korean male, tall slim build ~184 cm with straight broad shoulders, small elongated oval face, clean tapered jaw, high defined cheekbones, long narrow heavy-lidded drowsy eyes with a thin hooded inner double eyelid fold, straight medium-thick dark brows, a tiny dark mole on the tip of the nose, narrow high straight nose, bleached lavender-ash gray hair tousled to the brow line with dark roots just showing. Outfit: pale gray zip-up knit track jacket over a white tee, black face mask pulled down under the chin, thin silver chain at the collar. One hand holding a sleep mask low at chest height. Eyes closed. A small held breath.
-
-【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
-Late-20s Korean male, small soft oval face, gently tapered clean jaw, clear wide-open almond eyes with soft double eyelid folds (clearly distinguishable from Bong Aron's drowsy heavy-lidded eyes), softly straight dark brows, narrow high straight nose with delicate tip, softly full lips, NO mole anywhere, short neatly cut dark brown-black hair with a light side-swept fringe. Outfit: plain navy windbreaker, no logo, no lettering. One hand resting lightly on the seatback near Bong Aron's sleeve end. Eyes closed.
-
-【COMPOSITION & ACTION】
-Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. Both faces are individually sharp and fully distinct within the frame.
-
-【BACKGROUND】
-Pre-dawn around four a.m. inside a white passenger van waiting at a red signal, the engine idling softly. A folded cream blanket lies on the rear seat. Cool streetlight comes through the windshield with a faint red signal glow far behind, and a sleep mask with pencil marks inside it (no legible text) is held low in the frame.
-
-【LIGHTING · COLOR · STYLE】
-Cool pre-dawn streetlight from the window side as soft clean side light with a faint red signal glow far behind, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
-
-【PROHIBITIONS】
-No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No legible text on the sleep mask. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
-```
-
 ### 아이돌 커플 셀카 (유저 남성)
 > 유저(남) 이름: 백지훈. 방송국 대기실, 리허설이 끝난 늦은 오후. 아론이 거울 앞에 앉아 휴대폰으로 얼굴 아래쪽을 가린 채 셀카를 찍고, 매니저 지훈이 뒤에서 아론의 머리 위에 턱을 괴고 두 손을 어깨에 얹은 채 같이 거울을 본다. 이마 위로 밀어 올린 눈 그림 안대가 아론의 표식. 아이돌이 몰래 남긴 사적인 커플 사진 느낌. 이미지 1 = 017_bong-aron-character-sheet-2k-v*.png, 이미지 2 = 017_bong-aron-user-m-character-sheet-2k-v*.png (드라이브 '이미지 프로필 제작', 시트가 없으면 같은 폴더의 bong-aron-main.png / bong-aron-user-m.png). 세로 9:16, 로고·글씨 없음. 파일명 `봉아론_대기실셀카_커플셀카_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
 

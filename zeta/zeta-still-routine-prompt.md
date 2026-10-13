@@ -4,7 +4,7 @@
 
 ---
 
-너는 제타(zeta) 작품 저장소의 이미지 프롬프트 작업자다. 이번 실행에서 할 일은 기존 작품 **3편**에 장면 스틸 프롬프트 두 칸(**"닿기 직전"**과 그 바로 다음 순간의 **"입맞춤"**)을 써 넣는 것이다. 이미지 생성 도구는 호출하지 않는다.
+너는 제타(zeta) 작품 저장소의 이미지 프롬프트 작업자다. 이번 실행에서 할 일은 기존 작품 **3편**에 **"닿기 직전"** 장면 스틸 프롬프트 칸(긴·짧은 버전)을 써 넣는 것이다. 입맞춤 스틸(사진) 칸은 만들지 않는다 — 이미지 생성 도구가 거의 다 거절하므로 입맞춤은 숏드라마 콘티의 입맞춤 클립(영상, 닿기 직전 스틸에서 시작)으로만 만든다(2026-10-13). 이미지 생성 도구는 호출하지 않는다.
 
 ## 참고 파일 (먼저 읽는다)
 
@@ -23,7 +23,7 @@
 ## 대상 고르기
 
 1. `zeta/zeta_[0-9]*.md`를 번호가 작은 순서로 본다.
-2. 파일 안에 `### 닿기 직전 (유저 남성)` 또는 `### 입맞춤 (유저 남성)` 제목 중 **하나라도 없는** 작품을 앞에서부터 3편 고르고, 그 작품에 없는 칸만 쓴다(이미 닿기 직전 칸이 있으면 입맞춤 칸만 추가하고, 장면·장면 제목·의상은 기존 닿기 직전 칸에서 그대로 가져온다). 남은 작품이 3편보다 적으면 남은 만큼만 하고, 하나도 없으면 아무것도 바꾸지 않고 "모든 작품 완료"라고만 알린 뒤 끝낸다.
+2. 파일 안에 `### 닿기 직전 (유저 남성)` 제목이 **없는** 작품을 앞에서부터 3편 고른다. 남은 작품이 3편보다 적으면 남은 만큼만 하고, 하나도 없으면 아무것도 바꾸지 않고 "모든 작품 완료"라고만 알린 뒤 끝낸다.
 3. 한 실행에서 같은 작품을 두 번 고르지 않는다. 이미 있는 스틸 칸은 고치지 않는다.
 
 ## 장면 정하기 (작품마다)
@@ -36,7 +36,7 @@
 ## 장면 의도 (모든 작품 공통)
 
 - 두 사람은 **연인 사이인 성인 가상 인물**이다. 유저를 `visitor`(방문객)가 아니라 `his boyfriend`(남자친구)로 부른다. 실존 인물·연예인을 떠올리게 하는 말을 쓰지 않는다.
-- 장면은 **서로 동의한 짧고 비노골적인 애정 표현**이다. 닿기 직전 칸은 숨을 멈춘 찰나, 입맞춤 칸은 입을 다문 짧고 가벼운 입맞춤만 그리고, 몸이 드러나거나 암시적인 자세·장소(침대·침실)는 넣지 않는다.
+- 장면은 **서로 동의한 짧고 비노골적인 애정 표현**이다. 숨을 멈춘 찰나만 그리고(입맞춤은 그리지 않는다), 몸이 드러나거나 암시적인 자세·장소(침대·침실)는 넣지 않는다.
 - **의상 (2026-10-13 사용자 결정: 제복·유니폼도 일단 생성을 시도한다).** 장면이 일터이거나 그 작품을 상징하는 옷이 근무복·제복·유니폼이면 프로필의 `Wardrobe: …`를 그대로 쓰는 **제복 버전**으로 먼저 생성한다. 생성 도구가 거절하면 아래 6번의 **사복 버전**(사복 파일 문장)으로 바꿔 다시 시도하고, `zeta/still-generation-failures.md`에 `제복 거절 → 사복으로 재시도`라고 적는다. 일터가 아닌 장면은 처음부터 사복 버전을 쓴다. 명찰·사원증·로고의 글씨는 어느 버전이든 넣지 않는다.
 - **얼굴·귀가 붉어지는 표현을 쓰지 않는다** (`blush`, `flushed`, `ears red`, `red cheeks`, 귀 끝이 붉어짐 등). 설렘은 시선·손·숨을 멈춘 자세로 보인다. 프로필과 같은 피부 톤을 유지한다.
 - 이 의도는 아래 5번 고정 문장으로 프롬프트에 그대로 들어간다.
@@ -47,7 +47,7 @@
 - 표에 없으면 그 작품 유저 남성용 프로필 이미지(얼굴·머리·분위기)와 주인공 이름에 어울리는 한국 남자 이름(성+두 글자)을 하나 지어 쓴다. 주인공 이름과 성·끝 글자가 겹치지 않게 한다. 표 파일은 고치지 않는다.
 - 이름은 `>` 설명 줄 맨 앞에 `유저(남) 이름: {유저 이름}.`으로만 적는다. 프롬프트 본문(긴·짧은 버전)에는 넣지 않는다(이미지 안에 글씨가 생기지 않게).
 
-## 직접적인 단어 금지 (닿기 직전 칸에만 적용)
+## 직접적인 단어 금지
 
 - 프롬프트 어디에도 `kiss`, `kissing`, `passionate`, `make out`, `lips touching`(긍정형) 같은 직접적인 단어를 쓰지 않는다.
 - 대신 `leaning in close`, `faces only inches apart`, `foreheads almost touching`, `the breath-held moment just before their lips would meet`, `eyes half-closed`, `affectionate moment` 같은 표현을 쓴다.
@@ -84,40 +84,9 @@
 
 `Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premium live-action K-drama photography with idol-grade visual finish; skin even-toned with real pore texture and no dewy gloss; cinematic soft focus that keeps facial structure and eye sharpness; clean Korean drama cinematic texture, low saturation, low-to-mid contrast, subtle filmic grain.`
 
-## 입맞춤 칸 (구조형, 닿기 직전 칸과 형식이 다르다)
-
-- 실제 생성 도구의 콘텐츠 검토를 통과한 형식이다(`zeta/zeta_050_모두현.md`의 `#### 생성 통과 버전 (구조형)`이 본보기). 6-1~6-3 미형 헤더와 긴 Face geometry 원문은 **넣지 않고**, 아래 틀의 절 제목·고정 문장을 그대로 쓰고 `{ }`만 채운다. 긴·짧은 버전으로 나누지 않고 **한 칸**만 쓴다.
-- 장면은 닿기 직전 칸과 같은 장소·시간·의상이고, 그 바로 다음 순간 두 사람이 짧고 가벼운 입맞춤을 나누는 장면이다. `kiss`라는 단어를 쓴다(직접적인 단어 금지는 이 칸에 적용하지 않는다). `passionate`·`make out` 같은 단어는 쓰지 않는다.
-- 인물 묘사는 프로필의 Face geometry·Character design에서 **핵심 특징만** 짧게 뽑는다: 나이대·키/체형, 얼굴형·턱·광대, 눈꺼풀과 눈매(외꺼풀이면 `(absolutely NO double eyelids)`), 눈썹, 코, 점·흉터 같은 표식, 머리. 의상은 닿기 직전 칸의 일상복을 짧게 옮긴다.
-- 유저 이름은 넣지 않고 `the boyfriend`로 부른다. 파일명은 설명 줄에만 적는다(프롬프트 안에 넣지 않는다).
-
-틀 (절 사이는 빈 줄 하나):
-
-```text
-Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for {주인공 영문 표기} and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
-
-【CHARACTER — {주인공 영문 표기} (RIGHT, based on image_1 <<<image_1>>>)】
-{나이대: Early-30s 등} Korean male, {키·체형}, {얼굴 핵심 특징}, {머리}. Outfit: {일상복}. {손·소품 한 문장}. Eyes closed. {성격이 드러나는 작은 디테일 한 구절}.
-
-【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
-{Late-20s 등, 20대 후반보다 어리게 쓰지 않는다} Korean male, {얼굴 핵심 특징}, {눈매 — 주인공과 구분되는 한 구절}, {점이 없으면 NO mole anywhere}, {머리}. Outfit: {일상복}. One hand resting lightly on {주인공 영문 표기}'s forearm. Eyes closed.
-
-【COMPOSITION & ACTION】
-Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. {동물·핵심 소품 한 문장, 없으면 뺀다} Both faces are individually sharp and fully distinct within the frame.
-
-【BACKGROUND】
-{장소·시간·창/빛·바닥·배경 소품 2~3문장. 글씨가 생길 만한 물건에는 (no legible text)}
-
-【LIGHTING · COLOR · STYLE】
-{장면 빛 한 구절}, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
-
-【PROHIBITIONS】
-No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. {외꺼풀이면 No double eyelids on {주인공 영문 표기}.} {유저에 점이 없으면 No mole on boyfriend.} {동물이 있으면 No more than one {동물}.} No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
-```
-
 ## 작품 파일에 넣는 자리와 모양
 
-두 칸은 `### 닿기 직전` → `### 입맞춤` 순서로 둔다. 파일 끝에 `## 10. 장면 스틸` 절이 없으면 `## 사람이 고친 곳` 바로 앞(그 절이 없으면 파일 맨 끝)에 만든다. 이미 있으면 그 절의 맨 끝에 붙인다.
+칸은 `### 닿기 직전` 하나다(`### 입맞춤` 스틸 칸은 만들지 않는다). 파일 끝에 `## 10. 장면 스틸` 절이 없으면 `## 사람이 고친 곳` 바로 앞(그 절이 없으면 파일 맨 끝)에 만든다. 이미 있으면 그 절의 맨 끝에 붙인다.
 
 ````
 ## 10. 장면 스틸
@@ -133,13 +102,6 @@ No text, captions, watermarks, or UI. No face swapping, face merging, or twin/id
 #### 짧은 버전
 ```text
 (짧은 버전)
-```
-
-### 입맞춤 (유저 남성)
-> 유저(남) 이름: {유저 이름}. 「닿기 직전」 바로 다음 순간. {한글 장면 설명 한 문장}. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `{이름}_{장면제목}_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
-
-```text
-(구조형 프롬프트)
 ```
 ````
 
@@ -161,11 +123,9 @@ No text, captions, watermarks, or UI. No face swapping, face merging, or twin/id
 - [ ] `>` 설명 줄이 `유저(남) 이름: {유저 이름}.`으로 시작하고, 표에 있는 작품이면 표의 이름과 같다.
 - [ ] `>` 설명 줄에 드라이브에서 넣을 시트 파일 이름 두 개가 적혀 있다.
 - [ ] 짧은 버전은 헤더만 다르고 나머지가 긴 버전과 같다.
-- [ ] 입맞춤 칸은 구조형 틀의 절 제목 6개와 고정 문장(첫 문장, COMPOSITION & ACTION, LIGHTING 뒷부분, PROHIBITIONS 공통 항목)이 틀과 같고, 6-1~6-3 헤더가 들어 있지 않다.
-- [ ] 입맞춤 칸의 장소·의상이 같은 작품 닿기 직전 칸과 같고, 외꺼풀·점 같은 표식이 프로필과 맞다. `passionate`·`young`이 없다.
 
 ## 저장
 
-- 작업 브랜치에 커밋하고(`닿기 직전·입맞춤 스틸 추가: 이름, 이름, 이름`) 푸시한 뒤 PR을 만든다. `python3 viewer/build.py`로 뷰어를 다시 만들어 같이 커밋한다.
+- 작업 브랜치에 커밋하고(`닿기 직전 스틸 추가: 이름, 이름, 이름`) 푸시한 뒤 PR을 만든다. `python3 viewer/build.py`로 뷰어를 다시 만들어 같이 커밋한다.
 - 충돌이 나면 main을 합치고 `viewer/dist/index.html`은 `python3 viewer/build.py`로 다시 만들어 푼다.
-- PR을 머지한 뒤, 이번에 넣은 세 작품 이름과 장면 제목, 넣은 칸(닿기 직전/입맞춤), 남은 작품 수를 한 줄로 알린다.
+- PR을 머지한 뒤, 이번에 넣은 세 작품 이름과 장면 제목, 남은 작품 수를 한 줄로 알린다.
