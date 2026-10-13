@@ -309,31 +309,6 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 ```
 
-### 입맞춤 (유저 남성)
-> 유저(남) 이름: 이도빈. 「닿기 직전」 바로 다음 순간. 같은 연습실 거울 앞에서 두 사람이 입을 다문 짧고 가벼운 입맞춤을 나눈다. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `강리오_거울앞옆자리_입맞춤_20261013-0525.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
-
-```text
-Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Gang Rio and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
-
-【CHARACTER — Gang Rio (RIGHT, based on image_1 <<<image_1>>>)】
-Early-20s Korean male, 178cm, lean toned dancer's build, small oval face with a clean tapered jawline and neat pointed chin, high sharp cheekbones, long clean MONOLID eyes with upward-tilted outer corners and no visible crease (absolutely NO double eyelids), straight dark brows angled slightly upward, narrow high straight nose bridge with a small dark mole on the left side of the nose bridge, medium lips, milk-tea light ash-beige brown hair grown to the nape in a center-parted curtain fringe. Outfit: cropped cream plain varsity-style wool jacket over a pale gray hoodie, loose charcoal parachute track pants, thin silver hoop earring in the left earlobe, black hair tie around the right wrist, slim silver chain necklace. One hand winding the end of his own hoodie drawstring. Eyes closed. His sharp stage-performer face has gone soft and still.
-
-【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
-Late-20s Korean male, small soft oval face with a gently tapered jawline, long clear almond eyes with a soft double eyelid fold and level outer corners, clearly different from Gang Rio's monolid eyes, softly straight dark brows, narrow high straight nose bridge, softly full lips, NO mole anywhere, short neatly cut deep blue-black hair with a cool navy sheen and a light side-swept fringe. Outfit: heather-gray crew-neck sweatshirt with a white T-shirt hem showing, relaxed navy chino trousers. One hand resting lightly on Gang Rio's forearm. Eyes closed.
-
-【COMPOSITION & ACTION】
-Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. A paper booking sheet taped beside the door stays softly blurred in the lower background (no legible text). Both faces are individually sharp and fully distinct within the frame.
-
-【BACKGROUND】
-A dance practice room just after dawn, a wall of floor-to-ceiling mirrors softly reflecting the two figures, the center spot in front of the mirror left empty, smooth wooden floor with colored floor tape. A paper booking sheet taped beside the door (no legible text).
-
-【LIGHTING · COLOR · STYLE】
-Cool fluorescent practice-room ceiling light with a soft reflected fill from the mirror wall at dawn, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
-
-【PROHIBITIONS】
-No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No double eyelids on Gang Rio. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
-```
-
 ## 사람이 고친 곳
 
 뷰어에서 사람이 직접 고친 칸. 여기 적힌 칸은 모든 규칙보다 우선하며, 정독·일괄 치환·재설계 때 되돌리지 않는다.
