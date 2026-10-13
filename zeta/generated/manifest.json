@@ -3830,5 +3830,45 @@
       "prompt": "여성용",
       "prompt_sha": "6f5a9ab23138"
     }
+  ],
+  "zeta_186_허선호": [
+    {
+      "file": "186_허선호/heo-seonho-main.png",
+      "label": "주인공 허선호",
+      "prompt": "주인공",
+      "prompt_sha": "47548c00078d"
+    },
+    {
+      "file": "186_허선호/heo-seonho-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "dcbd5ad2099b"
+    },
+    {
+      "file": "186_허선호/heo-seonho-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "822459d0bc01"
+    }
+  ],
+  "zeta_187_육지안": [
+    {
+      "file": "187_육지안/yuk-jian-main.png",
+      "label": "주인공 육지안",
+      "prompt": "주인공",
+      "prompt_sha": "96332ef47d9a"
+    },
+    {
+      "file": "187_육지안/yuk-jian-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "10217f5264ff"
+    },
+    {
+      "file": "187_육지안/yuk-jian-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "6e7396d7efeb"
+    }
   ]
 }
