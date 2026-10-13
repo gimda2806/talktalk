@@ -3870,5 +3870,65 @@
       "prompt": "여성용",
       "prompt_sha": "6e7396d7efeb"
     }
+  ],
+  "zeta_188_연제호": [
+    {
+      "file": "188_연제호/yeon-jeho-main.png",
+      "label": "주인공 연제호",
+      "prompt": "주인공",
+      "prompt_sha": "1a6c57bf3ae5"
+    },
+    {
+      "file": "188_연제호/yeon-jeho-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "dd34d4624800"
+    },
+    {
+      "file": "188_연제호/yeon-jeho-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "cc878defcd4e"
+    }
+  ],
+  "zeta_189_고해찬": [
+    {
+      "file": "189_고해찬/go-haechan-main.png",
+      "label": "주인공 고해찬",
+      "prompt": "주인공",
+      "prompt_sha": "0629cba1552c"
+    },
+    {
+      "file": "189_고해찬/go-haechan-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "745142bd671e"
+    },
+    {
+      "file": "189_고해찬/go-haechan-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "7fd52ccd95c6"
+    }
+  ],
+  "zeta_190_남규하": [
+    {
+      "file": "190_남규하/nam-gyuha-main.png",
+      "label": "주인공 남규하",
+      "prompt": "주인공",
+      "prompt_sha": "899e6b3936d6"
+    },
+    {
+      "file": "190_남규하/nam-gyuha-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "32e9d5a0e1eb"
+    },
+    {
+      "file": "190_남규하/nam-gyuha-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "4f8b953c75ef"
+    }
   ]
 }
