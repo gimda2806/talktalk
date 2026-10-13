@@ -1,0 +1,3236 @@
+# 영상용 남자친구(유저 남성) 설정
+
+숏드라마 영상·스틸에만 쓰는 작품별 남자친구 설정입니다. 제타 대화 프로필의 유저 남성은 어떤 작품에도 어울리게 일부러 무난하게(모든 작품이 같은 얼굴 문장·같은 앞머리) 두었기 때문에, 영상에서는 작품마다 구별되지 않았습니다. 그래서 영상용으로만 작품마다 다른 사람을 세웁니다. **제타 작품 파일의 유저 프로필은 바꾸지 않습니다.**
+
+- 이름: `zeta/user-male-names.md` 표와 같습니다.
+- 짝 맞추기: 타입·머리색·머리 스타일·눈매·체격을 주인공과 대비되게 골랐습니다. 주인공이 안경이면 남자친구는 안경 없음, 주인공에게 점이 있으면 남자친구는 점 없음.
+- 분포: 200편 중 검정 머리는 소수이고, 같은 머리 스타일·타입이 몰리지 않게 나눴습니다(18개 타입 모두 사용).
+- 쓰는 곳:
+  - **영상용 한 줄**: 숏드라마 영상·스틸 프롬프트의 남자친구 줄에 그대로 붙입니다(이름은 넣지 않음).
+  - **목소리**: 그 작품 모든 영상 프롬프트에 같은 문장으로 반복합니다.
+  - **옷 결**: 계절이 바뀌어도 유지하는 스타일·색감입니다. 실제 옷은 장면 계절에 맞춰 이 결 안에서 고릅니다.
+  - **프로필 프롬프트**: 영상용 남자친구 프로필 이미지(얼굴 기준 사진)를 만드는 프롬프트입니다. 050 시안(`050_모두현x강세찬.png`)을 견본으로 각 작품의 유저 남성 짧은 버전 틀(피부·조명·캡션)을 그대로 두고 얼굴·머리·장면만 바꿨습니다. 벽 글씨가 생기지 않게 `no wall lettering, no signs or posters with words`를 넣었습니다.
+- 파일명: 만든 이미지는 `zeta/generated/NNN_이름/NNN_주인공이름x유저남이름.png`로 저장합니다(예: `050_모두현x강세찬.png`). 뷰어 등록(manifest)은 하지 않습니다.
+
+### 001 백서율 × 강지안
+- 타입: 허당남 — 낮밤이 뒤바뀌어 약속을 놓치고 허둥대는 쪽, 무뚝뚝한 서율이 자꾸 챙기게 만든다
+- 나이·체격: 20대 후반, 174cm 슬림
+- 머리: 밀크 브라운 히피 펌, 귀를 덮는 부스스한 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 웃을 때 드러나는 덧니
+- 옷 결: 오버핏 니트 레이어드, 머스터드·크림
+- 소품: 목에 걸친 큰 무선 헤드폰
+- 목소리: Voice: a little sleepy and sheepish, laughing at his own mistakes, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 174cm, milk-brown loose hippie-perm curls falling over the ears, round double-lidded eyes, a small snaggletooth that shows when he smiles, an oversized layered knit look in mustard and cream, big wireless headphones resting around his neck. Voice: a little sleepy and sheepish, laughing at his own mistakes, speaks slowly.`
+- 파일명: 001_백서율x강지안.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small rounded oval face with soft full cheeks, a gently curved jawline ending in a small rounded chin, large round eyes with clear double eyelid folds and a level outer corner, softly arched light-brown brows, a straight nose with a small rounded tip, full lips with a wide easy smile line, a small snaggletooth on the upper right visible when he smiles, and a sleepy, sheepish baseline expression as if he just woke up late. Hair: milk-brown loose hippie-perm curls with fluffy volume falling over the ears and the top of the forehead — clearly different from a slightly messy black swept-back cut. Character design: a late-20s man of slim build about 174cm, standing on an old stairwell landing carrying a moving box, big wireless headphones resting around his neck, wearing an oversized mustard knit layered over a cream long-sleeve tee, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a sheepish lopsided grin showing the snaggletooth, eyes slightly sleepy. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 백서율(U, M) | {{생성일시}} — the name "백서율(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 002 윤태오 × 오시후
+- 타입: 까칠남 — 물이 무서운 걸 까칠한 말투로 덮는 연상 회원, 밝은 태오 앞에서 조금씩 풀린다
+- 나이·체격: 30대 초반, 176cm 슬림, 좁은 어깨
+- 머리: 블루 블랙 쉼표 머리, 앞머리 한 가닥만 이마 옆으로 휘는 짧은 길이
+- 얼굴 포인트: 외꺼풀 올라간 눈매, 왼쪽 귓바퀴의 작은 은색 피어싱
+- 옷 결: 단정한 미니멀, 블랙·화이트
+- 소품: 검지에 낀 얇은 은반지
+- 목소리: Voice: cool and clipped, a dry edge that softens at the end, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 176cm with narrow shoulders, short blue-black comma-style hair with one curved front lock, upturned monolid eyes, a small silver piercing on the left ear rim, a clean minimal look in black and white, a thin silver ring on the index finger. Voice: cool and clipped, a dry edge that softens at the end, speaks slowly.`
+- 파일명: 002_윤태오x오시후.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim narrow face with a defined angular jawline ending in a neat pointed chin, upturned monolid eyes with crisp lifted outer corners, straight slim dark brows set in a slightly guarded line, a narrow high straight nose with a sharp tip, thin well-shaped lips with a firm resting line, a small silver piercing on the left ear rim, and a cool, slightly wary baseline expression. Hair: short blue-black comma-style hair with a single curved front lock sweeping beside the forehead, sides neatly trimmed — clearly different from short damp brown hair. Character design: a man in his early 30s of slim build about 176cm with narrow shoulders, standing at the edge of an indoor pool deck holding swim goggles, a thin silver ring on the index finger, wearing a plain black towel poncho over a white tee, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a cool guarded look with lips pressed together, one brow very slightly raised. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown hair, no side-swept fringe, no glasses, no mole, no droopy eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 윤태오(U, M) | {{생성일시}} — the name "윤태오(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 003 임하준 × 한도윤
+- 타입: 장난남 — 7년째 내기를 걸어 하준의 승부욕에 불을 붙이는 쪽
+- 나이·체격: 30대 초반, 182cm 어깨가 단단한 체격
+- 머리: 카키 브라운 짧은 크롭컷, 이마가 살짝 보이는 질감
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 오른쪽 볼 보조개
+- 옷 결: 데님 워크웨어, 인디고·머스터드
+- 소품: 손목의 은색 체인 팔찌
+- 목소리: Voice: warm and playful, a grin audible in every line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, solid build about 182cm with firm shoulders, short textured khaki-brown crop cut showing a little forehead, round double-lidded eyes, a dimple on the right cheek, a denim workwear look in indigo and mustard, a silver chain bracelet on the wrist. Voice: warm and playful, a grin audible in every line, speaks slowly.`
+- 파일명: 003_임하준x한도윤.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a balanced square-oval face with a firm clean jawline ending in a neat squared chin, large round eyes with clear double eyelid folds and a slight upward outer tilt, thick straight dark-brown brows, a straight nose with a defined tip, full lips with a wide grin line, a dimple on the right cheek, and a playful baseline expression with a mischievous glint. Hair: short textured khaki-brown crop cut with a choppy top showing a little forehead — clearly different from dark brown medium-length middle-parted hair. Character design: a man in his early 30s of solid build about 182cm with firm shoulders, sitting at a desk with a laptop and translation papers, one hand tapping a scorecard sheet, a silver chain bracelet on the wrist, wearing an indigo denim work shirt over a mustard tee, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a mischievous grin that deepens the right-cheek dimple, as if he just won a bet. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark brown hair, no side-swept fringe, no glasses, no middle part, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 임하준(U, M) | {{생성일시}} — the name "임하준(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 004 석한결 × 서이준
+- 타입: 직진남 — 일정을 하루 더 늘리겠다고 먼저 말해 버리는 떠돌이 여행객
+- 나이·체격: 20대 후반, 175cm 마른 체격
+- 머리: 라이트 베이지 장발, 목덜미에서 작게 묶은 꽁지
+- 얼굴 포인트: 처진 눈매, 오른쪽 눈썹을 가르는 짧은 흉터
+- 옷 결: 아웃도어 고프코어, 회청색·주황 포인트
+- 소품: 목에 건 카메라 스트랩
+- 목소리: Voice: clear and open, says what he means without hesitation, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, lean build about 175cm, shoulder-length light-beige hair tied in a small low ponytail, gently drooping eyes, a short scar cutting through the right eyebrow, an outdoor gorpcore look in slate blue with orange accents, a camera strap slung around his neck. Voice: clear and open, says what he means without hesitation, speaks slowly.`
+- 파일명: 004_석한결x서이준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a lean long oval face with a gently tapered jawline ending in a narrow chin, softly drooping eyes with deep double eyelid folds and a clear downward outer tilt, straight dark brows with a short pale scar cutting through the right brow, a straight slim nose with a refined tip, softly full lips with an open relaxed line, and a frank, open baseline expression. Hair: shoulder-length light-beige hair gathered into a small low ponytail at the nape, a few loose strands framing the face — clearly different from neatly combed-back black hair. Character design: a late-20s man of lean build about 175cm, standing on a small rural train platform with a backpack on one shoulder, a camera strap slung around his neck, wearing a slate-blue shell jacket with orange zipper pulls over a light fleece, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a direct open smile, looking straight into the lens without hesitation. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 석한결(U, M) | {{생성일시}} — the name "석한결(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 005 문이든 × 유하람
+- 타입: 능글남 — 카메라 뒤에서 여유롭게 디렉팅하며 얼어붙는 이든을 놀리는 영상 작가
+- 나이·체격: 20대 후반, 177cm 슬림
+- 머리: 블랙 울프컷, 목덜미를 덮는 층진 길이
+- 얼굴 포인트: 올라간 여우 눈매, 왼쪽 귓불의 은색 링 피어싱
+- 옷 결: 올블랙 미니멀, 블랙·버건디 포인트
+- 소품: 목에 건 가죽 끈 목걸이
+- 목소리: Voice: low and smooth, an amused unhurried drawl, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 177cm, black layered wolf cut brushing the nape, upturned fox-like eyes, a silver hoop in the left earlobe, an all-black minimal look with burgundy accents, a leather cord necklace. Voice: low and smooth, an amused unhurried drawl, speaks slowly.`
+- 파일명: 005_문이든x유하람.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a narrow V-shaped face with a sharp tapered jawline ending in a slender chin, upturned fox-like eyes with long lifted outer corners and a thin double fold, straight slim dark brows with a lifted tail, a narrow high nose with a crisp tip, thin lips with one corner lifted, a silver hoop in the left earlobe, and an amused, unhurried baseline expression. Hair: black layered wolf cut with textured crown and longer strands brushing the nape — clearly different from tousled light-brown slept-on hair. Character design: a late-20s man of slim build about 177cm, holding a mirrorless camera on a gimbal at chest height in a small neighborhood cafe, a leather cord necklace at the collar, wearing an all-black overshirt and tee with a burgundy inner layer, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a slow amused half-smile with one corner of the mouth lifted. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no light-brown hair, no side-swept fringe, no glasses, no mole, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 문이든(U, M) | {{생성일시}} — the name "문이든(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 006 방우진 × 지은호
+- 타입: 순정남 — 야근 속에서도 금요일 밤 통화만은 지켜 온 한결같은 연인
+- 나이·체격: 30대 초반, 174cm 슬림
+- 머리: 애쉬 그레이 댄디컷, 옆을 단정히 정리한 짧은 길이
+- 얼굴 포인트: 가늘고 긴 외꺼풀 눈, 콧등의 옅은 주근깨
+- 옷 결: 오버셔츠와 터틀넥 레이어드, 카멜·버건디
+- 소품: 손목의 가죽 줄 시계
+- 목소리: Voice: gentle and earnest, a quiet sincerity in each word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 174cm, neat ash-gray dandy cut trimmed at the sides, long narrow monolid eyes, a light dusting of freckles across the nose, a layered overshirt-and-turtleneck look in camel and burgundy, a leather-strap wristwatch. Voice: gentle and earnest, a quiet sincerity in each word, speaks slowly.`
+- 파일명: 006_방우진x지은호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with a soft tapered jawline ending in a neat chin, long narrow monolid eyes with a level outer corner and crisp corners, gently straight dark-gray brows, a slim straight nose with a soft tip, softly full lips with a quiet resting line, a light dusting of freckles across the nose bridge, and a gentle, earnest baseline expression. Hair: neat ash-gray dandy cut with tidy trimmed sides and soft texture on top — clearly different from short black naturally curly hair. Character design: a man in his early 30s of slim build about 174cm, sitting at a desk with a laptop and manuscript papers, a phone propped up showing a night sky, a leather-strap wristwatch, wearing a camel overshirt over a burgundy turtleneck, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a soft sincere smile, eyes resting warmly on the phone screen. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 방우진(U, M) | {{생성일시}} — the name "방우진(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 007 맹이안 × 노재이
+- 타입: 사이다남 — 서울에서 온 파견 작가, 머뭇거리는 이안 대신 할 말을 똑 부러지게 하는 쪽
+- 나이·체격: 20대 후반, 176cm 어깨가 단단한 체격
+- 머리: 와인 브라운 짧은 투블럭, 이마가 드러나게 올린 길이
+- 얼굴 포인트: 또렷한 동그란 눈, 짙은 일자 눈썹
+- 옷 결: 세미 포멀 셋업, 차콜·코발트 블루
+- 소품: 어깨에 멘 가죽 크로스백
+- 목소리: Voice: crisp and confident, every sentence landing cleanly, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, compact build about 176cm with firm shoulders, short wine-brown two-block cut pushed up off the forehead, clear round eyes, thick straight dark brows, a semi-formal setup look in charcoal and cobalt blue, a leather crossbody bag. Voice: crisp and confident, every sentence landing cleanly, speaks slowly.`
+- 파일명: 007_맹이안x노재이.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact oval face with a clean firm jawline ending in a defined chin, clear round eyes with crisp double eyelid folds and a level outer corner, thick straight dark brows, a straight nose with a neat tip, defined lips with a confident closed line, and a crisp, self-assured baseline expression. Hair: short wine-brown two-block cut with the top pushed up off the forehead — clearly different from black collar-length hair with a heavy fringe. Character design: a late-20s man of compact build about 176cm with firm shoulders, standing at the door of a radio booth with a small suitcase nearby, a leather crossbody bag across the chest, wearing a charcoal semi-formal setup jacket over a cobalt-blue knit, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a confident straight-on look with a faint knowing smile. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 맹이안(U, M) | {{생성일시}} — the name "맹이안(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 008 엄해강 × 배서진
+- 타입: 대형견남 — 20년 만에 돌아와 "손님" 선을 긋는 해강에게 반갑게 매달리는 소꿉친구
+- 나이·체격: 30대 초반, 184cm 어깨가 넓은 큰 체격
+- 머리: 블랙 쉐도우 펌, 귀를 살짝 덮는 볼륨 있는 길이
+- 얼굴 포인트: 처진 강아지 눈매, 웃을 때 드러나는 덧니
+- 옷 결: 캠프 캐주얼, 올리브·크림
+- 소품: 목에 두른 반다나
+- 목소리: Voice: big, warm and bright, an eager rise at the end of each line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, big broad-shouldered build about 184cm, black soft shadow perm with volume just over the ears, droopy puppy-like eyes, a snaggletooth that shows when he grins, a camp-casual look in olive and cream, a bandana tied around his neck. Voice: big, warm and bright, an eager rise at the end of each line, speaks slowly.`
+- 파일명: 008_엄해강x배서진.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad soft square face with full cheeks, a gently rounded jawline ending in a soft chin, droopy puppy-like eyes with deep double folds and noticeably downturned outer corners, thick softly arched dark brows, a straight nose with a rounded tip, full lips with a wide easy smile line, a snaggletooth visible when he grins, and a bright, eager baseline expression. Hair: black soft shadow perm with loose volume sitting just over the ears — clearly different from dark ash-brown hair cropped short at the sides with a sharp 2:8 part. Character design: a man in his early 30s of big broad-shouldered build about 184cm, standing in a rainy alley in front of a cafe door holding a broken umbrella, a bandana tied around his neck, wearing an olive camp jacket over a cream henley, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a big eager grin showing the snaggletooth, eyes crinkled. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no ash-brown hair, no side-swept fringe, no glasses, no 2:8 part, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 엄해강(U, M) | {{생성일시}} — the name "엄해강(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 009 독고다온 × 임건호
+- 타입: 냉정남 — 냉장고 협정서 조항으로 차갑게 따지는 아침형 룸메이트
+- 나이·체격: 20대 후반, 177cm 슬림
+- 머리: 블루 블랙 아이비리그컷, 짧게 옆으로 빗어 넘긴 길이
+- 얼굴 포인트: 날카로운 외꺼풀 눈, 얇은 은테 안경
+- 옷 결: 미니멀 오피스, 블랙·아이스 블루
+- 소품: 손목의 메탈 시계
+- 목소리: Voice: cool and precise, each clause measured like a contract, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 177cm, short blue-black ivy league cut combed to the side, sharp monolid eyes, thin silver-rimmed glasses, a minimal office look in black and ice blue, a metal wristwatch. Voice: cool and precise, each clause measured like a contract, speaks slowly.`
+- 파일명: 009_독고다온x임건호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a narrow angular face with a sharp jawline ending in a pointed chin, sharp monolid eyes with a level outer corner and crisp corners behind thin silver-rimmed glasses, straight slim dark brows, a narrow high nose with a sharp tip, thin lips with a precise closed line, and a cool, measured baseline expression. Hair: short blue-black ivy league cut neatly combed to one side with a clean short back — clearly different from soft-wavy hazelnut-brown hair falling over the forehead. Character design: a late-20s man of slim build about 177cm, standing in front of an open refrigerator holding a yogurt cup and reading a sticky-note list on the door, a metal wristwatch, wearing a crisp black shirt over an ice-blue tee, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a cool assessing look over the glasses, one brow faintly raised. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown hair, no fringe, no freckles, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 독고다온(U, M) | {{생성일시}} — the name "독고다온(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 010 표세건 × 정우주
+- 타입: 장난남 — 담담한 세건을 "사장님" 하고 놀리며 떠드는 10년 지기
+- 나이·체격: 20대 후반, 174cm 아담하고 탄탄한 체격
+- 머리: 카라멜 브라운 애즈펌, 이마가 드러나게 넘긴 길이
+- 얼굴 포인트: 동그란 큰 쌍꺼풀 눈, 왼쪽 볼 보조개
+- 옷 결: 스트리트 캐주얼, 오렌지·블랙
+- 소품: 손에 늘 들고 다니는 자전거 헬멧
+- 목소리: Voice: quick and teasing, a laugh hiding under each word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, compact toned build about 174cm, caramel-brown as-perm swept to show the forehead, large round double-lidded eyes, a dimple on the left cheek, a street-casual look in orange and black, a bicycle helmet carried in one hand. Voice: quick and teasing, a laugh hiding under each word, speaks slowly.`
+- 파일명: 010_표세건x정우주.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft full cheeks, a gently curved jawline ending in a small chin, large round double-lidded eyes with a slight upward tilt, softly arched brown brows, a straight nose with a small rounded tip, full lips with a wide teasing grin line, a dimple on the left cheek, and a cheeky, playful baseline expression. Hair: caramel-brown as-perm swept back to show the forehead with soft curled volume — clearly different from short black hair with a soft center part. Character design: a late-20s man of compact toned build about 174cm, standing under a laundry shop awning in the rain holding a garment bag, a bicycle helmet hanging from the other hand, wearing an orange coach jacket over a black hoodie, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a cheeky teasing grin with the left dimple showing, eyebrows lifted. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 표세건(U, M) | {{생성일시}} — the name "표세건(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 011 채유겸 × 윤시현
+- 타입: 직진남 — 유겸이 숨기는 귀 증상을 돌려 말하지 않고 정면으로 묻는 후배 단원
+- 나이·체격: 20대 후반, 177cm 단단한 체격
+- 머리: 애쉬 브라운 짧은 크롭컷
+- 얼굴 포인트: 올라간 눈매, 콧등의 옅은 주근깨
+- 옷 결: 프레피 니트, 포레스트 그린·크림
+- 소품: 손목에 감은 실팔찌
+- 목소리: Voice: clear and direct, gentle but never backing down, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, firm build about 177cm, short textured ash-brown crop cut, upturned eyes, faint freckles across the nose, a preppy knit look in forest green and cream, a braided string bracelet on the wrist. Voice: clear and direct, gentle but never backing down, speaks slowly.`
+- 파일명: 011_채유겸x윤시현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with a clean tapered jawline ending in a neat chin, upturned eyes with crisp double folds and lifted outer corners, straight dark-brown brows, a straight slim nose with a refined tip, softly full lips with a determined closed line, faint freckles across the nose bridge, and a direct, steady baseline expression. Hair: short textured ash-brown crop cut with a choppy top — clearly different from glossy black hair swept to the side. Character design: a late-20s man of firm build about 177cm, standing beside an open upright piano in a dim practice room holding a sheet music folder, a braided string bracelet on the wrist, wearing a forest-green knit polo with a cream collar, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a steady direct gaze with a small determined smile. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 채유겸(U, M) | {{생성일시}} — the name "채유겸(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 012 설하랑 × 감도건
+- 타입: 능글남 — 하랑의 시비를 여유롭게 받아치는 맞은편 식물 가게 사장
+- 나이·체격: 20대 후반, 185cm 어깨가 넓은 큰 체격
+- 머리: 카키 브라운 반묶음, 턱선까지 오는 길이
+- 얼굴 포인트: 처진 눈매, 왼쪽 볼 보조개
+- 옷 결: 데님 셔츠와 캔버스, 인디고·테라코타
+- 소품: 손목의 가죽 팔찌
+- 목소리: Voice: low and lazy, an amused drawl that never rises to the bait, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, tall broad-shouldered build about 185cm, chin-length khaki-brown hair tied half-up, gently drooping eyes, a dimple on the left cheek, a denim-shirt-and-canvas look in indigo and terracotta, a leather bracelet on the wrist. Voice: low and lazy, an amused drawl that never rises to the bait, speaks slowly.`
+- 파일명: 012_설하랑x감도건.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad soft oval face with a relaxed rounded jawline ending in a soft chin, gently drooping eyes with soft double folds and a downward outer tilt, softly arched brown brows, a straight nose with a rounded tip, full lips with an easy lopsided smile, a dimple on the left cheek, and a lazy, amused baseline expression. Hair: chin-length khaki-brown hair loosely tied half-up with soft strands at the cheeks — clearly different from glossy dark brown-black waves over the forehead. Character design: a late-20s man of tall broad-shouldered build about 185cm, standing at the entrance of a small plant shop across a quiet alley holding a potted plant, a leather bracelet on the wrist, wearing an indigo denim shirt over a terracotta tee with a canvas apron, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a lazy amused half-smile with the dimple showing. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark brown-black hair, no fringe, no glasses, no mole, no upturned eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 설하랑(U, M) | {{생성일시}} — the name "설하랑(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 013 선우가람 × 소정우
+- 타입: 철벽남 — 어른들 등쌀에 끌려 나와 선부터 긋던 맞선 상대, 느긋한 가람에게 조금씩 무너진다
+- 나이·체격: 30대 초반, 175cm 슬림
+- 머리: 애쉬 브라운 리젠트, 단정히 올려 넘긴 짧은 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 얇은 무테 안경
+- 옷 결: 단정한 수트 캐주얼, 네이비·아이보리
+- 소품: 재킷 가슴 주머니의 포켓스퀘어
+- 목소리: Voice: polite and cool, every word carefully fenced in, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 175cm, short ash-brown regent cut neatly swept up, round double-lidded eyes, thin rimless glasses, a neat suit-casual look in navy and ivory, a pocket square in the jacket breast pocket. Voice: polite and cool, every word carefully fenced in, speaks slowly.`
+- 파일명: 013_선우가람x소정우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a neat compact oval face with a clean jawline ending in a defined chin, round eyes with clear double eyelid folds behind thin rimless glasses, straight neat dark-brown brows, a straight slim nose with a refined tip, thin lips with a polite closed line, and a composed, slightly reserved baseline expression. Hair: short ash-brown regent cut neatly swept up and back with clean sides — clearly different from dark brown-black center-parted hair tied at the nape. Character design: a man in his early 30s of slim build about 175cm, sitting at a pottery wheel in a small studio holding a lopsided rough bowl, a pocket square in the jacket breast pocket, wearing a navy unstructured blazer over an ivory shirt with the cuffs turned back, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a polite reserved look with a faint smile he is trying not to show. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark brown-black hair, no tied-back hair, no side-swept fringe, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 선우가람(U, M) | {{생성일시}} — the name "선우가람(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 014 탁시안 × 곽민재
+- 타입: 상처남 — 지쳐서 셰어하우스에 들어온 입주자, 해맑은 시안의 밥상에 천천히 풀린다
+- 나이·체격: 20대 후반, 174cm 마른 체격
+- 머리: 은회색 울프컷, 목덜미를 덮는 층진 길이
+- 얼굴 포인트: 처진 외꺼풀 눈, 왼쪽 귀 연골의 작은 피어싱
+- 옷 결: 오버핏 니트 레이어드, 흑청색·라벤더
+- 소품: 목에 걸친 유선 이어폰
+- 목소리: Voice: quiet and tired, softening slowly into warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, thin build about 174cm, silver-gray layered wolf cut brushing the nape, gently drooping monolid eyes, a small piercing on the upper cartilage of the left ear, an oversized layered knit look in deep indigo and lavender, wired earphones draped around his neck. Voice: quiet and tired, softening slowly into warmth, speaks slowly.`
+- 파일명: 014_탁시안x곽민재.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim pale oval face with a gently tapered jawline ending in a narrow chin, gently drooping monolid eyes with a soft downward outer tilt, softly straight gray-toned brows, a slim straight nose with a soft tip, thin lips with a quiet resting line, a small piercing on the upper cartilage of the left ear, and a tired, quiet baseline expression. Hair: silver-gray layered wolf cut with textured layers brushing the nape — clearly different from short dark brown-black hair pushed back off the forehead. Character design: a late-20s man of thin build about 174cm, standing at an old wooden gate of a small shared house with a canvas duffel bag and a small suitcase, looking at a brown bear mascot figure and a rooster in the yard, wired earphones draped around his neck, wearing an oversized deep-indigo knit layered over a lavender shirt, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a tired quiet look with the faintest smile beginning. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no side-swept fringe, no glasses, no dimples, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 탁시안(U, M) | {{생성일시}} — the name "탁시안(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 015 연주원 × 하은찬
+- 타입: 대형견남 — 과묵한 스승 뒤를 졸졸 따라다니는 기운 넘치는 실습 조수
+- 나이·체격: 20대 중반, 180cm 근육이 붙은 단단한 체격
+- 머리: 밀크 브라운 짧은 투블럭, 이마가 드러나는 길이
+- 얼굴 포인트: 동그란 큰 눈, 웃을 때 드러나는 덧니
+- 옷 결: 스포티 캐주얼, 코발트 블루·화이트
+- 소품: 백팩에 매단 카라비너 키링
+- 목소리: Voice: bright and eager, a puppyish warmth in every reply, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, sturdy muscular build about 180cm, short milk-brown two-block cut showing the forehead, large round eyes, a snaggletooth that shows when he smiles, a sporty casual look in cobalt blue and white, a carabiner keyring clipped to his backpack. Voice: bright and eager, a puppyish warmth in every reply, speaks slowly.`
+- 파일명: 015_연주원x하은찬.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact round face with full cheeks, a firm rounded jawline ending in a soft chin, large round eyes with clear double eyelid folds, thick softly arched brown brows, a straight nose with a rounded tip, full lips with a wide bright smile, a snaggletooth visible when he smiles, and a bright, eager baseline expression. Hair: short milk-brown two-block cut with the top lifted to show the forehead — clearly different from dark brown-black medium-length hair tucked behind the ears with light bangs. Character design: a mid-20s man of sturdy muscular build about 180cm, standing at the glass door of a neighborhood Korean medicine clinic looking at a small waiting-room chalkboard, a carabiner keyring clipped to his backpack strap, wearing a cobalt-blue track jacket over a white tee, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a bright eager smile showing the snaggletooth, eyes wide and attentive. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no bangs, no glasses, no almond eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 연주원(U, M) | {{생성일시}} — the name "연주원(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 016 노찬영 × 신재원
+- 타입: 무심남 — 채팅에선 밤새 떠들던 짝꿍인데 실물은 말수 적고 무심한 쪽
+- 나이·체격: 20대 후반, 172cm 아담한 체격
+- 머리: 블랙 버즈컷
+- 얼굴 포인트: 처진 외꺼풀 눈, 왼쪽 눈썹 끝의 짧은 흉터
+- 옷 결: 고프코어 아웃도어, 블랙·형광 라임 포인트
+- 소품: 손목의 두꺼운 은색 체인 팔찌
+- 목소리: Voice: low and sparse, a few words with a hidden smile, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, compact build about 172cm, black buzz cut, gently drooping monolid eyes, a short scar at the tail of the left eyebrow, a gorpcore outdoor look in black with neon-lime accents, a chunky silver chain bracelet. Voice: low and sparse, a few words with a hidden smile, speaks slowly.`
+- 파일명: 016_노찬영x신재원.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small compact face with a clean firm jawline ending in a defined chin, gently drooping monolid eyes with a soft downward tilt, straight dark brows with a short scar at the tail of the left brow, a straight nose with a neat tip, thin lips with a quiet closed line, and a low-key, unbothered baseline expression. Hair: black buzz cut, very short and even all over — clearly different from dark brown naturally curly medium-length hair with a loose fringe. Character design: a late-20s man of compact build about 172cm, standing in a narrow second-floor studio doorway holding a phone showing a chat window, looking at workbenches of tiny miniature rooms and a small fish tank, a chunky silver chain bracelet, wearing a black gorpcore shell jacket with neon-lime accents, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a calm unbothered look with a barely-there smile. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no curly hair, no fringe, no glasses, no freckles, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 노찬영(U, M) | {{생성일시}} — the name "노찬영(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 017 봉아론 × 백지훈
+- 타입: 헌신남 — 잠 못 드는 아이돌의 일정과 컨디션을 묵묵히 다 챙기는 담당 매니저
+- 나이·체격: 20대 후반, 178cm 단단한 체격
+- 머리: 다크 초콜릿 가일컷, 한쪽으로 넘겨 이마가 보이는 길이
+- 얼굴 포인트: 동그랗게 웃는 쌍꺼풀 눈, 오른쪽 눈썹 끝의 짧은 흉터
+- 옷 결: 윈드브레이커 스포티, 블랙·딥 그린
+- 소품: 늘 눌러 쓴 검은 볼캡
+- 목소리: Voice: steady and reassuring, calm care in every word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, sturdy build about 178cm, dark-chocolate Guile-style cut swept to one side showing the forehead, round smiling double-lidded eyes, a short scar at the tail of the right eyebrow, a sporty windbreaker look in black and deep green, a plain black baseball cap. Voice: steady and reassuring, calm care in every word, speaks slowly.`
+- 파일명: 017_봉아론x백지훈.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a balanced oval face with a clean firm jawline ending in a neat chin, round smiling eyes with clear double folds and a soft level tilt, straight dark-brown brows with a short scar at the tail of the right brow, a straight nose with a defined tip, full lips with a calm closed line, and a steady, reassuring baseline expression. Hair: dark-chocolate Guile-style cut swept up to one side showing the forehead, under a plain black baseball cap — clearly different from bleached lavender-ash gray hair falling to the brows. Character design: a late-20s man of sturdy build about 178cm, standing at the open sliding door of a white passenger van at dawn holding a tablet with a schedule, glancing into the empty back seat where a folded cream blanket and a sleep mask rest, no other person anywhere in the van or the frame, wearing a black windbreaker with deep-green trim and a plain black baseball cap, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a steady reassuring look, warm and calm. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no gray hair, no lavender hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 봉아론(U, M) | {{생성일시}} — the name "봉아론(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 018 경휘담 × 안서온
+- 타입: 사이다남 — 팀장의 날 선 지적에 지지 않고 받아치는 신입 카피라이터
+- 나이·체격: 20대 중반, 175cm 슬림
+- 머리: 블랙 애즈펌, 이마가 드러나게 넘긴 길이
+- 얼굴 포인트: 동그란 큰 눈, 왼쪽 볼 보조개
+- 옷 결: 오버핏 셔츠와 와이드 슬랙스, 머스터드·네이비
+- 소품: 손목의 디지털 시계
+- 목소리: Voice: quick and sharp, a cheeky confidence that never backs down, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, slim build about 175cm, black as-perm swept to show the forehead, large round eyes, a dimple on the left cheek, an oversized shirt with wide slacks in mustard and navy, a digital wristwatch. Voice: quick and sharp, a cheeky confidence that never backs down, speaks slowly.`
+- 파일명: 018_경휘담x안서온.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small oval face with soft cheeks, a gently tapered jawline ending in a small chin, large round eyes with clear double eyelid folds, softly arched dark brows, a straight nose with a small tip, full lips with a quick confident smile, a dimple on the left cheek, and a cheeky, unafraid baseline expression. Hair: black as-perm swept back to show the forehead with soft curled volume — clearly different from dark ash-brown side-parted hair. Character design: a mid-20s man of slim build about 175cm, standing at an office desk holding a printed copy proof covered in red pen marks, a coffee cup beside a laptop, a digital wristwatch, wearing an oversized mustard shirt over a navy tee with wide navy slacks, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a cheeky confident half-smile, chin slightly up. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no ash-brown hair, no side part, no glasses, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 경휘담(U, M) | {{생성일시}} — the name "경휘담(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 019 심로운 × 송하율
+- 타입: 계략남 — 대표의 일정을 쥐고 몰래 둘만의 시간을 끼워 넣는 비서
+- 나이·체격: 20대 후반, 176cm 슬림
+- 머리: 라이트 베이지 가르마 펌, 귀가 보이는 길이
+- 얼굴 포인트: 살짝 처진 눈매, 얇은 금테 안경
+- 옷 결: 단정한 셔츠 레이어드, 아이보리·카멜
+- 소품: 왼손 새끼손가락의 은반지
+- 목소리: Voice: soft and polite, a knowing smile tucked under each word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 176cm, light-beige middle-parted perm showing the ears, softly drooping eyes, thin gold-rimmed glasses, a neat layered-shirt look in ivory and camel, a silver ring on the left little finger. Voice: soft and polite, a knowing smile tucked under each word, speaks slowly.`
+- 파일명: 019_심로운x송하율.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with a gently tapered jawline ending in a neat chin, softly drooping eyes with soft double folds behind thin gold-rimmed glasses, gently arched light brows, a straight slim nose with a delicate tip, softly full lips with a polite smile line, and a gentle, knowing baseline expression. Hair: light-beige middle-parted perm with soft waves showing the ears — clearly different from black hair swept straight back and polished. Character design: a late-20s man of slim build about 176cm, standing in a warm-lit marble hotel lobby holding a leather schedule notebook with a slim tablet case under one arm, a silver ring on the left little finger, wearing an ivory shirt layered under a camel cardigan with tapered trousers, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a polite smile with a knowing glint behind the glasses. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no slicked-back hair, no side-swept fringe, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 심로운(U, M) | {{생성일시}} — the name "심로운(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 020 여시헌 × 차유진
+- 타입: 까칠남 — 연하 배우의 능청을 한마디로 잘라 내는 연상 스타일리스트
+- 나이·체격: 30대 초반, 177cm 슬림
+- 머리: 은회색 올백, 매끈하게 넘긴 짧은 길이
+- 얼굴 포인트: 가로로 긴 외꺼풀 눈, 왼쪽 귀의 피어싱 세 개
+- 옷 결: 올블랙 모드 패션, 블랙·실버
+- 소품: 손가락에 겹쳐 낀 은반지들
+- 목소리: Voice: dry and cool, a sharp edge that cuts through his charm, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 177cm, silver-gray hair slicked fully back, long horizontal monolid eyes, three small piercings along the left ear, an all-black mod fashion look with silver details, several stacked silver rings. Voice: dry and cool, a sharp edge that cuts through his charm, speaks slowly.`
+- 파일명: 020_여시헌x차유진.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim long face with a clean angular jawline ending in a pointed chin, long horizontal monolid eyes with a level outer corner, straight slim dark brows, a narrow high nose with a sharp tip, thin lips with a dry closed line, three small piercings along the left ear, and a cool, unimpressed baseline expression. Hair: silver-gray hair slicked fully back with a sleek finish — clearly different from deep blue-black center-parted hair with a slight wave. Character design: a man in his early 30s of slim build about 177cm, standing in a costume van holding a garment on a hanger, a soft measuring tape around the neck, several stacked silver rings on his fingers, wearing an all-black mod jacket over a black tee with silver buttons, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a dry cool look with one brow slightly lifted. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no blue-black hair, no center part, no side-swept fringe, no glasses, no mole, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 여시헌(U, M) | {{생성일시}} — the name "여시헌(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 021 신나루 × 구지우
+- 타입: 직진남 — 칭찬에 말을 잃는 작가에게 좋은 문장은 좋다고 대놓고 말하는 편집자
+- 나이·체격: 30세 전후, 182cm 어깨가 단단한 체격
+- 머리: 와인 브라운 리젠트, 올려 넘긴 짧은 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 짙은 일자 눈썹
+- 옷 결: 트렌치와 셔츠 클래식, 카멜·네이비
+- 소품: 늘 들고 다니는 보온 텀블러
+- 목소리: Voice: clear and warm, praise delivered plainly and without hesitation, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around thirty, solid build about 182cm with firm shoulders, short wine-brown regent cut swept up, round double-lidded eyes, thick straight dark brows, a classic trench-and-shirt look in camel and navy, an insulated tumbler in hand. Voice: clear and warm, praise delivered plainly and without hesitation, speaks slowly.`
+- 파일명: 021_신나루x구지우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad balanced square-oval face with a firm jawline ending in a defined chin, round eyes with clear double eyelid folds and a level tilt, thick straight dark brows, a straight nose with a defined tip, full lips with a warm frank smile, and an open, straightforward baseline expression. Hair: short wine-brown regent cut swept up and back with neat sides — clearly different from black collar-length hair with a long fringe tucked behind one ear. Character design: a man around thirty of solid build about 182cm with firm shoulders, standing in a publisher meeting room holding a stack of printed proof pages with a red pencil tucked behind one ear, an insulated tumbler in his other hand, wearing a camel trench coat over a navy shirt, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a warm frank smile, looking straight at the viewer. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no fringe, no glasses, no monolid eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 신나루(U, M) | {{생성일시}} — the name "신나루(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 022 공민혁 × 홍시온
+- 타입: 철벽남 — 넉살 좋은 치료사의 농담에 짧은 존댓말로 선을 긋는 환자
+- 나이·체격: 20대 후반, 173cm 슬림
+- 머리: 블랙 젖은 질감 넘김, 이마가 드러나는 길이
+- 얼굴 포인트: 외꺼풀 올라간 눈매, 콧대 위의 작은 흉터
+- 옷 결: 애슬레저 미니멀, 블랙·코랄
+- 소품: 한쪽 어깨에 멘 슬링백
+- 목소리: Voice: cool and guarded, short polite answers that slowly warm, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 173cm, black wet-look textured hair swept back off the forehead, upturned monolid eyes, a small scar on the bridge of the nose, a minimal athleisure look in black and coral, a sling bag over one shoulder. Voice: cool and guarded, short polite answers that slowly warm, speaks slowly.`
+- 파일명: 022_공민혁x홍시온.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim narrow face with a clean angular jawline ending in a narrow chin, upturned monolid eyes with crisp lifted corners, straight slim dark brows, a narrow straight nose with a small scar on the bridge, thin lips with a reserved closed line, and a cool, guarded baseline expression. Hair: black wet-look textured hair swept straight back off the forehead — clearly different from dark brown hair cropped short with a soft natural texture. Character design: a late-20s man of slim build about 173cm, sitting on the edge of a clinic treatment bed with a light ankle support brace on one foot, a sling bag over one shoulder, wearing a black athleisure zip jacket with coral trim and black track pants, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a guarded polite look, lips pressed, eyes not quite softening yet. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown hair, no side-swept fringe, no glasses, no freckles, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 공민혁(U, M) | {{생성일시}} — the name "공민혁(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 023 남바다 × 김하루
+- 타입: 무심남 — 무심한 얼굴로 매주 목요일 맨 뒷자리에 앉는 연상 단골 관객
+- 나이·체격: 20대 후반, 178cm 단단한 체격
+- 머리: 블루 블랙 짧은 크롭컷
+- 얼굴 포인트: 처진 눈매, 얇은 은테 안경
+- 옷 결: 단정한 오피스 캐주얼, 네이비·아이보리
+- 소품: 손목의 가죽 줄 시계
+- 목소리: Voice: low and even, unimpressed on the surface with a hidden smile, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, sturdy build about 178cm, short textured blue-black crop cut, gently drooping eyes, thin silver-rimmed glasses, a neat office-casual look in navy and ivory, a leather-strap wristwatch. Voice: low and even, unimpressed on the surface with a hidden smile, speaks slowly.`
+- 파일명: 023_남바다x김하루.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a balanced oval face with a firm clean jawline ending in a neat chin, gently drooping eyes with soft double folds behind thin silver-rimmed glasses, straight dark brows, a straight nose with a defined tip, thin lips with a neutral line, and a calm, unimpressed baseline expression that hides a smile. Hair: short textured blue-black crop cut with a choppy top — clearly different from wine-toned burgundy-brown wavy medium-length hair. Character design: a late-20s man of sturdy build about 178cm, sitting at a small cafe table near a stage with a tote bag on the chair and a folded paper slip in one hand, a leather-strap wristwatch, wearing a navy blazer over an ivory knit, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, an unimpressed calm look with the corner of the mouth giving away a hidden smile. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no burgundy hair, no wavy hair, no side-swept fringe, no earrings, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 남바다(U, M) | {{생성일시}} — the name "남바다(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 024 함라온 × 이주안
+- 타입: 유혹남 — 동생 친구라는 핑계로 서점에 들러 은근히 라온을 흔드는 쪽
+- 나이·체격: 20대 중반, 174cm 슬림
+- 머리: 블랙 히피 펌, 귀를 덮는 길이
+- 얼굴 포인트: 올라간 여우 눈매, 오른쪽 귓불의 은색 링 피어싱
+- 옷 결: 실크 셔츠 무드, 버건디·블랙
+- 소품: 얇은 은색 목걸이
+- 목소리: Voice: low and velvety, a slow teasing pull in each word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, slim build about 174cm, black loose hippie-perm curls covering the ears, upturned fox-like eyes, a silver hoop in the right earlobe, a silky shirt look in burgundy and black, a thin silver necklace. Voice: low and velvety, a slow teasing pull in each word, speaks slowly.`
+- 파일명: 024_함라온x이주안.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim V-shaped face with a sharp tapered jawline ending in a slender chin, upturned fox-like eyes with long lifted outer corners and a thin double fold, slim arched dark brows, a narrow high nose with a refined tip, full defined lips with a slow smile, a silver hoop in the right earlobe, and a languid, alluring baseline expression. Hair: black loose hippie-perm curls with soft volume covering the ears — clearly different from dark ash-brown hair swept back with a soft texture. Character design: a mid-20s man of slim build about 174cm, standing between old wooden bookshelves holding a paperback, a thin silver necklace at the open collar, wearing a burgundy silky shirt with the top button undone over black trousers, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a slow alluring half-smile with a lingering gaze. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no ash-brown hair, no slicked-back hair, no glasses, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 함라온(U, M) | {{생성일시}} — the name "함라온(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 025 빈지온 × 변성민
+- 타입: 허당남 — 갑자기 조카를 맡아 알림장 하나에도 허둥대는 임시 보호자
+- 나이·체격: 30세 전후, 180cm 어깨가 넓은 체격
+- 머리: 카키 브라운 짧은 투블럭
+- 얼굴 포인트: 동그란 외꺼풀 눈, 콧등의 옅은 주근깨
+- 옷 결: 데님 캐주얼, 인디고·옐로
+- 소품: 조카가 채워 준 알록달록한 구슬 팔찌
+- 목소리: Voice: warm and flustered, a sheepish laugh slipping in, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around thirty, broad-shouldered build about 180cm, short khaki-brown two-block cut, round monolid eyes, faint freckles across the nose, a denim casual look in indigo and yellow, a colorful beaded bracelet on the wrist. Voice: warm and flustered, a sheepish laugh slipping in, speaks slowly.`
+- 파일명: 025_빈지온x변성민.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad soft square face with a rounded jawline ending in a soft chin, round monolid eyes with a level tilt, thick straight brown brows, a straight nose with a rounded tip, full lips with a sheepish smile line, faint freckles across the nose bridge, and a flustered, good-natured baseline expression. Hair: short khaki-brown two-block cut with a lifted textured top — clearly different from soft dark brown hair with a light wave swept to the side. Character design: a man around thirty of broad-shouldered build about 180cm, standing in a school hallway lined with small shoe lockers holding a child's backpack in one hand, a colorful beaded bracelet on the wrist, wearing an indigo denim jacket over a yellow tee, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a flustered sheepish smile, eyebrows slightly raised. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark brown hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 빈지온(U, M) | {{생성일시}} — the name "빈지온(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 026 추범진 × 황민석
+- 타입: 장난남 — 운동이 힘든 척 엄살을 부리며 무뚝뚝한 트레이너를 놀리는 회원
+- 나이·체격: 20대 후반, 172cm 마른 체격
+- 머리: 밀크 브라운 가르마 펌, 귀가 보이는 길이
+- 얼굴 포인트: 동그랗게 처진 눈, 웃을 때 드러나는 덧니
+- 옷 결: 니트 베스트 프레피, 크림·라이트 블루
+- 소품: 목에 걸친 큰 무선 헤드폰
+- 목소리: Voice: light and bright, a teasing lilt as he pretends to suffer, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, thin build about 172cm, milk-brown middle-parted perm showing the ears, round gently drooping eyes, a snaggletooth that shows when he smiles, a preppy knit-vest look in cream and light blue, big wireless headphones around his neck. Voice: light and bright, a teasing lilt as he pretends to suffer, speaks slowly.`
+- 파일명: 026_추범진x황민석.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small rounded oval face with soft cheeks, a gently curved jawline ending in a small chin, round gently drooping eyes with clear double folds, softly arched light brows, a straight nose with a small rounded tip, full lips with a wide grin, a snaggletooth visible when he smiles, and a playful, teasing baseline expression. Hair: milk-brown middle-parted perm with soft waves showing the ears — clearly different from short cropped black two-block hair. Character design: a late-20s man of thin build about 172cm, standing in front of a gym locker with a sports bag over one shoulder and a small towel in one hand, big wireless headphones around his neck, wearing a cream knit vest over a light-blue shirt, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a playful mock-tired pout breaking into a grin. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no two-block cut, no glasses, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 추범진(U, M) | {{생성일시}} — the name "추범진(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 027 류현우 × 조은우
+- 타입: 상처남 — 2년 전 상처를 숨기고 재회한 날 먼저 선을 그은 전 연인
+- 나이·체격: 30대 초반, 179cm 단단한 체격
+- 머리: 애쉬 그레이 쉐도우 펌, 귀를 살짝 덮는 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 오른쪽 귓바퀴의 작은 은색 피어싱
+- 옷 결: 니트와 슬랙스 미니멀, 오트밀·딥 브라운
+- 소품: 손목의 가죽 팔찌
+- 목소리: Voice: quiet and level, holding something back behind each word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, solid build about 179cm, ash-gray soft shadow perm just over the ears, round double-lidded eyes, a small silver piercing on the right ear rim, a minimal knit-and-slacks look in oatmeal and deep brown, a leather bracelet on the wrist. Voice: quiet and level, holding something back behind each word, speaks slowly.`
+- 파일명: 027_류현우x조은우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a balanced oval face with a firm clean jawline ending in a neat chin, round eyes with clear double eyelid folds and a level tilt, straight soft dark brows, a straight nose with a defined tip, softly full lips with a held-back closed line, a small silver piercing on the right ear rim, and a quiet, guarded baseline expression. Hair: ash-gray soft shadow perm with loose volume sitting just over the ears — clearly different from black hair cropped short at the sides with a clean 2:8 part. Character design: a man in his early 30s of solid build about 179cm, standing at a neighborhood pharmacy counter holding a small paper medicine bag, a leather bracelet on the wrist, wearing an oatmeal knit sweater under a deep-brown coat, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a quiet level look holding something back, lips pressed gently. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no 2:8 part, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 류현우(U, M) | {{생성일시}} — the name "류현우(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 028 마정훈 × 박서후
+- 타입: 다정남 — 무표정한 신입 후배를 웃으며 하나하나 챙기는 사수
+- 나이·체격: 20대 후반, 178cm 어깨가 단단한 체격
+- 머리: 애쉬 브라운 애즈펌, 이마가 드러나게 넘긴 길이
+- 얼굴 포인트: 처진 눈매, 왼쪽 볼 보조개
+- 옷 결: 고프코어 오피스, 카키·오렌지
+- 소품: 손목의 우븐 팔찌
+- 목소리: Voice: warm and easy, a gentle laugh behind every instruction, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, firm build about 178cm with solid shoulders, ash-brown as-perm swept to show the forehead, gently drooping eyes, a dimple on the left cheek, a gorpcore office look in khaki and orange, a woven bracelet on the wrist. Voice: warm and easy, a gentle laugh behind every instruction, speaks slowly.`
+- 파일명: 028_마정훈x박서후.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with a gently tapered jawline ending in a rounded chin, gently drooping eyes with soft double folds and a downward outer tilt, softly arched brown brows, a straight nose with a small tip, full lips with an easy warm smile, a dimple on the left cheek, and a warm, easygoing baseline expression. Hair: ash-brown as-perm swept back to show the forehead with soft curled volume — clearly different from softly tousled black hair with a light fringe. Character design: a late-20s man of firm build about 178cm with solid shoulders, seated at an office desk in a bright startup office with a laptop open and a paper coffee cup in one hand, a woven bracelet on the wrist, wearing a khaki utility overshirt with orange zipper details over a white tee, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a warm easy smile with the dimple showing, head slightly tilted. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no fringe, no glasses, no headphones, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 마정훈(U, M) | {{생성일시}} — the name "마정훈(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 029 서진호 × 장예준
+- 타입: 허당남 — 방송에선 또박또박한데 카메라가 꺼지면 대본을 떨어뜨리는 공동 진행자
+- 나이·체격: 20대 후반, 175cm 슬림
+- 머리: 블루 블랙 가일컷, 한쪽으로 넘겨 이마가 보이는 길이
+- 얼굴 포인트: 가늘고 긴 외꺼풀 눈, 오른쪽 눈썹 끝의 짧은 흉터
+- 옷 결: 파스텔 셋업 수트, 스카이 블루·크림
+- 소품: 넥타이에 꽂은 은색 타이핀
+- 목소리: Voice: smooth announcer polish that cracks into a sheepish laugh, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 175cm, blue-black Guile-style cut swept to one side showing the forehead, long narrow monolid eyes, a short scar at the tail of the right eyebrow, a pastel suit setup in sky blue and cream, a silver tie pin. Voice: smooth announcer polish that cracks into a sheepish laugh, speaks slowly.`
+- 파일명: 029_서진호x장예준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with a clean tapered jawline ending in a neat chin, long narrow monolid eyes with a level outer corner, straight slim dark brows with a short scar at the tail of the right brow, a straight slim nose with a refined tip, thin lips with a polished smile line, and a polished baseline expression that is about to crack into a sheepish laugh. Hair: blue-black Guile-style cut swept up to one side showing the forehead — clearly different from dark brown hair cropped short at the sides and swept up and back. Character design: a late-20s man of slim build about 175cm, seated at a bright morning news desk with a stack of cue cards in one hand and a steel thermos cup beside him, a small earpiece, a silver tie pin, wearing a sky-blue pastel suit over a cream shirt, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a polished smile slipping into a sheepish laugh as a cue card tilts in his hand. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown hair, no side-swept fringe, no glasses, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 서진호(U, M) | {{생성일시}} — the name "서진호(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 030 곽단우 × 권도율
+- 타입: 대형견남 — 말수 적은 감독 앞에서 첫 미니시리즈 열정을 숨기지 못하는 신인 작가
+- 나이·체격: 20대 후반, 176cm 아담하고 탄탄한 체격
+- 머리: 라이트 베이지 쉼표 머리, 앞머리 한 가닥만 이마 옆으로 휘는 짧은 길이
+- 얼굴 포인트: 동그란 큰 눈, 웃을 때 드러나는 덧니
+- 옷 결: 컬러 블록 니트 캐주얼, 코랄·크림
+- 소품: 손목에 감은 실팔찌
+- 목소리: Voice: bright and eager, every line full of hope, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, compact toned build about 176cm, short light-beige comma-style hair with one curved front lock, large round eyes, a snaggletooth that shows when he grins, a color-block knit casual look in coral and cream, a braided string bracelet on the wrist. Voice: bright and eager, every line full of hope, speaks slowly.`
+- 파일명: 030_곽단우x권도율.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with full cheeks, a gently rounded jawline ending in a small chin, large round eyes with clear double eyelid folds, softly arched light brows, a straight nose with a rounded tip, full lips with a wide hopeful smile, a snaggletooth visible when he smiles, and a bright, eager baseline expression. Hair: short light-beige comma-style hair with a single curved front lock beside the forehead — clearly different from black collar-length hair pushed back with a soft wave. Character design: a late-20s man of compact toned build about 176cm, sitting at a long table in a drama script reading room with a thick script open and a pencil in one hand, a braided string bracelet on the wrist, wearing a coral and cream color-block knit sweater, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a bright hopeful smile showing the snaggletooth, eyes shining. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 곽단우(U, M) | {{생성일시}} — the name "곽단우(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 031 권성환 × 남시윤
+- 타입: 사이다남 — 무뚝뚝한 원장에게도 아이들 앞에서도 할 말은 시원하게 하는 신입 간호사
+- 나이·체격: 20대 후반, 174cm 슬림
+- 머리: 카라멜 브라운 짧은 크롭컷
+- 얼굴 포인트: 외꺼풀 올라간 눈매, 콧등의 옅은 주근깨
+- 옷 결: 스포티 캐주얼, 네이비·라임
+- 소품: 손목의 스포츠 시계
+- 목소리: Voice: brisk and clear, cheerful frankness in every word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 174cm, short textured caramel-brown crop cut, upturned monolid eyes, faint freckles across the nose, a sporty casual look in navy and lime, a sports watch on the wrist. Voice: brisk and clear, cheerful frankness in every word, speaks slowly.`
+- 파일명: 031_권성환x남시윤.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim compact face with a clean firm jawline ending in a neat chin, upturned monolid eyes with crisp lifted corners, straight dark-brown brows, a straight nose with a neat tip, defined lips with a brisk confident smile, faint freckles across the nose bridge, and a frank, cheerful baseline expression. Hair: short textured caramel-brown crop cut with a choppy top — clearly different from dark brown-black naturally curly medium-length hair with a soft fringe. Character design: a late-20s man of slim build about 174cm, standing at a clinic reception desk with a name tag clipped on, a sports watch on the wrist, wearing a navy scrub top under a lime-trimmed navy zip jacket, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a brisk cheerful smile, chin up, looking straight ahead. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no curly hair, no fringe, no glasses, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 권성환(U, M) | {{생성일시}} — the name "권성환(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 032 한도겸 × 심규현
+- 타입: 헌신남 — 밤새 불 켜진 스튜디오에서 차가운 교수의 끼니까지 챙기는 조교
+- 나이·체격: 20대 후반, 179cm 어깨가 넓은 체격
+- 머리: 와인 브라운 장발, 목덜미에서 묶은 꽁지
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 왼쪽 볼 보조개
+- 옷 결: 오버핏 워크재킷, 올리브·블랙
+- 소품: 손목에 끼워 둔 검은 머리끈
+- 목소리: Voice: soft and steady, patient warmth under every word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, broad-shouldered build about 179cm, shoulder-length wine-brown hair tied in a low ponytail, round double-lidded eyes, a dimple on the left cheek, an oversized work-jacket look in olive and black, a black hair tie around the wrist. Voice: soft and steady, patient warmth under every word, speaks slowly.`
+- 파일명: 032_한도겸x심규현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with a gently rounded jawline ending in a rounded chin, round eyes with clear double eyelid folds and a soft level tilt, softly arched dark brows, a straight nose with a rounded tip, full lips with a patient gentle smile, a dimple on the left cheek, and a soft, steady baseline expression. Hair: shoulder-length wine-brown hair tied in a low ponytail at the nape with a few loose strands — clearly different from short black hair swept back from the forehead. Character design: a late-20s man of broad-shouldered build about 179cm, standing at a studio table holding a small white cardboard architectural model, a black hair tie around the wrist, wearing an oversized olive work jacket over a black tee, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a patient gentle smile with the dimple showing. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no short hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 한도겸(U, M) | {{생성일시}} — the name "한도겸(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 033 오규빈 × 전태건
+- 타입: 능글남 — 칼 같은 계약 조항 사이로 능청스럽게 거리를 좁히는 계약 배우자
+- 나이·체격: 30대 초반, 184cm 어깨가 넓은 큰 체격
+- 머리: 로즈 브라운 울프컷, 목덜미를 덮는 층진 길이
+- 얼굴 포인트: 처진 눈매, 웃을 때 드러나는 덧니
+- 옷 결: 루즈 니트와 와이드 팬츠, 테라코타·크림
+- 소품: 은색 체인 목걸이
+- 목소리: Voice: low and lazy, an easy grin he never quite hides, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, tall broad-shouldered build about 184cm, rose-brown layered wolf cut brushing the nape, gently drooping eyes, a snaggletooth that shows when he grins, a loose knit with wide trousers in terracotta and cream, a silver chain necklace. Voice: low and lazy, an easy grin he never quite hides, speaks slowly.`
+- 파일명: 033_오규빈x전태건.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad soft oval face with a relaxed rounded jawline ending in a soft chin, gently drooping eyes with soft double folds and a downward outer tilt, softly arched brown brows, a straight nose with a rounded tip, full lips with an easy lopsided grin, a snaggletooth visible when he grins, and a lazy, easygoing baseline expression. Hair: rose-brown layered wolf cut with textured layers brushing the nape — clearly different from short neatly side-parted black hair. Character design: a man in his early 30s of tall broad-shouldered build about 184cm, seated at a dining table in a warm apartment kitchen with an open notebook and two cups of barley tea in front, a silver chain necklace, wearing a loose terracotta knit over cream wide trousers, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, an easy lopsided grin showing the snaggletooth, leaning back slightly. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side part, no glasses, no feline eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 오규빈(U, M) | {{생성일시}} — the name "오규빈(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 034 나동현 × 이로한
+- 타입: 유혹남 — 피팅룸 거울 앞에서 깐깐한 디자이너의 시선을 일부러 붙잡는 모델
+- 나이·체격: 20대 중반, 188cm 길쭉한 모델 체형
+- 머리: 애쉬 그레이 젖은 질감 넘김, 이마가 드러나는 길이
+- 얼굴 포인트: 처진 눈매, 오른쪽 귀 연골의 작은 피어싱
+- 옷 결: 모노톤 오버핏 테일러링, 블랙·화이트
+- 소품: 검지의 두꺼운 은반지
+- 목소리: Voice: low and silky, a lingering pull in each line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, long-limbed model build about 188cm, ash-gray wet-look textured hair swept back off the forehead, gently drooping eyes, a small piercing on the upper cartilage of the right ear, a monotone oversized tailoring look in black and white, a chunky silver ring on the index finger. Voice: low and silky, a lingering pull in each line, speaks slowly.`
+- 파일명: 034_나동현x이로한.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long slim V-shaped face with a sharp tapered jawline ending in a slender chin, gently drooping eyes with soft double folds and a languid downward tilt, slim arched dark brows, a narrow high nose with a refined tip, full defined lips with a slow smile, a small piercing on the upper cartilage of the right ear, and a languid, alluring baseline expression. Hair: ash-gray wet-look textured hair swept straight back off the forehead — clearly different from medium-length dark brown-black hair tucked behind the ears. Character design: a mid-20s man of long-limbed model build about 188cm, standing in a bright fitting room with a full-length mirror and a garment rack softly blurred behind, a chunky silver ring on the index finger, wearing an oversized black tailored jacket over a white tee, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a slow alluring look over one shoulder toward the viewer, lips softly parted in a half-smile. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no burgundy hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 나동현(U, M) | {{생성일시}} — the name "나동현(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 035 염재하 × 최이솔
+- 타입: 순정남 — 오래 동경해 온 셰프 곁에서 묵묵히 팬을 닦는 막내
+- 나이·체격: 20대 중반, 176cm 슬림
+- 머리: 밀크 브라운 버즈컷
+- 얼굴 포인트: 동그란 큰 눈, 콧등의 옅은 주근깨
+- 옷 결: 데님 캐주얼, 인디고·화이트
+- 소품: 출퇴근길에 든 자전거 헬멧
+- 목소리: Voice: soft and earnest, a shy sincerity in every word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, slim build about 176cm, milk-brown buzz cut, large round eyes, faint freckles across the nose, a denim casual look in indigo and white, a bicycle helmet carried in one hand. Voice: soft and earnest, a shy sincerity in every word, speaks slowly.`
+- 파일명: 035_염재하x최이솔.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft cheeks, a gently curved jawline ending in a small chin, large round eyes with clear double eyelid folds, softly arched light brows, a straight nose with a small rounded tip, full lips with a shy sincere smile, faint freckles across the nose bridge, and an earnest, shy baseline expression. Hair: milk-brown buzz cut, very short and even — clearly different from short dark brown-black hair swept back. Character design: a mid-20s man of slim build about 176cm, standing in a quiet restaurant open kitchen after closing with a single warm pendant light, a bicycle helmet hanging from one hand, wearing an indigo denim shirt over a white tee with a short dark apron, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a shy sincere smile, eyes lowered then lifting. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no slicked-back hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 염재하(U, M) | {{생성일시}} — the name "염재하(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 036 배요한 × 정라윤
+- 타입: 장난남 — 거울 너머로 과묵한 원장에게 자꾸 말을 거는 새 손님
+- 나이·체격: 20대 후반, 177cm 어깨가 단단한 체격
+- 머리: 카키 브라운 리젠트, 올려 넘긴 짧은 길이
+- 얼굴 포인트: 동그랗게 처진 눈, 오른쪽 볼 보조개
+- 옷 결: 빈티지 스트리트, 머스터드·브라운
+- 소품: 목에 건 필름 카메라 스트랩
+- 목소리: Voice: playful and bright, a cheeky lilt at the end of each line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, firm build about 177cm with solid shoulders, short khaki-brown regent cut swept up, round gently drooping eyes, a dimple on the right cheek, a vintage street look in mustard and brown, a film-camera strap around his neck. Voice: playful and bright, a cheeky lilt at the end of each line, speaks slowly.`
+- 파일명: 036_배요한x정라윤.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact square-oval face with a firm jawline ending in a defined chin, round gently drooping eyes with clear double folds, thick straight brown brows, a straight nose with a defined tip, full lips with a cheeky grin, a dimple on the right cheek, and a playful, chatty baseline expression. Hair: short khaki-brown regent cut swept up and back with neat sides — clearly different from black hair swept back and tied small at the nape. Character design: a late-20s man of firm build about 177cm with solid shoulders, seated in a salon chair in front of a softly blurred mirror with a black salon cape resting over the shoulders, a film-camera strap visible at the neck, wearing a mustard vintage knit under the cape, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a cheeky grin toward the mirror with the dimple showing. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no tied-back hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 배요한(U, M) | {{생성일시}} — the name "배요한(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 037 우경태 × 고승우
+- 타입: 능글남 — 원칙주의 동기의 또박또박한 반박을 웃으며 넘기는 현장안전팀 대리
+- 나이·체격: 30대 초반, 176cm 슬림
+- 머리: 로즈 브라운 가르마 펌, 귀가 보이는 길이
+- 얼굴 포인트: 처진 눈매, 왼쪽 귓불의 작은 피어싱
+- 옷 결: 기능성 아웃도어, 네이비·형광 오렌지 포인트
+- 소품: 손목의 디지털 시계
+- 목소리: Voice: relaxed and smooth, an easy smile in each comeback, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 176cm, rose-brown middle-parted perm showing the ears, gently drooping eyes, a small stud in the left earlobe, a technical outdoor look in navy with neon-orange accents, a digital wristwatch. Voice: relaxed and smooth, an easy smile in each comeback, speaks slowly.`
+- 파일명: 037_우경태x고승우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with a relaxed tapered jawline ending in a rounded chin, gently drooping eyes with soft double folds and a downward outer tilt, softly arched brown brows, a straight nose with a small tip, full lips with an easy smile, a small stud in the left earlobe, and a relaxed, smooth baseline expression. Hair: rose-brown middle-parted perm with soft waves showing the ears — clearly different from thick black hair cropped short and brushed straight up. Character design: a man in his early 30s of slim build about 176cm, standing in front of a softly blurred drafting desk with rolled blueprints, holding a blue pen in one hand, a digital wristwatch, wearing a navy technical shell jacket with neon-orange accents over a white shirt, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a relaxed easy smile, head tilted as if brushing off an argument. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no monolid eyes, no glasses, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 우경태(U, M) | {{생성일시}} — the name "우경태(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 038 민수호 × 문재윤
+- 타입: 다정남 — 사소한 민원마다 고맙다는 말을 꼭 남기는 3년 차 입주민
+- 나이·체격: 30세 전후, 176cm 슬림
+- 머리: 애쉬 브라운 반묶음, 턱선까지 오는 길이
+- 얼굴 포인트: 외꺼풀 올라간 눈매, 둥근 무테 안경
+- 옷 결: 단정한 셔츠 레이어드, 네이비·아이보리
+- 소품: 손목에 감은 실팔찌
+- 목소리: Voice: warm and soft, gentle thanks tucked into every line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around thirty, slim build about 176cm, chin-length ash-brown hair tied half-up, upturned monolid eyes, round rimless glasses, a neat layered-shirt look in navy and ivory, a braided string bracelet on the wrist. Voice: warm and soft, gentle thanks tucked into every line, speaks slowly.`
+- 파일명: 038_민수호x문재윤.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with a clean tapered jawline ending in a neat chin, upturned monolid eyes with crisp lifted corners behind round rimless glasses, straight soft dark-brown brows, a straight slim nose with a refined tip, softly full lips with a warm smile line, and a warm, gentle baseline expression. Hair: chin-length ash-brown hair loosely tied half-up with soft strands at the cheeks — clearly different from short black hair with a soft fringe brushed down. Character design: a man around thirty of slim build about 176cm, standing in a softly blurred apartment lobby with a wall of mailboxes holding a small paper bag in one hand, a braided string bracelet on the wrist, wearing a navy shirt layered under an ivory cardigan, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a warm grateful smile, eyes softening behind the glasses. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no fringe, no freckles, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 민수호(U, M) | {{생성일시}} — the name "민수호(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 039 고준서 × 서민찬
+- 타입: 순정남 — 3년째 점심시간마다 같은 창구만 찾아오는 단골 고객
+- 나이·체격: 30대 초반, 178cm 어깨가 넓은 단단한 체격
+- 머리: 블랙 히피 펌, 귀를 덮는 길이
+- 얼굴 포인트: 동그랗게 처진 눈, 왼쪽 볼 보조개
+- 옷 결: 캐주얼 수트, 베이지·브라운
+- 소품: 어깨에 멘 가죽 크로스백
+- 목소리: Voice: warm and shy, steady sincerity in each word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, sturdy broad-shouldered build about 178cm, black loose hippie-perm curls covering the ears, round gently drooping eyes, a dimple on the left cheek, a casual suit look in beige and brown, a leather crossbody bag. Voice: warm and shy, steady sincerity in each word, speaks slowly.`
+- 파일명: 039_고준서x서민찬.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad soft square face with full cheeks, a rounded jawline ending in a soft chin, round gently drooping eyes with clear double folds, thick softly arched dark brows, a straight nose with a rounded tip, full lips with a shy warm smile, a dimple on the left cheek, and a shy, sincere baseline expression. Hair: black loose hippie-perm curls with soft volume covering the ears — clearly different from dark brown hair cropped short with a clean 2:8 part and the ears exposed. Character design: an early-30s man of sturdy broad-shouldered build about 178cm, seated in a softly blurred bank waiting area with a glass partition behind, holding a small passbook and a paper number ticket, a leather crossbody bag, wearing a beige casual suit jacket over a brown knit, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a shy warm smile with the dimple showing, glancing up. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown hair, no 2:8 part, no glasses, no mole, no feline eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 고준서(U, M) | {{생성일시}} — the name "고준서(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 040 양노아 × 유하진
+- 타입: 허당남 — 첫 교생 실습에서 출석부와 분필을 번갈아 떨어뜨리는 사범대생
+- 나이·체격: 20대 초반, 172cm 마른 체격
+- 머리: 블랙 쉼표 머리, 앞머리 한 가닥만 이마 옆으로 휘는 짧은 길이
+- 얼굴 포인트: 동그란 큰 눈, 콧등의 옅은 주근깨
+- 옷 결: 파스텔 프레피, 민트·크림
+- 소품: 늘 들고 다니는 보온 텀블러
+- 목소리: Voice: bright and a little nervous, a hopeful rise in each line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-20s Korean man, thin build about 172cm, short black comma-style hair with one curved front lock, large round eyes, faint freckles across the nose, a pastel preppy look in mint and cream, an insulated tumbler in hand. Voice: bright and a little nervous, a hopeful rise in each line, speaks slowly.`
+- 파일명: 040_양노아x유하진.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft full cheeks, a gently curved jawline ending in a small chin, large round eyes with clear double eyelid folds, softly arched dark brows, a small straight nose with a rounded tip, full lips with a nervous hopeful smile, faint freckles across the nose bridge, and a bright, slightly nervous baseline expression. Hair: short black comma-style hair with a single curved front lock beside the forehead — clearly different from thick dark ash-brown hair with one side pressed down. Character design: an early-20s man of thin build about 172cm, standing by a tall window in a softly blurred high school corridor holding a thin lesson-plan folder against the chest, an insulated tumbler in the other hand, wearing a mint knit vest over a cream shirt, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a nervous hopeful smile, shoulders slightly raised. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no ash-brown hair, no glasses, no side-swept fringe, no half-lidded eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 양노아(U, M) | {{생성일시}} — the name "양노아(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 041 지호연 × 오건희
+- 타입: 직진남 — 운전대 앞에선 떨려도 엄한 강사에게 마음은 곧장 말하는 수강생
+- 나이·체격: 30세 전후, 174cm 슬림
+- 머리: 오렌지 브라운 애즈펌, 이마가 드러나게 넘긴 길이
+- 얼굴 포인트: 외꺼풀 올라간 눈매, 오른쪽 귓바퀴의 은색 피어싱
+- 옷 결: 스트리트 캐주얼, 올리브·블랙
+- 소품: 손목의 은색 체인 팔찌
+- 목소리: Voice: clear and direct, a bold eagerness under the nerves, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around thirty, slim build about 174cm, orange-brown as-perm swept to show the forehead, upturned monolid eyes, a silver piercing on the right ear rim, a street-casual look in olive and black, a silver chain bracelet on the wrist. Voice: clear and direct, a bold eagerness under the nerves, speaks slowly.`
+- 파일명: 041_지호연x오건희.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim compact face with a clean firm jawline ending in a neat chin, upturned monolid eyes with crisp lifted corners, straight dark-brown brows, a straight nose with a neat tip, defined lips with a determined smile, a silver piercing on the right ear rim, and a bold, eager baseline expression under nerves. Hair: orange-brown as-perm swept back to show the forehead with soft curled volume — clearly different from short black hair combed flat with a side part. Character design: a man around thirty of slim build about 174cm, sitting in the driver's seat of a compact driving-school car with both hands on the steering wheel, a small notebook on the dashboard, a silver chain bracelet on the wrist, wearing an olive bomber jacket over a black tee, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a determined eager smile, eyes fixed forward. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side part, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 지호연(U, M) | {{생성일시}} — the name "지호연(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 042 송예찬 × 한채우
+- 타입: 집착남(가벼운 질투) — 공사 현장에 매일 들르며 디자이너의 다른 의뢰인에게 살짝 샘을 내는 집주인
+- 나이·체격: 30대 초반, 180cm 어깨가 단단한 체격
+- 머리: 은회색 가일컷, 한쪽으로 넘겨 이마가 보이는 길이
+- 얼굴 포인트: 처진 외꺼풀 눈, 왼쪽 눈썹 끝의 짧은 흉터
+- 옷 결: 클래식 니트, 버건디·크림
+- 소품: 은색 체인 목걸이
+- 목소리: Voice: low and warm, a possessive little edge when he teases, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, solid build about 180cm with firm shoulders, silver-gray Guile-style cut swept to one side showing the forehead, gently drooping monolid eyes, a short scar at the tail of the left eyebrow, a classic knit look in burgundy and cream, a silver chain necklace. Voice: low and warm, a possessive little edge when he teases, speaks slowly.`
+- 파일명: 042_송예찬x한채우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a balanced square-oval face with a firm jawline ending in a defined chin, gently drooping monolid eyes with a soft downward tilt, straight dark brows with a short scar at the tail of the left brow, a straight nose with a defined tip, full lips with a teasing smile, and a warm, faintly possessive baseline expression. Hair: silver-gray Guile-style cut swept up to one side showing the forehead — clearly different from softly waved dark brown-black center-parted hair. Character design: a man in his early 30s of solid build about 180cm with firm shoulders, standing in a half-renovated living room holding a rolled floor plan under one arm, a silver chain necklace, wearing a burgundy cable knit over a cream shirt, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a teasing smile with a small possessive glint in the eyes. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no center part, no glasses, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 송예찬(U, M) | {{생성일시}} — the name "송예찬(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 043 예승원 × 윤지오
+- 타입: 대형견남 — 규정에 엄한 사무장 뒤를 씩씩하게 따라붙는 신입 승무원
+- 나이·체격: 20대 중반, 177cm 단단한 체격
+- 머리: 카라멜 브라운 아이비리그컷, 짧게 옆으로 빗어 넘긴 길이
+- 얼굴 포인트: 동그랗게 처진 눈, 웃을 때 드러나는 덧니
+- 옷 결: 트랙재킷 스포티, 레드·화이트
+- 소품: 손목의 컬러 실리콘 밴드
+- 목소리: Voice: bright and eager, a cheerful bounce in each answer, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, sturdy build about 177cm, short caramel-brown ivy league cut combed to the side, round gently drooping eyes, a snaggletooth that shows when he smiles, a sporty track-jacket look in red and white, a colorful silicone band on the wrist. Voice: bright and eager, a cheerful bounce in each answer, speaks slowly.`
+- 파일명: 043_예승원x윤지오.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact round face with full cheeks, a firm rounded jawline ending in a soft chin, round gently drooping eyes with clear double folds, thick softly arched brown brows, a straight nose with a rounded tip, full lips with a bright smile, a snaggletooth visible when he smiles, and a cheerful, eager baseline expression. Hair: short caramel-brown ivy league cut neatly combed to the side — clearly different from black hair cropped short and combed straight back with a matte hold. Character design: a mid-20s man of sturdy build about 177cm, standing in the aisle of a dim aircraft cabin with a small name badge, a colorful silicone band on the wrist, wearing a red and white sporty track jacket over his crew shirt, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a cheerful bright smile showing the snaggletooth, posture eager. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no slicked-back hair, no side-swept fringe, no glasses, no mole, no fox eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 예승원(U, M) | {{생성일시}} — the name "예승원(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 044 구도원 × 임채민
+- 타입: 사이다남 — 무심한 카피라이터의 한 줄에 좋다, 별로다를 바로 말하는 아트디렉터
+- 나이·체격: 20대 후반, 175cm 슬림
+- 머리: 로즈 브라운 울프컷, 목덜미를 덮는 층진 길이
+- 얼굴 포인트: 올라간 고양이 눈매, 왼쪽 귓불의 링 피어싱 두 개
+- 옷 결: 아트 스트리트, 코발트 블루·오렌지
+- 소품: 목에 걸친 큰 무선 헤드폰
+- 목소리: Voice: crisp and confident, every opinion said plainly, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 175cm, rose-brown layered wolf cut brushing the nape, upturned cat-like eyes, two small hoops in the left earlobe, an artsy street look in cobalt blue and orange, big wireless headphones around his neck. Voice: crisp and confident, every opinion said plainly, speaks slowly.`
+- 파일명: 044_구도원x임채민.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim V-shaped face with a sharp tapered jawline ending in a slender chin, upturned cat-like eyes with crisp lifted corners, slim arched dark brows, a narrow high nose with a refined tip, defined lips with a confident closed smile, two small hoops in the left earlobe, and a crisp, decisive baseline expression. Hair: rose-brown layered wolf cut with textured layers brushing the nape — clearly different from soft black hair falling to the brows in a natural fringe. Character design: a late-20s man of slim build about 175cm, seated at a desk in a calm office with a monitor softly glowing behind, big wireless headphones around his neck, wearing a cobalt-blue overshirt over an orange tee, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a crisp decisive look with a confident closed smile. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no fringe, no glasses, no droopy eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 구도원(U, M) | {{생성일시}} — the name "구도원(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 045 홍마루 × 김해준
+- 타입: 다정남 — 논문에 지친 와중에도 사서에게 꼬박꼬박 인사와 간식을 건네는 4년 차 이용자
+- 나이·체격: 30세 전후, 178cm 탄탄한 체격
+- 머리: 오렌지 브라운 장발, 목덜미에서 묶은 꽁지
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 얇은 뿔테 안경
+- 옷 결: 체크 셔츠와 니트 레이어드, 브라운·포레스트 그린
+- 소품: 손목의 가죽 줄 시계
+- 목소리: Voice: soft and warm, a careful kindness in every word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around thirty, toned build about 178cm, shoulder-length orange-brown hair tied in a low ponytail, round double-lidded eyes, thin horn-rimmed glasses, a layered check-shirt-and-knit look in brown and forest green, a leather-strap wristwatch. Voice: soft and warm, a careful kindness in every word, speaks slowly.`
+- 파일명: 045_홍마루x김해준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with a gently rounded jawline ending in a rounded chin, round eyes with clear double eyelid folds behind thin horn-rimmed glasses, softly arched brown brows, a straight nose with a small tip, full lips with a careful kind smile, and a soft, warm baseline expression. Hair: shoulder-length orange-brown hair tied in a low ponytail with a few loose strands — clearly different from dark brown-black hair swept back from the forehead. Character design: a man around thirty of toned build about 178cm, seated at a sunlit library window desk with open books and a notebook, a leather-strap wristwatch, wearing a brown check shirt layered under a forest-green knit vest, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a careful kind smile, eyes warm behind the glasses. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no slicked-back hair, no side-swept fringe, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 홍마루(U, M) | {{생성일시}} — the name "홍마루(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 046 오여름 × 서도형
+- 타입: 까칠남 — 수리비와 부품 하나하나를 깐깐하게 따지는 5년 차 단골 차주
+- 나이·체격: 30대 초반, 173cm 슬림
+- 머리: 와인 브라운 댄디컷, 옆을 단정히 정리한 짧은 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 오른쪽 볼 보조개
+- 옷 결: 단정한 셔츠와 슬랙스 오피스, 아이보리·네이비
+- 소품: 손목의 얇은 금색 체인 팔찌
+- 목소리: Voice: dry and clipped, a skeptical edge that softens late, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 173cm, neat wine-brown dandy cut trimmed at the sides, round double-lidded eyes, a dimple on the right cheek, a tidy shirt-and-slacks office look in ivory and navy, a thin gold chain bracelet. Voice: dry and clipped, a skeptical edge that softens late, speaks slowly.`
+- 파일명: 046_오여름x서도형.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small oval face with soft cheeks, a gently tapered jawline ending in a neat chin, round eyes with clear double eyelid folds, straight neat dark-brown brows, a straight slim nose with a refined tip, thin lips with a skeptical closed line, a dimple on the right cheek, and a dry, skeptical baseline expression. Hair: neat wine-brown dandy cut with tidy trimmed sides — clearly different from black hair cropped very short and close to the head. Character design: a man in his early 30s of slim build about 173cm, standing beside a small older compact car in a tidy auto-shop garage holding a set of car keys loosely, a thin gold chain bracelet, wearing an ivory shirt under a navy blazer with navy slacks, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a dry skeptical look, one brow raised, a reluctant dimple starting to show. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no buzz cut, no glasses, no eyebrow scar, no monolid eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 오여름(U, M) | {{생성일시}} — the name "오여름(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 047 정온유 × 이정현
+- 타입: 순정남 — 2년째 매일 같은 시각 문 앞에서 택배 기사를 기다려 온 고객
+- 나이·체격: 20대 후반, 175cm 슬림
+- 머리: 라이트 베이지 쉐도우 펌, 귀를 살짝 덮는 길이
+- 얼굴 포인트: 동그랗게 휘는 쌍꺼풀 눈, 콧등의 옅은 주근깨
+- 옷 결: 포근한 카디건 캐주얼, 크림·라벤더
+- 소품: 니트 비니
+- 목소리: Voice: bright and warm, a happy lift on every greeting, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 175cm, light-beige soft shadow perm just over the ears, round curved double-lidded eyes, faint freckles across the nose, a cozy cardigan casual look in cream and lavender, a knit beanie. Voice: bright and warm, a happy lift on every greeting, speaks slowly.`
+- 파일명: 047_정온유x이정현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft full cheeks, a gently curved jawline ending in a small chin, round curved eyes with clear double folds, softly arched light brows, a small straight nose with a rounded tip, full lips with a happy smile, faint freckles across the nose bridge, and a bright, sincere baseline expression. Hair: light-beige soft shadow perm with loose volume just over the ears, a cream knit beanie sitting back on the head — clearly different from short neat black hair flattened by a cap. Character design: a late-20s man of slim build about 175cm, standing at an apartment doorway beside a small leafy potted plant on the doormat, a phone held loosely in one hand, wearing a cream cardigan over a lavender shirt and a cream knit beanie, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a happy sincere smile as if he just heard footsteps on the stairs. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 정온유(U, M) | {{생성일시}} — the name "정온유(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 048 변건우 × 박우석
+- 타입: 유혹남 — 코받침을 맞출 때 일부러 눈을 피하지 않는 10년 단골
+- 나이·체격: 30대 초반, 175cm 슬림
+- 머리: 블랙 올백, 매끈하게 넘긴 짧은 길이
+- 얼굴 포인트: 올라간 여우 눈매, 오른쪽 귓불의 작은 피어싱
+- 옷 결: 테일러드 미니멀, 블랙·와인
+- 소품: 얇은 은색 목걸이
+- 목소리: Voice: low and velvety, a slow lingering warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 175cm, black hair slicked fully back, upturned fox-like eyes, a small stud in the right earlobe, a minimal tailored look in black and wine, a thin silver necklace. Voice: low and velvety, a slow lingering warmth, speaks slowly.`
+- 파일명: 048_변건우x박우석.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim V-shaped face with a sharp tapered jawline ending in a slender chin, upturned fox-like eyes with long lifted outer corners and a thin double fold, slim arched dark brows, a narrow high nose with a refined tip, full defined lips with a slow smile, a small stud in the right earlobe, and a languid, alluring baseline expression. Hair: black hair slicked fully back with a sleek finish — clearly different from thick dark ash-brown center-parted hair with a soft curtain fringe. Character design: an early-30s man of slim build about 175cm, standing at a mirror counter in a small optical shop holding a pair of thin-framed glasses by the temple just below his face, not wearing them, a thin silver necklace, wearing a black tailored jacket over a wine-colored knit, with rows of eyeglass frames softly blurred on the shelves behind, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a slow lingering gaze into the mirror with a faint alluring smile. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no ash-brown hair, no curtain fringe, no glasses on his face, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 변건우(U, M) | {{생성일시}} — the name "변건우(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 049 육새롬 × 노태양
+- 타입: 철벽남 — 치과 공포를 짧고 차가운 대답으로 가리는 환자
+- 나이·체격: 20대 후반, 172cm 슬림
+- 머리: 애쉬 그레이 버즈컷
+- 얼굴 포인트: 외꺼풀 올라간 눈매, 왼쪽 눈썹 끝의 짧은 흉터
+- 옷 결: 모던 셋업, 네이비·코랄
+- 소품: 가방에 매단 작은 스트레스볼 키링
+- 목소리: Voice: cool and guarded, a nervous edge under short replies, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 172cm, ash-gray buzz cut, upturned monolid eyes, a short scar at the tail of the left eyebrow, a modern setup look in navy and coral, a small squeeze-ball keyring hanging from his bag. Voice: cool and guarded, a nervous edge under short replies, speaks slowly.`
+- 파일명: 049_육새롬x노태양.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim narrow face with a clean angular jawline ending in a narrow chin, upturned monolid eyes with crisp lifted corners, straight slim dark brows with a short scar at the tail of the left brow, a narrow straight nose with a neat tip, thin lips pressed in a tight line, and a cool, guarded baseline expression with a nervous edge. Hair: ash-gray buzz cut, very short and even — clearly different from soft wavy black hair side-parted across the forehead. Character design: a late-20s man of slim build about 172cm, seated upright on a waiting-room chair holding a paper cup of warm barley tea in both hands, a small squeeze-ball keyring hanging from the bag beside him, wearing a navy setup jacket over a coral knit, with the scene softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a guarded tight-lipped look, eyes betraying a little nervousness. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no wavy hair, no side-swept fringe, no glasses, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 육새롬(U, M) | {{생성일시}} — the name "육새롬(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 050 모두현 × 강세찬
+- 타입: 대형견남 — 칭찬에 인색한 훈련사의 한마디에 꼬리 치듯 반응하는 보호자
+- 나이·체격: 20대 후반, 178cm 슬림하고 탄탄한 체격
+- 머리: 밀크 브라운 쉐도우 펌, 가운데 가르마 커튼 앞머리가 눈썹까지 오고 귀를 반쯤 덮는 길이
+- 얼굴 포인트: 처진 강아지 눈매, 웃을 때 드러나는 왼쪽 윗니 덧니
+- 옷 결: 오버핏 플리스 레이어드, 올리브·크림
+- 소품: 손목에 두 번 감은 주황 리드줄(왼쪽 귀에 작은 은색 이어커프)
+- 목소리: Voice: bright and eager, a warm laugh always close behind his words, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim athletic build about 178cm, milk-brown loose shadow perm with middle-parted curtain bangs falling to the brows and ears half covered, large round puppy-like eyes with downturned outer corners, a slight snaggletooth on the upper left that shows when he smiles, an oversized olive-green fleece half-zip over a cream hoodie, a bright orange dog leash looped around his wrist and a small silver ear cuff on the left ear. Voice: bright and eager, a warm laugh always close behind his words, speaks slowly.`
+- 파일명: 050_모두현x강세찬.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft heart-shaped face with full youthful cheeks, a gently rounded jawline ending in a small soft chin, large round puppy-like eyes with deep double eyelid folds and noticeably downturned outer corners, thick softly arched light-brown brows, a straight nose with a slightly rounded tip, full lips with a wide easy smile line, a slight snaggletooth on the upper left visible when he smiles, and a bright, eager baseline expression that looks like he is about to laugh. Hair: milk-brown loose shadow perm with soft volume, curtain bangs parted in the middle and falling to the brows, ears half covered — clearly different from a short black swept-up cut. Character design: a late-20s man of slim athletic build about 178cm, kneeling on a training mat beside a fluffy cream-colored mixed-breed dog and ruffling its ears with one hand, a bright orange dog leash looped twice around his other wrist, a small silver ear cuff on the left ear, wearing an oversized olive-green fleece half-zip over a cream hoodie, with a softly blurred bright dog training room behind. Upper body portrait, three-quarter angle facing the viewer, a bright open smile showing the snaggletooth, eyes crinkled warmly. Lighting: soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 모두현(U, M) | {{생성일시}} — the name "모두현(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 051 조명재 × 최민호
+- 타입: 까칠남 — 영업 멘트가 술술 나오는 명재 앞에서 창틀 곰팡이부터 짚는 깐깐한 손님
+- 나이·체격: 30대 초반, 175cm 다부진 보통 체격
+- 머리: 애쉬 그레이 크롭컷, 이마가 짧게 드러나는 길이
+- 얼굴 포인트: 동그랗고 큰 쌍꺼풀 눈, 왼쪽 눈썹 끝의 가는 흉터
+- 옷 결: 워크웨어 카고 캐주얼, 카키·베이지
+- 소품: 눌러 쓴 검은 볼캡
+- 목소리: Voice: dry and clipped, a skeptical edge that softens at the end, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, sturdy average build about 175cm, ash-gray crop cut with a short fringe line, large round double-lidded eyes, a thin scar at the tail of the left eyebrow, a workwear cargo look in khaki and beige, a black baseball cap pulled low. Voice: dry and clipped, a skeptical edge that softens at the end, speaks slowly.`
+- 파일명: 051_조명재x최민호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact square-ish face with firm straight cheek planes, a clean defined jaw ending in a squared chin, large round eyes with deep double eyelid folds and a level outer corner, thick straight dark brows set low, a straight nose with a firm bridge, a straight closed mouth with thin precise lips, a thin pale scar crossing the tail of the left eyebrow, and a skeptical appraising baseline expression with one brow slightly raised. Hair: ash-gray crop cut with a short blunt fringe line high on the forehead and tightly trimmed sides — clearly different from neatly combed dark brown side-parted hair. Character design: a man in his early thirties of sturdy average build about 175cm, standing beside a sunlit window in an empty apartment room, running a fingertip along the window frame while holding a small notebook in the other hand, a black baseball cap pulled low, wearing a khaki utility overshirt with cargo pockets over a beige tee, with a softly blurred bright empty room behind. Upper body portrait, three-quarter angle facing the viewer, a cool doubtful look with the mouth pressed flat and a faint reluctant smile at one corner. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark brown hair, no side part, no side-swept fringe, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 조명재(U, M) | {{생성일시}} — the name "조명재(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 052 황무진 × 오라온
+- 타입: 대형견남 — 말수 적은 무진 뒤를 졸졸 따라다니며 낙서 하나에도 크게 웃는 신입 어시스턴트
+- 나이·체격: 20대 중반, 176cm 어깨 넓은 탄탄한 체격
+- 머리: 밀크 브라운 쉐도우 펌, 귀를 살짝 덮는 길이
+- 얼굴 포인트: 눈꼬리가 처진 동그란 강아지 눈, 웃을 때 보이는 덧니
+- 옷 결: 컬러 블록 바람막이 스트리트, 머스타드·네이비
+- 소품: 머스타드색 니트 비니
+- 목소리: Voice: warm and eager, bright bursts of laughter between words, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, broad-shouldered athletic build about 176cm, milk-brown shadow perm brushing the ears, round puppy-like eyes with drooping outer corners, a snaggletooth that shows when he grins, a color-block windbreaker street look in mustard and navy, a mustard knit beanie. Voice: warm and eager, bright bursts of laughter between words, speaks slowly.`
+- 파일명: 052_황무진x오라온.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft round face with full youthful cheeks, a gently rounded jaw ending in a small soft chin, round puppy-like eyes with deep double eyelid folds and drooping outer corners, thick softly arched brows, a straight nose with a slightly rounded tip, full lips with a wide easy smile line, a slight snaggletooth visible when he smiles, and a bright eager baseline expression that looks ready to laugh. Hair: milk-brown loose shadow perm with soft volume, ears half covered — clearly different from loosely tousled black center-parted hair. Character design: a man in his mid-twenties of broad-shouldered athletic build about 176cm, seated at a bright studio desk beside a window, holding up a thin drawing pencil as if showing off a sketch, a mustard knit beanie on his head, wearing a color-block windbreaker in mustard and navy over a white tee, with a softly blurred sunlit drawing studio behind. Upper body portrait, three-quarter angle facing the viewer, a wide bright grin showing the snaggletooth, eyes crinkled warmly. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 황무진(U, M) | {{생성일시}} — the name "황무진(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 053 라현재 × 신로아
+- 타입: 직진남 — 느긋한 현재에게 수련 끝나고 밥 먹자고 먼저 말하는 수강생
+- 나이·체격: 20대 후반, 176cm 어깨 넓은 근육형
+- 머리: 카키 브라운 짧은 투블럭, 옆머리를 바짝 친 길이
+- 얼굴 포인트: 눈꼬리가 올라간 외꺼풀 눈, 오른쪽 귓불의 작은 은 피어싱
+- 옷 결: 모노톤 스포티 캐주얼, 검정·화이트
+- 소품: 오른손 검지의 굵은 은반지
+- 목소리: Voice: firm and direct, a confident low warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, broad-shouldered muscular build about 176cm, khaki-brown short two-block cut with closely trimmed sides, upturned monolid eyes, a small silver stud in the right earlobe, a monotone sporty casual look in black and white, a chunky silver ring on the right index finger. Voice: firm and direct, a confident low warmth, speaks slowly.`
+- 파일명: 053_라현재x신로아.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a defined oval face with sharp high cheekbones, a strong clean jaw ending in a firm chin, long upturned monolid eyes with crisp corners, straight dark brows angled slightly upward, a high straight nose bridge, firm well-shaped lips, a small silver stud in the right earlobe, and a direct confident baseline expression. Hair: khaki-brown short two-block cut with closely trimmed sides and a short textured top — clearly different from soft blackish-brown hair swept back off the forehead. Character design: a man in his late twenties of broad-shouldered muscular build about 176cm, sitting cross-legged on a yoga mat in a bright wooden-floor yoga studio, leaning forward slightly with forearms on the knees, a chunky silver ring on the right index finger, wearing a fitted black long-sleeve athletic top with white piping, with a softly blurred sunlit studio behind. Upper body portrait, three-quarter angle facing the viewer, a steady direct gaze into the lens and a sure, closed-mouth half smile. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no swept-back hair, no freckles, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 라현재(U, M) | {{생성일시}} — the name "라현재(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 054 길우혁 × 윤세빈
+- 타입: 순정남 — 칭찬에 인색한 트레이너의 한마디를 노트에 적어 두는 신인 가수
+- 나이·체격: 20대 초반, 172cm 호리호리한 체격
+- 머리: 금발에 가까운 라이트 베이지 쉼표 머리, 눈썹에 닿는 길이
+- 얼굴 포인트: 크고 동그란 쌍꺼풀 눈, 왼쪽 귓바퀴의 작은 링 피어싱
+- 옷 결: 오버핏 데님 캐주얼, 연청·화이트
+- 소품: 목에 건 가는 은 체인 목걸이
+- 목소리: Voice: clear and earnest, a soft hopeful lift, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-20s Korean man, lanky slender build about 172cm, near-blond light beige comma hair falling to the brows, large round double-lidded eyes, a small hoop piercing on the left ear helix, an oversized denim casual look in light wash and white, a thin silver chain necklace. Voice: clear and earnest, a soft hopeful lift, speaks slowly.`
+- 파일명: 054_길우혁x윤세빈.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small youthful oval face with soft full cheeks, a gently tapered jaw ending in a small rounded chin, large round eyes with deep double eyelid folds and a soft level corner, softly arched light brows, a small straight nose with a delicate tip, soft full lips, a small hoop piercing on the left ear helix, and an earnest hopeful baseline expression. Hair: near-blond light beige comma hair with the fringe curving down to the brows, freshly toned for the debut album jacket — clearly different from dark ash-brown medium hair pushed back with the fingers. Character design: a man in his early twenties of lanky slender build about 172cm, standing in a soundproofed vocal recording booth with a condenser microphone and a pop filter softly blurred in front, a thin silver chain necklace at the collar, wearing an oversized light-wash denim jacket over a white tee, with headphones resting around the neck. Upper body portrait, three-quarter angle facing the viewer, wide earnest eyes looking up at the viewer and a shy hopeful smile. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no swept-back hair, no mole, no scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 길우혁(U, M) | {{생성일시}} — the name "길우혁(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 055 전효인 × 홍지환
+- 타입: 능글남 — 마이크가 꺼지면 말을 못 고르는 효인을 여유 있게 놀리며 기다려 주는 담당 PD
+- 나이·체격: 30대 초반, 178cm 어깨 넓은 탄탄한 체격
+- 머리: 은회색 올백, 이마를 시원하게 드러낸 길이
+- 얼굴 포인트: 눈꼬리가 처진 진한 쌍꺼풀 눈, 왼쪽 눈 밑 작은 점
+- 옷 결: 캐주얼 셋업 수트, 베이지·브라운
+- 소품: 갈색 가죽 스트랩 손목시계
+- 목소리: Voice: smooth and unhurried, an easy amused tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, broad-shouldered athletic build about 178cm, silver-gray hair slicked fully back off the forehead, deep double-lidded eyes with drooping outer corners, a small mole beneath the left eye, a relaxed casual suit set-up in beige and brown, a brown leather-strap wristwatch. Voice: smooth and unhurried, an easy amused tone, speaks slowly.`
+- 파일명: 055_전효인x홍지환.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a balanced oval face with smooth defined cheekbones, a clean tapered jaw ending in a neat chin, deep double-lidded eyes with softly drooping outer corners, long gently arched brows, a straight refined nose, lips with an easy upturned corner, a small mole beneath the left eye, and a relaxed amused baseline expression. Hair: silver-gray hair slicked fully back off the forehead with a clean groomed shine — clearly different from dark brown wavy medium hair tucked behind one ear. Character design: a man in his early thirties of broad-shouldered athletic build about 178cm, seated at a small desk in a quiet recording studio, leaning back with one arm over the chair and a script with a pencil in the other hand, a brown leather-strap wristwatch on the wrist, wearing a relaxed beige casual suit jacket over a brown knit tee, with a softly blurred soundproofed studio behind. Upper body portrait, three-quarter angle facing the viewer, a lazy knowing half smile with one corner of the mouth lifted higher. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark brown hair, no wavy medium hair, no monolid, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 전효인(U, M) | {{생성일시}} — the name "전효인(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 056 소기찬 × 유은성
+- 타입: 장난남 — 무표정한 점장 옆에서 폐기 도시락으로 내기를 거는 최장수 아르바이트
+- 나이·체격: 20대 중반, 174cm 날렵한 마른 체격
+- 머리: 와인 브라운 히피 펌, 귀를 덮는 길이
+- 얼굴 포인트: 눈꼬리가 처진 동그란 눈, 웃을 때 보이는 덧니
+- 옷 결: 빈티지 스트리트, 오렌지·네이비
+- 소품: 목에 건 큰 흰색 무선 헤드폰
+- 목소리: Voice: bright and quick, a playful sing-song lilt, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, lean wiry build about 174cm, wine-brown hippie perm covering the ears, round eyes with drooping outer corners, a snaggletooth that shows when he laughs, a vintage street look in orange and navy, large white wireless headphones around the neck. Voice: bright and quick, a playful sing-song lilt, speaks slowly.`
+- 파일명: 056_소기찬x유은성.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft round face with full cheeks, a gently rounded jaw ending in a small chin, round eyes with drooping outer corners and soft double eyelids, thick softly arched brows, a short straight nose with a rounded tip, full lips with a playful upturned line, a snaggletooth visible when he laughs, and a mischievous lively baseline expression. Hair: wine-brown hippie perm with loose springy curls covering the ears — clearly different from short black hair with a lightly textured fringe. Character design: a man in his mid-twenties of lean wiry build about 174cm, standing behind a quiet convenience store counter in warm evening light, holding a small paper cup of instant noodles in one hand and pointing at it with the other as if making a bet, large white wireless headphones around the neck, wearing a vintage orange track jacket over a navy tee, with softly blurred shelves behind. Upper body portrait, three-quarter angle facing the viewer, a cheeky grin showing the snaggletooth and eyebrows lifted playfully. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no cat-like upturned eyes, no mole, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 소기찬(U, M) | {{생성일시}} — the name "소기찬(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 057 유강태 × 한태호
+- 타입: 사이다남 — 거친 마무리 투수의 말에 질문지 문장으로 똑 부러지게 받아치는 홍보팀 사원
+- 나이·체격: 20대 후반, 175cm 마른 체격
+- 머리: 애쉬 브라운 가르마 펌, 귀가 보이는 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 얇은 금테 안경
+- 옷 결: 오피스 캐주얼 셔츠 레이어드, 스카이블루·화이트
+- 소품: 손목에 감은 실팔찌
+- 목소리: Voice: crisp and articulate, a cool matter-of-fact tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 175cm, ash-brown middle-parted perm showing the ears, round double-lidded eyes, thin gold-rimmed glasses, a layered office-casual shirt look in sky blue and white, a braided string bracelet on the wrist. Voice: crisp and articulate, a cool matter-of-fact tone, speaks slowly.`
+- 파일명: 057_유강태x한태호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with smooth rounded cheeks, a gently tapered jaw ending in a neat chin, round double-lidded eyes with a level corner, softly straight brows, a straight neat nose, a clean mouth with a precise lip line, thin gold-rimmed glasses, a dimple on the right cheek, and a crisp poised baseline expression. Hair: ash-brown middle-parted perm with soft waves, ears showing — clearly different from short black hair swept upward. Character design: a man in his late twenties of slim build about 175cm, standing in a quiet stadium corridor after a night game under warm overhead lights, holding a stack of small index cards in one hand and tapping them with a pen, a braided string bracelet on the wrist, wearing a sky-blue oxford shirt layered under a white knit vest, with softly blurred corridor lights behind. Upper body portrait, three-quarter angle facing the viewer, a cool composed look with one eyebrow slightly raised and a small confident smile. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no cap, no monolid, no scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 유강태(U, M) | {{생성일시}} — the name "유강태(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 058 차인성 × 조성현
+- 타입: 허당남 — 정시 운행하는 첫차를 매일 뛰어서 겨우 타는 단골 승객
+- 나이·체격: 30대 초반, 177cm 다부진 보통 체격
+- 머리: 카키 브라운 애즈펌, 이마가 반쯤 보이는 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 콧등에 흩어진 옅은 주근깨
+- 옷 결: 소프트 오피스 캐주얼, 카멜·크림
+- 소품: 손목의 검은 디지털 손목시계
+- 목소리: Voice: breathless and sheepish, a flustered chuckle, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, sturdy average build about 177cm, khaki-brown as-perm half showing the forehead, round double-lidded eyes, faint freckles across the nose bridge, a soft office-casual look in camel and cream, a black digital wristwatch. Voice: breathless and sheepish, a flustered chuckle, speaks slowly.`
+- 파일명: 058_차인성x조성현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft round-ish face with gentle cheeks, a softly rounded jaw and a small chin, round double-lidded eyes with a soft level corner, softly arched brows, a short straight nose with a rounded tip, soft lips with a sheepish curve, faint freckles across the nose bridge, and a slightly flustered good-natured baseline expression. Hair: khaki-brown as-perm with a soft C-curl fringe parted to half show the forehead — clearly different from black hair cropped at the sides and parted seven-to-three. Character design: a man in his early thirties of sturdy average build about 177cm, sitting by the window seat of a quiet early-morning bus slightly out of breath, holding a transit card in one hand with a work tote bag on the lap, a black digital wristwatch on the wrist, wearing a camel knit cardigan over a cream shirt, with a softly blurred bus interior and pale morning light behind. Upper body portrait, three-quarter angle facing the viewer, a sheepish relieved smile as if he just made it in time. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no seven-to-three part, no mole, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 차인성(U, M) | {{생성일시}} — the name "차인성(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 059 안지섭 × 남기훈
+- 타입: 직진남 — 매뉴얼대로 말하는 IT 대리에게 고장 핑계 없이 커피를 들고 가는 신입 직원
+- 나이·체격: 20대 후반, 177cm 어깨 넓은 체격
+- 머리: 다크 초콜릿 리젠트, 앞머리를 위로 세운 길이
+- 얼굴 포인트: 눈꼬리가 날카롭게 올라간 외꺼풀 눈, 왼쪽 귓불의 작은 은 피어싱
+- 옷 결: 미니멀 니트 폴로·슬랙스, 차콜·카멜
+- 소품: 가방끈에 단 은색 카라비너 키링
+- 목소리: Voice: steady and straightforward, a low unwavering tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, broad-shouldered build about 177cm, dark chocolate regent swept up off the forehead, sharp upturned monolid eyes, a small silver stud in the left earlobe, a minimal knit polo and slacks look in charcoal and camel, a silver carabiner key ring clipped to his bag strap. Voice: steady and straightforward, a low unwavering tone, speaks slowly.`
+- 파일명: 059_안지섭x남기훈.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a defined oval face with high sharp cheekbones, a clean angular jaw ending in a firm chin, sharp upturned monolid eyes with crisp corners, straight dark brows, a high straight nose, firm lips with a steady line, a small silver stud in the left earlobe, and a direct determined baseline expression. Hair: dark chocolate regent with the front swept up and back in a clean pompadour — clearly different from loosely curled black hair falling over the forehead. Character design: a man in his late twenties of broad-shouldered build about 177cm, standing beside an office desk with a laptop and holding out a paper cup of coffee with one hand, a silver carabiner key ring clipped to his bag strap, wearing a charcoal knit polo with camel slacks and a company ID card on a lanyard, with a softly blurred open office behind. Upper body portrait, three-quarter angle facing the viewer, a straight steady look into the lens and a small sure smile. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no curly hair, no round doe eyes, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 안지섭(U, M) | {{생성일시}} — the name "안지섭(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 060 허노을 × 이안재
+- 타입: 무심남 — 무엇이든 가능하다는 컨시어지에게 아무것도 부탁하지 않는 장기 투숙객
+- 나이·체격: 30대 초반, 175cm 마른 체격
+- 머리: 은회색 울프컷, 목덜미에 닿는 길이
+- 얼굴 포인트: 눈꼬리가 올라간 외꺼풀 눈, 오른쪽 귓불의 작은 은 피어싱
+- 옷 결: 블랙 미니멀 레이어드, 검정·차콜
+- 소품: 어깨에 멘 검은 캔버스 토트백
+- 목소리: Voice: low and flat, a quiet indifferent calm, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 175cm, silver-gray wolf cut reaching the nape, upturned monolid eyes, a small silver stud in the right earlobe, a minimal black layered look in black and charcoal, a black canvas tote bag on the shoulder. Voice: low and flat, a quiet indifferent calm, speaks slowly.`
+- 파일명: 060_허노을x이안재.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a narrow defined face with clean cheek planes, a sharp tapered jaw and a neat pointed chin, upturned monolid eyes with crisp corners, thin straight brows, a slim high nose, thin neutral lips, a small silver stud in the right earlobe, and a quiet indifferent baseline expression. Hair: silver-gray wolf cut with choppy layered ends reaching the nape — clearly different from short dark brown hair swept straight back. Character design: a man in his early thirties of slim build about 175cm, seated in a hotel lobby armchair with one leg crossed, holding a small folded paper note loosely between two fingers beside a key card holder, a black canvas tote bag on the armrest, wearing a minimal black layered look of a charcoal knit under an open black shirt jacket, with a softly blurred warm hotel lobby and a front desk behind. Upper body portrait, three-quarter angle facing the viewer, a flat unbothered gaze and a barely there smile. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark brown hair, no slicked-back hair, no downturned gentle eyes, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 허노을(U, M) | {{생성일시}} — the name "허노을(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 061 진바름 × 배수현
+- 타입: 다정남 — 엔딩 크레디트가 끝날 때까지 앉아 있다가 매니저에게 수고했다고 말하는 단골 관객
+- 나이·체격: 20대 후반, 178cm 탄탄한 체격
+- 머리: 밀크 브라운 쉼표 머리, 한쪽 이마가 보이는 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 오른쪽 볼 보조개
+- 옷 결: 니트 베스트·셔츠 프레피, 그린·크림
+- 소품: 목에 건 작은 필름 카메라
+- 목소리: Voice: gentle and warm, a soft reassuring tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, toned build about 178cm, milk-brown comma hair showing one side of the forehead, round double-lidded eyes, a dimple on the right cheek, a preppy knit vest and shirt look in green and cream, a small film camera hanging from the neck. Voice: gentle and warm, a soft reassuring tone, speaks slowly.`
+- 파일명: 061_진바름x배수현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with gently rounded cheeks, a smooth tapered jaw ending in a soft chin, round double-lidded eyes with a warm level corner, softly arched brows, a straight nose with a gentle tip, soft lips with a kind upturned line, a dimple on the right cheek, and a warm attentive baseline expression. Hair: milk-brown comma hair with the fringe curving to show one side of the forehead — clearly different from center-parted dark brown-black hair. Character design: a man in his late twenties of toned build about 178cm, seated in a cinema auditorium seat holding a small paper cup, a small film camera hanging from the neck, wearing a green knit vest over a cream collared shirt, with a softly blurred dim cinema auditorium with warm aisle lights and a glowing screen behind. Upper body portrait, three-quarter angle facing the viewer, a gentle grateful smile showing the dimple, eyes soft. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no center part, no mole, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 진바름(U, M) | {{생성일시}} — the name "진바름(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 062 천이수 × 송준영
+- 타입: 허당남 — 초록 테이프 루트 두 번째 홀드에서 매번 미끄러지는 초보 회원
+- 나이·체격: 20대 후반, 172cm 호리호리한 체격
+- 머리: 금발에 가까운 라이트 베이지 히피 펌, 귀를 덮는 길이
+- 얼굴 포인트: 눈꼬리가 처진 쌍꺼풀 눈, 웃을 때 보이는 덧니
+- 옷 결: 파스텔 오버핏 스포티, 라벤더·화이트
+- 소품: 거꾸로 쓴 흰 볼캡
+- 목소리: Voice: cheerful and a little clumsy, an embarrassed laugh, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, lanky slender build about 172cm, near-blond light beige hippie perm covering the ears, double-lidded eyes with drooping outer corners, a snaggletooth that shows when he laughs, an oversized pastel sporty look in lavender and white, a white baseball cap worn backward. Voice: cheerful and a little clumsy, an embarrassed laugh, speaks slowly.`
+- 파일명: 062_천이수x송준영.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft face with round cheeks, a gently rounded jaw ending in a small chin, double-lidded eyes with drooping outer corners, softly arched light brows, a small straight nose with a rounded tip, full lips with a wide smile line, a snaggletooth visible when he laughs, and a cheerful slightly clumsy baseline expression. Hair: near-blond light beige hippie perm with loose curls covering the ears — clearly different from loosely tousled dark brown-black hair with a see-through fringe. Character design: a man in his late twenties of lanky slender build about 172cm, standing in front of a bright indoor climbing wall with chalk-dusted palms raised, a white baseball cap worn backward, wearing an oversized lavender sporty half-zip over a white tee, with a softly blurred climbing wall with colorful holds and warm spot lights behind. Upper body portrait, three-quarter angle facing the viewer, an embarrassed laughing smile showing the snaggletooth after a slip. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no see-through fringe, no mole, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 천이수(U, M) | {{생성일시}} — the name "천이수(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 063 옥영재 × 정지석
+- 타입: 철벽남 — 호탕한 체육 교사의 챙김에 괜찮다고 선을 긋는 부임 2개월 차 교사
+- 나이·체격: 20대 후반, 175cm 마른 체격
+- 머리: 애쉬 브라운 가르마 펌, 귀를 살짝 덮는 길이
+- 얼굴 포인트: 눈꼬리가 올라간 외꺼풀 눈, 얇은 은테 안경
+- 옷 결: 셔츠·니트 레이어드, 버건디·베이지
+- 소품: 어깨에 멘 갈색 가죽 크로스백
+- 목소리: Voice: calm and reserved, a polite guarded coolness, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 175cm, ash-brown middle-parted perm brushing the ears, upturned monolid eyes, thin silver-rimmed glasses, a layered shirt and knit look in burgundy and beige, a brown leather crossbody bag. Voice: calm and reserved, a polite guarded coolness, speaks slowly.`
+- 파일명: 063_옥영재x정지석.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with smooth flat cheeks, a clean tapered jaw ending in a narrow chin, upturned monolid eyes with crisp corners, straight thin brows, a narrow straight nose, a closed neutral mouth, thin silver-rimmed glasses, and a reserved polite baseline expression. Hair: ash-brown middle-parted perm with soft waves brushing the ears — clearly different from short black hair swept up off the forehead. Character design: a man in his late twenties of slim build about 175cm, seated at a teacher's desk in a school staff room holding a steel thermos with both hands, a brown leather crossbody bag on the chair back, wearing a burgundy knit layered over a beige collared shirt with a lanyard staff ID. Upper body portrait, three-quarter angle facing the viewer, a courteous closed-mouth smile with a guarded cool gaze. Lighting: Neutral cool-gray photography studio or minimal clean interior, soft diffused frontal key light with sculpted gentle side shadow, shallow depth of field, cool-neutral low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no swept-up hair, no dimple, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 옥영재(U, M) | {{생성일시}} — the name "옥영재(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 064 석우림 × 김유찬
+- 타입: 대형견남 — 카운트로만 말하는 코치에게 오늘 잘했냐고 매번 눈을 반짝이며 묻는 연습생
+- 나이·체격: 20대 초반, 174cm 탄탄하고 단단한 체격
+- 머리: 핑크 베이지 덮은 앞머리 바가지 머리(연습생 염색), 눈썹을 덮는 길이
+- 얼굴 포인트: 눈꼬리가 처진 동그란 눈, 양 볼 보조개
+- 옷 결: 오버핏 스트리트 후드, 오렌지·검정
+- 소품: 검은 니트 비니
+- 목소리: Voice: bright and puppyish, an excited upward tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-20s Korean man, compact solid build about 174cm, soft pink-beige bowl cut with a full fringe over the brows, round eyes with drooping outer corners, dimples on both cheeks, an oversized street hoodie look in orange and black, a black knit beanie. Voice: bright and puppyish, an excited upward tone, speaks slowly.`
+- 파일명: 064_석우림x김유찬.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft round face with full youthful cheeks, a gently rounded jaw ending in a small chin, round eyes with drooping outer corners and soft double eyelids, softly arched light brows, a small straight nose with a rounded tip, full lips with a wide smile line, dimples on both cheeks, and a bright puppyish baseline expression. Hair: soft pink-beige bowl cut with a full fringe covering the brows — clearly different from sleek black hair with ash-gray streaks slicked back. Character design: a man in his early twenties of compact solid build about 174cm, standing in a dance practice room holding a water bottle with a white towel over one shoulder, a black knit beanie on his head, wearing an oversized orange street hoodie with black trim, with a softly blurred mirrored practice room behind. Upper body portrait, three-quarter angle facing the viewer, a wide eager smile with both dimples showing, eyes bright as if waiting for praise. Lighting: Premium neutral Korean interior with warm practical lights and controlled cool shadow fill, soft frontal key, restrained halation, low saturation and low-to-mid contrast. No harsh orange-teal split. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no slicked-back hair, no fox-shaped eyes, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 석우림(U, M) | {{생성일시}} — the name "석우림(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 065 정호성 × 박도현
+- 타입: 장난남 — 퉁명스러운 복학생 멘토를 선배님 하고 일부러 크게 부르는 신입생
+- 나이·체격: 20세, 172cm 마른 체격
+- 머리: 애쉬 브라운 쉐도우 펌, 귀가 보이는 길이
+- 얼굴 포인트: 크고 동그란 쌍꺼풀 눈, 콧등의 옅은 주근깨
+- 옷 결: 컬러 블록 Y2K 캐주얼, 하늘색·노랑
+- 소품: 백팩에 단 작은 곰 인형 키링
+- 목소리: Voice: light and teasing, a mischievous bounce, speaks slowly.
+- 영상용 한 줄: `his boyfriend: 20-year-old Korean man, slim build about 172cm, ash-brown shadow perm showing the ears, large round double-lidded eyes, faint freckles on the nose bridge, a color-block Y2K casual look in sky blue and yellow, a small teddy bear key ring on his backpack. Voice: light and teasing, a mischievous bounce, speaks slowly.`
+- 파일명: 065_정호성x박도현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small youthful face with soft full cheeks, a gently rounded jaw ending in a small chin, large round double-lidded eyes, softly arched brows, a small straight nose, lips with a mischievous upturned corner, faint freckles on the nose bridge, and a playful teasing baseline expression. Hair: ash-brown shadow perm with soft volume, ears showing — clearly different from grown-out black hair with a soft fringe over the forehead. Character design: a 20-year-old man of slim build about 172cm, sitting at a wooden desk by a library window with an open book and a pen, a small teddy bear key ring hanging from the backpack beside him, wearing a color-block Y2K windbreaker in sky blue and yellow over a white tee. Upper body portrait, three-quarter angle facing the viewer, a cheeky grin as if about to call someone out loud, eyes sparkling. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no fringe over the forehead, no dimple, no sleepy heavy eyelids, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 정호성(U, M) | {{생성일시}} — the name "정호성(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 066 이시우 × 장민우
+- 타입: 능글남 — 4년째 수업 끝난 시우를 기다리며 오늘 몇 점짜리 하루였냐고 놀리는 연인
+- 나이·체격: 30대 초반, 178cm 어깨 넓은 체격
+- 머리: 흑발 크롭컷, 이마 위로 짧게 자른 길이
+- 얼굴 포인트: 눈꼬리가 올라간 진한 쌍꺼풀 눈, 오른쪽 귓불의 작은 은 링 피어싱
+- 옷 결: 레더 재킷 바이커 캐주얼, 검정·브라운
+- 소품: 왼 손목의 굵은 은 체인 팔찌
+- 목소리: Voice: low and lazy, a knowing teasing smile in it, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, broad-shouldered build about 178cm, black crop cut trimmed short above the forehead, deep double-lidded eyes with upturned outer corners, a small silver hoop in the right earlobe, a leather-jacket biker casual look in black and brown, a chunky silver chain bracelet on the left wrist. Voice: low and lazy, a knowing teasing smile in it, speaks slowly.`
+- 파일명: 066_이시우x장민우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a defined oval face with clean high cheekbones, a sharp clean jaw ending in a neat chin, deep double-lidded eyes with upturned outer corners, dark straight brows with a strong tail, a high straight nose, lips with a lazy lifted corner, a small silver hoop in the right earlobe, and a relaxed knowing baseline expression. Hair: black crop cut trimmed short with a blunt fringe high on the forehead — clearly different from ear-covering dark ash-brown curly hair. Character design: a man in his early thirties of broad-shouldered build about 178cm, sitting on a bench in a softly lit building lobby with a paper cup of warm barley tea in one hand, a chunky silver chain bracelet on the left wrist, wearing a black leather biker jacket over a brown knit sweater. Upper body portrait, three-quarter angle facing the viewer, a slow teasing smile with one corner raised and amused eyes. Lighting: Soft blurred warm-white and beige minimalist interior, soft diffuse frontal key light, gentle sculpted side shadow, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin must remain cool porcelain-white, never warm yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no curly hair, no glasses, no monolid, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 이시우(U, M) | {{생성일시}} — the name "이시우(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 067 강루하 × 이재혁
+- 타입: 능글남 — 까칠하게 반박하는 옆자리 기획자에게 웃으면서 다시 반박하는 동료
+- 나이·체격: 30세 전후, 185cm 마르고 길쭉한 체격
+- 머리: 은회색 장발 묶음, 뒤로 낮게 묶은 꽁지
+- 얼굴 포인트: 눈꼬리가 처진 쌍꺼풀 눈, 왼쪽 눈 밑 작은 점
+- 옷 결: 소프트 니트 카디건 캐주얼, 올리브·크림
+- 소품: 손목에 감은 검은 머리끈
+- 목소리: Voice: smooth and playful, a sly drawl, speaks slowly.
+- 영상용 한 줄: `his boyfriend: around-30 Korean man, tall lanky build about 185cm, long silver-gray hair tied back in a low ponytail, double-lidded eyes with drooping outer corners, a small mole beneath the left eye, a soft knit cardigan casual look in olive and cream, a black hair tie around the wrist. Voice: smooth and playful, a sly drawl, speaks slowly.`
+- 파일명: 067_강루하x이재혁.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long narrow face with smooth cheek planes, a slim tapered jaw ending in a narrow chin, double-lidded eyes with drooping outer corners, long gently arched brows, a long straight nose, lips with a sly upturned corner, a small mole beneath the left eye, and an easy playful baseline expression. Hair: long silver-gray hair tied back in a low ponytail with a few loose strands framing the face — clearly different from dark brown-black two-block hair with a center part. Character design: a man around thirty of tall lanky build about 185cm, sitting at an office desk by a window with an open laptop and a paper cup of iced coffee held in one hand, a black hair tie around the wrist, wearing an olive knit cardigan over a cream tee with a company ID lanyard. Upper body portrait, three-quarter angle facing the viewer, a sly amused smile as if he has a comeback ready. Lighting: Meeting-room window side light in late afternoon, soft diffused and slightly cool, with a gentle warm reflection from the table on the shadow side of the face, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no two-block cut, no center part, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 강루하(U, M) | {{생성일시}} — the name "강루하(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 068 윤상우 × 양태민
+- 타입: 허당남 — 송편 체중 기록을 매번 잊고 와서 휴대폰 사진첩을 뒤지는 보호자
+- 나이·체격: 30대 초반, 173cm 아담한 마른 체격
+- 머리: 애쉬 그레이 쉼표 머리, 한쪽 이마가 보이는 길이
+- 얼굴 포인트: 눈꼬리가 올라간 고양이 눈매, 왼쪽 볼 보조개
+- 옷 결: 오버핏 니트·와이드 팬츠, 머스타드·브라운
+- 소품: 베이지 버킷햇
+- 목소리: Voice: soft and fumbling, a sheepish little laugh, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, small slim build about 173cm, ash-gray comma hair showing one side of the forehead, upturned cat-like eyes, a dimple on the left cheek, an oversized knit and wide-trouser look in mustard and brown, a beige bucket hat. Voice: soft and fumbling, a sheepish little laugh, speaks slowly.`
+- 파일명: 068_윤상우x양태민.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small heart-shaped face with soft cheeks, a gently tapered jaw ending in a small pointed chin, upturned cat-like double-lidded eyes, thin softly arched brows, a small straight nose, lips with a soft sheepish curve, a dimple on the left cheek, and a slightly fumbling good-natured baseline expression. Hair: ash-gray comma hair with the fringe curving to show one side of the forehead — clearly different from ear-length deep brown wavy hair. Character design: a man in his early thirties of small slim build about 173cm, sitting on a waiting-room bench of a small veterinary clinic with a soft fabric cat carrier on the lap and a cream-colored cat peeking out, a beige bucket hat on his head, wearing an oversized mustard knit with brown wide trousers. Upper body portrait, three-quarter angle facing the viewer, a sheepish smile while scrolling a phone in one hand as if he forgot something. Lighting: Soft morning window rim backlight in a veterinary waiting room with a gentle frontal fill, warm practical clinic lights in the blurred background, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown wavy hair, no glasses, no mole, no downturned monolid eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 윤상우(U, M) | {{생성일시}} — the name "윤상우(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 069 최서완 × 구성우
+- 타입: 대형견남 — 숫자만 말하는 세무사에게 영수증 상자를 안고 와서 크게 인사하는 개인사업자
+- 나이·체격: 30대 초반, 184cm 큰 덩치
+- 머리: 카키 브라운 반묶음, 어깨에 닿는 길이
+- 얼굴 포인트: 눈꼬리가 처진 동그란 눈, 웃을 때 보이는 덧니
+- 옷 결: 아웃도어 고프코어, 카키·주황 포인트
+- 소품: 손에 든 자전거 헬멧
+- 목소리: Voice: big and warm, a hearty cheerful rumble, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, big broad build about 184cm, shoulder-length khaki-brown hair in a half-up tie, round eyes with drooping outer corners, a snaggletooth that shows when he grins, an outdoor gorpcore look in khaki with orange accents, a bicycle helmet in hand. Voice: big and warm, a hearty cheerful rumble, speaks slowly.`
+- 파일명: 069_최서완x구성우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad soft face with full cheeks, a rounded strong jaw ending in a soft chin, round eyes with drooping outer corners and deep double eyelids, thick softly arched brows, a straight broad-tipped nose, full lips with a wide smile line, a snaggletooth visible when he grins, and a big warm eager baseline expression. Hair: shoulder-length khaki-brown hair tied half up at the back of the head — clearly different from black hair in a neat 5:5 part swept back. Character design: a man in his early thirties of big broad build about 184cm, seated at the consultation table of a small tax office with a plain cardboard receipt box hugged under one arm, a bicycle helmet set on the table, wearing an outdoor gorpcore fleece in khaki with orange accents over a white tee. Upper body portrait, three-quarter angle facing the viewer, a big beaming grin showing the snaggletooth. Lighting: Late-evening tax office lit by a single warm desk lamp as the key from the front-left with a soft cool window fill from the right, warm practical light in the blurred background, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no center part, no upturned cool eyes, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 최서완(U, M) | {{생성일시}} — the name "최서완(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 070 목유한 × 최원빈
+- 타입: 사이다남 — 말수 적은 학예사 대신 관람객 질문에 시원하게 답해 주는 자원 도슨트
+- 나이·체격: 30세 전후, 176cm 탄탄한 체격
+- 머리: 금발에 가까운 라이트 베이지 올백, 이마를 드러낸 길이
+- 얼굴 포인트: 눈꼬리가 올라간 외꺼풀 눈, 오른쪽 귓불의 작은 은 피어싱
+- 옷 결: 모던 클래식 셋업 재킷, 차콜·버건디
+- 소품: 왼손 검지의 은반지
+- 목소리: Voice: clear and confident, a brisk upbeat clarity, speaks slowly.
+- 영상용 한 줄: `his boyfriend: around-30 Korean man, toned build about 176cm, near-blond light beige hair slicked back off the forehead, upturned monolid eyes, a small silver stud in the right earlobe, a modern classic set-up jacket look in charcoal and burgundy, a silver ring on the left index finger. Voice: clear and confident, a brisk upbeat clarity, speaks slowly.`
+- 파일명: 070_목유한x최원빈.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a clean oval face with defined cheekbones, a crisp tapered jaw ending in a neat chin, upturned monolid eyes with crisp corners, straight brows, a straight high nose, firm lips with a confident line, a small silver stud in the right earlobe, and a bright confident baseline expression. Hair: near-blond light beige hair slicked back off the forehead with a groomed finish — clearly different from ear-length dark black-brown hair in a loose 2:8 part. Character design: a man around thirty of toned build about 176cm, standing beside a wooden bench in a quiet art gallery holding a small folded exhibition leaflet and gesturing toward a wall as if explaining, a silver ring on the left index finger, wearing a charcoal set-up jacket over a burgundy knit. Upper body portrait, three-quarter angle facing the viewer, a clear confident smile with the lips slightly parted mid-explanation. Lighting: Quiet gallery lit by a single warm track spotlight from the upper left as the key with a soft cool ambient fill from the right, warm practical light in the blurred background, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no 2:8 part, no dimple, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 목유한(U, M) | {{생성일시}} — the name "목유한(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 071 하그루 × 오준혁
+- 타입: 다정남 — 무뚝뚝한 영양사에게 오늘 반찬 맛있었다고 식판 반납할 때마다 말하는 직원
+- 나이·체격: 30세 전후, 175cm 마른 체격
+- 머리: 애쉬 브라운 가르마 펌, 귀를 살짝 덮는 길이
+- 얼굴 포인트: 눈꼬리가 올라간 쌍꺼풀 눈, 얇은 은테 안경
+- 옷 결: 단정한 셔츠 레이어드, 네이비·아이보리
+- 소품: 손목의 얇은 은 팔찌
+- 목소리: Voice: mild and kind, a gentle thankful warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: around-30 Korean man, slim build about 175cm, ash-brown middle-parted perm brushing the ears, double-lidded eyes with upturned outer corners, thin silver-rimmed glasses, a neat layered shirt look in navy and ivory, a thin silver bracelet on the wrist. Voice: mild and kind, a gentle thankful warmth, speaks slowly.`
+- 파일명: 071_하그루x오준혁.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with smooth cheeks, a tapered jaw ending in a neat chin, double-lidded eyes with gently upturned outer corners, softly arched brows, a straight slim nose, soft lips with a kind curve, thin silver-rimmed glasses, and a mild gentle baseline expression. Hair: ash-brown middle-parted perm with soft waves brushing the ears — clearly different from short neatly cut black hair with light bangs. Character design: a man around thirty of slim build about 175cm, seated at a sunlit window-side table in a company cafeteria with a tray of rice and soup in front of him, a steel spoon in one hand and a staff lanyard around the neck, a thin silver bracelet on the wrist, wearing a navy shirt layered under an ivory knit vest. Upper body portrait, three-quarter angle facing the viewer, a warm thankful smile looking up from the tray. Lighting: Cafeteria serving counter lit by soft window light from the left diffused through rising steam, a warm heat-lamp glow above the counter and a gentle cool fill from the right, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no bangs, no scar, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 하그루(U, M) | {{생성일시}} — the name "하그루(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 072 박연우 × 강유빈
+- 타입: 장난남 — 무심한 작곡가의 멜로디에 엉뚱한 가사를 먼저 붙여 보는 작사가
+- 나이·체격: 30대 초반, 175cm 다부진 체격
+- 머리: 블루 블랙 짧은 투블럭, 옆머리를 바짝 친 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 오른쪽 볼 보조개
+- 옷 결: 빈티지 데님 워크, 인디고·화이트
+- 소품: 손목에 감은 실팔찌
+- 목소리: Voice: playful and quick, a humming teasing lilt, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, compact sturdy build about 175cm, blue-black short two-block cut with closely trimmed sides, round double-lidded eyes, a dimple on the right cheek, a vintage denim workwear look in indigo and white, a braided string bracelet on the wrist. Voice: playful and quick, a humming teasing lilt, speaks slowly.`
+- 파일명: 072_박연우x강유빈.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact round-ish face with soft cheeks, a gently rounded jaw and a small chin, round double-lidded eyes with a bright level corner, softly arched brows, a short straight nose, lips with a playful lifted corner, a dimple on the right cheek, and a lively teasing baseline expression. Hair: blue-black short two-block cut with closely trimmed sides and a short textured top — clearly different from nape-length dark ash-brown straight hair tucked behind one ear. Character design: a man in his early thirties of compact sturdy build about 175cm, seated at a small desk in a basement music studio with a notebook open beside a laptop, a pen in one hand, a braided string bracelet on the wrist, wearing a vintage indigo denim work jacket over a white tee. Upper body portrait, three-quarter angle facing the viewer, a playful grin as if humming a silly lyric. Lighting: Basement music studio lit by the cool glow of two monitor screens from the front-left and a single small warm desk lamp from the right, tiny green mixer indicator lights softly out of focus behind him, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no long hair, no monolid, no mole, no headphones, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 박연우(U, M) | {{생성일시}} — the name "박연우(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 073 장우빈 × 문태하
+- 타입: 상처남 — 새벽 근무 끝에 괜찮다는 말로 다 덮어 두는 야간 팀 간호사
+- 나이·체격: 20대 후반, 176cm 마른 체격
+- 머리: 다크 초콜릿 쉐도우 펌, 귀를 덮는 길이
+- 얼굴 포인트: 눈꼬리가 처진 외꺼풀 눈, 오른쪽 눈 밑 작은 점
+- 옷 결: 스포티 애슬레저, 검정·라임 포인트
+- 소품: 목에 건 검은 무선 헤드폰
+- 목소리: Voice: quiet and tired, a fragile steadiness, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 176cm, dark chocolate shadow perm covering the ears, monolid eyes with drooping outer corners, a small mole beneath the right eye, a sporty athleisure look in black with lime accents, black wireless headphones around the neck. Voice: quiet and tired, a fragile steadiness, speaks slowly.`
+- 파일명: 073_장우빈x문태하.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with smooth cheeks, a gently tapered jaw ending in a soft chin, monolid eyes with drooping outer corners, straight soft brows, a slim straight nose, soft lips with a tired resting line, a small mole beneath the right eye, and a quiet weary baseline expression. Hair: dark chocolate shadow perm with soft volume covering the ears — clearly different from short black hair swept straight back. Character design: a man in his late twenties of slim build about 176cm, standing by the window of a quiet hospital staff lounge with a warm paper cup held in both hands and a staff ID lanyard around the neck, black wireless headphones around the neck, wearing a black athleisure zip jacket with lime trim over a navy scrub top. Upper body portrait, three-quarter angle facing the viewer, a faint brave smile that does not quite reach the tired eyes. Lighting: Quiet night emergency room lit by a pale cool overhead ceiling light from above and a warm amber glow of a vending machine from the right, a softly blurred nurses' station and curtained treatment bay behind the subject, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black slicked-back hair, no freckles, no glasses, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 장우빈(U, M) | {{생성일시}} — the name "장우빈(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 074 원누리 × 조현서
+- 타입: 직진남 — 느긋한 제빵사에게 납품 시간보다 일찍 와서 기다리는 납품 담당자
+- 나이·체격: 30세 전후, 177cm 다부진 체격
+- 머리: 애쉬 그레이 리젠트, 앞머리를 위로 세운 길이
+- 얼굴 포인트: 눈꼬리가 올라간 쌍꺼풀 눈, 콧등의 작은 점
+- 옷 결: 슬림 수트 캐주얼, 그레이시 블루·화이트
+- 소품: 손에 쥔 차 키 카라비너
+- 목소리: Voice: firm and sure, an upfront steady warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: around-30 Korean man, sturdy build about 177cm, ash-gray regent swept up off the forehead, double-lidded eyes with upturned outer corners, a small mole on the nose bridge, a slim casual suit look in grayish blue and white, a car-key carabiner in hand. Voice: firm and sure, an upfront steady warmth, speaks slowly.`
+- 파일명: 074_원누리x조현서.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a defined oval face with firm cheekbones, a clean strong jaw ending in a firm chin, double-lidded eyes with upturned outer corners, straight dark brows, a high straight nose, firm lips with a decisive line, a small mole on the nose bridge, and a direct sure baseline expression. Hair: ash-gray regent with the front swept up and back — clearly different from ear-covering dark brown natural curls. Character design: a man around thirty of sturdy build about 177cm, standing at a bakery back door in a quiet alley holding a delivery slip on a clipboard with a pen, a car-key carabiner hooked on one finger, a small cardboard box at his feet, wearing a slim grayish-blue casual suit over a white shirt. Upper body portrait, three-quarter angle facing the viewer, a steady upfront look and a confident warm smile. Lighting: Quiet residential back alley lit by warm amber light spilling from the open bakery back door and soft cool daylight from above, a cardboard supply box softly out of focus at their feet, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown curly hair, no downturned eyes, no side-swept fringe, no glasses, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 원누리(U, M) | {{생성일시}} — the name "원누리(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 075 임도훈 × 서동욱
+- 타입: 순정남 — 나이 차이를 꺼내는 도훈에게 그래도 당신이라고 같은 말을 되풀이하는 연인
+- 나이·체격: 27세, 174cm 날렵한 마른 체격
+- 머리: 와인 브라운 울프컷, 목덜미에 닿는 길이
+- 얼굴 포인트: 크고 동그란 쌍꺼풀 눈, 양 볼 보조개
+- 옷 결: 스트리트 캐주얼, 검정·코발트 블루
+- 소품: 목에 건 가는 은 체인 목걸이
+- 목소리: Voice: earnest and soft, a sincere youthful clarity, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, lean wiry build about 174cm, wine-brown wolf cut reaching the nape, large round double-lidded eyes, dimples on both cheeks, a street casual look in black and cobalt blue, a thin silver chain necklace. Voice: earnest and soft, a sincere youthful clarity, speaks slowly.`
+- 파일명: 075_임도훈x서동욱.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small youthful face with soft round cheeks, a gently rounded jaw ending in a small chin, large round double-lidded eyes, softly arched brows, a small straight nose, soft full lips, dimples on both cheeks, and an earnest sincere baseline expression. Hair: wine-brown wolf cut with layered ends reaching the nape — clearly different from medium dark brown hair raked back in a loose wave. Character design: a man in his late twenties of lean wiry build about 174cm, standing just inside a small neighborhood hardware shop with a boxed light bulb held in one hand, a thin silver chain necklace at the collar, wearing a black street jacket with cobalt blue panels over a white tee. Upper body portrait, three-quarter angle facing the viewer, a sincere steady gaze and a soft devoted smile with dimples showing. Lighting: Late-afternoon warm sunlight falling in through the half-lowered shop front shutter from the left, soft cool fluorescent fill from the shop ceiling, a softly blurred tool wall and key-cutting machine behind the subject, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark brown hair, no glasses, no side-swept fringe, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 임도훈(U, M) | {{생성일시}} — the name "임도훈(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 076 주승하 × 윤도영
+- 타입: 냉정남 — 매일 선배 때문에 왔다는 연하 신입생의 농담에 표정 없이 수업 시간만 알려 주는 선배
+- 나이·체격: 20대 초반, 176cm 탄탄한 보통 체격
+- 머리: 애쉬 그레이 가일컷, 가운데로 갈라 이마가 보이는 길이
+- 얼굴 포인트: 눈꼬리가 처진 외꺼풀 눈, 얇은 은테 안경
+- 옷 결: 미니멀 니트 프레피, 크림·브라운
+- 소품: 어깨에 멘 크림색 캔버스 토트백
+- 목소리: Voice: cool and even, a composed detached tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-20s Korean man, toned average build about 176cm, ash-gray guile cut parted in the middle to show the forehead, monolid eyes with drooping outer corners, thin silver-rimmed glasses, a minimal preppy knit look in cream and brown, a cream canvas tote bag on the shoulder. Voice: cool and even, a composed detached tone, speaks slowly.`
+- 파일명: 076_주승하x윤도영.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with flat smooth cheeks, a clean tapered jaw ending in a neat chin, monolid eyes with drooping outer corners, thin straight brows, a narrow straight nose, a neutral closed mouth, thin silver-rimmed glasses, and a cool detached baseline expression. Hair: ash-gray guile cut parted in the middle with the forehead showing — clearly different from black natural curls with a curly fringe. Character design: a third-year university student in his early twenties of toned average build about 176cm, standing in a sunlit lecture-building corridor with a stack of lecture printouts held against the chest and a student ID card on a lanyard, a cream canvas tote bag on the shoulder, wearing a cream preppy knit over a brown collared shirt. Upper body portrait, three-quarter angle facing the viewer, a composed flat expression with only the eyes faintly amused. Lighting: Spring morning window side light from the corridor windows on the right, soft cool fill from the corridor ceiling lights, a softly blurred sunlit window bench and lecture room doors behind the subject, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no curly hair, no dimples, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 주승하(U, M) | {{생성일시}} — the name "주승하(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 077 김산들 × 백승환
+- 타입: 무심남 — 가장 시끄러운 막내 조연출 옆에서 큐시트만 넘기는 연출 PD
+- 나이·체격: 30대 초반, 184cm 마르고 길쭉한 체격
+- 머리: 와인 브라운 젖은 질감 넘김, 귀가 보이는 길이
+- 얼굴 포인트: 눈꼬리가 처진 속쌍꺼풀 눈, 오른쪽 귓불의 작은 은 피어싱
+- 옷 결: 블랙 미니멀 바람막이, 검정·올리브
+- 소품: 목에 두른 반다나
+- 목소리: Voice: low and laconic, an offhand flat calm, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, tall lanky build about 184cm, wine-brown hair swept back with a wet-look texture showing the ears, hooded double-lidded eyes with drooping outer corners, a small silver stud in the right earlobe, a minimal black windbreaker look in black and olive, a bandana tied around the neck. Voice: low and laconic, an offhand flat calm, speaks slowly.`
+- 파일명: 077_김산들x백승환.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long narrow face with lean cheek planes, a slim tapered jaw ending in a narrow chin, hooded double-lidded eyes with drooping outer corners, long straight brows, a long straight nose, thin relaxed lips, a small silver stud in the right earlobe, and a laconic offhand baseline expression. Hair: wine-brown hair swept back with a wet-look texture, ears showing — clearly different from black-brown two-block hair with a straight fringe. Character design: a man in his early thirties of tall lanky build about 184cm, standing beside a director's monitor on a folding table at an outdoor shooting location with a rolled-up cue sheet in one hand, a bandana tied around the neck, wearing a minimal black windbreaker over an olive tee. Upper body portrait, three-quarter angle facing the viewer, an unbothered sidelong glance with a faint dry smile. Lighting: Golden-hour outdoor shooting location, a soft low sun behind the subject's left shoulder laying a gentle rim backlight along the hair and shoulders, a silver reflector bounce from the front filling the face, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no fringe, no scar, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 김산들(U, M) | {{생성일시}} — the name "김산들(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 078 반석 × 안지호
+- 타입: 상처남 — 이별 뒤 옆집으로 이사 와 반석의 담담한 고백에 아직 답하지 못하는 이웃
+- 나이·체격: 30세 전후, 175cm 마른 체격
+- 머리: 흑발 쉼표 머리, 한쪽 이마가 보이는 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 콧등의 옅은 주근깨
+- 옷 결: 소프트 니트 홈웨어 결, 오트밀·세이지
+- 소품: 손에 든 스테인리스 텀블러
+- 목소리: Voice: soft and hesitant, a wistful hush, speaks slowly.
+- 영상용 한 줄: `his boyfriend: around-30 Korean man, slim build about 175cm, black comma hair showing one side of the forehead, round double-lidded eyes, faint freckles on the nose bridge, a soft knit loungewear look in oatmeal and sage, a stainless steel tumbler in hand. Voice: soft and hesitant, a wistful hush, speaks slowly.`
+- 파일명: 078_반석x안지호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with gentle cheeks, a smooth tapered jaw ending in a soft chin, round double-lidded eyes with a soft level corner, softly arched brows, a straight nose with a gentle tip, soft lips with a wistful resting line, faint freckles on the nose bridge, and a hesitant quiet baseline expression. Hair: black comma hair with the fringe curving to show one side of the forehead — clearly different from dark ash-brown two-block hair parted 2:8. Character design: a man around thirty of slim build about 175cm, standing in a quiet apartment corridor at dawn, a stainless steel tumbler in one hand and a small bunch of house keys in the other, wearing a soft oatmeal knit cardigan over a sage tee. Upper body portrait, three-quarter angle facing the viewer, a wistful small smile with the eyes lowered then lifting to the viewer. Lighting: Pre-dawn blue ambient light from the corridor window on the left, with the warm single practical light of the corridor ceiling lamp behind the subject as a soft rim, a softly blurred apartment corridor with plain front doors behind the subject, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no ash-brown hair, no two-block cut, no mole, no monolid, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 반석(U, M) | {{생성일시}} — the name "반석(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 079 남형우 × 정하윤
+- 타입: 허당남 — 서릿발 같은 파트너 변호사 앞에서 서류 순서를 자꾸 뒤바꾸는 신입 법률사무원
+- 나이·체격: 20대 중반, 173cm 아담한 체격
+- 머리: 카키 브라운 애즈펌, 이마가 반쯤 보이는 길이
+- 얼굴 포인트: 눈꼬리가 처진 동그란 눈, 오른쪽 볼 보조개
+- 옷 결: 니트·면바지 소프트 오피스, 카멜·크림
+- 소품: 어깨에 멘 검은 백팩
+- 목소리: Voice: bright and flustered, an apologetic quick laugh, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, small compact build about 173cm, khaki-brown as-perm half showing the forehead, round eyes with drooping outer corners, a dimple on the right cheek, a soft office knit and chinos look in camel and cream, a black backpack on one shoulder. Voice: bright and flustered, an apologetic quick laugh, speaks slowly.`
+- 파일명: 079_남형우x정하윤.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft face with round cheeks, a gently rounded jaw ending in a small chin, round eyes with drooping outer corners and soft double eyelids, softly arched brows, a short straight nose, soft lips with an apologetic curve, a dimple on the right cheek, and a flustered good-natured baseline expression. Hair: khaki-brown as-perm with a soft C-curl fringe half showing the forehead — clearly different from black hair combed straight back. Character design: a man in his mid-twenties of small compact build about 173cm, standing in a quiet law-firm corridor in the evening with a stack of document folders slipping slightly against the chest, a black backpack on one shoulder, wearing a camel knit over a cream shirt with chinos. Upper body portrait, three-quarter angle facing the viewer, a flustered apologetic smile while catching the folders. Lighting: Warm evening office light with a soft desk-lamp glow from the right and cool dusk window light from the left, a softly blurred law-firm corridor with glass partitions and a copier standby light behind the subject, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no slicked-back hair, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 남형우(U, M) | {{생성일시}} — the name "남형우(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 080 강리오 × 이도빈
+- 타입: 유혹남 — 깍듯한 후배 앞에서 일부러 한 걸음 가까이 서는 5년 차 선배 아이돌
+- 나이·체격: 20대 중반, 183cm 어깨 넓은 체격
+- 머리: 블루 블랙 리젠트, 앞머리를 위로 세운 길이
+- 얼굴 포인트: 눈꼬리가 처진 진한 쌍꺼풀 눈, 왼쪽 눈썹 끝의 가는 흉터
+- 옷 결: 블랙 레더·실버 액세서리, 검정·와인
+- 소품: 손가락에 겹쳐 낀 은반지들
+- 목소리: Voice: low and velvety, a slow coaxing hum, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, broad-shouldered build about 183cm, blue-black regent swept up off the forehead, deep double-lidded eyes with drooping outer corners, a thin scar at the tail of the left eyebrow, a black leather look with silver accents in black and wine, several stacked silver rings on his fingers. Voice: low and velvety, a slow coaxing hum, speaks slowly.`
+- 파일명: 080_강리오x이도빈.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a defined oval face with sculpted cheekbones, a clean sharp jaw ending in a neat chin, deep double-lidded eyes with drooping outer corners, dark softly arched brows, a high straight nose, full lips with a slow lifted corner, a thin scar at the tail of the left eyebrow, and a magnetic languid baseline expression. Hair: blue-black regent with a cool navy sheen, the front swept up and back — clearly different from neck-length milk-tea beige hair with a center-parted curtain fringe. Character design: a man in his mid-twenties of broad-shouldered build about 183cm, standing in front of the floor-to-ceiling mirror of a dance practice room late at night with a white towel around the neck and a small bottle of water, several stacked silver rings on his fingers, wearing a black leather jacket over a wine-colored fitted top. Upper body portrait, three-quarter angle facing the viewer, a slow alluring half smile with a lingering heavy-lidded gaze. Lighting: Cool fluorescent practice-room ceiling light with a soft reflected fill from the wall mirror, a softly blurred mirrored practice room with a paper booking sheet beside the door behind the subject, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no beige hair, no curtain fringe, no earrings, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 강리오(U, M) | {{생성일시}} — the name "강리오(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 081 한재민 × 신유현
+- 타입: 계략남 — 대본에 없는 말에 서툰 재민을 애드리브로 슬쩍 몰아넣는 상대역 배우
+- 나이·체격: 30세 전후, 176cm 마른 체격
+- 머리: 금발에 가까운 라이트 베이지 애즈펌, 이마가 반쯤 보이는 길이
+- 얼굴 포인트: 눈꼬리가 올라간 고양이 눈매, 오른쪽 볼 보조개
+- 옷 결: 오버핏 셔츠 레이어드, 하늘색·화이트
+- 소품: 머리 위에 얹은 선글라스
+- 목소리: Voice: sweet and knowing, a sly measured smile, speaks slowly.
+- 영상용 한 줄: `his boyfriend: around-30 Korean man, slim build about 176cm, near-blond light beige as-perm half showing the forehead, upturned cat-like eyes, a dimple on the right cheek, an oversized layered shirt look in sky blue and white, sunglasses pushed up on his head. Voice: sweet and knowing, a sly measured smile, speaks slowly.`
+- 파일명: 081_한재민x신유현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a heart-shaped face with lifted cheeks, a tapered jaw ending in a small pointed chin, upturned cat-like double-lidded eyes, thin arched brows, a slim straight nose, lips with a sly upturned corner, a dimple on the right cheek, and a sweet knowing baseline expression. Hair: near-blond light beige as-perm with a soft C-curl fringe half showing the forehead — clearly different from ear-covering black-brown hair with a 5:5 fringe. Character design: a man around thirty of slim build about 176cm, seated on the wet bench of a night-time bus stop set with a rolled script held loosely in one hand, sunglasses pushed up on his head, wearing an oversized sky-blue shirt layered over a white tee with a crew lanyard. Upper body portrait, three-quarter angle facing the viewer, a sweet scheming smile with the eyes narrowed playfully. Lighting: Warm sodium streetlamp light from the bus-stop sign behind the subject with a cool soft rim backlight through rain-haze, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no center part, no glasses, no downturned eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 한재민(U, M) | {{생성일시}} — the name "한재민(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 082 곽늘봄 × 고현준
+- 타입: 까칠남 — 순한 후배의 시식 스푼 앞에서 한 번에 통과를 주지 않는 사수 팀장
+- 나이·체격: 30대 중반, 178cm 다부진 체격
+- 머리: 밀크 브라운 짧은 투블럭, 옆머리를 바짝 친 길이
+- 얼굴 포인트: 눈꼬리가 올라간 외꺼풀 눈, 얇은 금테 안경
+- 옷 결: 단정한 오피스 미니멀, 차콜·화이트
+- 소품: 셔츠 소매의 은 커프스
+- 목소리: Voice: sharp and exacting, a curt cool edge, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-30s Korean man, sturdy build about 178cm, milk-brown short two-block cut with closely trimmed sides, upturned monolid eyes, thin gold-rimmed glasses, a neat minimal office look in charcoal and white, silver cufflinks on his shirt sleeves. Voice: sharp and exacting, a curt cool edge, speaks slowly.`
+- 파일명: 082_곽늘봄x고현준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim angular face with flat cheek planes, a sharp clean jaw ending in a narrow chin, upturned monolid eyes with crisp corners, straight thin brows, a narrow high nose, thin precise lips, thin gold-rimmed glasses, and an exacting cool baseline expression. Hair: milk-brown short two-block cut with closely trimmed sides — clearly different from ear-covering dark brown natural curls. Character design: a man in his mid-thirties of sturdy build about 178cm, standing at a stainless steel tasting counter in a bright test kitchen holding a small paper cup of clear broth, silver cufflinks on his shirt sleeves, wearing a crisp white shirt with a charcoal tie under a plain white lab coat with a company ID card on a lanyard. Upper body portrait, three-quarter angle facing the viewer, a critical narrowed look with a barely softened mouth. Lighting: Warm pendant practical light above the stainless steel tasting counter with a cool soft fill from the refrigerator glass door behind the subject, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no curly hair, no dimple, no downturned eyes, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 곽늘봄(U, M) | {{생성일시}} — the name "곽늘봄(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 083 모하늘 × 황서현
+- 타입: 대형견남 — 깐깐한 소장에게 모형 하나 완성할 때마다 보여 주러 달려가는 막내 설계 사원
+- 나이·체격: 20대 중반, 175cm 탄탄한 체격
+- 머리: 블루 블랙 히피 펌, 귀를 덮는 길이
+- 얼굴 포인트: 눈꼬리가 처진 동그란 눈, 웃을 때 보이는 덧니
+- 옷 결: 컬러 포인트 캐주얼, 노랑·네이비
+- 소품: 목에 건 작은 필름 카메라
+- 목소리: Voice: lively and eager, an excited bright rush, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, toned build about 175cm, blue-black hippie perm covering the ears, round eyes with drooping outer corners, a snaggletooth that shows when he grins, a casual look with color accents in yellow and navy, a small film camera hanging from the neck. Voice: lively and eager, an excited bright rush, speaks slowly.`
+- 파일명: 083_모하늘x황서현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft round face with full cheeks, a gently rounded jaw ending in a small chin, round eyes with drooping outer corners and deep double eyelids, thick softly arched brows, a short nose with a rounded tip, full lips with a wide smile line, a snaggletooth visible when he grins, and a bright eager baseline expression. Hair: blue-black hippie perm with loose curls covering the ears — clearly different from medium dark ash-brown hair brushed back from a 2:8 part. Character design: a man in his mid-twenties of toned build about 175cm, standing at a drafting table in a small architecture office holding up a small white foam-board house model in both hands, a small film camera hanging from the neck, wearing a yellow knit over a navy shirt with a company ID card on a lanyard. Upper body portrait, three-quarter angle facing the viewer, a beaming grin showing the snaggletooth as if showing off his work. Lighting: Warm LED glow rising from inside a small white house model and a single gooseneck desk lamp on the left, with cool dusk-blue window light behind the drafting table, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no ash-brown hair, no glasses, no side part, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 모하늘(U, M) | {{생성일시}} — the name "모하늘(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 084 손태윤 × 마준호
+- 타입: 능글남 — 무뚝뚝한 바리스타의 질투를 알면서 모른 척 웃는 카페 사장
+- 나이·체격: 30대 초반, 176cm 마른 체격
+- 머리: 애쉬 브라운 반묶음, 어깨에 닿는 길이
+- 얼굴 포인트: 눈꼬리가 올라간 쌍꺼풀 눈, 오른쪽 귓불의 작은 은 피어싱
+- 옷 결: 리넨 셔츠 내추럴, 베이지·브라운
+- 소품: 왼 손목의 갈색 가죽 팔찌
+- 목소리: Voice: easygoing and teasing, a languid amused warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 176cm, shoulder-length ash-brown hair in a half-up tie, double-lidded eyes with upturned outer corners, a small silver stud in the right earlobe, a natural linen shirt look in beige and brown, a brown leather bracelet on the left wrist. Voice: easygoing and teasing, a languid amused warmth, speaks slowly.`
+- 파일명: 084_손태윤x마준호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a defined oval face with smooth cheekbones, a clean tapered jaw ending in a neat chin, double-lidded eyes with upturned outer corners, softly arched brows, a straight refined nose, lips with an easy lifted corner, a small silver stud in the right earlobe, and a languid amused baseline expression. Hair: shoulder-length ash-brown hair tied half up at the back — clearly different from a short black two-block cut with a messy fringe. Character design: a man in his early thirties of slim build about 176cm, standing on the owner's side of a small café counter holding a plain white ceramic cup in one hand, a brown leather bracelet on the left wrist, wearing a natural beige linen shirt with a brown canvas half-apron tied at the waist. Upper body portrait, three-quarter angle facing the viewer, a teasing knowing smile with a sidelong glance. Lighting: Morning sunlight through a café's front glass falling as warm side light from the right, with soft cool reflections off a chrome espresso machine behind the counter, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no two-block cut, no mole, no downturned eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 손태윤(U, M) | {{생성일시}} — the name "손태윤(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 085 서준혁 × 류재희
+- 타입: 장난남 — 서른 번째 다시를 듣고도 감독님 오늘 몇 번 남았냐고 웃는 주연 배우
+- 나이·체격: 20대 후반, 178cm 마른 체격
+- 머리: 카키 브라운 가일컷(영화 배역용 애쉬 카키 염색), 가운데로 갈라 이마가 보이는 길이
+- 얼굴 포인트: 눈꼬리가 처진 동그란 눈, 왼쪽 볼 보조개
+- 옷 결: 소프트 테일러링, 아이보리·카멜
+- 소품: 손목에 감은 실팔찌
+- 목소리: Voice: breezy and cheeky, a laughing upward lilt, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 178cm, ash khaki-brown guile cut parted in the middle to show the forehead, round eyes with drooping outer corners, a dimple on the left cheek, a soft tailored look in ivory and camel, a braided string bracelet on the wrist. Voice: breezy and cheeky, a laughing upward lilt, speaks slowly.`
+- 파일명: 085_서준혁x류재희.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft round face with full cheeks, a gently rounded jaw ending in a small chin, round eyes with drooping outer corners and soft double eyelids, softly arched brows, a short straight nose, lips with a cheeky upturned line, a dimple on the left cheek, and a breezy cheeky baseline expression. Hair: matte ash khaki-brown hair with an olive undertone dyed for the film role, cut in a guile cut parted in the middle with the forehead showing and slightly tousled from rehearsal — clearly different from a short black two-block cut pushed back. Character design: the lead actor of an action film, a man in his late twenties of slim build about 178cm, standing on a blue landing mat in an action training gym with wall mirrors behind, both hands raised in a loose ready stance with white athletic tape around the knuckles, a braided string bracelet on the wrist, wearing a soft ivory tailored zip jacket over a camel training top with a small radio microphone clip at the collar. Upper body portrait, three-quarter angle facing the viewer, a cheeky laughing grin as if asking how many takes are left. Lighting: Cool daylight pouring from tall gym windows on the left with fine dust visible in the beam, a soft rim from an overhead practical light picking out the shoulder line, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no two-block cut, no upturned sharp eyes, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 서준혁(U, M) | {{생성일시}} — the name "서준혁(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 086 이한별 × 조은결
+- 타입: 사이다남 — 한 번에 끝내는 광고 모델에게 그래도 한 컷 더 가자고 딱 잘라 말하는 AE
+- 나이·체격: 30세 전후, 177cm 다부진 체격
+- 머리: 흑발 크롭컷, 이마 위로 짧게 자른 길이
+- 얼굴 포인트: 눈꼬리가 올라간 외꺼풀 눈, 오른쪽 눈썹 끝의 가는 흉터
+- 옷 결: 오버핏 블레이저 오피스 캐주얼, 블랙·화이트·코발트 포인트
+- 소품: 검은 가죽 스트랩 손목시계
+- 목소리: Voice: brisk and decisive, a clean confident snap, speaks slowly.
+- 영상용 한 줄: `his boyfriend: around-30 Korean man, sturdy build about 177cm, black crop cut trimmed short above the forehead, upturned monolid eyes, a thin scar at the tail of the right eyebrow, an oversized blazer office-casual look in black and white with cobalt accents, a black leather-strap wristwatch. Voice: brisk and decisive, a clean confident snap, speaks slowly.`
+- 파일명: 086_이한별x조은결.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a defined oval face with firm cheekbones, a sharp clean jaw ending in a firm chin, upturned monolid eyes with crisp corners, straight dark brows, a high straight nose, firm lips with a decisive line, a thin scar at the tail of the right eyebrow, and a brisk decisive baseline expression. Hair: black crop cut trimmed short with a blunt fringe high on the forehead — clearly different from ash-mint toned hair with a center-parted fringe. Character design: a man around thirty of sturdy build about 177cm, standing beside a playback-monitor cart in a commercial film studio with a black storyboard binder held against one arm, a black leather-strap wristwatch on the wrist, wearing an oversized black blazer over a white tee with a cobalt blue knit tied at the shoulders and a staff pass on a lanyard. Upper body portrait, three-quarter angle facing the viewer, a crisp no-nonsense look and a short confident smile. Lighting: A single large softbox key light from the commercial set spilling in from the right with the cool blue glow of a playback monitor on the left, a soft rim of light from the white cyclorama behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no ash-mint hair, no center part, no downturned eyes, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 이한별(U, M) | {{생성일시}} — the name "이한별(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 087 진해원 × 이연호
+- 타입: 후회남 — 1년 동안 각서 조항만 지키다 해원의 세 줄 브리핑을 뒤늦게 알아챈 배우자
+- 나이·체격: 30대 초반, 178cm 마른 체격
+- 머리: 와인 브라운 가르마 펌, 귀를 살짝 덮는 길이
+- 얼굴 포인트: 눈꼬리가 처진 쌍꺼풀 눈, 왼쪽 귓불의 작은 스터드 귀걸이
+- 옷 결: 소프트 니트·코트 럭셔리 캐주얼, 카멜·크림
+- 소품: 손목의 얇은 금 체인 팔찌
+- 목소리: Voice: low and remorseful, a careful softened tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 178cm, wine-brown middle-parted perm brushing the ears, double-lidded eyes with drooping outer corners, a small stud earring in the left earlobe, a refined soft knit and coat look in camel and cream, a thin gold chain bracelet on the wrist. Voice: low and remorseful, a careful softened tone, speaks slowly.`
+- 파일명: 087_진해원x이연호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a refined oval face with smooth cheekbones, a clean tapered jaw ending in a neat chin, double-lidded eyes with drooping outer corners, long softly arched brows, a straight refined nose, soft lips with a remorseful resting line, a small stud earring in the left earlobe, and a careful regretful baseline expression. Hair: wine-brown middle-parted perm with soft waves brushing the ears — clearly different from a dark brown-black two-block cut with a comma fringe. Character design: a man in his early thirties of slim build about 178cm, seated across a long dining table in a bright penthouse dining room with floor-to-ceiling windows in the early morning, holding a printed briefing sheet in one hand and a white coffee cup in the other, a thin gold chain bracelet on the wrist, wearing a camel fine knit under a cream coat. Upper body portrait, three-quarter angle facing the viewer, a softened apologetic look with the lips parted as if about to say something long overdue. Lighting: Cool blue dawn light from floor-to-ceiling penthouse windows on the right with a single warm pendant lamp glowing over the dining table, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no two-block cut, no comma fringe, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 진해원(U, M) | {{생성일시}} — the name "진해원(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 088 신솔 × 장해찬
+- 타입: 순정남 — 숫자로만 말하는 크루장 곁을 달리려고 혼자 새벽 연습을 더 하는 입문 크루원
+- 나이·체격: 20대 후반, 174cm 탄탄한 근육형
+- 머리: 금발에 가까운 라이트 베이지 버즈컷
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 양 볼 보조개
+- 옷 결: 컬러풀 애슬레저, 코랄·네이비
+- 소품: 목에 건 흰색 무선 헤드폰
+- 목소리: Voice: earnest and breathy, a shy sincere warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, compact muscular build about 174cm, near-blond light beige buzz cut, round double-lidded eyes, dimples on both cheeks, a colorful athleisure look in coral and navy, white wireless headphones around the neck. Voice: earnest and breathy, a shy sincere warmth, speaks slowly.`
+- 파일명: 088_신솔x장해찬.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft round face with full cheeks, a gently rounded jaw ending in a small chin, round double-lidded eyes with a soft level corner, softly arched light brows, a short straight nose, soft full lips, dimples on both cheeks, and a shy earnest baseline expression. Hair: near-blond light beige buzz cut — clearly different from dark brown hair swept back under a running headband. Character design: a man in his late twenties of compact muscular build about 174cm, standing at the dawn meeting point of a riverside running crew a little out of breath, a sports water bottle held in one hand, white wireless headphones around the neck, wearing a coral lightweight running jacket over a navy running tee, a pale pre-dawn river softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a shy breathless smile with both dimples showing. Lighting: Soft low pre-dawn sun skimming the river from behind as a gentle rim backlight with a cool-neutral frontal fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no headband, no monolid, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 신솔(U, M) | {{생성일시}} — the name "신솔(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 089 류채운 × 김서원
+- 타입: 직진남 — 대사 없는 손끝 모델에게 촬영 끝나고 할 말 있다고 먼저 붙잡는 광고주 담당자
+- 나이·체격: 30세 전후, 177cm 다부진 체격
+- 머리: 흑발 올백, 이마를 시원하게 드러낸 길이
+- 얼굴 포인트: 눈꼬리가 올라간 외꺼풀 눈, 오른쪽 볼 보조개
+- 옷 결: 슬림 셋업 오피스, 네이비·라이트블루
+- 소품: 목에 건 가는 은 링 목걸이
+- 목소리: Voice: steady and bold, a warm decisive tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: around-30 Korean man, sturdy build about 177cm, black hair slicked fully back off the forehead, upturned monolid eyes, a dimple on the right cheek, a slim office set-up look in navy and light blue, a thin silver ring pendant necklace. Voice: steady and bold, a warm decisive tone, speaks slowly.`
+- 파일명: 089_류채운x김서원.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a defined oval face with firm cheekbones, a strong clean jaw ending in a firm chin, upturned monolid eyes with crisp corners, straight dark brows, a high straight nose, firm lips with a decisive line, a dimple on the right cheek, and a bold steady baseline expression. Hair: black hair slicked fully back off the forehead — clearly different from platinum silver-gray hair with a brushed-down fringe. Character design: a man around thirty of sturdy build about 177cm, seated in the client's folding chair at the edge of the set in a white-backdrop advertising studio, holding a call sheet folded in half in one hand, a thin silver ring pendant necklace at the collar, wearing a slim navy set-up jacket over a light blue shirt with a company ID card on a lanyard. Upper body portrait, three-quarter angle facing the viewer, a steady bold look as if about to say there is something he needs to tell. Lighting: A large softbox key light from the front-left of a white-backdrop advertising studio with a soft white fill from a reflector on the right, clean even studio illumination, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no silver hair, no fringe, no glasses, no downturned eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 류채운(U, M) | {{생성일시}} — the name "류채운(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 090 명도하 × 최민성
+- 타입: 까칠남 — 그런데요로 반박하는 사진기자에게 한 줄도 지지 않는 문화생활부 기자
+- 나이·체격: 20대 후반, 175cm 마른 체격
+- 머리: 흑갈색 크롭컷, 이마 위로 짧게 자른 길이
+- 얼굴 포인트: 눈꼬리가 올라간 외꺼풀 눈, 얇은 은테 안경
+- 옷 결: 단정한 셔츠·니트 클래식, 버건디·크림
+- 소품: 어깨에 멘 검은 가죽 크로스백
+- 목소리: Voice: quick and sharp, a dry sardonic bite, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 175cm, black-brown crop cut trimmed short above the forehead, upturned monolid eyes, thin silver-rimmed glasses, a neat classic shirt and knit look in burgundy and cream, a black leather crossbody bag. Voice: quick and sharp, a dry sardonic bite, speaks slowly.`
+- 파일명: 090_명도하x최민성.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim angular face with flat cheek planes, a sharp jaw ending in a narrow chin, upturned monolid eyes with crisp corners, thin straight brows, a narrow straight nose, thin lips with a dry line, thin silver-rimmed glasses, and a sharp sardonic baseline expression. Hair: black-brown crop cut trimmed short with a blunt fringe high on the forehead — clearly different from medium dark ash-brown curly hair covering the ears. Character design: a man in his late twenties of slim build about 175cm, seated at a reporter's desk in a newspaper newsroom with a narrow reporter's notebook open on one hand and a pen in the other, a black leather crossbody bag on the chair, wearing a burgundy knit over a cream collared shirt with a press ID card on a lanyard, a softly blurred newsroom with monitors behind. Upper body portrait, three-quarter angle facing the viewer, a skeptical raised brow and a dry half smile as if ready to argue back. Lighting: Cool-white newsroom ceiling light as a soft frontal key with a warm desk-lamp glow skimming in from the left as a gentle side accent, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no curly hair, no camera, no mole, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 명도하(U, M) | {{생성일시}} — the name "명도하(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 091 서겨울 × 한지원
+- 타입: 장난남 — 분 단위 계획을 세우는 겨울의 타이머를 몰래 꺼 버리는 즉흥 여행객
+- 나이·체격: 30세 전후, 175cm 탄탄한 체격
+- 머리: 다크 초콜릿 장발 묶음, 뒤로 낮게 묶은 꽁지
+- 얼굴 포인트: 크고 동그란 쌍꺼풀 눈, 콧등의 옅은 주근깨
+- 옷 결: 빈티지 여행 캐주얼, 테라코타·데님
+- 소품: 테라코타색 버킷햇
+- 목소리: Voice: carefree and teasing, a breezy laughing tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: around-30 Korean man, toned build about 175cm, long dark chocolate hair tied back in a low ponytail, large round double-lidded eyes, faint freckles on the nose bridge, a vintage travel casual look in terracotta and denim, a terracotta bucket hat. Voice: carefree and teasing, a breezy laughing tone, speaks slowly.`
+- 파일명: 091_서겨울x한지원.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft face with round cheeks, a gently rounded jaw ending in a small chin, large round double-lidded eyes, softly arched brows, a short straight nose, lips with a playful upturned line, faint freckles on the nose bridge, and a carefree teasing baseline expression. Hair: long dark chocolate hair tied back in a low ponytail with loose strands framing the face — clearly different from medium black hair parted down the center covering the ears. Character design: a man around thirty of toned build about 175cm, standing at the counter of a seaside guesthouse shared kitchen holding a small kitchen timer up in one hand as if hiding it, a warm mug in the other, a terracotta bucket hat on his head, wearing a vintage terracotta shirt over a white tee with light denim, a softly blurred kitchen window with the morning sea beyond. Upper body portrait, three-quarter angle facing the viewer, a mischievous laughing grin. Lighting: Low early-morning sea light through the east-facing kitchen window as a soft side key, a gentle cool shadow fill from the room, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no center part, no monolid, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 서겨울(U, M) | {{생성일시}} — the name "서겨울(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 092 펠릭스 × 임유성
+- 타입: 냉정남 — 득점마다 소리 지르는 203cm 공격수의 말을 표정 하나 없이 옮기는 전담 통역
+- 나이·체격: 20대 후반, 176cm 마른 체격
+- 머리: 흑발 젖은 질감 넘김, 귀가 보이는 길이
+- 얼굴 포인트: 눈꼬리가 길게 올라간 외꺼풀 눈, 왼쪽 눈 밑 작은 점
+- 옷 결: 터틀넥·재킷 미니멀, 블랙·카멜
+- 소품: 왼쪽 귀의 작은 금 링 귀걸이
+- 목소리: Voice: cool and precise, a measured unruffled tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 176cm, black hair swept back with a wet-look texture showing the ears, long upturned monolid eyes, a small mole beneath the left eye, a minimal turtleneck and jacket look in black and camel, a small gold hoop earring in the left ear. Voice: cool and precise, a measured unruffled tone, speaks slowly.`
+- 파일명: 092_펠릭스x임유성.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim angular face with lean cheek planes, a sharp tapered jaw ending in a narrow chin, long upturned monolid eyes with crisp corners, thin straight brows, a narrow straight nose, thin composed lips, a small mole beneath the left eye, and a cool unruffled baseline expression. Hair: black hair swept back with a wet-look texture, ears showing — clearly different from short ash-blond hair. Character design: a man in his late twenties of slim build about 176cm, seated on a volleyball gym bench with a small notepad in one hand and a pen in the other, a small gold hoop earring in the left ear, wearing a black turtleneck under a camel jacket with a staff ID card on a lanyard, a softly blurred volleyball gym with a net behind. Upper body portrait, three-quarter angle facing the viewer, a perfectly neutral composed face with only a faint glint in the eyes. Lighting: Cool white gymnasium ceiling lights as a soft overhead key with gentle bounce fill from the polished wooden floor, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no blond hair, no downturned eyes, no side-swept fringe, no glasses, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 펠릭스(U, M) | {{생성일시}} — the name "펠릭스(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 093 안재언 × 서강민
+- 타입: 다정남 — 7개월째 37번 자리에서 보리차 잔을 비워 두고 고맙다는 쪽지를 남기는 이용자
+- 나이·체격: 30세 전후, 178cm 탄탄한 체격
+- 머리: 밀크 브라운 울프컷, 목덜미에 닿는 길이
+- 얼굴 포인트: 눈꼬리가 처진 동그란 눈, 왼쪽 볼 보조개
+- 옷 결: 후드 집업·셔츠 레이어드, 올리브·크림
+- 소품: 크림색 니트 비니
+- 목소리: Voice: soft and kind, a tired gentle warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: around-30 Korean man, toned build about 178cm, milk-brown wolf cut reaching the nape, round eyes with drooping outer corners, a dimple on the left cheek, a layered zip hoodie and shirt look in olive and cream, a cream knit beanie. Voice: soft and kind, a tired gentle warmth, speaks slowly.`
+- 파일명: 093_안재언x서강민.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with gently rounded cheeks, a smooth tapered jaw ending in a soft chin, round eyes with drooping outer corners and soft double eyelids, softly arched brows, a straight nose with a gentle tip, soft lips with a kind curve, a dimple on the left cheek, and a tired gentle baseline expression. Hair: milk-brown wolf cut with layered ends reaching the nape — clearly different from black-brown hair with a soft fringe just above the brows. Character design: a man around thirty of toned build about 178cm, seated at a window-end desk in a quiet study café with an open laptop and a workbook, a glass of barley tea at the desk corner, a cream knit beanie on his head, wearing an olive zip hoodie layered over a cream shirt, a softly blurred reading room with rows of desk lamps behind. Upper body portrait, three-quarter angle facing the viewer, a soft grateful smile looking up from the desk. Lighting: Soft frontal key from a cool daylight-white LED strip above the counter, with rows of small warm desk-lamp bokeh in the blurred reading room behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no fringe above the brows, no glasses, no upturned eyes, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 안재언(U, M) | {{생성일시}} — the name "안재언(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 094 구정우 × 오세준
+- 타입: 사이다남 — 시장 손님들에게 시원시원하게 말하면서 정우의 침묵은 기다려 주는 반찬가게 사장
+- 나이·체격: 30대 초반, 175cm 마른 체격
+- 머리: 애쉬 그레이 리젠트, 앞머리를 위로 세운 길이
+- 얼굴 포인트: 눈꼬리가 올라간 외꺼풀 눈, 오른쪽 눈썹 끝의 가는 흉터
+- 옷 결: 체크 셔츠 레이어드, 그린·베이지
+- 소품: 머리에 두른 반다나
+- 목소리: Voice: brisk and hearty, a frank cheerful punch, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 175cm, ash-gray regent swept up off the forehead, upturned monolid eyes, a thin scar at the tail of the right eyebrow, a layered check shirt look in green and beige, a bandana tied over his head. Voice: brisk and hearty, a frank cheerful punch, speaks slowly.`
+- 파일명: 094_구정우x오세준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a defined oval face with firm cheekbones, a clean jaw ending in a neat chin, upturned monolid eyes with crisp corners, straight dark brows, a straight high nose, firm lips with a frank wide smile line, a thin scar at the tail of the right eyebrow, and a brisk hearty baseline expression. Hair: ash-gray regent with the front swept up and back — clearly different from a short black two-block cut pressed down by a kitchen cap. Character design: a man in his early thirties of slim build about 175cm, standing behind the counter of a small side-dish shop with a folded cloth over one shoulder, a bandana tied over his head, wearing a green check shirt layered over a beige tee with a cream cotton apron, a softly blurred glass display case of colorful side dishes and a steaming pot behind. Upper body portrait, three-quarter angle facing the viewer, a frank cheerful grin as if calling out to a customer. Lighting: Soft rim backlight from the shop's glass door in the morning light, with a warm bounce from the glass display case onto the jacket, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no two-block cut, no dimple, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 구정우(U, M) | {{생성일시}} — the name "구정우(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 095 권이현 × 박주혁
+- 타입: 철벽남 — 빨간불이 꺼지면 바로 일 모드가 되는 탑배우에게 방송용 미소로 선을 지키는 아나운서
+- 나이·체격: 20대 후반, 176cm 마른 체격
+- 머리: 밀크 브라운 덮은 앞머리 바가지 머리, 눈썹을 덮는 길이
+- 얼굴 포인트: 눈꼬리가 처진 동그란 눈, 왼쪽 볼 보조개
+- 옷 결: 단정한 셔츠 레이어드, 아이보리·스카이블루
+- 소품: 손목의 얇은 은 체인 팔찌
+- 목소리: Voice: polished and composed, a polite cool clarity, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 176cm, milk-brown bowl cut with a full fringe over the brows, round eyes with drooping outer corners, a dimple on the left cheek, a neat layered shirt look in ivory and sky blue, a thin silver chain bracelet on the wrist. Voice: polished and composed, a polite cool clarity, speaks slowly.`
+- 파일명: 095_권이현x박주혁.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small rounded face with soft full cheeks, a gently rounded jaw ending in a small chin, round eyes with drooping outer corners and soft double eyelids, softly arched brows, a small straight nose, soft lips with a polished closed smile, a dimple on the left cheek, and a polite composed baseline expression. Hair: milk-brown bowl cut with a full fringe covering the brows — clearly different from blue-black hair swept back off the forehead. Character design: a man in his late twenties of slim build about 176cm, seated at the dining table of a newlywed-apartment variety-show set with a small folded mission card held in both hands (no lettering), a small lavalier microphone clipped to the collar of a sky-blue shirt under an ivory knit, a thin silver chain bracelet on the wrist, a softly blurred warm apartment set with a floor lamp and the edge of a studio LED panel light behind. Upper body portrait, three-quarter angle facing the viewer, a polished broadcast smile with guarded calm eyes. Lighting: Warm practical floor lamp of the apartment set with a soft cool fill from a studio LED panel light, gentle sculpted side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no blue-black hair, no slicked-back hair, no upturned narrow eyes, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 권이현(U, M) | {{생성일시}} — the name "권이현(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 096 황청해 × 윤지형
+- 타입: 직진남 — 땅 위에서 짧게만 답하는 사육사에게 해설 끝나고 매번 먼저 말을 거는 해설사
+- 나이·체격: 20대 후반, 177cm 마른 체격
+- 머리: 블루 블랙 올백, 이마를 시원하게 드러낸 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 웃을 때 보이는 덧니
+- 옷 결: 마린 캐주얼, 네이비·화이트 스트라이프
+- 소품: 네이비 볼캡
+- 목소리: Voice: clear and upfront, a bright steady confidence, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 177cm, blue-black hair slicked fully back off the forehead, round double-lidded eyes, a snaggletooth that shows when he smiles, a marine casual look in navy and white stripes, a navy baseball cap. Voice: clear and upfront, a bright steady confidence, speaks slowly.`
+- 파일명: 096_황청해x윤지형.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with gentle cheeks, a smooth tapered jaw ending in a neat chin, round double-lidded eyes with a bright level corner, softly arched brows, a straight nose with a gentle tip, lips with a wide upfront smile line, a snaggletooth visible when he smiles, and a bright confident baseline expression. Hair: blue-black hair slicked fully back off the forehead — clearly different from short damp dark ash-brown curls. Character design: a man in his late twenties of slim build about 177cm, standing in the narrow narration booth beside the tank glass with a slim headset microphone over one ear and a folded narration script held in one hand (no lettering), a navy baseball cap on his head, wearing a navy and white striped marine knit over a white shirt, the softly blurred blue glass wall of a large aquarium tank with a faint school of fish behind. Upper body portrait, three-quarter angle facing the viewer, a bright upfront smile showing the snaggletooth, looking straight at the viewer. Lighting: Cool blue caustic light reflected from the tank wall across one side of the face with a soft warm practical light from the booth lamp on the other side, gentle sculpted side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no curly hair, no monolid, no freckles, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 황청해(U, M) | {{생성일시}} — the name "황청해(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 097 마용하 × 이성호
+- 타입: 무심남 — 수다스러운 세탁소 사장의 옷 이야기를 고개만 끄덕이며 끝까지 듣는 단골 손님
+- 나이·체격: 30대 초반, 184cm 마르고 길쭉한 체격
+- 머리: 애쉬 그레이 짧은 투블럭, 옆머리를 바짝 친 길이
+- 얼굴 포인트: 눈꼬리가 올라간 외꺼풀 눈, 오른쪽 귓불의 작은 은 피어싱
+- 옷 결: 클래식 코트·니트, 카멜·차콜
+- 소품: 손에 든 검은 장우산
+- 목소리: Voice: low and sparse, a calm detached murmur, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, tall lanky build about 184cm, ash-gray short two-block cut with closely trimmed sides, upturned monolid eyes, a small silver stud in the right earlobe, a classic coat and knit look in camel and charcoal, a long black umbrella in hand. Voice: low and sparse, a calm detached murmur, speaks slowly.`
+- 파일명: 097_마용하x이성호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long narrow face with lean cheek planes, a slim tapered jaw ending in a narrow chin, upturned monolid eyes with crisp corners, long straight brows, a long straight nose, thin calm lips, a small silver stud in the right earlobe, and a quiet detached baseline expression. Hair: ash-gray short two-block cut with closely trimmed sides — clearly different from medium dark brown center-parted hair. Character design: a man in his early thirties of tall lanky build about 184cm, standing at the laundry shop counter with a camel coat folded over one arm (a faint dark ink mark at its cuff, no lettering), a long black umbrella hooked over the same forearm, wearing a charcoal knit under the open coat, the softly blurred laundry shop behind with plastic-sheathed garments on a ceiling rail and drifting steam. Upper body portrait, three-quarter angle facing the viewer, a calm unhurried look with a faint patient smile. Lighting: Warm late-afternoon window side light across one side of the face with soft steam-diffused white fill on the other side, gentle sculpted side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark brown hair, no center part, no downturned eyes, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 마용하(U, M) | {{생성일시}} — the name "마용하(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 098 고창현 × 정하성
+- 타입: 능글남 — 표정 없는 막내의 A안 B안을 다 알면서 C안을 물어 보는 사수 팀장
+- 나이·체격: 30대 중반, 175cm 마른 체격
+- 머리: 다크 초콜릿 반묶음, 어깨에 닿는 길이
+- 얼굴 포인트: 눈꼬리가 올라간 고양이 눈매, 오른쪽 볼 보조개
+- 옷 결: 소프트 테일러링 셋업, 브라운·크림
+- 소품: 오른손 약지의 은반지
+- 목소리: Voice: smooth and wry, a relaxed teasing curl, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-30s Korean man, slim build about 175cm, shoulder-length dark chocolate hair in a half-up tie, upturned cat-like eyes, a dimple on the right cheek, a soft tailored set-up look in brown and cream, a silver ring on the right ring finger. Voice: smooth and wry, a relaxed teasing curl, speaks slowly.`
+- 파일명: 098_고창현x정하성.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a heart-shaped face with lifted cheeks, a tapered jaw ending in a small pointed chin, upturned cat-like double-lidded eyes, thin arched brows, a slim straight nose, lips with a wry upturned corner, a dimple on the right cheek, and a relaxed teasing baseline expression. Hair: shoulder-length dark chocolate hair tied half up at the back — clearly different from black hair parted 2:8 and neatly combed. Character design: a man in his mid-thirties of slim build about 175cm, standing beside an office desk with a printed itinerary sheet folded in half in one hand (a printed grid with a yellow highlighted stripe, no legible lettering), a silver ring on the right ring finger, wearing a soft brown tailored set-up jacket over a cream knit, the softly blurred travel agency office behind with a wall route map and a rain-streaked window. Upper body portrait, three-quarter angle facing the viewer, a wry teasing smile as if asking for a plan C. Lighting: Cool overcast rainy-day window side light across one side of the face with a soft fluorescent office fill on the other side, gentle sculpted side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no 2:8 part, no downturned eyes, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 고창현(U, M) | {{생성일시}} — the name "고창현(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 099 윤미르 × 구본우
+- 타입: 계략남 — 컷을 못 놓는 편집기사가 스스로 그 컷을 빼자고 말하게 만드는 감독
+- 나이·체격: 30대 초반, 183cm 어깨 넓은 체격
+- 머리: 은회색 애즈펌, 이마가 반쯤 보이는 길이
+- 얼굴 포인트: 동그란 쌍꺼풀 눈, 왼쪽 눈썹 끝의 가는 흉터
+- 옷 결: 오버핏 워크 재킷, 올리브·검정
+- 소품: 목에 건 가는 은 체인 목걸이
+- 목소리: Voice: calm and calculating, a soft persuasive smile, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, broad-shouldered build about 183cm, silver-gray as-perm half showing the forehead, round double-lidded eyes, a thin scar at the tail of the left eyebrow, an oversized work jacket look in olive and black, a thin silver chain necklace. Voice: calm and calculating, a soft persuasive smile, speaks slowly.`
+- 파일명: 099_윤미르x구본우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad defined face with firm cheeks, a strong clean jaw ending in a firm chin, round double-lidded eyes with a calm level corner, thick straight brows, a straight strong nose, lips with a soft persuasive curve, a thin scar at the tail of the left eyebrow, and a calm calculating baseline expression. Hair: silver-gray as-perm with a soft C-curl fringe half showing the forehead — clearly different from neck-length dark brown-black hair pushed behind the ears. Character design: a man in his early thirties of broad-shouldered build about 183cm, standing behind an editing chair in a dim editing room with one hand resting on the chair back and a paper coffee cup in the other, a thin silver chain necklace at the collar, wearing an oversized olive work jacket over a black tee, the softly blurred editing room behind with monitor glow and blank timeline clips (no legible lettering). Upper body portrait, three-quarter angle facing the viewer, a calm persuasive smile with knowing eyes. Lighting: Dim editing-room light: a cool monitor glow from the front-left across one side of the face with a single warm desk-lamp edge on the other side, gentle sculpted side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no dark hair, no glasses, no monolid, no headphones, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 윤미르(U, M) | {{생성일시}} — the name "윤미르(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 100 원태산 × 송가온
+- 타입: 대형견남 — 규정부터 말하는 선임 옆 창구에서 칭찬 한마디에 하루 종일 신나는 신입
+- 나이·체격: 20대 중반, 174cm 마른 체격
+- 머리: 금발에 가까운 라이트 베이지 히피 펌, 귀를 덮는 길이
+- 얼굴 포인트: 눈꼬리가 처진 동그란 눈, 웃을 때 보이는 덧니
+- 옷 결: 파스텔 스트리트, 민트·크림
+- 소품: 목에 건 흰 유선 이어폰
+- 목소리: Voice: sunny and eager, a bouncy bright warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, slim build about 174cm, near-blond light beige hippie perm covering the ears, round eyes with drooping outer corners, a snaggletooth that shows when he grins, a pastel street look in mint and cream, white wired earphones hanging around the neck. Voice: sunny and eager, a bouncy bright warmth, speaks slowly.`
+- 파일명: 100_원태산x송가온.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft round face with full cheeks, a gently rounded jaw ending in a small chin, round eyes with drooping outer corners and soft double eyelids, softly arched light brows, a short straight nose, full lips with a wide smile line, a snaggletooth visible when he grins, and a sunny eager baseline expression. Hair: near-blond light beige hippie perm with loose curls covering the ears — clearly different from a black two-block cut with the fringe brushed to the brow line. Character design: a man in his mid-twenties of slim build about 174cm, standing at the neighboring counter window with a blank staff lanyard (no legible lettering), one hand holding a small parcel whose tape corner is neatly rounded, white wired earphones hanging around the neck, wearing a mint knit vest over a cream shirt, the softly blurred post-office counter behind (no legible lettering). Upper body portrait, three-quarter angle facing the viewer, a bright beaming grin showing the snaggletooth as if he was just praised. Lighting: Post-office counter light: a soft diffused cool-white ceiling-panel key from above and slightly in front, with a gentle warm edge from a small counter lamp on one side, gentle sculpted side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no two-block cut, no dimple, no side-swept fringe, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 원태산(U, M) | {{생성일시}} — the name "원태산(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 101 성유석 × 도건우
+- 타입: 대형견남 — 속마음을 번역해야 꺼내는 유석에게 저녁 8시마다 먼저 달려와 반기는 쪽
+- 나이·체격: 30대 초반, 183cm 어깨 넓은 탄탄한 체격
+- 머리: 카키 브라운 크롭컷, 이마가 드러나는 짧은 길이
+- 얼굴 포인트: 처진 강아지 눈매, 웃으면 보이는 오른쪽 덧니
+- 옷 결: 아웃도어 고프코어, 차콜·주황 포인트
+- 소품: 검은 볼캡
+- 목소리: Voice: warm and eager, a deep voice that brightens at every greeting, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, broad-shouldered solid build about 183cm, khaki-brown short crop cut with the forehead showing, soft downturned puppy-like eyes, a snaggletooth on the right that shows when he grins, an outdoor gorpcore look in charcoal with orange accents, a black baseball cap. Voice: warm and eager, a deep voice that brightens at every greeting, speaks slowly.`
+- 파일명: 101_성유석x도건우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a well-proportioned oval face with a firm clean jawline and a slightly squared chin, soft downturned puppy-like eyes with deep double eyelid folds, thick straight dark-brown brows, a straight nose with a softly rounded tip, full lips with a wide easy smile line, a small snaggletooth on the upper right visible when he grins, and a warm eager baseline expression. Hair: khaki-brown short crop cut with a textured top and the forehead showing, ears clear — clearly different from ear-covering blackish-brown hair with a heavy fringe. Character design: an early-30s man of broad-shouldered solid build about 183cm, crouching beside a small cat feeding spot at a lamplit alley wall, one hand holding a small steel scoop of kibble over a shallow bowl while a small white cat with a single dark spot on its flank waits beside it, a black baseball cap held in his other hand, wearing a charcoal technical shell jacket with orange zipper accents over a charcoal fleece, the softly blurred alley wall and utility pole behind (no legible lettering). Upper body portrait, three-quarter angle facing the viewer, a broad open grin showing the snaggletooth, eyes crinkled as if he has just spotted someone he was waiting for. Lighting: Night alley lamp light: a single warm streetlamp key from the upper left that sculpts the face with gentle side shadow, with a faint cool blue-gray evening ambience behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 성유석(U, M) | {{생성일시}} — the name "성유석(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 102 도찬희 × 한이레
+- 타입: 능글남 — 말수 적은 막내 오퍼레이터에게 인터컴 너머로 여유롭게 농을 섞는 8년 차 무대감독
+- 나이·체격: 30대 중반, 178cm 다부진 중간 체격
+- 머리: 와인 브라운 쉐도우 펌, 옆으로 흘러내리는 귀 길이
+- 얼굴 포인트: 또렷한 겉쌍꺼풀의 둥근 눈, 왼쪽 귀 연골 피어싱
+- 옷 결: 블랙 워크웨어 레이어드, 검정·버건디 포인트
+- 소품: 왼손 검지의 두꺼운 은반지
+- 목소리: Voice: low and unhurried, a smooth teasing warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-30s Korean man, sturdy medium build about 178cm, wine-brown shadow perm falling sideways to ear length, round eyes with defined double eyelids, a cartilage piercing on the left ear, a layered black workwear look in black with burgundy accents, a thick silver ring on the left index finger. Voice: low and unhurried, a smooth teasing warmth, speaks slowly.`
+- 파일명: 102_도찬희x한이레.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a balanced oval face with a defined angular jaw and a firm chin, round eyes with crisp defined double eyelids and a level outer corner, softly arched dark brows, a straight high nose, medium lips with one corner easily lifting, a small silver cartilage piercing on the upper left ear, and a relaxed amused baseline expression. Hair: wine-brown shadow perm with soft wavy volume falling sideways to ear length from a loose off-center part — clearly different from dark ash-brown hair slicked back off the forehead. Character design: a mid-30s man of sturdy medium build about 178cm, standing at a backstage prompt desk in the dark wing of a small theater with a black intercom headset resting over one ear, one hand raised with two fingers in a quiet standby gesture while the other hand holds a ring-bound prompt book open against the hip, a thick silver ring on the left index finger, wearing a black work jacket over a black tee with a deep burgundy overshirt collar showing, a small clip-on desk lamp glowing beside it, the softly blurred black stage curtain and rope rigging behind (no legible lettering). Upper body portrait, three-quarter angle facing the viewer, a lazy one-sided smile and a knowing sidelong look, as if a joke is about to come through the headset. Lighting: Dim backstage light: a small warm clip-lamp key from the lower right that softly sculpts the face with gentle side shadow, with a faint cool blue stage-spill glow behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no freckles, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 도찬희(U, M) | {{생성일시}} — the name "도찬희(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 103 문세형 × 노해인
+- 타입: 직진남 — 여백에 연필로 돌려 쓰는 편집장 앞에서 할 말은 바로 꺼내는 2년 차 편집자
+- 나이·체격: 20대 후반, 174cm 슬림하고 작은 체구
+- 머리: 밀크 브라운 가르마 펌, 귀가 보이는 길이
+- 얼굴 포인트: 동그란 외꺼풀 눈, 왼쪽 볼 보조개
+- 옷 결: 니트 베스트 프레피, 머스터드·크림
+- 소품: 손목의 가죽 끈 시계
+- 목소리: Voice: clear and direct, a bright honest tone with no hesitation, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim compact build about 174cm, milk-brown middle-parted perm showing the ears, round monolid eyes, a dimple on the left cheek, a preppy knit-vest look in mustard and cream, a thin leather-strap watch on the wrist. Voice: clear and direct, a bright honest tone with no hesitation, speaks slowly.`
+- 파일명: 103_문세형x노해인.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small rounded face with soft full cheeks and a gently rounded chin, round monolid eyes with clean crisp corners, straight medium brows, a neat small nose, softly full lips, a dimple in the left cheek, and a clear frank baseline expression. Hair: milk-brown middle-parted perm with soft loose waves, ears showing — clearly different from dark brown natural curls tucked behind the ear. Character design: a late-20s man of slim compact build about 174cm, seated at a shared desk in a small publishing office, a green proofreading pen in one hand marking a page of proof sheets while the other hand rests flat on the page, a thin leather-strap watch on that wrist, a stack of manuscripts and a small desk lamp beside, wearing a mustard knit vest over a cream collared shirt with a slim lanyard cord and a blank card (no lettering), the softly blurred bookshelves behind (no legible lettering). Upper body portrait, three-quarter angle facing the viewer, a steady open gaze into the lens and a decided small smile, as if he is about to say exactly what he thinks. Lighting: Late-afternoon editorial office light: warm sun slanting through a venetian blind from the upper right, laying soft pale stripes across the desk and gently sculpting the face with a soft side shadow, a faint cool fill from the open office behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no earring, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 문세형(U, M) | {{생성일시}} — the name "문세형(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 104 노민규 × 박준범
+- 타입: 사이다남 — 룰북 조항으로 반박하는 사장에게 3년째 시원하게 맞받아치는 단골
+- 나이·체격: 30대 초반, 184cm 길쭉하고 마른 체격
+- 머리: 애쉬 그레이 울프컷, 목덜미를 덮는 길이
+- 얼굴 포인트: 날카롭게 올라간 눈매, 오른쪽 귓바퀴의 작은 링 피어싱 두 개
+- 옷 결: 오버핏 스트리트, 검정·라임 포인트
+- 소품: 목에 건 헤드폰
+- 목소리: Voice: crisp and quick-witted, a dry cutting edge that lands each point, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, tall lean build about 184cm, ash-gray wolf cut covering the nape, sharp upturned eyes, two small hoop piercings on the right ear rim, an oversized streetwear look in black with lime accents, headphones around the neck. Voice: crisp and quick-witted, a dry cutting edge that lands each point, speaks slowly.`
+- 파일명: 104_노민규x박준범.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long lean face with sharp high cheekbones and a narrow pointed chin, sharp upturned eyes with crisp hooded double eyelids, straight thin dark brows, a narrow high nose, thin well-defined lips, two small silver hoops on the right ear rim, and a dry sharp baseline expression. Hair: ash-gray wolf cut with choppy layers and a shaggy back covering the nape — clearly different from a dark brown two-block with a 5:5 part. Character design: an early-30s man of tall lean build about 184cm, seated at the window table of a neighborhood board-game café, a hand of cards held close to the chest and the other hand resting beside a few wooden game tokens, black over-ear headphones around his neck, wearing an oversized black hoodie under a black coach jacket with lime piping, softly blurred shelves of colorful game boxes behind (no legible lettering). Upper body portrait, three-quarter angle facing the viewer, one brow raised and a cool challenging half-smile, as if he has just found the flaw in the rule. Lighting: Evening board-game café light: warm pendant lamps hanging low over the wooden game table, a cool blue dusk glow through the window behind, a soft sculpted side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 노민규(U, M) | {{생성일시}} — the name "노민규(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 105 차용준 × 윤지성
+- 타입: 장난남 — 무뚝뚝하게 점검만 하는 소꿉친구를 27년째 먼저 놀리는 쪽
+- 나이·체격: 30대 초반, 173cm 슬림한 체격
+- 머리: 라이트 베이지 히피 펌, 귀를 덮는 길이
+- 얼굴 포인트: 반달처럼 접히는 눈웃음, 오른쪽 볼 보조개
+- 옷 결: 컬러 블록 애슬레저, 하늘색·흰색
+- 소품: 손목에 감은 색실 팔찌
+- 목소리: Voice: playful and sing-song, a teasing laugh tucked into each line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 173cm, light-beige near-blond hippie perm covering the ears, crescent-shaped smiling eyes, a dimple on the right cheek, a color-block athleisure look in sky blue and white, a colorful string bracelet wrapped on the wrist. Voice: playful and sing-song, a teasing laugh tucked into each line, speaks slowly.`
+- 파일명: 105_차용준x윤지성.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small heart-shaped face with soft cheeks and a slim pointed chin, crescent-shaped smiling eyes with soft double eyelids, softly arched light brows, a small straight nose, a wide playful mouth, a dimple in the right cheek, and a mischievous baseline expression. Hair: light-beige near-blond hippie perm with fluffy tight curls covering the ears — clearly different from black 2:8 parted hair. Character design: an early-30s man of slim build about 173cm, standing beside a commuter bicycle on a riverside bike path at dawn with one hand on the handlebar, a colorful braided string bracelet on that wrist, wearing a sky-blue and white color-block windbreaker over a white tee, the softly blurred river and path behind (no legible lettering). Upper body portrait, three-quarter angle facing the viewer, a cheeky grin with the eyes folded into crescents, as if he has just teased someone and is waiting for the reaction. Lighting: Early-morning riverside light: a low pale-gold sunrise behind and to the side, a soft warm rim along the hair and shoulder, a cool hazy fill from the river mist, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 차용준(U, M) | {{생성일시}} — the name "차용준(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 106 정륜 × 최예성
+- 타입: 다정남 — 깐깐하게 선을 긋는 악장 옆에서 지휘대 밖에서는 한없이 부드러운 상임지휘자
+- 나이·체격: 40대 초반, 180cm 어깨 넓은 중간 체격
+- 머리: 은회색 올백, 단정히 넘긴 귀 위 길이
+- 얼굴 포인트: 깊게 처진 눈매와 눈가 웃음 주름, 짧게 다듬은 턱수염
+- 옷 결: 클래식 터틀넥 레이어드, 카멜·차콜
+- 소품: 재킷 가슴 주머니의 실크 행커치프
+- 목소리: Voice: deep and gentle, a warm baritone with a soft smile in it, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-40s Korean man, broad-shouldered medium build about 180cm, silver-gray slicked-back hair neatly combed above the ears, deeply downturned eyes with smile lines, a short trimmed beard, a classic layered turtleneck look in camel and charcoal, a silk pocket square in the jacket's breast pocket. Voice: deep and gentle, a warm baritone with a soft smile in it, speaks slowly.`
+- 파일명: 106_정륜x최예성.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A settled adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a mature long oval face with a strong defined jaw and a neatly trimmed short beard, deeply downturned gentle eyes with soft double eyelids and fine smile lines at the corners, thick softly arched brows, a straight high nose, full lips with a soft resting curve, and a warm tender baseline expression. Hair: silver-gray hair slicked back neatly above the ears with a smooth natural sheen — clearly different from black nape-length hair. Character design: an early-40s man of broad-shouldered medium build about 180cm, standing on a conductor's podium in a softly blurred rehearsal hall with a score open on the music stand, a slim baton held loosely in one hand, wearing a camel turtleneck under a charcoal soft-shouldered jacket with a silk pocket square in the breast pocket (no legible lettering, no sheet-music text). Upper body portrait, three-quarter angle facing the viewer, a soft warm smile with kind crinkled eyes, as if praising a phrase that was just played. Lighting: Late-afternoon rehearsal-hall window light: a low pale-gold sun through tall windows from the side and behind, a soft warm rim along the hair and shoulder, pale rosin dust floating in the beam, a cool neutral fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no youthful baby face, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 정륜(U, M) | {{생성일시}} — the name "정륜(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 107 고선담 × 김동건
+- 타입: 무심남 — 미소로 다 수습하는 플래너 옆에서 말은 무뚝뚝해도 마지막 스위치까지 남는 지배인
+- 나이·체격: 30대 중반, 176cm 단단한 중간 체격
+- 머리: 다크 초콜릿 크롭컷, 옆을 짧게 친 짧은 길이
+- 얼굴 포인트: 가늘고 긴 외꺼풀 눈, 왼쪽 눈썹 위 작은 흉터
+- 옷 결: 미니멀 셋업 수트, 네이비·회청색
+- 소품: 왼손 새끼손가락의 얇은 은반지
+- 목소리: Voice: low and flat, few words with a quiet steadiness underneath, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-30s Korean man, solid medium build about 176cm, dark-chocolate crop cut with closely trimmed sides, long narrow monolid eyes, a small scar above the left eyebrow, a minimal suit-setup look in navy and slate blue, a thin silver ring on the left little finger. Voice: low and flat, few words with a quiet steadiness underneath, speaks slowly.`
+- 파일명: 107_고선담x김동건.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a firm angular face with a squared jaw and a defined chin, long narrow monolid eyes with a level outer corner, straight thick dark brows, a small pale scar just above the left eyebrow, a straight strong nose, thin closed lips, and a quiet unreadable baseline expression. Hair: dark-chocolate crop cut with closely trimmed sides and a short textured top — clearly different from blackish-brown 2:8 hair combed back. Character design: a mid-30s man of solid medium build about 176cm, standing beside the lighting switch panel just inside the entrance of a softly blurred wedding hall with one hand resting near the switches, a thin silver ring on the left little finger, wearing a minimal navy suit setup over a slate-blue knit polo with a small blank name tag (no legible lettering, no signage). Upper body portrait, three-quarter angle facing the viewer, a calm level gaze with the lips closed and only the faintest softening at the eyes, as if he will stay until the last light goes off. Lighting: Wedding-hall evening light: a warm soft chandelier glow from above on the left with a cool pale window fill from tall side windows, a gentle bright rim along the shoulder, a few white petals catching the light, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 고선담(U, M) | {{생성일시}} — the name "고선담(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 108 은지율 × 이현재
+- 타입: 허당남 — 호수와 각도로만 말하는 디자이너 앞에서 실톱을 부러뜨리는 수강생
+- 나이·체격: 20대 후반, 185cm 마르고 긴 체격
+- 머리: 블루 블랙 쉼표 머리, 이마 한쪽이 드러나는 길이
+- 얼굴 포인트: 둥글고 큰 쌍꺼풀 눈, 콧등의 옅은 주근깨
+- 옷 결: 아메카지 캐주얼, 데님·브라운
+- 소품: 크로스로 멘 필름 카메라 스트랩
+- 목소리: Voice: bright and a little clumsy, quick laughs at his own mistakes, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, tall lean build about 185cm, blue-black comma hair with one side of the forehead showing, large round double-lidded eyes, faint freckles across the nose bridge, an Americana casual look in denim and brown, a film camera on a strap worn across the body. Voice: bright and a little clumsy, quick laughs at his own mistakes, speaks slowly.`
+- 파일명: 108_은지율x이현재.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long narrow face with a slender jaw and a soft chin, large round eyes with deep double eyelids, softly arched brows, a straight nose with a slightly rounded tip, full lips with an easy grin, faint freckles across the nose bridge, and a bright sheepish baseline expression. Hair: blue-black comma hair with the front curled into a comma shape and one side of the forehead showing — clearly different from dark ash-brown half-up hair at the nape. Character design: a late-20s man of tall lean build about 185cm, seated at the student bench of a softly blurred small jewelry workshop, holding a jeweler's saw frame with a snapped blade in one hand over a strip of silver braced on the wooden bench pin, a film camera on a strap across his body, wearing a denim chore jacket over a brown henley with the sleeves pushed up (no legible lettering, no signage). Upper body portrait, three-quarter angle facing the viewer, a sheepish laugh with the eyes squeezed half-shut, as if he has just broken the blade again. Lighting: Workshop daylight: soft overcast daylight from a tall window on the left, cool and silvery, with a small warm bench-lamp glow on the hands and the silver ring band, a gentle rim along the hair, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no ash-brown hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 은지율(U, M) | {{생성일시}} — the name "은지율(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 109 방승광 × 정수호
+- 타입: 순정남 — 맞은편 떡집에서 2년째 승광의 포스트잇을 한 장도 버리지 않고 모아 두는 쪽
+- 나이·체격: 20대 후반, 172cm 아담하고 슬림한 체격
+- 머리: 허니 브라운 애즈펌, 이마를 반쯤 드러낸 길이
+- 얼굴 포인트: 동그란 사슴 눈, 웃으면 보이는 왼쪽 덧니
+- 옷 결: 소프트 코튼 캐주얼, 크림·연두
+- 소품: 목에 두른 반다나 스카프
+- 목소리: Voice: soft and earnest, a sincere gentle warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, petite slim build about 172cm, honey-brown as-perm with the forehead half showing, round doe-like eyes, a snaggletooth on the left that shows when he smiles, a soft cotton casual look in cream and light green, a bandana scarf tied at the neck. Voice: soft and earnest, a sincere gentle warmth, speaks slowly.`
+- 파일명: 109_방승광x정수호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft cheeks and a short rounded chin, round doe-like eyes with soft double eyelids, gently curved brows, a small button nose, softly full lips, a snaggletooth on the upper left visible when he smiles, and a sincere gentle baseline expression. Hair: honey-brown as-perm with soft S-waves, the forehead half showing through a parted front — clearly different from short dark ash-brown wavy hair with the ears showing. Character design: a late-20s man of petite slim build about 172cm, standing behind the counter of a softly blurred rice-cake shop in the early morning with both hands holding a small plate of freshly steamed rice cakes, a light-green bandana scarf tied at the neck, wearing a cream cotton work apron with a light dusting of rice flour over a soft light-green cotton shirt (no legible lettering, no signage). Upper body portrait, three-quarter angle facing the viewer, a shy earnest smile with the eyes resting softly on the viewer, as if offering the first plate to one person only. Lighting: Early-morning market light: a warm single practical bulb under the shop awning from the upper left with a cool pale dawn fill from the open alley, a soft bright rim along the shoulder, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 방승광(U, M) | {{생성일시}} — the name "방승광(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 110 한무영 × 서지헌
+- 타입: 까칠남 — 누구에게나 다정한 대표 앞에서도 매장 유리처럼 선을 긋는 명품관 직원
+- 나이·체격: 20대 후반, 177cm 슬림한 체격
+- 머리: 라이트 베이지 리젠트, 이마를 드러내 세운 앞머리
+- 얼굴 포인트: 올라간 고양이 눈매, 왼쪽 귓불의 작은 은색 스터드
+- 옷 결: 슬림 테일러드 모노톤, 검정·실버 그레이
+- 소품: 목에 건 얇은 은 체인 목걸이
+- 목소리: Voice: cool and clipped, a polite edge that softens only at the end, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 177cm, light-beige near-blond regent with the front swept up off the forehead, upturned cat-like eyes, a small silver stud in the left earlobe, a slim tailored monochrome look in black and silver gray, a thin silver chain necklace. Voice: cool and clipped, a polite edge that softens only at the end, speaks slowly.`
+- 파일명: 110_한무영x서지헌.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim sharp V-line face with a narrow pointed chin, upturned cat-like eyes with crisp hooded double eyelids, thin straight brows, a narrow high nose, thin neat lips, a small silver stud in the left earlobe, and a cool composed baseline expression. Hair: light-beige near-blond regent with the front swept up high off the forehead and neat short sides — clearly different from black medium hair with a soft fringe. Character design: a late-20s man of slim build about 177cm, standing behind the glass showcase of a watch boutique on a department store's luxury floor, holding a dark velvet watch tray with both hands in thin white cotton gloves, a thin silver chain necklace at the collar, wearing a slim tailored black jacket over a silver-gray fine-knit with a small blank round silver badge on the lapel (no legible lettering, no signage). Upper body portrait, three-quarter angle facing the viewer, a cool level gaze with the lips closed in a polite line and the chin slightly lifted, as if refusing to be charmed. Lighting: After-hours luxury-floor light: warm showcase lighting glowing up from the glass onto the gloved hands, the velvet tray and the jaw, the floor behind half-darkened with scattered warm spotlights and a cool shadow fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 한무영(U, M) | {{생성일시}} — the name "한무영(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 111 양석민 × 곽지민
+- 타입: 능글남 — 매대안마다 숫자로 따지는 대리를 6년째 여유롭게 받아넘기는 팀장
+- 나이·체격: 30대 후반, 183cm 어깨 넓은 체격
+- 머리: 애쉬 그레이 포마드 사이드 파트, 귀가 보이는 길이
+- 얼굴 포인트: 깊은 쌍꺼풀의 처진 눈매와 눈가 웃음 주름, 오른쪽 눈썹 끝 작은 흉터
+- 옷 결: 클래식 블레이저 캐주얼, 카멜·네이비
+- 소품: 손목의 가죽 스트랩 시계
+- 목소리: Voice: easy and amused, a relaxed drawl that lets the argument slide, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-30s Korean man, broad-shouldered build about 183cm, ash-gray pomade side part showing the ears, downturned double-lidded eyes with smile lines, a small scar at the tail of the right eyebrow, a classic blazer-casual look in camel and navy, a leather-strap watch on the wrist. Voice: easy and amused, a relaxed drawl that lets the argument slide, speaks slowly.`
+- 파일명: 111_양석민x곽지민.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously warm ivory complexion, even-toned, no dewy gloss. Face geometry: a mature defined face with a broad clean jaw, downturned eyes with deep double eyelids and fine smile lines, thick straight brows with a small pale scar at the tail of the right brow, a strong straight nose, full lips with a relaxed curve, and an easy amused baseline expression. Hair: ash-gray pomade side part combed neatly with a soft sheen, ears showing — clearly different from dark brown ear-covering loose curls. Character design: a late-30s man of broad-shouldered build about 183cm, standing at the end of a softly blurred supermarket aisle with a tablet and a printed layout sheet in hand, a leather-strap watch on the wrist, wearing a camel unstructured blazer over a navy knit polo with a lanyard ID card with no lettering (no legible lettering, no signage). Upper body portrait, three-quarter angle facing the viewer, a relaxed lopsided smile and amused eyes, as if letting an argument slide on purpose. Lighting: Supermarket after-closing light: cool-white overhead tube light running along the aisle with a warm practical glow from a tasting-counter lamp on the right, soft diffuse frontal fill, a gentle bright rim along the shoulder, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous warm ivory with no dull patches, never sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no freckles, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 양석민(U, M) | {{생성일시}} — the name "양석민(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 112 함기범 × 유민기
+- 타입: 장난남 — 하늘부터 올려다보는 예보관 약혼자를 놀리며 우산을 숨겨 두는 쪽
+- 나이·체격: 30대 초반, 175cm 다부진 체격
+- 머리: 다크 초콜릿 짧은 투블럭
+- 얼굴 포인트: 둥근 눈에 진한 일자 눈썹, 웃을 때 생기는 양쪽 볼 보조개
+- 옷 결: 캠핑 아웃도어 캐주얼, 올리브·베이지
+- 소품: 왼손 약지의 은색 약혼반지
+- 목소리: Voice: cheerful and mischievous, a quick grin in the voice, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, sturdy build about 175cm, dark-chocolate short two-block cut, round eyes under thick straight brows, dimples on both cheeks when he smiles, a camping outdoor-casual look in olive and beige, a silver engagement ring on the left ring finger. Voice: cheerful and mischievous, a quick grin in the voice, speaks slowly.`
+- 파일명: 112_함기범x유민기.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact square-ish face with a firm jaw and a rounded chin, round bright eyes with clean double eyelids, thick straight dark-brown brows, a straight nose with a rounded tip, wide lips with a ready grin, dimples on both cheeks when he smiles, and a mischievous baseline expression. Hair: dark-chocolate short two-block cut with the top tousled up — clearly different from black center-parted hair over the ears. Character design: an early-30s man of sturdy build about 175cm, standing in a softly blurred dim corridor outside a glass-walled office at night, a small insulated flask in his left hand with a silver engagement ring on the ring finger and a folded navy umbrella hidden playfully behind his back in the other, wearing an olive field jacket over a beige waffle-knit henley. Upper body portrait, three-quarter angle facing the viewer, a teasing grin with both dimples showing, as if he has hidden the umbrella on purpose. Lighting: Quiet night-shift light: a cool blue-white screen glow from one side with a warm practical lamp glow on the other, soft diffuse frontal fill, a gentle bright rim along the shoulder, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 함기범(U, M) | {{생성일시}} — the name "함기범(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 113 전종휘 × 안현수
+- 타입: 까칠남 — 복사 때문이라는 담임의 말을 퉁명하게 받아치면서도 4시 40분 창구를 비워 두는 주무관
+- 나이·체격: 20대 후반, 181cm 마른 체격
+- 머리: 와인 브라운 짧은 울프컷, 목덜미에 닿는 뒷머리
+- 얼굴 포인트: 가늘고 긴 외꺼풀 눈, 콧대 위의 작은 흉터
+- 옷 결: 오버핏 셔츠 레이어드, 와인·크림
+- 소품: 가방에 매단 작은 고양이 키링
+- 목소리: Voice: dry and curt, a reluctant softness slipping out at the end, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, lean build about 181cm, wine-brown short wolf cut with the back reaching the nape, long narrow monolid eyes, a small scar on the nose bridge, a layered oversized-shirt look in wine and cream, a small cat keyring hanging from his bag. Voice: dry and curt, a reluctant softness slipping out at the end, speaks slowly.`
+- 파일명: 113_전종휘x안현수.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long lean face with a narrow jaw and a sharp chin, long narrow monolid eyes with a slightly upturned outer corner, thin straight brows, a small pale scar across the nose bridge, a narrow straight nose, thin lips pressed in a flat line, and a dry curt baseline expression. Hair: wine-brown short wolf cut with choppy layers and the back reaching the nape — clearly different from a black short two-block. Character design: a late-20s man of lean build about 181cm, seated at a desk behind the counter of a quiet school administration office in the late afternoon, a stack of file folders and a steaming paper cup beside a small desk calendar, a small cat keyring hanging from the bag at his elbow, wearing an oversized wine-red shirt layered over a cream tee with a blank staff lanyard. Upper body portrait, three-quarter angle facing the viewer, a sideways glance with one corner of the mouth tucked in, as if pretending not to have watched the clock. Lighting: Late-afternoon window side light: a warm golden-white sunbeam from the window on one side, soft diffuse fill from the opposite side, a gentle bright rim along the shoulder and hair, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 전종휘(U, M) | {{생성일시}} — the name "전종휘(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 114 도경민 × 이선재
+- 타입: 직진남 — 퇴근한 기분이 든다는 기관사에게 내일도 오겠다고 바로 말하는 산책 메이트
+- 나이·체격: 20대 후반, 176cm 탄탄한 체격
+- 머리: 밀크 브라운 히피 펌, 귀를 덮는 길이
+- 얼굴 포인트: 둥근 쌍꺼풀 눈, 왼쪽 볼 보조개
+- 옷 결: 러닝 애슬레저, 코발트·흰색
+- 소품: 손목에 감은 주황색 강아지 리드줄
+- 목소리: Voice: warm and straightforward, an open friendly tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, fit athletic build about 176cm, milk-brown hippie perm covering the ears, round double-lidded eyes, a dimple on the left cheek, a running athleisure look in cobalt and white, an orange dog leash looped around the wrist. Voice: warm and straightforward, an open friendly tone, speaks slowly.`
+- 파일명: 114_도경민x이선재.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval-round face with full cheeks and a rounded chin, round eyes with clean double eyelids, softly arched brows, a straight nose with a rounded tip, full lips in an easy smile, a dimple in the left cheek, and an open friendly baseline expression. Hair: milk-brown hippie perm with fluffy tight curls covering the ears — clearly different from dark brown-black swept-back short hair. Character design: a late-20s man of fit athletic build about 176cm, standing on a leaf-covered apartment-complex back-gate walking path in the early morning, holding the orange leash of a small brown poodle that sits on the path, the leash looped twice around his wrist, wearing a cobalt running half-zip over a white tee. Upper body portrait, three-quarter angle facing the viewer, a bright direct smile straight to the viewer, as if saying see you tomorrow. Lighting: Early-morning platform light: soft cool blue-white daylight from one side with a faint warm amber glow from the opposite side, a gentle bright rim along the shoulder and hair, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 도경민(U, M) | {{생성일시}} — the name "도경민(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 115 하현석 × 문기영
+- 타입: 무심남 — 점검표보다 안부를 먼저 묻는 설계사 앞에서 대답만 짧게 하는 5년 고객
+- 나이·체격: 30대 초반, 186cm 큰 키의 탄탄한 체격
+- 머리: 블루 블랙 버즈컷
+- 얼굴 포인트: 올라간 외꺼풀 눈매, 오른쪽 귓불의 작은 링 피어싱
+- 옷 결: 미니멀 테크웨어, 검정·딥그린
+- 소품: 어깨에 멘 검은 슬링백
+- 목소리: Voice: low and sparse, a calm unbothered tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, tall solid build about 186cm, blue-black buzz cut, upturned monolid eyes, a small hoop piercing in the right earlobe, a minimal techwear look in black and deep green, a black sling bag over the shoulder. Voice: low and sparse, a calm unbothered tone, speaks slowly.`
+- 파일명: 115_하현석x문기영.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long angular face with a sharp jaw and a defined chin, upturned monolid eyes with crisp corners, straight dark brows, a high straight nose, thin firm lips, a small silver hoop in the right earlobe, and an unbothered calm baseline expression. Hair: blue-black buzz cut with a clean even length — clearly different from dark ash-brown side-parted medium hair. Character design: an early-30s man of tall solid build about 186cm, seated at a café window table with an empty chair across from him, holding a warm mug with both hands, a black sling bag worn across the chest, wearing a black technical shell jacket over a deep-green mock-neck. Upper body portrait, three-quarter angle facing the viewer, a calm indifferent gaze with the lips closed, only the eyes resting a beat longer on the viewer. Lighting: Afternoon café window light: soft diffused daylight from the window side with a gentle warm bounce from the wooden table, sculpted gentle side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 하현석(U, M) | {{생성일시}} — the name "하현석(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 116 노승범 × 정규민
+- 타입: 냉정남 — 또박또박 메모를 붙이는 신입 앞에서 업무에는 냉정하게 선을 지키는 팀장
+- 나이·체격: 30대 초반, 174cm 슬림한 체격
+- 머리: 애쉬 브라운 가르마 펌, 귀가 반쯤 보이는 길이
+- 얼굴 포인트: 올라간 고양이 눈매, 왼쪽 귀 연골 피어싱
+- 옷 결: 단정한 니트 셔츠 레이어드, 네이비·라벤더 그레이
+- 소품: 손목의 가는 은 체인 팔찌
+- 목소리: Voice: cool and measured, a level voice that rarely rises, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 174cm, ash-brown middle-parted perm half showing the ears, upturned cat-like eyes, a cartilage piercing on the left ear, a neat layered knit-and-shirt look in navy and lavender gray, a thin silver chain bracelet on the wrist. Voice: cool and measured, a level voice that rarely rises, speaks slowly.`
+- 파일명: 116_노승범x정규민.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim V-line face with a narrow chin, upturned cat-like eyes with crisp hooded double eyelids, thin straight brows, a narrow high nose, neat thin lips, a small silver cartilage piercing on the left ear, and a cool composed baseline expression. Hair: ash-brown middle-parted perm with soft waves half showing the ears — clearly different from black medium hair with a straight fringe. Character design: an early-30s man of slim build about 174cm, seated at an office desk on the third floor of a welfare center, one hand resting beside a yellow sticky note pressed onto the lower edge of the monitor, a thin silver chain bracelet on that wrist, a paper cup of warm tea by the keyboard, wearing a navy knit polo over a lavender-gray shirt collar with a staff-card lanyard, a stack of event forms on the desk. Upper body portrait, three-quarter angle facing the viewer, a cool level look with the faintest controlled smile, as if reading the note and not letting it show. Lighting: Overcast winter interior light: soft diffused daylight from the window side with a gentle rim from behind, warm practical ceiling lights as fill, sculpted gentle side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no straight heavy fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 노승범(U, M) | {{생성일시}} — the name "노승범(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 117 채상진 × 오진우
+- 타입: 사이다남 — 화이트보드에 정정을 다는 수학 강사에게 같은 칠판으로 시원하게 맞받아치는 국어 강사
+- 나이·체격: 30대 초반, 179cm 슬림한 근육질
+- 머리: 카키 브라운 가일컷, 이마 한쪽이 드러나는 길이
+- 얼굴 포인트: 처진 쌍꺼풀 눈매, 오른쪽 볼 보조개
+- 옷 결: 빈티지 니트 레이어드, 브라운·오렌지
+- 소품: 니트 비니
+- 목소리: Voice: quick and sharp, a confident snap at the end of each line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim muscular build about 179cm, khaki-brown guile cut with one side of the forehead showing, downturned double-lidded eyes, a dimple on the right cheek, a layered vintage knit look in brown and orange, a knit beanie. Voice: quick and sharp, a confident snap at the end of each line, speaks slowly.`
+- 파일명: 117_채상진x오진우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: an oval face with a clean jaw and a soft chin, downturned eyes with soft double eyelids, straight dark-brown brows, a straight nose, lips with a quick confident curve, a dimple in the right cheek, and a sharp witty baseline expression. Hair: khaki-brown guile cut with the front parted in a soft curve and one side of the forehead showing — clearly different from dark brown curly ear-length hair. Character design: an early-30s man of slim muscular build about 179cm, seated at a desk in an evening instructors' lounge, one hand holding a red pen over a graded mock-exam sheet, a paper cup of steaming barley tea beside a stack of exam sheets, a rust-orange knit beanie resting on the desk, wearing a brown vintage cable cardigan over an orange-striped tee with an instructor-pass lanyard. Upper body portrait, three-quarter angle facing the viewer, a confident sidelong smirk with the pen lifted, as if he has just corrected someone and won. Lighting: Evening instructors' lounge light: soft cool-neutral overhead panel light diffused into a gentle frontal key, a faint warm glow from the corridor water dispenser behind as a soft rim, sculpted gentle side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no heavy fringe, no glasses, no freckles, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 채상진(U, M) | {{생성일시}} — the name "채상진(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 118 기범석 × 허도준
+- 타입: 계략남 — 교실 불이 두 번 깜빡이는 뜻을 다 알면서 모르는 척 기다리는 원장
+- 나이·체격: 30대 중반, 172cm 아담하고 슬림한 체격
+- 머리: 은회색 댄디컷, 귀가 드러나는 짧은 길이
+- 얼굴 포인트: 올라간 여우 눈매, 오른쪽 귓바퀴의 작은 링 피어싱
+- 옷 결: 소프트 미니멀 셋업, 베이지·차콜
+- 소품: 가는 금색 체인 목걸이
+- 목소리: Voice: smooth and knowing, a sly calm with a hint of a smile, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-30s Korean man, petite slim build about 172cm, silver-gray dandy cut with the ears showing, upturned fox-like eyes, a small hoop piercing on the right ear rim, a soft minimal setup look in beige and charcoal, a thin gold chain necklace. Voice: smooth and knowing, a sly calm with a hint of a smile, speaks slowly.`
+- 파일명: 118_기범석x허도준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small sharp face with high cheekbones and a narrow pointed chin, upturned fox-like eyes with crisp hooded double eyelids, thin softly arched brows, a narrow straight nose, thin lips with a faint curl at one corner, a small silver hoop on the right ear rim, and a sly knowing baseline expression. Hair: silver-gray dandy cut, soft and short with the ears showing and a light textured top — clearly different from long dark brown wavy hair tied low at the nape. Character design: a mid-30s man of petite slim build about 172cm, seated at a small desk in a daycare director's office, one hand resting on a stack of recital programs beside a mug of barley tea, a thin gold chain necklace at the collar, wearing a soft beige setup jacket over a charcoal fine-knit, a plain staff lanyard turned face-down against the chest, a low shelf of children's crayon drawings softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a slow knowing smile with narrowed eyes, as if he already knows what the flickering lights meant. Lighting: Soft winter-afternoon daycare light: sheer curtains diffusing the low sun into a narrow warm band across the foreground, a faint warm glow from a small night lamp as fill, sculpted gentle side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no long tied-back hair, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 기범석(U, M) | {{생성일시}} — the name "기범석(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 119 남제욱 × 백현민
+- 타입: 철벽남 — 칠판의 안전 수칙이 누구 몫인지 알면서 모르는 척 선을 긋는 동창
+- 나이·체격: 30세, 175cm 슬림한 체격
+- 머리: 애쉬 브라운 반묶음, 어깨 위 길이
+- 얼굴 포인트: 가늘고 처진 외꺼풀 눈, 얇은 은테 안경
+- 옷 결: 시티보이 오버핏 셔츠, 네이비·화이트
+- 소품: 왼쪽 손목의 검은 가죽 팔찌
+- 목소리: Voice: cool and guarded, short answers in a soft even tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man of about 30, slim build about 175cm, ash-brown half-up hair above the shoulders, narrow downturned monolid eyes, thin silver-rimmed glasses, a city-boy oversized-shirt look in navy and white, a black leather bracelet on the left wrist. Voice: cool and guarded, short answers in a soft even tone, speaks slowly.`
+- 파일명: 119_남제욱x백현민.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with a smooth tapered jaw, narrow downturned monolid eyes, thin straight brows, a straight narrow nose carrying thin silver-rimmed glasses, thin closed lips, and a guarded reserved baseline expression. Hair: ash-brown half-up hair above the shoulders with the top section tied back loosely — clearly different from short cropped black hair with a brushed-forward fringe. Character design: a man of about 30 with a slim build about 175cm, walking home from work and pausing on the sidewalk outside a fire station garage at dusk, both hands wrapped around a small paper cup of steaming yuja tea, a black leather bracelet on the left wrist, wearing an oversized navy-and-white striped shirt under a navy coat with a commuter bag on one shoulder, the soft red glow of a fire engine behind in the open garage. Upper body portrait, three-quarter angle facing the viewer, a cool guarded glance through the glasses with the lips pressed closed, as if pretending not to have read the board. Lighting: Station garage dusk light: a warm amber glow from the open garage behind, a cool blue-hour fill on the street side as a soft rim, sculpted gentle side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no short cropped cut, no dimple, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 남제욱(U, M) | {{생성일시}} — the name "남제욱(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 120 허명헌 × 장세영
+- 타입: 대형견남 — 셈부터 하는 차가운 매니저에게 갚을 필요 없다며 캔커피를 먼저 내미는 회계사
+- 나이·체격: 20대 후반, 184cm 어깨 넓은 탄탄한 체격
+- 머리: 밀크 브라운 쉐도우 펌, 이마를 살짝 드러낸 길이
+- 얼굴 포인트: 둥근 강아지 눈, 웃으면 생기는 오른쪽 볼 보조개
+- 옷 결: 니트 카디건 캐주얼, 코랄·크림
+- 소품: 가방에 매단 작은 곰 키링
+- 목소리: Voice: bright and open, an eager warmth he reins in on purpose, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, broad-shouldered solid build about 184cm, milk-brown shadow perm with the forehead slightly showing, round puppy-like eyes, a dimple on the right cheek when he smiles, a knit-cardigan casual look in coral and cream, a small bear keyring hanging from his bag. Voice: bright and open, an eager warmth he reins in on purpose, speaks slowly.`
+- 파일명: 120_허명헌x장세영.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft broad oval face with full cheeks and a rounded chin, round puppy-like eyes with deep double eyelids, thick softly arched brows, a straight nose with a rounded tip, full lips with a wide smile line, a dimple in the right cheek, and an eager warm baseline expression. Hair: milk-brown shadow perm with soft loose waves and the forehead slightly showing — clearly different from black-brown center-parted hair swept behind the ears. Character design: a late-20s man of broad-shouldered solid build about 184cm, staying late at a desk in a quiet night office with a laptop open, a plain navy lanyard card holder with no legible lettering around the neck, wearing a coral knit cardigan over a cream tee, holding out a small warm can of coffee toward the viewer, a small bear keyring hanging from the bag beside the desk, dim city lights beyond the window. Upper body portrait, three-quarter angle facing the viewer, a bright eager smile while holding the can out, as if he wants nothing back. Lighting: Night office light: a soft warm desk-lamp glow from the side with the cool blue of a laptop screen as a gentle fill, sculpted gentle side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 허명헌(U, M) | {{생성일시}} — the name "허명헌(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 121 정민준 × 임시환
+- 타입: 유혹남 — 말 없는 베이시스트를 무대 위에서 눈을 맞추며 노래로 흔드는 보컬
+- 나이·체격: 20대 초반, 176cm 슬림한 체격
+- 머리: 와인 브라운 장발 꽁지 묶음, 목덜미 아래 길이
+- 얼굴 포인트: 진한 쌍꺼풀의 큰 눈, 왼쪽 귓바퀴의 링 피어싱 세 개
+- 옷 결: 그런지 록 레이어드, 검정·빨강 체크
+- 소품: 여러 손가락에 낀 은반지
+- 목소리: Voice: husky and smooth, a teasing singer's purr, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-20s Korean man, slim build about 176cm, wine-brown long hair tied in a small low ponytail below the nape, large eyes with deep double eyelids, three hoop piercings on the left ear rim, a layered grunge-rock look in black and red plaid, silver rings on several fingers. Voice: husky and smooth, a teasing singer's purr, speaks slowly.`
+- 파일명: 121_정민준x임시환.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small V-line face with a sharp chin, large eyes with deep double eyelids and a slightly downturned outer corner, softly arched dark brows, a high straight nose, full lips with a smooth curve, three small silver hoops on the left ear rim, and a seductive teasing baseline expression. Hair: wine-brown long hair tied in a small low ponytail below the nape with loose strands at the temples — clearly different from dark ash-brown medium hair with a loose fringe. Character design: an early-20s man of slim build about 176cm, a university band club vocalist standing at a microphone stand in a campus practice room, one hand wrapped around the mic stand and a lyric sheet with no legible writing in the other, silver rings on several fingers, wearing a black plain tee under an open red-and-black plaid flannel shirt. Upper body portrait, three-quarter angle facing the viewer, a slow half-lidded gaze and a faint teasing smile into the lens, as if singing the next line to one person. Lighting: Basement practice-room light: a soft warm hanging-bulb glow from the side with a pale cool fill from an amp standby light, sculpted gentle side shadow, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 정민준(U, M) | {{생성일시}} — the name "정민준(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 122 오유담 × 노기현
+- 타입: 허당남 — 철마다 단추를 떨어뜨리고 소매를 터뜨려 수선집에 오는 2년 단골
+- 나이·체격: 20대 후반, 172cm 작고 동글한 체격
+- 머리: 모카 브라운 바가지 머리, 눈썹 위까지 덮은 앞머리
+- 얼굴 포인트: 처진 둥근 눈, 동그란 갈색 뿔테 안경
+- 옷 결: 프레피 니트, 하늘색·크림
+- 소품: 손목의 컬러 비즈 팔찌
+- 목소리: Voice: soft and fumbling, a sheepish laugh before each line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, small rounded build about 172cm, mocha-brown bowl cut with the fringe covering the brows, round downturned eyes, round brown horn-rimmed glasses, a preppy knit look in sky blue and cream, a colorful beaded bracelet on the wrist. Voice: soft and fumbling, a sheepish laugh before each line, speaks slowly.`
+- 파일명: 122_오유담x노기현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with full cheeks and a soft rounded chin, round downturned eyes with soft double eyelids behind round brown horn-rimmed glasses, gently curved brows, a small rounded nose, softly full lips, and a sheepish gentle baseline expression. Hair: mocha-brown bowl cut with a full straight fringe covering the brows — clearly different from a deep dark brown two-block combed to one side. Character design: a late-20s man of small rounded build about 172cm, an office-worker regular customer standing at the counter of a small clothing-alteration shop, a folded navy wool coat over one arm and a loose button held in his other palm, a colorful beaded bracelet on that wrist, wearing a sky-blue cable-knit sweater over a cream collared shirt. Upper body portrait, three-quarter angle facing the viewer, an embarrassed little laugh while holding up the loose button, as if apologizing again. Lighting: Tailor-shop light: a warm pendant lamp over the work counter from the upper right with soft overcast winter daylight from the shop window on the left, sewing machine and thread spools softly blurred, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no mole, no two-block cut, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 오유담(U, M) | {{생성일시}} — the name "오유담(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 123 금석주 × 우한울
+- 타입: 직진남 — 덜 뜨거운 라떼의 이유를 묻지 않고 먼저 고맙다고 말하는 4년 차 변호사
+- 나이·체격: 30대 초반, 177cm 슬림한 체격
+- 머리: 블루 블랙 젖은 질감 넘김, 이마를 드러낸 귀 길이
+- 얼굴 포인트: 올라간 외꺼풀 눈매, 오른쪽 귓불의 작은 은색 스터드
+- 옷 결: 테일러드 셔츠 레이어드, 차콜·하늘색
+- 소품: 셔츠 소매의 은색 커프스
+- 목소리: Voice: clear and decisive, a crisp cadence that softens near the end, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 177cm, blue-black wet-textured hair swept back off the forehead at ear length, upturned monolid eyes, a small silver stud in the right earlobe, a tailored layered-shirt look in charcoal and sky blue, silver cufflinks on the shirt cuffs. Voice: clear and decisive, a crisp cadence that softens near the end, speaks slowly.`
+- 파일명: 123_금석주x우한울.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a lean angular face with a sharp jaw and a defined chin, upturned monolid eyes with crisp corners, straight thin dark brows, a narrow high nose, thin decisive lips, a small silver stud in the right earlobe, and a clear decisive baseline expression. Hair: blue-black wet-textured hair swept back off the forehead at ear length with a glossy combed texture — clearly different from dark ash-brown 2:8 hair swept back loosely by hand. Character design: an early-30s man of slim build about 177cm, standing at the end of a lobby coffee counter in an office building, a plain navy lanyard card holder with no legible lettering around the neck, wearing a charcoal tailored jacket over a sky-blue shirt with silver cufflinks, holding a small white ceramic latte cup with no logo in both hands with a slim document folder tucked under one arm, soft winter afternoon light through a glass wall beyond. Upper body portrait, three-quarter angle facing the viewer, a direct steady look into the lens with a small decided smile, as if he has just said thank you first. Lighting: Afternoon lobby window light: low winter sun through a tall glass wall from the side as a soft key, warm pendant lights over the counter as a gentle fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 금석주(U, M) | {{생성일시}} — the name "금석주(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 124 탁무늬 × 서재우
+- 타입: 냉정남 — 대기실을 띄우는 수다스러운 어시스턴트 옆에서 말수 적고 냉정한 실장
+- 나이·체격: 30대 초반, 183cm 다부진 체격
+- 머리: 검정 버즈컷
+- 얼굴 포인트: 깊은 외꺼풀 눈과 진한 일자 눈썹, 턱선의 짧은 수염 자국
+- 옷 결: 올블랙 테일러드, 검정·카멜
+- 소품: 왼쪽 손목의 무광 은색 뱅글
+- 목소리: Voice: low and level, a cool dry calm, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, sturdy build about 183cm, black buzz cut, deep-set monolid eyes under thick straight brows, light stubble along the jaw, an all-black tailored look in black with camel accents, a matte silver bangle on the left wrist. Voice: low and level, a cool dry calm, speaks slowly.`
+- 파일명: 124_탁무늬x서재우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a strong square face with a broad clean jaw and light stubble, deep-set monolid eyes, thick straight dark brows, a straight strong nose, firm closed lips, and a cool reserved baseline expression. Hair: black buzz cut with a clean even length — clearly different from long platinum silver-gray hair tied half up. Character design: an early-30s man of sturdy build about 183cm, the head stylist of a small styling team, standing in a backstage fitting room holding a printed call sheet with no legible writing, a matte silver bangle on the left wrist, wearing an all-black tailored jacket over a black fine-knit with a camel coat draped over one shoulder, a single small safety pin just visible inside the jacket lapel, rolling racks of stage outfits softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a cool level stare with a closed mouth, unmoved, as if the noise of the room does not reach him. Lighting: Backstage dressing-room light: a row of warm vanity-mirror bulbs from the side as a soft key, a cool neutral fill from the rack lights behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no silver or bleached hair, no long hair, no ear piercings, no glasses, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 탁무늬(U, M) | {{생성일시}} — the name "탁무늬(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 125 길해솔 × 방하겸
+- 타입: 능글남 — 1분 늦었다고 손목시계를 들이미는 퀵 기사를 여유롭게 받아넘기는 계약 담당
+- 나이·체격: 30세 전후, 174cm 슬림한 체격
+- 머리: 라이트 베이지 가르마 펌, 귀를 반쯤 덮는 길이
+- 얼굴 포인트: 처진 눈매와 도톰한 애교살, 왼쪽 광대 위 작은 점
+- 옷 결: 문학 소년 빈티지, 코듀로이 브라운·올리브
+- 소품: 어깨에 멘 캔버스 에코백
+- 목소리: Voice: mellow and unhurried, an amused lilt that never takes the bait, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around 30, slim build about 174cm, light-beige near-blond middle-parted perm half covering the ears, downturned eyes with full under-eye fat pads, a small mole on the left cheekbone, a bookish vintage look in corduroy brown and olive, a canvas tote bag over the shoulder. Voice: mellow and unhurried, an amused lilt that never takes the bait, speaks slowly.`
+- 파일명: 125_길해솔x방하겸.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with gentle cheeks and a rounded chin, downturned eyes with soft double eyelids and full under-eye fat pads, softly arched brows, a straight nose, lips with an easy amused curve, a small mole on the left cheekbone, and a mellow amused baseline expression. Hair: light-beige near-blond middle-parted perm with soft waves half covering the ears — clearly different from a black short two-block. Character design: a man around 30 with a slim build about 174cm, the rights and contracts staff member of a small book publisher, standing at the foot of the stairs outside the publishing office in the late afternoon, holding a sealed plain kraft document envelope out with both hands, wearing a brown corduroy jacket over an olive knit with a canvas tote bag on the shoulder, a staff lanyard with a blank card, a narrow brick alley softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, an unhurried amused smile with one brow lifted, as if he is not going to take the bait about the one minute. Lighting: Late-afternoon alley light: a low golden autumn sun from the side as a warm key, cool shade from the brick walls as fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 길해솔(U, M) | {{생성일시}} — the name "길해솔(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 126 연강묵 × 구태성
+- 타입: 사이다남 — 수정 요청을 다 받아 주는 순한 작가 대신 회의실에서 시원하게 정리해 주는 PD 동기
+- 나이·체격: 30대 초반, 180cm 탄탄한 체격
+- 머리: 카키 브라운 아이비리그컷, 귀가 드러나는 짧은 길이
+- 얼굴 포인트: 올라간 외꺼풀 눈매, 왼쪽 눈썹 위 작은 흉터
+- 옷 결: 워크웨어 캐주얼, 카키·검정
+- 소품: 왼쪽 손목에 감은 검은 헤어끈
+- 목소리: Voice: brisk and frank, a cut-to-the-point clarity, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, fit build about 180cm, khaki-brown Ivy League cut with the ears showing, upturned monolid eyes, a small scar above the left eyebrow, a workwear casual look in khaki and black, a black hair tie around the left wrist. Voice: brisk and frank, a cut-to-the-point clarity, speaks slowly.`
+- 파일명: 126_연강묵x구태성.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a strong oval face with a defined jaw and a firm chin, upturned monolid eyes with crisp corners, straight thick dark brows with a small pale scar just above the left one, a straight high nose, firm lips, and a brisk frank baseline expression. Hair: khaki-brown Ivy League cut, short and neatly side-parted with the ears showing — clearly different from black-brown soft perm curls falling over the brow. Character design: an early-30s man of fit build about 180cm, a television drama producer at a broadcast station, seated across a long script meeting table late at night with a laptop open and a printed script with no legible text, a slim navy lanyard staff pass with no legible lettering, a black hair tie around the left wrist, wearing a khaki work jacket over a black crew-neck tee, a paper cup of coffee beside the laptop, night city lights softly blurred through the window behind. Upper body portrait, three-quarter angle facing the viewer, a crisp straight gaze with a short confident smile, as if settling the whole meeting in one line. Lighting: Late-night meeting-room light: a row of soft warm downlights over the table from the side as the key, the cool blue glow of the city through the window behind as a gentle fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no curly fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 연강묵(U, M) | {{생성일시}} — the name "연강묵(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 127 백규휘 × 임상우
+- 타입: 철벽남 — 넉살 좋은 영업 담당이 권하는 신제품을 1년째 조용히 거절하는 백반집 사장
+- 나이·체격: 30세 전후, 185cm 마른 체격
+- 머리: 다크 초콜릿 장발 꽁지 묶음, 목덜미 아래 길이
+- 얼굴 포인트: 길고 가는 처진 외꺼풀 눈, 콧대 옆 작은 점
+- 옷 결: 린넨 미니멀, 아이보리·흙갈색
+- 소품: 목에 건 나무 구슬 목걸이
+- 목소리: Voice: quiet and reserved, a low clipped tone that warms by a degree, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around 30, tall lean build about 185cm, dark-chocolate long hair tied in a low ponytail below the nape, long narrow downturned monolid eyes, a small mole beside the nose bridge, a minimal linen look in ivory and earthy brown, a wooden bead necklace. Voice: quiet and reserved, a low clipped tone that warms by a degree, speaks slowly.`
+- 파일명: 127_백규휘x임상우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long narrow face with a slender jaw and a pointed chin, long narrow downturned monolid eyes, thin straight brows, a narrow straight nose with a small mole beside the bridge, thin closed lips, and a quiet reserved baseline expression. Hair: dark-chocolate long hair tied in a low ponytail below the nape with a few loose strands at the temples — clearly different from dark brown short 2:8 hair. Character design: a man around 30 with a tall lean build about 185cm, the owner-cook of a small Korean set-meal restaurant, standing behind the kitchen counter during morning prep, an ivory linen apron over an earthy brown linen shirt with the sleeves pushed up, a wooden bead necklace at the collar, holding a long ladle over a steaming soup pot, steel trays of side dishes and a receipt spike of yellow carbon copies softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a calm closed-mouth look with the eyes lifting slowly to the viewer, as if politely saying no once more. Lighting: Morning restaurant prep light: soft daylight through a half-raised front shutter from the side as the key, a warm glow of stove steam behind, a cool neutral fill, gentle halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 백규휘(U, M) | {{생성일시}} — the name "백규휘(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 128 표동률 × 최준서
+- 타입: 다정남 — 날씨 한 줄 방송에 매일 아침 고맙다고 목례를 돌려주는 첫차 승객
+- 나이·체격: 20대 후반, 174cm 슬림한 체격
+- 머리: 모카 브라운 쉼표 머리, 이마 한쪽이 드러나는 길이
+- 얼굴 포인트: 둥근 쌍꺼풀 눈, 웃으면 보이는 오른쪽 덧니
+- 옷 결: 소프트 니트 레이어드, 베이지·하늘색
+- 소품: 귀에 걸친 흰색 유선 이어폰
+- 목소리: Voice: soft and kind, a gentle morning warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 174cm, mocha-brown comma hair with one side of the forehead showing, round double-lidded eyes, a snaggletooth on the right when he smiles, a soft layered knit look in beige and sky blue, white wired earphones hanging from the ears. Voice: soft and kind, a gentle morning warmth, speaks slowly.`
+- 파일명: 128_표동률x최준서.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft small oval face with round cheeks, round eyes with clean double eyelids, gently curved brows, a small straight nose, softly full lips, a snaggletooth on the upper right visible when he smiles, and a gentle kind baseline expression. Hair: mocha-brown comma hair with the front curled into a soft comma and one side of the forehead showing — clearly different from short black hair combed straight back. Character design: a late-20s man of slim build about 174cm, a hotel breakfast cook on the way to an early shift, standing at a subway fare gate before dawn and holding a plain transit card with no legible print toward the gate reader, white wired earphones hanging from his ears, wearing a beige knit cardigan layered over a sky-blue shirt, a canvas tote bag on one shoulder with a folded white chef's jacket just showing at the top, a softly blurred row of fare gates and a glowing station office window behind. Upper body portrait, three-quarter angle facing the viewer, a soft grateful smile and a small nod toward the station office window, as if returning a morning greeting. Lighting: Pre-dawn station light: cool white overhead concourse light as a soft frontal key, a warm glow from the station office window at the side, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 표동률(U, M) | {{생성일시}} — the name "표동률(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 129 위담 × 이시율
+- 타입: 무심남 — 보고 싶었다고 곧게 말하는 연하 앞에서 대답은 짧지만 합정역까지 꼭 마중 나오는 연상
+- 나이·체격: 20대 후반, 180cm 단단한 체격
+- 머리: 애쉬 그레이 소프트 리젠트, 이마를 드러낸 짧은 길이
+- 얼굴 포인트: 날렵한 일자 눈썹, 얇은 은테 안경
+- 옷 결: 미니멀 클린 캐주얼, 차콜·오트밀
+- 소품: 왼손에 감은 가는 가죽 끈 팔찌
+- 목소리: Voice: calm and low, a dry understatement with a faint smile, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, solid build about 180cm, ash-gray soft regent with the forehead showing, sharp straight brows, thin silver-rimmed glasses, a minimal clean-casual look in charcoal and oatmeal, a thin leather cord bracelet on the left wrist. Voice: calm and low, a dry understatement with a faint smile, speaks slowly.`
+- 파일명: 129_위담x이시율.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a clean angular face with a defined jaw and a firm chin, long level eyes with crisp corners behind thin silver-rimmed glasses, sharp straight brows, a straight high nose, thin calm lips, and a dry understated baseline expression. Hair: ash-gray soft regent with the front lifted softly off the forehead and neat short sides — clearly different from dark brown curly hair with the fringe over the brows. Character design: a late-20s man of solid build about 180cm, an editor at a small book publisher, seated at a desk by the window of a small editorial office, marking a printed proof sheet with no legible writing with a red pencil, a thin leather cord bracelet on the left wrist, wearing an oatmeal fine-knit under a clean charcoal overshirt, a stack of proofs and a small bottle of warm citron tea at the edge of the desk, the office softly blurred behind. Upper body portrait, three-quarter angle facing the viewer, a faint dry smile with the eyes barely lifted from the page, as if pretending he has not been waiting. Lighting: Late-afternoon winter window light: a low pale sun through the office window from the side as a soft key, a cool neutral fill from the room, a warm desk-lamp glow in the background, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown curly hair, no fringe, no freckles, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 위담(U, M) | {{생성일시}} — the name "위담(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 130 강엽 × 고유건
+- 타입: 유혹남 — 신호 대기마다 대사를 읽어 주는 매니저에게 상대역처럼 눈을 맞춰 오는 배우
+- 나이·체격: 20대 후반, 178cm 슬림한 체격
+- 머리: 라이트 베이지 히피 펌, 귀를 덮는 길이
+- 얼굴 포인트: 깊은 쌍꺼풀의 처진 눈매, 턱 끝의 작은 흉터
+- 옷 결: 럭셔리 캐주얼 니트, 크림·블랙
+- 소품: 머리 위에 올린 선글라스
+- 목소리: Voice: velvety and slow-burning, a low charming hum, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 178cm, light-beige near-blond hippie perm covering the ears, downturned eyes with deep double eyelids, a small scar on the tip of the chin, a luxe casual knit look in cream and black, sunglasses pushed up on the head. Voice: velvety and slow-burning, a low charming hum, speaks slowly.`
+- 파일명: 130_강엽x고유건.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft elegant oval face with a gentle jaw and a small chin, downturned eyes with deep double eyelids, softly arched brows, a straight high nose, full lips with a slow curve, a small pale scar on the tip of the chin, and a charming slow-burning baseline expression. Hair: light-beige near-blond hippie perm with soft fluffy curls covering the ears — clearly different from dark ash-brown center-parted hair. Character design: a late-20s man of slim build about 178cm, a working actor riding in the back seat of a passenger van to an early shoot, seated with a thick script with a blank cover lowered in both hands, sunglasses pushed up on his head, wearing a cream cable-knit sweater under a black wool coat, a softly blurred van interior with a dashboard glow and a pre-dawn underground parking garage behind. Upper body portrait, three-quarter angle facing the viewer, a slow lingering gaze over the script with a faint smile, as if reading a love line straight to the viewer. Lighting: Pre-dawn in-van light: a cool-blue garage streetlight through the van window as a soft frontal key, a small warm glow from the dashboard at the side, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no navy-sheen hair, no side-swept fringe, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 강엽(U, M) | {{생성일시}} — the name "강엽(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 131 송이건 × 황인규
+- 타입: 장난남 — 호루라기 안 부는 안전요원에게 레인 끝에서 먼저 물을 튀기며 장난을 거는 단골
+- 나이·체격: 20대 후반, 173cm 슬림한 체격
+- 머리: 허니 브라운 애즈펌, 이마를 반쯤 드러낸 길이
+- 얼굴 포인트: 동그란 외꺼풀 눈, 양쪽 볼 보조개
+- 옷 결: 레트로 스트리트, 옐로·네이비
+- 소품: 손목에 감은 비즈 팔찌
+- 목소리: Voice: bright and bubbly, a quick teasing giggle, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 173cm, honey-brown as-perm with the forehead half showing, round monolid eyes, dimples on both cheeks, a retro streetwear look in yellow and navy, a beaded bracelet on the wrist. Voice: bright and bubbly, a quick teasing giggle, speaks slowly.`
+- 파일명: 131_송이건x황인규.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a round youthful face with full cheeks and a soft chin, round monolid eyes with crisp corners, gently curved brows, a small rounded nose, a wide playful mouth, dimples on both cheeks, and a bubbly mischievous baseline expression. Hair: honey-brown as-perm with soft S-waves, slightly damp, the forehead half showing — clearly different from a short black two-block with a damp fringe. Character design: a late-20s man of slim build about 173cm, a graduate student at the end of an evening swim, seated on the edge of an outdoor pool at golden hour with a yellow towel draped over the shoulders and swim goggles hanging from one hand, a beaded bracelet on that wrist, wearing a navy-and-yellow retro short-sleeve tee with no print, a softly blurred outdoor pool with lane ropes and golden reflections on the water behind. Upper body portrait, three-quarter angle facing the viewer, a cheeky grin with both dimples, one hand flicking a little water toward the viewer. Lighting: Late-afternoon outdoor pool light: a low golden-hour sun as a warm soft side key with a faint rim on the shoulder, rippling reflections from the water dappling softly across the jaw and neck, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 송이건(U, M) | {{생성일시}} — the name "송이건(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 132 장필원 × 서이안
+- 타입: 순정남 — 가위표의 이유를 묻지 않고 4년째 그 촬영장에만 서 온 모델
+- 나이·체격: 20대 후반, 188cm 어깨 넓은 모델 체격
+- 머리: 은회색 젖은 질감 넘김, 이마를 드러낸 귀 길이
+- 얼굴 포인트: 올라간 쌍꺼풀 눈매, 왼쪽 볼 보조개
+- 옷 결: 모던 미니멀, 화이트·스카이블루
+- 소품: 목에 건 작은 은 펜던트 목걸이
+- 목소리: Voice: gentle and sincere, a soft steady voice that never mocks, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, broad-shouldered model build about 188cm, silver-gray wet-textured hair swept back off the forehead at ear length, upturned double-lidded eyes, a dimple on the left cheek, a modern minimal look in white and sky blue, a small silver pendant necklace. Voice: gentle and sincere, a soft steady voice that never mocks, speaks slowly.`
+- 파일명: 132_장필원x서이안.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a striking long oval face with high cheekbones and a defined chin, upturned eyes with clean double eyelids, softly straight brows, a high straight nose, full lips with a soft sincere curve, a dimple in the left cheek, and a gentle sincere baseline expression. Hair: silver-gray wet-textured hair swept back off the forehead at ear length — clearly different from unruly dark brown-black nape-length hair. Character design: a late-20s man of broad-shouldered model build about 188cm, a freelance model between takes on a studio set, seated on a low wooden stool beside a studio monitor with a pencil-marked contact sheet resting on the knee, a small silver pendant necklace, wearing a crisp white shirt open at the collar under a sky-blue minimal jacket, a softly blurred studio with a tall steel-framed window and soft spring daylight behind. Upper body portrait, three-quarter angle facing the viewer, a quiet sincere smile looking up from the contact sheet, as if he trusts every cross mark on it. Lighting: Spring-afternoon studio window light: soft daylight falling through a tall steel-framed factory window as a diffused side key with a faint cool rim on the shoulder, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no beige hair, no side-swept fringe, no glasses, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 장필원(U, M) | {{생성일시}} — the name "장필원(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 133 옥태범 × 장윤재
+- 타입: 까칠남 — 질문으로 놀리는 후배에게 정색으로 받아치면서도 목캔디는 하나도 안 버리는 사수
+- 나이·체격: 30대 초반, 186cm 큰 키의 단단한 체격
+- 머리: 애쉬 브라운 크롭컷, 이마가 드러나는 짧은 길이
+- 얼굴 포인트: 진한 일자 눈썹의 외꺼풀 눈, 콧등의 작은 흉터
+- 옷 결: 클래식 니트 베스트, 네이비·버건디
+- 소품: 왼쪽 손목의 은색 메탈 시계
+- 목소리: Voice: dry and stern, a curt tone hiding a patient warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, tall solid build about 186cm, ash-brown crop cut with the forehead showing, monolid eyes under thick straight brows, a small scar on the nose bridge, a classic knit-vest look in navy and burgundy, a silver metal watch on the left wrist. Voice: dry and stern, a curt tone hiding a patient warmth, speaks slowly.`
+- 파일명: 133_옥태범x장윤재.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a strong long face with a squared jaw, monolid eyes with crisp corners under thick straight dark brows, a small pale scar across the nose bridge, a straight strong nose, firm thin lips, and a stern dry baseline expression. Hair: ash-brown crop cut with a short textured top and the forehead showing — clearly different from dark brown-black center-parted hair pushed back. Character design: an early-30s man of tall solid build about 186cm, a town-office civil servant seated at a service counter, pressing a date stamp onto a form with a pen cup and a wrapped throat candy beside the ink pad, a silver metal watch on the left wrist, wearing a navy knit vest with burgundy trim over a white shirt with a blank lanyard ID card, a softly blurred town-office counter with tall front windows and pale December daylight behind. Upper body portrait, three-quarter angle facing the viewer, a stern sidelong look with the lips pressed, the throat candy nudged closer to himself as if refusing to admit he keeps them. Lighting: December-daytime town-office light: pale winter daylight through tall front windows as a soft frontal key with a faint cool edge, a warm practical glow from the counter lamp on one side of the jaw, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 옥태범(U, M) | {{생성일시}} — the name "옥태범(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 134 석윤호 × 김태훈
+- 타입: 계략남 — 침 놓기 전 한의사가 먼저 눈을 감는 이유를 알면서 일부러 물어보는 환자
+- 나이·체격: 30세 전후, 174cm 슬림한 체격
+- 머리: 와인 브라운 레이어드 미디엄, 귀를 덮는 길이
+- 얼굴 포인트: 가늘게 올라간 쌍꺼풀 눈, 오른쪽 귓바퀴의 작은 링 피어싱
+- 옷 결: 다크 아카데미아 레이어드, 브라운·딥그린
+- 소품: 목에 늘어뜨린 얇은 가죽 끈 목걸이
+- 목소리: Voice: smooth and quiet, a knowing lilt that pauses before the point, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around 30, slim build about 174cm, wine-brown layered medium hair covering the ears, narrow upturned double-lidded eyes, a small hoop piercing on the right ear rim, a layered dark-academia look in brown and deep green, a thin leather cord necklace. Voice: smooth and quiet, a knowing lilt that pauses before the point, speaks slowly.`
+- 파일명: 134_석윤호x김태훈.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with a tapered jaw, narrow upturned eyes with crisp double eyelids, thin arched brows, a narrow straight nose, thin lips with a knowing curl, a small silver hoop on the right ear rim, and a smooth knowing baseline expression. Hair: wine-brown layered medium hair covering the ears with soft movement — clearly different from dark brown hair with a soft loose fringe. Character design: a man around 30 with a slim build about 174cm, sitting on a clinic waiting-room bench holding a paper cup of barley tea in both hands, a thin leather cord necklace, wearing a deep-green knit vest over a brown checked shirt under an open brown wool coat, a softly blurred small clinic waiting room with a steaming herbal pot, a warm table lamp and a dusk-blue window behind. Upper body portrait, three-quarter angle facing the viewer, a slow sly smile with the eyes half-narrowed, as if he already knows why the doctor closes his eyes first. Lighting: November-evening clinic light: a warm table lamp as a soft key from the front-left with a faint cool blue dusk glow through the window behind, steam from the herbal pot catching the light, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 석윤호(U, M) | {{생성일시}} — the name "석윤호(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 135 도지환 × 박세헌
+- 타입: 허당남 — 한 발 먼저 아는 매니저 앞에서 출입 카드와 충전기를 번갈아 두고 오는 입주 프리랜서
+- 나이·체격: 20대 후반, 172cm 아담한 체격
+- 머리: 라이트 베이지 바가지 머리, 눈썹까지 덮은 앞머리
+- 얼굴 포인트: 동그란 큰 쌍꺼풀 눈, 웃으면 보이는 오른쪽 덧니
+- 옷 결: 오버핏 후디 스트리트, 민트·흰색
+- 소품: 카키 버킷햇
+- 목소리: Voice: bright and scatterbrained, a flustered laugh between words, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, petite build about 172cm, light-beige near-blond bowl cut with the fringe reaching the brows, large round double-lidded eyes, a snaggletooth on the right when he smiles, an oversized hoodie streetwear look in mint and white, a khaki bucket hat. Voice: bright and scatterbrained, a flustered laugh between words, speaks slowly.`
+- 파일명: 135_도지환x박세헌.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft cheeks, large round eyes with deep double eyelids, gently curved brows, a small button nose, softly full lips, a snaggletooth on the upper right visible when he smiles, and a flustered bright baseline expression. Hair: light-beige near-blond bowl cut with a full fringe reaching the brows — clearly different from short black 2:8 hair swept up. Character design: a late-20s man of petite build about 172cm, sitting at a sunlit two-seat window table in a bright coworking lounge with a closed silver laptop and a paper cup of coffee in front, patting his pockets for a missing access card, a khaki bucket hat set on the table, wearing an oversized mint hoodie over a white tee, a softly blurred lounge with a long wooden shared table, a tall window and a potted plant behind. Upper body portrait, three-quarter angle facing the viewer, a flustered laugh with wide eyes, as if he has just realized he forgot something again. Lighting: Early-morning window light in a bright coworking lounge: a diffuse window key from the left with a gentle cool fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no earring, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 도지환(U, M) | {{생성일시}} — the name "도지환(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 136 곽하일 × 최동주
+- 타입: 직진남 — 번호순이라는 사장에게 7번 레인은 자기 자리라고 3년째 곧게 말하는 단골
+- 나이·체격: 30세 전후, 175cm 슬림한 체격
+- 머리: 블루 블랙 투블럭, 윗머리를 위로 세운 짧은 길이
+- 얼굴 포인트: 날카로운 외꺼풀 눈, 오른쪽 눈썹 위 작은 흉터
+- 옷 결: 스포티 바시티 캐주얼, 네이비·레드
+- 소품: 왼쪽 귀의 작은 은색 링 귀걸이 하나
+- 목소리: Voice: clear and direct, a frank sunny certainty, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around 30, slim build about 175cm, blue-black two-block cut with the top pushed up, sharp monolid eyes, a small scar above the right eyebrow, a sporty varsity-casual look in navy and red, a single small silver hoop earring in the left ear. Voice: clear and direct, a frank sunny certainty, speaks slowly.`
+- 파일명: 136_곽하일x최동주.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a lean oval face with a sharp jaw, sharp monolid eyes with crisp corners, straight dark brows with a small pale scar above the right one, a straight high nose, firm lips with a ready smile, a single small silver hoop in the left ear, and a frank sunny baseline expression. Hair: blue-black two-block cut with the top pushed up and short clean sides — clearly different from dark ash-brown soft curls pushed back. Character design: a man around 30 with a slim build about 175cm, sitting on the lane 7 bench of a softly lit bowling alley and tying the laces of a pair of brown rental bowling shoes, wearing a navy varsity jacket with red trim over a white tee, a softly blurred row of blue-lit lanes with a ball return behind. Upper body portrait, three-quarter angle facing the viewer, a direct confident smile looking up from the laces, as if saying this lane is his. Lighting: Late-evening bowling alley light: a warm counter lamp as a soft key from the front left, a cool blue lane glow behind as a rim, a gentle cool fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown hair, no side-swept fringe, no glasses, no freckles, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 곽하일(U, M) | {{생성일시}} — the name "곽하일(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 137 배세훈 × 이재석
+- 타입: 상처남 — 숨기지 않는 고백 앞에서 예전 일 때문에 대답을 한 달째 미루는 단골
+- 나이·체격: 30대 초반, 183cm 마르고 긴 체격
+- 머리: 애쉬 그레이 반묶음, 턱선 아래 길이
+- 얼굴 포인트: 처진 외꺼풀 눈매, 콧등의 옅은 주근깨
+- 옷 결: 루즈 셔츠 레이어드, 세이지·아이보리
+- 소품: 오른손 중지의 은반지
+- 목소리: Voice: soft and hesitant, a quiet guarded tone with long pauses, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, tall lean build about 183cm, ash-gray half-up hair falling below the jawline, downturned monolid eyes, faint freckles across the nose bridge, a loose layered-shirt look in sage and ivory, a silver ring on the right middle finger. Voice: soft and hesitant, a quiet guarded tone with long pauses, speaks slowly.`
+- 파일명: 137_배세훈x이재석.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long slim face with a narrow jaw and a soft chin, downturned monolid eyes, thin straight brows, a narrow straight nose with faint freckles across the bridge, thin lips, and a quiet hesitant baseline expression. Hair: ash-gray half-up hair falling below the jawline with the top loosely tied back — clearly different from a black two-block with a heavy straight fringe. Character design: an early-30s man of tall lean build about 183cm, sitting on a stool at the narrow window counter of a small snack shop with a paper cup of fish-cake broth and a takeout container in front of him, a silver ring on the right middle finger, wearing a loose sage overshirt layered over an ivory tee, a softly blurred steaming tteokbokki pan and a tray of fish-cake skewers behind. Upper body portrait, three-quarter angle facing the viewer, a hesitant soft look from the takeout lid up to the viewer, the lips slightly parted as if the answer is not ready yet. Lighting: Early-evening snack-shop light: a warm pendant bulb above the steel counter as a soft top-front key, faint steam from the pan diffusing the background, a cool dusk window glow behind as a rim, a gentle fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no heavy fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 배세훈(U, M) | {{생성일시}} — the name "배세훈(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 138 은규원 × 한서준
+- 타입: 능글남 — 말끝이 사라지는 신입 AD를 생방송 직전까지 여유롭게 놀리는 쇼호스트 사수
+- 나이·체격: 30대 초반, 177cm 다부진 체격
+- 머리: 카라멜 브라운 리젠트, 이마를 드러내 세운 앞머리
+- 얼굴 포인트: 올라간 쌍꺼풀 눈매, 오른쪽 볼 보조개
+- 옷 결: 컬러 수트 셋업, 라이트 블루·화이트
+- 소품: 재킷 라펠의 작은 은색 핀
+- 목소리: Voice: silky and assured, a smooth showman's charm with a teasing curl, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, sturdy build about 177cm, caramel-brown regent with the front swept up off the forehead, upturned double-lidded eyes, a dimple on the right cheek, a colored suit-setup look in light blue and white, a small silver lapel pin. Voice: silky and assured, a smooth showman's charm with a teasing curl, speaks slowly.`
+- 파일명: 138_은규원x한서준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a defined oval face with a clean jaw, upturned eyes with clean double eyelids, softly arched brows, a high straight nose, lips with a polished practiced smile, a dimple in the right cheek, and a silky assured baseline expression. Hair: caramel-brown regent with the front swept up off the forehead and neat short sides — clearly different from black-brown neck-length center-parted hair. Character design: an early-30s man of sturdy build about 177cm, seated at a pale wood host desk in a bright shopping-channel studio with a small black lapel mic and a small silver pin on the lapel and a glass of water in front of him, wearing a light-blue suit setup over a white knit tee, a softly blurred studio set with cove lighting and a camera on a pedestal behind. Upper body portrait, three-quarter angle facing the viewer, a smooth teasing smile with one dimple, as if counting down for someone in particular. Lighting: Live shopping-studio light: large soft white panel lights just out of frame as a clean frontal key, a faint cool teal monitor glow on one side as a rim, a gentle fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 은규원(U, M) | {{생성일시}} — the name "은규원(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 139 마병찬 × 신현성
+- 타입: 대형견남 — 규칙표를 읽는 주인에게 늦게 와도 현관 등 아래서 꼬리 흔들듯 웃는 하숙생
+- 나이·체격: 20대 후반, 182cm 어깨 넓은 체격
+- 머리: 애쉬 브라운 쉐도우 펌, 이마를 살짝 드러낸 길이
+- 얼굴 포인트: 둥근 외꺼풀 눈, 왼쪽 귓불의 은색 링
+- 옷 결: 스트리트 애슬레저, 오렌지·네이비
+- 소품: 거꾸로 쓴 네이비 볼캡
+- 목소리: Voice: big and sunny, an eager boyish bounce, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, broad-shouldered build about 182cm, ash-brown shadow perm with the forehead slightly showing, round monolid eyes, a silver hoop in the left earlobe, a street athleisure look in orange and navy, a navy baseball cap worn backward. Voice: big and sunny, an eager boyish bounce, speaks slowly.`
+- 파일명: 139_마병찬x신현성.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad friendly face with a rounded jaw, round monolid eyes with crisp corners, thick gently arched brows, a straight nose with a rounded tip, full lips in a big easy grin, a silver hoop in the left earlobe, and a sunny eager baseline expression. Hair: ash-brown shadow perm with soft volume and the forehead slightly showing — clearly different from black hair with an eyebrow-length fringe. Character design: a late-20s man of broad-shouldered build about 182cm, seated at a wooden dining table in a boarding-house kitchen after work with a spoon resting beside a bowl of steaming soup, a navy baseball cap set beside the bowl, wearing an orange track jacket over a navy tee, a softly blurred home kitchen with a warm pendant lamp and a dusk window behind. Upper body portrait, three-quarter angle facing the viewer, a big happy grin, as if he has just come home late and found the light left on. Lighting: Dusk kitchen light: a soft cool-blue window light from the side as the gentle key, a warm pendant lamp glow at the side, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white, never yellow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no straight fringe, no glasses, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 마병찬(U, M) | {{생성일시}} — the name "마병찬(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 140 서찬민 × 노지율
+- 타입: 장난남 — 규정집을 펼치는 관장에게 마지막 한 판마다 엉뚱한 서브로 장난을 거는 회원
+- 나이·체격: 30대 초반, 172cm 아담한 체격
+- 머리: 와인 브라운 애즈펌, 이마를 반쯤 드러낸 길이
+- 얼굴 포인트: 처진 둥근 눈, 양쪽 볼 보조개
+- 옷 결: 레트로 트랙 캐주얼, 머스터드·초록
+- 소품: 오른쪽 귀의 작은 은색 십자 귀걸이
+- 목소리: Voice: chirpy and cheeky, a sing-song taunt, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, petite build about 172cm, wine-brown as-perm with the forehead half showing, round downturned eyes, dimples on both cheeks, a retro track-casual look in mustard and green, a small silver cross earring in the right ear. Voice: chirpy and cheeky, a sing-song taunt, speaks slowly.`
+- 파일명: 140_서찬민x노지율.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with full cheeks, round downturned eyes with soft double eyelids, gently curved brows, a small rounded nose, a wide cheeky mouth, dimples on both cheeks, and a chirpy cheeky baseline expression. Hair: wine-brown as-perm with soft S-waves and the forehead half showing — clearly different from black hair cropped short at the sides with the top pushed up. Character design: an early-30s man of petite build about 172cm, an office worker who plays table tennis after work, standing at the end of a green table in a softly blurred basement table-tennis hall with a paddle held low in one hand and a ball in the other, a small silver cross earring in the right ear, wearing a mustard-and-green retro track jacket over a white tee. Upper body portrait, three-quarter angle facing the viewer, a cheeky grin with a teasing tilt of the head, as if about to serve something unexpected. Lighting: Basement table-tennis hall light: a low-hung cool-white fluorescent tube overhead as a soft key from slightly above, a faint green bounce from the table on the lower face, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool porcelain-white, never green or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 서찬민(U, M) | {{생성일시}} — the name "서찬민(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 141 하도운 × 강해성
+- 타입: 유혹남 — 슬리퍼 소리를 모른 척하는 총무와 17번 책상에서 눈만 마주쳐도 흔드는 회원
+- 나이·체격: 30대 초반, 184cm 탄탄한 체격
+- 머리: 블루 블랙 젖은 질감 넘김, 이마를 드러낸 귀 길이
+- 얼굴 포인트: 깊은 쌍꺼풀의 올라간 눈매, 입술 오른쪽 아래 작은 점
+- 옷 결: 시크 블랙 레이어드, 검정·와인
+- 소품: 왼쪽 귀의 은색 드롭 귀걸이
+- 목소리: Voice: low and husky, a slow teasing murmur, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, fit build about 184cm, blue-black wet-textured hair swept back off the forehead at ear length, upturned eyes with deep double eyelids, a small mole below the right corner of the lips, a chic layered black look in black and wine, a silver drop earring in the left ear. Voice: low and husky, a slow teasing murmur, speaks slowly.`
+- 파일명: 141_하도운x강해성.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a sculpted oval face with a sharp jaw and a defined chin, upturned eyes with deep double eyelids, dark arched brows, a high straight nose, full lips with a small mole below the right corner, and a slow seductive baseline expression. Hair: blue-black wet-textured hair swept back off the forehead at ear length — clearly different from loose dark brown hair falling over the forehead. Character design: an early-30s man of fit build about 184cm, an office worker studying after work, seated at a partitioned reading-room desk with a warm desk lamp glowing beside an open notebook with blank pages and a pencil in one hand, a silver drop earring in the left ear, wearing an open black shirt over a wine-colored tee, a softly blurred row of lit desk lamps behind. Upper body portrait, three-quarter angle facing the viewer, a slow half-lidded look up from the notebook with a faint teasing smile, as if he heard the footsteps and is waiting. Lighting: Night reading-room counter light: a single warm desk lamp as the soft key from low left on the counter, a faint cool fluorescent spill from the corridor behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown hair, no fringe, no glasses, no freckles, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 하도운(U, M) | {{생성일시}} — the name "하도운(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 142 용이룸 × 윤재민
+- 타입: 다정남 — 보고 말투만 쓰는 후배를 서두르지 않고 기다려 주는 선임 검안사
+- 나이·체격: 30세 전후, 176cm 슬림한 체격
+- 머리: 흑갈색 댄디컷, 귀가 드러나는 짧은 길이
+- 얼굴 포인트: 길고 처진 쌍꺼풀 눈, 왼쪽 볼 보조개
+- 옷 결: 부드러운 카디건 레이어드, 라벤더·크림
+- 소품: 손목의 땋은 가죽 팔찌
+- 목소리: Voice: tender and patient, a calm caring hush, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around 30, slim build about 176cm, blackish-brown dandy cut with the ears showing, long downturned double-lidded eyes, a dimple on the left cheek, a soft layered cardigan look in lavender and cream, a braided leather bracelet on the wrist. Voice: tender and patient, a calm caring hush, speaks slowly.`
+- 파일명: 142_용이룸x윤재민.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with a gentle jaw, long downturned eyes with soft double eyelids, gently curved brows, a straight nose, softly full lips, a dimple in the left cheek, and a tender patient baseline expression. Hair: blackish-brown dandy cut, soft and short with the ears showing and a light textured top — clearly different from short dark ash-brown curls. Character design: a man around 30 with a slim build about 176cm, a senior optometric technician at an eye clinic, seated at the exam-room desk with a patient chart on a clipboard in one hand and a pen in the other, a braided leather bracelet on the wrist, wearing an open white clinic coat over a lavender crew-neck knit with a cream collar showing, a slim staff lanyard tucked into the coat pocket, a softly blurred dim examination room with a phoropter and a backlit eye-chart lightbox glowing behind (no legible text). Upper body portrait, three-quarter angle facing the viewer, a patient warm smile with soft eyes, as if waiting without hurry for someone to speak. Lighting: Dim eye-exam room light: a soft cool-white glow from a backlit eye-chart lightbox as the key from the right, a faint amber glow from the instrument screen as fill from low left, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no curly hair, no side-swept fringe, no glasses, no freckles, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 용이룸(U, M) | {{생성일시}} — the name "용이룸(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 143 설호기 × 오승현
+- 타입: 냉정남 — 먼저 놀리고 내기 거는 사장에게 표정 하나 안 바꾸고 짧게 받는 출퇴근 단골
+- 나이·체격: 30세 전후, 177cm 슬림한 체격
+- 머리: 은회색 언더컷 넘김, 옆을 짧게 민 길이
+- 얼굴 포인트: 가는 외꺼풀 눈, 왼쪽 눈 밑의 작은 흉터
+- 옷 결: 시티 커뮤터 테크웨어, 검정·형광 노랑
+- 소품: 어깨에 멘 메신저백
+- 목소리: Voice: cool and precise, an unbothered flat tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around 30, slim build about 177cm, silver-gray undercut swept back with closely shaved sides, narrow monolid eyes, a small scar under the left eye, a city-commuter techwear look in black with neon-yellow accents, a messenger bag over the shoulder. Voice: cool and precise, an unbothered flat tone, speaks slowly.`
+- 파일명: 143_설호기x오승현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a lean sharp face with a narrow jaw, narrow monolid eyes, thin straight brows, a small pale scar under the left eye, a narrow straight nose, thin flat lips, and a cool precise baseline expression. Hair: silver-gray undercut swept back with closely shaved sides — clearly different from black-brown ear-length hair tucked behind the ear. Character design: a man around 30 with a slim build about 177cm, a bicycle commuter standing on the sidewalk beside a commuter bicycle in front of a small bicycle repair shop, one hand resting on the handlebar, a messenger bag across the body, wearing a black technical commuter jacket with neon-yellow trim over a black tee, a softly blurred shop front with a row of waiting bicycles behind (no legible text). Upper body portrait, three-quarter angle facing the viewer, an unmoved flat look with the faintest lift at one corner of the mouth, as if declining a bet. Lighting: Late-afternoon bike-shop light: a low warm sun from the open shop front as the key from the left, a soft cool bounce from the pale concrete floor as fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 설호기(U, M) | {{생성일시}} — the name "설호기(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 144 류서동 × 임서하
+- 타입: 순정남 — 농담 섞인 치프의 새벽 캔커피를 2년째 한 번도 그냥 넘기지 않는 후배 전공의
+- 나이·체격: 20대 후반, 174cm 슬림한 체격
+- 머리: 카라멜 브라운 쉼표 머리, 이마 한쪽이 드러나는 길이
+- 얼굴 포인트: 둥근 큰 쌍꺼풀 눈, 오른쪽 볼 보조개
+- 옷 결: 클린 캐주얼, 민트·네이비
+- 소품: 왼손 검지의 얇은 은반지
+- 목소리: Voice: earnest and soft, a shy sincere warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 174cm, caramel-brown comma hair with one side of the forehead showing, large round double-lidded eyes, a dimple on the right cheek, a clean casual look in mint and navy, a thin silver ring on the left index finger. Voice: earnest and soft, a shy sincere warmth, speaks slowly.`
+- 파일명: 144_류서동x임서하.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft face with round cheeks, large round eyes with deep double eyelids, gently curved brows, a small straight nose, softly full lips, a dimple in the right cheek, and a shy earnest baseline expression. Hair: caramel-brown comma hair with the front curled into a soft comma and one side of the forehead showing — clearly different from short dark brown hair pushed back. Character design: a late-20s man of slim build about 174cm, a junior resident doctor standing in a softly blurred hospital ward corridor, a stethoscope hanging around the neck and a hospital ID lanyard with a blank unreadable card on the chest, a chart clipboard held against one forearm and a warm canned coffee in the other hand, a thin silver ring on the left index finger, wearing a mint scrub top under an open white coat over a navy long-sleeve tee. Upper body portrait, three-quarter angle facing the viewer, an earnest shy smile with the coffee held close, as if he will never take it for granted. Lighting: Pre-dawn hospital window light: a cool blue-gray window side light from the left as the key, a warm practical lamp as soft fill from the right, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 류서동(U, M) | {{생성일시}} — the name "류서동(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 145 차담호 × 문기태
+- 타입: 다정남 — 퉁명하게 끊어 말하는 출고 담당이 맞춰 둔 시트에 매번 고맙다고 먼저 말하는 팀장
+- 나이·체격: 30대 중반, 180cm 단단한 체격
+- 머리: 카키 브라운 포마드 사이드 파트, 귀가 보이는 길이
+- 얼굴 포인트: 올라간 외꺼풀 눈, 오른쪽 귓불의 작은 은색 스터드
+- 옷 결: 테일러드 수트 캐주얼, 네이비·브라운
+- 소품: 셔츠 가슴 주머니에 건 선글라스
+- 목소리: Voice: warm and steady, a reassuring low calm, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-30s Korean man, solid build about 180cm, khaki-brown pomade side part showing the ears, upturned monolid eyes, a small silver stud in the right earlobe, a tailored suit-casual look in navy and brown, sunglasses hooked on the shirt's breast pocket. Voice: warm and steady, a reassuring low calm, speaks slowly.`
+- 파일명: 145_차담호x문기태.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a mature defined face with a strong jaw, upturned monolid eyes with crisp corners, straight dark brows, a high straight nose, firm lips with a reassuring curve, a small silver stud in the right earlobe, and a warm steady baseline expression. Hair: khaki-brown pomade side part combed neatly with the ears showing — clearly different from black nape-length hair with a heavy fringe. Character design: a mid-30s man of solid build about 180cm, a sales team leader standing in a softly blurred glass-fronted car showroom with a pale sedan behind, a car key fob held in one hand and a blank unreadable name tag clipped to the lapel, sunglasses hooked on the shirt's breast pocket, wearing a navy tailored suit jacket over a brown knit polo. Upper body portrait, three-quarter angle facing the viewer, a warm steady smile with a slight nod, as if thanking someone for the seat already set. Lighting: Underground service-bay light: cool white overhead strip lights reflected on a damp concrete floor as the key from above left, a warm amber work-lamp glow as soft fill from the right, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no heavy fringe, no glasses on the face, no dimple, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 차담호(U, M) | {{생성일시}} — the name "차담호(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 146 민백승 × 장도담
+- 타입: 무심남 — 활짝 웃으며 사과를 멈추지 못하는 꽃집 사장에게 괜찮다고 짧게만 답하는 구독 손님
+- 나이·체격: 30세 전후, 175cm 슬림한 체격
+- 머리: 블루 블랙 레이어드 미디엄, 귀를 덮는 길이
+- 얼굴 포인트: 가늘게 올라간 외꺼풀 눈, 왼쪽 눈썹 끝 작은 흉터
+- 옷 결: 모노톤 미니멀, 검정·아이보리
+- 소품: 셔츠 칼라에 건 검은 테 선글라스
+- 목소리: Voice: low and offhand, a few dry words in an even tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around 30, slim build about 175cm, blue-black layered medium hair covering the ears, narrow upturned monolid eyes, a small scar at the tail of the left eyebrow, a monochrome minimal look in black and ivory, black-framed sunglasses hooked on the shirt collar. Voice: low and offhand, a few dry words in an even tone, speaks slowly.`
+- 파일명: 146_민백승x장도담.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously warm ivory complexion, even-toned, no dewy gloss. Face geometry: a lean sharp face with a narrow jaw, narrow upturned monolid eyes, thin straight brows with a small pale scar at the tail of the left one, a narrow straight nose, thin flat lips, and a low offhand baseline expression. Hair: blue-black layered medium hair covering the ears with soft movement — clearly different from short dark ash-brown hair swept neatly up. Character design: a man around 30 with a slim build about 175cm, an office worker on a winter morning commute standing in the doorway of a softly blurred flower shop, a small paper-wrapped bundle of white flowers held carefully in one hand, black-framed sunglasses hooked on the collar, wearing a black wool coat over an ivory turtleneck. Upper body portrait, three-quarter angle facing the viewer, an offhand calm look with the lips closed, the flowers held carefully despite the indifferent face. Lighting: Winter flower-shop morning light: soft cool daylight coming through the front glass with faint window condensation as the key from the left, a warm pendant-lamp glow as soft fill from the right, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous warm ivory, never sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no brown hair, no swept-up hair, no glasses on the face, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 민백승(U, M) | {{생성일시}} — the name "민백승(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 147 유바우 × 이정민
+- 타입: 철벽남 — 반가움이 얼굴에 다 드러나는 학예사 앞에서 정중한 거리를 2년째 지키는 자원봉사자
+- 나이·체격: 30세 전후, 174cm 슬림한 체격
+- 머리: 은회색 올백, 귀 위로 단정히 넘긴 길이
+- 얼굴 포인트: 날카롭게 올라간 외꺼풀 눈, 얇은 은테 안경
+- 옷 결: 테일러드 셔츠 레이어드, 블랙·스카이블루
+- 소품: 안경에 단 가는 은색 줄
+- 목소리: Voice: cool and reserved, a clipped polite distance, speaks slowly.
+- 영상용 한 줄: `his boyfriend: Korean man around 30, slim build about 174cm, silver-gray slicked-back hair neatly combed above the ears, sharp upturned monolid eyes, thin silver-rimmed glasses, a tailored layered-shirt look in black and sky blue, a thin silver chain attached to the glasses. Voice: cool and reserved, a clipped polite distance, speaks slowly.`
+- 파일명: 147_유바우x이정민.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a sharp clean face with a narrow jaw, sharp upturned monolid eyes behind thin silver-rimmed glasses with a thin silver chain, thin straight brows, a narrow high nose, thin closed lips, and a cool reserved baseline expression. Hair: silver-gray slicked-back hair neatly combed above the ears — clearly different from messy dark brown-black hair with an eyebrow-length fringe. Character design: a man around 30 with a slim build about 174cm, a volunteer helper standing at a long wooden table in a softly blurred museum education room, a small paper stamp card held in one hand and a blank unreadable name tag clipped to the chest, wearing a sky-blue shirt under a black tailored vest with the sleeves neatly buttoned. Upper body portrait, three-quarter angle facing the viewer, a polite reserved half-smile with a measured distance in the eyes. Lighting: Museum education-room window light: soft late-morning daylight through sheer curtains from the left as the key, warm wood-table reflections as gentle fill from below right, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no fringe, no eyebrow scar, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 유바우(U, M) | {{생성일시}} — the name "유바우(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 148 조남훈 × 박시완
+- 타입: 헌신남 — 아침마다 반대당한 안을 밤새 다시 다듬어 보류 칸 옆에 들고 오는 공무 대리
+- 나이·체격: 30대 초반, 174cm 슬림한 체격
+- 머리: 밀크 브라운 울프컷, 목덜미에 닿는 길이
+- 얼굴 포인트: 둥글고 처진 눈, 왼쪽 볼 보조개
+- 옷 결: 오피스 카디건 캐주얼, 베이지·올리브
+- 소품: 니트 비니
+- 목소리: Voice: soft and devoted, a patient steady warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 174cm, milk-brown wolf cut reaching the nape, round downturned eyes, a dimple on the left cheek, an office cardigan-casual look in beige and olive, a knit beanie. Voice: soft and devoted, a patient steady warmth, speaks slowly.`
+- 파일명: 148_조남훈x박시완.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously warm ivory complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with a gentle jaw, round downturned eyes with soft double eyelids, gently curved brows, a straight nose with a rounded tip, softly full lips, a dimple in the left cheek, and a patient devoted baseline expression. Hair: milk-brown wolf cut with soft layers reaching the nape — clearly different from short black 5:5 parted hair. Character design: an early-30s man of slim build about 174cm, a site-office engineer on a cold late-autumn morning standing at the doorway of a softly blurred construction site office, a clipboard of revised papers held out with both hands, a white hard hat hooked on one arm, an olive knit beanie tucked into the jacket pocket, wearing a beige cardigan over an olive shirt under a fluorescent safety vest. Upper body portrait, three-quarter angle facing the viewer, a patient hopeful smile while holding out the revised plan, as if ready to try once more. Lighting: Late-autumn construction-site morning light: cold pale overcast daylight through the open site-office door as the key from the left, a warm yellow glow from the office window as soft fill from the right, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous warm ivory, never sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no eyebrow scar, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 조남훈(U, M) | {{생성일시}} — the name "조남훈(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 149 감한서 × 황라율
+- 타입: 장난남 — 한 단어로만 답하는 신입에게 코드 리뷰마다 장난스러운 한 줄을 붙이는 사수
+- 나이·체격: 30대 초반, 183cm 탄탄한 체격
+- 머리: 다크 초콜릿 가일컷, 이마 한쪽이 드러나는 길이
+- 얼굴 포인트: 둥근 쌍꺼풀 눈과 눈꼬리 웃음 주름, 왼쪽 눈썹 위 작은 흉터
+- 옷 결: 스케이트 스트리트, 빨강·검정
+- 소품: 거꾸로 쓴 빨간 볼캡
+- 목소리: Voice: playful and quick, a laugh hidden under every line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, fit build about 183cm, dark-chocolate guile cut with one side of the forehead showing, round double-lidded eyes with smile lines at the corners, a small scar above the left eyebrow, a skate streetwear look in red and black, a red baseball cap worn backward. Voice: playful and quick, a laugh hidden under every line, speaks slowly.`
+- 파일명: 149_감한서x황라율.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a bright oval face with a clean jaw, round eyes with clean double eyelids and smile lines at the corners, straight dark-brown brows with a small pale scar above the left one, a straight nose, a wide playful mouth, and a quick playful baseline expression. Hair: dark-chocolate guile cut with one side of the forehead showing — clearly different from dark ash-brown loose curls over the forehead. Character design: an early-30s man of fit build about 183cm, a senior developer seated at a long office desk at dusk in a softly blurred open-plan startup office, a laptop open in front, a navy lanyard around the neck with a blank white card (no lettering), a red baseball cap set on the desk beside the laptop, wearing a red-and-black skate-style flannel shirt over a black tee. Upper body portrait, three-quarter angle facing the viewer, a playful grin leaning toward the screen, as if leaving one more silly comment on a code review. Lighting: Early-autumn dusk office light: cool monitor glow from the front-left as the key, warm amber window light from the right as soft fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no ash-brown curls, no heavy fringe, no glasses, no headphones, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 감한서(U, M) | {{생성일시}} — the name "감한서(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 150 방영훈 × 정우현
+- 타입: 허당남 — 다 알고 묻는 부원장 앞에서 기구 이름을 자꾸 헷갈리는 치과위생사
+- 나이·체격: 20대 후반, 172cm 아담한 체격
+- 머리: 카키 브라운 히피 펌, 귀를 덮는 길이
+- 얼굴 포인트: 동그랗고 처진 눈, 콧등의 옅은 주근깨
+- 옷 결: 파스텔 니트 캐주얼, 피치·크림
+- 소품: 가방에 매단 작은 토끼 키링
+- 목소리: Voice: sweet and bumbling, a startled little laugh, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, petite build about 172cm, khaki-brown hippie perm covering the ears, round downturned eyes, faint freckles across the nose bridge, a pastel knit-casual look in peach and cream, a small rabbit keyring hanging from his bag. Voice: sweet and bumbling, a startled little laugh, speaks slowly.`
+- 파일명: 150_방영훈x정우현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft cheeks, round downturned eyes with soft double eyelids, gently curved brows, a small rounded nose with faint freckles across the bridge, softly full lips, and a sweet bumbling baseline expression. Hair: khaki-brown hippie perm with fluffy curls covering the ears — clearly different from neat dark brown 2:8 side-parted hair. Character design: a late-20s man of petite build about 172cm, a dental hygienist seated on a rolling stool beside a dental unit chair in a softly blurred clinic treatment room, a disposable mask pulled down under the chin, a blank white name tag clipped to the pocket (no lettering), holding up two similar dental instruments as if unsure which is which, wearing a peach scrub top under a cream knit cardigan with a small rabbit keyring clipped to the pocket. Upper body portrait, three-quarter angle facing the viewer, a startled little laugh at his own mix-up, eyes wide. Lighting: Late-autumn clinic morning light: soft cool-white daylight through half-open blinds from the left as the key, the pale ceiling-panel glow as gentle fill from above right, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no black hair, no side-swept fringe, no glasses, no mole, no wall lettering, no signs or posters with words.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 방영훈(U, M) | {{생성일시}} — the name "방영훈(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 151 여로건 × 김수찬
+- 타입: 무심남 — 질투를 말끝에 흘리는 로건 옆에서 담담하게 테이프 끝을 눌러 주는 쪽
+- 나이·체격: 30대 초반, 176cm 슬림
+- 머리: 애쉬 그레이 크롭컷, 이마가 드러나는 짧은 길이
+- 얼굴 포인트: 외꺼풀의 살짝 처진 눈매, 오른쪽 귀 연골 피어싱
+- 옷 결: 미니멀 테크웨어, 검정·코발트 블루
+- 소품: 목에 건 가는 은색 볼체인 목걸이
+- 목소리: Voice: low and even, unhurried and matter-of-fact, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 176cm, ash-gray crop cut with the forehead showing, slightly downturned monolid eyes, a small piercing in the upper right ear cartilage, a minimal techwear look in black and cobalt blue, a thin silver ball-chain necklace. Voice: low and even, unhurried and matter-of-fact, speaks slowly.`
+- 파일명: 151_여로건x김수찬.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a lean narrow face with flat cheeks, a straight clean jawline ending in a neat pointed chin, long monolid eyes with slightly downturned outer corners and a sleepy unbothered gaze, straight thin dark brows, a slim straight nose with a fine tip, thin calm lips with a level resting line, a small silver piercing in the upper right ear cartilage, and a cool detached baseline expression. Hair: ash-gray short crop cut with a straight blunt line at the forehead hairline and the forehead mostly showing, ears exposed — clearly different from black nape-length waves pushed back by a headband. Character design: an early-30s man of slim build about 176cm, a rehabilitation trainer standing beside a padded treatment table in a softly blurred basement rehab room, a roll of white athletic tape looped around the wrist, a blank white lanyard card (no lettering) hanging at the chest, a thin silver ball-chain necklace at the collar, wearing a minimal black techwear zip jacket with cobalt-blue piping over a black tee. Upper body portrait, three-quarter angle facing the viewer, a level, unhurried gaze with only the faintest lift at one corner of the mouth. Lighting: Basement rehab-room light: a cool-white overhead panel as the key from above left, a soft warm treatment-table lamp glow as gentle fill from the right, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no freckles.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 여로건(U, M) | {{생성일시}} — the name "여로건(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 152 도에밀 × 최정원
+- 타입: 허당남 — 여유롭게 유혹하는 에밀 앞에서 발음도 필기도 자꾸 꼬이는 수강생
+- 나이·체격: 20대 중반, 174cm 아담하고 가는 체격
+- 머리: 밀크 브라운 쉼표 머리, 눈썹에 닿는 길이
+- 얼굴 포인트: 크고 둥근 눈, 웃을 때 보이는 덧니
+- 옷 결: 프레피 니트 레이어드, 버터 옐로·네이비
+- 소품: 어깨에 멘 캔버스 토트백
+- 목소리: Voice: bright and a little breathless, words tumbling over each other, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-20s Korean man, small slender build about 174cm, milk-brown comma hair at brow length, large round eyes, a snaggletooth that shows when he smiles, a layered preppy knit look in butter yellow and navy, a canvas tote bag over the shoulder. Voice: bright and a little breathless, words tumbling over each other, speaks slowly.`
+- 파일명: 152_도에밀x최정원.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft full cheeks, a gently rounded jawline ending in a small soft chin, large round eyes with clear double eyelids and level outer corners, softly arched light-brown brows, a short straight nose with a rounded tip, plump lips with a wide open smile line, a small snaggletooth on the upper right visible when he smiles, and a bright slightly flustered baseline expression. Hair: milk-brown comma hair with the fringe curled into a soft comma shape at brow length, ears half showing — clearly different from dark black-brown wavy center-parted hair. Character design: a mid-20s man of small slender build about 174cm, a working adult seated at the window seat of a softly blurred evening language classroom, a notebook held in one hand with a pen slipping from the fingers, a canvas tote bag strap over the shoulder, wearing a butter-yellow knit sweater layered over a navy collared shirt. Upper body portrait, three-quarter angle facing the viewer, a sheepish wide-eyed smile as if he just mispronounced a word. Lighting: Evening classroom light: warm low sun coming through the tall window from the left as the key, a cool fluorescent ceiling panel as soft fill from above right, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 도에밀(U, M) | {{생성일시}} — the name "도에밀(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 153 사공린 × 오세진
+- 타입: 철벽남 — 거침없이 다가오는 린에게 선을 긋는 6년 차 약국장
+- 나이·체격: 30대 중반, 178cm 탄탄한 보통 체격
+- 머리: 와인 브라운 젖은 질감 넘김, 이마를 드러낸 짧은 머리
+- 얼굴 포인트: 쌍꺼풀 짙은 올라간 눈매, 점 없음
+- 옷 결: 단정한 셔츠 레이어드, 버건디·차콜
+- 소품: 왼손 검지의 은반지
+- 목소리: Voice: cool and measured, each word set down with care, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-30s Korean man, firm average build about 178cm, wine-brown hair slicked back with a wet-look texture, upturned eyes with deep double eyelids, a neat layered shirt look in burgundy and charcoal, a silver ring on the left index finger. Voice: cool and measured, each word set down with care, speaks slowly.`
+- 파일명: 153_사공린x오세진.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A settled adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long oval face with defined cheekbones, a firm angular jawline ending in a squared chin, upturned almond eyes with deep double eyelids and a cool measuring gaze, straight thick dark brows held level, a high straight nose with a sharp tip, firm lips held in a closed line, and a composed guarded baseline expression. Hair: wine-brown hair slicked back from the forehead with a wet-look texture, short at the sides, the full forehead showing — clearly different from short black hair with a pressed-flat fringe. Character design: a mid-30s man of firm average build about 178cm, a pharmacy owner standing behind the counter of a softly blurred rainy-day neighborhood pharmacy, a pen held in one hand, a silver ring on the left index finger, wearing a white pharmacist coat over a burgundy collared shirt layered with a charcoal knit vest. Upper body portrait, three-quarter angle facing the viewer, a polite closed-lip expression with one brow faintly raised, keeping a clear distance. Lighting: Rainy-day pharmacy light: cool-white ceiling panels as the key from above, soft gray rain-light through the front glass door from the right as fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 사공린(U, M) | {{생성일시}} — the name "사공린(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 154 오보람 × 유건욱
+- 타입: 능글남 — 허둥대는 보람을 매주 화요일 느긋하게 놀리는 단골
+- 나이·체격: 30대 초반, 185cm 어깨 넓은 체격
+- 머리: 금발에 가까운 라이트 베이지 리젠트
+- 얼굴 포인트: 외꺼풀의 올라간 눈매, 왼쪽 눈썹 끝 슬릿
+- 옷 결: 클래식 트렌치 레이어드, 카멜·블랙
+- 소품: 목에 걸친 헤드폰
+- 목소리: Voice: warm and lazy, a smile hiding under every line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, broad-shouldered build about 185cm, light beige near-blond regent hair, upturned monolid eyes, a small slit at the tail of the left eyebrow, a classic layered trench look in camel and black, headphones resting around the neck. Voice: warm and lazy, a smile hiding under every line, speaks slowly.`
+- 파일명: 154_오보람x유건욱.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad balanced face with strong cheekbones, a defined square jawline ending in a firm chin, upturned monolid eyes with a lazy amused gaze, straight dark-blond brows with a small slit at the tail of the left brow, a straight prominent nose, full lips with a lopsided smile line, and a relaxed knowing baseline expression. Hair: light beige near-blond regent with the front lifted in a rounded quiff and the sides neatly tapered — clearly different from dark chocolate-brown hair with a forehead fringe. Character design: an early-30s man of broad-shouldered build about 185cm, a working adult standing between softly blurred used-bookstore shelves in the evening, a secondhand hardcover held against the chest with one hand, black headphones resting around the neck, wearing a camel trench coat over a black fine-knit sweater. Upper body portrait, three-quarter angle facing the viewer, a slow lopsided smile and a teasing sidelong look. Lighting: Late-afternoon bookshop window light: low warm sun entering from a tall window on the left as the side key, a small warm desk lamp as a soft practical accent behind, cool-neutral fill from the ceiling, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no dark hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 오보람(U, M) | {{생성일시}} — the name "오보람(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 155 공해든 × 임하민
+- 타입: 다정남 — 상처를 숨기는 해든을 재촉하지 않고 곁을 지키는 원장
+- 나이·체격: 30대 중반, 179cm 보통 체격
+- 머리: 블루 블랙 짧은 투블럭
+- 얼굴 포인트: 둥글고 처진 눈매에 반무테 안경, 오른쪽 볼 보조개
+- 옷 결: 단정한 니트 카디건 레이어드, 크림·포레스트 그린
+- 소품: 손목의 가는 가죽 팔찌
+- 목소리: Voice: soft and steady, a gentle warmth in every pause, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-30s Korean man, average build about 179cm, blue-black short two-block cut, round softly downturned eyes behind half-rim glasses, a dimple on the right cheek, a neat layered knit cardigan look in cream and forest green, a thin leather bracelet on the wrist. Voice: soft and steady, a gentle warmth in every pause, speaks slowly.`
+- 파일명: 155_공해든x임하민.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A settled adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft square face with gentle cheeks, a rounded jawline ending in a soft chin, round softly downturned eyes with warm double eyelids behind thin half-rim glasses, gently arched dark brows, a straight nose with a soft rounded tip, softly full lips with a kind smile line, a dimple on the right cheek, and a warm steady baseline expression. Hair: blue-black short two-block cut with a cool navy sheen, the sides closely trimmed and the top short and neat with the forehead showing — clearly different from dark ash-brown nape-length hair tied low. Character design: a mid-30s man of average build about 179cm, an academy director standing between softly blurred easels of charcoal drawings in the evening studio, a few student drawing sheets held against the chest with one hand, a thin leather bracelet on the wrist, wearing a cream knit cardigan layered over a forest-green collared shirt. Upper body portrait, three-quarter angle facing the viewer, a gentle reassuring smile with the right-cheek dimple showing. Lighting: Winter-evening studio window light: cool blue dusk light entering from a tall window on the right as the side key, a bare clamp lamp glowing warm behind as a small practical accent, cool-neutral fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Environment may be cool blue-gray; skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no brown hair, no side-swept fringe, no scar, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 공해든(U, M) | {{생성일시}} — the name "공해든(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 156 주세랑 × 변도혁
+- 타입: 까칠남 — 능글맞은 팀장 세랑에게 한마디도 지지 않는 대리
+- 나이·체격: 20대 후반, 175cm 슬림
+- 머리: 카키 브라운 쉐도우 펌
+- 얼굴 포인트: 올라간 고양이 눈매, 왼쪽 귀의 은색 이어커프
+- 옷 결: 오버핏 셋업, 올리브·베이지
+- 소품: 손목에 감은 검정 머리끈
+- 목소리: Voice: crisp and clipped, a dry edge on every comeback, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 175cm, khaki-brown shadow perm, upturned cat-like eyes, a silver ear cuff on the left ear, an oversized setup look in olive and beige, a black hair tie around the wrist. Voice: crisp and clipped, a dry edge on every comeback, speaks slowly.`
+- 파일명: 156_주세랑x변도혁.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small V-shaped face with high sharp cheekbones, a tapered jawline ending in a pointed chin, upturned cat-like eyes with thin double eyelids and a sharp skeptical gaze, straight dark brows angled slightly upward, a slim straight nose, thin lips pressed in a dry line, a silver ear cuff on the left ear, and a prickly unimpressed baseline expression. Hair: khaki-brown shadow perm with loose separated waves covering the ears and the fringe pushed off to the sides — clearly different from black hair pushed back with fingers. Character design: a late-20s man of slim build about 175cm, a marketing associate standing beside a softly blurred bright office window with a sample bottle of pale green sparkling drink held in one hand and a slim laptop under the other arm, a black hair tie around the wrist, wearing an oversized olive setup jacket over a beige tee. Upper body portrait, three-quarter angle facing the viewer, a skeptical narrowed look with lips pressed, as if ready with a comeback. Lighting: Spring-morning office window light: soft white daylight from a tall window on the left as the side key, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Environment may be bright cool white; skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 주세랑(U, M) | {{생성일시}} — the name "주세랑(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 157 한온새 × 구영빈
+- 타입: 장난남 — 묵묵한 순정파 온새에게 먼저 장난을 거는 인쇄소 사장
+- 나이·체격: 30대 초반, 172cm 아담하고 탄탄한 체격
+- 머리: 금발에 가까운 라이트 베이지 버즈컷
+- 얼굴 포인트: 크고 둥근 눈, 웃을 때 드러나는 덧니
+- 옷 결: 데님 워크웨어, 인디고·머스터드
+- 소품: 벨트 고리에 건 열쇠 카라비너
+- 목소리: Voice: quick and playful, a laugh tucked behind each line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, compact sturdy build about 172cm, light beige near-blond buzz cut, large round eyes, a snaggletooth that shows when he grins, a denim workwear look in indigo and mustard, a key carabiner clipped to the belt loop. Voice: quick and playful, a laugh tucked behind each line, speaks slowly.`
+- 파일명: 157_한온새x구영빈.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact round face with full cheeks, a short rounded jawline ending in a soft chin, large round eyes with clear double eyelids and lively bright pupils, short straight light brows, a short nose with a rounded tip, wide lips with a mischievous grin line, a snaggletooth on the upper left visible when he grins, and a playful baseline expression. Hair: light beige near-blond buzz cut cropped very short all over, the scalp line clean — clearly different from deep chestnut-brown hair in a 2:8 side part. Character design: an early-30s man of compact sturdy build about 172cm, a print shop owner standing behind the shop counter with a stack of freshly printed sheets held against the chest in one arm and a pen in the other hand, a key carabiner clipped to the belt loop, wearing an indigo denim work jacket over a mustard-yellow tee. Upper body portrait, three-quarter angle facing the viewer, a mischievous grin showing the snaggletooth, one eyebrow cocked. Lighting: Late-autumn morning light: soft cool-white daylight through the shopfront glass behind and to the left as a gentle rim backlight, warm practical shop lamps filling the face softly from the right, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no dark hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 한온새(U, M) | {{생성일시}} — the name "한온새(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 158 계태환 × 안재형
+- 타입: 대형견남 — 까칠한 강사 태환 앞에서도 꼬리 흔들듯 웃는 회원
+- 나이·체격: 20대 후반, 188cm 큰 덩치
+- 머리: 밀크 브라운 히피 펌, 귀를 덮는 길이
+- 얼굴 포인트: 처진 강아지 눈매, 양쪽 볼 보조개
+- 옷 결: 고프코어 아웃도어, 회청색·주황 포인트
+- 소품: 손에 든 자전거 헬멧
+- 목소리: Voice: big and cheerful, an eager bounce in every word, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, large broad build about 188cm, milk-brown hippie perm covering the ears, droopy puppy-like eyes, dimples on both cheeks, a gorpcore outdoor look in slate blue with orange accents, a bicycle helmet in hand. Voice: big and cheerful, an eager bounce in every word, speaks slowly.`
+- 파일명: 158_계태환x안재형.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad soft face with full cheeks, a rounded strong jawline ending in a soft chin, droopy puppy-like eyes with deep double eyelids and noticeably downturned outer corners, thick softly arched brown brows, a straight nose with a rounded tip, full lips with a wide easy smile line, dimples on both cheeks, and an eager bright baseline expression. Hair: milk-brown hippie perm with tight loose curls covering the ears and falling around the face — clearly different from dark chestnut-black swept-back hair. Character design: a late-20s man of large broad build about 188cm, a pilates studio member standing beside a reformer with a rolled mat under one arm and a bicycle helmet hanging from the other hand, wearing a slate-blue technical shell jacket with orange zip accents over a gray-blue training top. Upper body portrait, three-quarter angle facing the viewer, a big open smile with both dimples showing and eyes crinkled. Lighting: Late-autumn evening studio light: warm practical pendant lights overhead filling the face softly from the front right, cool blue dusk light from the tall window on the left as a gentle rim, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 계태환(U, M) | {{생성일시}} — the name "계태환(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+```
+
+### 159 현동하 × 전승호
+- 타입: 냉정남 — 해맑게 달려드는 동하를 차분한 말투로 받아 주는 보호자
+- 나이·체격: 30대 초반, 173cm 슬림
+- 머리: 은회색 올백
+- 얼굴 포인트: 외꺼풀의 날카로운 눈매, 왼쪽 귀 작은 피어싱 두 개
+- 옷 결: 미니멀 롱코트 모노톤, 블랙·스톤 그레이
+- 소품: 오른손 약지의 은반지
+- 목소리: Voice: cool and quiet, flat and precise, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 173cm, silver-gray hair combed straight back, sharp monolid eyes, two small piercings in the left ear, a minimal monotone long-coat look in black and stone gray, a silver ring on the right ring finger. Voice: cool and quiet, flat and precise, speaks slowly.`
+- 파일명: 159_현동하x전승호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a narrow long face with lean cheeks, a sharp jawline ending in a pointed chin, sharp monolid eyes with a level cool gaze, straight thin dark brows, a slim high nose with a sharp tip, thin lips held in a flat line, two small piercings in the left ear, and a cool reserved baseline expression. Hair: silver-gray hair combed straight back from the forehead in a sleek all-back, the sides tight — clearly different from black natural-curl hair falling over the forehead. Character design: an early-30s man of slim build about 173cm, a working adult standing at the softly blurred glass front door of a neighborhood dog daycare in the early evening, the loop end of a dog leash held loosely in one hand, a silver ring on the right ring finger, wearing a long black wool coat over a stone-gray turtleneck. Upper body portrait, three-quarter angle facing the viewer, a cool composed look with a barely-there softening around the eyes. Lighting: Spring early-evening backlight: low warm sun streaming through the glass front door behind the subject as a soft rim backlight on the hair and shoulders, with warm interior practical light filling the face gently from the front left, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Environment may be warm beige; skin remains luminous cool porcelain-white, never yellow or sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no freckles.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 현동하(U, M) | {{생성일시}} — the name "현동하(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+```
+
+### 160 우지후 × 서원우
+- 타입: 직진남 — 철벽 이발사 지후에게 매달 같은 시간에 곧장 다가가는 단골
+- 나이·체격: 20대 후반, 177cm 탄탄한 체격
+- 머리: 다크 초콜릿 울프컷
+- 얼굴 포인트: 올라간 큰 눈, 콧등의 작은 흉터
+- 옷 결: 빈티지 스트리트, 브릭 레드·크림
+- 소품: 어깨에 건 필름 카메라 스트랩
+- 목소리: Voice: clear and direct, warm confidence without hesitation, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, firm build about 177cm, dark chocolate wolf cut, large upturned eyes, a small scar across the bridge of the nose, a vintage street look in brick red and cream, a film camera strap over the shoulder. Voice: clear and direct, warm confidence without hesitation, speaks slowly.`
+- 파일명: 160_우지후x서원우.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact oval face with defined cheekbones, a clean tapered jawline ending in a firm chin, large upturned eyes with deep double eyelids and a direct bright gaze, thick straight dark brows, a straight nose with a small scar across the bridge, full lips with a confident smile line, and a frank forward baseline expression. Hair: dark chocolate wolf cut with a layered textured crown, choppy short fringe and longer strands at the nape — clearly different from dark ash-brown short hair neatly combed to one side. Character design: a late-20s man of firm build about 177cm, a working adult seated in a vintage leather barber chair with a white cutting cape fastened at the neck, facing the softly blurred wide mirror of a neighborhood barbershop in the late morning, a film camera strap over the chair arm, a brick-red vintage corduroy jacket folded over the arm of the chair. Upper body portrait, three-quarter angle facing the viewer, a direct steady gaze into the mirror with a confident half smile. Lighting: Spring late-morning barbershop light: soft cool-white daylight from the shopfront window on the left as the key, a warm practical pendant glow behind the mirror as gentle fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no ash-brown hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 우지후(U, M) | {{생성일시}} — the name "우지후(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+```
+
+### 161 옹기준 × 남지후
+- 타입: 순정남 — 계산 많은 원장 기준의 수에 그대로 마음을 내보이는 수강생
+- 나이·체격: 20대 후반, 175cm 슬림
+- 머리: 애쉬 브라운 바가지 머리, 눈썹을 덮는 앞머리
+- 얼굴 포인트: 둥근 뿔테 안경, 처진 둥근 눈매
+- 옷 결: 파스텔 니트 프레피, 스카이 블루·아이보리
+- 소품: 손목에 감은 실팔찌
+- 목소리: Voice: gentle and earnest, a shy sincerity in each line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 175cm, ash-brown bowl cut with brow-covering bangs, round horn-rimmed glasses over soft downturned eyes, a preppy pastel knit look in sky blue and ivory, a braided string bracelet on the wrist. Voice: gentle and earnest, a shy sincerity in each line, speaks slowly.`
+- 파일명: 161_옹기준x남지후.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft cheeks, a gently rounded jawline ending in a small chin, round softly downturned eyes with soft double eyelids behind round horn-rimmed glasses, softly arched brown brows, a short straight nose, small soft lips with a shy smile line, and an earnest gentle baseline expression. Hair: ash-brown bowl cut with a straight full fringe covering the brows and rounded sides over the ears — clearly different from dark brown-black center-parted waves. Character design: a late-20s man of slim build about 175cm, a working adult seated on an upright piano bench in a small neighborhood piano studio on an autumn Saturday afternoon with both hands resting lightly on the keys, a braided string bracelet on the wrist, wearing a sky-blue knit sweater over an ivory collared shirt. Upper body portrait, three-quarter angle facing the viewer, a shy sincere smile with eyes lowered toward the keys. Lighting: Autumn late-afternoon piano studio light: low warm sunlight from the window on the right as the key, a small warm practical lamp on the piano as gentle fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no center part, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 옹기준(U, M) | {{생성일시}} — the name "옹기준(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+
+```
+
+### 162 소산하 × 권태겸
+- 타입: 사이다남 — 말을 삼키고 후회하는 산하에게 할 말은 시원하게 하는 단골
+- 나이·체격: 30대 초반, 174cm 슬림
+- 머리: 카키 브라운 크롭컷
+- 얼굴 포인트: 올라간 눈매, 오른쪽 귓불 작은 피어싱
+- 옷 결: 오피스 캐주얼 블레이저, 네이비·화이트
+- 소품: 손에 든 검은 장우산
+- 목소리: Voice: crisp and bright, straight to the point with a clean finish, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 174cm, khaki-brown crop cut, upturned eyes, a small stud in the right earlobe, an office-casual blazer look in navy and white, a long black umbrella in hand. Voice: crisp and bright, straight to the point with a clean finish, speaks slowly.`
+- 파일명: 162_소산하x권태겸.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with lean cheeks, a clean straight jawline ending in a neat chin, upturned eyes with thin double eyelids and a clear frank gaze, straight dark brows, a straight slim nose, thin crisp lips with a decisive line, a small stud in the right earlobe, and a brisk candid baseline expression. Hair: khaki-brown short crop cut with a straight textured fringe high on the forehead and tidy sides — clearly different from dark brown neck-length hair tied low. Character design: an early-30s man of slim build about 174cm, a working adult seated at a small wooden table in a neighborhood noodle shop on an autumn evening with both hands resting beside a steaming bowl of noodles and a pair of wooden chopsticks, a long black umbrella leaning against the table, wearing a navy blazer over a crisp white shirt. Upper body portrait, three-quarter angle facing the viewer, a frank clear gaze with a small decisive smile. Lighting: Evening noodle-shop light: a warm pendant lamp over the counter as the key from the upper left, soft cool dusk light through the glass door as gentle fill, rising steam catching the light, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no dark hair, no side-swept fringe, no glasses, no scar.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 소산하(U, M) | {{생성일시}} — the name "소산하(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+
+```
+
+### 163 갈구름 × 박정후
+- 타입: 무심남 — 장난치는 연하 알바생 구름을 무표정으로 받아넘기는 사장
+- 나이·체격: 30대 초반, 184cm 어깨 넓은 체격
+- 머리: 와인 브라운 올백
+- 얼굴 포인트: 외꺼풀 눈매, 턱 아래 작은 흉터
+- 옷 결: 레더 재킷 모노톤, 블랙·와인
+- 소품: 손목의 굵은 은팔찌
+- 목소리: Voice: deep and dry, unbothered and brief, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, broad-shouldered build about 184cm, wine-brown hair combed straight back, monolid eyes, a small scar under the chin, a monotone leather jacket look in black and wine, a chunky silver bracelet on the wrist. Voice: deep and dry, unbothered and brief, speaks slowly.`
+- 파일명: 163_갈구름x박정후.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long angular face with strong cheekbones, a broad square jawline ending in a firm chin with a small scar underneath, monolid eyes with a heavy indifferent gaze, straight thick dark brows, a high straight nose, firm lips held in an even line, and a deadpan unbothered baseline expression. Hair: wine-brown hair combed straight back from the forehead in a clean all-back, the sides short — clearly different from messy black ear-length hair with a fringe. Character design: an early-30s man of broad-shouldered build about 184cm, a working adult standing beside a green-felt billiard table in a quiet billiard hall on a late-autumn night with one hand resting on a billiard cue standing upright and a canned coffee in the other hand, a chunky silver bracelet on the wrist, wearing a black leather jacket over a wine-colored knit. Upper body portrait, three-quarter angle facing the viewer, a deadpan half-lidded look with no smile. Lighting: Billiard hall night light: a single low pendant lamp over the green-felt table as the key from above and slightly in front, a soft cool shadow beyond the light, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no earrings.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 갈구름(U, M) | {{생성일시}} — the name "갈구름(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+```
+
+### 164 고하엘 × 이재율
+- 타입: 직진남 — 무대 위에서 흔드는 하엘에게 대본 밖에서도 곧장 답하는 상대 부원
+- 나이·체격: 20대 초중반, 177cm 보통 체격
+- 머리: 블루 블랙 쉼표 머리
+- 얼굴 포인트: 크고 둥근 눈, 왼쪽 볼 보조개
+- 옷 결: 캠퍼스 스트리트 바시티 재킷, 그린·크림
+- 소품: 목에 건 유선 헤드폰
+- 목소리: Voice: bright and sure, open and unguarded, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-to-mid-20s Korean man, average build about 177cm, blue-black comma hair, large round eyes, a dimple on the left cheek, a campus street look with a varsity jacket in green and cream, wired headphones around the neck. Voice: bright and sure, open and unguarded, speaks slowly.`
+- 파일명: 164_고하엘x이재율.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with youthful cheeks, a gently tapered jawline ending in a neat chin, large round eyes with clear double eyelids and a bright direct gaze, thick straight dark brows, a straight nose with a soft tip, full lips with an open smile line, a dimple on the left cheek, and a sincere forward baseline expression. Hair: blue-black comma hair with the fringe curled in a soft comma over one brow and the ears showing — clearly different from dark ash-brown hair swept back from the forehead. Character design: an early-to-mid-20s man of average build about 177cm, a student standing on a small black-painted stage floor in a quiet student theater on a late-autumn evening beside two pale yellow tape marks with a rolled script held in one hand, wired headphones around the neck, wearing a green and cream varsity jacket over a white hoodie. Upper body portrait, three-quarter angle facing the viewer, a direct bright gaze and an open smile with the dimple showing. Lighting: Black-box theater night light: a single bare warm work lamp standing on the stage floor as the key from the side and slightly below, a soft cool shadow falling across the dark empty seats behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no brown hair, no swept-back hair, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 고하엘(U, M) | {{생성일시}} — the name "고하엘(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 165 나오름 × 김한솔
+- 타입: 허당남 — 직진하는 룸메이트 오름 앞에서 열쇠도 컵도 자꾸 놓치는 쪽
+- 나이·체격: 20대 후반, 174cm 슬림
+- 머리: 밀크 브라운 반묶음, 목덜미까지 오는 길이
+- 얼굴 포인트: 처진 둥근 눈매, 웃을 때 보이는 덧니
+- 옷 결: 루즈핏 니트 캐주얼, 오트밀·세이지
+- 소품: 머리에 얹은 니트 비니
+- 목소리: Voice: soft and a little flustered, trailing off at the ends, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 174cm, milk-brown nape-length hair tied half-up, round softly downturned eyes, a snaggletooth that shows when he smiles, a loose knit casual look in oatmeal and sage, a knit beanie. Voice: soft and a little flustered, trailing off at the ends, speaks slowly.`
+- 파일명: 165_나오름x김한솔.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim soft face with gentle cheeks, a softly tapered jawline ending in a small chin, round softly downturned eyes with soft double eyelids, softly arched brown brows, a straight nose with a rounded tip, soft lips with a sheepish smile line, a small snaggletooth visible when he smiles, and a mildly flustered baseline expression. Hair: milk-brown nape-length hair tied half-up with the lower part falling loose around the neck — clearly different from short dark curls falling over the forehead. Character design: a late-20s man of slim build about 174cm, standing in a small apartment entryway on a late-autumn evening just home from work, holding a house key in one hand beside a single wall hook, a knit beanie pushed back on the head, wearing a loose oatmeal knit sweater under a sage-green cardigan. Upper body portrait, three-quarter angle facing the viewer, a sheepish smile as if he just dropped the key, eyes widened slightly. Lighting: Late-autumn evening entryway light: a single warm ceiling light as the soft frontal key with a gentle cool shadow fill from the dim hallway behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no curls.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 나오름(U, M) | {{생성일시}} — the name "나오름(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 166 단이서 × 최영준
+- 타입: 능글남 — 허둥대는 역무원 이서를 열쇠점 창구 너머에서 여유 있게 놀리는 이웃
+- 나이·체격: 30대 초반, 183cm 탄탄한 체격
+- 머리: 은회색 가일컷
+- 얼굴 포인트: 올라간 눈매, 오른쪽 눈썹 슬릿
+- 옷 결: 워크 재킷 레이어드, 카키·블랙
+- 소품: 왼쪽 귀의 은색 이어커프
+- 목소리: Voice: smooth and teasing, an easy drawl, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, firm build about 183cm, silver-gray side-swept gail cut, upturned eyes, a slit in the right eyebrow, a layered work-jacket look in khaki and black, a silver ear cuff on the left ear. Voice: smooth and teasing, an easy drawl, speaks slowly.`
+- 파일명: 166_단이서x최영준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long defined face with high cheekbones, a sharp jawline ending in a neat chin, upturned eyes with thin double eyelids and an amused sidelong gaze, straight dark brows with a slit in the right brow, a high straight nose, lips with a lazy lopsided smile line, a silver ear cuff on the left ear, and a relaxed teasing baseline expression. Hair: silver-gray gail cut with the fringe split and swept up off one side of the forehead and short tapered sides — clearly different from dark brown ear-covering hair with a soft fringe. Character design: an early-30s man of firm build about 183cm, standing behind a small key-duplicating bench inside a cozy underground station shop on a late-autumn afternoon, a ring of plain keys held in one hand beside a wall of hanging keys, wearing a khaki work jacket over a black henley. Upper body portrait, three-quarter angle facing the viewer, a teasing lopsided smile and a sidelong glance. Lighting: Underground station arcade shop light: a warm ceiling light as the soft frontal key with a gentle cool shadow fill from the corridor behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no dark hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 단이서(U, M) | {{생성일시}} — the name "단이서(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 167 신도담 × 한상현
+- 타입: 사이다남 — 마음을 꾹 누르는 후배 도담 대신 회의에서 할 말을 시원하게 하는 사수
+- 나이·체격: 30대 초반, 176cm 슬림
+- 머리: 다크 초콜릿 히피 펌
+- 얼굴 포인트: 올라간 고양이 눈매, 왼쪽 귀 작은 피어싱 세 개
+- 옷 결: 미니멀 셋업, 베이지·블랙
+- 소품: 손목의 은색 체인 팔찌
+- 목소리: Voice: brisk and clear, a confident snap at the end of each line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 176cm, dark chocolate hippie perm, upturned cat-like eyes, three small piercings in the left ear, a minimal setup look in beige and black, a silver chain bracelet. Voice: brisk and clear, a confident snap at the end of each line, speaks slowly.`
+- 파일명: 167_신도담x한상현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small sharp face with high cheekbones, a tapered jawline ending in a pointed chin, upturned cat-like eyes with thin double eyelids and a crisp confident gaze, straight dark brows angled upward, a slim straight nose, thin lips with a decisive smile line, three small piercings in the left ear, and a brisk self-assured baseline expression. Hair: dark chocolate hippie perm with tight loose curls to the ears and a curly fringe — clearly different from a jet-black 2:8 parted cut with cropped sides. Character design: an early-30s man of slim build about 176cm, standing at a long shared work desk in a bright apparel e-commerce planning office on a late-autumn morning, a plain staff lanyard around the neck, a small blank fabric swatch card held in one hand beside a rack of winter coat samples, a silver chain bracelet, wearing a minimal beige setup jacket over a black knit. Upper body portrait, three-quarter angle facing the viewer, a crisp confident smirk with chin slightly lifted. Lighting: Apparel office morning light: soft cool-white daylight from tall windows as the frontal key with a gentle warm bounce from the hanging garments, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 신도담(U, M) | {{생성일시}} — the name "신도담(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 168 유정빈 × 장재호
+- 타입: 까칠남 — 능글맞은 치킨집 사장 정빈의 농담을 매번 따박따박 받아치는 위층 이웃
+- 나이·체격: 20대 후반, 172cm 슬림
+- 머리: 애쉬 브라운 가르마 펌
+- 얼굴 포인트: 얇은 사각 메탈 안경, 외꺼풀의 올라간 눈매
+- 옷 결: 단정한 셔츠와 니트 베스트, 네이비·머스터드
+- 소품: 오른손 검지의 은반지
+- 목소리: Voice: sharp and tidy, a little prickly, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 172cm, ash-brown middle-parted perm, thin square metal-frame glasses over upturned monolid eyes, a neat shirt and knit vest look in navy and mustard, a silver ring on the right index finger. Voice: sharp and tidy, a little prickly, speaks slowly.`
+- 파일명: 168_유정빈x장재호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small neat face with lean cheeks, a tapered jawline ending in a narrow chin, upturned monolid eyes behind thin square metal-frame glasses with a sharp critical gaze, straight thin dark brows, a slim straight nose, thin lips pressed in a tidy line, and a prickly no-nonsense baseline expression. Hair: ash-brown middle-parted perm with soft waves curving away from the center part and over the ears — clearly different from dark brown-black hair swept up under a bandana. Character design: a late-20s man of slim build about 172cm, standing beside a desk stacked with neat document folders in a second-floor tax accounting office on a winter evening, a plain staff lanyard around the neck, a closed blank folder held in one hand, a silver ring on the right index finger, wearing a navy knit vest over a mustard-yellow collared shirt. Upper body portrait, three-quarter angle facing the viewer, a sharp sideways look over the glasses with lips pressed. Lighting: Tax office evening light: a warm desk lamp as a soft side key from the left with cool-white overhead tube light as a gentle fill and a dark winter window behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no bandana, no scar.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 유정빈(U, M) | {{생성일시}} — the name "유정빈(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 169 국우찬 × 윤태준
+- 타입: 대형견남 — 세 줄로 끊는 팀장 우찬에게 시안을 들고 신나서 달려오는 프리랜서
+- 나이·체격: 20대 후반, 186cm 큰 체격
+- 머리: 금발에 가까운 라이트 베이지 쉐도우 펌
+- 얼굴 포인트: 처진 둥근 눈매, 웃을 때 보이는 덧니
+- 옷 결: 오버핏 스트리트, 코발트·화이트
+- 소품: 거꾸로 쓴 볼캡
+- 목소리: Voice: sunny and eager, a happy rush in every line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, big tall build about 186cm, light beige near-blond shadow perm, round downturned eyes, a snaggletooth that shows when he grins, an oversized street look in cobalt and white, a baseball cap worn backwards. Voice: sunny and eager, a happy rush in every line, speaks slowly.`
+- 파일명: 169_국우찬x윤태준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad soft face with full cheeks, a rounded jawline ending in a soft chin, round downturned eyes with deep double eyelids and an eager bright gaze, thick softly arched light brows, a straight nose with a rounded tip, full lips with a wide grin line, a snaggletooth visible when he grins, and a sunny excited baseline expression. Hair: light beige near-blond shadow perm with loose separated waves over the ears — clearly different from dark brown side-parted hair tucked behind the ear. Character design: a late-20s man of big tall build about 186cm, standing at a long meeting-room table in a film company office on a spring afternoon, a slim laptop open beside a blank printed poster proof, a stylus pen held in one hand, a baseball cap worn backwards, wearing an oversized cobalt-blue hoodie under an open white coach jacket. Upper body portrait, three-quarter angle facing the viewer, a wide excited grin showing the snaggletooth, leaning in eagerly. Lighting: Film-company meeting room window light: a soft side key from a tall window on the left with cool-white overhead fill and a pale spring sky behind the blurred glass, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no dark hair, no side-swept fringe, no glasses, no earrings.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 국우찬(U, M) | {{생성일시}} — the name "국우찬(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 170 어건휘 × 서준희
+- 타입: 장난남 — 차갑게 선을 긋는 건휘의 옆자리에서 4년째 장난을 거는 국어 강사
+- 나이·체격: 30대 초반, 178cm 보통 체격
+- 머리: 검정 짧은 투블럭
+- 얼굴 포인트: 둥근 눈, 오른쪽 볼 보조개
+- 옷 결: 컬러 니트 캐주얼, 오렌지·네이비
+- 소품: 목에 건 헤드폰
+- 목소리: Voice: light and teasing, a grin you can hear, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, average build about 178cm, black short two-block cut, round eyes, a dimple on the right cheek, a colorful knit casual look in orange and navy, headphones around the neck. Voice: light and teasing, a grin you can hear, speaks slowly.`
+- 파일명: 170_어건휘x서준희.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact oval face with soft cheeks, a gently tapered jawline ending in a neat chin, round eyes with clear double eyelids and a playful gleam, straight dark brows, a short straight nose, lips with a teasing grin line, a dimple on the right cheek, and a mischievous baseline expression. Hair: black short two-block cut with closely trimmed sides and a short textured top, the forehead showing — clearly different from dark ash-brown center-parted hair. Character design: an early-30s man of average build about 178cm, seated at a desk in a cram-school staff room on a late-autumn night, a stack of blank Korean-language textbooks beside one hand holding a red pen, headphones around the neck, wearing an orange knit sweater over a navy collared shirt. Upper body portrait, three-quarter angle facing the viewer, a teasing grin with the dimple showing, glancing sideways as if about to joke. Lighting: Cram-school staff room night light: a cool-white fluorescent ceiling light with a soft side fill from a desk lamp and a dark winter-night window behind the blurred room, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no ash-brown hair, no side-swept fringe, no glasses, no freckles.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 어건휘(U, M) | {{생성일시}} — the name "어건휘(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 171 편세온 × 정현승
+- 타입: 능글남 — 까칠한 입사 동기 세온의 잔소리를 웃으며 받아넘기는 세무과 동기
+- 나이·체격: 30대 초반, 180cm 슬림한 장신
+- 머리: 밀크 브라운 가르마 펌
+- 얼굴 포인트: 처진 눈매, 왼쪽 눈 밑 작은 점
+- 옷 결: 스트라이프 셔츠 레이어드, 하늘색·차콜
+- 소품: 손목에 감은 검정 머리끈
+- 목소리: Voice: easygoing and sly, a lazy smile in the vowels, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, lean build about 180cm, milk-brown middle-parted perm, softly downturned eyes, a small mole under the left eye, a layered striped-shirt look in sky blue and charcoal, a black hair tie around the wrist. Voice: easygoing and sly, a lazy smile in the vowels, speaks slowly.`
+- 파일명: 171_편세온x정현승.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with gentle cheeks, a smooth jawline ending in a rounded chin, softly downturned eyes with deep double eyelids and an easy amused gaze, gently arched brown brows, a straight nose with a soft tip, lips with a lazy smile line, a small mole under the left eye, and a relaxed sly baseline expression. Hair: milk-brown middle-parted perm with soft waves falling away from the center and over the tops of the ears — clearly different from black hair pushed back with fingers. Character design: an early-30s man of lean build about 180cm, seated at a desk in a county-office tax division on an early autumn afternoon, a blank calculator and a stack of blank tax forms beside one hand holding a canned barley tea with a plain unlettered can, a black hair tie around the wrist, wearing a sky-blue striped shirt under a charcoal knit vest. Upper body portrait, three-quarter angle facing the viewer, an easy sly smile with a lazy amused look. Lighting: Civil-service counter afternoon light: a cool-white fluorescent ceiling light with a soft daylight side fill from a tall window, a blurred waiting area with rows of chairs behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 편세온(U, M) | {{생성일시}} — the name "편세온(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 172 최래원 × 오성훈
+- 타입: 냉정남 — 매주 반갑게 달려오는 영업사원 래원을 담담하게 맞는 약사
+- 나이·체격: 30대 초반, 175cm 슬림
+- 머리: 애쉬 그레이 리젠트
+- 얼굴 포인트: 외꺼풀의 날카로운 눈매, 왼쪽 눈썹 끝 흉터
+- 옷 결: 클래식 니트와 슬랙스, 차콜·버건디
+- 소품: 왼손 약지의 은반지
+- 목소리: Voice: calm and cool, precise with no wasted words, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 175cm, ash-gray regent hair, sharp monolid eyes, a small scar at the tail of the left eyebrow, a classic knit and slacks look in charcoal and burgundy, a silver ring on the left ring finger. Voice: calm and cool, precise with no wasted words, speaks slowly.`
+- 파일명: 172_최래원x오성훈.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim long face with lean cheeks, a sharp straight jawline ending in a pointed chin, sharp monolid eyes with a calm level gaze, straight thin dark brows with a small scar at the tail of the left brow, a high straight nose, thin lips held in a calm line, and a cool composed baseline expression. Hair: ash-gray regent with the front lifted in a neat quiff and tapered sides — clearly different from a loose fringe of dark brown natural waves. Character design: an early-30s man of slim build about 175cm, standing behind the counter of a neighborhood pharmacy on a spring morning, a white pharmacist coat over a burgundy fine-knit sweater, a blank lanyard card, a small tray of plain unlabeled medicine boxes beside one hand holding a pen over a blank form, a silver ring on the left ring finger. Upper body portrait, three-quarter angle facing the viewer, a calm level look with closed lips and no smile. Lighting: Pharmacy morning daylight: bright soft daylight pouring through the front glass door from one side, a blurred counter and shelves of plain boxes behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no brown hair, no side-swept fringe, no glasses, no freckles.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 최래원(U, M) | {{생성일시}} — the name "최래원(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 173 마재우 × 강태온
+- 타입: 허당남 — 계산 빠른 후배 재우의 수에 번번이 걸려드는 팀장
+- 나이·체격: 30대 중반, 177cm 보통 체격
+- 머리: 다크 초콜릿 쉼표 머리
+- 얼굴 포인트: 처진 큰 눈, 왼쪽 볼 보조개
+- 옷 결: 리넨 셔츠 캐주얼, 민트·화이트
+- 소품: 어깨에 멘 캔버스 크로스백
+- 목소리: Voice: warm and slightly scattered, a sheepish laugh in between, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-30s Korean man, average build about 177cm, dark chocolate comma hair, large downturned eyes, a dimple on the left cheek, a relaxed linen shirt look in mint and white, a canvas crossbody bag. Voice: warm and slightly scattered, a sheepish laugh in between, speaks slowly.`
+- 파일명: 173_마재우x강태온.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A settled adult face, polished and camera-ready, never juvenile. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with gentle cheeks, a rounded jawline ending in a soft chin, large downturned eyes with deep double eyelids and a slightly lost gaze, softly arched dark-brown brows, a straight nose with a rounded tip, soft lips with a sheepish smile line, a dimple on the left cheek, and a warm slightly scattered baseline expression. Hair: dark chocolate comma hair with the fringe curled in a soft comma and the ears half covered — clearly different from a short black swept-up two-block cut. Character design: a mid-30s man of average build about 177cm, standing at a desk in the office of a furniture company on a rainy early-summer morning, a blank lanyard card, one hand resting on a plain wooden drawer-rail sample box beside a blank weekly assignment board, a canvas crossbody bag, wearing a mint linen shirt over a white tee. Upper body portrait, three-quarter angle facing the viewer, a sheepish confused smile with the dimple showing. Lighting: Furniture-company office morning light: soft cool daylight from rain-streaked windows on one side with the warm tones of a blurred wooden office behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 마재우(U, M) | {{생성일시}} — the name "마재우(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 174 전강율 × 송한빈
+- 타입: 장난남 — 묵묵히 챙기는 PD 강율에게 방송 전 장난부터 거는 DJ
+- 나이·체격: 30대 초반, 172cm 슬림
+- 머리: 와인 브라운 울프컷
+- 얼굴 포인트: 올라간 고양이 눈매, 웃을 때 보이는 덧니
+- 옷 결: 레트로 트랙 재킷, 레드·크림
+- 소품: 손목의 나무 비즈 팔찌
+- 목소리: Voice: bright and playful, a bouncy rhythm, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 172cm, wine-brown wolf cut, upturned cat-like eyes, a snaggletooth that shows when he grins, a retro track-jacket look in red and cream, a wooden bead bracelet on the wrist. Voice: bright and playful, a bouncy rhythm, speaks slowly.`
+- 파일명: 174_전강율x송한빈.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small sharp face with high cheekbones, a tapered jawline ending in a pointed chin, upturned cat-like eyes with thin double eyelids and a playful glint, straight dark brows angled upward, a slim nose, lips with a bouncy grin line, a snaggletooth visible when he grins, and a lively teasing baseline expression. Hair: wine-brown wolf cut with a layered choppy crown, a short ragged fringe and longer strands at the nape — clearly different from dark brown-black nape-length loose waves. Character design: an early-30s man of slim build about 172cm, a radio host seated at a softly blurred radio booth desk before dawn, a condenser microphone on a boom arm in front (no lettering), a steaming cup-lid of tea on the desk, a wooden bead bracelet on the wrist, wearing a red retro track jacket over a cream tee. Upper body portrait, three-quarter angle facing the viewer, a playful grin showing the snaggletooth and a mischievous wink-like squint. Lighting: Pre-dawn radio control-room light: a single warm desk lamp from the left as the key, cool blue console glow as soft fill, a pale blue pre-dawn glow through the booth window, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no headphones.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 전강율(U, M) | {{생성일시}} — the name "전강율(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 175 안여준 × 임지완
+- 타입: 유혹남 — 철벽 안경사 여준의 선을 여유로운 눈빛으로 흔드는 점장
+- 나이·체격: 30대 초반, 183cm 길쭉한 체격
+- 머리: 블루 블랙 장발 묶음(꽁지)
+- 얼굴 포인트: 처진 눈매, 오른쪽 입가 작은 점
+- 옷 결: 오픈칼라 셔츠, 블랙·에메랄드
+- 소품: 목에 건 은색 체인 목걸이
+- 목소리: Voice: low and velvety, a slow knowing warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, long lean build about 183cm, blue-black long hair tied in a low ponytail, softly downturned eyes, a small mole at the right corner of the mouth, an open-collar shirt look in black and emerald, a silver chain necklace. Voice: low and velvety, a slow knowing warmth, speaks slowly.`
+- 파일명: 175_안여준x임지완.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long refined face with high cheekbones, a smooth jawline ending in a slim chin, softly downturned eyes with deep double eyelids and a slow knowing gaze, softly arched dark brows, a high straight nose, full lips with a faint curling smile, a small mole at the right corner of the mouth, and a languid alluring baseline expression. Hair: blue-black long hair tied in a low ponytail at the nape with a few loose strands framing the face — clearly different from dark brown left-parted medium hair. Character design: an early-30s man of long lean build about 183cm, an eyeglass shop manager standing behind a softly blurred fitting counter holding a small round steel tray of eyeglass frames, a silver chain necklace at the open collar, wearing a black open-collar shirt under an emerald-green knit cardigan. Upper body portrait, three-quarter angle facing the viewer, a slow knowing half smile with a lingering gaze. Lighting: Optical-shop afternoon light: a warm pendant lamp over the fitting counter as the key, soft cool daylight from the shop door behind as a gentle rim backlight, subtle glass reflections kept soft, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no brown hair, no side-swept fringe, no glasses.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 안여준(U, M) | {{생성일시}} — the name "안여준(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 176 구해림 × 배시경
+- 타입: 철벽남 — 허당 소장 해림의 빈틈을 챙기면서도 선은 지키는 디자이너
+- 나이·체격: 20대 후반, 178cm 슬림
+- 머리: 카키 브라운 가르마 펌
+- 얼굴 포인트: 사각 뿔테 안경, 외꺼풀의 올라간 눈매
+- 옷 결: 단정한 셔츠 레이어드, 네이비·아이보리
+- 소품: 손목의 가죽 스트랩 시계
+- 목소리: Voice: even and reserved, polite with a firm line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 178cm, khaki-brown middle-parted perm, square horn-rimmed glasses over upturned monolid eyes, a neat layered shirt look in navy and ivory, a leather-strap wristwatch. Voice: even and reserved, polite with a firm line, speaks slowly.`
+- 파일명: 176_구해림x배시경.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim oval face with lean cheeks, a straight jawline ending in a neat chin, upturned monolid eyes behind square horn-rimmed glasses with a reserved polite gaze, straight dark brows, a slim straight nose, thin lips held in a closed line, and a courteous guarded baseline expression. Hair: khaki-brown middle-parted perm with soft waves curving away from the center part — clearly different from black ear-length soft curls pushed back. Character design: a late-20s man of slim build about 178cm, an interior designer standing in a softly blurred bright empty living room holding a rolled floor plan against the chest with a pencil in the other hand, a leather-strap wristwatch, wearing a navy knit vest over an ivory collared shirt. Upper body portrait, three-quarter angle facing the viewer, a polite reserved look with a small closed-lip smile that keeps its distance. Lighting: Spring afternoon window side light: soft warm daylight streaming from a large window at frame left as the key, gentle bounce fill from the pale bare walls, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no curls, no scar.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 구해림(U, M) | {{생성일시}} — the name "구해림(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 177 윤모아 × 홍인호
+- 타입: 까칠남 — 장난치는 진행자 모아에게 편집실 문턱에서 한마디씩 받아치는 편집자
+- 나이·체격: 20대 후반, 183cm 마른 장신
+- 머리: 흑갈색 리젠트
+- 얼굴 포인트: 외꺼풀 눈매, 왼쪽 눈썹 끝 흉터
+- 옷 결: 올블랙 스트리트, 검정·실버
+- 소품: 오른쪽 귀의 은색 이어커프
+- 목소리: Voice: dry and curt, a sharp little bite, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, tall lean build about 183cm, dark brown-black regent hair, monolid eyes, a small scar at the tail of the left eyebrow, an all-black street look with silver accents, a silver ear cuff on the right ear. Voice: dry and curt, a sharp little bite, speaks slowly.`
+- 파일명: 177_윤모아x홍인호.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long lean face with sharp cheekbones, a tapered jawline ending in a pointed chin, monolid eyes with a dry skeptical gaze, straight dark brows with a small scar at the tail of the left brow, a high straight nose, thin lips with a dry curl at one corner, a silver ear cuff on the right ear, and a curt unimpressed baseline expression. Hair: dark brown-black regent with the front lifted in a rounded quiff and tight sides, the forehead showing — clearly different from dark ash-brown hair with an eyebrow-length fringe. Character design: a late-20s man of tall lean build about 183cm, a video editor standing beside a camera on a tripod in the softly blurred bright studio kitchen set, one hand resting on the camera's side screen, wearing an all-black street look of a black bomber jacket over a black tee with a silver chain detail. Upper body portrait, three-quarter angle facing the viewer, a dry skeptical look with one corner of the mouth curled. Lighting: Studio kitchen set light: a large overhead softbox as the soft key with warm practical pendant lamps glowing in the background, gentle bounce fill from the white tile wall, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no ash-brown hair, no side-swept fringe, no glasses, no freckles.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 윤모아(U, M) | {{{{생성일시}}}} — the name "윤모아(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 178 석원제 × 조형준
+- 타입: 철벽남 — 곧장 다가오는 파티시에 원제에게 5년째 한 발짝 거리를 두는 단골
+- 나이·체격: 30대 초반, 173cm 슬림
+- 머리: 은회색 쉐도우 펌
+- 얼굴 포인트: 처진 눈매, 콧등과 볼의 옅은 주근깨
+- 옷 결: 오피스 트렌치와 셔츠, 카멜·아이보리
+- 소품: 오른손 중지의 은반지
+- 목소리: Voice: quiet and guarded, careful and polite, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 173cm, silver-gray shadow perm, softly downturned eyes, faint freckles across the nose and cheeks, an office trench and shirt look in camel and ivory, a silver ring on the right middle finger. Voice: quiet and guarded, careful and polite, speaks slowly.`
+- 파일명: 178_석원제x조형준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small soft oval face with gentle cheeks, a smooth jawline ending in a rounded chin, softly downturned eyes with soft double eyelids and a quiet careful gaze, gently straight brows, a straight nose with a soft tip, small lips held in a polite line, faint freckles across the nose and cheeks, and a guarded reserved baseline expression. Hair: silver-gray shadow perm with loose separated waves falling over the ears — clearly different from black medium hair pushed back with fingers. Character design: an early-30s man of slim build about 173cm, a regular customer standing at the glass front door of the softly blurred warm pastry shop at dusk with a small closed cake box held in one hand, a silver ring on the right middle finger, wearing a camel trench coat over an ivory shirt. Upper body portrait, three-quarter angle facing the viewer, a polite careful half smile that does not reach the eyes, keeping a step back. Lighting: Pastry shop evening light: a warm pendant lamp above the counter as the soft key, the glowing cake showcase as a gentle side fill, cool blue winter dusk glimmering through the glass front door behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 석원제(U, M) | {{생성일시}} — the name "석원제(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 179 연서후 × 유재현
+- 타입: 사이다남 — 6년 전 일을 곱씹는 서후에게 지난 일은 시원하게 말해 버리는 옛 룸메이트
+- 나이·체격: 30세, 177cm 보통 체격
+- 머리: 애쉬 그레이 히피 펌
+- 얼굴 포인트: 크고 둥근 눈, 콧등의 작은 흉터
+- 옷 결: 아웃도어 고프코어, 올리브·주황
+- 소품: 눌러쓴 캡 모자
+- 목소리: Voice: clear and frank, a brisk honest warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: 30-year-old Korean man, average build about 177cm, ash-gray hippie perm, large round eyes, a small scar on the bridge of the nose, a gorpcore outdoor look in olive and orange, a baseball cap. Voice: clear and frank, a brisk honest warmth, speaks slowly.`
+- 파일명: 179_연서후x유재현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact round face with soft cheeks, a rounded jawline ending in a neat chin, large round eyes with clear double eyelids and a frank direct gaze, straight dark brows, a straight nose with a small scar on the bridge, lips with a brisk honest smile line, and a candid open baseline expression. Hair: ash-gray hippie perm with tight loose curls to the ears — clearly different from a black two-block cut combed up and back. Character design: a 30-year-old man of average build about 177cm, a customer seated in the vintage barber chair facing the large wall mirror of the softly blurred barbershop at early evening, a white barber cape draped over the shoulders above an olive fleece collar with orange trim, a baseball cap resting on the knee. Upper body portrait, three-quarter angle facing the viewer, a frank straightforward look with a brisk honest smile. Lighting: Barbershop late-afternoon light: soft window side light from the street-facing glass as the key, a warm pendant lamp above the mirror as a gentle fill, the faint red, white and blue glimmer of the barber pole blurred behind the glass door, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 연서후(U, M) | {{생성일시}} — the name "연서후(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 180 설지노 × 신석진
+- 타입: 냉정남 — 능글맞게 기대는 후배 지노를 무표정으로 받아 주는 선임 포토 에디터
+- 나이·체격: 30대 초반, 175cm 슬림
+- 머리: 애쉬 그레이 크롭컷
+- 얼굴 포인트: 외꺼풀 눈매, 오른쪽 귓불 작은 피어싱
+- 옷 결: 모노톤 워크 재킷, 블랙·차콜·화이트
+- 소품: 검정 볼캡
+- 목소리: Voice: low and cool, sparse and exact, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 175cm, ash-gray crop cut, monolid eyes, a small stud in the right earlobe, a monotone work-jacket look in black, charcoal and white, a black baseball cap. Voice: low and cool, sparse and exact, speaks slowly.`
+- 파일명: 180_설지노x신석진.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim angular face with lean cheeks, a sharp jawline ending in a narrow chin, monolid eyes with a cool level gaze, straight thin dark brows, a high straight nose, thin lips held in an even line, a small stud in the right earlobe, and a cool sparse baseline expression. Hair: ash-gray short crop cut with a blunt textured fringe high on the forehead and tidy sides — clearly different from dark brown-black nape-length center-parted hair. Character design: an early-30s man of slim build about 175cm, a senior photo editor seated at a long editorial desk in the softly blurred magazine office at late afternoon, a black baseball cap, a stack of printed page proofs on the desk, wearing a monotone charcoal work jacket over a white tee. Upper body portrait, three-quarter angle facing the viewer, a cool level gaze with no smile, unreadable. Lighting: Magazine office late-afternoon light: low autumn sun through the tall west-facing window as a soft warm rim backlight, a green-shaded desk lamp as a gentle warm fill on the face, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no center part.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 설지노(U, M) | {{생성일시}} — the name "설지노(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 181 나승재 × 황경수
+- 타입: 순정남 — 여유롭게 흔드는 코치 승재 앞에서 마음이 그대로 드러나는 회원
+- 나이·체격: 20대 후반, 172cm 슬림
+- 머리: 금발에 가까운 라이트 베이지 바가지 머리
+- 얼굴 포인트: 처진 둥근 눈매, 왼쪽 볼 보조개
+- 옷 결: 파스텔 스포티, 라벤더·화이트
+- 소품: 니트 비니
+- 목소리: Voice: soft and sincere, a careful earnest tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 172cm, light beige near-blond bowl cut, round softly downturned eyes, a dimple on the left cheek, a pastel sporty look in lavender and white, a knit beanie. Voice: soft and sincere, a careful earnest tone, speaks slowly.`
+- 파일명: 181_나승재x황경수.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft cheeks, a gently rounded jawline ending in a small chin, round softly downturned eyes with soft double eyelids and an earnest gaze, softly arched light brows, a short straight nose, soft lips with a shy smile line, a dimple on the left cheek, and a sincere gentle baseline expression. Hair: light beige near-blond bowl cut with a straight full fringe over the brows and rounded sides — clearly different from dark brown hair with a loose fringe pushed back. Character design: a late-20s man of slim build about 172cm, a regular lesson member standing on the same softly blurred early-morning tennis court with a racket held loosely at the side beside a bench and a ginkgo tree turning yellow, a knit beanie, wearing a lavender half-zip pullover over a white tee. Upper body portrait, three-quarter angle facing the viewer, a shy sincere smile with the dimple showing and eyes slightly lowered. Lighting: Early-morning outdoor court light: a low sun just clearing the chain-link fence as a soft golden-white side light on the cheek, a cool dewy shadow fill, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous with healthy warmth, never sallow. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no dark hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 나승재(U, M) | {{생성일시}} — the name "나승재(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 182 염수온 × 노대현
+- 타입: 다정남 — 퉁명스러운 주방장 수온을 4년째 웃으며 챙기는 연인
+- 나이·체격: 30대 초반, 178cm 보통 체격
+- 머리: 애쉬 브라운 반묶음
+- 얼굴 포인트: 둥근 눈, 웃을 때 보이는 덧니
+- 옷 결: 니트 카디건 캐주얼, 오트밀·테라코타
+- 소품: 손목에 감은 실팔찌
+- 목소리: Voice: warm and gentle, a soft smile in each line, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, average build about 178cm, ash-brown hair tied half-up, round eyes, a snaggletooth that shows when he smiles, a casual knit cardigan look in oatmeal and terracotta, a braided string bracelet on the wrist. Voice: warm and gentle, a soft smile in each line, speaks slowly.`
+- 파일명: 182_염수온x노대현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with gentle cheeks, a rounded jawline ending in a soft chin, round eyes with warm double eyelids and a kind gaze, softly arched brown brows, a straight nose with a rounded tip, full lips with a warm smile line, a snaggletooth visible when he smiles, and a gentle warm baseline expression. Hair: ash-brown shoulder-grazing hair tied half-up with soft loose ends — clearly different from a black short two-block cut with a damp flat fringe. Character design: an early-30s man of average build about 178cm, seated at the inner window-side second table of a softly blurred neighborhood Chinese restaurant in the early evening, a steaming bowl of red seafood noodle soup and a pair of wooden chopsticks on the table in front of him, a braided string bracelet on the wrist, wearing a terracotta knit cardigan over an oatmeal tee. Upper body portrait, three-quarter angle facing the viewer, a soft warm smile showing the snaggletooth, eyes gentle. Lighting: Warm Chinese-restaurant kitchen light: a soft glow from the wok flame and a warm practical lamp over the counter as a gentle warm side light on the jaw and cheek, a cool-neutral fill keeping the skin tone clean, light steam softening the background, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no scar.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 염수온(U, M) | {{생성일시}} — the name "염수온(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 183 배원재 × 문범준
+- 타입: 장난남 — 수줍은 순정파 남편 원재에게 문구점 앞에서 장난을 거는 배우자
+- 나이·체격: 30대 초반, 182cm 탄탄한 체격
+- 머리: 검정 버즈컷
+- 얼굴 포인트: 올라간 고양이 눈매, 왼쪽 귀 작은 피어싱
+- 옷 결: 스트리트 캐주얼, 그린·블랙
+- 소품: 손에 든 자전거 헬멧
+- 목소리: Voice: lively and mischievous, a quick teasing tilt, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, firm build about 182cm, black buzz cut, upturned cat-like eyes, a small piercing in the left ear, a street casual look in green and black, a bicycle helmet in hand. Voice: lively and mischievous, a quick teasing tilt, speaks slowly.`
+- 파일명: 183_배원재x문범준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact angular face with defined cheekbones, a tapered jawline ending in a neat chin, upturned cat-like eyes with thin double eyelids and a mischievous glint, straight dark brows, a straight slim nose, lips with a cheeky grin line, a small piercing in the left ear, and a playful baseline expression. Hair: black buzz cut cropped very short all over with a clean hairline — clearly different from deep ash-brown soft medium curls. Character design: an early-30s man of firm build about 182cm, standing just inside the glass door of a softly blurred neighborhood stationery shop in the morning, a single red coloring pencil held in one hand, a bicycle helmet hanging from the other, wearing a green street windbreaker over a black hoodie. Upper body portrait, three-quarter angle facing the viewer, a cheeky grin with a teasing squint. Lighting: Spring shop window light: soft daylight from the shop's glass door falls from the left as a gentle side light across the cheek and the glasses, a cool-neutral fill keeping the skin tone clean, pastel stationery shelves softly blurred behind, restrained halation, shallow depth of field, low saturation and low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no brown hair, no curls, no side-swept fringe, no glasses.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 배원재(U, M) | {{생성일시}} — the name "배원재(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 184 채준오 × 남수혁
+- 타입: 무심남 — 신나서 달려오는 신입 트레이너 준오를 덤덤하게 받아 주는 관장
+- 나이·체격: 30대 중반, 176cm 단단한 슬림
+- 머리: 다크 초콜릿 올백
+- 얼굴 포인트: 외꺼풀 눈매, 오른쪽 눈썹 끝 흉터
+- 옷 결: 모노톤 셋업, 차콜·블랙·화이트
+- 소품: 목에 건 은색 체인 목걸이
+- 목소리: Voice: deep and flat, calm and few words, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-30s Korean man, lean firm build about 176cm, dark chocolate hair combed straight back, monolid eyes, a small scar at the tail of the right eyebrow, a monotone setup look in charcoal, black and white, a silver chain necklace. Voice: deep and flat, calm and few words, speaks slowly.`
+- 파일명: 184_채준오x남수혁.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A settled adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a lean long face with flat cheeks, a straight jawline ending in a firm chin, monolid eyes with a calm indifferent gaze, straight dark brows with a small scar at the tail of the right brow, a high straight nose, thin lips in a flat line, and a deadpan unbothered baseline expression. Hair: dark chocolate hair combed straight back from the forehead in a sleek all-back with short sides — clearly different from short-sided black hair with a soft wave and loose bangs. Character design: a mid-30s man of lean firm build about 176cm, a gym owner standing at the front counter of a softly blurred pre-dawn neighborhood gym, a ring of keys held in one hand and a steel water bottle in the other, a silver chain necklace, wearing a monotone charcoal setup jacket over a black tee with white trim. Upper body portrait, three-quarter angle facing the viewer, a deadpan calm look with no smile, unbothered. Lighting: Pre-dawn gym practical light: cool blue-gray early light from the tall windows behind the subject edges the hair and shoulders as a soft rim light, a single warm downlight over the front counter falls from the upper right as a gentle key across the cheek, a cool-neutral fill keeping the skin tone clean, mirrored wall and treadmills softly blurred behind, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no freckles.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 채준오(U, M) | {{생성일시}} — the name "채준오(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 185 모세윤 × 전현규
+- 타입: 허당남 — 할 말은 하는 소장 세윤 앞에서 서류도 열쇠도 자꾸 헷갈리는 중개보조원
+- 나이·체격: 20대 후반, 177cm 보통 체격
+- 머리: 흑갈색 쉼표 머리
+- 얼굴 포인트: 처진 둥근 눈매, 웃을 때 보이는 덧니
+- 옷 결: 컬러 캐주얼, 옐로·데님
+- 소품: 어깨에 멘 캔버스 크로스백
+- 목소리: Voice: bright and fumbling, a nervous laugh at the end, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, average build about 177cm, dark brown-black comma hair, round downturned eyes, a snaggletooth that shows when he smiles, a colorful casual look in yellow and denim, a canvas crossbody bag. Voice: bright and fumbling, a nervous laugh at the end, speaks slowly.`
+- 파일명: 185_모세윤x전현규.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft cheeks, a rounded jawline ending in a soft chin, round downturned eyes with soft double eyelids and a slightly nervous gaze, softly arched dark brows, a short straight nose, lips with a fumbling smile line, a snaggletooth visible when he smiles, and a flustered bright baseline expression. Hair: dark brown-black comma hair with the fringe curled in a soft comma and the ears showing — clearly different from dark ash-brown short hair swept back off the forehead. Character design: a late-20s man of average build about 177cm, a junior real-estate agent standing at a desk inside a softly blurred neighborhood real-estate office, a clipboard held against one forearm and a ring of keys in the other hand, a canvas crossbody bag, wearing a yellow knit cardigan over a light denim shirt. Upper body portrait, three-quarter angle facing the viewer, a nervous sheepish smile showing the snaggletooth, as if he mixed up the keys. Lighting: Late-afternoon alley practical light: low warm sun slanting between the buildings from camera-left falls as a soft key across the cheek and edges the hair with a faint golden rim, a cool-neutral fill keeping the skin tone clean, the glass shopfront door and the narrow alley softly blurred behind, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no ash-brown hair, no swept-back hair, no side-swept fringe, no glasses.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 모세윤(U, M) | {{생성일시}} — the name "모세윤(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 186 허선호 × 백동윤
+- 타입: 직진남 — 힌트처럼 돌려 말하는 선호에게 정답부터 말하는 사장
+- 나이·체격: 30대 초반, 182cm 탄탄한 체격
+- 머리: 애쉬 브라운 짧은 투블럭
+- 얼굴 포인트: 크고 둥근 눈, 왼쪽 볼 보조개
+- 옷 결: 스포티 캐주얼, 네이비·레드
+- 소품: 벨트 고리에 건 열쇠 카라비너
+- 목소리: Voice: clear and bold, steady and straightforward, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, firm build about 182cm, ash-brown short two-block cut, large round eyes, a dimple on the left cheek, a sporty casual look in navy and red, a key carabiner clipped to the belt loop. Voice: clear and bold, steady and straightforward, speaks slowly.`
+- 파일명: 186_허선호x백동윤.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact oval face with soft cheeks, a clean jawline ending in a neat chin, large round eyes with clear double eyelids and a direct bold gaze, thick straight dark brows, a straight nose, full lips with a confident smile line, a dimple on the left cheek, and a forthright baseline expression. Hair: ash-brown short two-block cut with closely trimmed sides and a short textured top — clearly different from dark brown-black nape-length center-parted hair. Character design: an early-30s man of firm build about 182cm, the owner-manager of an escape-room cafe standing just inside the doorway of a softly blurred control room with dim monitors glowing behind, a paper cup of barley tea held in one hand and a few blank hint cards in the other, a key carabiner on the belt loop, wearing a navy sporty jacket with red trim over a white tee. Upper body portrait, three-quarter angle facing the viewer, a bold direct gaze with a confident smile and the dimple showing. Lighting: Dim control-room practical light: a small warm desk lamp from camera-left falls as a soft key across the cheek while the blue-green glow of the monitors from camera-right edges the jaw and hair with a faint cool rim, a cool-neutral fill keeping the skin tone clean, the monitor bank and the door crack softly blurred behind, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no center part.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 허선호(U, M) | {{생성일시}} — the name "허선호(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 187 육지안 × 안태경
+- 타입: 까칠남 — 능글맞은 원장 지안의 농담에 매번 뾰족하게 답하는 위층 영어 강사
+- 나이·체격: 20대 후반, 174cm 슬림
+- 머리: 밀크 브라운 히피 펌
+- 얼굴 포인트: 둥근 뿔테 안경, 올라간 눈매
+- 옷 결: 프레피 니트 조끼, 그린·크림
+- 소품: 어깨에 멘 캔버스 토트백
+- 목소리: Voice: crisp and tart, quick to correct, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 174cm, milk-brown hippie perm, round horn-rimmed glasses over upturned eyes, a preppy knit vest look in green and cream, a canvas tote bag over the shoulder. Voice: crisp and tart, quick to correct, speaks slowly.`
+- 파일명: 187_육지안x안태경.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small sharp face with high cheekbones, a tapered jawline ending in a narrow chin, upturned eyes behind round horn-rimmed glasses with a critical gaze, straight thin brows, a slim straight nose, thin lips with a tart line, and a prickly brisk baseline expression. Hair: milk-brown hippie perm with tight loose curls to the ears — clearly different from short black hair parted at two to eight. Character design: a late-20s man of slim build about 174cm, an English academy teacher standing in the bright doorway of a softly blurred clinic waiting room, a paper cup of citron tea held in both hands, a canvas tote bag on the shoulder, wearing a green knit vest over a cream collared shirt. Upper body portrait, three-quarter angle facing the viewer, a tart sideways look with lips pressed, one brow raised. Lighting: Soft winter window light in a clinic exam room: pale daylight through frosted glass from camera-right falls as a soft key across the cheek and jaw, a warm-white ceiling light adds a gentle fill from camera-left, the exam chair and cabinet softly blurred behind, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side part, no side-swept fringe, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 육지안(U, M) | {{생성일시}} — the name "육지안(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 188 연제호 × 고효준
+- 타입: 다정남 — 말 없는 악기점 사장 제호에게 3년째 고맙다는 말을 먼저 건네는 음악 교사
+- 나이·체격: 30대 초반, 178cm 보통 체격
+- 머리: 금발에 가까운 라이트 베이지 가르마 펌
+- 얼굴 포인트: 처진 눈매, 오른쪽 볼 보조개
+- 옷 결: 클래식 니트 카디건, 머스터드·브라운
+- 소품: 손목의 가는 가죽 팔찌
+- 목소리: Voice: mellow and kind, a soft encouraging lilt, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, average build about 178cm, light beige near-blond middle-parted perm, softly downturned eyes, a dimple on the right cheek, a classic knit cardigan look in mustard and brown, a thin leather bracelet on the wrist. Voice: mellow and kind, a soft encouraging lilt, speaks slowly.`
+- 파일명: 188_연제호x고효준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with gentle cheeks, a smooth jawline ending in a rounded chin, softly downturned eyes with warm double eyelids and a kind gaze, softly arched light brows, a straight nose with a soft tip, full lips with a gentle smile line, a dimple on the right cheek, and a mellow warm baseline expression. Hair: light beige near-blond middle-parted perm with soft waves curving away from the center — clearly different from dark brown medium hair with a soft fringe. Character design: an early-30s man of average build about 178cm, a middle school music teacher standing inside a softly blurred instrument shop with a small violin case held against the chest in one arm, a thin leather bracelet on the wrist, wearing a mustard knit cardigan over a brown collared shirt. Upper body portrait, three-quarter angle facing the viewer, a warm encouraging smile with the dimple showing. Lighting: Warm single practical light in an instrument repair shop: a gooseneck workbench lamp from camera-left casts a warm key across the cheek and jaw, soft cool dusk daylight through the shop window from camera-right adds a gentle fill, guitars on the wall and a pegboard of strings softly blurred behind, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no dark hair, no side-swept fringe, no glasses, no scar.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 연제호(U, M) | {{생성일시}} — the name "연제호(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+```
+
+### 189 고해찬 × 구성진
+- 타입: 대형견남 — 퉁명스러운 도시락 가게 사장 해찬에게 점심마다 환하게 웃는 주무관
+- 나이·체격: 20대 후반, 187cm 큰 덩치
+- 머리: 카키 브라운 쉐도우 펌
+- 얼굴 포인트: 둥글고 처진 눈매, 왼쪽 볼 보조개
+- 옷 결: 고프코어 아웃도어, 주황·네이비
+- 소품: 니트 비니
+- 목소리: Voice: big and sunny, an eager warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, large broad build about 187cm, khaki-brown shadow perm, round downturned eyes, a dimple on the left cheek, a gorpcore outdoor look in orange and navy, a knit beanie. Voice: big and sunny, an eager warmth, speaks slowly.`
+- 파일명: 189_고해찬x구성진.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a broad soft face with full cheeks, a rounded strong jawline ending in a soft chin, round downturned eyes with deep double eyelids and an eager gaze, thick softly arched brown brows, a straight nose with a rounded tip, full lips with a wide smile line, a dimple on the left cheek, and a sunny eager baseline expression. Hair: khaki-brown shadow perm with loose separated waves over the ears — clearly different from a black short-sided swept-up cut. Character design: a late-20s man of large broad build about 187cm, a district office civil servant standing at the counter of a softly blurred lunch-box shop holding a small paper takeout bag in one hand, a staff ID lanyard with a blank card around the neck, a knit beanie, wearing an orange fleece half-zip over a navy collared shirt. Upper body portrait, three-quarter angle facing the viewer, a big sunny smile with the dimple showing, leaning in eagerly. Lighting: Warm midday practical light in a small lunch-box shop: soft spring daylight through the shop window from camera-right casts a clean key across the cheek and jaw, a warm overhead pendant lamp from camera-left adds a gentle fill, a stainless steel counter and stacked lunch trays softly blurred behind, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 고해찬(U, M) | {{생성일시}} — the name "고해찬(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+```
+
+### 190 남규하 × 양재경
+- 타입: 계략남 — 허둥대는 낮조 규하가 인수인계 노트에서 뭘 놓칠지 미리 아는 저녁조 동료
+- 나이·체격: 30세, 180cm 슬림한 장신
+- 머리: 와인 브라운 장발 묶음(꽁지)
+- 얼굴 포인트: 올라간 눈매, 오른쪽 귓불 작은 피어싱
+- 옷 결: 다크 아카데미아 셔츠 레이어드, 브라운·크림
+- 소품: 왼손 검지의 은반지
+- 목소리: Voice: smooth and low, a quiet knowing edge, speaks slowly.
+- 영상용 한 줄: `his boyfriend: 30-year-old Korean man, lean build about 180cm, wine-brown long hair tied in a low ponytail, upturned eyes, a small stud in the right earlobe, a dark-academia layered shirt look in brown and cream, a silver ring on the left index finger. Voice: smooth and low, a quiet knowing edge, speaks slowly.`
+- 파일명: 190_남규하x양재경.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long refined face with high cheekbones, a smooth tapered jawline ending in a slim chin, upturned eyes with thin double eyelids and a quiet calculating gaze, straight dark brows, a high straight nose, lips with a faint knowing curl, a small stud in the right earlobe, and a composed scheming baseline expression. Hair: wine-brown long hair tied in a low ponytail at the nape with a few loose strands at the temples — clearly different from short neat dark brown center-parted hair. Character design: a 30-year-old man of lean build about 180cm, an evening-shift hotel front desk agent standing at the softly blurred marble front desk holding a hardcover handover notebook against the chest, a charcoal-navy hotel uniform vest over a crisp white shirt with a slim dark tie and a small name tag with a blank face, a brown knit cardigan draped over the forearm, a silver ring on the left index finger. Upper body portrait, three-quarter angle facing the viewer, a faint knowing smile and a quiet calculating look. Lighting: Warm late-afternoon lobby light: low golden autumn sun through the glass entrance doors from camera-left casts a clean key across the cheek and jaw, warm recessed ceiling downlights add a gentle fill from above, a marble desk and the lobby sofa softly blurred behind, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no short hair, no side-swept fringe, no glasses, no freckles.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 남규하(U, M) | {{생성일시}} — the name "남규하(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+```
+
+### 191 장민웅 × 하승헌
+- 타입: 철벽남 — 곧장 다가오는 네일숍 사장 민웅에게 손만 내밀고 마음은 지키는 단골
+- 나이·체격: 30대 초반, 181cm 슬림
+- 머리: 검정 크롭컷
+- 얼굴 포인트: 외꺼풀 눈매, 왼쪽 눈썹 중간 흉터
+- 옷 결: 미니멀 셔츠 수트, 차콜·화이트
+- 소품: 손목의 가죽 스트랩 시계
+- 목소리: Voice: cool and polite, a reserved distance, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 181cm, black crop cut, monolid eyes, a small scar through the middle of the left eyebrow, a minimal shirt-and-suit look in charcoal and white, a leather-strap wristwatch. Voice: cool and polite, a reserved distance, speaks slowly.`
+- 파일명: 191_장민웅x하승헌.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim long face with lean cheeks, a straight jawline ending in a firm chin, monolid eyes with a reserved polite gaze, straight dark brows with a small scar through the middle of the left brow, a high straight nose, thin lips held in a closed line, and a courteous guarded baseline expression. Hair: black short crop cut with a blunt textured fringe high on the forehead and tidy sides — clearly different from dark ash-brown loose medium waves. Character design: an early-30s man of slim build about 181cm, a regular customer sitting at the softly blurred nail table with one hand resting palm down on a cream hand-rest cushion under a white task lamp, a leather-strap wristwatch on the other wrist, wearing a charcoal suit jacket over a white shirt. Upper body portrait, three-quarter angle facing the viewer, a polite reserved look with a barely-there closed-lip smile. Lighting: Soft bright morning window light: diffused white autumn morning light through the salon window from camera-left wraps the cheek and jaw with a clean key, a small white task lamp adds a gentle warm fill from the lower right, a window display of blank pastel color tips and the nail table softly blurred behind, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no ash-brown hair, no waves, no side-swept fringe, no glasses.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 장민웅(U, M) | {{생성일시}} — the name "장민웅(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+```
+
+### 192 조택우 × 차윤성
+- 타입: 까칠남 — 장난치는 25년 소꿉친구 택우에게 지지 않고 받아치는 쪽
+- 나이·체격: 33세, 177cm 슬림
+- 머리: 애쉬 그레이 반묶음
+- 얼굴 포인트: 올라간 눈매, 왼쪽 귀 작은 피어싱
+- 옷 결: 오버핏 스트리트, 올리브·검정
+- 소품: 목에 건 헤드폰
+- 목소리: Voice: sharp and sardonic, quick and cutting, speaks slowly.
+- 영상용 한 줄: `his boyfriend: 33-year-old Korean man, slim build about 177cm, ash-gray hair tied half-up, upturned eyes, a small piercing in the left ear, an oversized street look in olive and black, headphones around the neck. Voice: sharp and sardonic, quick and cutting, speaks slowly.`
+- 파일명: 192_조택우x차윤성.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small angular face with high cheekbones, a tapered jawline ending in a pointed chin, upturned eyes with thin double eyelids and a sharp sardonic gaze, straight dark brows angled upward, a slim straight nose, thin lips with a dry smirk line, a small piercing in the left ear, and a prickly sardonic baseline expression. Hair: ash-gray shoulder-grazing hair tied half-up with loose ends — clearly different from short dark brown-black natural curls. Character design: a 33-year-old man of slim build about 177cm, an office worker sitting on the softly blurred waiting-room bench of a bright clinic with a canvas tote bag resting on the lap, headphones around the neck, wearing an oversized olive overshirt over a black tee. Upper body portrait, three-quarter angle facing the viewer, a dry sardonic smirk with one brow raised. Lighting: Clean bright clinic daylight: diffused white spring daylight from a tall window at camera-right wraps the cheek and jaw with a clean key, a soft cool-white ceiling light lifts the waiting room evenly, a softly blurred reception counter and pale wood treatment-room door behind, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no dark hair, no curls, no side-swept fringe, no glasses.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 조택우(U, M) | {{생성일시}} — the name "조택우(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+
+```
+
+### 193 지재원 × 심도경
+- 타입: 유혹남 — 철벽 큐레이터 재원의 선을 여유롭게 넘나드는 관장
+- 나이·체격: 30대 중반, 180cm 보통 체격
+- 머리: 다크 초콜릿 젖은 질감 넘김
+- 얼굴 포인트: 처진 눈매, 오른쪽 입가 작은 점
+- 옷 결: 셔츠 레이어드, 블랙·와인
+- 소품: 목에 건 은색 체인 목걸이
+- 목소리: Voice: husky and unhurried, a teasing warmth, speaks slowly.
+- 영상용 한 줄: `his boyfriend: mid-30s Korean man, average build about 180cm, dark chocolate hair swept back with a wet-look texture, softly downturned eyes, a small mole at the right corner of the mouth, a layered shirt look in black and wine, a silver chain necklace. Voice: husky and unhurried, a teasing warmth, speaks slowly.`
+- 파일명: 193_지재원x심도경.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A settled adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a long refined face with defined cheekbones, a smooth angular jawline ending in a firm chin, softly downturned eyes with deep double eyelids and a slow lingering gaze, softly arched dark brows, a high straight nose, full lips with a faint teasing curve, a small mole at the right corner of the mouth, and a husky alluring baseline expression. Hair: dark chocolate hair swept back with a glossy wet-look texture and a few strands loose at the temples — clearly different from short black hair in a crisp 2:8 side part. Character design: a mid-30s man of average build about 180cm, a gallery owner standing beside the softly blurred entrance desk of a white-walled gallery holding a printed installation schedule against the chest, a silver chain necklace at the open collar, wearing a black shirt layered under a wine-colored knit cardigan. Upper body portrait, three-quarter angle facing the viewer, a slow alluring half smile with a lingering gaze. Lighting: Soft autumn gallery light: diffused gray-white afternoon light from a high window at camera-left wraps the cheek and jaw with a clean key, a warm picture-rail spotlight grazes the white wall behind, a softly blurred white-walled exhibition room with a few blank framed prints, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side part, no side-swept fringe, no glasses.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 지재원(U, M) | {{생성일시}} — the name "지재원(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+
+
+```
+
+### 194 서태림 × 류상윤
+- 타입: 순정남 — 우아하게 흔드는 원장 태림 앞에서 박자만 세며 마음을 숨기지 못하는 반주자
+- 나이·체격: 20대 후반, 176cm 슬림
+- 머리: 밀크 브라운 바가지 머리
+- 얼굴 포인트: 반무테 안경, 둥근 눈
+- 옷 결: 파스텔 셔츠와 니트, 하늘색·아이보리
+- 소품: 손목에 감은 실팔찌
+- 목소리: Voice: soft and shy, a sincere hush, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, slim build about 176cm, milk-brown bowl cut, half-rim glasses over round eyes, a pastel shirt and knit look in sky blue and ivory, a braided string bracelet on the wrist. Voice: soft and shy, a sincere hush, speaks slowly.`
+- 파일명: 194_서태림x류상윤.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small round face with soft cheeks, a gently rounded jawline ending in a small chin, round eyes with soft double eyelids behind thin half-rim glasses and a shy gaze, softly arched light brows, a short straight nose, soft lips with a timid smile line, and a sincere quiet baseline expression. Hair: milk-brown bowl cut with a straight full fringe over the brows and rounded sides — clearly different from deep blue-black nape-length hair tied half-up. Character design: a late-20s man of slim build about 176cm, a pianist seated at an upright piano in a softly blurred ballet studio, both hands resting lightly on the keys with a sheet of pencil-marked music on the stand showing no readable text, a braided string bracelet on the wrist, wearing a sky-blue knit sweater over an ivory collared shirt. Upper body portrait, three-quarter angle facing the viewer, a shy sincere smile with eyes lowered to the keys. Lighting: Warm winter-evening studio light: a low warm practical lamp at camera-right grazes the cheek and jaw, soft cool window light from camera-left, a softly blurred mirrored ballet studio with a wooden barre and an upright piano, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no long hair, no side-swept fringe, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 서태림(U, M) | {{생성일시}} — the name "서태림(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+
+
+```
+
+### 195 황초원 × 도진혁
+- 타입: 대형견남 — 7년 전을 후회하는 선배 초원에게 수요일마다 환하게 들어서는 후배
+- 나이·체격: 20대 후반, 185cm 마르고 긴 체격
+- 머리: 애쉬 브라운 울프컷
+- 얼굴 포인트: 크고 둥근 눈, 웃을 때 보이는 덧니
+- 옷 결: 데님 워크웨어, 인디고·주황
+- 소품: 캡 모자
+- 목소리: Voice: bright and open, a puppyish eagerness, speaks slowly.
+- 영상용 한 줄: `his boyfriend: late-20s Korean man, tall lanky build about 185cm, ash-brown wolf cut, large round eyes, a snaggletooth that shows when he grins, a denim workwear look in indigo and orange, a baseball cap. Voice: bright and open, a puppyish eagerness, speaks slowly.`
+- 파일명: 195_황초원x도진혁.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim youthful face with soft cheeks, a gently tapered jawline ending in a neat chin, large round eyes with deep double eyelids and an eager bright gaze, thick softly arched brown brows, a straight nose with a rounded tip, full lips with a wide grin line, a snaggletooth visible when he grins, and a puppyish open baseline expression. Hair: ash-brown wolf cut with a layered choppy crown, a short ragged fringe and longer strands at the nape — clearly different from a black short-sided swept-up cut. Character design: a late-20s man of tall lanky build about 185cm, seated at a wooden table by a fogged window in a softly blurred small soup restaurant, one hand holding a steel spoon above a steaming earthenware bowl, a baseball cap, wearing an indigo denim work jacket over an orange knit. Upper body portrait, three-quarter angle facing the viewer, a bright open grin showing the snaggletooth, eyes crinkled. Lighting: Warm steam-lit evening light: a single warm pendant lamp above the counter grazes the cheek and jaw, soft cool window light from camera-left through fogged glass, drifting steam behind the subject, a softly blurred small soup restaurant with a steel counter, a large broth pot and wooden tables, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no side-swept fringe, no glasses, no scar.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 황초원(U, M) | {{생성일시}} — the name "황초원(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+
+
+
+```
+
+### 196 성다율 × 곽태현
+- 타입: 능글남 — 헌신적인 신입 다율의 진심을 웃으며 슬쩍 떠보는 지배인
+- 나이·체격: 30대 초반, 175cm 슬림
+- 머리: 카키 브라운 가일컷
+- 얼굴 포인트: 외꺼풀의 올라간 눈매, 왼쪽 귀 작은 피어싱
+- 옷 결: 블레이저 캐주얼, 네이비·버건디
+- 소품: 오른손 검지의 은반지
+- 목소리: Voice: smooth and playful, a lazy amused drawl, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 175cm, khaki-brown side-swept gail cut, upturned monolid eyes, a small piercing in the left ear, a blazer casual look in navy and burgundy, a silver ring on the right index finger. Voice: smooth and playful, a lazy amused drawl, speaks slowly.`
+- 파일명: 196_성다율x곽태현.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim angular face with defined cheekbones, a tapered jawline ending in a neat chin, upturned monolid eyes with an amused lazy gaze, straight dark brows, a high straight nose, lips with a playful lopsided smile line, a small piercing in the left ear, and a sly teasing baseline expression. Hair: khaki-brown gail cut with the fringe split and swept up off one side of the forehead and short tapered sides — clearly different from dark brown medium hair with a loose wavy fringe. Character design: an early-30s man of slim build about 175cm, standing behind the ticket counter of a small cinema lobby, a clipboard held against the chest in one hand, a silver ring on the right index finger, wearing a navy blazer over a burgundy knit. Upper body portrait, three-quarter angle facing the viewer, a sly lopsided smile with an amused sidelong look. Lighting: Soft warm cinema lobby light: a warm popcorn-counter lamp grazes the cheek and jaw while the face stays evenly bright, a faint cool glow from a poster stand softly blurred behind the subject, a small cinema lobby with a popcorn machine and a ticket counter out of focus, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no dark brown hair, no side-swept fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 성다율(U, M) | {{생성일시}} — the name "성다율(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 197 견무열 × 오정한
+- 타입: 장난남 — 퉁명스러운 구두방 사장 무열에게 길 건너에서 빵 하나로 장난을 거는 이웃
+- 나이·체격: 30대 초반, 174cm 슬림
+- 머리: 검정 짧은 투블럭
+- 얼굴 포인트: 둥근 눈, 오른쪽 볼 보조개
+- 옷 결: 파스텔 캐주얼, 민트·크림
+- 소품: 니트 비니
+- 목소리: Voice: cheerful and cheeky, a sing-song tease, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 174cm, black short two-block cut, round eyes, a dimple on the right cheek, a pastel casual look in mint and cream, a knit beanie. Voice: cheerful and cheeky, a sing-song tease, speaks slowly.`
+- 파일명: 197_견무열x오정한.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a compact round face with soft cheeks, a gently rounded jawline ending in a small chin, round eyes with clear double eyelids and a cheeky gleam, short straight dark brows, a short straight nose, lips with a teasing grin line, a dimple on the right cheek, and a playful cheerful baseline expression. Hair: black short two-block cut with closely trimmed sides and a short textured top, the forehead showing — clearly different from dark ash-brown hair with a heavy fringe. Character design: an early-30s man of slim build about 174cm, standing behind the counter of a small neighborhood bakery, a paper bread bag held against the chest with one hand, a knit beanie, wearing a mint knit sweater under a cream linen apron, forearms lightly dusted with flour. Upper body portrait, three-quarter angle facing the viewer, a cheeky teasing grin with the dimple showing. Lighting: Soft early-morning bakery light: a warm glow from the pastry display case grazes the cheek and jaw while the face stays evenly bright, a bread shelf and a glass display case with pastries softly blurred behind the subject, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no ash-brown hair, no heavy fringe, no glasses, no mole.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 견무열(U, M) | {{생성일시}} — the name "견무열(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 198 류진오 × 서명준
+- 타입: 직진남 — 능글맞게 둘러대는 연인 진오에게 서운한 건 서운하다고 곧장 말하는 쪽
+- 나이·체격: 30대 초반, 179cm 슬림
+- 머리: 금발에 가까운 라이트 베이지 애즈펌
+- 얼굴 포인트: 처진 둥근 눈매, 왼쪽 볼 보조개
+- 옷 결: 셔츠 레이어드, 네이비·아이보리
+- 소품: 손목의 가죽 스트랩 시계
+- 목소리: Voice: clear and steady, honest and direct, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 179cm, light beige near-blond as-perm, round softly downturned eyes, a dimple on the left cheek, a layered shirt look in navy and ivory, a leather-strap wristwatch. Voice: clear and steady, honest and direct, speaks slowly.`
+- 파일명: 198_류진오x서명준.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a soft oval face with gentle cheeks, a smooth jawline ending in a rounded chin, round softly downturned eyes with soft double eyelids and a clear steady gaze, gently arched light brows, a straight nose with a soft tip, lips with a frank small smile line, a dimple on the left cheek, and an honest direct baseline expression. Hair: light beige near-blond as-perm with the fringe parted and curved outward in soft S-waves — clearly different from dark brown-black medium hair with a loose center part. Character design: an early-30s man of slim build about 179cm, standing at the counter of a neighborhood butcher shop in the evening after work, a paper-wrapped parcel tied with pink string held in one hand, a leather-strap wristwatch, wearing a navy knit cardigan over an ivory shirt. Upper body portrait, three-quarter angle facing the viewer, a steady direct gaze with a small honest smile. Lighting: Warm evening shop light: a warm glow from the pendant lamps and the glass display case grazes the cheek and jaw while the face stays evenly bright, a steel counter and a refrigerated display case softly blurred behind the subject, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no dark hair, no see-through fringe, no glasses, no freckles.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 류진오(U, M) | {{생성일시}} — the name "류진오(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 199 백우주 × 한형석
+- 타입: 냉정남 — 꼬리 흔들듯 따라붙는 바리스타 우주를 차분하게 다독이는 카페 사장
+- 나이·체격: 30대 초반, 180cm 슬림
+- 머리: 와인 브라운 올백
+- 얼굴 포인트: 외꺼풀의 날카로운 눈매, 오른쪽 눈썹 끝 흉터
+- 옷 결: 미니멀 롱코트, 블랙·스톤 그레이
+- 소품: 손목의 은색 체인 팔찌
+- 목소리: Voice: low and composed, cool and exact, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 180cm, wine-brown hair combed straight back, sharp monolid eyes, a small scar at the tail of the right eyebrow, a minimal long-coat look in black and stone gray, a silver chain bracelet. Voice: low and composed, cool and exact, speaks slowly.`
+- 파일명: 199_백우주x한형석.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a slim long face with lean cheeks, a sharp jawline ending in a pointed chin, sharp monolid eyes with a cool composed gaze, straight thin dark brows with a small scar at the tail of the right brow, a high straight nose, thin lips held in an even line, and a calm cool baseline expression. Hair: wine-brown hair combed straight back from the forehead in a sleek all-back with short sides — clearly different from a short black curly perm. Character design: an early-30s man of slim build about 180cm, standing behind the counter of a small neighborhood café in the early morning before opening, a white ceramic cup with a latte-art heart held in both hands, a silver chain bracelet, wearing a stone-gray shirt under a black long-coat-style apron with the sleeves neatly rolled. Upper body portrait, three-quarter angle facing the viewer, a composed cool look with the faintest softening at the mouth. Lighting: Soft morning window side light: pale morning light from a tall café window on the left grazes the cheek and jaw while the face stays evenly bright, a wooden counter and the steel body of an espresso machine softly blurred behind the subject, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no black hair, no curls, no side-swept fringe, no glasses.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 백우주(U, M) | {{생성일시}} — the name "백우주(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
+
+### 200 나유찬 × 이동민
+- 타입: 유혹남 — 3년째 말 못 하는 순정파 리드 유찬을 여유로운 눈빛으로 흔드는 디자이너
+- 나이·체격: 30대 초반, 178cm 슬림
+- 머리: 블루 블랙 애즈펌
+- 얼굴 포인트: 올라간 고양이 눈매, 웃을 때 보이는 덧니
+- 옷 결: 레트로 니트 폴로, 브라운·크림
+- 소품: 목에 건 헤드폰
+- 목소리: Voice: warm and teasing, a slow coaxing tone, speaks slowly.
+- 영상용 한 줄: `his boyfriend: early-30s Korean man, slim build about 178cm, blue-black as-perm, upturned cat-like eyes, a snaggletooth that shows when he smiles, a retro knit polo look in brown and cream, headphones around the neck. Voice: warm and teasing, a slow coaxing tone, speaks slowly.`
+- 파일명: 200_나유찬x이동민.png
+- 프로필 프롬프트:
+```text
+Upper body portrait for a Korean live-action short drama, photorealistic, not illustration, premium K-drama character photography with idol-grade visual finish. A youthful adult face, polished and camera-ready. Skin: luminously cool white porcelain complexion, even-toned, no dewy gloss. Face geometry: a small sharp face with high cheekbones, a tapered jawline ending in a pointed chin, upturned cat-like eyes with thin double eyelids and a slow coaxing gaze, softly arched dark brows, a slim straight nose, full lips with a teasing smile line, a snaggletooth visible when he smiles, and a warm alluring baseline expression. Hair: blue-black as-perm with the fringe parted and curved outward in soft S-waves — clearly different from dark ash-brown medium hair parted near the center. Character design: an early-30s man of slim build about 178cm, seated at a desk by the window of a small startup office in the early evening, a tablet with a stylus held in both hands showing no readable text, headphones around the neck, wearing a brown retro knit polo over a cream tee. Upper body portrait, three-quarter angle facing the viewer, a slow teasing smile showing the snaggletooth and a lingering look. Lighting: Evening office practical light: a warm desk lamp on the right and the cool glow of a monitor on the left meet on the face while it stays evenly bright, a long row of window-side desks and a whiteboard softly blurred behind the subject, restrained halation, shallow depth of field, low saturation, low-to-mid contrast. Skin remains luminous cool white with no dull patches. Negative: no unintentional text, no watermark, no UI overlay (the bottom name caption is the only intentional text), no plastic or wax-figure skin, no generic or coarse features, no exaggerated expression, no extra limbs, no merged identities, no wall lettering, no signs or posters with words, no brown hair, no side-swept fringe, no glasses, no earrings.
+The very bottom edge of the image carries a clean cinematic character-identification caption, with no band or box behind it: the scene continues to the bottom edge and only the typography sits over it. One horizontal line: 나유찬(U, M) | {{생성일시}} — the name "나유찬(U, M)" larger in elegant Korean serif typography in warm ivory-white, a thin vertical divider, then the date and time smaller in soft ivory-white serif, anchored to the bottom margin and not covering the face or body.
+```
