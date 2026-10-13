@@ -4090,5 +4090,25 @@
       "prompt": "여성용",
       "prompt_sha": "0e5794302e43"
     }
+  ],
+  "zeta_199_백우주": [
+    {
+      "file": "199_백우주/baek-wooju-main.png",
+      "label": "주인공 백우주",
+      "prompt": "주인공",
+      "prompt_sha": "36bc0cc51e6a"
+    },
+    {
+      "file": "199_백우주/baek-wooju-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "07cd3d7827da"
+    },
+    {
+      "file": "199_백우주/baek-wooju-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "77b5466a9e4c"
+    }
   ]
 }
