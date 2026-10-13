@@ -28,7 +28,7 @@
 - **인물:** 두 사람은 연인인 성인 가상 인물. 유저 남성은 프롬프트에서 `his boyfriend`/`the boyfriend`로 부르고 이름은 넣지 않는다(이름은 설명 줄에만 `유저(남) 이름: …`). 이름은 `zeta/user-male-names.md` 표에서 가져오고, 없으면 새로 짓되 표는 고치지 않는다.
 - **의상:** 장면이 일터이거나 그 작품을 상징하는 옷이 근무복·제복·유니폼이면 프로필의 `Wardrobe`를 쓰는 제복 버전으로 먼저 생성을 시도한다(2026-10-13 사용자 결정). 거절되면 사복 버전(주인공은 사복 파일 2절의 장면 계절 칸, 유저는 1절 남성 칸)으로 바꿔 다시 시도하고 `zeta/still-generation-failures.md`에 적는다. 일터가 아닌 장면은 처음부터 사복. 명찰·로고 글씨는 넣지 않는다. 안경·피어싱·흉터·점 같은 몸의 표식은 프로필 그대로.
 - **붉어짐 금지:** 시작 스틸 프롬프트와 한글 장면 줄에 얼굴·귀가 붉어지는 표현(`blush`, `flushed`, `ears red`, `red cheeks`, 귀 끝이 빨개짐)을 쓰지 않는다. 당황·설렘은 시선·손·몸짓(목 뒤 긁기, 고개 돌리기)으로 보인다.
-- **웃음소리 (2026-10-13):** 크게 터지는 웃음·"하하" 소리는 로맨틱하지 않으므로 쓰지 않는다. 웃음은 `a soft, breathy chuckle`, `a quiet exhale of laughter through the nose`, `a soft, breathy smile`처럼 숨 섞인 낮은 웃음으로, 입은 거의 다문 채 눈웃음으로 적는다(`burst out laughing`, `genuine laughter`, `doubling over`, `hearty laugh` 금지). 웃음이 들어간 영상 프롬프트의 【PROHIBITIONS】에는 `No loud laughter, no open-mouth laughing, no "haha" sounds.`를 붙인다.
+- **웃음 (2026-10-13):** 크게 터지는 웃음·"하하" 소리는 로맨틱하지 않으므로 쓰지 않는다. 웃음은 **배시시, 살짝 부끄러운 듯** 웃는 무드로 적는다: `a small, shy smile, eyes dipping down for a moment, lips closed`, 둘이 함께면 `break into small, shy smiles together, … a tiny shared breath of a laugh`, 소리 줄은 `One tiny, shy breath of a laugh`. `burst out laughing`·`genuine laughter`·`doubling over`·`hearty laugh`·`delighted grin`·`smile widens`·`shoulders shaking` 금지(부끄러움을 얼굴 붉어짐으로 표현하지 않는다 — 눈을 잠깐 내리깔기·입을 다문 작은 미소로만). 웃음이 들어간 영상 프롬프트의 【PROHIBITIONS】에는 `No loud laughter, no open-mouth laughing, no "haha" sounds.`를 붙인다.
 - **대사:** 한국어, 블록당 최대 2줄, 한 줄 12자 안팎의 짧은 입말. 전체 6줄 안팎. 대사 사이에 쉬는 박자를 둔다(본보기 A처럼 "효과음 → 웃음/반응 → 대사" 순서로 시간을 넉넉히).
 - **말하는 사람 (입 모양 뒤바뀜 방지):** 한 클립에서 말하는 사람은 **한 명**이다. 두 사람이 대사를 주고받는 곳은 한 클립에 넣지 않고, **답하는 쪽은 클로즈업 컷을 따로** 만든다(예: 두현이 돌아보며 묻는 클립 → **남자친구가 웃는 클로즈업** 클립에서 답). 답할 대사가 없으면 그 자리에 **남자친구가 웃는 클로즈업**을 반응 컷으로 넣는다. 영상 프롬프트에서는 이름 대신 **화면 위치와 옷**으로 말하는 사람을 지목하고(`the man on the RIGHT in the khaki anorak says…`), 듣는 사람은 `keeps his lips closed`로 적는다. 돌아보거나 다가가는 동작이 있으면 **동작이 끝난 뒤에** 말하게 하고, 돌아보는 방향을 화면 기준(`toward SCREEN-LEFT`)으로 적는다.
 - **목소리:** 두 사람의 목소리 묘사를 파일 맨 위에 한 번 정하고, 모든 영상 프롬프트에 글자 그대로 반복한다(예: `Voice: low, calm, slightly gruff, speaks slowly.`).
@@ -52,7 +52,7 @@
 - [ ] 대사가 프롬프트 안에서 철자가 맞다(한 글자씩 다시 읽는다. 예: "줘야죠"를 "줄야죠"로 쓰지 않는다).
 - [ ] 한 영상 클립에 말하는 사람이 한 명뿐이다. 주고받는 대사는 클로즈업 클립으로 나뉘어 있고, 말하는 사람이 위치·옷으로 지목돼 있으며, 돌아보는 동작 뒤에 대사가 온다.
 - [ ] 목소리 문장이 다섯 개 영상 프롬프트에서 글자까지 같다.
-- [ ] 영상 프롬프트에 `burst out laughing`·`genuine laughter`·`hearty`·`doubling over`가 없고, 웃음이 있는 클립의 금지 줄에 `No loud laughter`가 있다.
+- [ ] 웃음은 배시시 수줍은 미소(`small, shy smile`)이고, 영상 프롬프트에 `burst out laughing`·`genuine laughter`·`hearty`·`doubling over`·`delighted grin`이 없으며, 웃음이 있는 클립의 금지 줄에 `No loud laughter`가 있다.
 - [ ] 시작 스틸에 얼굴·귀가 붉어지는 표현이 0건이다(`blush`·`flush`·`ears red`·`red cheeks`·빨개·붉어 검색).
 - [ ] 블록 C·D와 시작 스틸에 입맞춤이 없고, 입맞춤은 입맞춤 클립(영상)에만 있다. 입맞춤 클립의 시작 이미지는 닿기 직전 스틸이고, 입맞춤은 1초 안팎으로 짧으며 곧 떨어져 이마를 맞댄다. 입맞춤 스틸 프롬프트를 새로 쓰지 않았다.
 - [ ] 주인공 외꺼풀/쌍꺼풀·점·흉터·안경이 프로필과 맞고, 유저 이름이 프롬프트 본문에 없다.
