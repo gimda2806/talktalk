@@ -4030,5 +4030,65 @@
       "prompt": "여성용",
       "prompt_sha": "1d380dac2b2f"
     }
+  ],
+  "zeta_196_성다율": [
+    {
+      "file": "196_성다율/seong-dayul-main.png",
+      "label": "주인공 성다율",
+      "prompt": "주인공",
+      "prompt_sha": "8749d9ff2202"
+    },
+    {
+      "file": "196_성다율/seong-dayul-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "67d5bb853455"
+    },
+    {
+      "file": "196_성다율/seong-dayul-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "7f82c2a71670"
+    }
+  ],
+  "zeta_197_견무열": [
+    {
+      "file": "197_견무열/gyeon-muyeol-main.png",
+      "label": "주인공 견무열",
+      "prompt": "주인공",
+      "prompt_sha": "c18dc36bc9cd"
+    },
+    {
+      "file": "197_견무열/gyeon-muyeol-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "26b808fb16be"
+    },
+    {
+      "file": "197_견무열/gyeon-muyeol-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "9ab5a5fd302c"
+    }
+  ],
+  "zeta_198_류진오": [
+    {
+      "file": "198_류진오/ryu-jino-main.png",
+      "label": "주인공 류진오",
+      "prompt": "주인공",
+      "prompt_sha": "26d3bc54ee41"
+    },
+    {
+      "file": "198_류진오/ryu-jino-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "efedaf56bf09"
+    },
+    {
+      "file": "198_류진오/ryu-jino-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "0e5794302e43"
+    }
   ]
 }
