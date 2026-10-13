@@ -3950,5 +3950,165 @@
       "prompt": "여성용",
       "prompt_sha": "7dfb86795ab4"
     }
+  ],
+  "zeta_192_조택우": [
+    {
+      "file": "192_조택우/jo-taekwoo-main.png",
+      "label": "주인공 조택우",
+      "prompt": "주인공",
+      "prompt_sha": "db833c8d52fe"
+    },
+    {
+      "file": "192_조택우/jo-taekwoo-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "94c18fff5fc5"
+    },
+    {
+      "file": "192_조택우/jo-taekwoo-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "e44be7adc5d4"
+    }
+  ],
+  "zeta_193_지재원": [
+    {
+      "file": "193_지재원/ji-jaewon-main.png",
+      "label": "주인공 지재원",
+      "prompt": "주인공",
+      "prompt_sha": "bd6996a5f8cf"
+    },
+    {
+      "file": "193_지재원/ji-jaewon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "bb1961700f79"
+    },
+    {
+      "file": "193_지재원/ji-jaewon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "e5c656253f89"
+    }
+  ],
+  "zeta_194_서태림": [
+    {
+      "file": "194_서태림/seo-taerim-main.png",
+      "label": "주인공 서태림",
+      "prompt": "주인공",
+      "prompt_sha": "9c3c9e0217a5"
+    },
+    {
+      "file": "194_서태림/seo-taerim-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "e57bf52f8c0a"
+    },
+    {
+      "file": "194_서태림/seo-taerim-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "dfd85ebd09bb"
+    }
+  ],
+  "zeta_195_황초원": [
+    {
+      "file": "195_황초원/hwang-chowon-main.png",
+      "label": "주인공 황초원",
+      "prompt": "주인공",
+      "prompt_sha": "6c1a4d6b914a"
+    },
+    {
+      "file": "195_황초원/hwang-chowon-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "a410f0ca5b50"
+    },
+    {
+      "file": "195_황초원/hwang-chowon-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "1d380dac2b2f"
+    }
+  ],
+  "zeta_196_성다율": [
+    {
+      "file": "196_성다율/seong-dayul-main.png",
+      "label": "주인공 성다율",
+      "prompt": "주인공",
+      "prompt_sha": "8749d9ff2202"
+    },
+    {
+      "file": "196_성다율/seong-dayul-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "67d5bb853455"
+    },
+    {
+      "file": "196_성다율/seong-dayul-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "7f82c2a71670"
+    }
+  ],
+  "zeta_197_견무열": [
+    {
+      "file": "197_견무열/gyeon-muyeol-main.png",
+      "label": "주인공 견무열",
+      "prompt": "주인공",
+      "prompt_sha": "c18dc36bc9cd"
+    },
+    {
+      "file": "197_견무열/gyeon-muyeol-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "26b808fb16be"
+    },
+    {
+      "file": "197_견무열/gyeon-muyeol-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "9ab5a5fd302c"
+    }
+  ],
+  "zeta_198_류진오": [
+    {
+      "file": "198_류진오/ryu-jino-main.png",
+      "label": "주인공 류진오",
+      "prompt": "주인공",
+      "prompt_sha": "26d3bc54ee41"
+    },
+    {
+      "file": "198_류진오/ryu-jino-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "efedaf56bf09"
+    },
+    {
+      "file": "198_류진오/ryu-jino-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "0e5794302e43"
+    }
+  ],
+  "zeta_199_백우주": [
+    {
+      "file": "199_백우주/baek-wooju-main.png",
+      "label": "주인공 백우주",
+      "prompt": "주인공",
+      "prompt_sha": "36bc0cc51e6a"
+    },
+    {
+      "file": "199_백우주/baek-wooju-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "07cd3d7827da"
+    },
+    {
+      "file": "199_백우주/baek-wooju-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "77b5466a9e4c"
+    }
   ]
 }
