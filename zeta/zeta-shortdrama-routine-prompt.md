@@ -33,9 +33,12 @@
 - **대사:** 한국어, 블록당 최대 2줄, 한 줄 12자 안팎의 짧은 입말. 전체 6줄 안팎. 대사 사이에 쉬는 박자를 둔다(본보기 A처럼 "효과음 → 웃음/반응 → 대사" 순서로 시간을 넉넉히).
 - **말하는 사람 (입 모양 뒤바뀜 방지):** 한 클립에서 말하는 사람은 **한 명**이다. 두 사람이 대사를 주고받는 곳은 한 클립에 넣지 않고, **답하는 쪽은 클로즈업 컷을 따로** 만든다(예: 두현이 돌아보며 묻는 클립 → **남자친구가 웃는 클로즈업** 클립에서 답). 답할 대사가 없으면 그 자리에 **남자친구가 웃는 클로즈업**을 반응 컷으로 넣는다. 영상 프롬프트에서는 이름 대신 **화면 위치와 옷**으로 말하는 사람을 지목하고(`the man on the RIGHT in the khaki anorak says…`), 듣는 사람은 `keeps his lips closed`로 적는다. 돌아보거나 다가가는 동작이 있으면 **동작이 끝난 뒤에** 말하게 하고, 돌아보는 방향을 화면 기준(`toward SCREEN-LEFT`)으로 적는다.
 - **목소리:** 두 사람의 목소리 묘사를 파일 맨 위에 한 번 정하고, 모든 영상 프롬프트에 글자 그대로 반복한다(예: `Voice: low, calm, slightly gruff, speaks slowly.`).
-- **입맞춤 (영상으로만 만든다, 2026-10-13):** 입맞춤 스틸(사진)은 이미지 생성 도구의 출력 검사에서 거의 다 거절되므로 만들지 않는다. 블록 C는 얼굴이 몇 cm까지 가까워진 정적에서 끝나고 입맞춤은 넣지 않는다. 입맞춤 클립(8~10초)은 **「닿기 직전」 스틸을 시작 이미지로** 쓰고(작품 파일 `### 닿기 직전` 칸으로 만든 이미지, 없으면 C 블록 스틸), 프롬프트는 **2026-10-13 001에서 생성이 통과한 짧은 문장형**을 글자 그대로 쓴다(긴 구조형·인물 묘사·시간표를 넣으면 거절되기 쉽다). 흐름은 넓은 화면에서 입맞춤 → 얼굴 클로즈업 → 살짝 떨어져 이마를 맞대고 배시시 웃음. 아래 두 문장을 그대로 넣는다(작품마다 바꾸지 않는다).
-  - 기본: `Cinematic romantic shot: the subjects in the image lean in and share a gentle, brief kiss. Start wide, then cut to a soft close-up of their faces. After the kiss they slowly part and rest their foreheads together, smiling shyly with eyes lowered. Soft natural light on their faces, any colored light only in the background. Shallow depth of field, smooth slow motion, emotionally warm, film-like quality.`
-  - 거절될 때: `Cinematic romantic shot: the subjects in the image lean in and share a gentle, brief kiss. Start wide, then cut to a soft close-up. They part and smile shyly. Soft natural lighting, shallow depth of field, smooth slow motion, emotionally warm, film-like quality.`
+- **입맞춤 (영상으로만 만든다, 2026-10-13):** 입맞춤 스틸(사진)은 이미지 생성 도구의 출력 검사에서 거의 다 거절되므로 만들지 않는다. 블록 C는 얼굴이 몇 cm까지 가까워진 정적에서 끝나고 입맞춤은 넣지 않는다. 입맞춤 클립은 **「닿기 직전」 스틸을 시작 이미지로** 쓰고(작품 파일 `### 닿기 직전` 칸으로 만든 이미지, 없으면 C 블록 스틸), Kling 3.0 · 9:16 · **15초 · 소리 켬**으로 만든다. 프롬프트는 2026-10-13 001에서 생성이 통과한 **짧은 문장형 4컷 틀**을 쓰고 `{ }`만 채운다(인물 외모 묘사·초 단위 시간표·【】 절 제목을 넣지 않는다 — 길게 쓰면 거절되기 쉽다).
+  - 4컷 흐름: 1 넓은 화면에서 입이 닿음 → 2 옆얼굴 클로즈업, 입을 다문 입맞춤을 3초쯤 유지(입술이 닿으며 살짝 말랑하게, 탱글하게 튀는 효과 없이) → 3 한 사람 클로즈업, 수줍게 웃으며 **콘티 대사 한 줄** → 4 미디엄 투샷, 이마를 맞대고 둘 다 배시시 웃음(말 없음).
+  - **대사 (2026-10-13 사용자 결정: 소리는 켜고, 대사는 콘티에 있는 것만):** 소리를 켜면 생성 도구가 대사·속삭임·웃음을 지어내므로, 콘티의 **입맞춤 바로 다음 대사**(보통 D 블록 첫 대사) 한 줄을 3컷에 직접 넣어 그 자리를 채운다. 말하는 사람은 이름 대신 **옷**으로 지목하고(`the man in the dark work apron`), 듣는 사람은 `The other man keeps his lips closed.`, 목소리는 `## 목소리`의 그 사람 묘사를 Sound 문장에 옮긴다. 이 대사는 편집에서 D 블록의 같은 대사 대신 쓴다(편집 순서에 적는다). 입맞춤 바로 다음 대사가 없으면 3컷은 웃음만 두고 Sound 문장을 `soft gentle piano and quiet room tone only; no dialogue, no words, no whispering, no laughter.`로 쓴다.
+  - 틀: `Cinematic romantic sequence, multiple camera angles, smooth cuts. Shot 1, wide: the subjects in the image lean in and their lips meet in a gentle kiss. Shot 2, side-profile close-up focused on their lips: a soft closed-mouth kiss held still for about three seconds, their lips gently softening on contact, natural and tender, then they slowly part. Shot 3, close-up on the man in {말하는 사람의 옷}: he smiles shyly with eyes lowered and says quietly and slowly in Korean: "{대사}" The other man keeps his lips closed. Shot 4, medium two-shot: they rest their foreheads together and both smile shyly, looking down, no talking. Soft natural light on their faces, any colored light only in the background. Lips in sharp focus with natural texture. Shallow depth of field, smooth slow motion, emotionally warm, film-like quality. Sound: only that one Korean line in {목소리 묘사, 예: a low, quiet, slightly hoarse voice}, with soft gentle piano and quiet room tone; no other words, no whispering, no laughter.`
+  - 네거티브 칸: `extra dialogue, whispering, laughter, kissing sounds, exaggerated lip squish, bouncy or jelly lips, swollen or glossy lips, open mouth, tongue, blurry lips`
+  - 거절될 때: 2컷의 `focused on their lips`와 `held still for about three seconds`를 빼고 `held for a moment longer`로 바꾼다. 그래도 거절되면 `Cinematic romantic shot: the subjects in the image lean in and share a gentle, brief kiss. Start wide, then cut to a soft close-up. They part and smile shyly. Soft natural lighting, shallow depth of field, smooth slow motion, emotionally warm, film-like quality.`
 - **손·로고:** 손이 얼굴을 가리는 포즈를 쓰지 않는다(손은 목 뒤·주머니·소품에). 신발·시계·가방·옷에 브랜드 로고 없음.
 
 ## 파일 구성 (본보기와 같은 순서·제목)
@@ -45,9 +48,9 @@
 3. `## 목소리` — 두 사람 목소리 영어 한 줄씩.
 4. `## 콘티` — 블록별 표(컷 번호 · 길이 · 그림 · 대사). 컷은 블록당 3~5개, 손·소품 인서트 컷을 최소 3개 넣는다. 대사를 주고받는 블록에는 **답하는 쪽 클로즈업 컷**(웃는 얼굴)을 표에 따로 적는다.
 5. `## 시작 스틸 프롬프트` — `### A`~`### D` 블록마다 `>` 한글 장면 한 줄 + ```text 구조형 프롬프트```. 틀은 본보기와 같다: 첫 문장(세로 9:16 2K, 연인인 성인 두 사람) → 【REFERENCE IMAGES】(시트·프로필로 얼굴, 앞 블록 스틸로 옷·장소를 맞춘다는 문장, A는 닿기 직전 스틸이 있으면 그것을, B~D는 "A 블록 채택 스틸"을 기준으로) → 【CHARACTER — 주인공】 → 【CHARACTER — Boyfriend】 → 【SCENE】 → 【COMPOSITION】 → 【LIGHTING · COLOR · STYLE】 → 【PROHIBITIONS】(본보기 공통 항목 + 외꺼풀이면 `No double eyelids on …`, 유저에 점이 없으면 `No mole on the boyfriend.`, 동물이 있으면 `Only one {동물}.`, 손·로고 문장).
-6. `## 영상 프롬프트` — `### A`~`### D`와 `### 입맞춤 클립`(시작 이미지 = 닿기 직전 스틸, 위 「입맞춤」의 두 문장을 ```text 두 칸에 그대로 — 001 파일과 같은 모양), 그리고 대사를 주고받는 블록마다 `### {블록}2 클로즈업`(답하는 쪽이 웃으며 대사를 하는 4~5초 클립, 시작 이미지는 그 블록 스틸이고 카메라가 답하는 사람 얼굴로 다가가는 클로즈업). Kling 3.0 pro, 9:16, 10~12초(입맞춤 8~10초), 소리 켬. 블록 클립의 틀(입맞춤 클립은 위 두 문장만): 첫 문장(시작 이미지에서 이어짐, 얼굴·옷·장소 유지, 서두르지 않는 속도) → 【CHARACTERS】(외모 한 줄 + 목소리) → 【ACTION · SOUND · DIALOGUE (in this exact order)】 초 단위 시간표, 대사는 `in Korean: "…"` → 【SOUND】(이 대사만, 천천히·또렷하게, 입 모양 맞춤, 효과음 목록, 음악·내레이션 없음) → 【CAMERA · STYLE】 → 【PROHIBITIONS】.
+6. `## 영상 프롬프트` — `### A`~`### D`와 `### 입맞춤 클립`(시작 이미지 = 닿기 직전 스틸, 위 「입맞춤」의 4컷 틀을 채운 ```text 칸 + 네거티브 칸 + 거절될 때 칸 — 001 파일과 같은 모양), 그리고 대사를 주고받는 블록마다 `### {블록}2 클로즈업`(답하는 쪽이 웃으며 대사를 하는 4~5초 클립, 시작 이미지는 그 블록 스틸이고 카메라가 답하는 사람 얼굴로 다가가는 클로즈업). Kling 3.0 pro, 9:16, 10~12초(입맞춤 15초), 소리 켬. 블록 클립의 틀(입맞춤 클립은 위 4컷 틀만): 첫 문장(시작 이미지에서 이어짐, 얼굴·옷·장소 유지, 서두르지 않는 속도) → 【CHARACTERS】(외모 한 줄 + 목소리) → 【ACTION · SOUND · DIALOGUE (in this exact order)】 초 단위 시간표, 대사는 `in Korean: "…"` → 【SOUND】(이 대사만, 천천히·또렷하게, 입 모양 맞춤, 효과음 목록, 음악·내레이션 없음) → 【CAMERA · STYLE】 → 【PROHIBITIONS】.
 7. `## 자막` — 시작·끝 시각과 한국어 대사 표(편집 순서 기준 누적 시간).
-8. `## 편집 순서` — A → B → C → 입맞춤 클립 → D, 각 쓸 구간과 편집 메모(멈춤·확대 인서트·암전 등).
+8. `## 편집 순서` — A → B → C → 입맞춤 클립 → D, 각 쓸 구간과 편집 메모(멈춤·확대 인서트·암전 등). 입맞춤 클립 3컷에 넣은 대사는 D 블록에서 건너뛴다고 적는다.
 9. `## 생성 후 검수` — 본보기의 체크리스트(손 → 얼굴 표식 → 옷 → 로고·글씨 → 동물 수 → 비율 9:16)를 작품에 맞게.
 
 ## 실행 전 점검 (작품마다)
@@ -57,7 +60,7 @@
 - [ ] 목소리 문장이 다섯 개 영상 프롬프트에서 글자까지 같다.
 - [ ] 웃음은 배시시 수줍은 미소(`small, shy smile`)이고, 영상 프롬프트에 `burst out laughing`·`genuine laughter`·`hearty`·`doubling over`·`delighted grin`이 없으며, 웃음이 있는 클립의 금지 줄에 `No loud laughter`가 있다.
 - [ ] 시작 스틸에 얼굴·귀가 붉어지는 표현이 0건이다(`blush`·`flush`·`ears red`·`red cheeks`·빨개·붉어 검색).
-- [ ] 블록 C·D와 시작 스틸에 입맞춤이 없고, 입맞춤은 입맞춤 클립(영상)에만 있다. 입맞춤 클립의 시작 이미지는 닿기 직전 스틸이고, 프롬프트는 규칙의 두 문장 그대로다. 입맞춤 스틸 프롬프트를 쓰지 않았다.
+- [ ] 블록 C·D와 시작 스틸에 입맞춤이 없고, 입맞춤은 입맞춤 클립(영상)에만 있다. 입맞춤 클립의 시작 이미지는 닿기 직전 스틸이고, 프롬프트는 규칙의 4컷 틀이며 대사는 콘티의 입맞춤 바로 다음 대사 한 줄(말하는 사람은 옷으로 지목)뿐이다. 입맞춤 스틸 프롬프트를 쓰지 않았다.
 - [ ] 주인공 외꺼풀/쌍꺼풀·점·흉터·안경이 프로필과 맞고, 유저 이름이 프롬프트 본문에 없다.
 - [ ] `young`, `passionate`, `kissing passionately`, 브랜드 이름이 없다. 침실·노출·손이 얼굴을 가리는 포즈가 없다.
 - [ ] 장소·시간이 플롯(닿기 직전 칸/에필로그/이벤트)에서 왔다.
