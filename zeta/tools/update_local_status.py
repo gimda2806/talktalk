@@ -1,7 +1,9 @@
 """zeta/zeta-local-status.md (로컬 기준 제작 현황표)를 다시 만든다.
 
 사용법 (저장소 루트에서):
-  python3 zeta/tools/update_local_status.py
+  python3 zeta/tools/update_local_status.py          # zeta/zeta-local-status.md  (로컬 작업 폴더 + 드라이브 데스크톱 폴더)
+  python3 zeta/tools/update_local_status.py --drive  # zeta/zeta-drive-status.md  (드라이브 데스크톱 폴더만)
+내용이 그대로면(기준 시각만 다르면) 파일을 다시 쓰지 않는다.
 
 무엇을 세는가
 - 로컬 폴더 ~/Documents/ChatGPT/이미지 프로필 제작/generated/번호_이름/ 와, 드라이브로 옮겨진 파일이 있는
@@ -16,6 +18,7 @@ import datetime
 import glob
 import os
 import re
+import sys
 import unicodedata
 from pathlib import Path
 
@@ -24,7 +27,10 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 LOCAL = Path.home() / "Documents/ChatGPT/이미지 프로필 제작/generated"
 DRIVE_DESKTOP = Path.home() / "Library/CloudStorage/GoogleDrive-hyukgu86@gmail.com/내 드라이브/이미지 프로필 제작"
 SOURCES = [LOCAL, DRIVE_DESKTOP]
-OUT = ROOT / "zeta/zeta-local-status.md"
+DRIVE_MODE = "--drive" in sys.argv
+if DRIVE_MODE:
+    SOURCES = [DRIVE_DESKTOP]
+OUT = ROOT / ("zeta/zeta-drive-status.md" if DRIVE_MODE else "zeta/zeta-local-status.md")
 
 
 def kind(name):
@@ -100,9 +106,12 @@ def render(rows):
     names = lambda f: ", ".join(f"{r['no']} {r['name']}" for r in rows if f(r)) or "없음"
     L = []
     a = L.append
-    a("# 로컬 기준 제작 현황 (프로필·3면도·사복 3면도·스틸·콘티)")
+    a("# 구글 드라이브 기준 제작 현황 (프로필·3면도·사복 3면도·스틸·콘티)" if DRIVE_MODE else "# 로컬 기준 제작 현황 (프로필·3면도·사복 3면도·스틸·콘티)")
     a("")
-    a("공유용 참고 문서입니다. 뷰어에는 표시하지 않습니다. 저장소·구글 드라이브 웹이 아니라 **이 컴퓨터에 실제로 있는 파일**을 기준으로 정리했습니다: 로컬 작업 폴더(`이미지 프로필 제작/generated/번호_이름/`)와 구글 드라이브 데스크톱 폴더(`내 드라이브/이미지 프로필 제작/번호_이름/`)를 합쳐서 봅니다.")
+    if DRIVE_MODE:
+        a("공유용 참고 문서입니다. 뷰어에는 표시하지 않습니다. 저장소·로컬이 아니라 **구글 드라이브 \"이미지 프로필 제작\" 폴더(이 컴퓨터의 드라이브 데스크톱 폴더 `내 드라이브/이미지 프로필 제작/번호_이름/`)에 실제로 올라가 있는 파일**을 기준으로 정리했습니다.")
+    else:
+        a("공유용 참고 문서입니다. 뷰어에는 표시하지 않습니다. 저장소·구글 드라이브 웹이 아니라 **이 컴퓨터에 실제로 있는 파일**을 기준으로 정리했습니다: 로컬 작업 폴더(`이미지 프로필 제작/generated/번호_이름/`)와 구글 드라이브 데스크톱 폴더(`내 드라이브/이미지 프로필 제작/번호_이름/`)를 합쳐서 봅니다.")
     a("")
     a(f"- 기준 시각: {now} (KST) · 플롯 {tot}편 (`zeta/zeta_NNN_이름.md`)")
     a("- 읽는 법: ● 있음 · ○ 없음. 프로필·3면도 칸의 세 글자는 순서대로 **주인공 · 유저 남성 · 유저 여성**.")
@@ -110,7 +119,10 @@ def render(rows):
     a("- 3면도: `…character-sheet…png` 중 `casual`이 없는 것(`reference-copy` 제외). 계절별 사복 3면도: `casual-봄·여름·가을·겨울` 시트가 3종×4계절=12장 중 몇 장인지.")
     a("- 입맞춤 직전 스틸: `…_닿기직전_….png`(닿기 직전 스틸)와 `kiss-still-…입맞춤직전….png`의 파일 수(다시 만든 v2도 각각 셈). 입맞춤 스틸: 이름에 `kiss`·`입맞춤`이 있고 `직전`이 아닌 것.")
     a("- 콘티 스틸: `…콘티_….png`(콘티 컷), `…shortdrama….png`(숏드라마 컷), `C01_….png`(영상용 컷)의 파일 수.")
-    a("- 같은 항목의 구글 드라이브 기준 표: `zeta/zeta-drive-status.md`. 저장소·로컬 섞은 표: `zeta/zeta-production-status.md`.")
+    if DRIVE_MODE:
+        a("- 같은 항목의 로컬 기준 표: `zeta/zeta-local-status.md`. 저장소·로컬 섞은 표: `zeta/zeta-production-status.md`.")
+    else:
+        a("- 같은 항목의 구글 드라이브 기준 표: `zeta/zeta-drive-status.md`. 저장소·로컬 섞은 표: `zeta/zeta-production-status.md`.")
     a("")
     a("## 요약")
     a("")
@@ -119,7 +131,8 @@ def render(rows):
     a(f"| 플롯 | **{tot}편** |")
     a(f"| 이미지 프로필 3종 모두 있음 | {c(lambda r: len(r['pr']) == 3)}편 |")
     a(f"| 이미지 프로필 없음 | {c(lambda r: not r['pr'])}편 |")
-    a(f"| 이미지 프로필이 로컬에는 일부만 있고 저장소에는 3종 모두 있음 | {c(lambda r: 0 < len(r['pr']) < 3 and len(r['repo']) == 3)}편 |")
+    if not DRIVE_MODE:
+        a(f"| 이미지 프로필이 로컬에는 일부만 있고 저장소에는 3종 모두 있음 | {c(lambda r: 0 < len(r['pr']) < 3 and len(r['repo']) == 3)}편 |")
     a(f"| 3면도 3종 모두 있음 | {c(lambda r: len(r['sh']) == 3)}편 |")
     a(f"| 3면도 일부만 있음 | {c(lambda r: 0 < len(r['sh']) < 3)}편 |")
     a(f"| 3면도 없음 | {c(lambda r: not r['sh'])}편 |")
@@ -138,14 +151,14 @@ def render(rows):
         cas = f"{r['cas']}/12" if r["cas"] else "○"
         n = lambda k: (f"{r[k]}장" if r[k] else "○")
         prc = sym(r["pr"], ["main", "m", "f"])
-        if 0 < len(r["pr"]) < 3 and len(r["repo"]) == 3:
+        if not DRIVE_MODE and 0 < len(r["pr"]) < 3 and len(r["repo"]) == 3:
             prc += " (저장소 ●●●)"
         a(f"| {r['no']} | {r['name']} | {prc} | {sym(r['sh'], ['main', 'm', 'f'])} | {cas} | {n('sb')} | {n('kd')} | {n('ct')} |")
     a("")
     a("## 비어 있는 것")
     a("")
     a(f"- **이미지 프로필 없음 ({c(lambda r: not r['pr'])}편):** {names(lambda r: not r['pr'])}")
-    only = [r for r in rows if 0 < len(r["pr"]) < 3]
+    only = [] if DRIVE_MODE else [r for r in rows if 0 < len(r["pr"]) < 3]
     if only:
         a("- **이미지 프로필이 로컬에는 일부만 있는 작품:** " + ", ".join(
             f"{r['no']} {r['name']}(로컬 {sym(r['pr'], ['main', 'm', 'f'])}, 저장소 {sym(r['repo'], ['main', 'm', 'f'])})" for r in only)
@@ -160,10 +173,18 @@ def render(rows):
     a("")
     a("## 참고")
     a("")
-    a("- 이 표는 로컬 파일 이름으로 만든 스냅샷입니다. 상태가 바뀌면 `python3 zeta/tools/update_local_status.py`로 다시 만들어 같은 커밋에 올립니다.")
+    if DRIVE_MODE:
+        a("- 이 표는 드라이브 데스크톱 폴더의 파일 이름으로 만든 스냅샷입니다. `python3 zeta/tools/update_local_status.py --drive`로 다시 만듭니다. 로컬 기준 표는 `zeta/zeta-local-status.md`.")
+    else:
+        a("- 이 표는 로컬 파일 이름으로 만든 스냅샷입니다. 상태가 바뀌면 `python3 zeta/tools/update_local_status.py`로 다시 만들어 같은 커밋에 올립니다.")
     return "\n".join(L) + "\n"
 
 
 if __name__ == "__main__":
-    OUT.write_text(render(collect()), encoding="utf-8")
-    print(f"갱신: {OUT.relative_to(ROOT)}")
+    text = render(collect())
+    stamp = re.compile(r"^- 기준 시각: .*$", re.M)
+    if OUT.exists() and stamp.sub("", OUT.read_text(encoding="utf-8")) == stamp.sub("", text):
+        print(f"변경 없음: {OUT.relative_to(ROOT)}")
+    else:
+        OUT.write_text(text, encoding="utf-8")
+        print(f"갱신: {OUT.relative_to(ROOT)}")
