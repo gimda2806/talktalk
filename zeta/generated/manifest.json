@@ -4110,5 +4110,25 @@
       "prompt": "여성용",
       "prompt_sha": "77b5466a9e4c"
     }
+  ],
+  "zeta_200_나유찬": [
+    {
+      "file": "200_나유찬/na-yuchan-main.png",
+      "label": "주인공 나유찬",
+      "prompt": "주인공",
+      "prompt_sha": "bab8a635fece"
+    },
+    {
+      "file": "200_나유찬/na-yuchan-user-m.png",
+      "label": "유저 프로필 · 남성",
+      "prompt": "남성용",
+      "prompt_sha": "76d600afc621"
+    },
+    {
+      "file": "200_나유찬/na-yuchan-user-f.png",
+      "label": "유저 프로필 · 여성",
+      "prompt": "여성용",
+      "prompt_sha": "37674f611860"
+    }
   ]
 }
