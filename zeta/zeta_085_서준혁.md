@@ -294,31 +294,6 @@ Ultra-photorealistic 2K live-action Korean drama still, NOT illustration. Premiu
 The image contains no text at all: no caption, no name, no date, no title card, no letters, no watermark anywhere in the frame; the scene continues cleanly to every edge.
 ```
 
-### 입맞춤 (유저 남성)
-> 유저(남) 이름: 류재희. 「닿기 직전」 바로 다음 순간. 시사회가 끝난 상영관 통로에서 준혁이 서툴게 몸을 기울여 짧고 가벼운 입맞춤을 나누는 장면(입을 다문 채, 눈을 감고, 코가 서로 비껴 나게). 두 사람 모두 성인 가상 인물이고 서로 동의한 비노골적인 애정 표현, 둘 다 겨울 사복 차림. 이미지 1·2는 닿기 직전 칸과 같은 시트(도구의 <<<image_1>>>·<<<image_2>>> 자리에 넣는다). 파일명 `서준혁_크레딧올라간밤_입맞춤_YYYYMMDD-HHMM.png`. 작업용 참고 이미지(공개 칸에 쓰지 않음).
-
-```text
-Ultra-high-resolution 2K vertical 9:16 cinematic photorealistic Korean-drama still image featuring two distinct adult Korean men sharing a gentle closed-mouth kiss — preserving the exact facial structure, eye shape, and hair of image_1 <<<image_1>>> for Seo Junhyeok and the exact facial structure, eye shape, and hair of image_2 <<<image_2>>> for the boyfriend.
-
-【CHARACTER — Seo Junhyeok (RIGHT, based on image_1 <<<image_1>>>)】
-Mid-30s Korean male, 182 cm athletic build with wide solid shoulders, small face with a clean angular jaw and squared-off chin, high cheekbones, long sharp eyes with upward-tilted outer corners and hooded inner double eyelids, straight medium-thick dark brows angled slightly upward, a small pale old scar cutting through the tail of the left eyebrow, narrow high straight nose, firm medium lips, short black two-block hair pushed back from the forehead. Outfit: black matte-shell hooded down parka worn unzipped over charcoal ribbed half-zip wool sweater, black water-repellent cargo trousers, dark brown leather combat boots, black rubber-strap sports watch. His right hand, white athletic tape wrapped around the index and middle fingers, lies flat against his own chest. Eyes closed. A watchful, guarded face gone quiet and unguarded at last.
-
-【CHARACTER — Boyfriend (LEFT, based on image_2 <<<image_2>>>)】
-Late-20s Korean male, soft oval face, gentle jawline, long almond double-lidded eyes with a level outer corner (clearly distinguishable from Seo Junhyeok's sharp upward-tilted eyes), soft straight brows, high straight nose with delicate tip, naturally full lips, NO mole anywhere, short matte ash-khaki hair with an olive undertone and a light side-swept fringe, slightly tousled. Outfit: charcoal wool overcoat worn open over cream chunky turtleneck knit, straight dark-gray wool trousers, black leather Chelsea boots. One hand resting lightly on Seo Junhyeok's forearm. Eyes closed.
-
-【COMPOSITION & ACTION】
-Cinematic vertical two-shot framed at chest height. Side-profile composition — both figures face each other, heads tilted in opposite directions, noses passing side by side. A brief, mutual, consensual, non-explicit, closed-mouth gentle kiss. Both figures fully clothed; no skin exposed beyond face, neck, and hands. Shallow depth of field with soft bokeh background. Both faces are individually sharp and fully distinct within the frame.
-
-【BACKGROUND】
-The empty screening room of a cinema at ten o'clock on a winter night right after a premiere. The end credits roll as a soft cool glow on the big screen (no legible text) while the house lights stay off; rows of dark velvet seats and a narrow aisle with faint floor lights fill the softly blurred background.
-
-【LIGHTING · COLOR · STYLE】
-Soft cool glow from the cinema screen from the side, faint warm aisle floor lights low in the frame, gently sculpted shadows, restrained halation. Low saturation, low-to-mid contrast Korean-drama color grade. Cool porcelain skin tone with real pore texture. Cinematic soft focus preserving facial sharpness. Idol-level visual quality, 2K photorealistic photography.
-
-【PROHIBITIONS】
-No text, captions, watermarks, or UI. No face swapping, face merging, or twin/identical faces. No extra people or extra limbs. No mole on boyfriend. No plastic or wax skin texture. No illustration, webtoon, or 3D render style. No open-mouth kiss, no visible tongue. No bedroom or bed setting. No suggestive or provocative pose. No unbuttoned, removed, or exposed clothing beyond face/neck/hands. No uniforms, aprons, or costumes. No landscape or square framing.
-```
-
 ## 사람이 고친 곳
 
 뷰어에서 사람이 직접 고친 칸. 여기 적힌 칸은 모든 규칙보다 우선하며, 정독·일괄 치환·재설계 때 되돌리지 않는다.
