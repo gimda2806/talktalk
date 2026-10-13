@@ -9,6 +9,7 @@
 제타 탭: zeta/zeta_*.md 의 '### 칸 이름' + ```text 블록 하나가 제타 입력칸 하나다. 블록마다 복사 버튼이 붙는다.
 설정집은 zeta/<이름>_설정집.md 를 읽어 '4. 설정집' 자리에 끼워 넣는다.
 """
+import hashlib
 import json
 import re
 import shutil
@@ -412,11 +413,50 @@ def load_repeats():
     return out
 
 
+ZETA_CHUNK_BYTES = 6 * 1024 * 1024  # 제타 데이터 조각 하나의 크기 상한 (Cloudflare 정적 파일 한도는 파일당 25MiB)
+
+
+def write_zeta_chunks(works):
+    """제타 데이터를 dist/data/zeta-N.js 여러 조각으로 나눠 쓰고, 페이지에 끼울 <script> 태그를 돌려준다.
+
+    index.html 에 전부 넣으면 25MiB 를 넘어 Cloudflare 배포가 실패하므로, 작품 단위로 6MiB 안팎씩 잘라
+    각 조각이 `__ZETA.push(...)` 로 목록에 이어 붙게 한다. 페이지 스크립트보다 먼저 동기로 읽힌다."""
+    data_dir = OUT.parent / "data"
+    if data_dir.is_dir():
+        for old in data_dir.glob("zeta-*.js"):
+            old.unlink()
+    data_dir.mkdir(parents=True, exist_ok=True)
+    chunks, cur, size = [], [], 0
+    for w in works:
+        n = len(json.dumps(w, ensure_ascii=False).encode("utf-8"))
+        if cur and size + n > ZETA_CHUNK_BYTES:
+            chunks.append(cur)
+            cur, size = [], 0
+        cur.append(w)
+        size += n
+    if cur:
+        chunks.append(cur)
+    tags = ['<script>var __ZETA=[];</script>']
+    for i, chunk in enumerate(chunks):
+        body = "__ZETA.push(..." + json.dumps(chunk, ensure_ascii=False).replace("</", "<\\/") + ");\n"
+        (data_dir / f"zeta-{i}.js").write_text(body, encoding="utf-8")
+        ver = hashlib.sha1(body.encode("utf-8")).hexdigest()[:8]
+        tags.append(f'<script src="data/zeta-{i}.js?v={ver}"></script>')
+    return "\n".join(tags) + "\n"
+
+
 def main():
     page = (Path(__file__).resolve().parent / "template.html").read_text(encoding="utf-8")
-    for key, rows in (("DATA", load()), ("ZETA", load_zeta()), ("REVIEWS", load_reviews()), ("REPEATS", load_repeats())):
-        page = page.replace(f"/*{key}*/", json.dumps(rows, ensure_ascii=False).replace("</", "<\\/"))
-    if "--fragment" not in sys.argv:
+    fragment = "--fragment" in sys.argv
+    zeta = load_zeta()
+    scripts = ""
+    if not fragment:
+        scripts = write_zeta_chunks(zeta)  # 제타 데이터는 별도 파일로 (index.html 이 25MiB 를 넘지 않게)
+    for key, rows in (("DATA", load()), ("ZETA", zeta), ("REVIEWS", load_reviews()), ("REPEATS", load_repeats())):
+        text = "__ZETA" if key == "ZETA" and not fragment else json.dumps(rows, ensure_ascii=False).replace("</", "<\\/")
+        page = page.replace(f"/*{key}*/", text)
+    if not fragment:
+        page = page.replace("<script>\nconst DATA", scripts + "<script>\nconst DATA", 1)
         page = ('<!doctype html>\n<html lang="ko">\n<head>\n<meta charset="utf-8">\n'
                 '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
                 '</head>\n<body>\n' + page + '\n</body>\n</html>\n')
