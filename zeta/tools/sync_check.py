@@ -14,13 +14,14 @@
 판정
 - NEW: 저장소 그 폴더에 그 종류(주인공·남·여)의 파일이 아직 없고, 
 - CHG: 그 종류가 저장소에 있는데 내용이 다르고, 로컬 파일이 저장소 등록본(마지막 커밋)보다 더 최근에 저장됨
-- DRIVE-DIFF: 드라이브 데스크톱 폴더의 파일이 저장소 등록본과 다름. 드라이브 폴더 파일의 수정 시각은 올린 시각이라 최신 여부를 알 수 없으므로 자동 교체하지 않고 눈으로 확인한다.
+- DRIVE-DIFF: 드라이브 데스크톱 폴더의 파일이 저장소 등록본과 다름. 드라이브 폴더 파일의 수정 시각은 올린 시각이라 최신 여부를 알 수 없고, 대부분 올려 둔 예전 버전이므로 참고로만 세고 판정에서는 뺀다(`-v`로 목록 확인).
 - 저장소 등록본과 크기가 같으면 세지 않고, 로컬 작업 폴더 파일이 저장소 등록본보다 오래됐으면 세지 않는다.
 둘 다 없으면 "새 이미지 없음"을 찍는다.
 """
 import hashlib
 import os
 import re
+import sys
 import subprocess
 import time
 import unicodedata
@@ -95,9 +96,11 @@ def main():
                     chg.append(row)
     print("NEW", [r[:3] for r in new])
     print("CHG", [r[:3] for r in chg])
-    print("DRIVE-DIFF(확인 필요)", [r[:3] for r in drv])
+    print(f"DRIVE-DIFF(참고, 판정에서 제외) {len(drv)}장 — 드라이브 폴더에 올라가 있는 예전 버전일 가능성이 높다")
+    if "-v" in sys.argv:
+        print([r[:3] for r in drv])
     print("stale(저장소가 더 최신)", stale)
-    if not new and not chg and not drv:
+    if not new and not chg:
         print("새 이미지 없음")
 
 
