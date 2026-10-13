@@ -232,7 +232,7 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 
 - Character design의 머리 구절을 아래 표에서 골라 쓰고, **직전 5편의 여성용과 다른 스타일**을 고른다. 색은 8절대로 검정·흑갈색·짙은 갈색·짙은 애쉬 브라운 안에서만. 단, 유저가 아이돌·연습생·신인 가수·모델·배우·댄서처럼 **스타일링이 직업인 역할**이면 남성용·여성용 모두 6-11 "머리색 변주" 표의 색을 쓸 수 있다. 남녀 같은 색 한 가지로 가볍게(주인공보다 한 단계 얌전한 톤), 주인공과는 다른 색으로, 한글 설명과 짧은 버전에도 반영한다. 회사원·학생·손님 같은 일반 역할은 그대로.
 - 그 작품에서 유저가 하는 일·장면에 맞춘다. 운동·주방·현장·병원은 묶거나 올린 머리, 사무·카페·도서관·연인은 푼 머리나 반묶음, 학교·학원은 단정한 쪽. 액세서리(집게핀·리본·헤어밴드·머리꽂이)는 하나까지.
-- 얼굴 구조(6-10 Face geometry)는 바꾸지 않는다. 머리만 바꾼다. 짧은 버전과 한글 설명 줄도 같이 고친다.
+- 얼굴 구조(6-10 Face geometry)는 바꾸지 않는다. 머리만 바꾼다. 한글 설명 줄도 같이 고친다.
 
 | 스타일 | 영문 구절 (Character design에 그대로) |
 | --- | --- |
@@ -446,7 +446,9 @@ Face geometry: a small soft oval face with a balanced height-to-width ratio, a g
 BOTTOM IDENTIFICATION FOOTER (this is part of the newly generated image itself, NOT an edit of an existing image; no source image is needed): the very bottom edge of the image carries a clean cinematic character-identification caption. There is NO band, NO box, NO bar and NO solid background behind the text: the scene continues uninterrupted to the bottom edge, and only the typography is placed over it, with at most a very soft, barely visible darkening of the lowest 8–10% of the frame and a faint soft shadow under the letters so they stay legible. It should feel like a premium Korean drama character profile title card, not a UI overlay and not a watermark. The caption shows the following information in one horizontal line: {{이름}} | {{생성일시}} — the character name "{{이름}}" appears larger and more prominent, using elegant refined Korean typography in warm ivory-white; a thin vertical separator line sits between the character name and the date/time; the date and time appear smaller than the character name, using refined serif-style typography in soft ivory-white. Layout reference: the character name is positioned slightly left of center, followed by a thin vertical divider, then the date and time, with the character name approximately 1.5–1.8× larger than the date/time text, generous horizontal spacing and a sophisticated Korean editorial title-card aesthetic similar to a premium K-drama character introduction. Typography must be clean, elegant, cinematic, highly legible, vertically centered within the bottom margin, horizontally balanced and professionally typeset. The caption is visually subtle and premium and does not cover the character's body or face. The caption must be firmly anchored to the very bottom edge of the image. IMPORTANT: The ONLY intentional text in the image is the character identification caption. Do NOT add any other text, letters, captions, logos, signs, labels, watermark, random typography, or illegible text anywhere else in the image.
 ```
 
-### 6-14. 짧은 버전 (긴 프롬프트를 못 받는 도구용, 세 장 모두 긴 버전 옆에 따로 둔다)
+### 6-14. 짧은 버전 (2026-10-13 폐지)
+
+> **2026-10-13 사용자 결정으로 작품 파일의 프로필 이미지 짧은 버전(주인공·남성용·여성용·조연) 601칸을 일괄 삭제했고, 앞으로 만들지 않는다.** 아래는 예전 규칙 기록이다. 영상용 남자친구 프로필은 `zeta/user-male-video-looks.md`의 `프로필 프롬프트`를 쓴다.
 
 긴 버전은 영문 8,000~9,000자쯤 된다. 일부 이미지 도구는 이 길이를 받으면 이유를 말하지 않고 결과만 비운다(송예찬으로 확인: 긴 버전은 실패, 약 2,000자 축약판은 성공). 그래서 주인공 프로필과 유저 대화 프로필 세 장 모두 긴 버전 바로 아래에 `· 짧은 버전` 칸을 하나 더 둔다. 짧은 버전은 긴 버전에서 캐릭터 고유 부분만 남긴 것이다.
 
