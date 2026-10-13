@@ -4,8 +4,9 @@
   python3 zeta/tools/update_local_status.py
 
 무엇을 세는가
-- 로컬 폴더 ~/Documents/ChatGPT/이미지 프로필 제작/generated/번호_이름/ 안의 실제 파일 이름만 본다
-  (저장소·구글 드라이브는 보지 않는다). 파일 이름 앞의 번호는 있어도 없어도 된다.
+- 로컬 폴더 ~/Documents/ChatGPT/이미지 프로필 제작/generated/번호_이름/ 와, 드라이브로 옮겨진 파일이 있는
+  구글 드라이브 데스크톱 폴더(~/Library/CloudStorage/GoogleDrive-…/내 드라이브/이미지 프로필 제작/번호_이름/)
+  안의 실제 파일 이름을 합쳐서 본다. 파일 이름 앞의 번호는 있어도 없어도 된다.
 - 플롯 목록은 zeta/zeta_NNN_이름.md.
 - 이미지 프로필(주인공·유저 남·유저 여), 3면도, 계절별 사복 3면도(12장), 입맞춤 직전 스틸(닿기 직전 포함),
   입맞춤 스틸, 콘티 스틸(콘티·숏드라마·영상용 컷).
@@ -19,7 +20,10 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
+# 로컬 작업 폴더와 구글 드라이브 데스크톱 폴더(드라이브로 옮겨진 파일이 여기 있다)를 함께 본다.
 LOCAL = Path.home() / "Documents/ChatGPT/이미지 프로필 제작/generated"
+DRIVE_DESKTOP = Path.home() / "Library/CloudStorage/GoogleDrive-hyukgu86@gmail.com/내 드라이브/이미지 프로필 제작"
+SOURCES = [LOCAL, DRIVE_DESKTOP]
 OUT = ROOT / "zeta/zeta-local-status.md"
 
 
@@ -30,11 +34,14 @@ def kind(name):
 def local_files():
     """번호 → 그 폴더의 파일 이름 집합 (macOS 분해형 이름도 NFC 로 맞춘다)"""
     by = {}
-    for d in glob.glob(str(LOCAL / "[0-9][0-9][0-9]_*")):
-        if not os.path.isdir(d):
+    for src in SOURCES:
+        if not src.is_dir():
             continue
-        num = os.path.basename(d)[:3]
-        by.setdefault(num, set()).update(unicodedata.normalize("NFC", f) for f in os.listdir(d) if not f.startswith("."))
+        for d in glob.glob(str(src / "[0-9][0-9][0-9]_*")):
+            if not os.path.isdir(d):
+                continue
+            num = os.path.basename(d)[:3]
+            by.setdefault(num, set()).update(unicodedata.normalize("NFC", f) for f in os.listdir(d) if not f.startswith("."))
     return by
 
 
@@ -95,7 +102,7 @@ def render(rows):
     a = L.append
     a("# 로컬 기준 제작 현황 (프로필·3면도·사복 3면도·스틸·콘티)")
     a("")
-    a("공유용 참고 문서입니다. 뷰어에는 표시하지 않습니다. 저장소·구글 드라이브가 아니라 **로컬 폴더(`이미지 프로필 제작/generated/번호_이름/`)에 실제로 있는 파일**만 기준으로 정리했습니다.")
+    a("공유용 참고 문서입니다. 뷰어에는 표시하지 않습니다. 저장소·구글 드라이브 웹이 아니라 **이 컴퓨터에 실제로 있는 파일**을 기준으로 정리했습니다: 로컬 작업 폴더(`이미지 프로필 제작/generated/번호_이름/`)와 구글 드라이브 데스크톱 폴더(`내 드라이브/이미지 프로필 제작/번호_이름/`)를 합쳐서 봅니다.")
     a("")
     a(f"- 기준 시각: {now} (KST) · 플롯 {tot}편 (`zeta/zeta_NNN_이름.md`)")
     a("- 읽는 법: ● 있음 · ○ 없음. 프로필·3면도 칸의 세 글자는 순서대로 **주인공 · 유저 남성 · 유저 여성**.")
