@@ -37,7 +37,8 @@
 
 - 두 사람은 **연인 사이인 성인 가상 인물**이다. 유저를 `visitor`(방문객)가 아니라 `his boyfriend`(남자친구)로 부른다. 실존 인물·연예인을 떠올리게 하는 말을 쓰지 않는다.
 - 장면은 **서로 동의한 짧고 비노골적인 애정 표현**이다. 닿기 직전 칸은 숨을 멈춘 찰나, 입맞춤 칸은 입을 다문 짧고 가벼운 입맞춤만 그리고, 몸이 드러나거나 암시적인 자세·장소(침대·침실)는 넣지 않는다.
-- 두 사람 모두 **일상복(사복)**을 입는다. 근무복·유니폼·앞치마·명찰·무대 의상은 입히지 않는다.
+- **의상 (2026-10-13 사용자 결정: 제복·유니폼도 일단 생성을 시도한다).** 장면이 일터이거나 그 작품을 상징하는 옷이 근무복·제복·유니폼이면 프로필의 `Wardrobe: …`를 그대로 쓰는 **제복 버전**으로 먼저 생성한다. 생성 도구가 거절하면 아래 6번의 **사복 버전**(사복 파일 문장)으로 바꿔 다시 시도하고, `zeta/still-generation-failures.md`에 `제복 거절 → 사복으로 재시도`라고 적는다. 일터가 아닌 장면은 처음부터 사복 버전을 쓴다. 명찰·사원증·로고의 글씨는 어느 버전이든 넣지 않는다.
+- **얼굴·귀가 붉어지는 표현을 쓰지 않는다** (`blush`, `flushed`, `ears red`, `red cheeks`, 귀 끝이 붉어짐 등). 설렘은 시선·손·숨을 멈춘 자세로 보인다. 프로필과 같은 피부 톤을 유지한다.
 - 이 의도는 아래 5번 고정 문장으로 프롬프트에 그대로 들어간다.
 
 ## 유저(남) 이름 정하기 (작품마다)
@@ -65,7 +66,8 @@
 5. **등장인물과 장면 의도 (원문 그대로)**: `Two established fictional adult characters, faces kept distinct: two adult Korean men who are a romantic couple, both clearly in their late twenties or older. Scene intent: a brief, mutual and consensual, non-explicit moment of affection between two adult partners in a loving relationship, tender and restrained, both fully dressed in ordinary everyday casual clothes.`
 6. **주인공 덩어리**: `RIGHT, {영문 이름} (Image 1): ` + 그 작품 `### 주인공 프로필용` 긴 버전의 `Face geometry: …`, `Character design: …`를 **그대로 복사**(Props·구도·조명 문장은 가져오지 않는다) + 일상복 `Wardrobe: …`(아래) + 이 장면의 동작 한 문장.
    - 동작 문장 틀: `Standing {장소의 구체적인 자리} and facing screen-left, he has leaned in close, {성격에 맞는 한 단어: a little clumsily / slowly / hesitantly 등}, their faces only inches apart and foreheads almost touching, caught in the breath-held moment just before their lips would meet, a thin sliver of light still visible between them, eyes half-closed, {손의 위치}, {성격이 드러나는 표정 한 구절}.`
-   - **의상은 일상복으로 바꾼다.** 프로필의 `Wardrobe: …` 대신 `zeta/zeta-casual-wardrobe.md` 2절에서 그 작품의 장면 계절에 맞는 칸(반팔·긴팔·겨울)의 영어 문장을 쓴다: `Wardrobe: ` + `Off-duty casual wardrobe (…): ` 뒤의 옷·Accessories 문장 + `No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.` 그 작품 칸이 없으면 같은 형식으로 사복 한 줄을 새로 쓴다.
+   - **의상**: 제복 버전이면 프로필의 `Wardrobe: …`를 그대로 쓰고 명찰·사원증 글씨만 `(no legible text)`로 막는다. 5번 문장의 끝 `both fully dressed in ordinary everyday casual clothes`는 `both fully dressed in their ordinary work clothes`로 바꾼다. 사복 버전이면 아래처럼 일상복으로 바꾼다.
+   - **사복 버전은 일상복으로 바꾼다.** 프로필의 `Wardrobe: …` 대신 `zeta/zeta-casual-wardrobe.md` 2절에서 그 작품의 장면 계절에 맞는 칸(반팔·긴팔·겨울)의 영어 문장을 쓴다: `Wardrobe: ` + `Off-duty casual wardrobe (…): ` 뒤의 옷·Accessories 문장 + `No uniform, no work apron, no lanyard or ID badge, no lettering or logos on clothing.` 그 작품 칸이 없으면 같은 형식으로 사복 한 줄을 새로 쓴다.
    - 얼굴 구조·머리·몸의 표식·안경·피어싱처럼 몸에 붙은 특징은 프로필 그대로 둔다.
 7. **유저 덩어리**: `LEFT, his boyfriend (Image 2, an adult Korean man, the user character): ` + 그 작품 유저 남성용 긴 버전(제목이 `남성용` 또는 `유저 대화 프로필용 (남성용)`인 칸. `###`·`####` 어느 단계든 되고, `· 짧은 버전`이 붙은 칸은 아니다)의 `Face geometry: …`를 그대로 + `Character design: an adult man in his {주인공 나이대에 가깝게: late twenties 등, 20대 후반보다 어리게 쓰지 않는다}, {남성용 Character design 끝의 머리 구절 그대로}, soft double eyelid folds clearly different from {주인공 이름}'s eyes, no mole.`(주인공이 쌍꺼풀이면 `clearly different from …` 대신 눈매 차이를 한 구절로) + `Wardrobe: {장면 계절에 맞는 일상 사복 한 줄 — zeta/zeta-casual-wardrobe.md 1절 남성 칸 참고}, no uniform, no logo, no lettering.` + 동작 한 문장(`facing screen-right`, 눈을 반쯤 감고 고개를 살짝 기울임, 한 손은 주인공 옷자락이나 팔에 가볍게).
 8. **구도 (원문 그대로)**: `Composition: cinematic vertical side-profile two-shot at chest height, the two heads close together in the upper half of the tall frame with their hands and the nearest prop in the lower half, the two men facing each other in opposite directions, each head turned about 65 to 75 degrees from the camera in a near-profile view so both faces stay clearly readable (nose line, eye, cheekbone and jaw of each visible), not full profile and not frontal, both faces sharp, shallow depth of field with the background softly blurred.`
@@ -151,7 +153,8 @@ No text, captions, watermarks, or UI. No face swapping, face merging, or twin/id
 - [ ] 닿기 직전 칸에 `kiss`, `passionate` 같은 단어가 없다(대소문자 무시로 검색해 0건).
 - [ ] 주인공 얼굴·머리 구절이 주인공 프로필용 긴 버전과 글자까지 같다.
 - [ ] 5번 장면 의도 문장(연인인 성인 가상 인물·서로 동의한 짧고 비노골적인 애정 표현·일상복)이 원문 그대로 있다.
-- [ ] 두 사람 의상이 모두 일상복이다(주인공은 사복 파일 문장, 유니폼·앞치마·명찰·무대 의상 없음). `young`으로 나이를 적지 않았다.
+- [ ] 의상이 제복 버전(프로필 Wardrobe 그대로, 5번 문장 끝 `their ordinary work clothes`) 또는 사복 버전(사복 파일 문장) 중 하나로 맞게 들어가 있고, 제복이 거절된 작품은 실패 목록에 적었다. `young`으로 나이를 적지 않았다.
+- [ ] 얼굴·귀가 붉어지는 표현(`blush`, `flush`, `ears red`, `red cheeks`, 귀 끝이 붉어짐)이 0건이다.
 - [ ] 유저 Face geometry가 그 작품 남성용과 같다.
 - [ ] 외꺼풀 주인공이면 6-1의 쌍꺼풀 구절이 지워졌다.
 - [ ] 마지막 줄이 글씨 없음 문장이고, 프롬프트 안에 `Output file name`·파일명·따옴표로 묶인 글자가 없다. 파일명은 `>` 설명 줄에만 있고 띄어쓰기가 없다.
