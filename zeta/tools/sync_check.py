@@ -63,7 +63,7 @@ def main():
         if not src.is_dir():
             continue
         for d0 in sorted(os.listdir(src)):
-            d = unicodedata.normalize("NFC", d0)
+            d = re.sub(r"\s*\(\d+\)$", "", unicodedata.normalize("NFC", d0))  # 드라이브가 만든 중복 폴더 "001_백서율 (1)" 도 같은 작품으로 본다
             if not re.match(r"\d{3}_", d) or not (src / d0).is_dir():
                 continue
             for f0 in sorted(os.listdir(src / d0)):
