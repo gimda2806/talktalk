@@ -14,9 +14,27 @@
 7. **옷은 편마다 숏드라마의 한 벌.** 여기 적힌 옷 결은 기본값이다.
 8. 금지: 수염 없음, 붉어짐 없음.
 
+## 키 비교 이미지 (별도 생성)
+
+키 차이를 분명히 보여 주려고, 3면도와 별도로 **두 사람이 흰 배경에 나란히 정면으로 선 전신 이미지**를 편마다 한 장 만든다.
+
+- **파일명:** `NNN_주인공이름-height-lineup.png` (예: `003_임하준-height-lineup.png`)
+- **참고 이미지:** 주인공 3면도 + 남유저 3면도(얼굴·머리·체형·옷의 기준). 옷은 그 편 숏드라마의 한 벌.
+- **구도:** 세로보다 가로가 넓은 16:9, 순백 배경, 그림자는 발밑에만 옅게. 두 사람 모두 **정면**, 차렷에 가까운 편한 자세, 팔은 옆으로 내리고 손이 보이게. 머리끝부터 발끝까지 전부 화면 안.
+- **키 맞추기:** 같은 바닥선 위, 카메라는 두 사람 허리 높이에서 수평(올려다보거나 내려다보지 않음), 같은 축척(원근 왜곡 없음). 신발은 그 편 옷 그대로(굽 차이 주의).
+- **좌우:** 숏드라마 장면과 같게(대개 주인공 오른쪽, 남유저 왼쪽).
+- **글씨 없음:** 키 숫자는 프롬프트에만 적고 그림에는 넣지 않는다. 배경에 숫자 없는 옅은 회색 가로 눈금선 몇 줄은 넣어도 된다.
+- **소품:** 남유저 머리·목 소품은 빼고 장신구(목걸이·귀걸이·피어싱·팔찌·반지)와 안경은 유지. 손에 드는 소품은 들지 않는다.
+
+**프롬프트 틀** (`{ }`만 바꿔 넣는다)
+
+```text
+Full-body height comparison lineup, landscape 16:9, pure white seamless studio background, soft even front lighting, only a faint soft contact shadow under the feet. Two adult Korean men stand side by side facing the camera directly, full front view, relaxed upright posture, arms hanging naturally at the sides with hands visible, the whole body from the top of the head to the soles of the shoes inside the frame, generous space above the taller man's head. Camera at waist height, perfectly level, long lens, no perspective distortion, both men on exactly the same floor line and at exactly the same scale, so the real height difference reads clearly. RIGHT: {주인공 영문 이름}, {주인공 키}cm tall, {주인공 체격·피부·얼굴 표식 한 줄 (영문)}, wearing {이 편 주인공 옷 (영문)}. LEFT: his boyfriend, {남유저 키}cm tall, {남유저 체격·머리·얼굴 한 줄 (영문)}, wearing {이 편 남유저 옷 (영문)}, keeping his jewelry and glasses, no hat, no headphones, no scarf. The man on the RIGHT is exactly {키 차이}cm {taller/shorter} than the man on the LEFT. Keep the exact faces, hair, skin tone and body types of the reference character sheets. Optional: a few faint light-gray horizontal guide lines across the background with no numbers. Neutral calm expressions, both looking at the camera. No text, no numbers, no labels, no captions, no watermark, no logos, no props in the hands, no furniture, no extra people, no beard, no blush, no muscular bulk beyond the references.
+```
+
 ## 확인이 필요한 편
 
-- **남유저가 주인공보다 큼 (키 역전):** 없음 — 2026-10-14 역전 39편과 같은 키 1편(113)은 주인공 키를 남유저 + 3cm로 올렸다(플롯·설정집·숏드라마 반영).
+- **남유저가 주인공보다 큼 (키 역전):** 154 오보람(181/185)만 예외로 둔다(이야기가 키 차이에 기댐). 나머지 역전 38편과 같은 키 1편(113)은 2026-10-14 주인공 키를 남유저 + 3cm로 올렸다(플롯·설정집·숏드라마 반영).
 - **같은 키:** 없음
 - **키 차이 12cm 이상 (투샷·입맞춤 구도에서 눈높이 차이를 따로 적기):** 022 공민혁(+16), 024 함라온(+12), 026 추범진(+14), 040 양노아(+12), 041 지호연(+12), 049 육새롬(+13), 054 길우혁(+12), 057 유강태(+12), 063 옥영재(+12), 092 펠릭스(+27), 098 고창현(+13), 109 방승광(+14), 116 노승범(+14), 118 기범석(+20), 134 석윤호(+12), 147 유바우(+12), 148 조남훈(+13), 151 여로건(+15), 152 도에밀(+14), 159 현동하(+13), 168 유정빈(+12), 174 전강율(+12), 181 나승재(+12)
 
@@ -789,9 +807,9 @@
 - **3면도** 오세진보다 5cm 큼 — 비슷한 눈높이; 왼손 옆면 볼펜 자국 보이게; 오세진 안경은 얼굴 특징이라 3면도에도 유지
 
 ### 154 오보람 × 유건욱
-- **오보람** 188cm · 마르고 긴 선 · 피부 쿨 포슬린 · 표식 앞머리 위로 올린 동그란 안경 (쌍꺼풀) · 몸·손 흔적 오른손 옆면 연필 자국
+- **오보람** 181cm · 마르고 긴 선 · 피부 쿨 포슬린 · 표식 앞머리 위로 올린 동그란 안경 (쌍꺼풀) · 몸·손 흔적 오른손 옆면 연필 자국
 - **유건욱** 30대 초반, 185cm 키 크고 어깨가 좁은 슬렌더 체형 · 머리 금발에 가까운 라이트 베이지 리젠트 · 얼굴 외꺼풀의 올라간 눈매, 왼쪽 눈썹 끝 슬릿 · 소품 목에 걸친 헤드폰
-- **3면도** 유건욱보다 3cm 큼 (2026-10-14 주인공 키 181→188cm로 올림); 오른손 연필 자국 유지; 유건욱 소품(머리·목)은 3면도에서 뺌
+- **3면도** 유건욱보다 4cm 작음 — 키 역전 예외(평소 유건욱이 더 커서 발판 위에서 처음 올려다보는 이야기, 사용자 결정 2026-10-14). 두 사람 같은 기준선에서 유건욱이 확실히 크게; 오른손 연필 자국 유지; 유건욱 소품(머리·목)은 3면도에서 뺌
 
 ### 155 공해든 × 임하민
 - **공해든** 185cm · 어깨 넓고 탄탄한 큰 몸집 · 피부 밝은 웜 아이보리 · 표식 왼쪽 눈썹 꼬리 옅은 흉터 (속쌍꺼풀) · 몸·손 흔적 손끝·오른 손바닥 옆면 목탄 가루
