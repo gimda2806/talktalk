@@ -33,6 +33,12 @@ def folder_files(num):
         for d in glob.glob(f"{base}/{num}_*"):
             if os.path.isdir(d):
                 files |= {unicodedata.normalize("NFC", x) for x in os.listdir(d)}  # macOS 가 분해형(NFD) 이름으로 저장한 파일도 맞춘다
+    for d in glob.glob(f"{LOCAL}/플롯용_프로필/{num}_*"):  # 정리 후 플롯용 프로필 3종
+        if os.path.isdir(d):
+            files |= {unicodedata.normalize("NFC", x) for x in os.listdir(d)}
+    flat = LOCAL / "영상용"  # 플롯별 폴더 없이 한 폴더에 모은 영상용 파일 (번호는 파일 이름 앞 3자리)
+    if flat.is_dir():
+        files |= {n for n in (unicodedata.normalize("NFC", x) for x in os.listdir(flat)) if n.startswith(f"{num}_")}
     return files
 
 

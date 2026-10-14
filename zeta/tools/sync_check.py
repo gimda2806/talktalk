@@ -59,41 +59,55 @@ def main():
         out = subprocess.run(["git", "log", "-1", "--format=%ct", "--", f"zeta/generated/{unicodedata.normalize('NFD', d)}/{f}"], capture_output=True, text=True, cwd=ROOT).stdout.strip()
         ct[(d, k)] = int(out or 0)
     new, chg, drv, stale, seen = [], [], [], 0, set()
+    repo_dir = {d[:3]: d for d, _ in repo}
+
+    def entries(src):
+        """(작품 폴더 이름, 파일 이름, 경로) — 번호_이름/, 플롯용_프로필/번호_이름/, 영상용/(번호는 파일 이름 앞 3자리)"""
+        for base in (src, src / "플롯용_프로필"):
+            if not base.is_dir():
+                continue
+            for d0 in sorted(os.listdir(base)):
+                d = re.sub(r"\s*\(\d+\)$", "", unicodedata.normalize("NFC", d0))  # 드라이브가 만든 중복 폴더 "001_백서율 (1)" 도 같은 작품으로 본다
+                if re.match(r"\d{3}_", d) and (base / d0).is_dir():
+                    for f0 in sorted(os.listdir(base / d0)):
+                        yield d, f0, base / d0 / f0
+        flat = src / "영상용"
+        if flat.is_dir():
+            for f0 in sorted(os.listdir(flat)):
+                n = unicodedata.normalize("NFC", f0)
+                if re.match(r"\d{3}_", n) and n[:3] in repo_dir:
+                    yield repo_dir[n[:3]], f0, flat / f0
+
     for src in SOURCES:
         if not src.is_dir():
             continue
-        for d0 in sorted(os.listdir(src)):
-            d = re.sub(r"\s*\(\d+\)$", "", unicodedata.normalize("NFC", d0))  # 드라이브가 만든 중복 폴더 "001_백서율 (1)" 도 같은 작품으로 본다
-            if not re.match(r"\d{3}_", d) or not (src / d0).is_dir():
+        for d, f0, lp in entries(src):
+            f = unicodedata.normalize("NFC", f0)
+            if not f.endswith(".png") or SKIP.search(f) or re.match(r"\d{3}_C\d\d", f):
                 continue
-            for f0 in sorted(os.listdir(src / d0)):
-                f = unicodedata.normalize("NFC", f0)
-                if not f.endswith(".png") or SKIP.search(f) or re.match(r"\d{3}_C\d\d", f):
-                    continue
-                m = re.search(r"-(main|user-m|user-f)(-[a-z]+)?(-v\d+)?\.png$", f)
-                if not m:
-                    continue
-                lp = src / d0 / f0
-                key = (d, m.group(1))
-                size = os.path.getsize(lp)
-                # 같은 작품·같은 종류의 저장소 파일과 크기가 같으면 같은 이미지로 본다
-                # (드라이브 데스크톱 폴더의 파일을 내려받아 해시하지 않으려는 것 — 크기가 다르면 내용도 다르다)
-                if key in rsize and rsize[key] == size:
-                    continue
-                if (d, size) in seen:
-                    continue
-                seen.add((d, size))
-                mt = os.path.getmtime(lp)
-                row = (d, f, time.strftime("%m-%d %H:%M", time.localtime(mt)), str(src))
-                if key not in repo:
-                    new.append(row)
-                elif "CloudStorage" in str(src):
-                    # 드라이브 데스크톱 폴더 파일의 수정 시각은 올린 시각이라 최신 여부를 알 수 없다 → 눈으로 확인
-                    drv.append(row)
-                elif mt < ct[key]:
-                    stale += 1
-                else:
-                    chg.append(row)
+            m = re.search(r"-(main|user-m|user-f)(-[a-z]+)?(-v\d+)?\.png$", f)
+            if not m:
+                continue
+            key = (d, m.group(1))
+            size = os.path.getsize(lp)
+            # 같은 작품·같은 종류의 저장소 파일과 크기가 같으면 같은 이미지로 본다
+            # (드라이브 데스크톱 폴더의 파일을 내려받아 해시하지 않으려는 것 — 크기가 다르면 내용도 다르다)
+            if key in rsize and rsize[key] == size:
+                continue
+            if (d, size) in seen:
+                continue
+            seen.add((d, size))
+            mt = os.path.getmtime(lp)
+            row = (d, f, time.strftime("%m-%d %H:%M", time.localtime(mt)), str(src))
+            if key not in repo:
+                new.append(row)
+            elif "CloudStorage" in str(src):
+                # 드라이브 데스크톱 폴더 파일의 수정 시각은 올린 시각이라 최신 여부를 알 수 없다 → 눈으로 확인
+                drv.append(row)
+            elif mt < ct[key]:
+                stale += 1
+            else:
+                chg.append(row)
     print("NEW", [r[:3] for r in new])
     print("CHG", [r[:3] for r in chg])
     print(f"DRIVE-DIFF(참고, 판정에서 제외) {len(drv)}장 — 드라이브 폴더에 올라가 있는 예전 버전일 가능성이 높다")

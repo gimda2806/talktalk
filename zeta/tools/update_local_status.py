@@ -38,17 +38,26 @@ def kind(name):
 
 
 def local_files():
-    """번호 → 그 폴더의 파일 이름 집합 (macOS 분해형 이름도 NFC 로 맞춘다)"""
+    """번호 → 파일 이름 집합 (macOS 분해형 이름도 NFC 로 맞춘다).
+
+    각 폴더(로컬 generated, 드라이브 데스크톱 폴더)에서 세 곳을 함께 본다:
+    번호_이름/ (그 작품의 파일), 영상용/ (플롯별 폴더 없이 한 폴더에 모은 메인·남 프로필과 3면도, 번호는 파일 이름 앞 3자리),
+    플롯용_프로필/번호_이름/ (프로필 3종)."""
     by = {}
+    add = lambda num, names: by.setdefault(num, set()).update(n for n in names if "-확인필요" not in n)  # 드라이브 중복본(-확인필요)은 세지 않는다
+    nfc = lambda names: (unicodedata.normalize("NFC", f) for f in names if not f.startswith("."))
     for src in SOURCES:
         if not src.is_dir():
             continue
-        for d in glob.glob(str(src / "[0-9][0-9][0-9]_*")):
-            if not os.path.isdir(d):
-                continue
-            num = os.path.basename(d)[:3]
-            names = (unicodedata.normalize("NFC", f) for f in os.listdir(d) if not f.startswith("."))
-            by.setdefault(num, set()).update(n for n in names if "-확인필요" not in n)  # 드라이브 중복본(-확인필요)은 세지 않는다
+        dirs = glob.glob(str(src / "[0-9][0-9][0-9]_*")) + glob.glob(str(src / "플롯용_프로필" / "[0-9][0-9][0-9]_*"))
+        for d in dirs:
+            if os.path.isdir(d):
+                add(os.path.basename(d)[:3], nfc(os.listdir(d)))
+        flat = src / "영상용"
+        if flat.is_dir():
+            for n in nfc(os.listdir(flat)):
+                if re.match(r"\d{3}_", n):
+                    add(n[:3], [n])
     return by
 
 
