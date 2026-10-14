@@ -37,6 +37,36 @@ def kind(name):
     return "m" if "-user-m" in name else "f" if "-user-f" in name else "main"
 
 
+_NAMES = {}
+
+
+def _video_names():
+    """영상용 폴더 이름 규칙(번호_주인공이름 / 번호_유저남이름[_이미지시트][_vN])을 읽기 위한 번호별 이름 (주인공: zeta/generated/번호_이름, 유저남: zeta/user-male-names.md)"""
+    if not _NAMES:
+        for d in os.listdir(ROOT / "zeta/generated"):
+            n = unicodedata.normalize("NFC", d)
+            if re.match(r"\d{3}_", n):
+                _NAMES.setdefault(n[:3], {})[n[4:]] = "main"
+        try:
+            for line in (ROOT / "zeta/user-male-names.md").read_text(encoding="utf-8").splitlines():
+                m = re.match(r"\|\s*(\d{3})_[^|]+\|\s*([^|\s]+)\s*\|", line)
+                if m:
+                    _NAMES.setdefault(m.group(1), {})[m.group(2)] = "user-m"
+        except OSError:
+            pass
+    return _NAMES
+
+
+def video_name_to_canonical(n):
+    """`063_옥영재.png` → `063_x-main.png`, `063_정지석_이미지시트_v2.png` → `063_x-user-m-character-sheet.png` 처럼 예전 파일 이름 모양으로 바꿔 센다. 해당 안 되면 그대로."""
+    m = re.match(r"(\d{3})_([^_]+?)(_이미지시트)?(_v\d+)?\.png$", n)
+    if m:
+        who = _video_names().get(m.group(1), {}).get(m.group(2))
+        if who:
+            return f"{m.group(1)}_x-{who}" + ("-character-sheet-2k-v1" if m.group(3) else "") + ".png"
+    return n
+
+
 def local_files():
     """번호 → 파일 이름 집합 (macOS 분해형 이름도 NFC 로 맞춘다).
 
@@ -57,7 +87,7 @@ def local_files():
         if flat.is_dir():
             for n in nfc(os.listdir(flat)):
                 if re.match(r"\d{3}_", n):
-                    add(n[:3], [n])
+                    add(n[:3], [video_name_to_canonical(n)])
     return by
 
 
