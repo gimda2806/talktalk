@@ -47,7 +47,8 @@ def local_files():
             if not os.path.isdir(d):
                 continue
             num = os.path.basename(d)[:3]
-            by.setdefault(num, set()).update(unicodedata.normalize("NFC", f) for f in os.listdir(d) if not f.startswith("."))
+            names = (unicodedata.normalize("NFC", f) for f in os.listdir(d) if not f.startswith("."))
+            by.setdefault(num, set()).update(n for n in names if "-확인필요" not in n)  # 드라이브 중복본(-확인필요)은 세지 않는다
     return by
 
 

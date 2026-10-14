@@ -33,7 +33,7 @@ SOURCES = [
     Path.home() / "Documents/ChatGPT/이미지 프로필 제작/generated",
     Path.home() / "Library/CloudStorage/GoogleDrive-hyukgu86@gmail.com/내 드라이브/이미지 프로필 제작",
 ]
-SKIP = re.compile(r"character-sheet|-prev\.png|닿기직전|reference|shortdrama|kiss|콘티|입맞춤|cameo")
+SKIP = re.compile(r"확인필요|character-sheet|-prev\.png|닿기직전|reference|shortdrama|kiss|콘티|입맞춤|cameo")
 
 
 def sha(p):
