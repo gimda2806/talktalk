@@ -91,7 +91,7 @@ def collect():
                 ct += 1
             elif re.search(r"-(main|user-m|user-f)\.png$", tl):
                 pr.add(kind(tl))
-            elif re.search(r"-(main|user-m|user-f)-v\d+\.png$", tl):
+            elif re.search(r"-(main|user-m|user-f)(-[a-z]+)?-v\d+\.png$", tl):
                 prv.add(kind(tl))  # 기본 이름 없이 -v2 만 있는 경우
         pr |= prv  # -v2 만 남은 종류도 있는 것으로 센다 (-prev 이전본은 세지 않는다)
         rows.append(dict(no=no, name=works[no], pr=pr, sh=sh, cas=len(cas), sb=sb, kd=kd, ct=ct, files=len(by.get(no, ())), repo=repo_profiles(no)))
@@ -115,7 +115,7 @@ def render(rows):
     a("")
     a(f"- 기준 시각: {now} (KST) · 플롯 {tot}편 (`zeta/zeta_NNN_이름.md`)")
     a("- 읽는 법: ● 있음 · ○ 없음. 프로필·3면도 칸의 세 글자는 순서대로 **주인공 · 유저 남성 · 유저 여성**.")
-    a("- 이미지 프로필: `…-main.png` · `…-user-m.png` · `…-user-f.png` (기본 이름이 없고 `-v2`만 남은 종류는 그 파일로 인정, `-prev` 이전본은 제외).")
+    a("- 이미지 프로필: `…-main.png` · `…-user-m.png` · `…-user-f.png` (기본 이름이 없고 `-v2`·`-idol-v2`·`-long-v4`처럼 재생성본만 남은 종류는 그 파일로 인정, `-prev` 이전본은 제외).")
     a("- 3면도: `…character-sheet…png` 중 `casual`이 없는 것(`reference-copy` 제외). 계절별 사복 3면도: `casual-봄·여름·가을·겨울` 시트가 3종×4계절=12장 중 몇 장인지.")
     a("- 입맞춤 직전 스틸: `…_닿기직전_….png`(닿기 직전 스틸)와 `kiss-still-…입맞춤직전….png`의 파일 수(다시 만든 v2도 각각 셈). 입맞춤 스틸: 이름에 `kiss`·`입맞춤`이 있고 `직전`이 아닌 것.")
     a("- 콘티 스틸: `…콘티_….png`(콘티 컷), `…shortdrama….png`(숏드라마 컷), `C01_….png`(영상용 컷)의 파일 수.")
