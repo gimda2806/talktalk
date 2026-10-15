@@ -277,14 +277,15 @@ def read_zeta_series():
 
 
 def load_shortdrama(stem):
-    """zeta/shortdrama/{번호}_{이름}_숏드라마.md(부드러운 버전)와 {번호}_{이름}_숏드라마_강.md(강도 높은 버전)가 있으면
+    """zeta/shortdrama/{번호}_{이름}_숏드라마.md(부드러운 버전)와 {번호}_{이름}_숏드라마_강.md(강도 높은 버전), {번호}_{이름}_숏드라마_첫만남.md(첫만남 버전)가 있으면
     파일마다 묶음 두 개(스틸 쪽 · 영상 쪽)로 읽는다. 스틸 탭에서 쓴다.
 
     파일의 '## 절'은 묶음 안 소제목(h4)으로 접어 넣는다.
     """
     num = stem.split("_")[1]
     out = []
-    for pattern, label in ((f"{num}_*_숏드라마.md", "숏드라마"), (f"{num}_*_숏드라마_강.md", "숏드라마(강)")):
+    for pattern, label in ((f"{num}_*_숏드라마.md", "숏드라마"), (f"{num}_*_숏드라마_강.md", "숏드라마(강)"),
+                           (f"{num}_*_숏드라마_첫만남.md", "숏드라마(첫만남)")):
         files = sorted((ZETA_DIR / "shortdrama").glob(pattern))
         if files:
             out += _shortdrama_groups(files[0], label)
