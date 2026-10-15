@@ -6,7 +6,7 @@
   python zeta/tools/copy_conti_to_local.py "H:\\항아리\\generated"
   python zeta/tools/copy_conti_to_local.py --dry-run
 
-- 대상: 플롯 zeta/zeta_{번호}_{이름}.md, 콘티 zeta/shortdrama/{번호}_{이름}_숏드라마*.md (기본·강·첫만남 버전 모두)
+- 대상: 플롯 zeta/zeta_{번호}_{이름}.md, 콘티 zeta/shortdrama/{번호}_{이름}_숏드라마*.md (기본·강·첫만남·연인발전·연애초기 버전 모두)
 - 넣는 곳: {대상 폴더}/{번호}_{이름}/ — 같은 번호로 시작하는 폴더가 이미 있으면 그 폴더, 없으면 새로 만든다.
 - 복사만 한다(저장소의 파일은 그대로 둔다). 같은 이름의 파일이 있으면 내용이 다를 때만 덮어쓴다.
 """
