@@ -287,7 +287,8 @@ def load_shortdrama(stem):
     for pattern, label in ((f"{num}_*_숏드라마.md", "숏드라마"), (f"{num}_*_숏드라마_강.md", "숏드라마(강)"),
                            (f"{num}_*_숏드라마_첫만남.md", "숏드라마(첫만남)"),
                            (f"{num}_*_숏드라마_연인발전.md", "숏드라마(연인발전)"),
-                           (f"{num}_*_숏드라마_연애초기.md", "숏드라마(연애초기)")):
+                           (f"{num}_*_숏드라마_연애초기.md", "숏드라마(연애초기)"),
+                           (f"{num}_*_숏드라마_첫장.md", "숏드라마(첫장)")):
         files = sorted((ZETA_DIR / "shortdrama").glob(pattern))
         if files:
             out += _shortdrama_groups(files[0], label)
